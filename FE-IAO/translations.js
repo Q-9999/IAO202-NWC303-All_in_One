@@ -1,0 +1,5751 @@
+window.QUESTION_TRANSLATIONS = window.TRANSLATIONS_DATA = window.QUESTIONS_TRANSLATIONS = {
+  "m13-17_q1": {
+    "question": "Đặc điểm quan trọng của phần mềm độc hại sâu là gì?",
+    "options": [
+      "Phần mềm độc hại Worm cải trang thành phần mềm hợp pháp.",
+      "Sau khi được cài đặt trên hệ thống máy chủ, sâu sẽ không tự sao chép.",
+      "Một con sâu phải được kích hoạt bởi một sự kiện trên hệ thống máy chủ.",
+      "Một con sâu có thể thực thi độc lập với hệ thống máy chủ."
+    ],
+    "explanation": "Phần mềm độc hại Worm có thể tự thực thi và sao chép mà không bị chương trình máy chủ kích hoạt. Đây là một mối đe dọa an ninh mạng và Internet đáng kể."
+  },
+  "m13-17_q2": {
+    "question": "Ba thành phần chính của một cuộc tấn công sâu là gì? (Chọn ba.)",
+    "options": [
+      "một tải trọng",
+      "cơ chế lan truyền",
+      "một lỗ hổng lây nhiễm",
+      "cơ chế thăm dò",
+      "một lỗ hổng cho phép",
+      "cơ chế thâm nhập"
+    ],
+    "explanation": "Máy tính có thể bị cài sâu thông qua tệp đính kèm email, tệp chương trình thực thi hoặc Trojan Horse. Cuộc tấn công sâu không chỉ ảnh hưởng đến một máy tính mà còn lây lan sang các máy tính khác. Thứ mà sâu để lại là tải trọng – mã dẫn đến một số hành động."
+  },
+  "m13-17_q3": {
+    "question": "Người dùng tò mò về cách ai đó có thể biết máy tính đã bị nhiễm phần mềm độc hại. Hai hành vi phần mềm độc hại phổ biến là gì? (Chọn hai.)",
+    "options": [
+      "Máy tính phát ra âm thanh rít mỗi khi sử dụng gọt bút chì.",
+      "Máy tính phát ra tiếng bíp một lần trong quá trình khởi động.",
+      "Máy tính ngày càng phản hồi chậm hơn.",
+      "Không có âm thanh phát ra khi phát đĩa CD âm thanh.",
+      "Máy tính bị treo và yêu cầu khởi động lại."
+    ],
+    "explanation": "Các triệu chứng thường gặp của máy tính bị nhiễm phần mềm độc hại: Xuất hiện các tệp, ứng dụng hoặc biểu tượng trên màn hình Các công cụ bảo mật như phần mềm chống vi-rút hoặc tường lửa bị tắt hoặc thay đổi Sự cố hệ thống Email được gửi tự phát cho người khác Tệp bị sửa đổi hoặc bị thiếu Phản hồi của hệ thống hoặc trình duyệt chậm Các quy trình hoặc dịch vụ lạ đang chạy Cổng TCP hoặc UDP không xác định mở Kết nối được thực hiện với các thiết bị từ xa không xác định"
+  },
+  "m13-17_q4": {
+    "question": "Hai loại tấn công nào là ví dụ về tấn công trinh sát? (Chọn hai.)",
+    "options": [
+      "vũ lực",
+      "quét cổng",
+      "quét ping",
+      "người đàn ông ở giữa",
+      "lũ SYN"
+    ],
+    "explanation": "Các cuộc tấn công trinh sát cố gắng thu thập thông tin về các mục tiêu. Quét Ping sẽ cho biết máy chủ nào đang hoạt động và phản hồi với ping, trong khi quét cổng sẽ cho biết cổng TCP và UDP nào mà mục tiêu đang lắng nghe các kết nối đến. Các cuộc tấn công trung gian và tấn công vũ phu đều là ví dụ về tấn công truy cập và lũ SYN là một ví dụ về tấn công từ chối dịch vụ (DoS)."
+  },
+  "m13-17_q5": {
+    "question": "Quản trị viên phát hiện ra lỗ hổng trong mạng. Khi phân tích lỗ hổng, quản trị viên quyết định chi phí quản lý rủi ro lớn hơn chi phí của chính rủi ro đó. Rủi ro được chấp nhận và không có hành động nào được thực hiện. Chiến lược quản lý rủi ro nào đã được áp dụng?",
+    "options": [
+      "chuyển giao rủi ro",
+      "chấp nhận rủi ro",
+      "giảm thiểu rủi ro",
+      "tránh rủi ro"
+    ],
+    "explanation": "Chấp nhận rủi ro là khi chi phí của các phương án quản lý rủi ro lớn hơn chi phí của chính rủi ro đó, rủi ro được chấp nhận và không có hành động nào được thực hiện."
+  },
+  "m13-17_q6": {
+    "question": "Giao thức nào bị tội phạm mạng khai thác để tạo iFrame độc ​​hại?",
+    "options": [
+      "HTTP",
+      "DNS",
+      "ARP",
+      "DHCP"
+    ],
+    "explanation": "Phần tử HTML được gọi là khung nội tuyến hoặc iFrame cho phép trình duyệt tải một trang web khác từ một nguồn khác."
+  },
+  "m13-17_q7": {
+    "question": "Làm cách nào để giảm thiểu cuộc tấn công đường hầm DNS?",
+    "options": [
+      "bằng cách ngăn chặn các thiết bị sử dụng ARP vô cớ",
+      "bằng cách sử dụng bộ lọc kiểm tra lưu lượng DNS",
+      "bằng cách bảo mật tất cả tài khoản chủ sở hữu miền",
+      "bằng cách sử dụng mật khẩu mạnh và xác thực hai yếu tố"
+    ],
+    "explanation": "Để có thể dừng đường hầm DNS, phải sử dụng bộ lọc kiểm tra lưu lượng DNS. Ngoài ra, các giải pháp DNS như Cisco OpenDNS chặn phần lớn lưu lượng truy cập đường hầm DNS bằng cách xác định các miền đáng ngờ."
+  },
+  "m13-17_q8": {
+    "question": "Chức năng của ARP vô cớ được gửi bởi một thiết bị nối mạng khi nó khởi động là gì?",
+    "options": [
+      "để yêu cầu tên netbios của hệ thống được kết nối",
+      "để yêu cầu địa chỉ MAC của máy chủ DNS",
+      "để yêu cầu địa chỉ IP của mạng được kết nối",
+      "để thông báo cho các thiết bị được kết nối về địa chỉ MAC của nó"
+    ],
+    "explanation": "Một ARP vô cớ thường được gửi khi thiết bị khởi động lần đầu tiên để thông báo cho tất cả các thiết bị khác trên mạng cục bộ về địa chỉ MAC của thiết bị mới."
+  },
+  "m13-17_q9": {
+    "question": "Kết quả của cuộc tấn công ngộ độc ARP thụ động là gì?",
+    "options": [
+      "Dữ liệu bị sửa đổi trong quá trình truyền hoặc dữ liệu độc hại được chèn vào trong quá trình truyền.",
+      "Mạng khách hàng gặp phải tình trạng từ chối dịch vụ.",
+      "Thông tin bí mật bị đánh cắp.",
+      "Nhiều tên miền phụ được tạo."
+    ],
+    "explanation": "Các cuộc tấn công ngộ độc ARP có thể bị động hoặc chủ động. Kết quả của một cuộc tấn công thụ động là tội phạm mạng đánh cắp thông tin bí mật. Với một cuộc tấn công tích cực, tội phạm mạng sửa đổi dữ liệu trong quá trình truyền hoặc chúng tiêm dữ liệu độc hại."
+  },
+  "m13-17_q10": {
+    "question": "Hai phương pháp được tội phạm mạng sử dụng để che giấu các cuộc tấn công DNS là gì? (Chọn hai.)",
+    "options": [
+      "sự phản xạ",
+      "bóng tối",
+      "thuật toán tạo tên miền",
+      "dòng chảy nhanh",
+      "đào hầm"
+    ],
+    "explanation": "Thông lượng nhanh, thông lượng IP kép và thuật toán tạo miền được tội phạm mạng sử dụng để tấn công máy chủ DNS và ảnh hưởng đến các dịch vụ DNS. Fast flux là một kỹ thuật được sử dụng để ẩn các trang web lừa đảo và phân phối phần mềm độc hại đằng sau mạng lưới các máy chủ DNS bị xâm phạm (bot trong mạng botnet) đang thay đổi nhanh chóng. Kỹ thuật thông lượng IP kép nhanh chóng thay đổi tên máy chủ thành ánh xạ địa chỉ IP và máy chủ tên có thẩm quyền. Thuật toán tạo tên miền tạo ngẫu nhiên các tên miền được sử dụng làm điểm hẹn."
+  },
+  "m13-17_q11": {
+    "question": "Ghép công cụ bảo mật với mô tả. (Không phải tất cả các tùy chọn đều áp dụng.)",
+    "options": [
+      "đường xoắn ốc -> Công cụ điều tra số (forensics) được hacker mũ trắng dùng để tìm dấu vết chứng cứ còn lưu lại trên hệ thống máy tính.",
+      "IDA Pro -> Công cụ debugger và dịch ngược nhị phân (reverse engineering) dùng khi phân tích mã độc malware.",
+      "NetStumbler -> Công cụ không dây dùng để dò quét và phát hiện các lỗ hổng bảo mật trên mạng Wi-Fi."
+    ],
+    "explanation": ""
+  },
+  "m13-17_q12": {
+    "question": "Hãy ghép loại kẻ tấn công mạng với mô tả. (Không phải tất cả các tùy chọn đều được sử dụng.)",
+    "options": [
+      "Tin tặc chính trị (Hacktivists) -> Đưa ra các thông điệp chính trị nhằm nâng cao nhận thức về các vấn đề họ quan tâm.",
+      "Môi giới lỗ hổng (Vulnerability brokers) -> Phát hiện lỗ hổng khai thác và báo cáo cho nhà sản xuất/nhà cung cấp.",
+      "Kẻ tấn công do nhà nước bảo trợ (State-sponsored) -> Thu thập tình báo hoặc phá hoại theo mục tiêu cụ thể đại diện cho chính phủ của họ."
+    ],
+    "explanation": ""
+  },
+  "m13-17_q13": {
+    "question": "Nối các tác nhân đe dọa với các mô tả. (Không phải tất cả các tùy chọn đều được sử dụng.)",
+    "options": [
+      "Tin tặc chính trị (Hacktivists) -> Phản đối công khai tổ chức hoặc chính phủ bằng cách phát tán bài viết, video, làm rò rỉ thông tin nhạy cảm và tấn công DDoS.",
+      "Script kiddies -> Kẻ tấn công thiếu kinh nghiệm, chạy các script và công cụ có sẵn để gây hại nhưng thường không vì lợi nhuận.",
+      "Được nhà nước bảo trợ (State-sponsored) -> Đánh cắp bí mật chính phủ, thu thập thông tin tình báo và phá hoại mạng của chính phủ nước ngoài, các tập đoàn."
+    ],
+    "explanation": "hackertivists : các tác nhân đe dọa công khai phản đối các tổ chức hoặc chính phủ bằng cách đăng các bài báo, video, rò rỉ thông tin nhạy cảm và thực hiện các cuộc tấn công từ chối dịch vụ (DDoS) phân tán: các tác nhân đe dọa thiếu kinh nghiệm chạy các tập lệnh, công cụ và khai thác hiện có để gây hại, nhưng thường không vì lợi nhuận. Được nhà nước tài trợ: các tác nhân đe dọa đánh cắp bí mật của chính phủ, thu thập thông tin tình báo và phá hoại mạng lưới của các chính phủ, nhóm khủng bố và tập đoàn nước ngoài"
+  },
+  "m13-17_q14": {
+    "question": "Kịch bản nào mô tả một nhà môi giới dễ bị tổn thương?",
+    "options": [
+      "một thiếu niên chạy các tập lệnh, công cụ và hoạt động khai thác hiện có nhằm mục đích gây hại nhưng thường không vì lợi nhuận",
+      "một kẻ đe dọa cố gắng khám phá các cách khai thác và báo cáo chúng cho nhà cung cấp, đôi khi để nhận giải thưởng hoặc phần thưởng",
+      "kẻ đe dọa công khai phản đối các chính phủ bằng cách đăng các bài báo và rò rỉ thông tin nhạy cảm",
+      "một kẻ đe dọa được Nhà nước tài trợ, chuyên đánh cắp bí mật của chính phủ và phá hoại mạng lưới của các chính phủ nước ngoài"
+    ],
+    "explanation": "Các nhà môi giới lỗ hổng thường đề cập đến các tin tặc mũ xám cố gắng khám phá các cách khai thác và báo cáo chúng cho các nhà cung cấp, đôi khi để nhận giải thưởng hoặc phần thưởng."
+  },
+  "m13-17_q15": {
+    "question": "Loại tấn công nào mà tội phạm mạng đang cố gắng ngăn chặn người dùng hợp pháp truy cập các dịch vụ mạng?",
+    "options": [
+      "DoS",
+      "chiếm quyền điều khiển phiên",
+      "MITM",
+      "giả mạo địa chỉ"
+    ],
+    "explanation": "Trong một cuộc tấn công DoS hoặc từ chối dịch vụ, mục tiêu của kẻ tấn công là ngăn chặn người dùng hợp pháp truy cập các dịch vụ mạng."
+  },
+  "m13-17_q16": {
+    "question": "Trường nào trong tiêu đề IPv6 trỏ đến thông tin lớp mạng tùy chọn được mang trong gói IPv6?",
+    "options": [
+      "hạng giao thông",
+      "phiên bản",
+      "nhãn dòng chảy",
+      "tiêu đề tiếp theo"
+    ],
+    "explanation": "Thông tin Lớp 3 tùy chọn về phân mảnh, bảo mật và tính di động được chứa bên trong các tiêu đề mở rộng trong gói IPv6. Trường tiêu đề tiếp theo của tiêu đề IPv6 hoạt động như một con trỏ tới các tiêu đề mở rộng tùy chọn này nếu chúng xuất hiện."
+  },
+  "m13-17_q17": {
+    "question": "Loại tấn công nào được thực hiện bởi các tác nhân đe dọa chống lại mạng để xác định địa chỉ IP, giao thức và cổng nào được ACL cho phép?",
+    "options": [
+      "kỹ thuật xã hội",
+      "từ chối dịch vụ",
+      "lừa đảo",
+      "trinh sát"
+    ],
+    "explanation": "ACL lọc gói sử dụng các quy tắc để lọc lưu lượng truy cập đến và đi. Các quy tắc này được xác định bằng cách chỉ định địa chỉ IP, số cổng và giao thức phù hợp. Các tác nhân đe dọa có thể sử dụng một cuộc tấn công trinh sát bao gồm quét cổng hoặc kiểm tra thâm nhập để xác định địa chỉ IP, giao thức và cổng nào được ACL cho phép."
+  },
+  "m13-17_q18": {
+    "question": "Loại thông báo ICMP nào có thể được các tác nhân đe dọa sử dụng để tạo ra một cuộc tấn công trung gian?",
+    "options": [
+      "Yêu cầu tiếng vang ICMP",
+      "ICMP không thể truy cập được",
+      "Chuyển hướng ICMP",
+      "Trả lời mặt nạ ICMP"
+    ],
+    "explanation": "Các thông báo ICMP phổ biến mà các tác nhân đe dọa quan tâm bao gồm: Yêu cầu tiếng vang ICMP và trả lời tiếng vang: được sử dụng để thực hiện xác minh máy chủ và tấn công DoS ICMP không thể truy cập được: được sử dụng để thực hiện các cuộc tấn công trinh sát và quét mạng Trả lời mặt nạ ICMP: được sử dụng để ánh xạ mạng IP nội bộ Chuyển hướng ICMP: được sử dụng để dụ máy chủ mục tiêu gửi tất cả lưu lượng truy cập thông qua một thiết bị bị xâm nhập và tạo ra một cuộc tấn công trung gian Phát hiện bộ định tuyến ICMP: được sử dụng để đưa các mục tuyến không có thật vào bảng định tuyến của máy chủ mục tiêu"
+  },
+  "m13-17_q19": {
+    "question": "Hai mục đích của việc phát động một cuộc tấn công trinh sát trên mạng là gì? (Chọn hai.)",
+    "options": [
+      "để leo thang đặc quyền truy cập",
+      "để ngăn người dùng khác truy cập vào hệ thống",
+      "để quét khả năng tiếp cận",
+      "để thu thập thông tin về mạng và thiết bị",
+      "để truy xuất và sửa đổi dữ liệu"
+    ],
+    "explanation": "Thu thập thông tin về mạng và quét truy cập là một cuộc tấn công trinh sát. Ngăn chặn người dùng khác truy cập vào hệ thống là một cuộc tấn công từ chối dịch vụ. Cố gắng truy xuất và sửa đổi dữ liệu cũng như cố gắng nâng cao đặc quyền truy cập là các loại tấn công truy cập."
+  },
+  "m13-17_q20": {
+    "question": "Loại tấn công mạng nào liên quan đến việc mở ngẫu nhiên nhiều yêu cầu Telnet tới bộ định tuyến và khiến quản trị viên mạng hợp lệ không thể truy cập thiết bị?",
+    "options": [
+      "ngộ độc DNS",
+      "người đàn ông ở giữa",
+      "SYN bị ngập",
+      "giả mạo"
+    ],
+    "explanation": "Cuộc tấn công TCP SYN Flood khai thác quá trình bắt tay ba bước của TCP. Tác nhân đe dọa liên tục gửi các gói yêu cầu phiên TCP SYN có địa chỉ IP nguồn giả mạo ngẫu nhiên đến mục tiêu đã định. Thiết bị mục tiêu trả lời gói TCP SYN-ACK tới địa chỉ IP giả mạo và chờ gói TCP ACK. Những phản hồi đó không bao giờ đến. Cuối cùng, máy chủ mục tiêu bị tràn ngập các kết nối TCP nửa mở và từ chối các dịch vụ TCP."
+  },
+  "m13-17_q21": {
+    "question": "Cisco SPAN cung cấp chức năng gì trong mạng chuyển mạch?",
+    "options": [
+      "Nó phản chiếu lưu lượng truy cập đi qua cổng chuyển mạch hoặc Vlan sang cổng khác để phân tích lưu lượng.",
+      "Nó ngăn chặn lưu lượng truy cập trên mạng LAN bị gián đoạn do cơn bão phát sóng.",
+      "Nó bảo vệ mạng chuyển mạch khỏi việc nhận BPDU trên các cổng không nên nhận chúng.",
+      "Nó sao chép lưu lượng truy cập đi qua giao diện chuyển mạch và gửi dữ liệu trực tiếp đến nhật ký hệ thống hoặc máy chủ SNMP để phân tích.",
+      "Nó kiểm tra các giao thức thoại để đảm bảo rằng các yêu cầu SIP, SCCP, H.323 và MGCP tuân thủ các tiêu chuẩn thoại.",
+      "Nó giảm thiểu các cuộc tấn công tràn địa chỉ MAC."
+    ],
+    "explanation": "SPAN là công nghệ của Cisco được các quản trị viên mạng sử dụng để giám sát lưu lượng truy cập đáng ngờ hoặc để nắm bắt lưu lượng truy cập cần phân tích."
+  },
+  "m13-17_q22": {
+    "question": "Câu nào mô tả đặc điểm hoạt động của NetFlow?",
+    "options": [
+      "NetFlow thu thập thông tin cơ bản về luồng gói chứ không phải dữ liệu về luồng.",
+      "NetFlow nắm bắt toàn bộ nội dung của gói.",
+      "Bản ghi luồng NetFlow có thể được xem bằng công cụ tcpdump.",
+      "NetFlow có thể cung cấp dịch vụ kiểm soát quyền truy cập của người dùng."
+    ],
+    "explanation": "NetFlow không nắm bắt toàn bộ nội dung của gói. Thay vào đó, NetFlow thu thập siêu dữ liệu hoặc dữ liệu về luồng chứ không phải chính dữ liệu luồng. Thông tin NetFlow có thể được xem bằng các công cụ như nfdump và FlowViewer."
+  },
+  "m13-17_q23": {
+    "question": "Ghép giải pháp giám sát mạng với mô tả. (Không phải tất cả các tùy chọn đều được sử dụng.)",
+    "options": [
+      "SPAN (Switch Port Analyzer) -> Sao chép khung dữ liệu nhận được trên một hoặc nhiều cổng tới cổng kết nối với thiết bị phân tích.",
+      "Bộ phân tích giao thức (Protocol Analyzer) -> Dùng để bắt gói tin và hiển thị chi tiết những gì đang xảy ra trên mạng.",
+      "Network TAP -> Chuyển tiếp toàn bộ lưu lượng, bao gồm cả các lỗi ở Lớp 1 (vật lý), tới thiết bị phân tích.",
+      "Hệ thống ngăn chặn xâm nhập (IPS) -> Giám sát lưu lượng mạng và so khớp với các tập luật (rules) đã cấu hình."
+    ],
+    "explanation": ""
+  },
+  "m13-17_q24": {
+    "question": "Công nghệ nào là hệ thống SIEM độc quyền?",
+    "options": [
+      "Tàng hình",
+      "Bộ thu thập NetFlow",
+      "đại lý SNMP",
+      "rải rác"
+    ],
+    "explanation": "Quản lý sự kiện thông tin bảo mật (SIEM) là công nghệ được sử dụng trong các tổ chức doanh nghiệp để cung cấp báo cáo theo thời gian thực và phân tích dài hạn về các sự kiện bảo mật. Splunk là một hệ thống SIEM độc quyền."
+  },
+  "m13-17_q25": {
+    "question": "Ba chức năng được cung cấp bởi SOAR là gì? (Chọn ba.)",
+    "options": [
+      "Nó tự động hóa các quy trình điều tra và ứng phó sự cố phức tạp.",
+      "Nó cung cấp số liệu thống kê 24x7 về các gói truyền qua bộ định tuyến hoặc bộ chuyển mạch đa lớp của Cisco.",
+      "Nó sử dụng trí tuệ nhân tạo để phát hiện sự cố và hỗ trợ phân tích và ứng phó sự cố.",
+      "Nó trình bày dữ liệu sự kiện tương quan và tổng hợp trong giám sát thời gian thực và tóm tắt dài hạn.",
+      "Nó cung cấp một bản kiểm tra đầy đủ các thông tin cơ bản về mọi luồng IP được chuyển tiếp trên thiết bị.",
+      "Nó cung cấp các công cụ quản lý trường hợp cho phép nhân viên an ninh mạng nghiên cứu và điều tra các sự cố."
+    ],
+    "explanation": "Nền tảng bảo mật SOAR cung cấp các chức năng sau: • Thu thập dữ liệu cảnh báo từ từng thành phần của hệ thống • Cung cấp các công cụ cho phép nghiên cứu, đánh giá và điều tra các trường hợp • Nhấn mạnh việc tích hợp như một phương tiện tự động hóa quy trình ứng phó sự cố phức tạp cho phép phản ứng nhanh hơn và các chiến lược phòng thủ thích ứng • Bao gồm các sách hướng dẫn được xác định trước cho phép phản ứng tự động với các mối đe dọa cụ thể"
+  },
+  "m13-17_q26": {
+    "question": "Những thiết bị nào cần được bảo mật để giảm thiểu các cuộc tấn công giả mạo địa chỉ MAC?",
+    "options": [
+      "Thiết bị lớp 7",
+      "Thiết bị lớp 4",
+      "Thiết bị lớp 3",
+      "Thiết bị lớp 2"
+    ],
+    "explanation": "Các cuộc tấn công Lớp 2 như giả mạo địa chỉ MAC có thể được giảm thiểu bằng cách bảo mật các thiết bị Lớp 2."
+  },
+  "m13-17_q27": {
+    "question": "Quản trị viên mạng đang kiểm tra nhật ký hệ thống và nhận thấy các cuộc kiểm tra kết nối bất thường tới nhiều cổng phổ biến trên máy chủ. Điều này có thể chỉ ra loại tấn công mạng tiềm năng nào?",
+    "options": [
+      "truy cập",
+      "từ chối dịch vụ",
+      "trộm cắp thông tin",
+      "trinh sát"
+    ],
+    "explanation": "Tấn công trinh sát là việc phát hiện và lập bản đồ trái phép các hệ thống, dịch vụ hoặc lỗ hổng. Một trong những cuộc tấn công trinh sát phổ biến nhất được thực hiện bằng cách sử dụng các tiện ích tự động phát hiện các máy chủ trên mạng và xác định cổng nào hiện đang lắng nghe kết nối."
+  },
+  "m13-17_q28": {
+    "question": "Lỗ hổng nào cho phép tội phạm chèn tập lệnh vào các trang web mà người dùng xem?",
+    "options": [
+      "Kịch bản chéo trang",
+      "chèn XML",
+      "tràn bộ đệm",
+      "SQL tiêm"
+    ],
+    "explanation": "Tập lệnh chéo trang (XSS) cho phép bọn tội phạm tiêm các tập lệnh chứa mã độc vào các ứng dụng web."
+  },
+  "m13-17_q29": {
+    "question": "Cuộc tấn công mạng nào liên quan đến cuộc tấn công phối hợp từ mạng botnet của máy tính zombie?",
+    "options": [
+      "Chuyển hướng ICMP",
+      "MITM",
+      "DDoS",
+      "giả mạo địa chỉ"
+    ],
+    "explanation": "DDoS là một cuộc tấn công từ chối dịch vụ phân tán. Một cuộc tấn công DDoS được phát động từ nhiều nguồn phối hợp. Nguồn của cuộc tấn công là các máy chủ zombie mà tội phạm mạng đã tích hợp vào mạng botnet. Khi sẵn sàng, tội phạm mạng sẽ ra lệnh cho mạng botnet của zombie tấn công mục tiêu đã chọn."
+  },
+  "m13-17_q30": {
+    "question": "Kỹ thuật tấn công bảo mật nào làm cạn kiệt nguồn địa chỉ IP có sẵn cho các máy chủ hợp pháp?",
+    "options": [
+      "tấn công trinh sát",
+      "DHCP đói",
+      "giả mạo DHCP",
+      "DHCP rình mò",
+      "người đại diện",
+      "FTP",
+      "DoS",
+      "gửi dữ liệu"
+    ],
+    "explanation": "Các cuộc tấn công chết đói DHCP tạo ra sự từ chối dịch vụ cho các máy khách trong mạng. Kẻ tấn công gửi tin nhắn khám phá DHCP có chứa địa chỉ MAC giả nhằm cố gắng thuê tất cả các địa chỉ IP. Ngược lại, giả mạo DHCP xảy ra khi tội phạm mạng định cấu hình máy chủ DHCP lừa đảo để cung cấp cho máy khách mạng thông tin cấu hình IP không chính xác. Giải thích: Chủ đề 14.1.4 Kẻ tấn công sử dụng cuộc tấn công bằng ngựa Trojan proxy để xâm nhập vào một thiết bị và sau đó sử dụng thiết bị đó để thực hiện các cuộc tấn công vào các thiết bị khác. Con ngựa Trojan Dos làm chậm hoặc tạm dừng lưu lượng mạng. Trojan FTP cho phép các dịch vụ truyền tệp trái phép khi cổng 21 bị xâm phạm. Một con ngựa Trojan gửi dữ liệu sẽ truyền dữ liệu trở lại cho hacker có thể bao gồm mật khẩu."
+  },
+  "m13-17_q32": {
+    "question": "Hai ví dụ về các cuộc tấn công DoS là gì? (Chọn hai.)",
+    "options": [
+      "tràn bộ đệm",
+      "SQL tiêm",
+      "quét cổng",
+      "lừa đảo",
+      "ping của cái chết"
+    ],
+    "explanation": "Tràn bộ đệm và ping chết Các cuộc tấn công DoS khai thác các lỗ hổng liên quan đến bộ nhớ hệ thống trên máy chủ bằng cách gửi một lượng dữ liệu không mong muốn hoặc dữ liệu không đúng định dạng đến máy chủ."
+  },
+  "m13-17_q33": {
+    "question": "Tại sao rootkit lại được hacker sử dụng?",
+    "options": [
+      "để thử đoán mật khẩu",
+      "để đảo ngược các tập tin nhị phân",
+      "để có quyền truy cập vào thiết bị mà không bị phát hiện",
+      "làm trinh sát"
+    ],
+    "explanation": "Hacker sử dụng rootkit để tránh bị phát hiện cũng như ẩn đi mọi phần mềm do hacker cài đặt."
+  },
+  "m13-17_q34": {
+    "question": "Điều gì gây ra lỗi tràn bộ đệm?",
+    "options": [
+      "gửi quá nhiều thông tin đến hai hoặc nhiều giao diện của cùng một thiết bị, do đó gây ra tình trạng rớt gói tin",
+      "cố gắng ghi nhiều dữ liệu vào một vị trí bộ nhớ hơn vị trí đó có thể chứa",
+      "gửi các kết nối lặp đi lặp lại như Telnet đến một thiết bị cụ thể, do đó từ chối các nguồn dữ liệu khác",
+      "tải xuống và cài đặt quá nhiều bản cập nhật phần mềm cùng một lúc",
+      "triển khai một biện pháp đối phó an ninh để giảm thiểu trojan"
+    ],
+    "explanation": "Bằng cách gửi quá nhiều dữ liệu đến một vùng bộ nhớ cụ thể, các vị trí bộ nhớ liền kề sẽ bị ghi đè, điều này gây ra sự cố bảo mật do chương trình ở vị trí bộ nhớ bị ghi đè bị ảnh hưởng."
+  },
+  "m13-17_q35": {
+    "question": "Loại mối đe dọa bảo mật nào sẽ phải chịu trách nhiệm nếu tiện ích bổ sung của bảng tính vô hiệu hóa tường lửa phần mềm cục bộ?",
+    "options": [
+      "DoS",
+      "ngựa thành Troy",
+      "tràn bộ đệm",
+      "cuộc tấn công bạo lực"
+    ],
+    "explanation": "Ngựa Trojan là phần mềm thực hiện điều gì đó có hại nhưng ẩn trong mã phần mềm hợp pháp. Cuộc tấn công từ chối dịch vụ (DoS) dẫn đến gián đoạn dịch vụ mạng đối với người dùng, thiết bị mạng hoặc ứng dụng. Một cuộc tấn công vũ phu thường liên quan đến việc cố gắng truy cập vào một thiết bị mạng. Tràn bộ đệm xảy ra khi một chương trình cố gắng lưu trữ nhiều dữ liệu hơn trong một vị trí bộ nhớ mà nó có thể chứa."
+  },
+  "m13-17_q36": {
+    "question": "Hai loại hacker nào thường được phân loại là hacker mũ xám? (Chọn hai.)",
+    "options": [
+      "những kẻ hacktivist",
+      "tội phạm mạng",
+      "nhà môi giới dễ bị tổn thương",
+      "kịch bản nhóc con",
+      "tin tặc được nhà nước bảo trợ"
+    ],
+    "explanation": "Hacker mũ xám có thể làm những việc phi đạo đức hoặc bất hợp pháp nhưng không vì lợi ích cá nhân hoặc gây thiệt hại. Những kẻ tấn công sử dụng hoạt động hack của họ như một hình thức phản kháng chính trị hoặc xã hội, và những kẻ môi giới lỗ hổng hack để phát hiện ra những điểm yếu và báo cáo chúng cho các nhà cung cấp. Tùy thuộc vào quan điểm của mỗi người, các tin tặc được nhà nước bảo trợ là những kẻ điều hành mũ trắng hoặc mũ đen. Những đứa trẻ viết kịch bản tạo ra các tập lệnh hack để gây thiệt hại hoặc gián đoạn. Tội phạm mạng sử dụng hoạt động hack để thu được lợi ích tài chính bằng các phương tiện bất hợp pháp."
+  },
+  "m13-17_q37": {
+    "question": "Một hacker mũ trắng đang sử dụng một công cụ bảo mật có tên Skipfish để khám phá các lỗ hổng của hệ thống máy tính. Đây là loại công cụ gì?",
+    "options": [
+      "trình gỡ lỗi",
+      "người làm mờ",
+      "máy quét lỗ hổng",
+      "máy dò gói"
+    ],
+    "explanation": "Fuzzer là công cụ được các tác nhân đe dọa sử dụng khi cố gắng khám phá các lỗ hổng của hệ thống máy tính. Ví dụ về bộ làm mờ bao gồm Skipfish, Wapiti và W3af."
+  },
+  "m13-17_q38": {
+    "question": "NetFlow cung cấp hai chức năng nào? (Chọn hai.)",
+    "options": [
+      "Nó sử dụng trí tuệ nhân tạo để phát hiện sự cố và hỗ trợ phân tích và ứng phó sự cố.",
+      "Nó cung cấp một bản kiểm tra đầy đủ các thông tin cơ bản về mọi luồng IP được chuyển tiếp trên thiết bị.",
+      "Nó cung cấp số liệu thống kê 24x7 về các gói truyền qua bộ định tuyến hoặc bộ chuyển mạch đa lớp của Cisco.",
+      "Nó cho phép quản trị viên nắm bắt lưu lượng mạng theo thời gian thực và phân tích toàn bộ nội dung của gói.",
+      "Nó trình bày dữ liệu sự kiện tương quan và tổng hợp trong quá trình theo dõi thời gian thực và tóm tắt dài hạn."
+    ],
+    "explanation": "NetFlow là công nghệ Cisco IOS cung cấp số liệu thống kê và các bản kiểm tra hoàn chỉnh về các luồng TCP/IP trên mạng. Một số khả năng của NetFlow bao gồm: giám sát an ninh và mạng 24x7, lập kế hoạch mạng, phân tích lưu lượng, xác định các tắc nghẽn mạng và tính toán IP cho mục đích thanh toán."
+  },
+  "m13-17_q39": {
+    "question": "Câu lệnh nào mô tả chức năng của công cụ SPAN được sử dụng trong bộ chuyển mạch Cisco?",
+    "options": [
+      "Đây là một kênh an toàn để switch gửi nhật ký đến máy chủ nhật ký hệ thống.",
+      "Nó cung cấp kết nối giữa các Vlan qua nhiều thiết bị chuyển mạch.",
+      "Nó hỗ trợ hoạt động bẫy SNMP trên switch.",
+      "Nó sao chép lưu lượng truy cập từ một cổng chuyển mạch và gửi nó đến một cổng chuyển mạch khác được kết nối với thiết bị giám sát."
+    ],
+    "explanation": "Để phân tích lưu lượng mạng đi qua một bộ chuyển mạch, có thể sử dụng bộ phân tích cổng chuyển mạch (SPAN). SPAN có thể gửi bản sao lưu lượng truy cập từ cổng này sang cổng khác trên cùng một bộ chuyển mạch nơi kết nối máy phân tích mạng hoặc thiết bị giám sát. SPAN không cần thiết cho syslog hoặc SNMP. SPAN được sử dụng để phản ánh lưu lượng truy cập, trong khi syslog và SNMP được định cấu hình để gửi dữ liệu trực tiếp đến máy chủ thích hợp."
+  },
+  "m13-17_q40": {
+    "question": "Hai phương pháp trốn tránh được tin tặc sử dụng là gì? (Chọn hai.)",
+    "options": [
+      "quét",
+      "tấn công truy cập",
+      "cạn kiệt tài nguyên",
+      "lừa đảo",
+      "mã hóa"
+    ],
+    "explanation": "Các phương pháp sau đây được tin tặc sử dụng để tránh bị phát hiện:Mã hóa và tạo đường hầm – ẩn hoặc xáo trộn nội dung phần mềm độc hại Cạn kiệt tài nguyên – giữ cho thiết bị chủ quá bận để phát hiện sự xâm nhập Phân mảnh lưu lượng – chia phần mềm độc hại thành nhiều gói Diễn giải sai ở cấp độ giao thức – lẻn qua tường lửa Pivot – sử dụng thiết bị mạng bị xâm nhập để thử truy cập vào thiết bị khác Rootkit – cho phép tin tặc tránh bị phát hiện cũng như ẩn phần mềm do tin tặc cài đặt"
+  },
+  "m13-17_q41": {
+    "question": "Cuộc tấn công nào liên quan đến việc các tác nhân đe dọa tự định vị giữa nguồn và đích với mục đích giám sát, nắm bắt và kiểm soát thông tin liên lạc một cách minh bạch?",
+    "options": [
+      "cuộc tấn công trung gian",
+      "tấn công DoS",
+      "Tấn công ICMP",
+      "Cuộc tấn công lũ lụt SYN"
+    ],
+    "explanation": "Cuộc tấn công trung gian là một cuộc tấn công phổ biến liên quan đến IP, trong đó các tác nhân đe dọa tự định vị giữa nguồn và đích để giám sát, nắm bắt và kiểm soát hoạt động liên lạc một cách minh bạch."
+  },
+  "m13-17_q42": {
+    "question": "Mục tiêu của hacker mũ trắng là gì?",
+    "options": [
+      "xác thực dữ liệu",
+      "sửa đổi dữ liệu",
+      "đánh cắp dữ liệu",
+      "bảo vệ dữ liệu"
+    ],
+    "explanation": "Hacker mũ trắng thực chất là những \"người tốt\" và được các công ty, chính phủ trả tiền để kiểm tra các lỗ hổng bảo mật để dữ liệu được bảo vệ tốt hơn."
+  },
+  "m13-17_q43": {
+    "question": "Sau khi mối đe dọa mạng đã được xác minh, Cơ quan An ninh và Cơ sở hạ tầng An ninh mạng (CISA) của Hoa Kỳ sẽ tự động chia sẻ thông tin an ninh mạng với các tổ chức công và tư nhân. Hệ thống tự động này được gọi là gì?",
+    "options": [
+      "AIS",
+      "NCSA",
+      "ENISA",
+      "NCASM"
+    ],
+    "explanation": "Các chính phủ hiện đang tích cực thúc đẩy an ninh mạng. Ví dụ: Cơ quan An ninh và Cơ sở hạ tầng An ninh mạng Hoa Kỳ (CISA) đang dẫn đầu các nỗ lực tự động hóa việc chia sẻ thông tin an ninh mạng với các tổ chức công và tư nhân miễn phí. CISA sử dụng một hệ thống có tên là Chia sẻ chỉ báo tự động (AIS). AIS cho phép chia sẻ các chỉ số tấn công giữa chính phủ Hoa Kỳ và khu vực tư nhân ngay khi các mối đe dọa được xác minh. CISA cung cấp nhiều tài nguyên giúp hạn chế quy mô bề mặt tấn công của Hoa Kỳ."
+  },
+  "m13-17_q44": {
+    "question": "Người dùng nhận được cuộc gọi điện thoại từ một người tuyên bố đại diện cho dịch vụ CNTT và sau đó yêu cầu người dùng đó xác nhận tên người dùng và mật khẩu cho mục đích kiểm tra. Cuộc gọi điện thoại này đại diện cho mối đe dọa bảo mật nào?",
+    "options": [
+      "thư rác",
+      "keylogging ẩn danh",
+      "DDoS",
+      "kỹ thuật xã hội"
+    ],
+    "explanation": "Kỹ thuật lừa đảo cố gắng lấy được lòng tin của nhân viên và thuyết phục người đó tiết lộ thông tin bí mật và nhạy cảm, chẳng hạn như tên người dùng và mật khẩu. Các cuộc tấn công DDoS, spam và keylogging đều là ví dụ về các mối đe dọa bảo mật dựa trên phần mềm, không phải kỹ thuật lừa đảo xã hội."
+  },
+  "m13-17_q45": {
+    "question": "Hai đặc điểm nào mô tả một con sâu? (Chọn hai)",
+    "options": [
+      "là tự sao chép",
+      "di chuyển đến các máy tính mới mà không có bất kỳ sự can thiệp hay nhận thức nào của người dùng",
+      "lây nhiễm vào máy tính bằng cách gắn vào mã phần mềm",
+      "ẩn trong trạng thái không hoạt động cho đến khi kẻ tấn công cần",
+      "thực thi khi phần mềm được chạy trên máy tính"
+    ],
+    "explanation": "Worm là những phần mềm tự sao chép, tiêu tốn băng thông trên mạng khi chúng truyền từ hệ thống này sang hệ thống khác. Chúng không yêu cầu ứng dụng máy chủ, không giống như virus. Mặt khác, vi-rút mang mã độc thực thi gây hại cho máy mục tiêu mà chúng cư trú."
+  },
+  "m13-17_q46": {
+    "question": "Kẻ tấn công đang chuyển hướng lưu lượng truy cập đến một cổng mặc định sai nhằm cố gắng chặn lưu lượng dữ liệu của mạng chuyển mạch. Loại tấn công nào có thể đạt được điều này?",
+    "options": [
+      "địa chỉ MAC snoopin",
+      "DHCP rình mò",
+      "Thiếu địa chỉ MAC",
+      "giả mạo DHCP"
+    ],
+    "explanation": "Trong các cuộc tấn công giả mạo DHCP, kẻ tấn công định cấu hình máy chủ DHCP giả trên mạng để cấp địa chỉ DHCP cho máy khách nhằm mục đích buộc máy khách sử dụng cổng mặc định sai và các dịch vụ sai khác. DHCP snooping là một tính năng chuyển mạch của Cisco có thể giảm thiểu các cuộc tấn công DHCP. Việc bỏ đói địa chỉ MAC và rình mò địa chỉ MAC không phải là các cuộc tấn công bảo mật được công nhận. Giả mạo địa chỉ MAC là một mối đe dọa an ninh mạng."
+  },
+  "m13-17_q47": {
+    "question": "Mục tiêu của cuộc tấn công SQL SQL là gì?",
+    "options": [
+      "DHCP",
+      "DNS",
+      "e-mail",
+      "cơ sở dữ liệu"
+    ],
+    "explanation": "SQL là ngôn ngữ được sử dụng để truy vấn cơ sở dữ liệu quan hệ. Tội phạm mạng sử dụng tính năng chèn SQL để lấy thông tin, tạo các truy vấn giả mạo hoặc độc hại hoặc xâm phạm cơ sở dữ liệu theo một cách nào đó."
+  },
+  "m13-17_q48": {
+    "question": "Bộ phận CNTT đang báo cáo rằng máy chủ web của công ty đang nhận được số lượng yêu cầu trang web cao bất thường cùng một lúc từ các vị trí khác nhau. Loại tấn công bảo mật nào đang xảy ra?",
+    "options": [
+      "kỹ thuật xã hội",
+      "phần mềm quảng cáo",
+      "DDoS",
+      "lừa đảo",
+      "phần mềm gián điệp"
+    ],
+    "explanation": "Lừa đảo, phần mềm gián điệp và kỹ thuật xã hội là các cuộc tấn công bảo mật nhằm thu thập thông tin mạng và người dùng. Phần mềm quảng cáo thường bao gồm các cửa sổ bật lên gây phiền nhiễu. Không giống như cuộc tấn công DDoS, không cuộc tấn công nào trong số này tạo ra lượng lớn lưu lượng dữ liệu có thể hạn chế quyền truy cập vào các dịch vụ mạng."
+  },
+  "m13-17_q49": {
+    "question": "Tại sao kẻ tấn công muốn giả mạo địa chỉ MAC?",
+    "options": [
+      "để kẻ tấn công có thể nắm bắt lưu lượng truy cập từ nhiều Vlan thay vì chỉ từ Vlan được gán cho cổng mà thiết bị kẻ tấn công được gắn vào",
+      "để một switch trên mạng LAN sẽ bắt đầu chuyển tiếp khung hình cho kẻ tấn công thay vì tới máy chủ hợp pháp",
+      "để một công tắc trên mạng LAN sẽ bắt đầu chuyển tiếp tất cả các khung tới thiết bị nằm dưới sự kiểm soát của kẻ tấn công (sau đó có thể nắm bắt được lưu lượng mạng LAN)",
+      "để kẻ tấn công có thể khởi động một kiểu tấn công khác nhằm giành quyền truy cập vào bộ chuyển mạch"
+    ],
+    "explanation": "Giả mạo địa chỉ MAC được sử dụng để vượt qua các biện pháp bảo mật bằng cách cho phép kẻ tấn công mạo danh một thiết bị máy chủ hợp pháp, thường nhằm mục đích thu thập lưu lượng truy cập mạng."
+  },
+  "m13-17_q50": {
+    "question": "Nối khái niệm bảo mật với mô tả.",
+    "options": [
+      "Rủi ro (Risk) -> Khả năng/xác suất xảy ra các hậu quả không mong muốn.",
+      "Khai thác (Exploit) -> Cơ chế hoặc đoạn mã được dùng để xâm phạm/tấn công một tài sản.",
+      "Lỗ hổng (Vulnerability) -> Điểm yếu trong hệ thống hoặc thiết kế.",
+      "Mối đe dọa (Threat) -> Mối nguy hiểm tiềm tàng đối với một tài sản."
+    ],
+    "explanation": ""
+  },
+  "m13-17_q51": {
+    "question": "Hai đặc điểm nào mô tả một loại virus? (Chọn hai.)",
+    "options": [
+      "Mã độc hại có thể không hoạt động trước khi thực hiện một hành động không mong muốn.",
+      "Phần mềm độc hại thực thi mã tùy ý và cài đặt các bản sao của chính nó vào bộ nhớ.",
+      "Phần mềm độc hại dựa vào hành động của người dùng hoặc chương trình để kích hoạt.",
+      "Mã chương trình được thiết kế đặc biệt để làm hỏng bộ nhớ trong các thiết bị mạng.",
+      "Một cuộc tấn công tự sao chép được phát động độc lập."
+    ],
+    "explanation": "Vi-rút là mã độc được đính kèm vào các chương trình hợp pháp hoặc tệp thực thi. Hầu hết các vi-rút đều yêu cầu người dùng cuối kích hoạt, có thể nằm im trong một thời gian dài và sau đó kích hoạt vào một thời điểm hoặc ngày cụ thể. Ngược lại, sâu thực thi mã tùy ý và cài đặt các bản sao của chính nó vào bộ nhớ của máy tính bị nhiễm. Mục đích chính của sâu là tự động sao chép để lây lan nhanh chóng trên mạng. Một con sâu không cần có chương trình máy chủ để chạy."
+  },
+  "m13-17_q52": {
+    "question": "Loại tấn công bảo mật nào sẽ cố gắng tràn bộ đệm?",
+    "options": [
+      "phần mềm tống tiền",
+      "trinh sát",
+      "DoS",
+      "đồ hù dọa"
+    ],
+    "explanation": "Các cuộc tấn công từ chối dịch vụ (DoS) cố gắng làm gián đoạn dịch vụ trên mạng bằng cách gửi một lượng dữ liệu quá lớn đến một thiết bị cụ thể để không thiết bị nào khác có thể truy cập vào thiết bị bị tấn công hoặc bằng cách gửi các gói không đúng định dạng."
+  },
+  "m18-20_q1": {
+    "question": "Tại sao quản lý tài sản là một chức năng quan trọng của một tổ chức đang phát triển trước các mối đe dọa an ninh?",
+    "options": [
+      "Nó xác định bề mặt tấn công ngày càng tăng đối với các mối đe dọa.",
+      "Nó cho phép xây dựng một AUP toàn diện.",
+      "Nó phục vụ để duy trì một dấu vết kiểm toán của tất cả các giao dịch mua mới.",
+      "Nó ngăn chặn hành vi trộm cắp tài sản cũ đã ngừng hoạt động."
+    ],
+    "explanation": "Quản lý tài sản là một thành phần quan trọng của một tổ chức đang phát triển từ khía cạnh bảo mật. Quản lý tài sản bao gồm việc kiểm kê tất cả tài sản, sau đó phát triển và thực hiện các chính sách và thủ tục để bảo vệ chúng. Khi một tổ chức phát triển, cuộc tấn công cũng xuất hiện các mối đe dọa bảo mật. Mỗi tài sản này có thể thu hút các tác nhân đe dọa khác nhau có trình độ kỹ năng và động cơ khác nhau. Quản lý tài sản có thể giúp giảm thiểu các mối đe dọa này bằng cách kiểm kê các rủi ro khi bề mặt tấn công phát triển."
+  },
+  "m18-20_q2": {
+    "question": "Trong cách tiếp cận phòng thủ chuyên sâu, ba lựa chọn nào phải được xác định để bảo vệ mạng một cách hiệu quả trước các cuộc tấn công? (Chọn ba.)",
+    "options": [
+      "tổng số thiết bị kết nối với mạng có dây và không dây",
+      "tài sản cần bảo vệ",
+      "lỗ hổng trong hệ thống",
+      "vị trí của kẻ tấn công hoặc kẻ tấn công",
+      "vi phạm an ninh trong quá khứ",
+      "mối đe dọa đối với tài sản"
+    ],
+    "explanation": "Để chuẩn bị cho một cuộc tấn công bảo mật, nhân viên bảo mật CNTT phải xác định các tài sản cần được bảo vệ như máy chủ, bộ định tuyến, điểm truy cập và thiết bị đầu cuối. Họ cũng phải xác định các mối đe dọa tiềm ẩn đối với tài sản và lỗ hổng trong hệ thống hoặc thiết kế."
+  },
+  "m18-20_q3": {
+    "question": "Tuyến phòng thủ đầu tiên khi một tổ chức đang sử dụng phương pháp tiếp cận phòng thủ chuyên sâu đối với an ninh mạng là gì?",
+    "options": [
+      "bộ định tuyến biên",
+      "tường lửa",
+      "máy chủ proxy",
+      "IPS"
+    ],
+    "explanation": "Phương pháp phòng thủ chuyên sâu sử dụng các lớp biện pháp bảo mật bắt đầu từ biên mạng, hoạt động xuyên suốt mạng và cuối cùng kết thúc ở các điểm cuối mạng. Bộ định tuyến ở biên mạng là tuyến phòng thủ đầu tiên và chuyển tiếp lưu lượng truy cập dành cho mạng nội bộ tới tường lửa."
+  },
+  "m18-20_q4": {
+    "question": "Chính sách bảo mật BYOD hoàn thành ba mục tiêu nào? (Chọn ba.)",
+    "options": [
+      "xác định tất cả các dấu hiệu phần mềm độc hại và đồng bộ hóa chúng trên cơ sở dữ liệu của công ty",
+      "xác định nhân viên nào có thể mang theo thiết bị của riêng họ",
+      "xác định các biện pháp bảo vệ cần áp dụng nếu thiết bị bị xâm phạm",
+      "xác định và ngăn chặn tất cả các dấu hiệu virus heuristic",
+      "xác định danh sách các trang web mà người dùng không được phép truy cập",
+      "mô tả quyền truy cập và các hoạt động được phép của nhân viên an ninh trên thiết bị"
+    ],
+    "explanation": "Chính sách BYOD toàn diện phải đạt được những mục sau: Nhận dạng nhân viên nào có thể mang theo thiết bị của riêng mình Xác định thiết bị nào sẽ được hỗ trợ Xác định mức độ truy cập mà nhân viên được cấp khi sử dụng thiết bị cá nhân Mô tả quyền truy cập và các hoạt động được phép đối với nhân viên an ninh trên thiết bị Xác định các quy định phải tuân thủ khi sử dụng thiết bị của nhân viên Xác định các biện pháp bảo vệ cần áp dụng nếu thiết bị bị xâm phạm"
+  },
+  "m18-20_q5": {
+    "question": "Hai lựa chọn nào là phương pháp bảo mật tốt nhất giúp giảm thiểu rủi ro BYOD? (Chọn hai.)",
+    "options": [
+      "Sử dụng sơn phản chiếu tín hiệu không dây và kính để ngăn tín hiệu đi ra ngoài tòa nhà.",
+      "Luôn cập nhật hệ điều hành và phần mềm của thiết bị.",
+      "Chỉ cho phép các thiết bị đã được nhóm CNTT của công ty phê duyệt.",
+      "Chỉ bật Wi-Fi khi sử dụng mạng không dây.",
+      "Giảm mức khuếch đại ăng-ten không dây.",
+      "Sử dụng tính năng lọc địa chỉ MAC không dây."
+    ],
+    "explanation": "Nhiều công ty hiện nay hỗ trợ nhân viên và khách truy cập gắn và sử dụng các thiết bị không dây kết nối và sử dụng mạng không dây của công ty. Thông lệ này được gọi là chính sách mang theo thiết bị của riêng bạn hoặc BYOD. Thông thường, các biện pháp bảo mật BYOD được bao gồm trong chính sách bảo mật. Một số phương pháp hay nhất giúp giảm thiểu rủi ro BYOD bao gồm: Sử dụng mật khẩu duy nhất cho từng thiết bị và tài khoản. Tắt kết nối Wi-Fi và Bluetooth khi không sử dụng. Chỉ kết nối với các mạng đáng tin cậy. Luôn cập nhật hệ điều hành của thiết bị và phần mềm khác. Sao lưu mọi dữ liệu được lưu trữ trên thiết bị. Đăng ký dịch vụ định vị thiết bị với tính năng xóa từ xa. Cung cấp phần mềm chống vi-rút cho BYOD được phê duyệt. Sử dụng phần mềm Quản lý thiết bị di động (MDM) cho phép nhóm CNTT theo dõi thiết bị và triển khai cài đặt bảo mật cũng như kiểm soát phần mềm."
+  },
+  "m18-20_q6": {
+    "question": "Mục đích của phần mềm quản lý thiết bị di động (MDM) là gì?",
+    "options": [
+      "Nó được sử dụng để tạo ra một chính sách bảo mật.",
+      "Nó được sử dụng để thực hiện các chính sách bảo mật, cài đặt và cấu hình phần mềm trên thiết bị di động.",
+      "Nó được sử dụng để xác định các lỗ hổng tiềm ẩn của thiết bị di động.",
+      "Nó được sử dụng bởi các tác nhân đe dọa để xâm nhập vào hệ thống."
+    ],
+    "explanation": "Phần mềm quản lý thiết bị di động (MDM) được sử dụng với các thiết bị di động để nhân viên CNTT của công ty có thể theo dõi thiết bị, thực hiện cài đặt bảo mật cũng như kiểm soát cấu hình phần mềm."
+  },
+  "m18-20_q7": {
+    "question": "Chính sách bảo mật của quy trình xử lý sự cố mô tả điều gì?",
+    "options": [
+      "Nó mô tả cách xử lý các sự cố bảo mật.",
+      "Nó mô tả quy trình kiểm tra mạng sau một cuộc tấn công mạng.",
+      "Nó mô tả quy trình giảm thiểu các cuộc tấn công mạng.",
+      "Nó mô tả cách ngăn chặn các cuộc tấn công mạng khác nhau."
+    ],
+    "explanation": "Chính sách bảo mật của quy trình xử lý sự cố mô tả cách xử lý các sự cố bảo mật."
+  },
+  "m18-20_q8": {
+    "question": "Hãy ghép loại chính sách kinh doanh với phần mô tả.",
+    "options": [
+      "Chính sách an ninh (Security) -> Xác định các yêu cầu và mục tiêu hệ thống, các quy tắc cho người dùng khi kết nối vào mạng.",
+      "Chính sách công ty (Company) -> Bảo vệ quyền lợi của người lao động và lợi ích của công ty.",
+      "Chính sách nhân viên (Employee) -> Xác định mức lương, lịch trả lương, phúc lợi, lịch làm việc, ngày nghỉ phép, v.v."
+    ],
+    "explanation": "xác định các yêu cầu và mục tiêu hệ thống, quy tắc và yêu cầu đối với người dùng khi họ kết nối hoặc trên mạng ==> bảo mật bảo vệ quyền của người lao động và lợi ích của công ty ==> công ty xác định mức lương, lịch trả lương, phúc lợi, lịch làm việc, kỳ nghỉ, v.v. ==> nhân viên"
+  },
+  "m18-20_q9": {
+    "question": "Hãy ghép các tiêu chuẩn chia sẻ thông tin về mối đe dọa với mô tả.",
+    "options": [
+      "TAXII -> Đặc tả giao thức tầng ứng dụng cho phép truyền tải thông tin tình báo mối đe dọa (CTI) qua HTTPS.",
+      "STIX -> Bộ đặc tả định dạng chuẩn hóa để trao đổi thông tin mối đe dọa mạng giữa các tổ chức.",
+      "CybOX -> Tập hợp các lược đồ chuẩn hóa để xác định, thu thập và truyền đạt các sự kiện/thuộc tính vận hành mạng."
+    ],
+    "explanation": "Đây là thông số kỹ thuật cho giao thức lớp ứng dụng cho phép giao tiếp CTI qua HTTPS. ==> TAXII Đây là bộ thông số kỹ thuật để trao đổi thông tin về mối đe dọa mạng giữa các tổ chức. ==> STIX Đây là một tập hợp các lược đồ được tiêu chuẩn hóa để chỉ định, nắm bắt, mô tả đặc điểm và truyền đạt các sự kiện cũng như thuộc tính của các hoạt động mạng. ==> CybOX"
+  },
+  "m18-20_q10": {
+    "question": "Mục đích chính của Diễn đàn Nhóm An ninh và Ứng phó Sự cố (FIRST) là gì?",
+    "options": [
+      "để cho phép nhiều nhóm ứng phó sự cố bảo mật máy tính khác nhau cộng tác, hợp tác và điều phối việc chia sẻ thông tin, phòng ngừa sự cố và các chiến lược phản ứng nhanh",
+      "để cung cấp một cổng tin tức bảo mật tổng hợp các tin tức mới nhất liên quan đến cảnh báo, khai thác và lỗ hổng",
+      "để cung cấp các cảnh báo và tư vấn về mối đe dọa mạng 24×7, xác định lỗ hổng cũng như giảm thiểu và ứng phó sự cố",
+      "để cung cấp các sản phẩm giáo dục trung lập và dịch vụ nghề nghiệp cho các chuyên gia trong ngành trên toàn thế giới"
+    ],
+    "explanation": "Mục đích chính của Diễn đàn các nhóm bảo mật và ứng phó sự cố (FIRST) là cho phép nhiều nhóm ứng phó sự cố bảo mật máy tính khác nhau cộng tác, hợp tác và điều phối việc chia sẻ thông tin, ngăn ngừa sự cố và phản ứng nhanh giữa các đội."
+  },
+  "m18-20_q11": {
+    "question": "Mục đích chính của Nền tảng chia sẻ thông tin phần mềm độc hại (MISP) là gì?",
+    "options": [
+      "xuất bản tất cả các tài liệu thông tin về các mối đe dọa mạng đã biết và mới được phát hiện",
+      "để cho phép chia sẻ tự động IOC giữa người và máy bằng cách sử dụng STIX và các định dạng xuất khác",
+      "để cung cấp một tập hợp các lược đồ được tiêu chuẩn hóa để chỉ định và nắm bắt các sự kiện và thuộc tính của hoạt động mạng",
+      "để trao đổi tất cả các cơ chế phản ứng với các mối đe dọa đã biết"
+    ],
+    "explanation": "Nền tảng chia sẻ thông tin phần mềm độc hại (MISP) là một nền tảng nguồn mở cho phép chia sẻ tự động IOC giữa người và máy bằng cách sử dụng STIX và các định dạng xuất khác."
+  },
+  "m18-20_q12": {
+    "question": "Câu nào mô tả Trao đổi thông tin chỉ báo tự động đáng tin cậy (TAXII)?",
+    "options": [
+      "Nó là một bộ thông số kỹ thuật để trao đổi thông tin về mối đe dọa mạng giữa các tổ chức.",
+      "Đây là một công cụ không có chữ ký sử dụng phân tích tấn công trạng thái để phát hiện các mối đe dọa zero-day.",
+      "Nó là một cơ sở dữ liệu động về các lỗ hổng thời gian thực.",
+      "Đây là thông số kỹ thuật cho giao thức lớp ứng dụng cho phép giao tiếp CTI qua HTTPS."
+    ],
+    "explanation": "Trao đổi thông tin chỉ báo tự động đáng tin cậy (TAXII) là thông số kỹ thuật cho giao thức lớp ứng dụng cho phép giao tiếp CTI qua HTTPS. TAXII được thiết kế để hỗ trợ Biểu hiện thông tin mối đe dọa có cấu trúc (STIX)."
+  },
+  "m18-20_q13": {
+    "question": "Tổ chức nào xác định Mã nhận dạng CVE duy nhất cho các lỗ hổng bảo mật thông tin được biết đến rộng rãi giúp chia sẻ dữ liệu dễ dàng hơn?",
+    "options": [
+      "Cisco Talos",
+      "DHS",
+      "Mắt Lửa",
+      "MITER"
+    ],
+    "explanation": "Chính phủ Hoa Kỳ đã tài trợ cho Tập đoàn MITER để tạo và duy trì một danh mục các mối đe dọa bảo mật đã biết được gọi là Các lỗ hổng và nguy cơ phơi nhiễm phổ biến (CVE). CVE đóng vai trò như một từ điển các tên phổ biến (tức là Mã nhận dạng CVE) cho các lỗ hổng an ninh mạng được biết đến rộng rãi."
+  },
+  "m18-20_q14": {
+    "question": "FireEye phát hiện và ngăn chặn các cuộc tấn công zero-day như thế nào?",
+    "options": [
+      "bằng cách thiết lập một tham số xác thực trước khi trao đổi dữ liệu",
+      "bằng cách giải quyết tất cả các giai đoạn của vòng đời tấn công bằng công cụ không có chữ ký sử dụng phân tích tấn công trạng thái",
+      "bằng cách giữ một phân tích chi tiết về tất cả các loại virus và phần mềm độc hại",
+      "bằng cách chỉ chấp nhận các gói dữ liệu được mã hóa xác thực dựa trên các giá trị băm được cấu hình của chúng"
+    ],
+    "explanation": "FireEye sử dụng cách tiếp cận ba hướng kết hợp thông tin bảo mật, chuyên môn bảo mật và công nghệ. Nó giải quyết tất cả các giai đoạn của vòng đời tấn công bằng một công cụ không có chữ ký sử dụng phân tích tấn công trạng thái để phát hiện các mối đe dọa chưa từng có."
+  },
+  "m18-20_q15": {
+    "question": "Chức năng chính của Trung tâm An ninh Internet (CIS) là gì?",
+    "options": [
+      "để duy trì danh sách các lỗ hổng và mức độ phơi nhiễm phổ biến (CVE) được các tổ chức bảo mật sử dụng",
+      "để cung cấp một cổng tin tức bảo mật tổng hợp các tin tức mới nhất liên quan đến cảnh báo, khai thác và lỗ hổng",
+      "để cung cấp các cảnh báo và tư vấn về mối đe dọa mạng 24×7, xác định lỗ hổng cũng như giảm thiểu và ứng phó sự cố",
+      "để cung cấp các sản phẩm giáo dục trung lập với nhà cung cấp và dịch vụ nghề nghiệp cho các chuyên gia trong ngành trên toàn thế giới"
+    ],
+    "explanation": "CIS cung cấp các cảnh báo và tư vấn về mối đe dọa mạng 24x7, xác định lỗ hổng cũng như giảm thiểu và ứng phó sự cố cho chính quyền tiểu bang, địa phương, bộ lạc và lãnh thổ (SLTT) thông qua Trung tâm phân tích và chia sẻ thông tin đa tiểu bang (MS-ISAC)."
+  },
+  "m18-20_q16": {
+    "question": "CybOX là gì?",
+    "options": [
+      "Đây là thông số kỹ thuật cho giao thức lớp ứng dụng cho phép giao tiếp CTI qua HTTPS.",
+      "Nó là một tập hợp các lược đồ được tiêu chuẩn hóa để xác định, nắm bắt, mô tả đặc điểm và truyền đạt các sự kiện và thuộc tính của các hoạt động mạng.",
+      "Nó cho phép trao đổi thời gian thực các chỉ số về mối đe dọa mạng giữa Chính phủ Liên bang Hoa Kỳ và khu vực tư nhân.",
+      "Đây là một danh mục các mối đe dọa bảo mật đã biết được gọi là Lỗ hổng bảo mật và phơi nhiễm phổ biến (CVE) dành cho các lỗ hổng an ninh mạng được biết đến rộng rãi."
+    ],
+    "explanation": "CybOX là một bộ tiêu chuẩn mở cung cấp các thông số kỹ thuật hỗ trợ trao đổi tự động thông tin tình báo về mối đe dọa mạng theo định dạng chuẩn. Nó là một tập hợp các lược đồ được tiêu chuẩn hóa để chỉ định, nắm bắt, mô tả đặc điểm và truyền đạt các sự kiện cũng như thuộc tính của các hoạt động mạng hỗ trợ nhiều chức năng an ninh mạng."
+  },
+  "m18-20_q17": {
+    "question": "Quản trị viên máy chủ web đang định cấu hình cài đặt truy cập để yêu cầu người dùng xác thực trước khi truy cập một số trang web nhất định. Yêu cầu nào về bảo mật thông tin được giải quyết thông qua cấu hình?",
+    "options": [
+      "sẵn có",
+      "chính trực",
+      "khả năng mở rộng",
+      "bí mật"
+    ],
+    "explanation": "Tính bảo mật đảm bảo rằng dữ liệu chỉ được truy cập bởi những cá nhân được ủy quyền. Xác thực sẽ giúp xác minh danh tính của các cá nhân."
+  },
+  "m18-20_q18": {
+    "question": "Khi thiết kế mạng nguyên mẫu cho cụm máy chủ mới, nhà thiết kế mạng chọn sử dụng các liên kết dự phòng để kết nối với phần còn lại của mạng. Lựa chọn này sẽ giải quyết mục tiêu kinh doanh nào?",
+    "options": [
+      "sẵn có",
+      "khả năng quản lý",
+      "bảo vệ",
+      "khả năng mở rộng"
+    ],
+    "explanation": "Tính sẵn sàng là một trong những thành phần của bảo mật thông tin, trong đó người dùng được ủy quyền phải có quyền truy cập liên tục vào các tài nguyên và dữ liệu quan trọng."
+  },
+  "m18-20_q19": {
+    "question": "Khi kiểm tra bảo mật được thực hiện tại một công ty, kiểm toán viên sẽ báo cáo rằng người dùng mới có quyền truy cập vào tài nguyên mạng ngoài vai trò công việc thông thường của họ. Ngoài ra, người dùng chuyển đến các vị trí khác vẫn giữ được quyền trước đó của họ. Loại vi phạm nào đang xảy ra?",
+    "options": [
+      "đặc quyền tối thiểu",
+      "chính sách mạng",
+      "mật khẩu",
+      "kiểm toán"
+    ],
+    "explanation": "Người dùng phải có quyền truy cập vào thông tin trên cơ sở cần biết. Khi người dùng chuyển từ vai trò công việc này sang vai trò công việc khác, khái niệm tương tự cũng được áp dụng."
+  },
+  "m18-20_q20": {
+    "question": "Thành phần nào của mô hình bảo mật không tin cậy tập trung vào quyền truy cập an toàn khi API, vi dịch vụ hoặc vùng chứa đang truy cập cơ sở dữ liệu trong ứng dụng?",
+    "options": [
+      "quy trình làm việc",
+      "lực lượng lao động",
+      "khối lượng công việc",
+      "nơi làm việc"
+    ],
+    "explanation": "Trụ cột khối lượng công việc tập trung vào các ứng dụng đang chạy trên đám mây, trong trung tâm dữ liệu và các môi trường ảo hóa khác tương tác với nhau. Nó tập trung vào quyền truy cập an toàn khi API, microservice hoặc container đang truy cập cơ sở dữ liệu trong một ứng dụng."
+  },
+  "m18-20_q21": {
+    "question": "Mục đích của chức năng kế toán an ninh mạng là gì?",
+    "options": [
+      "để xác định tài nguyên nào người dùng có thể truy cập",
+      "để đưa ra các câu hỏi thử thách và trả lời",
+      "để theo dõi hành động của người dùng",
+      "yêu cầu người dùng chứng minh họ là ai"
+    ],
+    "explanation": "Xác thực, ủy quyền và tính toán là các dịch vụ mạng được gọi chung là AAA. Xác thực yêu cầu người dùng chứng minh họ là ai. Ủy quyền xác định tài nguyên nào người dùng có thể truy cập. Kế toán theo dõi các hành động của người dùng."
+  },
+  "m18-20_q22": {
+    "question": "Thuật ngữ nào mô tả khả năng của một máy chủ web trong việc lưu giữ nhật ký của những người dùng truy cập vào máy chủ, cũng như khoảng thời gian họ sử dụng nó?",
+    "options": [
+      "xác thực",
+      "kế toán",
+      "phân quyền",
+      "ủy quyền"
+    ],
+    "explanation": "Kế toán ghi lại những gì người dùng làm và khi nào họ làm điều đó, bao gồm những gì được truy cập, lượng thời gian tài nguyên được truy cập và mọi thay đổi đã được thực hiện. Kế toán theo dõi cách sử dụng tài nguyên mạng."
+  },
+  "m18-20_q23": {
+    "question": "Ghép thành phần bảo mật thông tin với mô tả.",
+    "options": [
+      "Tính bảo mật (Confidentiality) -> Chỉ những cá nhân, thực thể hoặc tiến trình được ủy quyền mới có thể truy cập thông tin nhạy cảm.",
+      "Tính toàn vẹn (Integrity) -> Dữ liệu được bảo vệ để không bị thay đổi hoặc sửa đổi trái phép.",
+      "Tính sẵn sàng (Availability) -> Người dùng được ủy quyền phải có quyền truy cập không bị gián đoạn vào tài nguyên và dữ liệu quan trọng."
+    ],
+    "explanation": "Chỉ những cá nhân, tổ chức hoặc quy trình được ủy quyền mới có thể truy cập thông tin nhạy cảm. : tính bảo mật Dữ liệu được bảo vệ khỏi những thay đổi trái phép. : Tính toàn vẹn Người dùng được ủy quyền phải có quyền truy cập liên tục vào các tài nguyên và dữ liệu quan trọng. : sẵn có"
+  },
+  "m18-20_q24": {
+    "question": "Hai đặc điểm của giao thức RADIUS là gì? (Chọn hai.)",
+    "options": [
+      "mã hóa toàn bộ phần thân của gói",
+      "chỉ mã hóa mật khẩu",
+      "việc sử dụng các cổng UDP để xác thực và tính toán",
+      "sự tách biệt giữa quá trình xác thực và ủy quyền",
+      "việc sử dụng cổng TCP 49"
+    ],
+    "explanation": "RADIUS là giao thức AAA tiêu chuẩn mở sử dụng cổng UDP 1645 hoặc 1812 để xác thực và cổng UDP 1646 hoặc 1813 để tính toán. Nó kết hợp xác thực và ủy quyền thành một quy trình."
+  },
+  "m18-20_q25": {
+    "question": "Thành phần AAA nào có thể được thiết lập bằng thẻ token?",
+    "options": [
+      "kế toán",
+      "ủy quyền",
+      "xác thực",
+      "kiểm toán"
+    ],
+    "explanation": "Thành phần xác thực của AAA được thiết lập bằng cách sử dụng kết hợp tên người dùng và mật khẩu, câu hỏi thử thách và phản hồi cũng như thẻ mã thông báo. Thành phần ủy quyền của AAA xác định tài nguyên nào người dùng có thể truy cập và hoạt động nào người dùng được phép thực hiện. Thành phần kế toán và kiểm toán của AAA theo dõi cách sử dụng tài nguyên mạng."
+  },
+  "m18-20_q26": {
+    "question": "Đặc điểm của đường lối an ninh, phòng thủ theo chiều sâu là gì?",
+    "options": [
+      "Các tác nhân đe dọa có thể dễ dàng xâm phạm tất cả các lớp bảo vệ dữ liệu hoặc hệ thống.",
+      "Các tác nhân đe dọa không còn phải bóc từng lớp trước khi tiếp cận dữ liệu hoặc hệ thống mục tiêu.",
+      "Các tác nhân đe dọa không còn có thể xâm nhập vào bất kỳ lớp nào đang bảo vệ dữ liệu hoặc hệ thống.",
+      "Mỗi lớp phải được thâm nhập trước khi tác nhân đe dọa có thể tiếp cận dữ liệu hoặc hệ thống mục tiêu."
+    ],
+    "explanation": "Trong cơ chế bảo mật atisô, cách tiếp cận phòng thủ chuyên sâu không phải lớp nào cũng cần bị tác nhân đe dọa xâm nhập để lấy được dữ liệu hoặc hệ thống. Mỗi lớp cung cấp một lớp bảo vệ đồng thời cung cấp đường dẫn để tấn công."
+  },
+  "m18-20_q27": {
+    "question": "Đặc điểm của phương pháp bảo mật theo chiều sâu phòng thủ theo lớp là gì?",
+    "options": [
+      "Ba hoặc nhiều thiết bị được sử dụng.",
+      "Bộ định tuyến được thay thế bằng tường lửa.",
+      "Sự thất bại của một biện pháp bảo vệ không ảnh hưởng đến hiệu quả của các biện pháp bảo vệ khác.",
+      "Khi một thiết bị bị lỗi, một thiết bị khác sẽ thay thế."
+    ],
+    "explanation": "Khi sử dụng phương pháp bảo mật theo chiều sâu phòng thủ theo lớp, các lớp bảo mật sẽ được đặt xuyên suốt tổ chức - ở biên, trong mạng và trên các điểm cuối. Các lớp làm việc cùng nhau để tạo ra kiến ​​trúc bảo mật. Trong môi trường này, việc một biện pháp bảo vệ không thành công sẽ không ảnh hưởng đến hiệu quả của các biện pháp bảo vệ khác."
+  },
+  "m18-20_q28": {
+    "question": "Lợi ích của cách tiếp cận phòng thủ theo chiều sâu là gì?",
+    "options": [
+      "Tất cả các lỗ hổng mạng đều được giảm nhẹ.",
+      "Sự cần thiết của tường lửa được loại bỏ.",
+      "Chỉ cần một lớp bảo mật duy nhất ở lõi mạng.",
+      "Hiệu quả của các biện pháp bảo mật khác không bị ảnh hưởng khi cơ chế bảo mật bị lỗi."
+    ],
+    "explanation": "Lợi ích của cách tiếp cận phòng thủ chuyên sâu là việc phòng thủ mạng được triển khai theo từng lớp sao cho lỗi của bất kỳ cơ chế bảo mật đơn lẻ nào cũng không ảnh hưởng đến các biện pháp bảo mật khác."
+  },
+  "m18-20_q29": {
+    "question": "Nối thuật ngữ với mô tả.",
+    "options": [
+      "Tài sản (Assets) -> Thông tin hoặc thiết bị có giá trị đối với tổ chức cần được bảo vệ.",
+      "Mối đe dọa (Threats) -> Các nguy cơ tiềm tàng đe dọa đến tài sản được bảo vệ.",
+      "Lỗ hổng (Vulnerabilities) -> Các điểm yếu hoặc sơ hở trong một hệ thống hoặc thiết kế."
+    ],
+    "explanation": "Đặt các tùy chọn theo thứ tự sau: thông tin tài sản hoặc thiết bị đủ giá trị đối với một tổ chức để đảm bảo các mối đe dọa bảo vệ những mối nguy hiểm tiềm ẩn đối với tài sản được bảo vệ lỗ hổng điểm yếu trong hệ thống hoặc thiết kế"
+  },
+  "m18-20_q30": {
+    "question": "Nguyên tắc đằng sau mô hình kiểm soát truy cập không tùy ý là gì?",
+    "options": [
+      "Nó áp dụng kiểm soát truy cập chặt chẽ nhất có thể.",
+      "Nó cho phép các quyết định truy cập dựa trên vai trò và trách nhiệm của người dùng trong tổ chức.",
+      "Nó cho phép người dùng kiểm soát quyền truy cập vào dữ liệu của họ với tư cách là chủ sở hữu của dữ liệu đó.",
+      "Nó cho phép truy cập dựa trên thuộc tính của đối tượng được truy cập."
+    ],
+    "explanation": "Mô hình kiểm soát truy cập không tùy ý sử dụng vai trò và trách nhiệm của người dùng làm cơ sở cho các quyết định truy cập."
+  },
+  "m18-20_q31": {
+    "question": "Loại kiểm soát truy cập nào áp dụng kiểm soát truy cập nghiêm ngặt nhất và thường được sử dụng trong các ứng dụng quân sự hoặc nhiệm vụ quan trọng?",
+    "options": [
+      "Kiểm soát truy cập không tùy ý",
+      "kiểm soát truy cập tùy ý (DAC)",
+      "Kiểm soát truy cập dựa trên thuộc tính (ABAC)",
+      "kiểm soát truy cập bắt buộc (MAC)"
+    ],
+    "explanation": "Các mô hình kiểm soát truy cập được sử dụng để xác định các biện pháp kiểm soát truy cập được triển khai nhằm bảo vệ tài nguyên CNTT của công ty. Các loại mô hình kiểm soát truy cập khác nhau như sau: Kiểm soát truy cập bắt buộc (MAC) – Kiểm soát truy cập nghiêm ngặt nhất thường được sử dụng trong các ứng dụng quân sự hoặc nhiệm vụ quan trọng. Kiểm soát truy cập tùy ý (DAC) – Cho phép người dùng kiểm soát quyền truy cập vào dữ liệu của họ với tư cách là chủ sở hữu của dữ liệu đó. Danh sách kiểm soát truy cập (ACL) hoặc các biện pháp bảo mật khác có thể được sử dụng để chỉ định những người khác có thể có quyền truy cập vào thông tin. Kiểm soát truy cập không tùy ý – Còn được gọi là kiểm soát truy cập dựa trên vai trò (RBAC). Cho phép truy cập dựa trên vai trò và trách nhiệm của cá nhân trong tổ chức. Kiểm soát truy cập dựa trên thuộc tính (ABAC) – Cho phép truy cập dựa trên các thuộc tính của tài nguyên được truy cập, người dùng truy cập tài nguyên và các yếu tố môi trường như thời gian trong ngày."
+  },
+  "m18-20_q32": {
+    "question": "Mật khẩu, cụm mật khẩu và mã PIN là ví dụ về thuật ngữ bảo mật nào?",
+    "options": [
+      "nhận dạng",
+      "truy cập",
+      "xác thực",
+      "ủy quyền"
+    ],
+    "explanation": "Phương pháp xác thực được sử dụng để tăng cường hệ thống kiểm soát truy cập. Điều quan trọng là phải hiểu các phương pháp xác thực có sẵn."
+  },
+  "m18-20_q33": {
+    "question": "AIS giải quyết mối đe dọa mới được phát hiện như thế nào?",
+    "options": [
+      "bằng cách tạo ra các chiến lược ứng phó chống lại mối đe dọa mới",
+      "bằng cách tư vấn cho Chính phủ Liên bang Hoa Kỳ công bố các chiến lược ứng phó nội bộ",
+      "bằng cách cho phép trao đổi theo thời gian thực các chỉ số về mối đe dọa mạng với Chính phủ Liên bang Hoa Kỳ và khu vực tư nhân",
+      "bằng cách giảm thiểu cuộc tấn công bằng các cơ chế phòng thủ phản ứng tích cực"
+    ],
+    "explanation": "AIS phản ứng với mối đe dọa mới ngay khi nó được nhận ra bằng cách chia sẻ ngay mối đe dọa đó với Chính phủ Liên bang Hoa Kỳ và khu vực tư nhân để giúp họ bảo vệ mạng của mình trước mối đe dọa cụ thể đó."
+  },
+  "m21-23_q1": {
+    "question": "Việc sử dụng HMAC bảo vệ chống lại loại tấn công nào?",
+    "options": [
+      "vũ lực",
+      "DDoS",
+      "DoS",
+      "người đàn ông ở giữa"
+    ],
+    "explanation": "Bởi vì chỉ người gửi và người nhận biết khóa bí mật nên chỉ những bên có quyền truy cập vào khóa đó mới có thể tính toán bản tóm tắt của hàm HMAC. Điều này đánh bại các cuộc tấn công trung gian và cung cấp xác thực về nguồn gốc của dữ liệu.​"
+  },
+  "m21-23_q2": {
+    "question": "Mục tiêu nào của truyền thông an toàn đạt được bằng cách mã hóa dữ liệu?",
+    "options": [
+      "bí mật",
+      "chính trực",
+      "sẵn có",
+      "xác thực"
+    ],
+    "explanation": "Khi dữ liệu được mã hóa, nó sẽ được xáo trộn để giữ dữ liệu riêng tư và bí mật để chỉ những người nhận được ủy quyền mới có thể đọc tin nhắn. Hàm băm là một cách khác để cung cấp tính bảo mật."
+  },
+  "m21-23_q3": {
+    "question": "Hai câu nào mô tả chính xác các lớp chứng chỉ được sử dụng trong PKI? (Chọn hai.)",
+    "options": [
+      "Chứng chỉ loại 4 dành cho các giao dịch kinh doanh trực tuyến giữa các công ty.",
+      "Chứng chỉ lớp 0 đáng tin cậy hơn chứng chỉ lớp 1.",
+      "Chứng chỉ loại 0 là dành cho mục đích thử nghiệm.",
+      "Số lớp càng thấp thì chứng chỉ càng đáng tin cậy.",
+      "Chứng chỉ loại 5 dành cho người dùng tập trung vào việc xác minh email."
+    ],
+    "explanation": "Lớp chứng chỉ số được xác định bằng một số. Con số càng cao thì chứng chỉ càng đáng tin cậy. Các lớp này bao gồm: Lớp 0 dành cho mục đích thử nghiệm trong đó không có kiểm tra nào được thực hiện. Loại 1 dành cho những cá nhân tập trung vào việc xác minh email. Loại 2 dành cho các tổ chức cần có bằng chứng nhận dạng. Loại 3 dành cho máy chủ và việc ký phần mềm mà cơ quan cấp chứng chỉ thực hiện việc xác minh và kiểm tra độc lập về danh tính và thẩm quyền. Loại 4 dành cho các giao dịch kinh doanh trực tuyến giữa các công ty. Loại 5 dành cho các tổ chức tư nhân hoặc an ninh chính phủ."
+  },
+  "m21-23_q4": {
+    "question": "Một khách hàng mua một mặt hàng từ một trang web thương mại điện tử. Trang web thương mại điện tử phải duy trì bằng chứng cho thấy việc trao đổi dữ liệu diễn ra giữa trang web và khách hàng. Tính năng nào của chữ ký số là cần thiết?",
+    "options": [
+      "sự không từ chối giao dịch",
+      "tính toàn vẹn của dữ liệu được ký điện tử",
+      "tính xác thực của dữ liệu được ký điện tử",
+      "tính bảo mật của khóa công khai"
+    ],
+    "explanation": "Chữ ký số cung cấp ba dịch vụ bảo mật cơ bản: Tính xác thực của dữ liệu được ký số - Chữ ký số xác thực nguồn, chứng minh rằng một bên nào đó đã xem và ký vào dữ liệu được đề cập. Tính toàn vẹn của dữ liệu được ký điện tử - Chữ ký số đảm bảo dữ liệu không bị thay đổi kể từ thời điểm được ký. Không chối bỏ giao dịch - Người nhận có thể đưa dữ liệu cho bên thứ ba và bên thứ ba chấp nhận chữ ký số làm bằng chứng cho thấy việc trao đổi dữ liệu này đã diễn ra. Bên ký kết không thể phủ nhận rằng họ đã ký dữ liệu."
+  },
+  "m21-23_q5": {
+    "question": "Mục đích của chứng chỉ số là gì?",
+    "options": [
+      "Nó cung cấp bằng chứng rằng dữ liệu có chữ ký truyền thống được đính kèm.",
+      "Nó đảm bảo rằng một trang web chưa bị hack.",
+      "Nó đảm bảo rằng người đang có quyền truy cập vào thiết bị mạng được ủy quyền.",
+      "Nó xác thực một trang web và thiết lập kết nối an toàn để trao đổi dữ liệu bí mật."
+    ],
+    "explanation": "Chữ ký số thường sử dụng chứng chỉ số được sử dụng để xác minh danh tính của người khởi tạo nhằm xác thực trang web của nhà cung cấp và thiết lập kết nối được mã hóa để trao đổi dữ liệu bí mật. Một ví dụ như vậy là khi một người đăng nhập vào tổ chức tài chính từ trình duyệt web."
+  },
+  "m21-23_q6": {
+    "question": "Trong cấu trúc liên kết CA phân cấp, CA cấp dưới có thể lấy chứng chỉ cho chính nó ở đâu?",
+    "options": [
+      "từ CA gốc hoặc CA cấp dưới khác ở cấp cao hơn",
+      "từ CA gốc hoặc CA cấp dưới khác ở cùng cấp",
+      "từ CA gốc hoặc từ CA tự tạo",
+      "chỉ từ CA gốc",
+      "từ CA gốc hoặc CA cấp dưới khác ở bất kỳ đâu trong cây"
+    ],
+    "explanation": "Trong cấu trúc liên kết CA phân cấp, CA có thể cấp chứng chỉ cho người dùng cuối và CA cấp dưới, sau đó cấp chứng chỉ của họ cho người dùng cuối, CA cấp thấp hơn khác hoặc cả hai. Bằng cách này, một cây CA và người dùng cuối được xây dựng trong đó mọi CA có thể cấp chứng chỉ cho CA cấp thấp hơn và người dùng cuối. Chỉ CA gốc mới có thể cấp chứng chỉ tự ký trong cấu trúc liên kết CA phân cấp."
+  },
+  "m21-23_q7": {
+    "question": "Mục đích sử dụng chữ ký số để ký mã là gì?",
+    "options": [
+      "để thiết lập kết nối được mã hóa để trao đổi dữ liệu bí mật với trang web của nhà cung cấp",
+      "để xác minh tính toàn vẹn của các tệp thực thi được tải xuống từ trang web của nhà cung cấp",
+      "để xác thực danh tính của hệ thống với trang web của nhà cung cấp",
+      "để tạo ID ảo"
+    ],
+    "explanation": "Ký mã được sử dụng để xác minh tính toàn vẹn của các tệp thực thi được tải xuống từ trang web của nhà cung cấp. Ký mã sử dụng chứng chỉ kỹ thuật số để xác thực và xác minh danh tính của trang web."
+  },
+  "m21-23_q8": {
+    "question": "Công nghệ nào có chức năng sử dụng các giao thức đáng tin cậy của bên thứ ba để cấp thông tin xác thực được chấp nhận làm danh tính có thẩm quyền?",
+    "options": [
+      "chữ ký số",
+      "thuật toán băm",
+      "Chứng chỉ PKI",
+      "phím đối xứng"
+    ],
+    "explanation": "Chứng chỉ kỹ thuật số được sử dụng để chứng minh tính xác thực và tính toàn vẹn của chứng chỉ PKI, nhưng Cơ quan cấp chứng chỉ PKI là đơn vị bên thứ ba đáng tin cậy cấp chứng chỉ PKI. Chứng chỉ PKI là thông tin công khai và được sử dụng để cung cấp các dịch vụ xác thực, bảo mật, toàn vẹn và chống chối bỏ có thể mở rộng theo các yêu cầu lớn."
+  },
+  "m21-23_q9": {
+    "question": "Khi giải quyết một rủi ro có tác động tiềm tàng thấp và chi phí giảm nhẹ hoặc giảm thiểu tương đối cao, chiến lược nào sẽ chấp nhận rủi ro và hậu quả của nó?",
+    "options": [
+      "tránh rủi ro",
+      "giảm thiểu rủi ro",
+      "duy trì rủi ro",
+      "chia sẻ rủi ro"
+    ],
+    "explanation": "Có bốn chiến lược tiềm năng để ứng phó với rủi ro đã được xác định: Tránh rủi ro - Ngừng thực hiện các hoạt động tạo ra rủi ro. Giảm rủi ro - Giảm rủi ro bằng cách thực hiện các biện pháp giảm thiểu tình trạng dễ bị tổn thương. Chia sẻ rủi ro - Chuyển một số rủi ro cho các bên khác. Duy trì rủi ro - Chấp nhận rủi ro và hậu quả của nó."
+  },
+  "m21-23_q10": {
+    "question": "Hai loại số liệu nào được bao gồm trong Nhóm số liệu cơ sở CVSS? (Chọn hai.)",
+    "options": [
+      "Yêu cầu bảo mật",
+      "Cơ sở sửa đổi",
+      "Khai thác mã trưởng thành",
+      "Khả năng khai thác",
+      "Số liệu tác động"
+    ],
+    "explanation": "Nhóm số liệu cơ sở của CVSS thể hiện các đặc điểm của lỗ hổng không đổi theo thời gian và trong các bối cảnh. Nó chứa hai loại số liệu, Khả năng khai thác và Tác động."
+  },
+  "m21-23_q11": {
+    "question": "Hãy ghép chức năng cốt lõi của Khung bảo mật mạng NIST với mô tả. (Không phải tất cả các tùy chọn đều được sử dụng.)",
+    "options": [
+      "Nhận diện (Identify) -> Phát triển hiểu biết về tổ chức để quản lý rủi ro an ninh mạng đối với hệ thống, tài sản, dữ liệu.",
+      "Phát hiện (Detect) -> Phát triển và triển khai các hoạt động phù hợp để nhận biết sự cố an ninh mạng đang diễn ra.",
+      "Bảo vệ (Protect) -> Phát triển và triển khai các biện pháp bảo vệ phù hợp để đảm bảo duy trì các dịch vụ hạ tầng trọng yếu."
+    ],
+    "explanation": "phát triển và triển khai các hoạt động thích hợp để xác định sự kiện an ninh mạng xảy ra : phát hiện phát triển và triển khai các biện pháp bảo vệ thích hợp để đảm bảo cung cấp các dịch vụ cơ sở hạ tầng quan trọng : bảo vệ phát triển và triển khai các hoạt động thích hợp để hành động đối với sự kiện an ninh mạng được phát hiện phát triển hiểu biết của tổ chức để quản lý rủi ro an ninh mạng đối với hệ thống, tài sản, dữ liệu và khả năng : xác định"
+  },
+  "m21-23_q12": {
+    "question": "Một nhà phân tích an ninh mạng đang thực hiện đánh giá CVSS về một cuộc tấn công trong đó một liên kết web được gửi tới một số nhân viên. Sau khi nhấp vào, một cuộc tấn công nội bộ đã được phát động. Chỉ số khả năng khai thác nhóm số liệu cơ sở CVSS nào được sử dụng để ghi lại rằng người dùng phải nhấp vào liên kết để cuộc tấn công xảy ra?",
+    "options": [
+      "phạm vi",
+      "yêu cầu về tính toàn vẹn",
+      "yêu cầu sẵn có",
+      "tương tác người dùng"
+    ],
+    "explanation": "Nhóm số liệu cơ sở CVSS có các số liệu sau: vectơ tấn công, độ phức tạp của cuộc tấn công, các đặc quyền cần có, tương tác của người dùng và phạm vi. Số liệu tương tác của người dùng thể hiện sự hiện diện hay vắng mặt của yêu cầu tương tác người dùng để việc khai thác thành công."
+  },
+  "m21-23_q13": {
+    "question": "Trong các đánh giá an ninh mạng, loại thử nghiệm nào sử dụng phần mềm để quét các mạng nội bộ và máy chủ kết nối Internet để tìm các loại lỗ hổng khác nhau?",
+    "options": [
+      "đánh giá tính dễ bị tổn thương",
+      "phân tích rủi ro",
+      "sức mạnh của kiểm tra an ninh mạng",
+      "thử nghiệm thâm nhập"
+    ],
+    "explanation": "Khi đánh giá lỗ hổng bảo mật, các nhà phân tích bảo mật sử dụng phần mềm để quét các mạng nội bộ và máy chủ kết nối Internet để tìm các loại lỗ hổng khác nhau. Các công cụ đánh giá lỗ hổng bảo mật bao gồm nền tảng OpenVAS nguồn mở, Microsoft Baseline Security Phân tích, các dịch vụ Nessus, Qualys và Fireeye Mandiant."
+  },
+  "m21-23_q14": {
+    "question": "Ba kết quả của chức năng cốt lõi của Khung an ninh mạng NIST xác định là gì? (Chọn ba.)",
+    "options": [
+      "quy trình và thủ tục bảo vệ thông tin",
+      "quản trị",
+      "giảm nhẹ",
+      "đánh giá rủi ro",
+      "quản lý tài sản",
+      "lập kế hoạch phục hồi"
+    ],
+    "explanation": "Chức năng cốt lõi của việc xác định liên quan đến việc phát triển sự hiểu biết của tổ chức để quản lý rủi ro an ninh mạng đối với các hệ thống, tài sản, dữ liệu và khả năng. Nó bao gồm các kết quả sau: Quản lý tài sản Môi trường kinh doanh Quản trị Quản trị Đánh giá rủi ro Chiến lược quản lý rủi ro"
+  },
+  "m21-23_q15": {
+    "question": "Khi cấu hình máy chủ cho một tổ chức đang được thiết lập, phần tử nào mô tả các daemon và cổng TCP và UDP được phép mở trên máy chủ?",
+    "options": [
+      "không gian địa chỉ tài sản quan trọng",
+      "tài khoản dịch vụ",
+      "môi trường phần mềm",
+      "cổng nghe"
+    ],
+    "explanation": "Cấu hình máy chủ thường chứa các thông tin sau: Cổng nghe – các daemon và cổng TCP và UDP được phép mở trên máy chủ Tài khoản người dùng – các tham số xác định quyền truy cập và hành vi của người dùng Tài khoản dịch vụ – định nghĩa về loại dịch vụ mà một ứng dụng được phép chạy trên máy chủ Môi trường phần mềm – các tác vụ, quy trình và ứng dụng được phép chạy trên máy chủ"
+  },
+  "m21-23_q16": {
+    "question": "Hành động nào cần được thực hiện trong bước khám phá của vòng đời quản lý lỗ hổng?",
+    "options": [
+      "ghi lại kế hoạch an ninh",
+      "gán giá trị kinh doanh cho tài sản",
+      "phát triển cơ sở mạng",
+      "xác định hồ sơ rủi ro"
+    ],
+    "explanation": "Trong bước phát hiện của vòng đời quản lý lỗ hổng, việc kiểm kê tất cả tài sản mạng sẽ được thực hiện. Cơ sở mạng được phát triển và các lỗ hổng bảo mật được xác định."
+  },
+  "m21-23_q17": {
+    "question": "Các bước trong vòng đời quản lý lỗ hổng được thực hiện theo thứ tự nào?",
+    "options": [
+      "khám phá, đánh giá, ưu tiên tài sản, báo cáo, khắc phục, xác minh",
+      "khám phá, ưu tiên tài sản, đánh giá, khắc phục, báo cáo, xác minh",
+      "khám phá, ưu tiên tài sản, đánh giá, khắc phục, xác minh, báo cáo",
+      "khám phá, ưu tiên tài sản, đánh giá, báo cáo, khắc phục, xác minh"
+    ],
+    "explanation": "Có sáu bước trong vòng đời quản lý lỗ hổng: Khám phá Ưu tiên tài sản Đánh giá Báo cáo Khắc phục Xác minh"
+  },
+  "m21-23_q18": {
+    "question": "Chức năng đo từ xa cung cấp những gì trong phần mềm bảo mật dựa trên máy chủ?",
+    "options": [
+      "Nó cập nhật cơ sở dữ liệu chữ ký chống virus heuristic.",
+      "Nó chặn đường đi của các cuộc tấn công zero-day.",
+      "Nó cho phép cập nhật chữ ký phần mềm độc hại.",
+      "Nó cho phép các chương trình bảo mật dựa trên máy chủ có chức năng ghi nhật ký toàn diện."
+    ],
+    "explanation": "Chức năng đo từ xa cho phép chức năng ghi nhật ký mạnh mẽ cần thiết cho các hoạt động an ninh mạng. Một số chương trình bảo mật dựa trên máy chủ sẽ gửi nhật ký đến vị trí trung tâm để phân tích."
+  },
+  "m21-23_q19": {
+    "question": "Một chuyên gia bảo mật đang đưa ra khuyến nghị cho một công ty để tăng cường bảo mật điểm cuối. Công nghệ điểm cuối bảo mật nào sẽ được đề xuất làm hệ thống dựa trên tác nhân để bảo vệ máy chủ khỏi phần mềm độc hại?",
+    "options": [
+      "IPS",
+      "ẨN",
+      "chặn danh sách",
+      "đường cơ sở"
+    ],
+    "explanation": "Hệ thống phát hiện xâm nhập dựa trên máy chủ (HIDS) là một ứng dụng bảo mật toàn diện cung cấp các ứng dụng chống phần mềm độc hại, tường lửa cũng như giám sát và báo cáo."
+  },
+  "m21-23_q20": {
+    "question": "Tính năng của tường lửa phân tán là gì?",
+    "options": [
+      "Tất cả đều sử dụng nền tảng tiêu chuẩn chia sẻ mở.",
+      "Họ chỉ sử dụng các trình bao bọc TCP để định cấu hình hệ thống ghi nhật ký và kiểm soát truy cập dựa trên quy tắc.",
+      "Họ chỉ sử dụng iptables để định cấu hình quy tắc mạng.",
+      "Họ kết hợp tính năng của tường lửa dựa trên máy chủ với quản lý tập trung."
+    ],
+    "explanation": "Tường lửa phân tán kết hợp các tính năng của tường lửa dựa trên máy chủ với quản lý tập trung, đẩy các quy tắc đến máy chủ."
+  },
+  "m21-23_q21": {
+    "question": "Quản trị viên nghi ngờ phần mềm độc hại đa hình đã xâm nhập thành công vào mạng qua phạm vi hệ thống HIDS. Tuy nhiên, phần mềm độc hại đa hình đã được xác định và phân lập thành công. Quản trị viên phải làm gì để tạo chữ ký ngăn file vào mạng trở lại?",
+    "options": [
+      "Thực thi tệp đa hình trong Hộp đựng găng tay Cisco Threat Grid.",
+      "Chạy dịch vụ thông tin bảo mật Cisco Talos.",
+      "Sử dụng Cisco AMP để theo dõi quỹ đạo của tệp qua mạng.",
+      "Chạy đường cơ sở để thiết lập mức rủi ro được chấp nhận và các thành phần môi trường góp phần vào mức độ rủi ro của phần mềm độc hại đa hình."
+    ],
+    "explanation": "Tệp phần mềm độc hại đa hình bị cô lập phải được chạy trong môi trường hộp cát như Cisco Threat Grid Glovebox và các hoạt động của tệp được hệ thống ghi lại. Thông tin này sau đó có thể được sử dụng để tạo chữ ký nhằm ngăn chặn tệp vào mạng trở lại."
+  },
+  "m21-23_q22": {
+    "question": "Trên máy chủ Windows, công cụ nào có thể được sử dụng để tạo và duy trì danh sách chặn và danh sách cho phép?",
+    "options": [
+      "Người dùng và nhóm cục bộ",
+      "Trình chỉnh sửa chính sách nhóm",
+      "Trình quản lý tác vụ",
+      "Quản lý máy tính"
+    ],
+    "explanation": "Trong Windows, cài đặt chặn danh sách và cho phép danh sách có thể được quản lý thông qua Trình chỉnh sửa chính sách nhóm."
+  },
+  "m21-23_q23": {
+    "question": "Danh sách chặn là gì?",
+    "options": [
+      "Đây là danh sách ứng dụng có thể chỉ ra những ứng dụng người dùng nào không được phép chạy trên máy tính.",
+      "Đây là danh sách người dùng nhằm ngăn chặn người dùng được liệt kê chặn truy cập vào máy tính.",
+      "Đây là danh sách quy trình mạng để ngăn quá trình được liệt kê chạy trên máy tính.",
+      "Đây là danh sách dựa trên Heuristics để ngăn quá trình chạy trên máy tính."
+    ],
+    "explanation": "Danh sách chặn có thể chỉ ra ứng dụng nào của người dùng không được phép chạy trên máy tính. Windows Local Group Policy Editor có thể được sử dụng để thêm các mục nhập cho các ứng dụng được liệt kê bị chặn."
+  },
+  "m21-23_q24": {
+    "question": "Công nghệ nào được Cisco Advanced Malware Protection (AMP) sử dụng để bảo vệ và chống lại các mối đe dọa đã biết và mới nổi?",
+    "options": [
+      "kiểm soát nhập mạng",
+      "hồ sơ mạng",
+      "lọc trang web và danh sách chặn",
+      "thông tin về mối đe dọa"
+    ],
+    "explanation": "Cisco AMP sử dụng thông tin về mối đe dọa cùng với chữ ký tệp đã biết để xác định và chặn các loại tệp và hoạt động khai thác vi phạm chính sách."
+  },
+  "m21-23_q25": {
+    "question": "Nhân viên an ninh có thể sử dụng kỹ thuật nào để phân tích một tập tin đáng ngờ trong một môi trường an toàn?",
+    "options": [
+      "hộp cát",
+      "đường cơ sở",
+      "cho phép niêm yết",
+      "chặn danh sách"
+    ],
+    "explanation": "Hộp cát cho phép thực thi và phân tích các tệp đáng ngờ trong môi trường an toàn. Có các hộp cát công cộng miễn phí cho phép tải lên hoặc gửi và phân tích các mẫu phần mềm độc hại."
+  },
+  "m21-23_q26": {
+    "question": "Câu lệnh nào mô tả thuật ngữ iptables?",
+    "options": [
+      "Nó là một tệp được máy chủ DHCP sử dụng để lưu trữ các địa chỉ IP đang hoạt động hiện tại.",
+      "Nó là một ứng dụng tường lửa dựa trên quy tắc trong Linux.",
+      "Nó là một ứng dụng DHCP trong Windows.",
+      "Nó là một daemon DNS trong Linux."
+    ],
+    "explanation": "Iptables là một ứng dụng cho phép quản trị viên hệ thống Linux định cấu hình các quy tắc truy cập mạng."
+  },
+  "m21-23_q27": {
+    "question": "Sự khác biệt giữa HIDS và tường lửa là gì?",
+    "options": [
+      "HIDS hoạt động giống như IPS, trong khi tường lửa chỉ giám sát lưu lượng.",
+      "HIDS giám sát hệ điều hành trên máy tính chủ và xử lý hoạt động của hệ thống tệp. Tường lửa cho phép hoặc từ chối lưu lượng giữa máy tính và các hệ thống khác.",
+      "Tường lửa thực hiện lọc gói và do đó bị hạn chế về hiệu quả, trong khi HIDS chặn các hành vi xâm nhập.",
+      "HIDS chặn các cuộc xâm nhập, trong khi tường lửa lọc chúng.",
+      "Tường lửa cho phép và từ chối lưu lượng truy cập dựa trên các quy tắc và HIDS giám sát lưu lượng mạng."
+    ],
+    "explanation": "Để giám sát hoạt động cục bộ, HIDS nên được triển khai. Trình giám sát hoạt động mạng quan tâm đến lưu lượng truy cập chứ không phải hoạt động của hệ điều hành."
+  },
+  "m21-23_q28": {
+    "question": "Câu nào mô tả Hộp găng tay Cisco Threat Grid?",
+    "options": [
+      "Nó là IDS/IPS dựa trên mạng.",
+      "Đây là giải pháp hệ thống phát hiện xâm nhập dựa trên máy chủ (HIDS) để chống lại phần mềm độc hại.",
+      "Nó là một sản phẩm hộp cát để phân tích hành vi của phần mềm độc hại.",
+      "Nó là một thiết bị tường lửa."
+    ],
+    "explanation": "ThreatGrid Glovebox là một sản phẩm hộp cát để phân tích hành vi của phần mềm độc hại."
+  },
+  "m21-23_q29": {
+    "question": "Câu nào mô tả phương pháp phát hiện xâm nhập dựa trên chính sách?",
+    "options": [
+      "Nó so sánh chữ ký của lưu lượng truy cập đến với cơ sở dữ liệu xâm nhập đã biết.",
+      "Nó so sánh hoạt động của máy chủ với các quy tắc bảo mật được xác định rõ ràng.",
+      "Nó so sánh các định nghĩa chống phần mềm độc hại với kho lưu trữ trung tâm dành cho các bản cập nhật mới nhất.",
+      "Nó so sánh hành vi của máy chủ với đường cơ sở đã được thiết lập để xác định sự xâm nhập tiềm ẩn."
+    ],
+    "explanation": "Phương pháp phát hiện xâm nhập dựa trên sự bất thường, một bộ quy tắc hoặc chính sách được áp dụng cho máy chủ. Việc vi phạm các chính sách này được hiểu là kết quả của một sự xâm nhập tiềm ẩn."
+  },
+  "m21-23_q30": {
+    "question": "Mục đích của thuật toán DH là gì?",
+    "options": [
+      "để cung cấp hỗ trợ chống chối bỏ",
+      "để tạo bí mật chung giữa hai máy chủ chưa từng liên lạc trước đó",
+      "để mã hóa lưu lượng dữ liệu sau khi VPN được thiết lập",
+      "để hỗ trợ bảo mật dữ liệu email"
+    ],
+    "explanation": "DH là một thuật toán toán học bất đối xứng cho phép hai máy tính tạo ra một bí mật chung giống hệt nhau mà không cần liên lạc trước đó. Hệ thống khóa bất đối xứng cực kỳ chậm đối với bất kỳ loại mã hóa hàng loạt nào. Người ta thường mã hóa phần lớn lưu lượng truy cập bằng thuật toán đối xứng như DES, 3DES hoặc AES và sử dụng thuật toán DH để tạo các khóa sẽ được thuật toán mã hóa đối xứng sử dụng."
+  },
+  "m21-23_q31": {
+    "question": "Sự khác biệt giữa các thuật toán mã hóa đối xứng và bất đối xứng là gì?",
+    "options": [
+      "Các thuật toán mã hóa đối xứng được sử dụng để xác thực thông tin liên lạc an toàn. Các thuật toán mã hóa bất đối xứng được sử dụng để từ chối tin nhắn.",
+      "Các thuật toán mã hóa đối xứng được sử dụng để mã hóa dữ liệu. Thuật toán mã hóa bất đối xứng được sử dụng để giải mã dữ liệu.",
+      "Thuật toán mã hóa đối xứng sử dụng khóa chia sẻ trước. Thuật toán mã hóa bất đối xứng sử dụng các khóa khác nhau để mã hóa và giải mã dữ liệu.",
+      "Các thuật toán đối xứng thường chậm hơn hàng trăm đến hàng nghìn lần so với các thuật toán bất đối xứng."
+    ],
+    "explanation": "Các thuật toán bất đối xứng có thể sử dụng độ dài khóa rất dài để tránh bị tấn công. Điều này dẫn đến việc sử dụng tài nguyên và thời gian tăng lên đáng kể so với các thuật toán đối xứng."
+  },
+  "m21-23_q32": {
+    "question": "Một công ty thực hiện chính sách bảo mật để đảm bảo rằng tệp được gửi từ trụ sở chính đến văn phòng chi nhánh chỉ có thể được mở bằng mã được xác định trước. Mã này được thay đổi mỗi ngày. Hai thuật toán nào có thể được sử dụng để đạt được nhiệm vụ này? (Chọn hai.)",
+    "options": [
+      "HMAC",
+      "MD5",
+      "3DES",
+      "SHA-1",
+      "AES"
+    ],
+    "explanation": "Nhiệm vụ đảm bảo rằng chỉ những người có thẩm quyền mới có thể mở tệp là bảo mật dữ liệu, có thể được thực hiện bằng mã hóa. AES và 3DES là hai thuật toán mã hóa. HMAC có thể được sử dụng để đảm bảo xác thực nguồn gốc. MD5 và SHA-1 có thể được sử dụng để đảm bảo tính toàn vẹn dữ liệu."
+  },
+  "m21-23_q33": {
+    "question": "Kế hoạch quản lý bảo mật nào chỉ định một thành phần liên quan đến việc theo dõi vị trí và cấu hình của các thiết bị và phần mềm được nối mạng trên toàn doanh nghiệp?",
+    "options": [
+      "quản lý tài sản",
+      "quản lý bản vá",
+      "quản lý lỗ hổng",
+      "quản lý rủi ro"
+    ],
+    "explanation": "Quản lý tài sản bao gồm việc theo dõi vị trí và cấu hình của các thiết bị và phần mềm được nối mạng trên toàn doanh nghiệp."
+  },
+  "m21-23_q34": {
+    "question": "Khi giải quyết một rủi ro đã được xác định, chiến lược nào nhằm mục đích ngừng thực hiện các hoạt động tạo ra rủi ro?",
+    "options": [
+      "duy trì rủi ro",
+      "tránh rủi ro",
+      "chia sẻ rủi ro",
+      "giảm thiểu rủi ro"
+    ],
+    "explanation": "Có bốn chiến lược tiềm năng để ứng phó với rủi ro đã được xác định: Tránh rủi ro – Ngừng thực hiện các hoạt động tạo ra rủi ro. Giảm thiểu rủi ro – Giảm rủi ro bằng cách thực hiện các biện pháp để giảm thiểu tình trạng dễ bị tổn thương. Chia sẻ rủi ro – Chuyển một số rủi ro cho các bên khác. Duy trì rủi ro – Chấp nhận rủi ro và hậu quả của nó."
+  },
+  "m21-23_q35": {
+    "question": "Một công ty đang phát triển một chính sách bảo mật để liên lạc an toàn. Trong quá trình trao đổi các tin nhắn quan trọng giữa văn phòng trụ sở chính và văn phòng chi nhánh, giá trị băm chỉ nên được tính toán lại bằng mã được xác định trước, do đó đảm bảo tính hợp lệ của nguồn dữ liệu. Khía cạnh nào của thông tin liên lạc an toàn được giải quyết?",
+    "options": [
+      "tính toàn vẹn dữ liệu",
+      "bảo mật dữ liệu",
+      "sự không chối bỏ",
+      "xác thực nguồn gốc"
+    ],
+    "explanation": "Truyền thông an toàn bao gồm bốn yếu tố: Bảo mật dữ liệu - đảm bảo rằng chỉ những người dùng được ủy quyền mới có thể đọc tin nhắn Tính toàn vẹn dữ liệu - đảm bảo rằng tin nhắn không bị thay đổi Xác thực nguồn gốc - đảm bảo rằng tin nhắn không phải là giả mạo và thực sự đến từ người mà nó nêu rõ Tính không chối bỏ dữ liệu – đảm bảo rằng người gửi không thể bác bỏ hoặc bác bỏ tính hợp lệ của tin nhắn được gửi"
+  },
+  "m21-23_q36": {
+    "question": "Khớp phần tử cấu hình mạng với mô tả. (Không phải tất cả các tùy chọn đều được sử dụng.)",
+    "options": [
+      "Các cổng được dùng (Ports used) -> Danh sách các tiến trình TCP hoặc UDP sẵn sàng chấp nhận/nhận dữ liệu.",
+      "Thời lượng phiên (Session duration) -> Khoảng thời gian từ lúc thiết lập luồng dữ liệu cho đến khi kết thúc phiên.",
+      "Không gian địa chỉ tài sản trọng yếu (Critical asset address space) -> Các địa chỉ IP hoặc vị trí logic của các hệ thống và dữ liệu thiết yếu.",
+      "Tổng thông lượng (Total throughput) -> Lượng dữ liệu truyền từ nguồn đến đích xác định trong một khoảng thời gian nhất định."
+    ],
+    "explanation": "Các thành phần quan trọng của cấu hình mạng bao gồm: Tổng thông lượng - lượng dữ liệu truyền từ một nguồn nhất định đến một đích nhất định trong một khoảng thời gian nhất định Thời lượng phiên - thời gian từ khi thiết lập luồng dữ liệu đến khi kết thúc luồng Cổng được sử dụng - danh sách các quy trình TCP hoặc UDP có sẵn để chấp nhận dữ liệu Không gian địa chỉ tài sản quan trọng - địa chỉ IP hoặc vị trí logic của các hệ thống hoặc dữ liệu thiết yếu"
+  },
+  "m21-23_q37": {
+    "question": "Ba dịch vụ bảo mật nào được cung cấp bởi chữ ký số? (Chọn ba.)",
+    "options": [
+      "cung cấp khả năng chống chối bỏ bằng cách sử dụng các hàm HMAC",
+      "đảm bảo dữ liệu không bị thay đổi trong quá trình vận chuyển",
+      "cung cấp mã hóa dữ liệu",
+      "xác thực nguồn",
+      "cung cấp tính bảo mật của dữ liệu được ký điện tử",
+      "xác thực điểm đến"
+    ],
+    "explanation": "Chữ ký số là một kỹ thuật toán học được sử dụng để cung cấp ba dịch vụ bảo mật cơ bản. Chữ ký số có các thuộc tính cụ thể cho phép xác thực thực thể và tính toàn vẹn dữ liệu. Ngoài ra, chữ ký số còn cung cấp khả năng chống chối bỏ giao dịch. Nói cách khác, chữ ký số đóng vai trò là bằng chứng pháp lý cho thấy việc trao đổi dữ liệu đã diễn ra."
+  },
+  "m24-25_q1": {
+    "question": "Loại tin nhắn ICMP nào sẽ bị dừng gửi đến?",
+    "options": [
+      "dập tắt nguồn",
+      "trả lời tiếng vang",
+      "tiếng vọng",
+      "không thể truy cập được"
+    ],
+    "explanation": "Gói ICMP echo không được phép gửi đến trên một giao diện. Phải cho phép phản hồi bằng tiếng vang để khi thiết bị bên trong ping thiết bị bên ngoài, phản hồi sẽ được phép trả lại."
+  },
+  "m24-25_q2": {
+    "question": "Làm thế nào IMAP có thể là mối đe dọa bảo mật cho một công ty?",
+    "options": [
+      "Ai đó vô tình nhấp vào iFrame ẩn.",
+      "Dữ liệu được mã hóa được giải mã.",
+      "Một email có thể được sử dụng để mang phần mềm độc hại đến máy chủ.",
+      "Nó có thể được sử dụng để mã hóa dữ liệu bị đánh cắp và gửi cho kẻ đe dọa."
+    ],
+    "explanation": "IMAP, SMTP và POP3 là các giao thức email. SMTP được sử dụng để gửi dữ liệu từ máy chủ đến máy chủ hoặc gửi dữ liệu giữa các máy chủ. IMAP và POP3 được sử dụng để tải xuống email và có thể chịu trách nhiệm đưa phần mềm độc hại đến máy chủ nhận."
+  },
+  "m24-25_q3": {
+    "question": "Hai công nghệ nào chủ yếu được sử dụng trên mạng ngang hàng? (Chọn hai.)",
+    "options": [
+      "bitcoin",
+      "BitTorrent",
+      "Wireshark",
+      "Mạng tối",
+      "Khịt mũi"
+    ],
+    "explanation": "Bitcoin được sử dụng để chia sẻ cơ sở dữ liệu hoặc sổ cái phân tán. BitTorrent được sử dụng để chia sẻ tập tin."
+  },
+  "m24-25_q4": {
+    "question": "Giao thức nào bị tội phạm mạng khai thác để tạo iFrame độc ​​hại?",
+    "options": [
+      "HTTP",
+      "ARP",
+      "DHCP",
+      "DNS"
+    ],
+    "explanation": "Phần tử HTML được gọi là khung nội tuyến hoặc iFrame cho phép trình duyệt tải một trang web khác từ một nguồn khác."
+  },
+  "m24-25_q5": {
+    "question": "Phương pháp nào được một số phần mềm độc hại sử dụng để truyền tệp từ máy chủ bị nhiễm sang máy chủ có tác nhân đe dọa?",
+    "options": [
+      "Xâm nhập UDP",
+      "Đường hầm ICMP",
+      "Mã hóa lưu lượng HTTPS",
+      "tiêm iFrame"
+    ],
+    "explanation": "Lưu lượng ICMP từ bên trong công ty cũng là một mối đe dọa. Một số loại phần mềm độc hại sử dụng gói ICMP để truyền tệp từ máy chủ bị nhiễm sang các tác nhân đe dọa thông qua đường hầm ICMP."
+  },
+  "m24-25_q6": {
+    "question": "Tại sao công nghệ HTTPS lại tăng thêm độ phức tạp cho việc giám sát an ninh mạng?",
+    "options": [
+      "HTTPS tự động thay đổi số cổng trên máy chủ web.",
+      "HTTPS sử dụng công nghệ đường hầm để bảo mật.",
+      "HTTPS ẩn địa chỉ IP nguồn thực sự bằng NAT/PAT.",
+      "HTTPS che giấu lưu lượng dữ liệu thông qua mã hóa đầu cuối."
+    ],
+    "explanation": "Với HTTPS, khóa đối xứng được máy khách tạo ra sau khi máy khách xác minh độ tin cậy của máy chủ web. Khóa đối xứng được mã hóa bằng khóa chung của máy chủ web và sau đó được gửi đến máy chủ web. Máy chủ web sử dụng khóa chung của nó để giải mã khóa. Sau đó, khóa này được sử dụng để mã hóa dữ liệu do khách hàng yêu cầu và dữ liệu được gửi đến khách hàng. Mã hóa đầu cuối này làm phức tạp thêm việc giám sát an ninh mạng nội tuyến. Số cổng HTTPS, thường là 443, được định cấu hình tĩnh trên máy chủ web."
+  },
+  "m24-25_q7": {
+    "question": "Cách tiếp cận nào nhằm ngăn chặn việc khai thác nhắm vào nhật ký hệ thống?",
+    "options": [
+      "Sử dụng máy chủ dựa trên Linux.",
+      "Sử dụng syslog-ng.",
+      "Tạo ACL chỉ cho phép lưu lượng TCP đến máy chủ nhật ký hệ thống.",
+      "Sử dụng VPN giữa máy khách nhật ký hệ thống và máy chủ nhật ký hệ thống."
+    ],
+    "explanation": "Tin tặc có thể cố gắng chặn máy khách gửi dữ liệu đến máy chủ nhật ký hệ thống, thao túng hoặc xóa dữ liệu đã ghi hoặc thao túng phần mềm được sử dụng để truyền tin nhắn giữa máy khách và máy chủ. Syslog-ng là thế hệ tiếp theo của syslog và nó chứa các cải tiến để ngăn chặn một số hành vi khai thác."
+  },
+  "m24-25_q8": {
+    "question": "Loại tấn công nào được thực hiện bởi các tác nhân đe dọa chống lại mạng để xác định địa chỉ IP, giao thức và cổng nào được ACL cho phép?",
+    "options": [
+      "lừa đảo",
+      "từ chối dịch vụ",
+      "trinh sát",
+      "kỹ thuật xã hội"
+    ],
+    "explanation": "ACL lọc gói sử dụng các quy tắc để lọc lưu lượng truy cập đến và đi. Các quy tắc này được xác định bằng cách chỉ định địa chỉ IP, số cổng và giao thức phù hợp. Các tác nhân đe dọa có thể sử dụng một cuộc tấn công trinh sát bao gồm quét cổng hoặc kiểm tra thâm nhập để xác định địa chỉ IP, giao thức và cổng nào được ACL cho phép."
+  },
+  "m24-25_q9": {
+    "question": "Hai giao thức lớp ứng dụng nào quản lý việc trao đổi tin nhắn giữa máy khách với trình duyệt web và máy chủ web từ xa? (Chọn hai.)",
+    "options": [
+      "HTTP",
+      "HTTPS",
+      "DNS",
+      "DHCP",
+      "HTML"
+    ],
+    "explanation": "Giao thức truyền siêu văn bản (HTTP) và HTTP Secure (HTTPS) là hai giao thức lớp ứng dụng quản lý các yêu cầu nội dung từ máy khách và phản hồi từ máy chủ web. HTML (Ngôn ngữ đánh dấu siêu văn bản) là ngôn ngữ mã hóa mô tả nội dung và các tính năng hiển thị của một trang web. DNS dành cho độ phân giải tên miền thành địa chỉ IP. DHCP quản lý và cung cấp cấu hình IP động cho máy khách."
+  },
+  "m24-25_q10": {
+    "question": "Tor là gì?",
+    "options": [
+      "một quy tắc được tạo để khớp với chữ ký của một khai thác đã biết",
+      "một nền tảng phần mềm và mạng lưới các máy chủ P2P hoạt động như bộ định tuyến Internet",
+      "một cách để chia sẻ bộ xử lý giữa các thiết bị mạng trên Internet",
+      "một loại phần mềm Nhắn tin tức thời (IM) được sử dụng trên darknet"
+    ],
+    "explanation": "Một trình duyệt đặc biệt được sử dụng để truy cập mạng Tor. Trình duyệt này cho phép người dùng duyệt Internet ẩn danh."
+  },
+  "m24-25_q11": {
+    "question": "Giao thức nào là giao thức phân giải tên thường được phần mềm độc hại sử dụng để liên lạc với máy chủ ra lệnh và kiểm soát (CnC)?",
+    "options": [
+      "IMAP",
+      "DNS",
+      "HTTPS",
+      "ICMP"
+    ],
+    "explanation": "Dịch vụ tên miền (DNS) được sử dụng để chuyển đổi tên miền thành địa chỉ IP. Một số tổ chức áp dụng các chính sách ít nghiêm ngặt hơn để bảo vệ khỏi các mối đe dọa dựa trên DNS so với các chính sách áp dụng cho các hoạt động khai thác khác."
+  },
+  "m24-25_q12": {
+    "question": "Kỹ thuật nào là cần thiết để đảm bảo truyền dữ liệu riêng tư bằng VPN?",
+    "options": [
+      "ủy quyền",
+      "khả năng mở rộng",
+      "mã hóa",
+      "ảo hóa"
+    ],
+    "explanation": "Việc truyền dữ liệu bí mật và an toàn bằng VPN yêu cầu mã hóa dữ liệu."
+  },
+  "m24-25_q13": {
+    "question": "Công nghệ nào sẽ được sử dụng để tạo nhật ký máy chủ do các thiết bị mạng tạo ra và được xem xét bởi nhân viên mạng cấp thấp làm việc ca đêm tại trung tâm dữ liệu?",
+    "options": [
+      "nhật ký hệ thống",
+      "NAT",
+      "ACL",
+      "VPN"
+    ],
+    "explanation": "Syslog là một daemon hoặc dịch vụ chạy trên máy chủ chấp nhận tin nhắn được gửi bởi các thiết bị mạng. Những nhật ký này thường xuyên được kiểm tra để phát hiện sự không nhất quán và sự cố trong mạng."
+  },
+  "m24-25_q14": {
+    "question": "Ứng dụng Sguil cung cấp chức năng nào?",
+    "options": [
+      "Nó báo cáo các cuộc hội thoại giữa các máy chủ trên mạng.",
+      "Nó làm cho các cảnh báo do Snort tạo ra có thể đọc được và tìm kiếm được.",
+      "Nó phát hiện sự xâm nhập mạng tiềm năng.",
+      "Nó ngăn phần mềm độc hại tấn công máy chủ."
+    ],
+    "explanation": "Các ứng dụng như Snorby và Sguil có thể được sử dụng để đọc và tìm kiếm các thông báo cảnh báo do NIDS/NIPS tạo ra."
+  },
+  "m24-25_q15": {
+    "question": "Câu nào mô tả Thiết bị bảo mật web của Cisco (WSA)?",
+    "options": [
+      "Nó bảo vệ máy chủ web bằng cách ngăn chặn các mối đe dọa bảo mật truy cập vào máy chủ.",
+      "Nó cung cấp các dịch vụ web hiệu suất cao.",
+      "Nó hoạt động như một máy chủ VPN dựa trên SSL cho doanh nghiệp.",
+      "Nó hoạt động như một proxy web."
+    ],
+    "explanation": "Các thiết bị Cisco Web Security Appliance (WSA) cung cấp nhiều chức năng để giám sát bảo mật. WSA hoạt động hiệu quả như một proxy web. Nó ghi lại tất cả thông tin giao dịch trong và ngoài nước cho lưu lượng HTTP."
+  },
+  "m24-25_q16": {
+    "question": "Câu lệnh nào mô tả dữ liệu phiên trong nhật ký bảo mật?",
+    "options": [
+      "Nó có thể được sử dụng để mô tả hoặc dự đoán hành vi của mạng.",
+      "Nó hiển thị kết quả của các phiên mạng.",
+      "Đó là bản ghi cuộc trò chuyện giữa các máy chủ mạng.",
+      "Nó báo cáo chi tiết các hoạt động mạng giữa các máy chủ mạng."
+    ],
+    "explanation": "Dữ liệu phiên là bản ghi cuộc trò chuyện giữa hai điểm cuối mạng."
+  },
+  "m24-25_q17": {
+    "question": "Hai tùy chọn nào là phương pháp giám sát an ninh mạng sử dụng các kỹ thuật phân tích nâng cao để phân tích dữ liệu đo từ xa mạng? (Chọn hai.)",
+    "options": [
+      "NBAD",
+      "Sguil",
+      "NetFlow",
+      "IPFIX",
+      "ngáy",
+      "NBA"
+    ],
+    "explanation": "Phân tích hành vi mạng (NBA) và phát hiện hành vi bất thường của mạng (NBAD) là các phương pháp giám sát an ninh mạng sử dụng các kỹ thuật phân tích nâng cao để phân tích dữ liệu đo từ xa mạng NetFlow hoặc IPFIX."
+  },
+  "m24-25_q18": {
+    "question": "Thiết bị proxy web cung cấp tính năng ngăn ngừa mất dữ liệu (DLP) cho doanh nghiệp như thế nào?",
+    "options": [
+      "bằng cách hoạt động như một tường lửa",
+      "bằng cách kiểm tra lưu lượng truy cập đến để khai thác tiềm năng",
+      "bằng cách quét và ghi lại lưu lượng đi",
+      "bằng cách kiểm tra danh tiếng của các máy chủ web bên ngoài"
+    ],
+    "explanation": "Thiết bị proxy web có thể kiểm tra lưu lượng truy cập đi như một phương tiện ngăn ngừa mất dữ liệu (DLP). DLP liên quan đến việc quét lưu lượng đi để phát hiện xem dữ liệu rời khỏi mạng doanh nghiệp có chứa thông tin nhạy cảm, bí mật hay bí mật hay không."
+  },
+  "m24-25_q19": {
+    "question": "Tiện ích Cisco NetFlow có thể cung cấp những thông tin nào?",
+    "options": [
+      "hạn chế về bảo mật và tài khoản người dùng",
+      "Khả năng IDS và IPS",
+      "thời gian sử dụng cao điểm và định tuyến lưu lượng",
+      "ánh xạ cổng UDP nguồn và đích"
+    ],
+    "explanation": "NetFlow cung cấp một cách hiệu quả một bộ dịch vụ quan trọng cho các ứng dụng IP bao gồm tính toán lưu lượng mạng, thanh toán mạng dựa trên mức sử dụng, quy hoạch mạng, bảo mật, khả năng giám sát từ chối dịch vụ và giám sát mạng. NetFlow cung cấp thông tin có giá trị về người dùng và ứng dụng mạng, thời gian sử dụng cao nhất và định tuyến lưu lượng."
+  },
+  "m24-25_q20": {
+    "question": "Câu nào mô tả số liệu thống kê trong quá trình giám sát an ninh mạng?",
+    "options": [
+      "Nó được tạo ra thông qua việc phân tích các dạng dữ liệu mạng khác.",
+      "Nó chứa các cuộc hội thoại giữa các máy chủ mạng.",
+      "Nó hiển thị kết quả hoạt động mạng giữa các máy chủ mạng.",
+      "Nó liệt kê từng thông báo cảnh báo cùng với thông tin thống kê."
+    ],
+    "explanation": "Giống như dữ liệu phiên, dữ liệu thống kê là về lưu lượng mạng. Dữ liệu thống kê được tạo ra thông qua việc phân tích các dạng dữ liệu mạng khác."
+  },
+  "m24-25_q21": {
+    "question": "Nối chức năng SIEM với mô tả.",
+    "options": [
+      "Tương quan hóa (Correlation) -> Liên kết các bản ghi nhật ký và sự kiện từ nhiều hệ thống/ứng dụng khác nhau, tăng tốc phát hiện mối đe dọa.",
+      "Tổng hợp (Aggregation) -> Giảm dung lượng dữ liệu sự kiện bằng cách hợp nhất các bản ghi trùng lặp.",
+      "Chuẩn hóa (Normalization) -> Ánh xạ các thông điệp log từ nhiều hệ thống khác nhau về một cấu trúc dữ liệu chung."
+    ],
+    "explanation": "liên kết các nhật ký và sự kiện từ các hệ thống hoặc ứng dụng khác nhau, tăng tốc độ phát hiện và phản ứng với các mối đe dọa bảo mật: mối tương quan đáp ứng các yêu cầu của các quy định tuân thủ khác nhau: giảm khối lượng dữ liệu sự kiện bằng cách hợp nhất các bản ghi sự kiện trùng lặp: tổng hợp ánh xạ các thông điệp nhật ký từ các hệ thống khác nhau vào một mô hình dữ liệu chung: chuẩn hóa"
+  },
+  "m24-25_q22": {
+    "question": "Hai công cụ nào có giao diện GUI và có thể được sử dụng để xem và phân tích các gói chụp đầy đủ? (Chọn hai.)",
+    "options": [
+      "nfdump",
+      "Wireshark",
+      "Mô-đun phân tích mạng Cisco Prime",
+      "tcpdump",
+      "rải rác"
+    ],
+    "explanation": "Mô-đun phân tích mạng của hệ thống Cơ sở hạ tầng Cisco Prime và Wireshark có giao diện GUI và có thể hiển thị các bản chụp gói đầy đủ. Công cụ tcpdump là một công cụ phân tích gói dòng lệnh."
+  },
+  "m24-25_q23": {
+    "question": "Nhật ký Windows nào chứa thông tin về cài đặt phần mềm, bao gồm cả các bản cập nhật Windows?",
+    "options": [
+      "nhật ký hệ thống",
+      "nhật ký ứng dụng",
+      "nhật ký thiết lập",
+      "nhật ký bảo mật"
+    ],
+    "explanation": "Trên máy chủ Windows, nhật ký thiết lập ghi lại thông tin về quá trình cài đặt phần mềm, bao gồm cả các bản cập nhật Windows."
+  },
+  "m24-25_q24": {
+    "question": "Khớp nhật ký máy chủ Windows với các thông báo có trong đó. (Không phải tất cả các tùy chọn đều được sử dụng.)",
+    "options": [
+      "Nhật ký ứng dụng (Application logs) -> Các sự kiện được ghi lại bởi các ứng dụng hoặc chương trình khác nhau.",
+      "Nhật ký hệ thống (System logs) -> Các sự kiện liên quan đến hoạt động của driver trình điều khiển, tiến trình và phần cứng.",
+      "Nhật ký an ninh (Security logs) -> Các sự kiện liên quan đến nỗ lực đăng nhập và các thao tác truy cập/quản lý tệp tin hoặc đối tượng."
+    ],
+    "explanation": "Đặt các tùy chọn theo thứ tự sau: nhật ký ứng dụng các sự kiện được ghi lại bởi các ứng dụng khác nhau nhật ký hệ thống các sự kiện liên quan đến truy cập máy chủ web và thiết lập hoạt động nhật ký các sự kiện liên quan đến hoạt động của trình điều khiển, quy trình và bảo mật phần cứng nhật ký các sự kiện liên quan đến các lần thử đăng nhập và các hoạt động liên quan đến việc quản lý và truy cập tệp hoặc đối tượng"
+  },
+  "m24-25_q25": {
+    "question": "Thiết bị Cisco nào có thể được sử dụng để lọc nội dung lưu lượng truy cập mạng nhằm báo cáo và từ chối lưu lượng truy cập dựa trên danh tiếng của máy chủ web?",
+    "options": [
+      "WSA",
+      "AVC",
+      "ASA",
+      "ESA"
+    ],
+    "explanation": "Thiết bị bảo mật web của Cisco (WSA) hoạt động như một proxy web cho mạng doanh nghiệp. WSA có thể cung cấp nhiều loại nhật ký liên quan đến bảo mật lưu lượng truy cập web bao gồm nhật ký quyết định ACL, nhật ký quét phần mềm độc hại và nhật ký lọc danh tiếng web. Thiết bị bảo mật email của Cisco (ESA) là một công cụ giám sát hầu hết các khía cạnh của việc gửi email, hoạt động của hệ thống, hoạt động chống vi-rút, chống thư rác, đưa ra các quyết định về danh sách đen và danh sách trắng. Cisco ASA là một thiết bị tường lửa. Hệ thống Kiểm soát và Hiển thị Ứng dụng (AVC) của Cisco kết hợp nhiều công nghệ để nhận dạng, phân tích và kiểm soát hơn 1000 ứng dụng."
+  },
+  "m24-25_q26": {
+    "question": "Kỹ thuật nào mà kẻ đe dọa sẽ sử dụng để ngụy trang dấu vết của một hành vi khai thác đang diễn ra?",
+    "options": [
+      "Tạo iFrame vô hình trên trang web.",
+      "Thông tin thời gian bị hỏng bằng cách tấn công cơ sở hạ tầng NTP.",
+      "Đóng gói các giao thức khác trong DNS để trốn tránh các biện pháp bảo mật.",
+      "Sử dụng SSL để đóng gói phần mềm độc hại."
+    ],
+    "explanation": "Giao thức thời gian mạng (NTP) sử dụng hệ thống phân cấp các nguồn thời gian để cung cấp đồng hồ thời gian nhất quán cho các thiết bị cơ sở hạ tầng mạng. Các tác nhân đe dọa có thể tấn công cơ sở hạ tầng NTP để làm hỏng thông tin thời gian được sử dụng trong nhật ký mạng."
+  },
+  "m24-25_q27": {
+    "question": "Quản trị viên hệ thống chạy tiện ích quét tệp trên PC Windows và nhận thấy tệp lsass.exe trong thư mục Tệp chương trình. Người quản trị nên làm gì?",
+    "options": [
+      "Xóa tập tin vì nó có thể là phần mềm độc hại.",
+      "Di chuyển nó vào Tệp chương trình (x86) vì đây là ứng dụng 32 bit.",
+      "Gỡ cài đặt ứng dụng lsass vì đây là ứng dụng cũ và không còn được Windows yêu cầu.",
+      "Mở Trình quản lý tác vụ, nhấp chuột phải vào quy trình lsass và chọn Kết thúc tác vụ."
+    ],
+    "explanation": "Trên máy tính Windows, việc thực thi chính sách bảo mật và ghi nhật ký bảo mật được thực hiện bởi Dịch vụ hệ thống con của Cơ quan bảo mật cục bộ (LSASS), chạy dưới dạng lsass.exe. Nó sẽ chạy từ thư mục Windows\\System32. Nếu một tệp có tên này hoặc tên được ngụy trang, chẳng hạn như 1sass.exe, đang chạy hoặc chạy từ thư mục khác thì đó có thể là phần mềm độc hại."
+  },
+  "m24-25_q28": {
+    "question": "Tham khảo triển lãm. Quản trị viên mạng đang xem một số kết quả trên bộ thu Netflow. Điều gì có thể được xác định từ đầu ra của luồng giao thông được hiển thị?",
+    "options": [
+      "Đây là yêu cầu DNS UDP tới máy chủ DNS.",
+      "Đây là phản hồi DNS UDP cho máy khách.",
+      "Đây là yêu cầu TCP DNS tới máy chủ DNS.",
+      "Đây là phản hồi TCP DNS cho máy khách."
+    ],
+    "explanation": "Luồng lưu lượng được hiển thị có cổng nguồn là 53 và cổng đích là 1025. Cổng 53 được sử dụng cho DNS và vì cổng nguồn là 53 nên lưu lượng này đang phản hồi máy khách từ máy chủ DNS. IP PROTOCOL là 17 và chỉ định rằng UDP đang được sử dụng và cờ TCP được đặt thành 0."
+  },
+  "m24-25_q29": {
+    "question": "Trong hệ thống Cisco AVC, NetFlow được triển khai ở mô-đun nào?",
+    "options": [
+      "Quản lý và báo cáo",
+      "Điều khiển",
+      "Nhận dạng ứng dụng",
+      "Bộ sưu tập số liệu"
+    ],
+    "explanation": "Công nghệ NetFlow được triển khai trong mô-đun Thu thập Số liệu của hệ thống Cisco AVC để thu thập số liệu luồng mạng và xuất sang các công cụ quản lý."
+  },
+  "m24-25_q30": {
+    "question": "Điều gì cho biết nếu dấu thời gian trong phần HEADER của thông báo nhật ký hệ thống đứng trước dấu chấm hoặc dấu hoa thị?",
+    "options": [
+      "Có một vấn đề liên quan đến NTP.",
+      "Dấu thời gian đại diện cho giá trị thời lượng chuyến đi khứ hồi.",
+      "Thông báo nhật ký hệ thống phải được xử lý với mức độ ưu tiên cao.",
+      "Thông báo nhật ký hệ thống cho biết thời gian nhận được email."
+    ],
+    "explanation": "Phần HEADER của tin nhắn chứa dấu thời gian. Nếu dấu thời gian đứng trước ký hiệu dấu chấm (.) hoặc dấu hoa thị (*) thì NTP có vấn đề."
+  },
+  "m26-28_q1": {
+    "question": "Hãy ghép sự kiện xâm nhập được xác định trong Mô hình xâm nhập kim cương với mô tả.",
+    "options": [
+      "Hạ tầng (Infrastructure) -> Đường truyền mạng được sử dụng để thiết lập và duy trì liên lạc chỉ huy điều khiển (C2).",
+      "Năng lực (Capability) -> Công cụ, mã độc hoặc kỹ thuật được kẻ tấn công dùng để đánh vào nạn nhân.",
+      "Kẻ tấn công (Adversary) -> Các cá nhân hoặc nhóm chịu trách nhiệm đứng sau vụ xâm nhập.",
+      "Nạn nhân (Victim) -> Mục tiêu bị nhắm tới trong cuộc tấn công."
+    ],
+    "explanation": "Đường dẫn mạng được sử dụng để thiết lập và duy trì lệnh và kiểm soát : cơ sở hạ tầng một công cụ hoặc kỹ thuật được sử dụng để tấn công nạn nhân : khả năng các bên chịu trách nhiệm về sự xâm nhập : đối thủ mục tiêu của cuộc tấn công : nạn nhân"
+  },
+  "m26-28_q2": {
+    "question": "Hai nguồn thông tin được chia sẻ nào được bao gồm trong khuôn khổ MITER ATT&CK? (Chọn hai.)",
+    "options": [
+      "thu thập bằng chứng kỹ thuật số từ bằng chứng dễ biến động nhất đến bằng chứng ít biến động nhất",
+      "chiến thuật, kỹ thuật và thủ tục của kẻ tấn công",
+      "chi tiết về việc xử lý bằng chứng bao gồm thời gian, địa điểm và nhân sự liên quan",
+      "bằng chứng nhân chứng từ người trực tiếp quan sát hành vi phạm tội",
+      "ánh xạ các bước trong một cuộc tấn công vào một ma trận các chiến thuật tổng quát"
+    ],
+    "explanation": "Khung MITER sử dụng thông tin được lưu trữ về chiến thuật, kỹ thuật và quy trình (TTP) của kẻ tấn công như một phần của việc phòng chống mối đe dọa và phân bổ tấn công. Điều này được thực hiện bằng cách ánh xạ các bước trong một cuộc tấn công vào một ma trận các chiến thuật tổng quát và mô tả các kỹ thuật được sử dụng trong mỗi chiến thuật. Những nguồn thông tin này tạo ra các mô hình hỗ trợ khả năng xác định mối đe dọa."
+  },
+  "m26-28_q3": {
+    "question": "CSIRT thu thập thông tin gì khi xác định phạm vi của sự cố an ninh?",
+    "options": [
+      "mạng, hệ thống và ứng dụng bị ảnh hưởng bởi sự cố",
+      "lượng thời gian và nguồn lực cần thiết để xử lý một sự cố",
+      "các chiến lược và thủ tục được sử dụng để ngăn chặn sự cố",
+      "các quy trình được sử dụng để bảo quản bằng chứng"
+    ],
+    "explanation": "Hoạt động xác định phạm vi do CSIRT thực hiện sau một sự cố sẽ xác định mạng, hệ thống hoặc ứng dụng nào bị ảnh hưởng; ai hoặc cái gì đã gây ra sự việc; và sự việc đang diễn ra như thế nào."
+  },
+  "m26-28_q4": {
+    "question": "Theo tiêu chuẩn của NIST, bên liên quan ứng phó sự cố nào chịu trách nhiệm điều phối ứng phó sự cố với các bên liên quan khác để giảm thiểu thiệt hại của sự cố?",
+    "options": [
+      "nguồn nhân lực",
+      "bộ phận pháp lý",
+      "sự quản lý",
+      "Hỗ trợ CNTT"
+    ],
+    "explanation": "Đội ngũ quản lý tạo ra các chính sách, thiết kế ngân sách và chịu trách nhiệm về nhân sự cho tất cả các bộ phận. Ban quản lý cũng chịu trách nhiệm điều phối việc ứng phó sự cố với các bên liên quan khác và giảm thiểu thiệt hại do sự cố gây ra."
+  },
+  "m26-28_q5": {
+    "question": "Theo NIST, bước nào trong quy trình điều tra kỹ thuật số liên quan đến việc đưa ra kết luận từ dữ liệu?",
+    "options": [
+      "báo cáo",
+      "bộ sưu tập",
+      "bài kiểm tra",
+      "Phân tích"
+    ],
+    "explanation": "NIST mô tả quy trình điều tra kỹ thuật số bao gồm bốn bước sau: Thu thập – xác định các nguồn dữ liệu điều tra tiềm năng và thu thập, xử lý và lưu trữ dữ liệu đó. Kiểm tra - đánh giá và trích xuất thông tin liên quan từ dữ liệu được thu thập. Điều này có thể liên quan đến việc giải nén hoặc giải mã dữ liệu. Phân tích - rút ra kết luận từ dữ liệu. Các đặc điểm nổi bật, chẳng hạn như con người, địa điểm, thời gian, sự kiện, v.v. cần được ghi lại. Báo cáo – chuẩn bị và trình bày thông tin có được từ việc phân tích. Việc báo cáo phải khách quan và nên đưa ra những giải thích thay thế nếu thích hợp."
+  },
+  "m26-28_q6": {
+    "question": "Một nhà phân tích an ninh mạng đã được gọi đến hiện trường vụ án có chứa một số thiết bị công nghệ, bao gồm cả máy tính. Kỹ thuật nào sẽ được sử dụng để thông tin tìm được trên máy tính có thể được sử dụng tại tòa án?",
+    "options": [
+      "Tor",
+      "rootkit",
+      "hình ảnh đĩa không thay đổi",
+      "bộ sưu tập nhật ký"
+    ],
+    "explanation": "Một bản sao tệp thông thường không khôi phục được tất cả dữ liệu trên thiết bị lưu trữ nên hình ảnh đĩa không bị thay đổi thường được tạo ra. Hình ảnh đĩa không bị thay đổi sẽ bảo tồn bằng chứng ban đầu, do đó ngăn chặn sự thay đổi vô tình trong giai đoạn khám phá. Nó cũng cho phép khôi phục lại bằng chứng ban đầu."
+  },
+  "m26-28_q7": {
+    "question": "Giai đoạn nào trong vòng đời ứng phó sự cố của NIST là bằng chứng được thu thập có thể hỗ trợ các cơ quan chức năng điều tra tiếp theo?",
+    "options": [
+      "hoạt động sau sự cố",
+      "phát hiện và phân tích",
+      "sự chuẩn bị",
+      "ngăn chặn, diệt trừ và phục hồi"
+    ],
+    "explanation": "NIST xác định bốn giai đoạn trong vòng đời của quy trình ứng phó sự cố. Trong giai đoạn ngăn chặn, diệt trừ và phục hồi, bằng chứng được thu thập để giải quyết sự cố và hỗ trợ các cuộc điều tra tiếp theo."
+  },
+  "m26-28_q8": {
+    "question": "Khi xử lý các mối đe dọa bảo mật và sử dụng mô hình Cyber ​​Kill Chain, tổ chức có thể sử dụng hai phương pháp tiếp cận nào để ngăn chặn việc tạo ra cửa sau tiềm năng? (Chọn hai.)",
+    "options": [
+      "Kiểm tra các điểm cuối để phát hiện việc tạo tệp bất thường.",
+      "Thiết lập một sổ tay ứng phó sự cố.",
+      "Củng cố số lượng các điểm hiện diện Internet.",
+      "Tiến hành đánh giá thiệt hại.",
+      "Sử dụng HIPS để cảnh báo hoặc đặt một khối trên các đường dẫn cài đặt chung."
+    ],
+    "explanation": "Trong giai đoạn cài đặt Cyber ​​Kill Chain, kẻ đe dọa sẽ thiết lập một cửa sau vào hệ thống để cho phép tiếp tục truy cập vào mục tiêu. Trong số các biện pháp khác, việc sử dụng HIPS để cảnh báo hoặc chặn các đường dẫn cài đặt phổ biến và kiểm tra điểm cuối để phát hiện việc tạo tệp bất thường có thể giúp ngăn chặn khả năng tạo cửa sau."
+  },
+  "m26-28_q9": {
+    "question": "Điều gì được định nghĩa trong SOP về khả năng ứng phó sự cố bảo mật máy tính (CSIRC)?",
+    "options": [
+      "chi tiết về cách xử lý sự cố",
+      "các thủ tục được tuân theo trong quá trình ứng phó sự cố",
+      "các số liệu để đo lường khả năng ứng phó sự cố",
+      "lộ trình tăng cường năng lực ứng phó sự cố"
+    ],
+    "explanation": "CSIRC sẽ bao gồm các quy trình vận hành tiêu chuẩn (SOP) được tuân thủ trong quá trình ứng phó sự cố. Các quy trình bao gồm tuân theo các quy trình kỹ thuật, điền vào biểu mẫu và tuân theo danh sách kiểm tra."
+  },
+  "m26-28_q10": {
+    "question": "Một chương trình ứng dụng tương tác với hệ điều hành như thế nào?",
+    "options": [
+      "gửi tập tin",
+      "truy cập BIOS hoặc UEFI",
+      "thực hiện lệnh gọi API",
+      "sử dụng quy trình"
+    ],
+    "explanation": "Các chương trình ứng dụng tương tác với hệ điều hành thông qua các lệnh gọi hệ thống tới giao diện lập trình ứng dụng (API) của hệ điều hành. Các cuộc gọi hệ thống này cho phép truy cập vào nhiều khía cạnh của hoạt động hệ thống như kiểm soát quy trình phần mềm, quản lý tệp, quản lý thiết bị và truy cập mạng."
+  },
+  "m26-28_q11": {
+    "question": "Công cụ nào có trong Security Onion cung cấp giao diện trực quan cho dữ liệu NSM?",
+    "options": [
+      "Người phụ trách",
+      "nhịp đập",
+      "Squirt",
+      "OSSEC"
+    ],
+    "explanation": "Trang tổng quan cung cấp sự kết hợp giữa dữ liệu và hình ảnh trực quan được thiết kế để cải thiện khả năng tiếp cận của các cá nhân với lượng lớn thông tin. Kibana bao gồm khả năng thiết kế bảng điều khiển tùy chỉnh. Ngoài ra, các công cụ khác có trong Security Onion, chẳng hạn như Squert, cung cấp giao diện trực quan cho dữ liệu NSM."
+  },
+  "m26-28_q12": {
+    "question": "Công cụ nào có trong Security Onion bao gồm khả năng thiết kế bảng thông tin tùy chỉnh?",
+    "options": [
+      "Sguil",
+      "Kibana",
+      "Squirt",
+      "OSSEC"
+    ],
+    "explanation": "Trang tổng quan thường có tính tương tác và cung cấp sự kết hợp giữa dữ liệu và hình ảnh trực quan được thiết kế để cải thiện khả năng tiếp cận của các cá nhân với lượng lớn thông tin. Kibana bao gồm khả năng thiết kế bảng điều khiển tùy chỉnh."
+  },
+  "m26-28_q13": {
+    "question": "Giá trị băm của tệp hữu ích như thế nào trong việc điều tra an ninh mạng?",
+    "options": [
+      "Nó được sử dụng để giải mã các tập tin.",
+      "Nó giúp xác định chữ ký phần mềm độc hại.",
+      "Nó xác minh tính bảo mật của các tập tin.",
+      "Nó được sử dụng làm chìa khóa để mã hóa."
+    ],
+    "explanation": "Khi ELSA được sử dụng để điều tra các tệp đã tải xuống, giá trị băm của mỗi tệp sẽ được tạo và lưu trữ cùng với các thông tin khác về tệp. Nếu nhà phân tích an ninh mạng nghi ngờ tệp này thì giá trị băm có thể được gửi đến trang lưu trữ phần mềm độc hại trực tuyến để xác định xem tệp đó có phải là phần mềm độc hại hay không."
+  },
+  "m26-28_q14": {
+    "question": "Công nghệ nào là tiêu chuẩn chính bao gồm mẫu ký hiệu mô tả dữ liệu phù hợp trong truy vấn?",
+    "options": [
+      "OSSEC",
+      "POSIX",
+      "Squirt",
+      "Sguil"
+    ],
+    "explanation": "Biểu thức chính quy (regex) là một mẫu ký hiệu mô tả dữ liệu cần khớp trong truy vấn hoặc thao tác khác. Biểu thức chính quy được xây dựng tương tự như biểu thức số học, bằng cách sử dụng nhiều toán tử khác nhau để kết hợp các biểu thức nhỏ hơn. Có hai tiêu chuẩn chính của biểu thức chính quy là POSIX và Perl."
+  },
+  "m26-28_q15": {
+    "question": "Công cụ nào là hệ thống phát hiện xâm nhập dựa trên máy chủ được tích hợp Security Onion?",
+    "options": [
+      "Khịt mũi",
+      "OSSEC",
+      "ELK",
+      "Sguil"
+    ],
+    "explanation": "OSSEC là hệ thống phát hiện xâm nhập dựa trên máy chủ (HIDS) được tích hợp vào Security Onion và chủ động giám sát hoạt động của hệ thống máy chủ."
+  },
+  "m26-28_q16": {
+    "question": "Thuật ngữ nào được sử dụng để mô tả quá trình chuyển đổi các mục nhật ký sang định dạng chung?",
+    "options": [
+      "phân loại",
+      "hệ thống hóa",
+      "bình thường hóa",
+      "tiêu chuẩn hóa"
+    ],
+    "explanation": "Để xử lý các mục nhật ký, chuẩn hóa dữ liệu có thể sắp xếp và chuyển đổi các giá trị dữ liệu trong bộ dữ liệu từ các nguồn khác nhau sang định dạng chung. Việc chuẩn hóa giúp dễ dàng phân tích và báo cáo dữ liệu hơn nữa."
+  },
+  "m26-28_q17": {
+    "question": "Mục đích của việc chuẩn hóa dữ liệu là gì?",
+    "options": [
+      "để đơn giản hóa việc tìm kiếm các sự kiện tương quan",
+      "để giảm lượng dữ liệu cảnh báo",
+      "để tăng cường việc truyền tải dữ liệu cảnh báo một cách an toàn",
+      "để làm cho việc truyền dữ liệu cảnh báo nhanh chóng"
+    ],
+    "explanation": "Với việc chuẩn hóa dữ liệu, nhiều nguồn dữ liệu khác nhau được kết hợp thành một định dạng hiển thị chung, giúp đơn giản hóa việc tìm kiếm các sự kiện tương tự hoặc có liên quan."
+  },
+  "m26-28_q18": {
+    "question": "Nhân viên nào trong SOC được giao nhiệm vụ xác minh xem liệu cảnh báo được kích hoạt bởi phần mềm giám sát có phải là sự cố bảo mật thực sự hay không?",
+    "options": [
+      "Người quản lý SOC",
+      "Nhân sự cấp 3",
+      "Nhân sự cấp 2",
+      "Nhân sự cấp 1"
+    ],
+    "explanation": "Trong SOC, công việc của Nhà phân tích cảnh báo cấp 1 bao gồm giám sát các cảnh báo đến và xác minh rằng sự cố bảo mật thực sự đã xảy ra."
+  },
+  "m26-28_q19": {
+    "question": "Tham khảo triển lãm. Một nhà phân tích bảo mật đang xem xét thông báo cảnh báo do Snort tạo ra. Số 2100498 trong tin nhắn cho biết điều gì?",
+    "options": [
+      "id của người dùng kích hoạt cảnh báo",
+      "độ dài tin nhắn tính bằng bit",
+      "quy tắc Snort được kích hoạt",
+      "số phiên của tin nhắn"
+    ],
+    "explanation": "Trường sid trong thông báo cảnh báo Snort cho biết quy tắc bảo mật Snort được kích hoạt."
+  },
+  "m26-28_q20": {
+    "question": "Nhật ký sự kiện bảo mật thường dựa vào đâu khi được tường lửa truyền thống lấy nguồn?",
+    "options": [
+      "lọc tĩnh",
+      "phân tích ứng dụng",
+      "chữ ký",
+      "5 bộ dữ liệu"
+    ],
+    "explanation": "Tường lửa truyền thống thường cung cấp nhật ký sự kiện bảo mật dựa trên 5 bộ địa chỉ IP nguồn và số cổng, địa chỉ IP đích và số cổng cũng như giao thức đang sử dụng."
+  },
+  "m26-28_q21": {
+    "question": "Tác nhân đe dọa đã xâm nhập thành công tường lửa mạng mà không bị hệ thống IDS phát hiện. Tình trạng nào mô tả sự thiếu cảnh giác?",
+    "options": [
+      "âm tính giả",
+      "tiêu cực thực sự",
+      "tích cực thực sự",
+      "dương tính giả"
+    ],
+    "explanation": "Kết quả âm tính giả là trường hợp không có cảnh báo nào tồn tại và các hoạt động khai thác không bị hệ thống bảo mật tại chỗ phát hiện."
+  },
+  "m26-28_q22": {
+    "question": "Thông tin nào có trong phần tùy chọn của quy tắc Snort?",
+    "options": [
+      "hướng lưu lượng giao thông",
+      "văn bản mô tả sự kiện",
+      "hành động cần thực hiện",
+      "địa chỉ nguồn và đích"
+    ],
+    "explanation": "Quy tắc Snort bao gồm hai phần, tiêu đề quy tắc và các tùy chọn quy tắc. Phần tùy chọn quy tắc của quy tắc snort bao gồm văn bản tin nhắn được hiển thị để mô tả cảnh báo cũng như siêu dữ liệu về cảnh báo."
+  },
+  "m26-28_q23": {
+    "question": "Quản trị viên mạng đang cố tải xuống một tệp hợp lệ từ máy chủ nội bộ. Tuy nhiên, quá trình này sẽ kích hoạt cảnh báo trên công cụ NMS. Điều kiện nào mô tả cảnh báo này?",
+    "options": [
+      "âm tính giả",
+      "dương tính giả",
+      "tiêu cực thực sự",
+      "tích cực thực sự"
+    ],
+    "explanation": "Cảnh báo có thể được phân loại như sau: Đúng Tích cực: Cảnh báo đã được xác minh là một sự cố bảo mật thực tế. Dương tính giả: Cảnh báo không cho biết sự cố bảo mật thực tế. Hoạt động lành tính dẫn đến kết quả dương tính giả đôi khi được gọi là tác nhân lành tính. Một tình huống khác là cảnh báo không được tạo ra. Việc không có cảnh báo có thể được phân loại là: Đúng Tiêu cực: Không có sự cố bảo mật nào xảy ra. Hoạt động này là lành tính. Âm tính giả: Một sự cố không được phát hiện đã xảy ra."
+  },
+  "m26-28_q24": {
+    "question": "ID chữ ký Snort dưới 3464 được biểu thị bằng gì?",
+    "options": [
+      "SID được Sourcefire tạo và phân phối theo thỏa thuận GPL.",
+      "Đây là chữ ký tùy chỉnh được tổ chức phát triển để giải quyết các quy tắc được tuân thủ tại địa phương.",
+      "SID được tạo bởi cộng đồng Snort và được duy trì trong Quy tắc cộng đồng.",
+      "SID được tạo bởi các thành viên của EmergingThreats."
+    ],
+    "explanation": "Snort là một hệ thống ngăn chặn xâm nhập mạng nguồn mở (NIPS) và hệ thống phát hiện xâm nhập mạng (NIDS) được phát triển bởi Sourcefire. Nó có khả năng thực hiện phân tích lưu lượng truy cập theo thời gian thực và ghi nhật ký gói trên mạng Giao thức Internet (IP) và cũng có thể được sử dụng để phát hiện các cuộc thăm dò hoặc tấn công."
+  },
+  "m26-28_q25": {
+    "question": "Sau khi công cụ giám sát bảo mật xác định tệp đính kèm phần mềm độc hại xâm nhập vào mạng, lợi ích của việc thực hiện phân tích hồi cứu là gì?",
+    "options": [
+      "Phân tích hồi cứu có thể giúp theo dõi hành vi của phần mềm độc hại từ thời điểm nhận dạng trở đi.",
+      "Nó có thể xác định cách phần mềm độc hại xâm nhập vào mạng ban đầu.",
+      "Nó có thể tính toán xác suất xảy ra sự cố trong tương lai.",
+      "Nó có thể xác định máy chủ mạng nào bị ảnh hưởng đầu tiên."
+    ],
+    "explanation": "Giám sát bảo mật chung có thể xác định thời điểm tệp đính kèm phần mềm độc hại xâm nhập vào mạng và máy chủ nào bị nhiễm lần đầu tiên. Phân tích hồi cứu thực hiện bước tiếp theo và theo dõi hành vi của phần mềm độc hại từ thời điểm đó trở đi."
+  },
+  "m26-28_q26": {
+    "question": "Kẻ đe dọa thu thập thông tin từ máy chủ web của một tổ chức và tìm kiếm thông tin liên hệ của nhân viên. Thông tin thu thập được tiếp tục được sử dụng để tìm kiếm thông tin cá nhân trên Internet. Các hoạt động này thuộc giai đoạn tấn công nào theo mô hình Cyber ​​Kill Chain?",
+    "options": [
+      "hành động theo mục tiêu",
+      "bóc lột",
+      "trinh sát",
+      "vũ khí hóa"
+    ],
+    "explanation": "Theo mô hình Cyber ​​Kill Chain, trong giai đoạn trinh sát, kẻ đe dọa thực hiện nghiên cứu, thu thập thông tin tình báo và chọn mục tiêu."
+  },
+  "m26-28_q27": {
+    "question": "HIDS nào được tích hợp vào Security Onion và sử dụng các quy tắc để phát hiện những thay đổi về thông số vận hành trên máy chủ do phần mềm độc hại gây ra thông qua các cuộc gọi hệ thống?",
+    "options": [
+      "OSSEC",
+      "Người anh em",
+      "Khịt mũi",
+      "Suricata"
+    ],
+    "explanation": "OSSEC là một HIDS được tích hợp vào Security Onion và sử dụng các quy tắc để phát hiện các thay đổi trong tham số dựa trên máy chủ như việc thực thi quy trình phần mềm, thay đổi về đặc quyền người dùng, sửa đổi sổ đăng ký, cùng nhiều quy tắc khác. Các quy tắc OSSEC sẽ kích hoạt các sự kiện xảy ra trên máy chủ, bao gồm các dấu hiệu cho thấy phần mềm độc hại có thể đã tương tác với nhân hệ điều hành. Bro, Snort và Suricata là những ví dụ về hệ thống NIDS."
+  },
+  "m26-28_q28": {
+    "question": "Loại sự kiện nào nên được chỉ định cho các danh mục trong Sguil?",
+    "options": [
+      "dương tính giả",
+      "tích cực thực sự",
+      "âm tính giả",
+      "tiêu cực thực sự"
+    ],
+    "explanation": "Sguil bao gồm bảy danh mục dựng sẵn có thể được chỉ định cho các sự kiện đã được xác định là tích cực thực sự."
+  },
+  "m26-28_q29": {
+    "question": "Một nhà phân tích an ninh mạng sẽ xác minh các cảnh báo bảo mật bằng cách sử dụng Security Onion. Nhà phân tích nên truy cập công cụ nào đầu tiên?",
+    "options": [
+      "Người anh em",
+      "Sguil",
+      "CapME",
+      "ELK"
+    ],
+    "explanation": "Nhiệm vụ chính của nhà phân tích an ninh mạng là xác minh các cảnh báo bảo mật. Trong Security Onion, nơi đầu tiên mà nhà phân tích an ninh mạng sẽ đến để xác minh cảnh báo là Sguil vì nó cung cấp bảng điều khiển cấp cao để điều tra cảnh báo bảo mật từ nhiều nguồn khác nhau."
+  },
+  "m26-28_q30": {
+    "question": "Tham khảo triển lãm. Trường nào trong cửa sổ ứng dụng Sguil cho biết mức độ ưu tiên của một sự kiện hoặc tập hợp các sự kiện tương quan?",
+    "options": [
+      "ST",
+      "ID cảnh báo",
+      "Pr",
+      "CNT"
+    ],
+    "explanation": "Cửa sổ ứng dụng Sguil có sẵn một số trường cung cấp thông tin về một sự kiện. Trường ST cung cấp trạng thái của một sự kiện bao gồm mức độ ưu tiên được mã hóa màu từ vàng nhạt đến đỏ để biểu thị bốn mức độ ưu tiên."
+  },
+  "m26-28_q31": {
+    "question": "Khớp nguồn quy tắc Snort với mô tả.",
+    "options": [
+      "GPL -> Các tập luật cũ hơn do Sourcefire tạo ra.",
+      "VRT (Talos) -> Các tập luật được tạo và duy trì bởi nhóm nghiên cứu bảo mật Cisco Talos.",
+      "Cộng đồng (Community) -> Các tập luật mã nguồn mở được phát hành theo giấy phép BSD."
+    ],
+    "explanation": "Cửa sổ ứng dụng Sguil có sẵn một số trường cung cấp thông tin về một sự kiện. Trường ST cung cấp trạng thái của một sự kiện bao gồm mức độ ưu tiên được mã hóa màu từ vàng nhạt đến đỏ để biểu thị bốn mức độ ưu tiên."
+  },
+  "m26-28_q32": {
+    "question": "Mục đích của việc giảm dữ liệu liên quan đến NSM là gì?",
+    "options": [
+      "để làm cho việc truyền dữ liệu cảnh báo nhanh chóng",
+      "để loại bỏ các luồng dữ liệu định kỳ",
+      "để tăng cường việc truyền tải dữ liệu cảnh báo một cách an toàn",
+      "để giảm số lượng dữ liệu NSM cần xử lý"
+    ],
+    "explanation": "Lượng lưu lượng truy cập mạng được thu thập bằng cách chụp gói cũng như số lượng mục nhập tệp nhật ký và cảnh báo được tạo bởi mạng và các thiết bị bảo mật có thể rất lớn. Vì lý do này, điều quan trọng là phải xác định dữ liệu liên quan đến NSM cần được thu thập. Quá trình này được gọi là giảm dữ liệu."
+  },
+  "m26-28_q33": {
+    "question": "Tại sao các tác nhân đe dọa lại thích sử dụng cuộc tấn công zero-day trong giai đoạn vũ khí hóa Chuỗi tiêu diệt mạng?",
+    "options": [
+      "để tránh bị mục tiêu phát hiện",
+      "để khởi động một cuộc tấn công DoS vào mục tiêu",
+      "để nhận gói phần mềm độc hại miễn phí",
+      "để đạt được tốc độ tấn công mục tiêu nhanh hơn"
+    ],
+    "explanation": "Khi kẻ đe dọa chuẩn bị vũ khí cho một cuộc tấn công, kẻ đe dọa sẽ chọn một công cụ tự động (vũ khí) có thể được triển khai thông qua các lỗ hổng được phát hiện. Sau đó, phần mềm độc hại thực hiện các cuộc tấn công mong muốn sẽ được tích hợp vào công cụ dưới dạng tải trọng. Vũ khí (công cụ cộng với tải trọng phần mềm độc hại) sẽ được gửi đến hệ thống mục tiêu. Bằng cách sử dụng công cụ tạo vũ khí zero-day, kẻ đe dọa hy vọng rằng vũ khí sẽ không bị phát hiện vì các chuyên gia bảo mật chưa biết đến nó và các phương pháp phát hiện vẫn chưa được phát triển."
+  },
+  "m26-28_q34": {
+    "question": "Mục tiêu của tác nhân đe dọa trong việc thiết lập kênh liên lạc hai chiều giữa hệ thống mục tiêu và cơ sở hạ tầng CnC là gì?",
+    "options": [
+      "để cho phép tác nhân đe dọa ra lệnh cho phần mềm được cài đặt trên mục tiêu",
+      "để gửi dữ liệu người dùng được lưu trữ trên mục tiêu đến tác nhân đe dọa",
+      "để đánh cắp băng thông mạng từ mạng nơi đặt mục tiêu",
+      "để khởi động một cuộc tấn công tràn bộ đệm"
+    ],
+    "explanation": "Trong giai đoạn ra lệnh và kiểm soát của Chuỗi tiêu diệt mạng, tác nhân đe dọa thiết lập lệnh và kiểm soát (CnC) với hệ thống mục tiêu. Với kênh liên lạc hai chiều, kẻ đe dọa có thể ra lệnh cho phần mềm phần mềm độc hại được cài đặt trên mục tiêu."
+  },
+  "m26-28_q35": {
+    "question": "Yếu tố siêu tính năng nào trong Mô hình Kim cương mô tả thông tin mà đối thủ thu được?",
+    "options": [
+      "phương pháp luận",
+      "tài nguyên",
+      "kết quả",
+      "phương hướng"
+    ],
+    "explanation": "Các kết quả của phần tử siêu tính năng được sử dụng để mô tả những gì kẻ tấn công thu được từ sự kiện xâm nhập."
+  },
+  "m26-28_q36": {
+    "question": "CSIRT thực hiện phân tích ở bước nào trong quy trình ứng phó sự cố của NIST để xác định mạng, hệ thống hoặc ứng dụng nào bị ảnh hưởng; ai hoặc cái gì đã gây ra sự việc; và sự việc đang diễn ra như thế nào?",
+    "options": [
+      "thông báo sự cố",
+      "nhận dạng kẻ tấn công",
+      "phạm vi",
+      "phát hiện"
+    ],
+    "explanation": "Trong giai đoạn phát hiện và phân tích của vòng đời quy trình ứng phó sự cố của NIST, CSIRT phải thực hiện ngay phân tích ban đầu để xác định phạm vi của sự cố, chẳng hạn như mạng, hệ thống hoặc ứng dụng nào bị ảnh hưởng; ai hoặc cái gì đã gây ra sự việc; và sự việc đang diễn ra như thế nào."
+  },
+  "m26-28_q37": {
+    "question": "Phân loại nào cho biết cảnh báo được xác minh là sự cố bảo mật thực tế?",
+    "options": [
+      "âm tính giả",
+      "tích cực thực sự",
+      "dương tính giả",
+      "tiêu cực thực sự"
+    ],
+    "explanation": "Cảnh báo có thể được phân loại như sau: Đúng Tích cực: Cảnh báo đã được xác minh là một sự cố bảo mật thực tế. Dương tính giả: Cảnh báo không cho biết sự cố bảo mật thực tế. Hoạt động lành tính dẫn đến kết quả dương tính giả đôi khi được gọi là tác nhân lành tính. Một tình huống khác là cảnh báo không được tạo ra. Việc không có cảnh báo có thể được phân loại như sau: Đúng Tiêu cực: Không có sự cố bảo mật nào xảy ra. Hoạt động này là lành tính. Âm tính giả: Một sự cố không được phát hiện đã xảy ra."
+  },
+  "m1-2_q1": {
+    "question": "Tổ chức nào là tổ chức phi lợi nhuận quốc tế cung cấp chứng nhận CISSP?",
+    "options": [
+      "CompTIA",
+      "(ISC)2",
+      "IEEE",
+      "GIAC"
+    ],
+    "explanation": "(ISC)2 là một tổ chức phi lợi nhuận quốc tế cung cấp chứng nhận CISSP."
+  },
+  "m1-2_q2": {
+    "question": "Lợi ích của tổ chức khi sử dụng SOAR như một phần của hệ thống SIEM là gì?",
+    "options": [
+      "SOAR được thiết kế để giải quyết các sự kiện bảo mật quan trọng và điều tra cấp cao.",
+      "SOAR sẽ mang lại lợi ích cho các tổ chức nhỏ hơn vì nó không yêu cầu sự tham gia của nhà phân tích an ninh mạng sau khi cài đặt.",
+      "SOAR tự động hóa việc điều tra sự cố và phản hồi quy trình công việc dựa trên sổ tay.",
+      "Tự động hóa SOAR đảm bảo hệ số thời gian hoạt động là \"5 số 9\"."
+    ],
+    "explanation": "Hệ thống SIEM được sử dụng để thu thập và lọc dữ liệu, phát hiện và phân loại các mối đe dọa cũng như phân tích và điều tra các mối đe dọa. Công nghệ SOAR hoạt động tương tự như SIEM nhưng nó cũng bao gồm cả tự động hóa. SOAR tích hợp thông tin về mối đe dọa và tự động hóa việc điều tra sự cố. SOAR cũng phản hồi các sự kiện bằng cách sử dụng quy trình phản hồi dựa trên các sách hướng dẫn đã phát triển trước đó."
+  },
+  "m1-2_q3": {
+    "question": "Nhân viên nào trong SOC được giao nhiệm vụ tìm kiếm các mối đe dọa tiềm ẩn và triển khai các công cụ phát hiện mối đe dọa?",
+    "options": [
+      "SME cấp 3",
+      "Người báo cáo sự cố cấp 2",
+      "Nhà phân tích cấp 1",
+      "Người quản lý SOC"
+    ],
+    "explanation": "Trong SOC, các doanh nghiệp vừa và nhỏ cấp 3 có các kỹ năng ở cấp độ chuyên gia về mạng, điểm cuối, thông tin về mối đe dọa và kỹ thuật đảo ngược phần mềm độc hại (RE). Họ tham gia sâu vào việc tìm kiếm các mối đe dọa bảo mật tiềm ẩn và triển khai các công cụ phát hiện mối đe dọa."
+  },
+  "m1-2_q4": {
+    "question": "Ba công nghệ nào nên được đưa vào hệ thống quản lý sự kiện và thông tin bảo mật SOC? (Chọn ba.)",
+    "options": [
+      "giám sát an ninh",
+      "thông tin về mối đe dọa",
+      "dịch vụ ủy quyền",
+      "thiết bị tường lửa",
+      "phòng chống xâm nhập",
+      "quản lý nhật ký"
+    ],
+    "explanation": "Các công nghệ trong SOC phải bao gồm những phần sau: Thu thập, tương quan và phân tích sự kiện Giám sát bảo mật Kiểm soát bảo mật Quản lý nhật ký Đánh giá lỗ hổng Theo dõi lỗ hổng Thông tin về mối đe dọa Máy chủ proxy, VPN và IPS là các thiết bị bảo mật được triển khai trong cơ sở hạ tầng mạng."
+  },
+  "m1-2_q5": {
+    "question": "Thuật ngữ nhà phân tích hoạt động mạng đề cập đến nhóm nhân sự nào trong SOC?",
+    "options": [
+      "Nhân sự cấp 1",
+      "Nhân sự cấp 3",
+      "Nhân sự cấp 2",
+      "người quản lý SOC"
+    ],
+    "explanation": "Trong một SOC điển hình, nhân viên Cấp 1 được gọi là nhà phân tích cảnh báo, còn được gọi là nhà phân tích hoạt động mạng."
+  },
+  "m1-2_q6": {
+    "question": "Hệ thống quản lý sự kiện và thông tin bảo mật (SIEM) trong SOC giúp nhân viên chống lại các mối đe dọa bảo mật như thế nào?",
+    "options": [
+      "bằng cách phân tích dữ liệu ghi nhật ký theo thời gian thực",
+      "bằng cách kết hợp dữ liệu từ nhiều công nghệ",
+      "bằng cách tích hợp tất cả các thiết bị và thiết bị bảo mật trong một tổ chức",
+      "bằng cách thực hiện linh hoạt các quy tắc tường lửa"
+    ],
+    "explanation": "Hệ thống quản lý sự kiện và thông tin bảo mật (SIEM) kết hợp dữ liệu từ nhiều nguồn để giúp nhân viên SOC thu thập và lọc dữ liệu, phát hiện và phân loại các mối đe dọa, phân tích và điều tra các mối đe dọa cũng như quản lý tài nguyên để thực hiện các biện pháp phòng ngừa."
+  },
+  "m1-2_q7": {
+    "question": "SOC đang tìm kiếm một chuyên gia để lấp đầy cơ hội việc làm. Nhân viên phải có các kỹ năng ở cấp độ chuyên gia về mạng, điểm cuối, thông tin về mối đe dọa và kỹ thuật đảo ngược phần mềm độc hại để tìm kiếm các mối đe dọa mạng ẩn trong mạng. Công việc nào trong SOC đòi hỏi một chuyên gia có những kỹ năng đó?",
+    "options": [
+      "Người ứng phó sự cố",
+      "Nhà phân tích cảnh báo",
+      "Người quản lý SOC",
+      "Thợ săn mối đe dọa"
+    ],
+    "explanation": "Các chuyên gia cấp 3 được gọi là Thợ săn mối đe dọa phải có các kỹ năng ở cấp độ chuyên gia về kết nối mạng, điểm cuối, thông tin về mối đe dọa và kỹ thuật đảo ngược phần mềm độc hại. Họ là những chuyên gia trong việc theo dõi các quá trình của phần mềm độc hại để xác định tác động của phần mềm độc hại và cách loại bỏ phần mềm độc hại."
+  },
+  "m1-2_q8": {
+    "question": "Ba loại yếu tố chính nào trong một trung tâm điều hành an ninh? (Chọn ba.)",
+    "options": [
+      "công nghệ",
+      "Kết nối Internet",
+      "quá trình",
+      "trung tâm dữ liệu",
+      "mọi người",
+      "công cụ cơ sở dữ liệu"
+    ],
+    "explanation": "Ba loại yếu tố chính của trung tâm điều hành an ninh là con người, quy trình và công nghệ. Công cụ cơ sở dữ liệu, trung tâm dữ liệu và kết nối Internet là các thành phần trong danh mục công nghệ."
+  },
+  "m1-2_q9": {
+    "question": "SOAR sử dụng số liệu KPI nào để đo thời gian cần thiết nhằm ngăn chặn sự lây lan của phần mềm độc hại trong mạng?",
+    "options": [
+      "MITR",
+      "Thời gian để kiểm soát",
+      "MITC",
+      "MTTD"
+    ],
+    "explanation": "Các chỉ số chỉ báo hiệu suất chính (KPI) phổ biến do các nhà quản lý SOC biên soạn như sau: • Thời gian dừng: khoảng thời gian mà các tác nhân đe dọa có quyền truy cập vào mạng trước khi chúng bị phát hiện và quyền truy cập của các tác nhân đe dọa đã dừng lại • Thời gian trung bình để phát hiện (MTTD): thời gian trung bình cần thiết để nhân viên SOC xác định rằng các sự cố bảo mật hợp lệ đã xảy ra trong mạng • Thời gian trung bình để phản hồi (MTTR): thời gian trung bình cần thiết để dừng và khắc phục sự cố bảo mật • Thời gian trung bình để ngăn chặn (MTTC): thời gian cần thiết để ngăn chặn ngăn chặn sự cố gây thêm thiệt hại cho hệ thống hoặc dữ liệu • Thời gian kiểm soát thời gian cần thiết để ngăn chặn sự lây lan của phần mềm độc hại trong mạng"
+  },
+  "m1-2_q10": {
+    "question": "Công việc nào sẽ yêu cầu xác minh rằng cảnh báo thể hiện sự cố bảo mật thực sự hoặc dương tính giả?",
+    "options": [
+      "Nhà phân tích cảnh báo",
+      "Thợ săn mối đe dọa",
+      "Người quản lý SOC",
+      "Phóng viên sự cố"
+    ],
+    "explanation": "Nhà phân tích an ninh mạng giám sát hàng đợi cảnh báo bảo mật và sử dụng hệ thống tạo yêu cầu để chỉ định cảnh báo cho hàng đợi để nhà phân tích điều tra. Vì phần mềm tạo cảnh báo có thể kích hoạt cảnh báo sai nên một công việc của Nhà phân tích an ninh mạng là xác minh rằng cảnh báo thể hiện một sự cố bảo mật thực sự."
+  },
+  "m1-2_q11": {
+    "question": "Khi người dùng bật PC vào thứ Tư, PC sẽ hiển thị thông báo cho biết rằng tất cả các tệp người dùng đã bị khóa. Để các tệp không được mã hóa, người dùng phải gửi email và bao gồm ID cụ thể trong tiêu đề email. Thông báo cũng bao gồm các cách mua và gửi bitcoin dưới dạng thanh toán cho việc giải mã tệp. Sau khi kiểm tra tin nhắn, kỹ thuật viên nghi ngờ đã xảy ra vi phạm bảo mật. Loại phần mềm độc hại nào có thể chịu trách nhiệm?",
+    "options": [
+      "Trojan",
+      "phần mềm gián điệp",
+      "phần mềm quảng cáo",
+      "phần mềm tống tiền"
+    ],
+    "explanation": "Ransomware yêu cầu thanh toán để truy cập vào máy tính hoặc tệp. Bitcoin là một loại tiền kỹ thuật số không thông qua một ngân hàng cụ thể."
+  },
+  "m1-2_q12": {
+    "question": "Một nhân viên kết nối không dây với mạng công ty bằng điện thoại di động. Sau đó, nhân viên sẽ định cấu hình điện thoại di động hoạt động như một điểm truy cập không dây cho phép nhân viên mới kết nối với mạng công ty. Loại mối đe dọa bảo mật nào mô tả đúng nhất tình huống này?",
+    "options": [
+      "điểm truy cập lừa đảo",
+      "vết nứt",
+      "giả mạo",
+      "từ chối dịch vụ"
+    ],
+    "explanation": "Định cấu hình điện thoại di động hoạt động như một điểm truy cập không dây có nghĩa là điện thoại di động hiện là điểm truy cập giả mạo. Nhân viên đã vô tình vi phạm tính bảo mật của mạng công ty khi cho phép người dùng truy cập mạng mà không cần kết nối thông qua điểm truy cập của công ty. Bẻ khóa là quá trình lấy mật khẩu từ dữ liệu được lưu trữ hoặc truyền trên mạng. Các cuộc tấn công từ chối dịch vụ đề cập đến việc gửi một lượng lớn dữ liệu đến một thiết bị nối mạng, chẳng hạn như máy chủ, để ngăn chặn quyền truy cập hợp pháp vào máy chủ. Giả mạo đề cập đến quyền truy cập vào mạng hoặc dữ liệu bởi kẻ tấn công dường như là một thiết bị hoặc người dùng mạng hợp pháp."
+  },
+  "m1-2_q13": {
+    "question": "Hai ví dụ về thông tin nhận dạng cá nhân (PII) là gì? (Chọn hai.)",
+    "options": [
+      "tên đầu tiên",
+      "địa chỉ IP",
+      "ưu tiên ngôn ngữ",
+      "địa chỉ đường phố",
+      "số thẻ tín dụng"
+    ],
+    "explanation": "Thông tin nhận dạng cá nhân (PII) là bất kỳ dữ liệu nào có khả năng nhận dạng và theo dõi một cá nhân cụ thể. Số thẻ tín dụng và địa chỉ đường phố là những ví dụ điển hình nhất về PII."
+  },
+  "m1-2_q14": {
+    "question": "Web tối là gì?",
+    "options": [
+      "Đây là trang web báo cáo các hoạt động gần đây nhất của tội phạm mạng trên toàn thế giới.",
+      "Đây là một trang web bán thẻ tín dụng bị đánh cắp.",
+      "Nó là một phần của Internet nơi một người có thể lấy miễn phí thông tin nhận dạng cá nhân từ bất kỳ ai",
+      "Nó là một phần của Internet chỉ có thể được truy cập bằng phần mềm đặc biệt."
+    ],
+    "explanation": "Một trong những mục tiêu sinh lợi hơn của tội phạm mạng là lấy danh sách thông tin nhận dạng cá nhân để sau đó có thể bán trên web đen. Trang web tối chỉ có thể được truy cập bằng phần mềm đặc biệt và được tội phạm mạng sử dụng để che chắn các hoạt động của chúng. PII bị đánh cắp có thể được sử dụng để tạo tài khoản giả, chẳng hạn như thẻ tín dụng và các khoản vay ngắn hạn."
+  },
+  "m1-2_q15": {
+    "question": "Một công ty vừa xảy ra sự cố an ninh mạng. Kẻ đe dọa dường như có mục tiêu làm gián đoạn mạng và dường như sử dụng một công cụ hack bảo mật phổ biến để làm choáng ngợp một máy chủ cụ thể với lượng lưu lượng lớn. Lưu lượng truy cập này khiến máy chủ không thể hoạt động. Một nhà phân tích an ninh mạng được chứng nhận sẽ phân loại loại tác nhân đe dọa này như thế nào?",
+    "options": [
+      "khủng bố",
+      "kẻ tấn công mạng",
+      "được nhà nước bảo trợ",
+      "nghiệp dư"
+    ],
+    "explanation": "Những kẻ nghiệp dư hoặc những đứa trẻ viết kịch bản sử dụng các công cụ phổ biến hiện có trên internet để khởi động các cuộc tấn công. Những kẻ tấn công làm gián đoạn các dịch vụ để phản đối các tổ chức hoặc chính phủ vì một ý tưởng chính trị hoặc xã hội cụ thể. Những kẻ đe dọa được nhà nước bảo trợ sử dụng không gian mạng để hoạt động gián điệp công nghiệp hoặc can thiệp vào quốc gia khác theo một cách nào đó. Các nhóm khủng bố tấn công vì một lý do cụ thể."
+  },
+  "m1-2_q16": {
+    "question": "Một người dùng gọi đến bộ phận trợ giúp phàn nàn rằng mật khẩu truy cập mạng không dây đã thay đổi mà không có cảnh báo. Người dùng được phép thay đổi mật khẩu, nhưng một giờ sau, điều tương tự lại xảy ra. Điều gì có thể xảy ra trong tình huống này?",
+    "options": [
+      "điểm truy cập lừa đảo",
+      "chính sách mật khẩu",
+      "mật khẩu yếu",
+      "lỗi người dùng",
+      "người dùng máy tính xách tay"
+    ],
+    "explanation": "Các cuộc tấn công trung gian là mối đe dọa dẫn đến mất thông tin xác thực và dữ liệu. Những kiểu tấn công này có thể xảy ra vì nhiều lý do khác nhau, bao gồm cả việc đánh hơi lưu lượng truy cập."
+  },
+  "m1-2_q17": {
+    "question": "Luật quản lý nào quy định việc nhận dạng, lưu trữ và truyền thông tin chăm sóc sức khỏe cá nhân của bệnh nhân?",
+    "options": [
+      "FISMA",
+      "HIPAA",
+      "PCI-DSS",
+      "GLBA"
+    ],
+    "explanation": "Đạo luật về trách nhiệm giải trình và cung cấp thông tin bảo hiểm y tế (HIPAA) yêu cầu tất cả thông tin chăm sóc sức khỏe có thể nhận dạng cá nhân của bệnh nhân phải được lưu trữ, duy trì và truyền đi theo những cách đảm bảo quyền riêng tư và bảo mật của bệnh nhân."
+  },
+  "m1-2_q18": {
+    "question": "Một nhân viên phòng hồ sơ bệnh viện vô tình gửi hồ sơ bệnh án của bệnh nhân đến máy in ở khoa khác. Khi nhân viên đến máy in thì bản in hồ sơ bệnh nhân bị thiếu. Tình huống này mô tả sự vi phạm bí mật nào?",
+    "options": [
+      "EMR",
+      "PII",
+      "PSI",
+      "PHI"
+    ],
+    "explanation": "Thông tin sức khỏe được bảo vệ (PHI) bao gồm tên bệnh nhân, địa chỉ, ngày thăm khám, v.v. Đạo luật về trách nhiệm giải trình và cung cấp thông tin bảo hiểm y tế (HIPAA) quy định và đưa ra các hình phạt nghiêm khắc đối với hành vi vi phạm PHI. EMR (Hồ sơ y tế điện tử) là những tài liệu được cộng đồng y tế tạo ra và lưu giữ có chứa PHI. Thông tin nhận dạng cá nhân (PII) là bất kỳ thông tin nào có thể được sử dụng để nhận dạng tích cực một cá nhân, chẳng hạn như tên và số an sinh xã hội. Thông tin bảo mật cá nhân (PSI) liên quan đến thông tin về một cá nhân như mật khẩu, khóa truy cập và chi tiết tài khoản."
+  },
+  "m1-2_q19": {
+    "question": "Stuxnet là loại vũ khí chiến tranh mạng nào?",
+    "options": [
+      "mạng botnet",
+      "vi-rút",
+      "sâu",
+      "phần mềm tống tiền"
+    ],
+    "explanation": "Sâu Stuxnet là một ví dụ điển hình về vũ khí chiến tranh mạng tinh vi. Năm 2010, nó được sử dụng để tấn công các bộ điều khiển logic lập trình vận hành các máy ly tâm làm giàu uranium ở Iran."
+  },
+  "m1-2_q20": {
+    "question": "Ví dụ nào minh họa cách phần mềm độc hại có thể được che giấu?",
+    "options": [
+      "Một hacker sử dụng các kỹ thuật để cải thiện thứ hạng của một trang web để người dùng bị chuyển hướng đến một trang web độc hại.",
+      "Một cuộc tấn công được thực hiện nhằm vào trang web công cộng của một nhà bán lẻ trực tuyến với mục tiêu ngăn chặn phản hồi của trang này đối với khách truy cập.",
+      "Một mạng botnet zombie mang thông tin cá nhân về cho hacker.",
+      "Một email được gửi đến nhân viên của một tổ chức có tệp đính kèm trông giống như bản cập nhật chống vi-rút nhưng tệp đính kèm thực sự bao gồm phần mềm gián điệp."
+    ],
+    "explanation": "Tệp đính kèm email xuất hiện dưới dạng phần mềm hợp lệ nhưng thực tế chứa phần mềm gián điệp cho thấy cách phần mềm độc hại có thể được che giấu. Một cuộc tấn công nhằm chặn quyền truy cập vào một trang web là một cuộc tấn công DoS. Tin tặc sử dụng phương pháp đầu độc tối ưu hóa công cụ tìm kiếm (SEO) để cải thiện thứ hạng của một trang web để người dùng được dẫn đến một trang web độc hại chứa phần mềm độc hại hoặc sử dụng các phương pháp kỹ thuật xã hội để lấy thông tin. Một mạng botnet của máy tính zombie được sử dụng để khởi động một cuộc tấn công DDoS."
+  },
+  "m1-2_q21": {
+    "question": "Người dùng nên tránh những trang web nào khi kết nối với điểm phát sóng không dây mở và miễn phí?",
+    "options": [
+      "trang web kiểm tra phí tài khoản",
+      "các trang web để kiểm tra chi tiết sản phẩm",
+      "website kiểm tra giá cổ phiếu",
+      "các trang web để mua hàng"
+    ],
+    "explanation": "Nhiều điểm truy cập không dây mở và miễn phí hoạt động không có cơ chế xác thực hoặc cơ chế xác thực yếu. Những kẻ tấn công có thể dễ dàng nắm bắt lưu lượng mạng vào và ra khỏi điểm phát sóng như vậy và đánh cắp thông tin người dùng. Do đó, người dùng sử dụng các điểm truy cập không dây mở và miễn phí để kết nối với các trang web nên tránh cung cấp bất kỳ thông tin cá nhân nào cho các trang web."
+  },
+  "m1-2_q22": {
+    "question": "Trong một ngôi nhà thông minh, chủ sở hữu đã kết nối nhiều thiết bị trong nhà với Internet, chẳng hạn như tủ lạnh và máy pha cà phê. Chủ sở hữu lo ngại rằng những thiết bị này sẽ khiến mạng không dây dễ bị tấn công. Hành động nào có thể được thực hiện để giải quyết vấn đề này?",
+    "options": [
+      "Định cấu hình hoạt động không dây ở chế độ hỗn hợp.",
+      "Cài đặt phiên bản firmware mới nhất cho thiết bị.",
+      "Gán địa chỉ IP tĩnh cho các thiết bị không dây.",
+      "Vô hiệu hóa phát sóng SSID."
+    ],
+    "explanation": "Internet of Things (IoT) đang tạo điều kiện thuận lợi cho việc kết nối các loại thiết bị khác nhau với Internet, như các thiết bị gia đình như máy pha cà phê và tủ lạnh cũng như các thiết bị đeo được. Để làm cho các thiết bị này an toàn và không dễ bị tấn công, chúng phải được cập nhật chương trình cơ sở mới nhất. 23. Ghép số liệu SOC với mô tả. (Không phải tất cả các tùy chọn đều được sử dụng.) Giải thích: Chủ đề 2.1.6 SOC sử dụng nhiều số liệu làm chỉ số hiệu suất về thời gian nhân viên xác định, ngăn chặn và khắc phục các sự cố bảo mật. Thời gian dừng Thời gian trung bình để phát hiện (MTTD) Thời gian trung bình để phản hồi (MTTR) Thời gian trung bình để chứa (MTTC) Thời gian kiểm soát"
+  },
+  "m1-2_q24": {
+    "question": "Một nhóm người dùng trên cùng một mạng đều phàn nàn về việc máy tính của họ chạy chậm. Sau khi điều tra, kỹ thuật viên xác định những máy tính này là một phần của mạng lưới zombie. Loại phần mềm độc hại nào được sử dụng để kiểm soát các máy tính này?",
+    "options": [
+      "mạng botnet",
+      "phần mềm gián điệp",
+      "vi-rút",
+      "rootkit"
+    ],
+    "explanation": "Botnet là một mạng lưới các máy tính bị nhiễm virus được gọi là mạng zombie. Các máy tính này do hacker điều khiển và được sử dụng để tấn công các máy tính khác hoặc đánh cắp dữ liệu."
+  },
+  "m1-2_q25": {
+    "question": "Câu nào mô tả chiến tranh mạng?",
+    "options": [
+      "Xung đột dựa trên Internet liên quan đến việc xâm nhập hệ thống thông tin của các quốc gia khác.",
+      "Đây là phần mềm mô phỏng dành cho các phi công của Lực lượng Không quân, cho phép họ thực hành theo kịch bản chiến tranh mô phỏng.",
+      "Chiến tranh mạng là một cuộc tấn công được thực hiện bởi một nhóm trẻ viết kịch bản.",
+      "Đó là một loạt các thiết bị bảo vệ cá nhân được phát triển cho những người lính tham gia chiến tranh hạt nhân"
+    ],
+    "explanation": "Chiến tranh mạng là xung đột dựa trên Internet liên quan đến sự xâm nhập của mạng và hệ thống máy tính của các quốc gia khác. Các tin tặc có tổ chức thường tham gia vào một cuộc tấn công như vậy."
+  },
+  "m1-2_q26": {
+    "question": "Tại sao các thiết bị IoT gây ra rủi ro lớn hơn các thiết bị điện toán khác trên mạng?",
+    "options": [
+      "Hầu hết các thiết bị IoT không nhận được bản cập nhật chương trình cơ sở thường xuyên.",
+      "Hầu hết các thiết bị IoT không yêu cầu kết nối Internet và không thể nhận được bản cập nhật mới.",
+      "Các thiết bị IoT không thể hoạt động trên một mạng bị cô lập chỉ có kết nối Internet.",
+      "Thiết bị IoT yêu cầu kết nối không dây không được mã hóa."
+    ],
+    "explanation": "Các thiết bị IoT thường hoạt động bằng chương trình cơ sở gốc và không nhận được bản cập nhật thường xuyên như máy tính xách tay, máy tính để bàn và nền tảng di động."
+  },
+  "m1-2_q27": {
+    "question": "Cuộc tấn công mạng nào liên quan đến cuộc tấn công phối hợp từ mạng botnet của máy tính zombie?",
+    "options": [
+      "DDoS",
+      "MITM",
+      "giả mạo địa chỉ",
+      "Chuyển hướng ICMP"
+    ],
+    "explanation": "DDoS là một cuộc tấn công từ chối dịch vụ phân tán. Một cuộc tấn công DDoS được phát động từ nhiều nguồn phối hợp. Nguồn của cuộc tấn công là các máy chủ zombie mà tội phạm mạng đã tích hợp vào mạng botnet. Khi sẵn sàng, tội phạm mạng sẽ ra lệnh cho mạng botnet của zombie tấn công mục tiêu đã chọn."
+  },
+  "m1-2_q28": {
+    "question": "Mục đích chính của chiến tranh mạng là gì?",
+    "options": [
+      "để bảo vệ các trung tâm dữ liệu dựa trên đám mây",
+      "phát triển các thiết bị mạng tiên tiến",
+      "để giành lợi thế trước đối thủ",
+      "để mô phỏng các kịch bản chiến tranh có thể xảy ra giữa các quốc gia"
+    ],
+    "explanation": "Chiến tranh mạng là xung đột dựa trên Internet liên quan đến sự xâm nhập của mạng và hệ thống máy tính của các quốc gia khác. Mục đích chính của chiến tranh mạng là giành lợi thế trước các đối thủ, cho dù họ là quốc gia hay đối thủ cạnh tranh."
+  },
+  "m3-4_q1": {
+    "question": "Tại sao quản trị viên mạng lại chọn Linux làm hệ điều hành trong Trung tâm điều hành bảo mật (SOC)?",
+    "options": [
+      "Nó dễ sử dụng hơn các hệ điều hành khác.",
+      "Nhiều ứng dụng mạng được tạo ra cho môi trường này.",
+      "Nó an toàn hơn các hệ điều hành máy chủ khác.",
+      "Quản trị viên có nhiều quyền kiểm soát hơn đối với hệ điều hành."
+    ],
+    "explanation": "Có một số lý do tại sao Linux là một lựa chọn tốt cho SOC. Linux là nguồn mở. Giao diện dòng lệnh là một môi trường rất mạnh mẽ. Người dùng có nhiều quyền kiểm soát hơn đối với hệ điều hành. Linux cho phép kiểm soát giao tiếp mạng tốt hơn."
+  },
+  "m3-4_q2": {
+    "question": "Hai phương pháp nào có thể được sử dụng để làm cứng một thiết bị máy tính? (Chọn hai.)",
+    "options": [
+      "Cho phép các dịch vụ mặc định vẫn được kích hoạt.",
+      "Cho phép tự động phát hiện USB.",
+      "Thực thi cơ chế lịch sử mật khẩu.",
+      "Cập nhật các bản vá trên cơ sở nghiêm ngặt hàng năm bất kể ngày phát hành.",
+      "Đảm bảo an ninh vật lý."
+    ],
+    "explanation": "Các phương pháp thực hành cơ bản tốt nhất để tăng cường độ cứng cho thiết bị như sau: Đảm bảo an ninh vật lý. Giảm thiểu các gói đã cài đặt. Vô hiệu hóa các dịch vụ không sử dụng. Sử dụng SSH và vô hiệu hóa đăng nhập tài khoản root qua SSH. Giữ cho hệ thống được cập nhật. Tắt tính năng tự động phát hiện USB. Thực thi mật khẩu mạnh. Buộc thay đổi mật khẩu định kỳ. Ngăn người dùng sử dụng lại mật khẩu cũ. Xem lại nhật ký thường xuyên."
+  },
+  "m3-4_q3": {
+    "question": "Lệnh Linux nào có thể được sử dụng để hiển thị tên của thư mục làm việc hiện tại?",
+    "options": [
+      "sudo",
+      "ps",
+      "pwd",
+      "chmod"
+    ],
+    "explanation": "Một trong những lệnh quan trọng nhất trong Linux là lệnh pwd, viết tắt của thư mục làm việc in. Nó hiển thị cho người dùng đường dẫn vật lý cho thư mục họ đang làm việc."
+  },
+  "m3-4_q4": {
+    "question": "Hãy xem xét kết quả của lệnh ls -l trong đầu ra Linux bên dưới. Các quyền đối với tệp được chỉ định cho người dùng bán hàng đối với tệp analyze.txt là gì?",
+    "options": [
+      "chỉ viết",
+      "đọc, viết",
+      "chỉ đọc",
+      "đọc, viết, thực thi"
+    ],
+    "explanation": "Các quyền của tệp luôn được hiển thị theo thứ tự Nhóm người dùng và Khác. Trong ví dụ hiển thị, tệp có các quyền sau: Dấu gạch ngang ( - ) có nghĩa đây là một tệp. Đối với các thư mục, dấu gạch ngang đầu tiên sẽ được thay thế bằng \"d\". Bộ ký tự đầu tiên dành cho sự cho phép của người dùng (rwx). Người dùng, người bán hàng, người sở hữu tệp có thể đọc, ghi và thực thi tệp. Bộ ký tự thứ hai dành cho quyền của nhóm (rw-). Nhóm, nhân viên sở hữu tệp có thể đọc và ghi vào tệp. Bộ ký tự thứ ba dành cho mọi quyền của người dùng hoặc nhóm khác (r--). Bất kỳ người dùng hoặc nhóm nào khác trên máy tính chỉ có thể đọc tệp."
+  },
+  "m3-4_q5": {
+    "question": "Hệ thống Linux khởi động vào GUI theo mặc định, vậy quản trị viên mạng có thể sử dụng ứng dụng nào để truy cập vào môi trường CLI?",
+    "options": [
+      "trình xem hệ thống",
+      "trình xem tập tin",
+      "công cụ quản lý gói",
+      "trình mô phỏng thiết bị đầu cuối"
+    ],
+    "explanation": "Trình mô phỏng thiết bị đầu cuối là một chương trình ứng dụng mà người dùng Linux có thể sử dụng để truy cập vào môi trường CLI."
+  },
+  "m3-4_q6": {
+    "question": "Số địa chỉ cổng nổi tiếng được DNS sử dụng để phục vụ các yêu cầu là gì?",
+    "options": [
+      "25",
+      "53",
+      "110",
+      "60"
+    ],
+    "explanation": "Số cổng được sử dụng trong giao tiếp TCP và UDP để phân biệt giữa các dịch vụ khác nhau đang chạy trên thiết bị. Số cổng nổi tiếng được DNS sử dụng là cổng 53."
+  },
+  "m3-4_q7": {
+    "question": "Người dùng nào có thể ghi đè quyền truy cập tệp trên máy tính Linux?",
+    "options": [
+      "bất kỳ người dùng nào có quyền 'nhóm' đối với tệp",
+      "chỉ có người tạo tập tin",
+      "bất kỳ người dùng nào có quyền 'khác' đối với tệp",
+      "người dùng root"
+    ],
+    "explanation": "Người dùng có nhiều quyền đối với một tệp như các quyền của tệp cho phép. Người dùng duy nhất có thể ghi đè quyền truy cập tệp trên máy tính Linux là người dùng root. Vì người dùng root có quyền ghi đè quyền truy cập tệp nên người dùng root có thể ghi vào bất kỳ tệp nào."
+  },
+  "m3-4_q8": {
+    "question": "Ghép các cổng thường được sử dụng trên máy chủ Linux với dịch vụ tương ứng.",
+    "options": [
+      "SMTP -> 25",
+      "DNS -> 53",
+      "HTTPS -> 443",
+      "SSH -> 22",
+      "TELNET -> 23"
+    ],
+    "explanation": ""
+  },
+  "m3-4_q9": {
+    "question": "Khớp các tệp nhật ký Linux điển hình với chức năng. Bài thi cuối kỳ Cơ bản về Hệ điều hành Q13",
+    "options": [
+      "được sử dụng bởi máy tính RedHat và CentOS và theo dõi các sự kiện liên quan đến xác thực -> /var/log/an toàn",
+      "chứa nhật ký hoạt động máy tính chung và được sử dụng để lưu trữ các thông báo hệ thống thông tin và không quan trọng -> /var/log/tin nhắn",
+      "lưu trữ thông tin liên quan đến thiết bị phần cứng và trình điều khiển của chúng -> /var/log/dmesg",
+      "được sử dụng bởi máy tính Debian và Ubuntu và lưu trữ tất cả các sự kiện liên quan đến xác thực -> /var/log/auth.log"
+    ],
+    "explanation": ""
+  },
+  "m3-4_q10": {
+    "question": "Loại công cụ nào cho phép quản trị viên quan sát và hiểu rõ từng chi tiết của giao dịch mạng?",
+    "options": [
+      "quản lý nhật ký",
+      "công cụ phân tích phần mềm độc hại",
+      "hệ thống bán vé",
+      "phần mềm bắt gói tin"
+    ],
+    "explanation": "Phần mềm chụp gói mạng là một công cụ quan trọng vì nó có thể quan sát và hiểu chi tiết về giao dịch mạng."
+  },
+  "m3-4_q11": {
+    "question": "Tại sao Kali Linux lại là lựa chọn phổ biến trong việc kiểm tra an ninh mạng của một tổ chức?",
+    "options": [
+      "Nó là một công cụ quét mạng ưu tiên các rủi ro bảo mật.",
+      "Nó là một bản phân phối bảo mật Linux nguồn mở chứa nhiều công cụ thâm nhập.",
+      "Nó có thể được sử dụng để kiểm tra điểm yếu bằng cách chỉ sử dụng phần mềm độc hại.",
+      "Nó có thể được sử dụng để chặn và ghi lại lưu lượng mạng."
+    ],
+    "explanation": "Kali là một bản phân phối bảo mật Linux nguồn mở thường được các chuyên gia CNTT sử dụng để kiểm tra tính bảo mật của mạng."
+  },
+  "m3-4_q12": {
+    "question": "Khớp giá trị bát phân với mô tả quyền của tệp trong Linux. (Không phải tất cả các tùy chọn đều được sử dụng.)",
+    "options": [
+      "chỉ viết -> 010",
+      "đọc và thực hiện -> 101",
+      "đọc và viết -> 110",
+      "chỉ thực hiện -> 001",
+      "viết và thực hiện -> KHÔNG ĐƯỢC GHI",
+      "không có quyền truy cập -> 000"
+    ],
+    "explanation": ""
+  },
+  "m3-4_q13": {
+    "question": "Ghép lệnh Linux với chức năng. (Không phải tất cả các tùy chọn đều được sử dụng.)",
+    "options": [
+      "Hiển thị tên của thư mục làm việc hiện tại -> pwd",
+      "chạy lệnh với tư cách người dùng khác -> sudo",
+      "sửa đổi quyền tập tin -> chmod",
+      "tắt hệ thống -> Trống",
+      "liệt kê các tiến trình hiện đang chạy -> ps"
+    ],
+    "explanation": ""
+  },
+  "m3-4_q14": {
+    "question": "Hai ưu điểm của hệ thống tệp NTFS so với FAT32 là gì? (Chọn hai.)",
+    "options": [
+      "NTFS dễ cấu hình hơn.",
+      "NTFS hỗ trợ các tệp lớn hơn.",
+      "NTFS cho phép định dạng ổ đĩa nhanh hơn.",
+      "NTFS cho phép tự động phát hiện các thành phần xấu.",
+      "NTFS cho phép truy cập nhanh hơn vào các thiết bị ngoại vi bên ngoài như ổ USB.",
+      "NTFS cung cấp nhiều tính năng bảo mật hơn."
+    ],
+    "explanation": "Hệ thống tệp không kiểm soát được tốc độ truy cập hoặc định dạng ổ đĩa và việc dễ dàng cấu hình không phụ thuộc vào hệ thống tệp."
+  },
+  "m3-4_q15": {
+    "question": "Người dùng PC đưa ra lệnh netstat mà không có bất kỳ tùy chọn nào. Kết quả của lệnh này hiển thị là gì?",
+    "options": [
+      "danh sách lịch sử các ping thành công đã được gửi",
+      "danh sách tất cả các kết nối TCP đang hoạt động được thiết lập",
+      "báo cáo kết nối và sử dụng mạng",
+      "bảng định tuyến cục bộ"
+    ],
+    "explanation": "Khi được sử dụng bởi chính nó (không có bất kỳ tùy chọn nào), lệnh netstat sẽ hiển thị tất cả các kết nối TCP đang hoạt động có sẵn."
+  },
+  "m3-4_q16": {
+    "question": "Hai lệnh nào có thể được sử dụng để kiểm tra xem độ phân giải tên DNS có hoạt động bình thường trên PC Windows không? (Chọn hai.)",
+    "options": [
+      "nslookup cisco.com",
+      "mạng cisco.com",
+      "ipconfig/flushdns",
+      "nbtstat cisco.com",
+      "ping cisco.com"
+    ],
+    "explanation": "Lệnh ping kiểm tra kết nối giữa hai máy chủ. Khi ping sử dụng tên miền máy chủ để kiểm tra kết nối, trình phân giải trên PC trước tiên sẽ thực hiện phân giải tên để truy vấn máy chủ DNS để tìm địa chỉ IP của máy chủ. Nếu lệnh ping không thể phân giải tên miền thành địa chỉ IP thì sẽ xảy ra lỗi. Nslookup là một công cụ để kiểm tra và khắc phục sự cố máy chủ DNS."
+  },
+  "m3-4_q17": {
+    "question": "Mục đích của việc sử dụng lệnh tài khoản mạng trong Windows là gì?",
+    "options": [
+      "để hiển thị thông tin về tài nguyên mạng được chia sẻ",
+      "để hiển thị danh sách các máy tính và thiết bị mạng trên mạng",
+      "để bắt đầu một dịch vụ mạng",
+      "để xem lại các cài đặt về mật khẩu và yêu cầu đăng nhập cho người dùng"
+    ],
+    "explanation": "Đây là một số lệnh mạng phổ biến: tài khoản mạng – đặt yêu cầu đăng nhập và mật khẩu cho người dùng net start – khởi động một dịch vụ mạng hoặc liệt kê đang chạy các dịch vụ mạng net use – kết nối, ngắt kết nối và hiển thị thông tin về tài nguyên mạng được chia sẻ dạng xem mạng – hiển thị danh sách các máy tính và thiết bị mạng trên mạng Khi được sử dụng mà không có tùy chọn, lệnh tài khoản mạng sẽ hiển thị các cài đặt hiện tại về mật khẩu, giới hạn đăng nhập và thông tin miền. 18. Khớp trình tự khởi động Windows 10 sau khi tải trình quản lý khởi động (bootmgr.exe). Giải thích: Chủ đề 3.2.5 Trình tự khởi động cho Windows: - Tự kiểm tra khi bật nguồn (POST) - POST cho mỗi card adapter có BIOS - BIOS đọc MBR - MBR chiếm quyền kiểm soát quá trình khởi động và khởi động BOOTMGR - BOOTMGR đọc tệp Dữ liệu cấu hình khởi động để biết hệ điều hành nào sẽ tải và nơi tìm hệ điều hành trên phân vùng khởi động - BOOTMGR gọi WINLOAD.EXE để tải tệp NTOSKRNL.EXE và HAL.DLL - BOOTMGR đọc file đăng ký và tải trình điều khiển thiết bị - NTOSKRNL.EXE khởi động chương trình WINLOGON.EXE và hiển thị màn hình đăng nhập Windows"
+  },
+  "m3-4_q19": {
+    "question": "Một kỹ thuật viên đã cài đặt tiện ích của bên thứ ba dùng để quản lý máy tính Windows 7. Tuy nhiên, tiện ích không tự động khởi động mỗi khi máy tính khởi động. Kỹ thuật viên có thể làm gì để giải quyết vấn đề này?",
+    "options": [
+      "Đặt giá trị khóa đăng ký ứng dụng thành một.",
+      "Sử dụng tiện ích Thêm hoặc Xóa Chương trình để đặt quyền truy cập và mặc định của chương trình.",
+      "Thay đổi kiểu khởi động cho tiện ích thành Tự động trong Services.",
+      "Gỡ cài đặt chương trình rồi chọn Add New Programs trong tiện ích Add or Remove Programs để cài đặt ứng dụng."
+    ],
+    "explanation": "Bảng điều khiển Dịch vụ trong HĐH Windows cho phép quản lý tất cả các dịch vụ trên máy tính cục bộ và máy tính từ xa. Cài đặt Tự động trong bảng điều khiển Dịch vụ cho phép dịch vụ đã chọn khởi động khi máy tính khởi động."
+  },
+  "m3-4_q20": {
+    "question": "Câu lệnh nào mô tả chức năng của giao thức Khối tin nhắn máy chủ (SMB)?",
+    "options": [
+      "Nó được sử dụng để truyền phát nội dung đa phương tiện.",
+      "Nó được sử dụng để quản lý PC từ xa.",
+      "Nó được sử dụng để nén các tập tin được lưu trữ trên đĩa.",
+      "Nó được sử dụng để chia sẻ tài nguyên mạng."
+    ],
+    "explanation": "Giao thức Khối tin nhắn máy chủ (SMB) chủ yếu được Microsoft sử dụng để chia sẻ tài nguyên mạng."
+  },
+  "m3-4_q21": {
+    "question": "Người dùng tạo tệp có phần mở rộng .ps1 trong Windows. Đó là loại tập tin gì?",
+    "options": [
+      "Chức năng PowerShell",
+      "Lệnh ghép ngắn PowerShell",
+      "Tài liệu PowerShell",
+      "Tập lệnh PowerShell"
+    ],
+    "explanation": "Các loại lệnh mà PowerShell có thể thực thi bao gồm: lệnh ghép ngắn - thực hiện một hành động và trả về đầu ra hoặc đối tượng cho lệnh tiếp theo sẽ được thực thi tập lệnh PowerShell - các tệp có phần mở rộng .ps1 chứa các lệnh PowerShell được thực thi các hàm PowerShell - các đoạn mã có thể được tham chiếu trong tập lệnh"
+  },
+  "m3-4_q22": {
+    "question": "Ghép lệnh Windows với mô tả. Mô-đun 3 - 4: Bài kiểm tra nhóm Tổng quan về Hệ điều hành",
+    "options": [
+      "đổi tên một tập tin -> ren",
+      "tạo một thư mục mới -> mkdir",
+      "thay đổi thư mục hiện tại -> đĩa CD",
+      "liệt kê các tập tin trong một thư mục -> thư mục"
+    ],
+    "explanation": ""
+  },
+  "m3-4_q23": {
+    "question": "Người dùng đăng nhập vào Windows bằng tài khoản người dùng thông thường và cố gắng sử dụng một ứng dụng yêu cầu quyền quản trị. Người dùng có thể làm gì để sử dụng thành công ứng dụng?",
+    "options": [
+      "Nhấp chuột phải vào ứng dụng và chọn Run as Priviledge.",
+      "Nhấp chuột phải vào ứng dụng và chọn Run as Superuser.",
+      "Nhấp chuột phải vào ứng dụng và chọn Run as Administrator.",
+      "Nhấp chuột phải vào ứng dụng và chọn Run as root."
+    ],
+    "explanation": "Để bảo mật tốt nhất, bạn không nên đăng nhập vào Windows bằng tài khoản Quản trị viên hoặc tài khoản có đặc quyền quản trị. Khi cần chạy hoặc cài đặt phần mềm yêu cầu quyền của Quản trị viên, người dùng có thể nhấp chuột phải vào phần mềm trong Windows File Explorer và chọn Run as Administrator."
+  },
+  "m3-4_q24": {
+    "question": "Một kỹ thuật viên CNTT muốn tạo quy tắc trên hai máy tính Windows 10 để ngăn ứng dụng đã cài đặt truy cập Internet công cộng. Kỹ thuật viên sẽ sử dụng công cụ nào để hoàn thành nhiệm vụ này?",
+    "options": [
+      "Chính sách bảo mật cục bộ",
+      "Quản lý máy tính",
+      "Tường lửa bảo vệ Windows với tính năng bảo mật nâng cao",
+      "DMZ"
+    ],
+    "explanation": "Tường lửa Windows có bảo mật nâng cao hoặc Tường lửa bảo vệ Windows có bảo mật nâng cao của Windows 10 được sử dụng để tạo các quy tắc gửi đến và gửi đi, các quy tắc bảo mật kết nối như lưu lượng bảo mật giữa hai máy tính và giám sát mọi quy tắc bảo mật kết nối đang hoạt động."
+  },
+  "m3-4_q25": {
+    "question": "Công nghệ nào được tạo ra để thay thế chương trình BIOS trên bo mạch chủ máy tính cá nhân hiện đại?",
+    "options": [
+      "UEFI",
+      "MBR",
+      "CMOS",
+      "ĐẬP"
+    ],
+    "explanation": "Tính đến năm 2015, hầu hết các bo mạch chủ máy tính cá nhân đều được trang bị UEFI để thay thế cho chương trình BIOS."
+  },
+  "m3-4_q26": {
+    "question": "Ghép thành phần hệ thống Linux với mô tả. (Không phải tất cả các tùy chọn đều được sử dụng.)",
+    "options": [
+      "CLI -> giao diện dựa trên văn bản chấp nhận lệnh của người dùng",
+      "vỏ bọc -> một chương trình diễn giải và thực thi các lệnh của người dùng",
+      "yêu tinh -> một quy trình nền chạy mà không cần sự tương tác của người dùng",
+      "(Trống) -> một chương trình quản lý việc phân bổ CPU và RAM cho các tiến trình, lệnh gọi hệ thống và hệ thống tệp"
+    ],
+    "explanation": ""
+  },
+  "m3-4_q27": {
+    "question": "Kết quả khi quản trị viên Linux nhập lệnh man man là gì?",
+    "options": [
+      "Lệnh man man cấu hình giao diện mạng bằng địa chỉ thủ công",
+      "Lệnh man man mở file log gần đây nhất",
+      "Lệnh man man cung cấp danh sách các lệnh có sẵn tại dấu nhắc hiện tại",
+      "Lệnh man man cung cấp tài liệu về lệnh man"
+    ],
+    "explanation": "Lệnh man là viết tắt của manual và được sử dụng để lấy tài liệu về lệnh Linux. Lệnh man man sẽ cung cấp tài liệu về cách sử dụng hướng dẫn."
+  },
+  "m3-4_q28": {
+    "question": "Nối mô tả với thuật ngữ Linux. (Không phải tất cả các tùy chọn đều được sử dụng.)",
+    "options": [
+      "một loại tệp tham chiếu đến tệp hoặc thư mục khác -> liên kết tượng trưng",
+      "một tiến trình nền đang chạy không cần sự tương tác của người dùng -> yêu tinh",
+      "bảo vệ truy cập từ xa -> cứng lại",
+      "(Trống) -> khai thác gỗ"
+    ],
+    "explanation": ""
+  },
+  "m3-4_q29": {
+    "question": "Hai lợi ích của việc sử dụng phân vùng ext4 thay vì ext3 là gì? (Chọn hai.)",
+    "options": [
+      "sự gia tăng số lượng thiết bị được hỗ trợ",
+      "hiệu suất được cải thiện",
+      "khả năng tương thích với NTFS",
+      "tăng kích thước của các tập tin được hỗ trợ",
+      "giảm thời gian tải",
+      "khả năng tương thích với CDFS"
+    ],
+    "explanation": "Dựa trên hệ thống tệp ex3, phân vùng ext4 bao gồm các phần mở rộng giúp cải thiện hiệu suất và tăng số lượng tệp được hỗ trợ. Phân vùng ext4 cũng hỗ trợ ghi nhật ký, một tính năng hệ thống tệp giúp giảm thiểu nguy cơ hỏng hệ thống tệp nếu hệ thống bị mất điện đột ngột."
+  },
+  "m3-4_q30": {
+    "question": "Hãy xem xét kết quả của lệnh ls -l trong đầu ra Linux bên dưới. Các quyền đối với tệp được chỉ định cho người dùng bán hàng đối với tệp analyze.txt là gì?",
+    "options": [
+      "đọc, viết, thực thi",
+      "chỉ viết",
+      "chỉ đọc",
+      "đọc, viết"
+    ],
+    "explanation": "Các quyền của tệp luôn được hiển thị theo thứ tự Nhóm người dùng và Khác. Trong ví dụ hiển thị, tệp có các quyền sau: Dấu gạch ngang ( - ) có nghĩa đây là một tệp. Đối với các thư mục, dấu gạch ngang đầu tiên sẽ được thay thế bằng \"d\". Bộ ký tự đầu tiên dành cho sự cho phép của người dùng (rwx). Người dùng, người bán hàng, người sở hữu tệp có thể đọc, ghi và thực thi tệp. Bộ ký tự thứ hai dành cho quyền của nhóm (rw-). Nhóm, nhân viên sở hữu tệp có thể đọc và ghi vào tệp. Bộ ký tự thứ ba dành cho mọi quyền của người dùng hoặc nhóm khác (r--). Bất kỳ người dùng hoặc nhóm nào khác trên máy tính chỉ có thể đọc tệp."
+  },
+  "m3-4_q31": {
+    "question": "Mục đích của việc nhập lệnh netsh trên PC Windows là gì?",
+    "options": [
+      "để cấu hình các thông số mạng cho PC",
+      "đổi tên máy tính cho PC",
+      "để tạo tài khoản người dùng",
+      "để kiểm tra các thiết bị phần cứng trên PC"
+    ],
+    "explanation": "Công cụ netsh.exe có thể được sử dụng để định cấu hình các tham số mạng cho PC từ dấu nhắc lệnh."
+  },
+  "m3-4_q32": {
+    "question": "Loại lệnh Windows PowerShell nào thực hiện một hành động và trả về kết quả hoặc đối tượng cho lệnh tiếp theo sẽ được thực thi?",
+    "options": [
+      "lệnh ghép ngắn",
+      "chức năng",
+      "thói quen",
+      "kịch bản",
+      "Tài liệu PowerShell",
+      "Lệnh ghép ngắn PowerShell",
+      "Tập lệnh PowerShell",
+      "Chức năng PowerShell"
+    ],
+    "explanation": "Các loại lệnh mà PowerShell có thể thực thi bao gồm: lệnh ghép ngắn – thực hiện một hành động và trả về đầu ra hoặc đối tượng cho lệnh tiếp theo sẽ được thực thi tập lệnh PowerShell – các tệp có phần mở rộng .ps1 chứa các lệnh PowerShell được thực thi các hàm PowerShell - các đoạn mã có thể được tham chiếu trong tập lệnh 33. Người dùng tạo một tệp có phần mở rộng .ps1 trong Windows. Đó là loại tập tin gì? Giải thích: Chủ đề 3.3.3 Các loại lệnh mà PowerShell có thể thực thi bao gồm: lệnh ghép ngắn - thực hiện một hành động và trả về đầu ra hoặc đối tượng cho lệnh tiếp theo sẽ được thực thi tập lệnh PowerShell - các tệp có phần mở rộng .ps1 chứa các lệnh PowerShell được thực thi Chức năng PowerShell - các đoạn mã có thể được tham chiếu trong tập lệnh"
+  },
+  "m3-4_q34": {
+    "question": "Ghép công cụ hệ thống Windows với mô tả. (Không phải tất cả các tùy chọn đều được sử dụng.) Mô-đun 3 - 4: Tổng quan về hệ điều hành Bài kiểm tra nhóm 34",
+    "options": [
+      "Đăng ký -> cơ sở dữ liệu phân cấp của tất cả thông tin hệ thống và người dùng",
+      "Tường lửa Windows -> từ chối có chọn lọc lưu lượng truy cập trên các giao diện được chỉ định",
+      "PowerShell -> môi trường CLI được sử dụng để chạy tập lệnh và tự động hóa các tác vụ",
+      "Trình xem sự kiện -> duy trì nhật ký hệ thống",
+      "(Trống) -> cung cấp thông tin về tài nguyên hệ thống và quy trình",
+      "(Trống) -> cung cấp khả năng bảo vệ khỏi virus và phần mềm gián điệp"
+    ],
+    "explanation": "và Chủ đề 3.4"
+  },
+  "m3-4_q35": {
+    "question": "Trong shell Linux, ký tự nào được sử dụng giữa hai lệnh để hướng dẫn shell kết hợp và thực thi hai lệnh này theo trình tự?",
+    "options": [
+      "$",
+      "#",
+      "%",
+      "|"
+    ],
+    "explanation": "shell Linux, một số lệnh có thể được kết hợp để thực hiện một tác vụ phức tạp. Kỹ thuật này được gọi là đường ống. Quá trình đường ống được biểu thị bằng cách chèn ký tự \"|\" giữa hai lệnh liên tiếp."
+  },
+  "m3-4_q36": {
+    "question": "Tại sao Linux được coi là có khả năng bảo vệ chống phần mềm độc hại tốt hơn các hệ điều hành khác?",
+    "options": [
+      "công cụ bảo vệ và thâm nhập có thể tùy chỉnh",
+      "ít triển khai hơn",
+      "Cấu trúc hệ thống tệp, quyền truy cập tệp và hạn chế tài khoản người dùng",
+      "tường lửa tích hợp"
+    ],
+    "explanation": "Thiết kế hệ điều hành Linux bao gồm cách cấu trúc hệ thống tệp, quyền truy cập tệp tiêu chuẩn và các hạn chế về tài khoản người dùng giúp Linux trở thành hệ điều hành được bảo vệ tốt hơn. Tuy nhiên, Linux vẫn tồn tại lỗ hổng và có thể cài đặt phần mềm độc hại ảnh hưởng đến hệ điều hành."
+  },
+  "m3-4_q37": {
+    "question": "Ghép các cổng thường được sử dụng trên máy chủ Linux với dịch vụ tương ứng. (Không phải tất cả các tùy chọn đều được sử dụng.)",
+    "options": [],
+    "explanation": ""
+  },
+  "m3-4_q38": {
+    "question": "Quản trị viên an ninh mạng có thể sử dụng công cụ Windows nào để bảo mật các máy tính độc lập không thuộc miền thư mục hoạt động?",
+    "options": [
+      "PowerShell",
+      "Bộ bảo vệ Windows",
+      "Tường lửa Windows",
+      "Chính sách bảo mật cục bộ"
+    ],
+    "explanation": "Các hệ thống Windows không thuộc Miền Active Directory có thể sử dụng Chính sách bảo mật cục bộ của Windows để thực thi các cài đặt bảo mật trên từng hệ thống độc lập."
+  },
+  "m5-10_q1": {
+    "question": "Khi mạng không dây trong một văn phòng nhỏ được thiết lập, loại địa chỉ IP nào thường được sử dụng trên các thiết bị nối mạng?",
+    "options": [
+      "riêng tư",
+      "công cộng",
+      "mạng",
+      "không dây"
+    ],
+    "explanation": "Khi thiết lập mạng không dây trong một văn phòng nhỏ, cách tốt nhất là sử dụng địa chỉ IP riêng vì tính linh hoạt và quản lý dễ dàng mà nó mang lại."
+  },
+  "m5-10_q2": {
+    "question": "Hai phần nào là thành phần của địa chỉ IPv4? (Chọn hai.)",
+    "options": [
+      "phần logic",
+      "phần máy chủ",
+      "phần phát sóng",
+      "phần mạng con",
+      "phần mạng",
+      "phần vật chất"
+    ],
+    "explanation": "Địa chỉ IPv4 được chia thành hai phần: phần mạng - để xác định mạng cụ thể nơi máy chủ cư trú và phần máy chủ - để xác định các máy chủ cụ thể trên mạng. Mặt nạ mạng con được sử dụng để xác định độ dài của mỗi phần."
+  },
+  "m5-10_q3": {
+    "question": "Ghép từng địa chỉ IPv4 với danh mục địa chỉ thích hợp. (Không phải tất cả các tùy chọn đều được sử dụng.) địa chỉ máy chủ:",
+    "options": [
+      "192.168.100.161/25",
+      "203.0.113.100/24",
+      "10.10.10.128/25",
+      "172.110.12.64/28",
+      "192.168.1.191/26",
+      "10.0.0.159/27"
+    ],
+    "explanation": "Để xác định xem địa chỉ IPv4 nhất định là địa chỉ mạng, máy chủ hay địa chỉ quảng bá, trước tiên hãy xác định không gian địa chỉ dựa trên mặt nạ mạng con. Chuyển đổi địa chỉ và mặt nạ thành giá trị nhị phân, sau đó thực hiện hàm ANDing để xác định địa chỉ mạng. Để tính toán không gian địa chỉ, hãy sử dụng số bit máy chủ trong mặt nạ mạng con làm số mũ của 2. Số địa chỉ máy chủ hợp lệ trong không gian là số đó trừ 2. Địa chỉ mạng sẽ có tất cả các số 0 trong phần máy chủ và địa chỉ quảng bá sẽ có tất cả các số 1. Ví dụ: 10.0.50.10/30 mang lại địa chỉ IP mạng là 10.0.50.8 khi mặt nạ được AND với địa chỉ đã cho. Vì chỉ có 2 bit máy chủ trong mặt nạ nên chỉ có 2 địa chỉ máy chủ hợp lệ (4-2). 10.0.50.10 là một trong hai địa chỉ IP máy chủ hợp lệ."
+  },
+  "m5-10_q4": {
+    "question": "Dạng giải nén đầy đủ của địa chỉ IPv6 2001:420:59:0:1::a/64 là gì?",
+    "options": [
+      "2001:4200:5900:0:1:0:0:a000",
+      "2001:0420:0059:0000:0001:0000:000a",
+      "2001:0420:0059:0000:0001:000a",
+      "2001:0420:0059:0000:0001:0000:0000:000a",
+      "2001:420:59:0:1:0:0:a",
+      "2001:4200:5900:0000:1000:0000:0000:a000"
+    ],
+    "explanation": "và 6.6.4 Để giải nén một địa chỉ IPv6, hai quy tắc nén phải được đảo ngược. Bất kỳ hextet 16 bit nào có ít hơn bốn ký tự hex đều thiếu các số 0 đứng đầu đã bị xóa. Một địa chỉ IPv6 phải có tổng cộng 8 nhóm hextet 16 bit, một (::) có thể được thay thế bằng các số 0 liên tiếp đã bị loại bỏ."
+  },
+  "m5-10_q5": {
+    "question": "Một nhà phân tích an ninh mạng tin rằng kẻ tấn công đang giả mạo địa chỉ MAC của cổng mặc định để thực hiện cuộc tấn công trung gian. Nhà phân tích nên sử dụng lệnh nào để xem địa chỉ MAC mà máy chủ đang sử dụng để truy cập cổng mặc định?",
+    "options": [
+      "in lộ trình",
+      "ipconfig/tất cả",
+      "netstat -r",
+      "arp -a"
+    ],
+    "explanation": "ARP là giao thức được sử dụng với IPv4 để ánh xạ địa chỉ MAC tới địa chỉ IP cụ thể được liên kết. Lệnh arp -a sẽ hiển thị bảng địa chỉ MAC trên PC Windows."
+  },
+  "m5-10_q6": {
+    "question": "Người dùng gửi yêu cầu HTTP đến máy chủ web trên mạng từ xa. Trong quá trình đóng gói yêu cầu này, thông tin nào được thêm vào trường địa chỉ của khung để chỉ ra đích đến?",
+    "options": [
+      "miền mạng của máy chủ đích",
+      "địa chỉ MAC của máy chủ đích",
+      "địa chỉ IP của cổng mặc định",
+      "địa chỉ MAC của cổng mặc định"
+    ],
+    "explanation": "Một khung được đóng gói với địa chỉ MAC nguồn và đích. Thiết bị nguồn sẽ không biết địa chỉ MAC của máy chủ từ xa. Một yêu cầu ARP sẽ được gửi bởi nguồn và sẽ được bộ định tuyến phản hồi. Bộ định tuyến sẽ phản hồi bằng địa chỉ MAC của giao diện của nó, địa chỉ được kết nối với cùng mạng với nguồn."
+  },
+  "m5-10_q7": {
+    "question": "Những địa chỉ nào được ARP ánh xạ?",
+    "options": [
+      "địa chỉ IPv4 đích đến địa chỉ MAC nguồn",
+      "Địa chỉ IPv4 đến địa chỉ MAC đích",
+      "địa chỉ MAC đích đến địa chỉ IPv4 nguồn",
+      "địa chỉ IPv4 đích đến tên máy chủ đích"
+    ],
+    "explanation": "ARP hoặc Giao thức phân giải địa chỉ, hoạt động bằng cách ánh xạ địa chỉ MAC đích đến địa chỉ IPv4 đích. Máy chủ biết địa chỉ IPv4 đích và sử dụng ARP để phân giải địa chỉ MAC đích tương ứng."
+  },
+  "m5-10_q8": {
+    "question": "Loại thông tin nào được chứa trong bảng ARP?",
+    "options": [
+      "ánh xạ tên miền sang địa chỉ IP",
+      "chuyển cổng được liên kết với địa chỉ MAC đích",
+      "các tuyến đường để tiếp cận các mạng đích",
+      "Ánh xạ địa chỉ IPv4 sang địa chỉ MAC"
+    ],
+    "explanation": "Bảng ARP được sử dụng để lưu trữ ánh xạ địa chỉ IP tới địa chỉ MAC. Khi một thiết bị mạng cần chuyển tiếp gói tin, thiết bị đó chỉ biết địa chỉ IP. Để phân phối gói trên mạng Ethernet, cần có địa chỉ MAC. ARP phân giải địa chỉ MAC và lưu trữ nó trong bảng ARP."
+  },
+  "m5-10_q9": {
+    "question": "Ghép đặc điểm với loại giao thức. (Không phải tất cả các tùy chọn đều được sử dụng.) TCP:",
+    "options": [
+      "bắt tay 3 chiều",
+      "kích thước cửa sổ",
+      "không có kết nối",
+      "tốt nhất cho VoIP",
+      "Số cổng",
+      "tổng kiểm tra"
+    ],
+    "explanation": "TCP sử dụng bắt tay 3 chiều như một phần để có thể cung cấp giao tiếp đáng tin cậy và kích thước cửa sổ để cung cấp khả năng kiểm soát luồng dữ liệu. UDP là một giao thức không kết nối rất phù hợp cho hội nghị truyền hình. Cả TCP và UDP đều có số cổng để phân biệt giữa các ứng dụng và cửa sổ ứng dụng cũng như trường tổng kiểm tra để phát hiện lỗi."
+  },
+  "m5-10_q10": {
+    "question": "Loại thông tin nào có trong bản ghi DNS MX?",
+    "options": [
+      "địa chỉ IP của máy chủ tên có thẩm quyền",
+      "FQDN của bí danh được sử dụng để xác định dịch vụ",
+      "tên miền được ánh xạ tới các máy chủ trao đổi thư",
+      "địa chỉ IP cho mục nhập FQDN"
+    ],
+    "explanation": "MX, hoặc tin nhắn trao đổi thư, được sử dụng để ánh xạ tên miền tới một số máy chủ trao đổi thư, tất cả đều thuộc cùng một miền."
+  },
+  "m5-10_q11": {
+    "question": "Ghép các giao thức ứng dụng với các giao thức truyền tải chính xác.",
+    "options": [
+      "TCP -> FTP, HTTP, SMTP.",
+      "UDP -> TFTP, DHCP."
+    ],
+    "explanation": ""
+  },
+  "m5-10_q12": {
+    "question": "Một PC đang tải xuống một tệp lớn từ máy chủ. Cửa sổ TCP là 1000 byte. Máy chủ đang gửi tệp bằng các phân đoạn 100 byte. Máy chủ sẽ gửi bao nhiêu phân đoạn trước khi yêu cầu xác nhận từ PC?",
+    "options": [
+      "1000 phân đoạn",
+      "100 đoạn",
+      "1 đoạn",
+      "10 đoạn"
+    ],
+    "explanation": "Với cửa sổ 1000 byte, máy chủ đích chấp nhận các phân đoạn cho đến khi nhận được tất cả 1000 byte dữ liệu. Sau đó, máy chủ đích sẽ gửi xác nhận."
+  },
+  "m5-10_q13": {
+    "question": "Người dùng đưa ra lệnh ping 192.168.250.103 và nhận được phản hồi bao gồm mã 1 . Mã này đại diện cho cái gì?",
+    "options": [
+      "cổng không thể truy cập",
+      "mạng không thể truy cập được",
+      "giao thức không thể truy cập được",
+      "máy chủ không thể truy cập được"
+    ],
+    "explanation": ""
+  },
+  "m5-10_q14": {
+    "question": "Hai lệnh nào có thể được sử dụng trên máy chủ Windows để hiển thị bảng định tuyến? (Chọn hai.)",
+    "options": [
+      "netstat -r",
+      "hiển thị lộ trình ip",
+      "netstat -s",
+      "in lộ trình",
+      "dấu vết"
+    ],
+    "explanation": "Trên máy chủ Windows, lệnh in tuyến đường hoặc lệnh netstat -r có thể được sử dụng để hiển thị bảng định tuyến máy chủ. Cả hai lệnh đều tạo ra cùng một đầu ra. Trên bộ định tuyến, lệnh show ip Route được sử dụng để hiển thị bảng định tuyến. Lệnh netstat -s được sử dụng để hiển thị số liệu thống kê trên mỗi giao thức. Lệnh tracert được sử dụng để hiển thị đường dẫn mà gói tin di chuyển đến đích."
+  },
+  "m5-10_q15": {
+    "question": "Người dùng đưa ra lệnh ping 2001:db8:FACE:39::10 và nhận được phản hồi bao gồm mã 2 . Mã này đại diện cho cái gì?",
+    "options": [
+      "máy chủ không thể truy cập được",
+      "cổng không thể truy cập",
+      "mạng không thể truy cập được",
+      "giao thức không thể truy cập được"
+    ],
+    "explanation": "Khi máy chủ hoặc cổng nhận được gói mà nó không thể gửi, nó có thể sử dụng thông báo ICMP Destination Unreachable để thông báo cho nguồn rằng đích hoặc dịch vụ không thể truy cập được. Thông báo sẽ bao gồm một mã cho biết lý do tại sao gói không thể được gửi. Đây là một số mã Không thể truy cập đích cho ICMPv4: 0 : không thể truy cập mạng 1 : không thể truy cập máy chủ 2 : không thể truy cập giao thức 3 : không thể truy cập cổng"
+  },
+  "m5-10_q16": {
+    "question": "Thông báo nào thông báo cho các giao diện hỗ trợ IPv6 sử dụng DHCPv6 có trạng thái để lấy địa chỉ IPv6?",
+    "options": [
+      "Lời mời bộ định tuyến ICMPv6",
+      "tin nhắn quảng cáo DHCPv6",
+      "bản tin trả lời DHCPv6",
+      "Quảng cáo bộ định tuyến ICMPv6"
+    ],
+    "explanation": "Trước khi giao diện hỗ trợ IPv6 sử dụng DHCPv6 có trạng thái để lấy địa chỉ IPv6, giao diện đó phải nhận được Quảng cáo bộ định tuyến ICMPv6 với cờ cấu hình được quản lý (cờ M) được đặt thành 1."
+  },
+  "m5-10_q17": {
+    "question": "Mục đích của tin nhắn ICMP là gì?",
+    "options": [
+      "để thông báo cho các bộ định tuyến về những thay đổi cấu trúc liên kết mạng",
+      "để đảm bảo việc phân phối gói IP",
+      "để cung cấp phản hồi về việc truyền gói IP",
+      "để theo dõi quá trình phân giải tên miền thành địa chỉ IP"
+    ],
+    "explanation": "Mục đích của tin nhắn ICMP là cung cấp phản hồi về các vấn đề liên quan đến việc xử lý gói IP."
+  },
+  "m5-10_q18": {
+    "question": "Khớp nhóm mã trạng thái HTTP với loại thông báo do máy chủ HTTP tạo ra.",
+    "options": [
+      "lỗi khách hàng: -> 4xx",
+      "chuyển hướng: -> 3xx",
+      "thành công: -> 2xx",
+      "thông tin: -> 1xx",
+      "lỗi máy chủ: -> 5xx"
+    ],
+    "explanation": ""
+  },
+  "m5-10_q19": {
+    "question": "Dịch vụ mạng nào sử dụng giao thức WHOIS?",
+    "options": [
+      "HTTPS",
+      "DNS",
+      "SMTP",
+      "FTP"
+    ],
+    "explanation": "WHOIS là giao thức dựa trên TCP được sử dụng để xác định chủ sở hữu tên miền internet thông qua hệ thống DNS."
+  },
+  "m5-10_q20": {
+    "question": "Máy khách DHCPv4 sẽ thực hiện hành động gì nếu nhận được nhiều hơn một DHCPOFFER từ nhiều máy chủ DHCP?",
+    "options": [
+      "Nó gửi DHCPNAK và bắt đầu lại quá trình DHCP.",
+      "Nó chấp nhận cả tin nhắn DHCPOFFER và gửi DHCPACK.",
+      "Nó loại bỏ cả hai đề nghị và gửi DHCPDISCOVER mới.",
+      "Nó gửi DHCPREQUEST để xác định ưu đãi cho thuê nào mà khách hàng đang chấp nhận."
+    ],
+    "explanation": "Nếu có nhiều máy chủ DHCP trong mạng, máy khách có thể nhận được nhiều hơn một DHCPOFFER. Trong trường hợp này, máy khách sẽ chỉ gửi một DHCPREQUEST, bao gồm máy chủ mà máy khách đang chấp nhận ưu đãi."
+  },
+  "m5-10_q21": {
+    "question": "Tham khảo triển lãm. Từ quan điểm của người dùng đằng sau bộ định tuyến NAT, loại địa chỉ NAT nào là 209.165.201.1?",
+    "options": [
+      "bên trong toàn cầu",
+      "bên trong địa phương",
+      "bên ngoài toàn cầu",
+      "bên ngoài địa phương"
+    ],
+    "explanation": "Từ quan điểm của người dùng đằng sau NAT, các địa chỉ toàn cầu bên trong được người dùng bên ngoài sử dụng để tiếp cận các máy chủ nội bộ. Địa chỉ nội bộ bên trong là địa chỉ được gán cho các máy chủ nội bộ. Địa chỉ toàn cầu bên ngoài là địa chỉ của các điểm đến trên mạng bên ngoài. Địa chỉ cục bộ bên ngoài là địa chỉ riêng thực tế của máy chủ đích phía sau các thiết bị NAT khác."
+  },
+  "m5-10_q22": {
+    "question": "Hãy ghép từng đặc điểm với giao thức email thích hợp. (Không phải tất cả các tùy chọn đều được sử dụng.) POP:",
+    "options": [
+      "không yêu cầu giải pháp sao lưu tập trung.",
+      "thư sẽ bị xóa khi nó được tải xuống.",
+      "mong muốn đối với một ISP hoặc doanh nghiệp lớn.",
+      "tải xuống bản sao của tin nhắn để làm khách hàng.",
+      "tin nhắn gốc phải được xóa thủ công.",
+      "đòi hỏi một không gian đĩa lớn hơn."
+    ],
+    "explanation": "Cả POP và IMAP đều được sử dụng để truy xuất thư email. SMTP là giao thức mặc định được sử dụng để gửi email. Tuy nhiên, POP không lưu trữ tin nhắn và tự động xóa chúng khi chúng được tải xuống. Một doanh nghiệp lớn hoặc ISP thích điều này hơn là một doanh nghiệp nhỏ. Trách nhiệm của khách hàng là lưu trữ và sắp xếp các tin nhắn. IMAP yêu cầu sao lưu tập trung vì nó lưu trữ tất cả tin nhắn cho đến khi chúng bị xóa thủ công. Điều này có nghĩa là phải phân bổ nhiều dung lượng ổ đĩa hơn cho IMAP."
+  },
+  "m5-10_q23": {
+    "question": "Điều gì được thực hiện đối với gói IP trước khi nó được truyền qua môi trường vật lý?",
+    "options": [
+      "Nó được gắn thẻ với thông tin đảm bảo giao hàng đáng tin cậy.",
+      "Nó được chia thành từng phần nhỏ hơn.",
+      "Nó được gói gọn trong khung Lớp 2.",
+      "Nó được gói gọn trong một phân đoạn TCP."
+    ],
+    "explanation": "Khi tin nhắn được gửi trên mạng, quy trình đóng gói sẽ hoạt động từ đầu mô hình OSI hoặc TCP/IP xuống dưới cùng. Tại mỗi lớp của mô hình, thông tin lớp trên được gói gọn trong trường dữ liệu của giao thức tiếp theo. Ví dụ, trước khi một gói IP có thể được gửi đi, nó được đóng gói trong khung liên kết dữ liệu ở Lớp 2 để có thể gửi qua môi trường vật lý."
+  },
+  "m5-10_q24": {
+    "question": "PDU nào được xử lý khi máy tính chủ đang giải nén tin nhắn ở lớp vận chuyển của mô hình TCP/IP?",
+    "options": [
+      "đoạn",
+      "gói",
+      "khung",
+      "bit"
+    ],
+    "explanation": "Ở lớp vận chuyển, máy tính chủ sẽ giải đóng gói một phân đoạn để tập hợp lại dữ liệu thành định dạng có thể chấp nhận được theo giao thức lớp ứng dụng của mô hình TCP/IP."
+  },
+  "m5-10_q25": {
+    "question": "Mô hình mạng nào đang được sử dụng khi tác giả tải một tài liệu chương lên máy chủ tệp của nhà xuất bản sách?",
+    "options": [
+      "ngang hàng",
+      "máy khách/máy chủ",
+      "chủ nô",
+      "điểm-điểm"
+    ],
+    "explanation": "Trong mô hình mạng client/server, một thiết bị mạng đảm nhận vai trò của máy chủ để cung cấp một dịch vụ cụ thể như truyền và lưu trữ tệp. Trong mô hình mạng máy khách/máy chủ, không nhất thiết phải sử dụng máy chủ chuyên dụng, nhưng nếu có thì mô hình mạng đang được sử dụng là mô hình máy khách/máy chủ. Ngược lại, mạng ngang hàng không có máy chủ chuyên dụng."
+  },
+  "m5-10_q26": {
+    "question": "Loại truyền nào được sử dụng để truyền một luồng video chẳng hạn như hội nghị truyền hình trên web tới một số người dùng được chọn?",
+    "options": [
+      "bất kỳ truyền hình nào",
+      "phát tin",
+      "phát đơn hướng",
+      "phát đa hướng"
+    ],
+    "explanation": "Anycast được sử dụng với truyền IPv6. Một unicast là một đường truyền đến một đích máy chủ duy nhất. Broadcast là một đường truyền được gửi đến tất cả các máy chủ trên mạng đích."
+  },
+  "m5-10_q27": {
+    "question": "Tham khảo triển lãm. PC1 cố gắng kết nối với File_server1 và gửi yêu cầu ARP để lấy địa chỉ MAC đích. PC1 sẽ nhận được địa chỉ MAC nào trong phản hồi ARP?",
+    "options": [
+      "địa chỉ MAC của giao diện G0/0 trên R2",
+      "địa chỉ MAC của S2",
+      "địa chỉ MAC của S1",
+      "địa chỉ MAC của File_server1",
+      "địa chỉ MAC của giao diện G0/0 trên R1"
+    ],
+    "explanation": "PC1 phải có địa chỉ MAC để sử dụng làm địa chỉ Lớp 2 đích. PC1 sẽ gửi yêu cầu ARP dưới dạng quảng bá và R1 sẽ gửi lại phản hồi ARP với địa chỉ MAC giao diện G0/0 của nó. PC1 sau đó có thể chuyển tiếp gói đến địa chỉ MAC của cổng mặc định, R1."
+  },
+  "m5-10_q28": {
+    "question": "Kết quả của một cuộc tấn công ngộ độc ARP là gì?",
+    "options": [
+      "Các máy khách trong mạng bị nhiễm virus.",
+      "Mạng khách hàng gặp phải tình trạng từ chối dịch vụ.",
+      "Bộ nhớ đệm của máy khách bị quá tải.",
+      "Thông tin khách hàng bị đánh cắp."
+    ],
+    "explanation": "Ngộ độc ARP là một kỹ thuật được kẻ tấn công sử dụng để trả lời yêu cầu ARP cho địa chỉ IPv4 thuộc về một thiết bị khác, chẳng hạn như cổng mặc định. Kẻ tấn công, người đang thực hiện một cuộc tấn công MITM một cách hiệu quả, giả vờ là cổng mặc định và gửi phản hồi ARP đến bộ truyền yêu cầu ARP. Người nhận phản hồi ARP sẽ thêm địa chỉ MAC sai vào bảng ARP và sẽ gửi các gói tin cho kẻ tấn công. Do đó, tất cả lưu lượng truy cập đến cổng mặc định sẽ chuyển qua thiết bị của kẻ tấn công."
+  },
+  "m5-10_q29": {
+    "question": "Chức năng của thông báo HTTP GET là gì?",
+    "options": [
+      "để tải nội dung lên máy chủ web từ máy khách web",
+      "để truy xuất email khách hàng từ máy chủ email bằng cổng TCP 110",
+      "để yêu cầu một trang HTML từ máy chủ web",
+      "để gửi thông tin lỗi từ máy chủ web tới máy khách web"
+    ],
+    "explanation": "Có ba loại thông báo HTTP phổ biến: GET – được khách hàng sử dụng để yêu cầu dữ liệu từ máy chủ web POST – được khách hàng sử dụng để tải dữ liệu lên máy chủ web PUT – được khách hàng sử dụng để tải dữ liệu lên máy chủ web"
+  },
+  "m5-10_q30": {
+    "question": "Giao thức nào là giao thức chia sẻ tệp máy khách/máy chủ và cũng là giao thức yêu cầu/phản hồi?",
+    "options": [
+      "FTP",
+      "UDP",
+      "TCP",
+      "SMB"
+    ],
+    "explanation": "Khối tin nhắn máy chủ (SMB) là giao thức chia sẻ tệp máy khách/máy chủ mô tả cấu trúc của các tài nguyên mạng được chia sẻ như thư mục, tệp, máy in và cổng nối tiếp. SMB cũng là một giao thức yêu cầu/phản hồi."
+  },
+  "m5-10_q31": {
+    "question": "DHCPDISCOVER được truyền trên mạng tới máy chủ DHCP như thế nào?",
+    "options": [
+      "Thông báo DHCPDISCOVER được gửi với địa chỉ IP quảng bá là địa chỉ đích.",
+      "Thông báo DHCPDISCOVER được gửi cùng với địa chỉ IP multicast mà tất cả máy chủ DHCP coi là địa chỉ đích.",
+      "Thông báo DHCPDISCOVER được gửi cùng với địa chỉ IP của cổng mặc định làm địa chỉ đích.",
+      "Thông báo DHCPDISCOVER được gửi cùng với địa chỉ IP của máy chủ DHCP làm địa chỉ đích."
+    ],
+    "explanation": "Thông báo DHCPDISCOVER được gửi bởi máy khách DHCPv4 và nhắm mục tiêu IP quảng bá cùng với cổng đích 67. Máy chủ DHCPv4 hoặc các máy chủ phản hồi máy khách DHCPv4 bằng cách nhắm mục tiêu cổng 68."
+  },
+  "m5-10_q32": {
+    "question": "Mô tả về chuyển vùng DNS là gì?",
+    "options": [
+      "chuyển khối dữ liệu DNS từ máy chủ DNS sang máy chủ khác",
+      "hành động được thực hiện khi máy chủ DNS gửi truy vấn thay mặt cho trình phân giải DNS",
+      "chuyển tiếp yêu cầu từ máy chủ DNS trong tên miền phụ tới nguồn có thẩm quyền",
+      "tìm địa chỉ trùng khớp và chuyển địa chỉ được đánh số từ máy chủ DNS sang máy khách yêu cầu ban đầu"
+    ],
+    "explanation": "Khi máy chủ yêu cầu dữ liệu cho một vùng, nó sẽ yêu cầu chuyển dữ liệu đó từ máy chủ có thẩm quyền cho vùng đó. Quá trình chuyển khối dữ liệu DNS giữa các máy chủ được gọi là chuyển vùng."
+  },
+  "m5-10_q33": {
+    "question": "Hai kích thước (tối thiểu và tối đa) của khung Ethernet là gì? (Chọn hai.)",
+    "options": [
+      "128 byte",
+      "64 byte",
+      "1024 byte",
+      "56 byte",
+      "1518 byte"
+    ],
+    "explanation": "Khung Ethernet tối thiểu là 64 byte. Khung Ethernet tối đa là 1518 byte. Kỹ thuật viên mạng phải biết kích thước khung hình tối thiểu và tối đa để nhận ra các khung hình runt và jumbo."
+  },
+  "m5-10_q34": {
+    "question": "Quá trình nào không thành công nếu máy tính không thể truy cập Internet và nhận được địa chỉ IP là 169.254.142.5?",
+    "options": [
+      "DNS",
+      "IP",
+      "HTTP",
+      "DHCP"
+    ],
+    "explanation": "Khi máy tính Windows không thể giao tiếp với máy chủ IPv4 DHCP, máy tính sẽ tự động gán cho mình một địa chỉ IP trong phạm vi 169.254.0.0/16. Máy tính Linux và Apple không tự động gán địa chỉ IP.​"
+  },
+  "m5-10_q35": {
+    "question": "Câu lệnh nào mô tả một tính năng của giao thức IP?",
+    "options": [
+      "IP dựa trên các giao thức Lớp 2 để kiểm soát lỗi truyền.",
+      "Địa chỉ MAC được sử dụng trong quá trình đóng gói gói IP.",
+      "IP dựa vào các dịch vụ lớp trên để xử lý các tình huống gói bị thiếu hoặc không đúng thứ tự.",
+      "Đóng gói IP được sửa đổi dựa trên phương tiện mạng."
+    ],
+    "explanation": "Giao thức IP là giao thức không có kết nối, được coi là không đáng tin cậy về mặt phân phối từ đầu đến cuối. Nó không cung cấp khả năng kiểm soát lỗi trong trường hợp gói nhận không đúng thứ tự hoặc trong trường hợp gói bị thiếu. Nó dựa vào các dịch vụ lớp trên, chẳng hạn như TCP, để giải quyết những vấn đề này."
+  },
+  "m5-10_q36": {
+    "question": "Đặc điểm cơ bản của giao thức IP là gì?",
+    "options": [
+      "không có kết nối",
+      "phụ thuộc vào phương tiện truyền thông",
+      "phân đoạn dữ liệu người dùng",
+      "giao hàng tận nơi đáng tin cậy"
+    ],
+    "explanation": "Giao thức Internet (IP) là giao thức lớp mạng không yêu cầu trao đổi thông tin điều khiển ban đầu để thiết lập kết nối đầu cuối trước khi các gói được chuyển tiếp. Do đó, IP không có kết nối và bản thân nó không cung cấp khả năng phân phối đáng tin cậy từ đầu đến cuối. IP là phương tiện truyền thông độc lập. Phân đoạn dữ liệu người dùng là một dịch vụ được cung cấp ở lớp vận chuyển."
+  },
+  "m5-10_q37": {
+    "question": "Câu lệnh nào mô tả lệnh ping và tracert?",
+    "options": [
+      "Cả ping và tracert đều có thể hiển thị kết quả dưới dạng đồ họa.",
+      "Ping cho biết quá trình truyền có thành công hay không; tracert thì không.",
+      "Tracert hiển thị từng bước nhảy, trong khi ping chỉ hiển thị phản hồi đích.",
+      "Tracert sử dụng địa chỉ IP; ping thì không."
+    ],
+    "explanation": "Tiện ích ping kiểm tra kết nối đầu cuối giữa hai máy chủ. Tuy nhiên, nếu tin nhắn không đến đích thì không có cách nào để xác định vấn đề nằm ở đâu. Mặt khác, tiện ích traceroute ( tracert trong Windows) theo dõi lộ trình mà một tin nhắn đi từ nguồn đến đích. Traceroute hiển thị từng bước nhảy trên đường đi và thời gian cần thiết để tin nhắn đến được mạng đó và quay trở lại."
+  },
+  "m5-10_q38": {
+    "question": "Một tập đoàn lớn đã sửa đổi mạng của mình để cho phép người dùng truy cập tài nguyên mạng từ máy tính xách tay cá nhân và điện thoại thông minh của họ. Xu hướng mạng nào mô tả điều này?",
+    "options": [
+      "điện toán đám mây",
+      "hội nghị truyền hình",
+      "cộng tác trực tuyến",
+      "mang theo thiết bị của riêng bạn"
+    ],
+    "explanation": "BYOD cho phép người dùng cuối sử dụng các công cụ cá nhân để truy cập mạng công ty. Việc cho phép xu hướng này có thể có tác động lớn đến mạng, chẳng hạn như tính bảo mật và khả năng tương thích với phần mềm và thiết bị của công ty."
+  },
+  "m5-10_q39": {
+    "question": "Nối mỗi mô tả với thuật ngữ tương ứng của nó. (Không phải tất cả các tùy chọn đều được sử dụng.)",
+    "options": [
+      "mã hóa tin nhắn -> quá trình chuyển đổi thông tin từ định dạng này sang định dạng khác được chấp nhận để truyền tải",
+      "kích thước tin nhắn -> quá trình chia nhỏ một tin nhắn dài thành từng phần riêng lẻ trước khi gửi qua mạng",
+      "đóng gói tin nhắn -> quá trình đặt một định dạng tin nhắn bên trong một định dạng tin nhắn khác",
+      "(Trống) -> quá trình xác định thời điểm bắt đầu gửi tin nhắn trên mạng",
+      "(Trống) -> quá trình giải nén một định dạng tin nhắn từ một định dạng tin nhắn khác"
+    ],
+    "explanation": "mã hóa tin nhắn : quá trình chuyển đổi thông tin từ định dạng này sang định dạng khác có thể chấp nhận được để truyền tải kích thước tin nhắn : quá trình chia nhỏ một tin nhắn dài thành các phần riêng lẻ trước khi được gửi qua mạng đóng gói tin nhắn : quá trình đặt một định dạng tin nhắn bên trong một định dạng tin nhắn khác (Trống): quá trình xác định thời điểm bắt đầu gửi tin nhắn trên mạng (Trống): quá trình giải nén một định dạng tin nhắn từ một định dạng tin nhắn khác"
+  },
+  "m5-10_q40": {
+    "question": "Máy chủ hỗ trợ IPv6 sử dụng SLAAC sẽ sử dụng phương pháp nào để tìm hiểu địa chỉ của cổng mặc định?",
+    "options": [
+      "tin nhắn quảng cáo bộ định tuyến nhận được từ liên kết bộ định tuyến",
+      "tin nhắn chào mời bộ định tuyến nhận được từ liên kết bộ định tuyến",
+      "tin nhắn quảng cáo hàng xóm nhận được từ liên kết hàng xóm",
+      "tin nhắn mời hàng xóm được gửi để liên kết hàng xóm"
+    ],
+    "explanation": "Khi sử dụng SLAAC, máy chủ sẽ tìm hiểu từ quảng cáo bộ định tuyến được gửi bởi bộ định tuyến liên kết địa chỉ sẽ sử dụng làm cổng mặc định."
+  },
+  "m5-10_q41": {
+    "question": "Tham khảo triển lãm. PC này không thể giao tiếp với máy chủ tại 172.16.0.100. Thông tin nào có thể được thu thập từ đầu ra được hiển thị?",
+    "options": [
+      "Máy chủ mục tiêu đã bị tắt.",
+      "Giao tiếp không thành công sau cổng mặc định.",
+      "172.16.0.100 chỉ cách một bước duy nhất.",
+      "PC này có cấu hình mạng con sai trên NIC của nó"
+    ],
+    "explanation": "Lệnh tracert hiển thị đường dẫn gói tin đi qua mạng tới đích. Trong ví dụ này, chỉ nhận được phản hồi từ bộ định tuyến đầu tiên trong đường dẫn và tất cả các phản hồi khác sẽ hết thời gian chờ. Bộ định tuyến đầu tiên là cổng mặc định cho máy chủ này và do nhận được phản hồi từ bộ định tuyến nên có thể giả định rằng máy chủ này nằm trên cùng mạng con với bộ định tuyến."
+  },
+  "m5-10_q42": {
+    "question": "Người dùng đưa ra lệnh ping 192.168.250.103 và nhận được phản hồi bao gồm mã 1. Mã này thể hiện điều gì?",
+    "options": [
+      "mạng không thể truy cập được",
+      "cổng không thể truy cập",
+      "giao thức không thể truy cập được",
+      "máy chủ không thể truy cập được"
+    ],
+    "explanation": ""
+  },
+  "m5-10_q43": {
+    "question": "Ba trách nhiệm của lớp vận chuyển là gì? (Chọn ba.)",
+    "options": [
+      "xác định các ứng dụng và dịch vụ trên máy khách và máy chủ sẽ xử lý dữ liệu được truyền",
+      "tiến hành phát hiện lỗi nội dung trong khung",
+      "đáp ứng yêu cầu về độ tin cậy của ứng dụng, nếu có",
+      "hướng các gói tới mạng đích",
+      "định dạng dữ liệu thành dạng tương thích để thiết bị đích nhận",
+      "ghép nhiều luồng truyền thông từ nhiều người dùng hoặc ứng dụng trên cùng một mạng"
+    ],
+    "explanation": "Lớp vận chuyển có một số trách nhiệm. Một số trách nhiệm chính bao gồm: Theo dõi các luồng liên lạc riêng lẻ giữa các ứng dụng trên máy chủ nguồn và đích Phân đoạn dữ liệu tại nguồn và tập hợp lại dữ liệu tại đích Xác định ứng dụng phù hợp cho từng luồng liên lạc thông qua việc sử dụng số cổng Ghép kênh liên lạc của nhiều người dùng hoặc ứng dụng trên một mạng duy nhất Quản lý các yêu cầu về độ tin cậy của ứng dụng"
+  },
+  "m5-10_q44": {
+    "question": "Quét mạng giúp đánh giá bảo mật hoạt động như thế nào?",
+    "options": [
+      "Nó có thể phát hiện các cổng TCP mở trên hệ thống mạng.",
+      "Nó có thể phát hiện mật khẩu yếu hoặc trống.",
+      "Nó có thể mô phỏng các cuộc tấn công từ các nguồn độc hại.",
+      "Nó có thể ghi lại hoạt động bất thường."
+    ],
+    "explanation": "Quét mạng có thể giúp quản trị viên mạng tăng cường bảo mật của mạng và hệ thống bằng cách xác định các cổng TCP và UDP mở có thể là mục tiêu của một cuộc tấn công."
+  },
+  "m5-10_q45": {
+    "question": "Tham khảo triển lãm. Một nhà phân tích bảo mật mạng đang kiểm tra dữ liệu thu được bằng Wireshark. Các khung được chụp cho biết máy chủ đang tải xuống phần mềm độc hại từ máy chủ. Cổng nguồn nào được máy chủ sử dụng để yêu cầu tải xuống?",
+    "options": [
+      "66",
+      "1514",
+      "6666",
+      "48598"
+    ],
+    "explanation": "Trong quá trình bắt tay ba chiều TCP, đầu ra cho thấy máy chủ sử dụng cổng nguồn 48598 để bắt đầu kết nối và yêu cầu tải xuống."
+  },
+  "m5-10_q46": {
+    "question": "Hai hoạt động nào được cung cấp bởi TCP nhưng không phải bởi UDP? (Chọn hai.)",
+    "options": [
+      "truyền lại bất kỳ dữ liệu chưa được thừa nhận",
+      "xác nhận dữ liệu đã nhận",
+      "xây dựng lại dữ liệu theo thứ tự nhận được",
+      "xác định các ứng dụng",
+      "theo dõi các cuộc trò chuyện cá nhân"
+    ],
+    "explanation": "Đánh số và theo dõi các phân đoạn dữ liệu, xác nhận dữ liệu đã nhận và truyền lại bất kỳ dữ liệu nào chưa được xác nhận là các hoạt động đáng tin cậy để đảm bảo rằng tất cả dữ liệu đều đến đích. UDP không cung cấp độ tin cậy. Cả TCP và UDP đều xác định các ứng dụng và theo dõi các cuộc hội thoại riêng lẻ. UDP không đánh số các phân đoạn dữ liệu và xây dựng lại dữ liệu theo thứ tự nhận được."
+  },
+  "m5-10_q47": {
+    "question": "Người dùng đang thực hiện tracert tới một thiết bị từ xa. Tại thời điểm nào bộ định tuyến nằm trên đường dẫn đến thiết bị đích sẽ ngừng chuyển tiếp gói?",
+    "options": [
+      "khi bộ định tuyến nhận được thông báo ICMP Time Exceeded",
+      "khi giá trị RTT đạt đến 0",
+      "khi giá trị của cả hai bản tin Echo Yêu cầu và Echo Reply đều bằng 0",
+      "khi máy chủ phản hồi bằng tin nhắn ICMP Echo Reply",
+      "khi giá trị trong trường TTL đạt tới 0"
+    ],
+    "explanation": "Khi bộ định tuyến nhận được gói traceroute, giá trị trong trường TTL sẽ giảm đi 1. Khi giá trị trong trường bằng 0, bộ định tuyến nhận sẽ không chuyển tiếp gói và sẽ gửi tin nhắn ICMP Time Exceeded trở lại nguồn."
+  },
+  "m5-10_q48": {
+    "question": "Quản trị viên mạng đang kiểm tra kết nối mạng bằng cách đưa ra lệnh ping trên bộ định tuyến. Biểu tượng nào sẽ được hiển thị để cho biết thời gian đã hết trong quá trình chờ tin nhắn trả lời tiếng vang ICMP?",
+    "options": [
+      "bạn",
+      ".",
+      "!",
+      "$"
+    ],
+    "explanation": "Khi lệnh ping được phát trên bộ định tuyến, các chỉ báo phổ biến nhất như sau: ! - cho biết đã nhận được tin nhắn trả lời tiếng vang ICMP. - cho biết đã hết thời gian trong khi chờ tin nhắn trả lời tiếng vang ICMP U - đã nhận được tin nhắn ICMP về khả năng không thể truy cập"
+  },
+  "m5-10_q49": {
+    "question": "Một kỹ thuật viên đang định cấu hình email trên thiết bị di động. Người dùng muốn có thể giữ email gốc trên máy chủ, sắp xếp nó thành các thư mục và đồng bộ hóa các thư mục giữa thiết bị di động và máy chủ. Kỹ thuật viên nên sử dụng giao thức email nào?",
+    "options": [
+      "SMTP",
+      "MIME",
+      "POP3",
+      "IMAP"
+    ],
+    "explanation": "Giao thức IMAP cho phép dữ liệu email được đồng bộ hóa giữa máy khách và máy chủ. Những thay đổi được thực hiện ở một vị trí, chẳng hạn như đánh dấu email là đã đọc, sẽ tự động được áp dụng cho vị trí khác. POP3 cũng là một giao thức email. Tuy nhiên, dữ liệu không được đồng bộ giữa máy khách và máy chủ. SMTP được sử dụng để gửi email và thường được sử dụng cùng với giao thức POP3. MIME là một tiêu chuẩn email được sử dụng để xác định các loại tệp đính kèm và cho phép đính kèm các nội dung bổ sung như hình ảnh và tài liệu vào email."
+  },
+  "m5-10_q50": {
+    "question": "Địa chỉ MAC nguồn được thêm vào PDU trong quá trình đóng gói ở lớp OSI nào?",
+    "options": [
+      "lớp ứng dụng",
+      "lớp trình bày",
+      "lớp liên kết dữ liệu",
+      "lớp vận chuyển"
+    ],
+    "explanation": ""
+  },
+  "m5-10_q51": {
+    "question": "Giá trị nào chứa trong trường tiêu đề IPv4 sẽ bị giảm đi theo mỗi bộ định tuyến nhận gói?",
+    "options": [
+      "Thời gian để sống",
+      "Phần bù mảnh",
+      "Độ dài tiêu đề",
+      "Dịch vụ khác biệt"
+    ],
+    "explanation": "Khi bộ định tuyến nhận được một gói, bộ định tuyến sẽ giảm trường Thời gian tồn tại (TTL) đi một. Khi trường đạt đến 0, bộ định tuyến nhận sẽ loại bỏ gói và sẽ gửi tin nhắn Đã vượt quá thời gian ICMP cho người gửi."
+  },
+  "m5-10_q52": {
+    "question": "Ba trách nhiệm của lớp vận chuyển là gì? (Chọn ba.)",
+    "options": [
+      "xác định các ứng dụng và dịch vụ trên máy khách và máy chủ sẽ xử lý dữ liệu được truyền",
+      "tiến hành phát hiện lỗi nội dung trong khung",
+      "đáp ứng yêu cầu về độ tin cậy của ứng dụng, nếu có",
+      "hướng các gói tới mạng đích",
+      "định dạng dữ liệu thành dạng tương thích để thiết bị đích nhận",
+      "ghép nhiều luồng truyền thông từ nhiều người dùng hoặc ứng dụng trên cùng một mạng"
+    ],
+    "explanation": "Lớp vận chuyển có một số trách nhiệm. Một số trách nhiệm chính bao gồm: Theo dõi các luồng liên lạc riêng lẻ giữa các ứng dụng trên máy chủ nguồn và đích Phân đoạn dữ liệu tại nguồn và tập hợp lại dữ liệu tại đích Xác định ứng dụng phù hợp cho từng luồng liên lạc thông qua việc sử dụng số cổng Ghép kênh liên lạc của nhiều người dùng hoặc ứng dụng trên một mạng duy nhất Quản lý các yêu cầu về độ tin cậy của ứng dụng"
+  },
+  "m5-10_q53": {
+    "question": "Hai thông báo ICMP nào được sử dụng bởi cả giao thức IPv4 và IPv6? (Chọn hai.)​",
+    "options": [
+      "chuyển hướng tuyến đường",
+      "gạ gẫm hàng xóm",
+      "chào mời bộ định tuyến",
+      "quảng cáo bộ định tuyến",
+      "giao thức không thể truy cập được"
+    ],
+    "explanation": "Các thông báo ICMP chung cho cả ICMPv4 và ICMPv6 bao gồm: xác nhận máy chủ, đích (mạng, máy chủ, giao thức, cổng) hoặc dịch vụ không thể truy cập được, vượt quá thời gian và chuyển hướng tuyến đường. Chào mời bộ định tuyến, chào mời hàng xóm và quảng cáo bộ định tuyến là các giao thức mới được triển khai trong ICMPv6."
+  },
+  "m5-10_q54": {
+    "question": "Bộ định tuyến sử dụng cơ chế nào để ngăn gói IPv4 nhận được di chuyển vô tận trên mạng?",
+    "options": [
+      "Nó kiểm tra giá trị của trường TTL và nếu là 100, nó sẽ loại bỏ gói và gửi thông báo Destination Unreachable đến máy chủ nguồn.",
+      "Nó giảm giá trị của trường TTL đi 1 và nếu kết quả là 0, nó sẽ loại bỏ gói và gửi tin nhắn Đã vượt quá thời gian đến máy chủ nguồn.",
+      "Nó kiểm tra giá trị của trường TTL và nếu bằng 0, nó sẽ loại bỏ gói và gửi thông báo Destination Unreachable đến máy chủ nguồn.",
+      "Nó tăng giá trị của trường TTL lên 1 và nếu kết quả là 100, nó sẽ loại bỏ gói và gửi thông báo Sự cố tham số đến máy chủ nguồn."
+    ],
+    "explanation": "Để ngăn gói IPv4 di chuyển liên tục trong mạng, giao thức TCP/IP sử dụng giao thức ICMPv4 để cung cấp phản hồi về các sự cố. Khi bộ định tuyến nhận được một gói và giảm trường TTL trong gói IPv4 đi 1 và nếu kết quả bằng 0, nó sẽ loại bỏ gói đó và gửi thông báo Đã vượt quá thời gian đến máy chủ nguồn."
+  },
+  "m5-10_q55": {
+    "question": "Một thiết bị đã được gán địa chỉ IPv6 là 2001:0db8:cafe:4500:1000:00d8:0058:00ab/64. Mã định danh máy chủ của thiết bị là gì?",
+    "options": [
+      "2001:0db8:cafe:4500:1000:00d8:0058:00ab",
+      "00ab",
+      "2001:0db8:cafe:4500",
+      "1000:00d8:0058:00ab"
+    ],
+    "explanation": "Địa chỉ có độ dài tiền tố là /64. Do đó, 64 bit đầu tiên đại diện cho phần mạng, trong khi 64 bit cuối cùng đại diện cho phần máy chủ của địa chỉ IPv6."
+  },
+  "m5-10_q56": {
+    "question": "Ba giao thức lớp ứng dụng nào là một phần của bộ giao thức TCP/IP? (Chọn ba.)",
+    "options": [
+      "DHCP",
+      "PPP",
+      "FTP",
+      "DNS",
+      "NAT",
+      "ARP"
+    ],
+    "explanation": "DNS, DHCP và FTP đều là các giao thức lớp ứng dụng trong bộ giao thức TCP/IP. ARP và PPP là các giao thức lớp truy cập mạng và NAT là giao thức lớp internet trong bộ giao thức TCP/IP."
+  },
+  "m5-10_q57": {
+    "question": "Một máy tính có thể truy cập các thiết bị trên cùng một mạng nhưng không thể truy cập các thiết bị trên các mạng khác. Nguyên nhân có thể xảy ra của vấn đề này là gì?",
+    "options": [
+      "Máy tính có địa chỉ IP không hợp lệ.",
+      "Cáp không được kết nối đúng cách với NIC.",
+      "Máy tính có mặt nạ mạng con không chính xác.",
+      "Máy tính có địa chỉ cổng mặc định không hợp lệ."
+    ],
+    "explanation": "Cổng mặc định là địa chỉ của thiết bị mà máy chủ sử dụng để truy cập Internet hoặc mạng khác. Nếu cổng mặc định bị thiếu hoặc không chính xác, máy chủ đó sẽ không thể liên lạc bên ngoài mạng cục bộ. Vì máy chủ có thể truy cập các máy chủ khác trên mạng cục bộ nên cáp mạng và các phần khác của cấu hình IP đang hoạt động."
+  },
+  "m5-10_q58": {
+    "question": "Tham khảo triển lãm. PC1 đưa ra yêu cầu ARP vì nó cần gửi gói đến PC3. Trong kịch bản này, điều gì sẽ xảy ra tiếp theo?",
+    "options": [
+      "RT1 sẽ gửi phản hồi ARP với địa chỉ MAC Fa0/1 của chính nó.",
+      "SW1 sẽ gửi phản hồi ARP với địa chỉ MAC Fa0/1 của nó.",
+      "RT1 sẽ gửi phản hồi ARP với địa chỉ MAC PC3.",
+      "RT1 sẽ chuyển tiếp yêu cầu ARP tới PC3.",
+      "RT1 sẽ gửi phản hồi ARP với địa chỉ MAC Fa0/0 của chính nó."
+    ],
+    "explanation": "Khi một thiết bị mạng phải liên lạc với một thiết bị trên mạng khác, nó sẽ phát đi một yêu cầu ARP yêu cầu địa chỉ MAC của cổng mặc định. Cổng mặc định (RT1) gửi một phản hồi ARP với địa chỉ MAC Fa0/0."
+  },
+  "m5-10_q59": {
+    "question": "Người dùng không thể kết nối với máy chủ tệp sẽ liên hệ với bộ phận trợ giúp. Kỹ thuật viên bộ phận trợ giúp yêu cầu người dùng ping địa chỉ IP của cổng mặc định được cấu hình trên máy trạm. Mục đích của lệnh ping này là gì?",
+    "options": [
+      "để phân giải tên miền của máy chủ tệp thành địa chỉ IP của nó",
+      "để yêu cầu cổng đó chuyển tiếp yêu cầu kết nối đến máy chủ tệp",
+      "để có được địa chỉ IP động từ máy chủ",
+      "để kiểm tra xem máy chủ có khả năng tiếp cận các máy chủ trên các mạng khác không"
+    ],
+    "explanation": "Lệnh ping được sử dụng để kiểm tra kết nối giữa các máy chủ. Các tùy chọn khác mô tả các tác vụ không được thực hiện bởi ping. Ping cổng mặc định sẽ kiểm tra xem máy chủ có khả năng tiếp cận các máy chủ trên mạng của chính nó và trên các mạng khác hay không."
+  },
+  "m5-10_q60": {
+    "question": "Người dùng nhận được địa chỉ IP 192.168.0.1 từ quản trị viên mạng của công ty. Một người bạn của người dùng ở một công ty khác có cùng địa chỉ IP trên một PC khác. Làm thế nào hai PC có thể sử dụng cùng một địa chỉ IP mà vẫn truy cập được Internet, gửi và nhận email cũng như tìm kiếm trên web?",
+    "options": [
+      "ISP sử dụng Dịch vụ tên miền để thay đổi địa chỉ IP của người dùng thành địa chỉ IP công cộng có thể được sử dụng trên Internet.",
+      "Cả hai người dùng phải sử dụng cùng một Nhà cung cấp dịch vụ Internet.",
+      "Cả hai người dùng phải ở trên cùng một mạng.",
+      "ISP sử dụng Dịch địa chỉ mạng để thay đổi địa chỉ IP của người dùng thành địa chỉ có thể được sử dụng trên Internet."
+    ],
+    "explanation": "Khi lưu lượng truy cập của người dùng từ phía sau tường lửa của ISP đến thiết bị cổng, Dịch địa chỉ mạng sẽ thay đổi địa chỉ IP riêng thành địa chỉ IP công khai, có thể định tuyến. Địa chỉ người dùng riêng tư vẫn bị ẩn khỏi Internet công cộng và do đó, nhiều người dùng có thể có cùng địa chỉ IP riêng tư, bất kể ISP."
+  },
+  "m5-10_q61": {
+    "question": "Có bao nhiêu địa chỉ máy chủ trên mạng 192.168.10.128/26?",
+    "options": [
+      "30",
+      "32",
+      "60",
+      "62",
+      "64"
+    ],
+    "explanation": "Tiền tố /26 cung cấp 6 bit máy chủ, cung cấp tổng cộng 64 địa chỉ, vì 2^6 = 64. Trừ đi địa chỉ mạng và địa chỉ quảng bá, còn lại 62 địa chỉ máy chủ có thể sử dụng được."
+  },
+  "m5-10_q62": {
+    "question": "Ba dải địa chỉ IP được dành riêng cho mục đích sử dụng riêng tư nội bộ là gì? (Chọn ba.)",
+    "options": [
+      "64.100.0.0/14",
+      "192.168.0.0/16",
+      "192.31.7.0/24",
+      "172.16.0.0/12",
+      "10.0.0.0/8",
+      "127.16.0.0/12"
+    ],
+    "explanation": "Các khối địa chỉ IP riêng được sử dụng bên trong các công ty như sau: 10.0.0.0 /8 (bất kỳ địa chỉ nào bắt đầu bằng 10 trong octet đầu tiên) 172.16.0.0 /12 (bất kỳ địa chỉ nào bắt đầu bằng 172.16 trong hai octet đầu tiên đến 172.31.255.255) 192.168.0.0 /16 (bất kỳ địa chỉ nào bắt đầu bằng 192.168 trong hai octet đầu tiên)"
+  },
+  "m5-10_q63": {
+    "question": "Tham khảo triển lãm. Một nhà phân tích an ninh mạng đang xem các gói đã ghi được chuyển tiếp trên bộ chuyển mạch S1. Thiết bị nào có địa chỉ MAC 50:6a:03:96:71:22?",
+    "options": [
+      "PC-A",
+      "bộ định tuyến DG",
+      "máy chủ DSN",
+      "ISP bộ định tuyến",
+      "máy chủ web"
+    ],
+    "explanation": "Việc chụp Wireshark là truy vấn DNS từ PC-A đến máy chủ DNS. Vì máy chủ DNS nằm trên một mạng từ xa nên PC sẽ gửi truy vấn đến bộ định tuyến cổng mặc định, bộ định tuyến DG, sử dụng địa chỉ MAC của giao diện G0/0 của bộ định tuyến trên bộ định tuyến."
+  },
+  "m5-10_q64": {
+    "question": "Một PC chủ đang cố gắng thuê một địa chỉ thông qua DHCP. Thông báo nào được máy chủ gửi để cho khách hàng biết nó có thể sử dụng thông tin IP được cung cấp?",
+    "options": [
+      "DHCP KHÁM PHÁ",
+      "ƯU ĐÃI DHCP",
+      "YÊU CẦU DHCP",
+      "DHCPACK",
+      "DHCPNACK"
+    ],
+    "explanation": "Khi máy chủ sử dụng DHCP để tự động định cấu hình địa chỉ IP, máy chủ thường gửi hai thông báo: thông báo DHCPDISCOVER và thông báo DHCPREQUEST. Hai tin nhắn này thường được gửi dưới dạng quảng bá để đảm bảo rằng tất cả các máy chủ DHCP đều nhận được chúng. Máy chủ phản hồi các tin nhắn này bằng tin nhắn DHCPOFFER, DHCPACK và DHCPNACK, tùy thuộc vào trường hợp."
+  },
+  "m5-10_q65": {
+    "question": "Một nhân viên phàn nàn rằng PC Windows không thể kết nối Internet. Kỹ thuật viên mạng đưa ra lệnh ipconfig trên PC và được hiển thị địa chỉ IP là 169.254.10.3. Có thể rút ra hai kết luận nào? (Chọn hai.)",
+    "options": [
+      "PC được cấu hình để tự động lấy địa chỉ IP.",
+      "Địa chỉ cổng mặc định không được cấu hình.",
+      "Địa chỉ máy chủ DNS bị định cấu hình sai.",
+      "Mạng doanh nghiệp bị định cấu hình sai để định tuyến động.",
+      "PC không thể liên lạc với máy chủ DHCP."
+    ],
+    "explanation": "Khi PC Windows được cấu hình để tự động lấy địa chỉ IP, PC sẽ cố gắng lấy địa chỉ IP từ máy chủ DHCP. Khi PC không thể kết nối với máy chủ DHCP, Windows sẽ tự động gán một địa chỉ thuộc phạm vi 169.254.0.0/16."
+  },
+  "m5-10_q66": {
+    "question": "Chức năng của lệnh tracert khác với lệnh ping khi chúng được sử dụng trên máy trạm là gì?",
+    "options": [
+      "Lệnh tracert được sử dụng để kiểm tra kết nối giữa hai thiết bị.",
+      "Lệnh tracert đến đích nhanh hơn.",
+      "Lệnh tracert hiển thị thông tin của các bộ định tuyến trong đường dẫn.",
+      "Lệnh tracert gửi một thông báo ICMP tới mỗi bước nhảy trên đường dẫn."
+    ],
+    "explanation": "Lệnh tracert gửi ba ping đến mỗi hop (bộ định tuyến) trên đường dẫn tới đích và hiển thị tên miền và địa chỉ IP của các hop từ phản hồi của chúng. Vì tracert sử dụng lệnh ping nên thời gian di chuyển giống như lệnh ping độc lập. Chức năng chính của lệnh ping độc lập là kiểm tra khả năng kết nối giữa hai máy chủ."
+  },
+  "m5-10_q67": {
+    "question": "Hai chức năng hoặc hoạt động nào được thực hiện bởi lớp con MAC? (Chọn hai.)",
+    "options": [
+      "Nó chịu trách nhiệm kiểm soát truy cập phương tiện.",
+      "Nó thực hiện chức năng của phần mềm trình điều khiển NIC.",
+      "Nó thêm tiêu đề và đoạn giới thiệu để tạo thành PDU OSI Lớp 2.",
+      "Nó xử lý giao tiếp giữa các lớp trên và dưới.",
+      "Nó bổ sung thông tin điều khiển vào dữ liệu lớp giao thức mạng."
+    ],
+    "explanation": "Lớp con MAC là lớp thấp hơn trong hai lớp con liên kết dữ liệu và gần lớp vật lý nhất. Hai chức năng chính của lớp con MAC là đóng gói dữ liệu từ các giao thức lớp trên và kiểm soát quyền truy cập vào phương tiện truyền thông."
+  },
+  "m5-10_q68": {
+    "question": "Trường nào trong tiêu đề gói IPv4 thường giữ nguyên trong quá trình truyền?",
+    "options": [
+      "Lá cờ",
+      "Thời gian để sống",
+      "Độ dài gói",
+      "Địa chỉ đích"
+    ],
+    "explanation": "Giá trị trong trường Địa chỉ đích trong tiêu đề IPv4 sẽ giữ nguyên trong quá trình truyền. Các tùy chọn khác có thể thay đổi trong quá trình truyền."
+  },
+  "m5-10_q69": {
+    "question": "Nối mỗi câu về truyền thông FTP với kết nối mà nó mô tả. (Không phải tất cả các tùy chọn đều được sử dụng.) CyberOps Associate (Phiên bản 1.0) - Mô-đun 5 - 10: Bài kiểm tra nhóm Cơ bản về Mạng Kết nối đầu tiên được thiết lập (Kết nối điều khiển)",
+    "options": [
+      "từ máy khách đến máy chủ qua cổng TCP 21",
+      "được sử dụng cho các lệnh và trả lời",
+      "từ máy chủ đến máy khách qua cổng TCP 20",
+      "được sử dụng để truyền tập tin thực tế"
+    ],
+    "explanation": "Cả hai kết nối cần thiết cho hoạt động FTP đều được thiết lập từ máy khách đến máy chủ FTP. Trước tiên, máy khách sẽ mở kết nối điều khiển qua cổng TCP 21. Sau đó, máy khách sẽ mở kết nối dữ liệu để truyền tệp thực tế qua cổng TCP 20."
+  },
+  "m5-10_q70": {
+    "question": "Hai kích thước (tối thiểu và tối đa dự kiến) của khung Ethernet là gì? (Chọn hai.)",
+    "options": [
+      "128 byte",
+      "1024 byte",
+      "1518 byte",
+      "64 byte",
+      "56 byte"
+    ],
+    "explanation": "Khung Ethernet tối thiểu là 64 byte. Khung Ethernet tối đa dự kiến ​​là 1518 byte. Kỹ thuật viên mạng phải biết kích thước khung hình tối thiểu và tối đa dự kiến ​​để nhận ra các khung hình runt và jumbo."
+  },
+  "m11-12_q1": {
+    "question": "Ưu điểm của HIPS mà IDS không cung cấp là gì?",
+    "options": [
+      "HIPS bảo vệ các tài nguyên hệ thống quan trọng và giám sát các quy trình của hệ điều hành.",
+      "HIPS triển khai các cảm biến tại các điểm vào mạng và bảo vệ các phân đoạn mạng quan trọng.",
+      "HIPS giám sát các quy trình mạng và bảo vệ các tệp quan trọng.",
+      "HIPS cung cấp khả năng phân tích nhanh chóng các sự kiện thông qua việc ghi nhật ký chi tiết."
+    ],
+    "explanation": "Cảm biến IDS (NIDS) dựa trên mạng thường được triển khai ở chế độ ngoại tuyến. Họ không bảo vệ các máy chủ cá nhân. IPS dựa trên máy chủ (HIPS) là phần mềm được cài đặt trên một máy chủ duy nhất để giám sát và phân tích hoạt động đáng ngờ. Nó có thể giám sát và bảo vệ hệ điều hành cũng như các quy trình hệ thống quan trọng dành riêng cho máy chủ đó. HIPS có thể được coi là sự kết hợp giữa phần mềm chống vi-rút, phần mềm chống phần mềm độc hại và tường lửa."
+  },
+  "m11-12_q2": {
+    "question": "Câu nào mô tả sự khác biệt giữa RADIUS và TACACS+?",
+    "options": [
+      "RADIUS tách biệt xác thực và ủy quyền trong khi TACACS+ kết hợp chúng thành một quy trình.",
+      "RADIUS được hỗ trợ bởi phần mềm Cisco Secure ACS trong khi TACACS+ thì không.",
+      "RADIUS sử dụng TCP trong khi TACACS+ sử dụng UDP.",
+      "RADIUS chỉ mã hóa mật khẩu trong khi TACACS+ mã hóa tất cả thông tin liên lạc."
+    ],
+    "explanation": "TACACS+ sử dụng TCP, mã hóa toàn bộ gói (không chỉ mật khẩu) đồng thời tách xác thực và ủy quyền thành hai quy trình riêng biệt. Cả hai giao thức đều được hỗ trợ bởi phần mềm Cisco Secure ACS."
+  },
+  "m11-12_q3": {
+    "question": "Hai nhược điểm của việc sử dụng IDS là gì? (Chọn hai.)",
+    "options": [
+      "IDS không ngăn chặn lưu lượng độc hại.",
+      "IDS hoạt động ngoại tuyến bằng cách sử dụng các bản sao lưu lượng mạng.",
+      "IDS không có tác động đến lưu lượng truy cập.",
+      "IDS phân tích các gói được chuyển tiếp thực tế.",
+      "IDS yêu cầu các thiết bị khác phản ứng với các cuộc tấn công."
+    ],
+    "explanation": "Nhược điểm của việc vận hành với lưu lượng được nhân đôi là IDS không thể ngăn chặn các cuộc tấn công gói đơn độc hại tiếp cận mục tiêu trước khi phản ứng lại cuộc tấn công. Ngoài ra, IDS thường yêu cầu sự hỗ trợ từ các thiết bị mạng khác, chẳng hạn như bộ định tuyến và tường lửa, để ứng phó với một cuộc tấn công. Ưu điểm của IDS là bằng cách hoạt động ngoại tuyến bằng cách sử dụng lưu lượng được nhân đôi, nó không ảnh hưởng đến luồng lưu lượng."
+  },
+  "m11-12_q4": {
+    "question": "Câu lệnh nào mô tả một trong các quy tắc chi phối hành vi giao diện trong bối cảnh triển khai cấu hình tường lửa chính sách dựa trên vùng?",
+    "options": [
+      "Quản trị viên có thể chỉ định giao diện cho các vùng, bất kể vùng đó đã được cấu hình hay chưa.",
+      "Quản trị viên có thể chỉ định một giao diện cho nhiều vùng bảo mật.",
+      "Theo mặc định, lưu lượng được phép lưu chuyển giữa các giao diện là thành viên của cùng một vùng.",
+      "Theo mặc định, lưu lượng truy cập được phép lưu chuyển giữa giao diện thành viên vùng và bất kỳ giao diện nào không phải là thành viên vùng."
+    ],
+    "explanation": "Một giao diện chỉ có thể thuộc về một vùng. Tạo một vùng là bước đầu tiên trong việc cấu hình tường lửa chính sách dựa trên vùng. Một vùng không thể được gán cho một giao diện nếu vùng đó chưa được tạo. Lưu lượng không bao giờ có thể chảy giữa giao diện được gán cho một vùng và giao diện chưa được gán cho một vùng."
+  },
+  "m11-12_q5": {
+    "question": "Kỹ thuật nào là cần thiết để đảm bảo truyền dữ liệu riêng tư bằng VPN?",
+    "options": [
+      "mã hóa",
+      "ảo hóa",
+      "khả năng mở rộng",
+      "ủy quyền"
+    ],
+    "explanation": "Việc truyền dữ liệu bí mật và an toàn bằng VPN yêu cầu mã hóa dữ liệu."
+  },
+  "m11-12_q6": {
+    "question": "Chức năng của lớp phân phối trong mô hình thiết kế mạng ba lớp là gì?",
+    "options": [
+      "cung cấp quyền truy cập trực tiếp vào mạng",
+      "cung cấp quyền truy cập an toàn vào Internet",
+      "tổng hợp các kết nối lớp truy cập",
+      "cung cấp kết nối tốc độ cao tới biên mạng"
+    ],
+    "explanation": "Chức năng của lớp phân phối là cung cấp kết nối tới các dịch vụ và tổng hợp các kết nối của lớp truy cập"
+  },
+  "m11-12_q7": {
+    "question": "Hai thành phần nào của thiết bị bảo mật web truyền thống là ví dụ về các chức năng được tích hợp vào Thiết bị bảo mật web của Cisco? (Chọn hai.)",
+    "options": [
+      "lọc virus và thư rác",
+      "Kết nối VPN",
+      "tường lửa",
+      "báo cáo web",
+      "Lọc URL"
+    ],
+    "explanation": "Thiết bị bảo mật web của Cisco là một cổng web an toàn kết hợp tính năng bảo vệ phần mềm độc hại nâng cao, khả năng hiển thị và kiểm soát ứng dụng, kiểm soát chính sách sử dụng được chấp nhận, báo cáo và các chức năng di động an toàn. Với các thiết bị bảo mật web truyền thống, các chức năng này thường được cung cấp thông qua nhiều thiết bị. Nó không phải là một thiết bị tường lửa vì nó chỉ lọc lưu lượng truy cập web. Nó không cung cấp kết nối VPN, cũng như không cung cấp tính năng lọc thư rác và vi-rút email; Công cụ bảo mật email của Cisco cung cấp các chức năng này."
+  },
+  "m11-12_q8": {
+    "question": "Thành phần AAA nào có thể được thiết lập bằng thẻ token?",
+    "options": [
+      "xác thực",
+      "kế toán",
+      "ủy quyền",
+      "kiểm toán"
+    ],
+    "explanation": "Thành phần xác thực của AAA được thiết lập bằng cách sử dụng kết hợp tên người dùng và mật khẩu, câu hỏi thử thách và phản hồi cũng như thẻ mã thông báo. Thành phần ủy quyền của AAA xác định tài nguyên nào người dùng có thể truy cập và hoạt động nào người dùng được phép thực hiện. Thành phần kế toán và kiểm toán của AAA theo dõi cách sử dụng tài nguyên mạng."
+  },
+  "m11-12_q9": {
+    "question": "Câu nào mô tả VPN?",
+    "options": [
+      "VPN sử dụng phần mềm ảo hóa nguồn mở để tạo đường hầm thông qua Internet.",
+      "VPN sử dụng các kết nối vật lý chuyên dụng để truyền dữ liệu giữa những người dùng từ xa.",
+      "VPN sử dụng các kết nối hợp lý để tạo mạng công cộng thông qua Internet.",
+      "VPN sử dụng kết nối ảo để tạo mạng riêng thông qua mạng công cộng."
+    ],
+    "explanation": "VPN là một mạng riêng được tạo qua mạng công cộng. Thay vì sử dụng các kết nối vật lý chuyên dụng, VPN sử dụng các kết nối ảo được định tuyến qua mạng công cộng giữa hai thiết bị mạng."
+  },
+  "m11-12_q10": {
+    "question": "Hệ thống phát hiện xâm nhập dựa trên máy chủ (HIDS) là gì?",
+    "options": [
+      "Nó phát hiện và ngăn chặn các cuộc tấn công trực tiếp tiềm ẩn nhưng không quét phần mềm độc hại.",
+      "Đây là một hệ thống không cần tác nhân, quét các tệp trên máy chủ để tìm phần mềm độc hại tiềm ẩn.",
+      "Nó xác định các cuộc tấn công tiềm ẩn và gửi cảnh báo nhưng không dừng lưu lượng.",
+      "Nó kết hợp các chức năng của ứng dụng chống phần mềm độc hại với tính năng bảo vệ tường lửa."
+    ],
+    "explanation": "HIDS là một ứng dụng bảo mật toàn diện kết hợp các chức năng của ứng dụng chống phần mềm độc hại với tính năng bảo vệ tường lửa. HIDS không chỉ phát hiện phần mềm độc hại mà còn ngăn chặn nó thực thi. Bởi vì HIDS chạy trực tiếp trên máy chủ nên nó được coi là một hệ thống dựa trên tác nhân."
+  },
+  "m11-12_q11": {
+    "question": "Hai thiết bị nào thường được tìm thấy ở lớp truy cập của mô hình thiết kế mạng LAN doanh nghiệp phân cấp? (Chọn hai.)",
+    "options": [
+      "công tắc mô-đun",
+      "Thiết bị lớp 3",
+      "Công tắc lớp 2",
+      "tường lửa",
+      "điểm truy cập"
+    ],
+    "explanation": "Trong khi một số thiết kế thực hiện định tuyến ở lớp truy cập, hai thiết bị phải luôn được đặt ở lớp truy cập của mô hình thiết kế phân cấp là điểm truy cập và bộ chuyển mạch Lớp 2. Một công tắc mô-đun thường được sử dụng ở lớp lõi. Định tuyến bằng thiết bị Lớp 3 thường được sử dụng trong lớp phân phối. Tường lửa là một thiết bị trong thiết kế mạng biên Internet."
+  },
+  "m11-12_q12": {
+    "question": "Hai câu nào đúng về máy chủ NTP trong mạng doanh nghiệp? (Chọn hai.)",
+    "options": [
+      "Chỉ có thể có một máy chủ NTP trên mạng doanh nghiệp.",
+      "Máy chủ NTP ở tầng 1 được kết nối trực tiếp với nguồn thời gian có thẩm quyền.",
+      "Máy chủ NTP kiểm soát thời gian trung bình giữa các lần thất bại (MTBF) cho các thiết bị mạng chính.",
+      "Máy chủ NTP đảm bảo dấu thời gian chính xác về thông tin ghi nhật ký và gỡ lỗi.",
+      "Tất cả các máy chủ NTP đều đồng bộ hóa trực tiếp với nguồn thời gian tầng 1."
+    ],
+    "explanation": "Giao thức thời gian mạng (NTP) được sử dụng để đồng bộ hóa thời gian trên tất cả các thiết bị trên mạng nhằm đảm bảo đánh dấu thời gian chính xác trên các thiết bị để quản lý, bảo mật và khắc phục sự cố. Mạng NTP sử dụng hệ thống phân cấp các nguồn thời gian. Mỗi cấp độ trong hệ thống phân cấp này được gọi là tầng. Các thiết bị tầng 1 được kết nối trực tiếp với các nguồn thời gian có thẩm quyền."
+  },
+  "m11-12_q13": {
+    "question": "Trong quá trình thu thập dữ liệu, loại thiết bị nào sẽ lắng nghe lưu lượng truy cập nhưng chỉ thu thập số liệu thống kê lưu lượng truy cập?",
+    "options": [
+      "Bộ thu thập NetFlow",
+      "NMS",
+      "đại lý SNMP",
+      "máy chủ nhật ký hệ thống"
+    ],
+    "explanation": "Bộ thu thập NetFlow là thiết bị nhận số liệu thống kê lưu lượng truy cập từ các thiết bị mạng. NetFlow chỉ thu thập số liệu thống kê lưu lượng truy cập, không giống như syslog và SNMP có thể thu thập các sự kiện mạng khác nhau."
+  },
+  "m11-12_q14": {
+    "question": "Hai giao thức nào là giao thức định tuyến trạng thái liên kết? (Chọn hai.)",
+    "options": [
+      "IS",
+      "EIGRP",
+      "BGP",
+      "XÉ",
+      "OSPF"
+    ],
+    "explanation": "ISIS và OSPF là các giao thức định tuyến trạng thái liên kết. EIGRP và RIP là các giao thức định tuyến vectơ khoảng cách. BGP là một giao thức vector đường dẫn."
+  },
+  "m11-12_q15": {
+    "question": "Loại tuyến đường nào được tạo khi quản trị viên mạng định cấu hình thủ công tuyến đường có giao diện thoát hoạt động?",
+    "options": [
+      "kết nối trực tiếp",
+      "tĩnh",
+      "địa phương",
+      "năng động"
+    ],
+    "explanation": "Tuyến tĩnh là tuyến được quản trị viên mạng cấu hình thủ công."
+  },
+  "m11-12_q16": {
+    "question": "Đặc điểm nào mô tả một máy khách không dây hoạt động ở chế độ hoạt động?",
+    "options": [
+      "phải được cấu hình để bảo mật trước khi gắn vào AP",
+      "phát sóng các đầu dò yêu cầu SSID",
+      "khả năng tự động thay đổi kênh",
+      "phải biết SSID để kết nối với AP"
+    ],
+    "explanation": "Máy khách không dây hoạt động ở chế độ hoạt động phải biết tên SSID. Các yêu cầu thăm dò được khách hàng phát đi trên nhiều kênh và bao gồm tên SSID cũng như các tiêu chuẩn được hỗ trợ. Chế độ hoạt động được sử dụng nếu AP được cấu hình để không phát các khung báo hiệu."
+  },
+  "m11-12_q17": {
+    "question": "Hai loại địa chỉ được tìm thấy trên các thiết bị đầu cuối mạng là gì? (Chọn hai.)",
+    "options": [
+      "trở lại",
+      "IP",
+      "MAC",
+      "TCP",
+      "UDP"
+    ],
+    "explanation": "Các thiết bị trung gian sử dụng hai loại địa chỉ khi gửi tin nhắn đến thiết bị đích cuối cùng là địa chỉ MAC và IP. TCP và UDP là các giao thức được sử dụng ở Lớp 4 để xác định số cổng nào đang được sử dụng trên thiết bị nguồn và đích. Địa chỉ trả lại được sử dụng khi gửi thư chứ không phải trong mạng."
+  },
+  "m11-12_q18": {
+    "question": "Đặc điểm của chế độ khám phá thụ động WLAN là gì?",
+    "options": [
+      "Khách hàng phải biết tên SSID để bắt đầu quá trình khám phá.",
+      "Máy khách bắt đầu quá trình khám phá bằng cách gửi yêu cầu thăm dò.",
+      "Tính năng báo hiệu trên AP bị tắt.",
+      "AP định kỳ gửi các khung đèn hiệu chứa SSID."
+    ],
+    "explanation": "Ở chế độ thụ động, máy khách không dây tìm hiểu những mạng và AP nào có sẵn. Máy khách tìm hiểu thông tin này từ các khung báo hiệu do AP gửi có chứa SSID WLAN, các tiêu chuẩn được hỗ trợ và cài đặt bảo mật."
+  },
+  "m11-12_q19": {
+    "question": "Đặc điểm của cổng định tuyến được cấu hình trên bộ chuyển mạch Cisco là gì?",
+    "options": [
+      "Nó hỗ trợ các giao diện phụ.",
+      "Nó được liên kết với một VLAN duy nhất.",
+      "Nó chạy STP để ngăn chặn vòng lặp.",
+      "Nó được gán một địa chỉ IP."
+    ],
+    "explanation": "Các cổng được định tuyến trên bộ chuyển mạch của Cisco hoạt động tương tự như các cổng trên bộ định tuyến. Chúng được cấu hình bằng một địa chỉ IP và chuyển tiếp các gói Lớp 3. Không giống như các giao diện chuyển mạch Lớp 2, các cổng được định tuyến không hỗ trợ STP và cũng không hỗ trợ các giao diện phụ như các bộ định tuyến."
+  },
+  "m11-12_q20": {
+    "question": "Bộ chuyển mạch Ethernet thực hiện hành động gì khi nhận được khung có địa chỉ nguồn Lớp 2 không xác định?",
+    "options": [
+      "Nó chuyển tiếp khung ra tất cả các giao diện ngoại trừ giao diện mà nó được nhận.",
+      "Nó chuyển tiếp khung đến cổng mặc định.",
+      "Nó ghi lại địa chỉ nguồn trong bảng địa chỉ của switch.",
+      "Nó làm rơi khung hình."
+    ],
+    "explanation": "Khi bộ chuyển mạch Ethernet nhận được một khung có địa chỉ Lớp 2 không xác định, bộ chuyển mạch sẽ ghi địa chỉ đó vào bảng địa chỉ."
+  },
+  "m11-12_q21": {
+    "question": ". Ghép từng thiết bị với một danh mục.",
+    "options": [],
+    "explanation": ""
+  },
+  "m11-12_q22": {
+    "question": "Giao thức định tuyến nào được sử dụng để trao đổi tuyến đường giữa các nhà cung cấp dịch vụ internet?",
+    "options": [
+      "OSPF",
+      "EIGRP",
+      "IS",
+      "BGP",
+      "XÉ"
+    ],
+    "explanation": "BGP là giao thức định tuyến vectơ đường dẫn và được các nhà cung cấp dịch vụ internet sử dụng để trao đổi tuyến đường."
+  },
+  "m11-12_q23": {
+    "question": "Bước đầu tiên trong quy trình CSMA/CA khi máy khách không dây đang cố gắng liên lạc trên mạng không dây là gì?",
+    "options": [
+      "Máy khách gửi tin nhắn RTS tới AP.",
+      "Máy khách gửi khung kiểm tra lên kênh.",
+      "Khách hàng lắng nghe lưu lượng truy cập trên kênh.",
+      "AP gửi tin nhắn CTS tới máy khách."
+    ],
+    "explanation": "Khi một máy khách không dây đang cố gắng liên lạc trên mạng, trước tiên nó sẽ lắng nghe kênh để chắc chắn rằng kênh đó ở trạng thái rảnh. Tiếp theo, máy khách gửi tin nhắn RTS tới AP để yêu cầu quyền truy cập chuyên dụng vào mạng. AP sau đó sẽ gửi tin nhắn CTS cấp quyền truy cập cho máy khách. Sau đó, khách hàng sẽ truyền dữ liệu."
+  },
+  "m11-12_q24": {
+    "question": "Khung quản lý Wi-Fi nào được các AP thường xuyên phát sóng để thông báo về sự hiện diện của mình?",
+    "options": [
+      "xác thực",
+      "đèn hiệu",
+      "thăm dò",
+      "sự kết hợp"
+    ],
+    "explanation": "Các khung báo hiệu được AP phát sóng định kỳ để quảng cáo mạng không dây của mình tới các khách hàng tiềm năng. Các khung thăm dò, liên kết và xác thực chỉ được gửi khi máy khách đang liên kết với AP."
+  },
+  "m11-12_q25": {
+    "question": "Ba phần của tất cả các khung Lớp 2 là gì? (Chọn ba.)",
+    "options": [
+      "địa chỉ IP nguồn và đích",
+      "tải trọng",
+      "số thứ tự",
+      "trình tự kiểm tra khung",
+      "thời gian để sống",
+      "tiêu đề"
+    ],
+    "explanation": "Các khung lớp 2 có ba thành phần: tiêu đề, tải trọng và trình tự kiểm tra khung ở cuối."
+  },
+  "m11-12_q26": {
+    "question": "Chức năng của SNMP là gì?",
+    "options": [
+      "đồng bộ hóa thời gian trên tất cả các thiết bị trên mạng",
+      "bắt các gói vào và ra khỏi card giao diện mạng",
+      "cung cấp định dạng tin nhắn để liên lạc giữa người quản lý thiết bị mạng và đại lý",
+      "cung cấp phân tích thống kê về các gói truyền qua bộ định tuyến hoặc bộ chuyển mạch đa lớp của Cisco"
+    ],
+    "explanation": "SNMP là giao thức lớp ứng dụng cho phép quản trị viên quản lý các thiết bị trên mạng bằng cách cung cấp định dạng nhắn tin để liên lạc giữa người quản lý thiết bị mạng và đại lý."
+  },
+  "m11-12_q27": {
+    "question": "Tính năng tường lửa nào được sử dụng để đảm bảo rằng các gói đi vào mạng là phản hồi hợp pháp đối với các yêu cầu được khởi tạo từ máy chủ nội bộ?",
+    "options": [
+      "lọc ứng dụng",
+      "kiểm tra gói trạng thái",
+      "lọc gói",
+      "Lọc URL"
+    ],
+    "explanation": "Kiểm tra gói trạng thái trên tường lửa sẽ kiểm tra xem các gói đến có thực sự là phản hồi hợp pháp đối với các yêu cầu bắt nguồn từ các máy chủ bên trong mạng hay không. Lọc gói có thể được sử dụng để cho phép hoặc từ chối quyền truy cập vào tài nguyên dựa trên địa chỉ IP hoặc MAC. Lọc ứng dụng có thể cho phép hoặc từ chối quyền truy cập dựa trên số cổng. Lọc URL được sử dụng để cho phép hoặc từ chối quyền truy cập dựa trên URL hoặc từ khóa."
+  },
+  "m11-12_q28": {
+    "question": "Bảng định tuyến của bộ định tuyến được duy trì ở vị trí bộ nhớ nào?",
+    "options": [
+      "rom",
+      "đèn flash",
+      "NVRAM",
+      "ĐẬP"
+    ],
+    "explanation": "Bảng định tuyến của bộ định tuyến được duy trì trong RAM, đây là bộ nhớ khả biến. Nếu bộ định tuyến mất nguồn hoặc được khởi động lại, nội dung của RAM sẽ bị mất và bảng định tuyến phải được xây dựng lại."
+  },
+  "m11-12_q29": {
+    "question": "Điểm truy cập hạng nhẹ chuyển tiếp dữ liệu giữa hai thiết bị nào trên mạng? (Chọn hai.)",
+    "options": [
+      "bộ định tuyến không dây",
+      "cổng mặc định",
+      "bộ điều khiển mạng LAN không dây",
+      "điểm truy cập tự trị",
+      "máy khách không dây"
+    ],
+    "explanation": "Trong quá trình triển khai không dây sử dụng các điểm truy cập hạng nhẹ (LWAP), LWAP sẽ chuyển tiếp dữ liệu giữa máy khách không dây và bộ điều khiển mạng LAN không dây (WLC)."
+  },
+  "m11-12_q30": {
+    "question": "Bộ định tuyến của Cisco đang chạy iOS 15. Hai loại mục nhập bảng định tuyến sẽ được thêm vào khi quản trị viên mạng đưa giao diện lên và gán địa chỉ IP cho giao diện là gì? (Chọn hai.)",
+    "options": [
+      "tuyến đường được quản trị viên mạng nhập thủ công",
+      "giao diện tuyến đường địa phương",
+      "tuyến đường được học thông qua OSPF",
+      "giao diện kết nối trực tiếp",
+      "tuyến đường được học thông qua EIGRP"
+    ],
+    "explanation": "Một mục trong bảng định tuyến giao diện tuyến đường cục bộ được tìm thấy khi bộ định tuyến chạy iOS 15 trở lên hoặc nếu định tuyến IPv6 được bật. Bất cứ khi nào một giao diện được đánh địa chỉ và kích hoạt (được kích hoạt), giao diện được kết nối trực tiếp sẽ tự động được hiển thị trong bảng định tuyến."
+  },
+  "m11-12_q31": {
+    "question": "Hãy ghép dịch vụ bí mật với mô tả.",
+    "options": [],
+    "explanation": "Cho phép quản trị viên quản lý các thiết bị mạng SNMP Cung cấp số liệu thống kê về các gói truyền qua bộ định tuyến hoặc bộ chuyển mạch đa lớp của Cisco NetFlow Cho phép bộ chuyển mạch tạo các bản sao lưu lượng truy cập trùng lặp được gửi đến bộ phân tích lưu lượng Phản chiếu cổng Một loạt lệnh kiểm soát xem thiết bị chuyển tiếp hay loại bỏ gói ACL"
+  },
+  "m11-12_q32": {
+    "question": "Khớp loại thiết bị an ninh mạng với mô tả.",
+    "options": [],
+    "explanation": ""
+  },
+  "m11-12_q33": {
+    "question": "Điều gì được sử dụng trên mạng WLAN để tránh xung đột gói tin?",
+    "options": [
+      "SVI",
+      "STP",
+      "CSMA/CA",
+      "Vlan"
+    ],
+    "explanation": "Mạng WLAN là mạng bán song công, có nghĩa là chỉ một khách hàng có thể truyền hoặc nhận tại bất kỳ thời điểm nào. Các mạng WLAN sử dụng đa truy cập cảm nhận sóng mang có tính năng tránh xung đột (CSMA/CA) để xác định thời điểm gửi dữ liệu trên mạng nhằm tránh xung đột gói."
+  },
+  "m11-12_q34": {
+    "question": "Bộ định tuyến sử dụng thông tin gì trong gói dữ liệu để đưa ra quyết định chuyển tiếp?",
+    "options": [
+      "địa chỉ MAC đích",
+      "tên máy chủ đích",
+      "dịch vụ đích được yêu cầu",
+      "địa chỉ IP đích"
+    ],
+    "explanation": "Thiết bị Lớp 3 như bộ định tuyến sử dụng địa chỉ IP đích Lớp 3 để đưa ra quyết định chuyển tiếp."
+  },
+  "m11-12_q35": {
+    "question": "Đặc điểm của hub là gì?",
+    "options": [
+      "hoạt động ở lớp 2",
+      "tái tạo tín hiệu nhận được trên một cổng ra tất cả các cổng khác",
+      "chia mạng thành các miền xung đột",
+      "sử dụng CSMA/CA để tránh va chạm"
+    ],
+    "explanation": "Hub là thiết bị Lớp 1 có chức năng tái tạo tín hiệu ra tất cả các cổng khác ngoài cổng vào. Tất cả các cổng trên một hub đều thuộc cùng một miền xung đột. Các hub sử dụng CSMA/CD để phát hiện xung đột trên mạng."
+  },
+  "m11-12_q36": {
+    "question": "Ghép loại thiết bị an ninh mạng với mô tả.",
+    "options": [],
+    "explanation": ""
+  },
+  "final_q1": {
+    "question": "Hai câu nào là đặc điểm của virus? (Chọn hai.)",
+    "options": [
+      "Một loại virus thường yêu cầu người dùng cuối phải kích hoạt.",
+      "Virus có thể không hoạt động và sau đó kích hoạt vào một thời điểm hoặc ngày cụ thể.",
+      "Virus tự nhân lên bằng cách khai thác các lỗ hổng trong mạng một cách độc lập.",
+      "Virus có lỗ hổng bảo mật, cơ chế lây lan và tải trọng.",
+      "Virus cung cấp cho kẻ tấn công dữ liệu nhạy cảm, chẳng hạn như mật khẩu"
+    ],
+    "explanation": "Kiểu tương tác của người dùng cuối cần có để khởi chạy vi-rút thường là mở ứng dụng, mở trang web hoặc bật nguồn máy tính. Sau khi được kích hoạt, vi-rút có thể lây nhiễm các tệp khác nằm trên máy tính hoặc các máy tính khác trên cùng mạng."
+  },
+  "final_q2": {
+    "question": "Đặc điểm của ngựa Trojan liên quan đến an ninh mạng là gì?",
+    "options": [
+      "Quá nhiều thông tin được dành cho một khối bộ nhớ cụ thể, khiến các vùng bộ nhớ bổ sung bị ảnh hưởng.",
+      "Lượng dữ liệu cực lớn được gửi đến một giao diện thiết bị mạng cụ thể.",
+      "Từ điển điện tử được sử dụng để lấy mật khẩu dùng để xâm nhập vào thiết bị mạng quan trọng.",
+      "Phần mềm độc hại được chứa trong một chương trình thực thi có vẻ hợp pháp."
+    ],
+    "explanation": "Một con ngựa thành Troy thực hiện các hoạt động độc hại dưới vỏ bọc của một chương trình hợp pháp. Các cuộc tấn công từ chối dịch vụ gửi lượng dữ liệu cực lớn đến một máy chủ hoặc giao diện thiết bị mạng cụ thể. Các cuộc tấn công mật khẩu sử dụng từ điển điện tử để cố gắng tìm hiểu mật khẩu. Các cuộc tấn công tràn bộ đệm khai thác bộ đệm bộ nhớ bằng cách gửi quá nhiều thông tin đến máy chủ khiến hệ thống không thể hoạt động."
+  },
+  "final_q3": {
+    "question": "Kỹ thuật nào được sử dụng trong các cuộc tấn công kỹ thuật xã hội?",
+    "options": [
+      "gửi email rác",
+      "tràn bộ đệm",
+      "lừa đảo",
+      "người đàn ông ở giữa"
+    ],
+    "explanation": "Kẻ đe dọa gửi email lừa đảo được ngụy trang dưới dạng từ một nguồn hợp pháp, đáng tin cậy để lừa người nhận cài đặt phần mềm độc hại trên thiết bị của họ hoặc để chia sẻ thông tin cá nhân hoặc thông tin tài chính."
+  },
+  "final_q4": {
+    "question": "Mục đích của việc triển khai Vlan trên mạng là gì?",
+    "options": [
+      "Họ có thể tách lưu lượng người dùng.",
+      "Chúng ngăn chặn các vòng lặp Lớp 2.",
+      "Họ loại bỏ xung đột mạng.",
+      "Chúng cho phép các thiết bị chuyển mạch chuyển tiếp các gói Lớp 3 mà không cần bộ định tuyến."
+    ],
+    "explanation": "Vlan được sử dụng trên mạng để phân tách lưu lượng người dùng dựa trên các yếu tố như chức năng, nhóm dự án hoặc ứng dụng mà không quan tâm đến vị trí thực tế của người dùng hoặc thiết bị."
+  },
+  "final_q5": {
+    "question": "Tham khảo triển lãm. Một nhà phân tích an ninh mạng đang xem các gói được chuyển tiếp bằng switch S2. Địa chỉ nào sẽ xác định các khung chứa dữ liệu được gửi từ PCA đến PCB?",
+    "options": [
+      "IP Src: 192.168.2.1 MAC Src: 00-60-0F-B1-33-33 IP Dst: 192.168.2.101 MAC Dst: 08-CB-8A-5C-BB-BB",
+      "IP Src: 192.168.1.212 MAC Src: 01-90-C0-E4-AA-AA IP Dst: 192.168.2.101 MAC Dst: 08-CB-8A-5C-BB-BB",
+      "IP Src: 192.168.1.212 MAC Src: 00-60-0F-B1-33-33 IP Dst: 192.168.2.101 MAC Dst: 08-CB-8A-5C-BB-BB",
+      "IP Src: 192.168.1.212 MAC Src: 00-60-0F-B1-33-33 IP Dst: 192.168.2.101 MAC Dst: 00-D0-D3-BE-00-00"
+    ],
+    "explanation": "Khi một tin nhắn được gửi từ PCA đến PCB đến bộ định tuyến R2, một số trường tiêu đề khung sẽ được R2 ghi lại trước khi chuyển tiếp sang S2. Các khung sẽ chứa địa chỉ MAC nguồn của bộ định tuyến R2 và địa chỉ MAC đích của PCB. Các khung sẽ giữ lại địa chỉ IPv4 ban đầu được PCA áp dụng, tức là địa chỉ IPv4 của PCA làm địa chỉ nguồn và địa chỉ IPv4 của PCB làm đích."
+  },
+  "final_q6": {
+    "question": "Một nhà phân tích an ninh mạng cần thu thập dữ liệu cảnh báo. Ba công cụ phát hiện nào để thực hiện tác vụ này trong kiến ​​trúc Security Onion? (Chọn ba.)",
+    "options": [
+      "CapME",
+      "Wazuh",
+      "Kibana",
+      "Zeek",
+      "Sguil",
+      "Wireshark"
+    ],
+    "explanation": "Kiến trúc Security Onion: Các công cụ phát hiện trong Kiến trúc Security Onion bao gồm: CapME, Snort, Zeek, OSSEC, Wazuh, Suricata."
+  },
+  "final_q7": {
+    "question": "Hãy ghép công cụ Security Onion với mô tả.",
+    "options": [
+      "hệ thống phát hiện xâm nhập dựa trên mạng -> Khịt mũi",
+      "ứng dụng chụp gói -> Wireshark",
+      "hệ thống phát hiện xâm nhập dựa trên máy chủ -> OSSEC",
+      "bảng điều khiển phân tích an ninh mạng cấp cao -> Sguil"
+    ],
+    "explanation": "hệ thống phát hiện xâm nhập dựa trên mạng → Ứng dụng chụp gói Snort → Hệ thống phát hiện xâm nhập dựa trên máy chủ Wireshark → Bảng điều khiển phân tích an ninh mạng cấp cao OSSEC → Sguil"
+  },
+  "final_q8": {
+    "question": "Trong đánh giá an ninh mạng, loại thử nghiệm nào được sử dụng để đánh giá rủi ro do lỗ hổng gây ra cho một tổ chức cụ thể, bao gồm đánh giá khả năng xảy ra các cuộc tấn công và tác động của việc khai thác thành công đối với tổ chức?",
+    "options": [
+      "quét cổng",
+      "phân tích rủi ro",
+      "thử nghiệm thâm nhập",
+      "đánh giá tính dễ bị tổn thương"
+    ],
+    "explanation": "Phân tích rủi ro bao gồm đánh giá khả năng xảy ra các cuộc tấn công, xác định các loại tác nhân đe dọa có thể xảy ra và đánh giá tác động của việc khai thác thành công đối với tổ chức."
+  },
+  "final_q9": {
+    "question": "Khớp phần tử hồ sơ máy chủ với mô tả. (Không phải tất cả các tùy chọn đều được sử dụng.)",
+    "options": [
+      "Các thành phần của cấu hình máy chủ bao gồm: Cổng nghe -> các daemon và cổng TCP và UDP được phép mở trên máy chủ",
+      "Tài khoản người dùng -> các tham số xác định quyền truy cập và hành vi của người dùng",
+      "Tài khoản dịch vụ -> định nghĩa về loại dịch vụ mà ứng dụng được phép chạy trên một máy chủ nhất định",
+      "Môi trường phần mềm -> các tác vụ, quy trình và ứng dụng được phép chạy trên máy chủ"
+    ],
+    "explanation": "Các thành phần của cấu hình máy chủ bao gồm: Cổng nghe – daemon TCP và UDP và cổng được phép mở trên máy chủ Tài khoản người dùng – các tham số xác định quyền truy cập và hành vi của người dùng Tài khoản dịch vụ – định nghĩa về loại dịch vụ mà một ứng dụng được phép chạy trên một máy chủ nhất định Môi trường phần mềm – các tác vụ, quy trình và ứng dụng được phép chạy trên máy chủ"
+  },
+  "final_q10": {
+    "question": "Khi giải quyết một rủi ro đã được xác định, chiến lược nào nhằm mục đích chuyển một số rủi ro sang các bên khác?",
+    "options": [
+      "tránh rủi ro",
+      "chia sẻ rủi ro",
+      "duy trì rủi ro",
+      "giảm thiểu rủi ro"
+    ],
+    "explanation": "Có bốn chiến lược tiềm năng để ứng phó với rủi ro đã được xác định: Tránh rủi ro – Ngừng thực hiện các hoạt động tạo ra rủi ro. Giảm thiểu rủi ro – Giảm rủi ro bằng cách thực hiện các biện pháp để giảm thiểu tình trạng dễ bị tổn thương. Chia sẻ rủi ro – Chuyển một số rủi ro cho các bên khác. Duy trì rủi ro – Chấp nhận rủi ro và hậu quả của nó."
+  },
+  "final_q11": {
+    "question": "Vòi mạng là gì?",
+    "options": [
+      "một công nghệ được sử dụng để cung cấp báo cáo thời gian thực và phân tích dài hạn về các sự kiện bảo mật",
+      "công nghệ của Cisco cung cấp số liệu thống kê về các gói truyền qua bộ định tuyến hoặc bộ chuyển mạch nhiều lớp",
+      "một tính năng được hỗ trợ trên các thiết bị chuyển mạch của Cisco cho phép thiết bị chuyển mạch sao chép các khung và chuyển tiếp chúng đến thiết bị phân tích",
+      "một thiết bị thụ động chuyển tiếp tất cả các lỗi lưu lượng và lớp vật lý tới thiết bị phân tích"
+    ],
+    "explanation": "Một vòi mạng được sử dụng để nắm bắt lưu lượng truy cập để giám sát mạng. Tap thường là một thiết bị phân tách thụ động được triển khai nội tuyến trên mạng và chuyển tiếp tất cả lưu lượng truy cập, bao gồm cả lỗi lớp vật lý, tới thiết bị phân tích."
+  },
+  "final_q12": {
+    "question": "Nối công cụ giám sát với định nghĩa.",
+    "options": [],
+    "explanation": ""
+  },
+  "final_q13": {
+    "question": "Nếu SOC có mục tiêu là 99,999% thời gian hoạt động thì bao nhiêu phút ngừng hoạt động mỗi năm sẽ được coi là mục tiêu của nó?",
+    "options": [
+      "Khoảng 5 phút mỗi năm.",
+      "Khoảng 10 phút mỗi năm",
+      "Khoảng 20 phút mỗi năm.",
+      "Khoảng 30 phút mỗi năm."
+    ],
+    "explanation": "Trong một năm có 365 ngày x 24 giờ x 60 phút mỗi giờ = 525.600 phút. Với mục tiêu thời gian hoạt động là 99,999% thời gian, thời gian ngừng hoạt động cần được kiểm soát dưới 525.600 x (1-0.99999) = 5,256 phút một năm."
+  },
+  "final_q14": {
+    "question": "Máy chủ HTTP đã phản hồi yêu cầu của khách hàng với mã trạng thái 200. Mã trạng thái này cho biết điều gì?",
+    "options": [
+      "Máy chủ hiểu yêu cầu nhưng tài nguyên sẽ không được đáp ứng.",
+      "Yêu cầu đã được hoàn thành thành công.",
+      "Máy chủ không thể tìm thấy tài nguyên được yêu cầu, có thể do URL không chính xác.",
+      "Yêu cầu đã được chấp nhận để xử lý nhưng quá trình xử lý chưa hoàn tất."
+    ],
+    "explanation": ""
+  },
+  "final_q15": {
+    "question": "Lợi thế của các tổ chức nhỏ khi áp dụng IMAP thay vì POP là gì?",
+    "options": [
+      "POP chỉ cho phép khách hàng lưu trữ tin nhắn một cách tập trung, trong khi IMAP cho phép lưu trữ phân tán.",
+      "IMAP gửi và truy xuất email nhưng POP chỉ truy xuất email.",
+      "Khi người dùng kết nối với máy chủ POP, bản sao của thư sẽ được lưu giữ trong máy chủ thư trong một thời gian ngắn nhưng IMAP sẽ giữ chúng trong thời gian dài.",
+      "Thư được lưu giữ trong máy chủ thư cho đến khi chúng bị xóa thủ công khỏi ứng dụng email."
+    ],
+    "explanation": "IMAP và POP là các giao thức được sử dụng để truy xuất thư email. Ưu điểm của việc sử dụng IMAP thay vì POP là khi người dùng kết nối với máy chủ có hỗ trợ IMAP, bản sao của thư sẽ được tải xuống ứng dụng khách. IMAP sau đó lưu trữ các thư email trên máy chủ cho đến khi người dùng xóa các thư đó theo cách thủ công."
+  },
+  "final_q16": {
+    "question": "Mũ đen có thể sử dụng công cụ bảo mật gỡ lỗi nào để đảo ngược các tệp nhị phân khi viết mã khai thác?",
+    "options": [
+      "WinDbg",
+      "Cừu lửa",
+      "cá ngừ",
+      "trợ lý"
+    ],
+    "explanation": ""
+  },
+  "final_q17": {
+    "question": "Ghép các công cụ tấn công với mô tả. (Không phải tất cả các tùy chọn đều được sử dụng.)",
+    "options": [],
+    "explanation": ""
+  },
+  "final_q18": {
+    "question": "Hai tính năng của ARP là gì? (Chọn hai.)",
+    "options": [
+      "Khi máy chủ đóng gói gói vào khung, nó sẽ tham chiếu đến bảng địa chỉ MAC để xác định ánh xạ địa chỉ IP tới địa chỉ MAC.",
+      "Nếu máy chủ sẵn sàng gửi gói đến thiết bị đích cục bộ và nó có địa chỉ IP chứ không phải địa chỉ MAC của đích, thì nó sẽ tạo ra một chương trình phát ARP.",
+      "Nếu một thiết bị nhận được yêu cầu ARP có địa chỉ IPv4 đích, thiết bị đó sẽ phản hồi bằng phản hồi ARP.",
+      "Nếu không có thiết bị nào phản hồi yêu cầu ARP thì nút gốc sẽ phát gói dữ liệu tới tất cả các thiết bị trên phân đoạn mạng.",
+      "Một yêu cầu ARP được gửi đến tất cả các thiết bị trên mạng LAN Ethernet và chứa địa chỉ IP của máy chủ đích và địa chỉ MAC multicast."
+    ],
+    "explanation": "Khi một nút đóng gói gói dữ liệu vào một khung, nó cần có địa chỉ MAC đích. Đầu tiên, nó xác định xem thiết bị đích nằm trên mạng cục bộ hay trên mạng từ xa. Sau đó, nó kiểm tra bảng ARP (không phải bảng MAC) để xem liệu có tồn tại một cặp địa chỉ IP và địa chỉ MAC cho địa chỉ IP đích (nếu máy chủ đích nằm trên mạng cục bộ) hoặc địa chỉ IP cổng mặc định (nếu máy chủ đích nằm trên mạng từ xa). Nếu kết quả khớp không tồn tại, nó sẽ tạo một chương trình phát ARP để tìm kiếm địa chỉ IP để phân giải địa chỉ MAC. Vì địa chỉ MAC đích không xác định nên yêu cầu ARP được phát với địa chỉ MAC FFFF.FFFF.FFFF. Thiết bị đích hoặc cổng mặc định sẽ phản hồi bằng địa chỉ MAC của nó, cho phép nút gửi tập hợp khung. Nếu không có thiết bị nào phản hồi yêu cầu ARP thì nút gốc sẽ loại bỏ gói vì không thể tạo khung."
+  },
+  "final_q19": {
+    "question": "Thuộc tính của bảng ARP trên thiết bị là gì?",
+    "options": [
+      "Các mục trong bảng ARP được đánh dấu thời gian và bị xóa sau khi hết thời gian chờ.",
+      "Mọi hệ điều hành đều sử dụng cùng một bộ hẹn giờ để xóa các mục cũ khỏi bộ đệm ARP.",
+      "Các mục nhập địa chỉ IP-to-MAC tĩnh được tự động xóa khỏi bảng ARP.",
+      "Hệ điều hành Windows lưu trữ các mục bộ đệm ARP trong 3 phút."
+    ],
+    "explanation": ""
+  },
+  "final_q20": {
+    "question": "Mục đích của Tor là gì?",
+    "options": [
+      "để cho phép người dùng duyệt Internet ẩn danh",
+      "để kết nối an toàn với mạng từ xa qua liên kết không an toàn, chẳng hạn như kết nối Internet",
+      "tặng các chu kỳ bộ xử lý cho các tác vụ tính toán phân tán trong mạng P2P chia sẻ bộ xử lý",
+      "để kiểm tra lưu lượng truy cập đến và tìm kiếm bất kỳ vi phạm quy tắc nào hoặc khớp với dấu hiệu của một hành vi khai thác đã biết"
+    ],
+    "explanation": "Tor là một nền tảng phần mềm và mạng lưới các máy chủ ngang hàng (P2P) hoạt động như bộ định tuyến. Người dùng truy cập mạng Tor bằng cách sử dụng một trình duyệt đặc biệt cho phép họ duyệt ẩn danh."
+  },
+  "final_q21": {
+    "question": "Hai giao thức mạng nào mà kẻ tấn công có thể sử dụng để lấy cắp dữ liệu trong lưu lượng truy cập được ngụy trang dưới dạng lưu lượng mạng thông thường? (Chọn hai.)",
+    "options": [
+      "NTP",
+      "DNS",
+      "HTTP",
+      "nhật ký hệ thống",
+      "SMTP"
+    ],
+    "explanation": ""
+  },
+  "final_q22": {
+    "question": "Sự khác biệt chính giữa dữ liệu được NetFlow thu thập và dữ liệu được Wireshark thu thập là gì?",
+    "options": [
+      "Dữ liệu NetFlow hiển thị nội dung luồng mạng trong khi dữ liệu Wireshark hiển thị số liệu thống kê luồng mạng.",
+      "Dữ liệu NetFlow được phân tích bằng tcpdump trong khi dữ liệu Wireshark được phân tích bằng nfdump.",
+      "NetFlow cung cấp dữ liệu giao dịch trong khi Wireshark cung cấp dữ liệu phiên.",
+      "NetFlow thu thập siêu dữ liệu từ luồng mạng trong khi Wireshark thu thập các gói dữ liệu đầy đủ."
+    ],
+    "explanation": "Wireshark nắm bắt toàn bộ nội dung của gói. NetFlow thì không. Thay vào đó, NetFlow thu thập siêu dữ liệu hoặc dữ liệu về luồng."
+  },
+  "final_q23": {
+    "question": "Công cụ nào ghi lại các gói dữ liệu đầy đủ chỉ bằng giao diện dòng lệnh?",
+    "options": [
+      "nfdump",
+      "Wireshark",
+      "NBAR2",
+      "tcpdump"
+    ],
+    "explanation": "Công cụ dòng lệnh tcpdump là một công cụ phân tích gói. Wireshark là một công cụ phân tích gói có giao diện GUI."
+  },
+  "final_q24": {
+    "question": "Phương pháp nào có thể được sử dụng để làm cứng thiết bị?",
+    "options": [
+      "duy trì việc sử dụng cùng một mật khẩu",
+      "cho phép các dịch vụ mặc định vẫn được kích hoạt",
+      "cho phép tự động phát hiện USB",
+      "sử dụng SSH và vô hiệu hóa quyền truy cập tài khoản root qua SSH"
+    ],
+    "explanation": "Các phương pháp thực hành cơ bản tốt nhất để tăng cường độ cứng cho thiết bị như sau: Đảm bảo an ninh vật lý. Giảm thiểu các gói đã cài đặt. Vô hiệu hóa các dịch vụ không sử dụng. Sử dụng SSH và vô hiệu hóa đăng nhập tài khoản root qua SSH. Giữ cho hệ thống được cập nhật. Tắt tính năng tự động phát hiện USB. Thực thi mật khẩu mạnh. Buộc thay đổi mật khẩu định kỳ. Ngăn người dùng sử dụng lại mật khẩu cũ. Xem lại nhật ký thường xuyên."
+  },
+  "final_q25": {
+    "question": "Trong hệ điều hành Linux, thành phần nào diễn giải các lệnh của người dùng và cố gắng thực thi chúng?",
+    "options": [
+      "GUI",
+      "yêu tinh",
+      "hạt nhân",
+      "vỏ bọc"
+    ],
+    "explanation": ""
+  },
+  "final_q26": {
+    "question": "Quản trị viên mạng đang định cấu hình máy chủ AAA để quản lý xác thực RADIUS. Hai tính năng nào được bao gồm trong xác thực RADIUS? (Chọn hai.)",
+    "options": [
+      "mã hóa cho tất cả các thông tin liên lạc",
+      "chỉ mã hóa dữ liệu",
+      "quy trình duy nhất để xác thực và ủy quyền",
+      "các quy trình riêng biệt để xác thực và ủy quyền",
+      "mật khẩu ẩn trong quá trình truyền"
+    ],
+    "explanation": "Xác thực RADIUS hỗ trợ các tính năng sau: Xác thực và ủy quyền RADIUS dưới dạng một quy trình Chỉ mã hóa mật khẩu Sử dụng UDP Hỗ trợ các công nghệ truy cập từ xa, 802.1X và Giao thức khởi tạo phiên (SIP)"
+  },
+  "final_q27": {
+    "question": "Leo thang đặc quyền là gì?",
+    "options": [
+      "Các lỗ hổng trong hệ thống được khai thác để cấp các mức đặc quyền cao hơn mức mà ai đó hoặc một số quy trình đáng lẽ phải có.",
+      "Theo mặc định, mọi người đều được cấp đầy đủ quyền đối với mọi thứ và các quyền chỉ bị tước bỏ khi ai đó lạm dụng các đặc quyền.",
+      "Ai đó được trao quyền vì người đó đã được thăng chức.",
+      "Một vấn đề bảo mật xảy ra khi các quan chức cấp cao của công ty yêu cầu quyền đối với các hệ thống hoặc tệp mà họ không nên có."
+    ],
+    "explanation": "Với việc leo thang đặc quyền, các lỗ hổng sẽ bị khai thác để cấp mức đặc quyền cao hơn. Sau khi đặc quyền được cấp, tác nhân đe dọa có thể truy cập thông tin nhạy cảm hoặc kiểm soát hệ thống."
+  },
+  "final_q28": {
+    "question": "Hai sự đảm bảo nào mà chữ ký số cung cấp về mã được tải xuống từ Internet? (Chọn hai.)",
+    "options": [
+      "Mã này không chứa virus.",
+      "Mã này chưa được sửa đổi kể từ khi nó rời khỏi nhà xuất bản phần mềm.",
+      "Mã này là xác thực và thực sự có nguồn gốc từ nhà xuất bản.",
+      "Mã không có lỗi.",
+      "Mã được mã hóa bằng cả khóa riêng và khóa chung."
+    ],
+    "explanation": "Mã ký điện tử cung cấp một số đảm bảo về mã: Mã này là xác thực và thực sự có nguồn gốc từ nhà xuất bản. Mã này chưa được sửa đổi kể từ khi nó rời khỏi nhà xuất bản phần mềm. Không thể phủ nhận nhà xuất bản đã xuất bản mã. Điều này cung cấp sự không chối bỏ hành vi xuất bản."
+  },
+  "final_q29": {
+    "question": "Một doanh nghiệp CNTT đang khuyến nghị sử dụng các ứng dụng PKI để trao đổi thông tin một cách an toàn giữa các nhân viên. Trong hai trường hợp nào một tổ chức có thể sử dụng ứng dụng PKI để trao đổi thông tin một cách an toàn giữa những người dùng? (Chọn hai.)",
+    "options": [
+      "Dịch vụ web HTTPS",
+      "Xác thực 802.1x",
+      "máy chủ NTP cục bộ",
+      "Chuyển FTP",
+      "quyền truy cập tập tin và thư mục"
+    ],
+    "explanation": "Cơ sở hạ tầng khóa công khai (PKI) là hệ thống của bên thứ ba được gọi là cơ quan cấp chứng chỉ hoặc CA. PKI là khuôn khổ được sử dụng để trao đổi thông tin một cách an toàn giữa các bên. Các ứng dụng PKI phổ biến như sau: Xác thực ngang hàng dựa trên chứng chỉ SSL/TLS Bảo mật lưu lượng mạng bằng IPsec VPN Lưu lượng web HTTPS Kiểm soát quyền truy cập vào mạng bằng xác thực 802.1x Bảo mật email bằng giao thức S/MIME Bảo mật tin nhắn tức thời Phê duyệt và ủy quyền cho các ứng dụng bằng Ký mã Bảo vệ dữ liệu người dùng bằng Hệ thống tệp mã hóa (EFS) Triển khai xác thực hai yếu tố bằng thẻ thông minh Bảo mật các thiết bị lưu trữ USB"
+  },
+  "final_q30": {
+    "question": "Nhà phân tích bảo mật có thể thực hiện biện pháp nào để thực hiện giám sát bảo mật hiệu quả đối với lưu lượng mạng được mã hóa bằng công nghệ SSL?",
+    "options": [
+      "Sử dụng máy chủ Syslog để nắm bắt lưu lượng mạng.",
+      "Triển khai Thiết bị SSL của Cisco.",
+      "Yêu cầu kết nối truy cập từ xa thông qua IPsec VPN.",
+      "Triển khai Cisco ASA."
+    ],
+    "explanation": "Triển khai Thiết bị SSL của Cisco để giải mã lưu lượng SSL và gửi lưu lượng đó đến các thiết bị hệ thống ngăn chặn xâm nhập (IPS) để xác định các rủi ro thường được SSL ẩn giấu."
+  },
+  "final_q31": {
+    "question": "Quản trị viên đang cố gắng phát triển chính sách bảo mật BYOD cho nhân viên đang sử dụng nhiều loại thiết bị để kết nối với mạng công ty. Chính sách bảo mật BYOD phải giải quyết ba mục tiêu nào? (Chọn ba.)",
+    "options": [
+      "Tất cả các thiết bị phải được bảo hiểm trách nhiệm pháp lý nếu được sử dụng để xâm phạm mạng công ty.",
+      "Tất cả các thiết bị phải có xác thực mở với mạng công ty.",
+      "Quyền và các hoạt động được phép trên mạng công ty phải được xác định.",
+      "Các biện pháp bảo vệ phải được áp dụng đối với bất kỳ thiết bị cá nhân nào bị xâm phạm.",
+      "Phải xác định rõ mức độ truy cập của nhân viên khi kết nối vào mạng công ty.",
+      "Tất cả các thiết bị phải được phép gắn vào mạng công ty một cách hoàn hảo."
+    ],
+    "explanation": ""
+  },
+  "final_q32": {
+    "question": "Nối chính sách bảo mật với mô tả. (Không phải tất cả các tùy chọn đều được sử dụng.)",
+    "options": [],
+    "explanation": "xác định các ứng dụng và cách sử dụng mạng được tổ chức chấp nhận Chính sách sử dụng được chấp nhận (AUP) xác định cách người dùng từ xa có thể truy cập mạng và những gì có thể truy cập thông qua kết nối từ xa Chính sách truy cập từ xa chỉ định những người được ủy quyền có thể có quyền truy cập vào tài nguyên mạng và quy trình xác minh danh tính Chính sách nhận dạng và xác thực chỉ định hệ điều hành thiết bị mạng và quy trình cập nhật ứng dụng của người dùng cuối Chính sách bảo trì mạng"
+  },
+  "final_q33": {
+    "question": "Ghép cuộc tấn công với định nghĩa. (Không phải tất cả các tùy chọn đều được sử dụng.)",
+    "options": [],
+    "explanation": "kẻ tấn công sử dụng trình phân giải mở để tăng số lượng cuộc tấn công và che giấu nguồn thực sự của cuộc tấn công khuếch đại và phản ánh kẻ tấn công gửi thông tin giả mạo để chuyển hướng người dùng đến các trang web độc hại Kẻ tấn công đầu độc bộ đệm ARP gửi nhiều gói tiêu thụ cuộc tấn công sử dụng tài nguyên máy chủ"
+  },
+  "final_q34": {
+    "question": "Kiểu tấn công nào nhắm vào cơ sở dữ liệu SQL bằng cách sử dụng trường đầu vào của người dùng?",
+    "options": [
+      "chèn XML",
+      "tràn bộ đệm",
+      "Kịch bản chéo trang",
+      "SQL tiêm"
+    ],
+    "explanation": "Tội phạm có thể chèn một câu lệnh SQL độc hại vào trường nhập trên trang web mà hệ thống không lọc chính xác dữ liệu nhập của người dùng."
+  },
+  "final_q35": {
+    "question": "Hai đặc điểm của địa chỉ MAC Ethernet là gì? (Chọn hai.)",
+    "options": [
+      "Địa chỉ MAC sử dụng cấu trúc phân cấp linh hoạt.",
+      "Chúng được thể hiện dưới dạng 12 chữ số thập lục phân.",
+      "Chúng là duy nhất trên toàn cầu.",
+      "Chúng có thể định tuyến trên Internet.",
+      "Địa chỉ MAC phải là duy nhất cho cả giao diện Ethernet và giao diện nối tiếp trên thiết bị."
+    ],
+    "explanation": "Địa chỉ MAC Ethernet là giá trị nhị phân 48 bit được biểu thị dưới dạng 12 chữ số thập lục phân. Địa chỉ MAC phải là duy nhất trên toàn cầu theo thiết kế. Địa chỉ MAC có cấu trúc phẳng và do đó chúng không thể định tuyến được trên Internet. Giao diện nối tiếp không sử dụng địa chỉ MAC."
+  },
+  "final_q36": {
+    "question": "Một người dùng gọi điện để thông báo rằng PC không thể truy cập internet. Kỹ thuật viên mạng yêu cầu người dùng đưa ra lệnh ping 127.0.0.1 trong cửa sổ nhắc lệnh. Người dùng báo cáo rằng kết quả là bốn câu trả lời tích cực. Kết luận nào có thể được rút ra dựa trên thử nghiệm kết nối này?",
+    "options": [
+      "Địa chỉ IP thu được từ máy chủ DHCP là chính xác.",
+      "PC có thể truy cập mạng. Sự cố tồn tại ngoài mạng cục bộ.",
+      "PC có thể truy cập Internet. Tuy nhiên, trình duyệt web có thể không hoạt động.",
+      "Việc triển khai TCP/IP có hiệu quả."
+    ],
+    "explanation": "Lệnh ping 127.0.0.1 được sử dụng để xác minh rằng ngăn xếp TCP/IP có hoạt động hay không. Nó xác minh hoạt động đúng đắn của ngăn xếp giao thức từ lớp mạng đến lớp vật lý mà không gửi tín hiệu trên phương tiện. Nghĩa là, thử nghiệm này không vượt ra ngoài PC. Ví dụ: nó không phát hiện xem cáp có được kết nối với PC hay không."
+  },
+  "final_q37": {
+    "question": "Điều gì đặc trưng cho một tác nhân đe dọa?",
+    "options": [
+      "Họ đều là những cá nhân có tay nghề cao.",
+      "Họ luôn sử dụng các công cụ tiên tiến để phát động các cuộc tấn công.",
+      "Họ luôn cố gắng gây ra một số tổn hại cho một cá nhân hoặc tổ chức.",
+      "Tất cả đều thuộc nhóm tội phạm có tổ chức."
+    ],
+    "explanation": ""
+  },
+  "final_q38": {
+    "question": "Một máy tính đang hiển thị cho người dùng một màn hình yêu cầu thanh toán trước khi cùng một người dùng cho phép truy cập dữ liệu người dùng. Đây là loại phần mềm độc hại gì?",
+    "options": [
+      "một loại bom logic",
+      "một loại virus",
+      "một loại sâu",
+      "một loại phần mềm tống tiền"
+    ],
+    "explanation": "Ransomware thường mã hóa dữ liệu trên máy tính và khiến dữ liệu không khả dụng cho đến khi người dùng máy tính trả một số tiền cụ thể"
+  },
+  "final_q39": {
+    "question": "Loại thông báo ICMPv6 nào cung cấp thông tin địa chỉ mạng cho máy chủ sử dụng SLAAC?",
+    "options": [
+      "chào mời bộ định tuyến",
+      "quảng cáo hàng xóm",
+      "gạ gẫm hàng xóm",
+      "quảng cáo bộ định tuyến"
+    ],
+    "explanation": "Giao diện bộ định tuyến hỗ trợ IPv6 gửi tin nhắn quảng cáo bộ định tuyến định kỳ cung cấp thông tin địa chỉ cho các máy chủ thực hiện SLAAC."
+  },
+  "final_q40": {
+    "question": "Công cụ nào có trong Security Onion là một loạt plugin phần mềm gửi các loại dữ liệu khác nhau đến kho dữ liệu Elaticsearch?",
+    "options": [
+      "Người phụ trách",
+      "nhịp đập",
+      "OSSEC",
+      "Cảnh báo đàn hồi"
+    ],
+    "explanation": ""
+  },
+  "final_q41": {
+    "question": "Hai loại lưu lượng truy cập mạng không thể đọc được nào có thể bị loại bỏ khỏi dữ liệu do NSM thu thập? (Chọn hai.)",
+    "options": [
+      "Lưu lượng truy cập STP",
+      "lưu lượng IPsec",
+      "định tuyến cập nhật lưu lượng truy cập",
+      "Lưu lượng SSL",
+      "lưu lượng phát sóng"
+    ],
+    "explanation": "Để giảm lượng dữ liệu khổng lồ được thu thập để các nhà phân tích an ninh mạng có thể tập trung vào các mối đe dọa nghiêm trọng, một số dữ liệu ít quan trọng hơn hoặc không thể sử dụng được có thể bị loại bỏ khỏi bộ dữ liệu. Ví dụ: dữ liệu được mã hóa, chẳng hạn như lưu lượng IPsec và SSL, có thể bị loại bỏ vì không thể đọc được dữ liệu đó trong khung thời gian hợp lý."
+  },
+  "final_q42": {
+    "question": "Thành phần nguồn mở cốt lõi nào của Elastic-stack chịu trách nhiệm chấp nhận dữ liệu ở định dạng gốc và làm cho các thành phần của dữ liệu nhất quán trên tất cả các nguồn?",
+    "options": [
+      "Đăng nhập",
+      "Kibana",
+      "nhịp đập",
+      "Elaticsearch"
+    ],
+    "explanation": ""
+  },
+  "final_q43": {
+    "question": "Hãy ghép các bên liên quan về sự cố an ninh với vai trò.",
+    "options": [],
+    "explanation": ""
+  },
+  "final_q44": {
+    "question": "Trong vòng đời của quy trình ứng phó sự cố NIST, loại vectơ tấn công nào liên quan đến việc sử dụng vũ lực đối với các thiết bị, mạng hoặc dịch vụ?",
+    "options": [
+      "phương tiện truyền thông",
+      "mạo danh",
+      "sự hao mòn",
+      "mất mát hoặc trộm cắp"
+    ],
+    "explanation": "Các phương thức tấn công phổ biến bao gồm phương tiện truyền thông, tiêu hao, mạo danh và mất mát hoặc trộm cắp. Tấn công tiêu hao là bất kỳ cuộc tấn công nào sử dụng vũ lực. Các cuộc tấn công truyền thông là những cuộc tấn công được bắt đầu từ các thiết bị lưu trữ. Các cuộc tấn công mạo danh xảy ra khi một cái gì đó hoặc ai đó bị thay thế nhằm mục đích tấn công và các cuộc tấn công làm mất mát hoặc trộm cắp được bắt đầu bởi thiết bị bên trong tổ chức."
+  },
+  "final_q45": {
+    "question": "Hãy kết hợp tổ chức bảo mật với các chức năng bảo mật của nó. (Không phải tất cả các tùy chọn đều được sử dụng.)",
+    "options": [],
+    "explanation": ""
+  },
+  "final_q46": {
+    "question": "Đặc điểm của CybOX là gì?",
+    "options": [
+      "Nó là một tập hợp các lược đồ được tiêu chuẩn hóa để xác định, nắm bắt, mô tả đặc điểm và truyền đạt các sự kiện và thuộc tính của các hoạt động mạng.",
+      "Nó cho phép trao đổi thời gian thực các chỉ số về mối đe dọa mạng giữa Chính phủ Liên bang Hoa Kỳ và khu vực tư nhân.",
+      "Nó là một bộ thông số kỹ thuật để trao đổi thông tin về mối đe dọa mạng giữa các tổ chức.",
+      "Đây là thông số kỹ thuật cho giao thức lớp ứng dụng cho phép giao tiếp CTI qua HTTPS."
+    ],
+    "explanation": "CybOX là một bộ tiêu chuẩn mở gồm các lược đồ được tiêu chuẩn hóa để chỉ định, nắm bắt, mô tả đặc điểm và truyền đạt các sự kiện cũng như thuộc tính của các hoạt động mạng hỗ trợ nhiều chức năng an ninh mạng."
+  },
+  "final_q47": {
+    "question": "Sau khi máy chủ A nhận được một trang web từ máy chủ B, máy chủ A sẽ chấm dứt kết nối với máy chủ B. Hãy khớp từng bước với tùy chọn đúng trong quy trình chấm dứt thông thường đối với kết nối TCP. (Không phải tất cả các tùy chọn đều được sử dụng.)",
+    "options": [],
+    "explanation": ""
+  },
+  "final_q48": {
+    "question": "Hai cách mà ICMP có thể là mối đe dọa bảo mật đối với một công ty là gì? (Chọn hai.)",
+    "options": [
+      "bằng cách thu thập thông tin về mạng",
+      "bằng cách làm hỏng dữ liệu giữa máy chủ email và người nhận email",
+      "bởi sự xâm nhập của các trang web",
+      "bằng cách làm hỏng các gói dữ liệu IP mạng",
+      "bằng cách cung cấp một đường dẫn cho các cuộc tấn công DoS"
+    ],
+    "explanation": "ICMP có thể được sử dụng như một đường dẫn cho các cuộc tấn công DoS. Nó có thể được sử dụng để thu thập thông tin về mạng như nhận dạng máy chủ và cấu trúc mạng cũng như bằng cách xác định hệ điều hành đang được sử dụng trên mạng."
+  },
+  "final_q49": {
+    "question": "Ba trường tiêu đề IPv4 nào không có tiêu đề tương đương trong tiêu đề IPv6? (Chọn ba.)",
+    "options": [
+      "phần bù mảnh",
+      "giao thức",
+      "lá cờ",
+      "TTL",
+      "nhận dạng",
+      "phiên bản"
+    ],
+    "explanation": "Không giống như IPv4, bộ định tuyến IPv6 không thực hiện phân mảnh. Do đó, cả ba trường hỗ trợ phân mảnh trong tiêu đề IPv4 đều bị loại bỏ và không có trường tương đương trong tiêu đề IPv6. Ba trường này là offset đoạn, cờ và nhận dạng. IPv6 hỗ trợ phân mảnh gói máy chủ thông qua việc sử dụng các tiêu đề mở rộng, không phải là một phần của tiêu đề IPv6."
+  },
+  "final_q50": {
+    "question": "Hai lệnh mạng nào liên quan đến việc chia sẻ tài nguyên mạng? (Chọn hai.)",
+    "options": [
+      "khởi đầu ròng",
+      "tài khoản ròng",
+      "chia sẻ ròng",
+      "sử dụng ròng",
+      "dừng mạng"
+    ],
+    "explanation": "Lệnh net là một lệnh rất quan trọng. Một số lệnh mạng phổ biến bao gồm: tài khoản mạng – đặt yêu cầu mật khẩu và đăng nhập cho người dùng phiên mạng – liệt kê hoặc ngắt kết nối các phiên giữa máy tính và máy tính khác trên mạng chia sẻ mạng – tạo, xóa hoặc quản lý tài nguyên được chia sẻ khởi động mạng – khởi động một dịch vụ mạng hoặc liệt kê các dịch vụ mạng đang chạy net stop – dừng dịch vụ mạng sử dụng mạng – kết nối, ngắt kết nối và hiển thị thông tin về tài nguyên mạng được chia sẻ dạng xem mạng – hiển thị danh sách các máy tính và thiết bị mạng trên mạng"
+  },
+  "final_q51": {
+    "question": "Khớp khóa đăng ký Windows 10 với mô tả của nó. (Không phải tất cả các tùy chọn đều được sử dụng.)",
+    "options": [],
+    "explanation": ""
+  },
+  "final_q52": {
+    "question": "Định dạng PDU nào được sử dụng khi NIC của máy chủ nhận các bit từ phương tiện mạng?",
+    "options": [
+      "đoạn",
+      "tài liệu",
+      "gói",
+      "khung"
+    ],
+    "explanation": "Khi được nhận ở lớp vật lý của máy chủ, các bit được định dạng thành khung ở lớp liên kết dữ liệu. Một gói là PDU ở lớp mạng. Một phân đoạn là PDU ở lớp vận chuyển. Tệp là cấu trúc dữ liệu có thể được sử dụng ở lớp ứng dụng."
+  },
+  "final_q53": {
+    "question": "Người dùng đang thực hiện tracert tới một thiết bị từ xa. Tại thời điểm nào bộ định tuyến nằm trên đường dẫn đến thiết bị đích sẽ ngừng chuyển tiếp gói?",
+    "options": [
+      "khi bộ định tuyến nhận được thông báo ICMP Time Exceeded",
+      "khi giá trị của cả hai bản tin Echo Yêu cầu và Echo Reply đều bằng 0",
+      "khi giá trị RTT đạt đến 0",
+      "khi giá trị trong trường TTL đạt tới 0",
+      "khi máy chủ phản hồi bằng tin nhắn ICMP Echo Reply"
+    ],
+    "explanation": "Khi bộ định tuyến nhận được gói traceroute, giá trị trong trường TTL sẽ giảm đi 1. Khi giá trị trong trường bằng 0, bộ định tuyến nhận sẽ không chuyển tiếp gói và sẽ gửi tin nhắn ICMP Time Exceeded trở lại nguồn."
+  },
+  "final_q54": {
+    "question": "Tham khảo triển lãm. Giải pháp nào có thể cung cấp VPN giữa trang A và trang B để hỗ trợ đóng gói bất kỳ giao thức Lớp 3 nào giữa các mạng nội bộ tại mỗi trang?",
+    "options": [
+      "đường hầm IPsec",
+      "Cisco SSL VPN",
+      "đường hầm GRE",
+      "một đường hầm truy cập từ xa"
+    ],
+    "explanation": "Đường hầm đóng gói định tuyến chung (GRE) là một giải pháp đường hầm VPN tại chỗ, không an toàn, có khả năng đóng gói bất kỳ giao thức Lớp 3 nào giữa nhiều trang web trên mạng Internet IP."
+  },
+  "final_q55": {
+    "question": "Quản trị viên mạng sử dụng công cụ Nmap với mục đích gì?",
+    "options": [
+      "bảo vệ địa chỉ IP riêng của máy chủ nội bộ",
+      "xác định các điểm bất thường của mạng cụ thể",
+      "thu thập và phân tích các cảnh báo và nhật ký bảo mật",
+      "phát hiện và xác định các cổng mở"
+    ],
+    "explanation": "Nmap cho phép quản trị viên thực hiện quét cổng để thăm dò máy tính và mạng để tìm các cổng đang mở. Điều này giúp quản trị viên xác minh rằng các chính sách bảo mật mạng đã được áp dụng."
+  },
+  "final_q56": {
+    "question": "Hãy ghép dịch vụ mạng với mô tả. Đáp án bài thi cuối kỳ Bảo mật điểm cuối (ESec) 19",
+    "options": [],
+    "explanation": "cung cấp số liệu thống kê về các gói IP truyền qua các thiết bị mạng NetFlow thông báo cho quản trị viên các thông báo hệ thống chi tiết nhật ký hệ thống cho phép quản trị viên quản lý các nút mạng SNMP đồng bộ hóa thời gian trên tất cả các thiết bị trên mạng NTP"
+  },
+  "final_q58": {
+    "question": "Kết hợp bề mặt tấn công với các khai thác tấn công.",
+    "options": [],
+    "explanation": "Bề mặt tấn công phần mềm Các cuộc tấn công này được thực hiện thông qua việc khai thác các lỗ hổng trong các ứng dụng phần mềm dựa trên web, đám mây hoặc trên máy chủ. Bề mặt tấn công mạng Các cuộc tấn công này bao gồm các giao thức mạng có dây và không dây thông thường, cũng như các giao thức không dây khác được sử dụng bởi điện thoại thông minh hoặc thiết bị IoT. Các cuộc tấn công nhắm vào các lỗ hổng ở lớp vận chuyển. Bề mặt tấn công của con người Những cuộc tấn công này bao gồm kỹ thuật xã hội, hành vi nguy hiểm của những người trong cuộc đáng tin cậy và lỗi của người dùng."
+  },
+  "final_q59": {
+    "question": "Hãy ghép ứng dụng tường lửa dựa trên máy chủ Linux với mô tả của nó.",
+    "options": [],
+    "explanation": "nftables Ứng dụng này sử dụng một máy ảo đơn giản trong nhân Linux, nơi mã được thực thi và các gói mạng được kiểm tra. iptables Đây là một ứng dụng cho phép quản trị viên hệ thống Linux định cấu hình các quy tắc truy cập mạng là một phần của mô-đun Netfilter nhân Linux. Trình bao bọc TCP Đây là hệ thống ghi nhật ký và kiểm soát truy cập dựa trên quy tắc để lọc gói Linux dựa trên địa chỉ IP và dịch vụ mạng."
+  },
+  "final_q60": {
+    "question": "Cuộc tấn công mạng nào nhằm tạo ra một DoS cho các máy khách bằng cách ngăn chặn chúng có được quyền thuê DHCP?",
+    "options": [
+      "DHCP đói",
+      "giả mạo địa chỉ IP",
+      "giả mạo DHCP",
+      "Tấn công bảng CAM"
+    ],
+    "explanation": "Các cuộc tấn công chết đói DCHP được kẻ tấn công thực hiện với mục đích tạo DoS cho các máy khách DHCP. Để thực hiện mục tiêu này, kẻ tấn công sử dụng một công cụ gửi nhiều tin nhắn DHCPDISCOVER để thuê toàn bộ nhóm địa chỉ IP có sẵn, từ đó từ chối chúng đối với các máy chủ hợp pháp."
+  },
+  "final_q61": {
+    "question": "Tham khảo triển lãm. Nếu Host1 chuyển một tập tin tới máy chủ thì lớp nào của mô hình TCP/IP sẽ được sử dụng?",
+    "options": [
+      "chỉ các lớp ứng dụng và Internet",
+      "Các lớp truy cập ứng dụng, vận chuyển, Internet và mạng",
+      "chỉ các lớp truy cập Internet và mạng",
+      "chỉ các lớp ứng dụng, vận chuyển, mạng, liên kết dữ liệu và vật lý",
+      "chỉ các lớp truy cập ứng dụng, Internet và mạng",
+      "ứng dụng, phiên, vận chuyển, mạng, liên kết dữ liệu và các lớp vật lý"
+    ],
+    "explanation": "Mô hình TCP/IP chứa các lớp truy cập ứng dụng, truyền tải, internet và mạng. Việc truyền tệp sử dụng giao thức lớp ứng dụng FTP. Dữ liệu sẽ di chuyển từ lớp ứng dụng qua tất cả các lớp của mô hình và qua mạng tới máy chủ tệp."
+  },
+  "final_q62": {
+    "question": "Một công ty có một máy chủ tập tin chia sẻ một thư mục có tên Public. Chính sách bảo mật mạng quy định rằng thư mục Public được gán quyền Read-Only cho bất kỳ ai có thể đăng nhập vào máy chủ trong khi quyền Edit chỉ được gán cho nhóm quản trị mạng. Thành phần nào được đề cập trong khung dịch vụ mạng AAA?",
+    "options": [
+      "tự động hóa",
+      "xác thực",
+      "ủy quyền",
+      "kế toán"
+    ],
+    "explanation": "Sau khi người dùng được xác thực thành công (đăng nhập vào máy chủ), ủy quyền là quá trình xác định tài nguyên mạng nào người dùng có thể truy cập và những thao tác nào (chẳng hạn như đọc hoặc chỉnh sửa) người dùng có thể thực hiện."
+  },
+  "final_q63": {
+    "question": "Khớp loại mục nhập bảng định tuyến mạng đích với định nghĩa.",
+    "options": [],
+    "explanation": ""
+  },
+  "final_q64": {
+    "question": "Một người đến quán cà phê lần đầu tiên muốn truy cập Internet không dây bằng máy tính xách tay. Bước đầu tiên máy khách không dây sẽ thực hiện để liên lạc qua mạng bằng khung quản lý không dây là gì?",
+    "options": [
+      "liên kết với AP",
+      "xác thực với AP",
+      "khám phá AP",
+      "đồng ý với AP về tải trọng"
+    ],
+    "explanation": "Để các thiết bị không dây giao tiếp trên mạng không dây, các khung quản lý được sử dụng để hoàn thành quy trình ba giai đoạn: Khám phá AP Xác thực với AP Liên kết với AP"
+  },
+  "final_q65": {
+    "question": "Một thiết bị đã được gán địa chỉ IPv6 là 2001:0db8:cafe:4500:1000:00d8:0058:00ab/64. Mã định danh mạng của thiết bị là gì?",
+    "options": [
+      "2001:0db8:cafe:4500:1000",
+      "2001:0db8:cafe:4500:1000:00d8:0058:00ab",
+      "1000:00d8:0058:00ab",
+      "2001:0db8:cafe:4500",
+      "2001"
+    ],
+    "explanation": "Địa chỉ có độ dài tiền tố là /64. Do đó, 64 bit đầu tiên đại diện cho phần mạng, trong khi 64 bit cuối cùng đại diện cho phần máy chủ của địa chỉ IPv6."
+  },
+  "final_q66": {
+    "question": "Quản trị viên muốn tạo bốn mạng con từ địa chỉ mạng 192.168.1.0/24. Địa chỉ mạng và mặt nạ mạng con của mạng con thứ hai có thể sử dụng được là gì?",
+    "options": [
+      "mạng con 192.168.1.64 mặt nạ mạng con 255.255.255.192",
+      "mạng con 192.168.1.64 mặt nạ mạng con 255.255.255.240",
+      "mạng con 192.168.1.32 mặt nạ mạng con 255.255.255.240",
+      "mạng con 192.168.1.128 mặt nạ mạng con 255.255.255.192",
+      "mạng con 192.168.1.8 mặt nạ mạng con 255.255.255.224"
+    ],
+    "explanation": "Số bit được mượn sẽ là hai, do đó có tổng cộng 4 mạng con có thể sử dụng được: 192.168.1.0 192.168.1.64 192.168.1.128 192.168.1.192 Vì 2 bit được mượn nên mặt nạ mạng con mới sẽ là /26 hoặc 255.255.255.192"
+  },
+  "final_q67": {
+    "question": "Thuật ngữ nào mô tả một bộ công cụ phần mềm được thiết kế để tăng đặc quyền của người dùng hoặc cấp quyền truy cập cho người dùng vào các phần của hệ điều hành mà thông thường không được phép?",
+    "options": [
+      "trình biên dịch",
+      "rootkit",
+      "quản lý gói",
+      "thử nghiệm thâm nhập"
+    ],
+    "explanation": "Rootkit được kẻ tấn công sử dụng để bảo vệ cửa sau cho máy tính bị xâm nhập, cấp quyền truy cập vào các phần của hệ điều hành thường không được phép hoặc tăng đặc quyền của người dùng."
+  },
+  "final_q68": {
+    "question": "Nhân viên bảo mật CNTT của một tổ chức nhận thấy rằng máy chủ web được triển khai trong DMZ thường xuyên bị các tác nhân đe dọa nhắm đến. Quyết định triển khai hệ thống quản lý bản vá để quản lý máy chủ được đưa ra. Phương pháp chiến lược quản lý rủi ro nào đang được sử dụng để ứng phó với rủi ro đã được xác định?",
+    "options": [
+      "chia sẻ rủi ro",
+      "tránh rủi ro",
+      "giảm thiểu rủi ro",
+      "duy trì rủi ro"
+    ],
+    "explanation": "Có bốn chiến lược tiềm năng để ứng phó với rủi ro đã được xác định: Tránh rủi ro – Ngừng thực hiện các hoạt động tạo ra rủi ro. Giảm thiểu rủi ro – Giảm rủi ro bằng cách thực hiện các biện pháp để giảm thiểu tình trạng dễ bị tổn thương. Chia sẻ rủi ro – Chuyển một số rủi ro cho các bên khác. Duy trì rủi ro – Chấp nhận rủi ro và hậu quả của nó."
+  },
+  "final_q69": {
+    "question": "Ba đặc điểm của hệ thống quản lý an ninh thông tin là gì? (Chọn ba.)",
+    "options": [
+      "Nó liên quan đến việc triển khai các hệ thống theo dõi vị trí và cấu hình của các thiết bị và phần mềm được nối mạng trên toàn doanh nghiệp.",
+      "Đó là một cách tiếp cận có hệ thống và nhiều lớp đối với an ninh mạng.",
+      "Nó giải quyết việc kiểm kê và kiểm soát cấu hình phần cứng và phần mềm của hệ thống.",
+      "Nó bao gồm một tập hợp các thực tiễn được áp dụng một cách có hệ thống để đảm bảo cải tiến liên tục về bảo mật thông tin.",
+      "Nó bao gồm một khung quản lý thông qua đó một tổ chức xác định, phân tích và giải quyết các rủi ro bảo mật thông tin.",
+      "Nó dựa trên ứng dụng của máy chủ và thiết bị bảo mật."
+    ],
+    "explanation": "Hệ thống quản lý bảo mật thông tin (ISMS) bao gồm một khung quản lý thông qua đó một tổ chức xác định, phân tích và giải quyết các rủi ro bảo mật thông tin. ISMS không dựa trên máy chủ hoặc thiết bị bảo mật. Thay vào đó, ISMS bao gồm một tập hợp các biện pháp thực hành được tổ chức áp dụng một cách có hệ thống để đảm bảo cải tiến liên tục về bảo mật thông tin. ISMS cung cấp các mô hình khái niệm hướng dẫn các tổ chức lập kế hoạch, thực hiện, quản lý và đánh giá các chương trình bảo mật thông tin. ISMS là sự mở rộng tự nhiên của việc sử dụng các mô hình kinh doanh phổ biến, chẳng hạn như Quản lý chất lượng toàn diện (TQM) và Mục tiêu kiểm soát thông tin và công nghệ liên quan (COBIT), vào lĩnh vực an ninh mạng. ISMS là một cách tiếp cận có hệ thống, nhiều lớp đối với an ninh mạng. Cách tiếp cận này bao gồm con người, quy trình, công nghệ và văn hóa mà chúng tương tác trong quá trình quản lý rủi ro."
+  },
+  "final_q70": {
+    "question": "Ba công nghệ nào nên được đưa vào hệ thống quản lý sự kiện và thông tin bảo mật SOC? (Chọn ba.)",
+    "options": [
+      "thu thập sự kiện, tương quan và phân tích",
+      "giám sát an ninh",
+      "xác thực người dùng",
+      "dịch vụ ủy quyền",
+      "phòng chống xâm nhập",
+      "thông tin về mối đe dọa"
+    ],
+    "explanation": "Các công nghệ trong SOC phải bao gồm những điều sau: • Thu thập, tương quan và phân tích sự kiện • Giám sát bảo mật • Kiểm soát bảo mật • Quản lý nhật ký • Đánh giá lỗ hổng • Theo dõi lỗ hổng • Thông tin về mối đe dọa Máy chủ proxy, VPN và IPS là các thiết bị bảo mật được triển khai trong cơ sở hạ tầng mạng."
+  },
+  "final_q71": {
+    "question": "Phần nào của URL, http://www.cisco.com/index.html, đại diện cho miền DNS cấp cao nhất?",
+    "options": [
+      "http",
+      "www",
+      ".com",
+      "chỉ mục"
+    ],
+    "explanation": "Các thành phần của URL http://www.cisco.com/index.htm như sau: http = giao thức www = một phần tên máy chủ cisco = một phần tên miền index = tên tệp com = tên miền cấp cao nhất"
+  },
+  "final_q72": {
+    "question": "Điều gì mô tả đúng nhất mối đe dọa bảo mật của việc giả mạo?",
+    "options": [
+      "gửi email hàng loạt đến các cá nhân, danh sách hoặc tên miền nhằm mục đích ngăn người dùng truy cập email",
+      "gửi lượng dữ liệu lớn bất thường đến máy chủ từ xa để ngăn người dùng truy cập vào dịch vụ máy chủ",
+      "chặn lưu lượng giữa hai máy chủ hoặc chèn thông tin sai lệch vào lưu lượng giữa hai máy chủ",
+      "làm cho dữ liệu có vẻ đến từ một nguồn không phải là nguồn thực tế"
+    ],
+    "explanation": ""
+  },
+  "final_q73": {
+    "question": "Một công ty mới thành lập có 15 máy tính Windows 10 cần được cài đặt trước khi công ty có thể hoạt động kinh doanh. Cách thực hành tốt nhất mà kỹ thuật viên nên thực hiện khi định cấu hình Tường lửa Windows là gì?",
+    "options": [
+      "Kỹ thuật viên nên xóa tất cả các quy tắc tường lửa mặc định và từ chối có chọn lọc lưu lượng truy cập vào mạng công ty.",
+      "Sau khi triển khai phần mềm bảo mật của bên thứ ba cho công ty, kỹ thuật viên phải xác minh rằng Tường lửa Windows đã bị tắt.",
+      "Kỹ thuật viên nên tạo hướng dẫn cho người dùng doanh nghiệp về cách cho phép ứng dụng thông qua Tường lửa WIndows bằng tài khoản Quản trị viên.",
+      "Kỹ thuật viên nên kích hoạt Tường lửa Windows cho lưu lượng truy cập vào và cài đặt phần mềm tường lửa khác để kiểm soát lưu lượng đi."
+    ],
+    "explanation": "Chỉ tắt Tường lửa Windows nếu phần mềm tường lửa khác được cài đặt. Sử dụng Tường lửa Windows (Windows 7 hoặc 8) hoặc Bảng điều khiển Tường lửa Windows Defender (Windows 10) để bật hoặc tắt Tường lửa Windows."
+  },
+  "final_q74": {
+    "question": "Câu lệnh nào xác định sự khác biệt giữa dữ liệu phiên và dữ liệu giao dịch trong nhật ký?",
+    "options": [
+      "Dữ liệu phiên phân tích lưu lượng mạng và dự đoán hành vi mạng, trong khi dữ liệu giao dịch ghi lại các phiên mạng.",
+      "Dữ liệu phiên được sử dụng để đưa ra dự đoán về hành vi mạng, trong khi dữ liệu giao dịch được sử dụng để phát hiện các điểm bất thường của mạng.",
+      "Dữ liệu phiên ghi lại cuộc trò chuyện giữa các máy chủ, trong khi dữ liệu giao dịch tập trung vào kết quả của phiên mạng.",
+      "Dữ liệu phiên hiển thị kết quả của phiên mạng, trong khi dữ liệu giao dịch phản ứng với lưu lượng truy cập của mối đe dọa mạng."
+    ],
+    "explanation": ""
+  },
+  "final_q75": {
+    "question": "Ghép loại dữ liệu giám sát mạng với mô tả.",
+    "options": [],
+    "explanation": ""
+  },
+  "final_q76": {
+    "question": "Thiết bị nào hỗ trợ sử dụng SPAN để cho phép giám sát hoạt động độc hại?",
+    "options": [
+      "Bộ chuyển mạch Cisco Catalyst",
+      "Cisco IronPort",
+      "Cisco NAC",
+      "Đại lý bảo mật của Cisco"
+    ],
+    "explanation": "SPAN là công nghệ của Cisco cho phép tất cả lưu lượng truy cập từ một cổng được chuyển hướng đến một cổng khác."
+  },
+  "final_q77": {
+    "question": "Thuật ngữ nào được sử dụng để mô tả các truy vấn tự động hữu ích trong việc nâng cao hiệu quả cho quy trình vận hành mạng?",
+    "options": [
+      "chuỗi tiêu diệt mạng",
+      "cẩm nang",
+      "chuỗi quyền giám hộ",
+      "rootkit"
+    ],
+    "explanation": "Playbook là một truy vấn tự động có thể tăng thêm hiệu quả cho quy trình vận hành mạng."
+  },
+  "final_q78": {
+    "question": "Khi ACL được định cấu hình để chặn các cuộc tấn công giả mạo địa chỉ IP và tấn công tràn ngập DoS, tin nhắn ICMP nào sẽ được phép cả trong và ngoài nước?",
+    "options": [
+      "tiếng vang trả lời",
+      "không thể truy cập được",
+      "dập tắt nguồn",
+      "tiếng vọng"
+    ],
+    "explanation": "Tin nhắn ICMP dập tắt nguồn cung cấp khả năng yêu cầu người gửi giảm tốc độ tin nhắn khi cần thiết. Những tin nhắn này phải được phép đi qua tường lửa theo cả hướng vào và ra."
+  },
+  "final_q79": {
+    "question": "Sau khi công cụ giám sát bảo mật xác định tệp đính kèm phần mềm độc hại xâm nhập vào mạng, lợi ích của việc thực hiện phân tích hồi cứu là gì?",
+    "options": [
+      "Nó có thể xác định cách phần mềm độc hại xâm nhập vào mạng ban đầu.",
+      "Phân tích hồi cứu có thể giúp theo dõi hành vi của phần mềm độc hại từ thời điểm nhận dạng trở đi.",
+      "Nó có thể tính toán xác suất xảy ra sự cố trong tương lai.",
+      "Nó có thể xác định máy chủ mạng nào bị ảnh hưởng đầu tiên."
+    ],
+    "explanation": "Giám sát bảo mật chung có thể xác định thời điểm tệp đính kèm phần mềm độc hại xâm nhập vào mạng và máy chủ nào bị nhiễm lần đầu tiên. Phân tích hồi cứu thực hiện bước tiếp theo và theo dõi hành vi của phần mềm độc hại từ thời điểm đó trở đi."
+  },
+  "final_q80": {
+    "question": "Hai loại dữ liệu nào sẽ được phân loại là thông tin nhận dạng cá nhân (PII)? (Chọn hai.)",
+    "options": [
+      "đọc nhiệt kế nhà",
+      "số lượng gia súc bình quân mỗi vùng",
+      "số nhận dạng xe",
+      "sử dụng cấp cứu bệnh viện theo khu vực",
+      "ảnh facebook"
+    ],
+    "explanation": ""
+  },
+  "final_q81": {
+    "question": "Kỹ thuật viên bộ phận trợ giúp nhận thấy số lượng cuộc gọi liên quan đến hiệu suất của máy tính đặt tại nhà máy sản xuất ngày càng tăng. Kỹ thuật viên tin rằng botnet đang gây ra sự cố. Hai mục đích của botnet là gì? (Chọn hai.)",
+    "options": [
+      "để truyền virus hoặc thư rác tới các máy tính trên cùng một mạng",
+      "để ghi lại bất kỳ và tất cả các lần nhấn phím",
+      "để tấn công các máy tính khác",
+      "giữ lại quyền truy cập vào máy tính hoặc các tập tin cho đến khi tiền được trả",
+      "để có quyền truy cập vào phần bị hạn chế của hệ điều hành"
+    ],
+    "explanation": "Botnet có thể được sử dụng để thực hiện các cuộc tấn công DDoS, lấy dữ liệu hoặc truyền phần mềm độc hại đến các thiết bị khác trên mạng."
+  },
+  "final_q82": {
+    "question": "Hai câu nào mô tả việc sử dụng các thuật toán bất đối xứng? (Chọn hai.)",
+    "options": [
+      "Khóa công khai và khóa riêng có thể được sử dụng thay thế cho nhau.",
+      "Nếu khóa chung được sử dụng để mã hóa dữ liệu thì phải sử dụng khóa riêng để giải mã dữ liệu.",
+      "Nếu khóa chung được sử dụng để mã hóa dữ liệu thì khóa chung phải được sử dụng để giải mã dữ liệu.",
+      "Nếu khóa riêng được sử dụng để mã hóa dữ liệu thì phải sử dụng khóa chung để giải mã dữ liệu.",
+      "Nếu khóa riêng được sử dụng để mã hóa dữ liệu thì phải sử dụng khóa riêng để giải mã dữ liệu."
+    ],
+    "explanation": "Thuật toán bất đối xứng sử dụng hai khóa: khóa chung và khóa riêng. Cả hai khóa đều có khả năng thực hiện quá trình mã hóa, nhưng cần có khóa khớp bổ sung để giải mã. Nếu khóa chung mã hóa dữ liệu thì khóa riêng phù hợp sẽ giải mã dữ liệu. Điều ngược lại cũng đúng. Nếu khóa riêng mã hóa dữ liệu thì khóa chung tương ứng sẽ giải mã dữ liệu."
+  },
+  "final_q83": {
+    "question": "Ba dịch vụ bảo mật nào được cung cấp bởi chữ ký số? (Chọn ba.)",
+    "options": [
+      "cung cấp khả năng chống chối bỏ bằng cách sử dụng các hàm HMAC",
+      "đảm bảo dữ liệu không bị thay đổi trong quá trình vận chuyển",
+      "cung cấp mã hóa dữ liệu",
+      "xác thực nguồn",
+      "cung cấp tính bảo mật của dữ liệu được ký điện tử",
+      "xác thực điểm đến"
+    ],
+    "explanation": "Chữ ký số là một kỹ thuật toán học được sử dụng để cung cấp ba dịch vụ bảo mật cơ bản. Chữ ký số có các thuộc tính cụ thể cho phép xác thực thực thể và tính toàn vẹn dữ liệu. Ngoài ra, chữ ký số còn cung cấp khả năng chống chối bỏ giao dịch. Nói cách khác, chữ ký số đóng vai trò là bằng chứng pháp lý cho thấy việc trao đổi dữ liệu đã diễn ra."
+  },
+  "final_q84": {
+    "question": "Hai phương pháp để duy trì trạng thái thu hồi chứng chỉ là gì? (Chọn hai.)",
+    "options": [
+      "CRL",
+      "DNS",
+      "CA cấp dưới",
+      "OCSP",
+      "LDAP"
+    ],
+    "explanation": "Chứng chỉ số có thể cần phải được thu hồi nếu khóa của nó bị xâm phạm hoặc không còn cần thiết nữa. Danh sách thu hồi chứng chỉ (CRL) và Giao thức trạng thái chứng chỉ trực tuyến (OCSP) là hai phương pháp phổ biến để kiểm tra trạng thái thu hồi chứng chỉ."
+  },
+  "final_q85": {
+    "question": "Hai cách sử dụng danh sách kiểm soát truy cập là gì? (Chọn hai.)",
+    "options": [
+      "ACL cung cấp mức độ bảo mật cơ bản cho việc truy cập mạng.",
+      "ACL có thể kiểm soát những khu vực mà máy chủ có thể truy cập trên mạng.",
+      "ACL tiêu chuẩn có thể hạn chế quyền truy cập vào các ứng dụng và cổng cụ thể.",
+      "ACL hỗ trợ bộ định tuyến xác định đường dẫn tốt nhất đến đích.",
+      "ACL có thể cho phép hoặc từ chối lưu lượng truy cập dựa trên địa chỉ MAC bắt nguồn từ bộ định tuyến."
+    ],
+    "explanation": "ACL có thể được sử dụng cho những mục đích sau:Giới hạn lưu lượng truy cập mạng để cung cấp hiệu suất mạng phù hợp Hạn chế gửi các bản cập nhật định tuyến Cung cấp mức bảo mật cơ bản Lọc lưu lượng truy cập dựa trên loại lưu lượng được gửi Lọc lưu lượng truy cập dựa trên địa chỉ IP"
+  },
+  "final_q86": {
+    "question": "Một máy khách đang sử dụng SLAAC để lấy địa chỉ IPv6 cho giao diện. Sau khi một địa chỉ được tạo và áp dụng cho giao diện, máy khách phải làm gì trước khi có thể bắt đầu sử dụng địa chỉ IPv6 này?",
+    "options": [
+      "Nó phải gửi một thông báo ICMPv6 Router Solicitation để xác định nên sử dụng cổng mặc định nào.",
+      "Nó phải gửi một thông báo ICMPv6 Router Solicitation để yêu cầu địa chỉ của máy chủ DNS.",
+      "Nó phải gửi một thông báo Neighbor Solicitation ICMPv6 để đảm bảo rằng địa chỉ đó chưa được sử dụng trên mạng.",
+      "Nó phải đợi một thông báo Quảng cáo Bộ định tuyến ICMPv6 cho phép sử dụng địa chỉ này."
+    ],
+    "explanation": "DHCPv6 không trạng thái hoặc DHCPv6 có trạng thái sử dụng máy chủ DHCP, nhưng Tự động cấu hình địa chỉ không trạng thái (SLAAC) thì không. Máy khách SLAAC có thể tự động tạo địa chỉ dựa trên thông tin từ bộ định tuyến cục bộ thông qua tin nhắn Quảng cáo bộ định tuyến (RA). Khi một địa chỉ đã được gán cho một giao diện thông qua SLAAC, khách hàng phải đảm bảo thông qua Phát hiện địa chỉ trùng lặp (DAD) rằng địa chỉ đó chưa được sử dụng. Nó thực hiện điều này bằng cách gửi đi một tin nhắn ICMPv6 Neighbor Solicitation và lắng nghe phản hồi. Nếu nhận được phản hồi thì có nghĩa là một thiết bị khác đã sử dụng địa chỉ này."
+  },
+  "final_q87": {
+    "question": "Một kỹ thuật viên đang khắc phục sự cố kết nối mạng. Ping tới bộ định tuyến không dây cục bộ thành công nhưng ping tới máy chủ trên Internet không thành công. Lệnh CLI nào có thể hỗ trợ kỹ thuật viên tìm ra vị trí của sự cố mạng?",
+    "options": [
+      "dấu vết",
+      "ipconfig",
+      "msconfig",
+      "ipconfig/gia hạn"
+    ],
+    "explanation": "Tiện ích tracert (còn được gọi là lệnh tracert hoặc công cụ tracert) sẽ cho phép kỹ thuật viên xác định vị trí liên kết đến máy chủ bị hỏng. Lệnh ipconfig hiển thị chi tiết cấu hình mạng máy tính. Lệnh ipconfig/renew yêu cầu địa chỉ IP từ máy chủ DHCP. Msconfig không phải là lệnh khắc phục sự cố mạng."
+  },
+  "final_q88": {
+    "question": "Hai kỹ thuật trốn tránh được tin tặc sử dụng là gì? (Chọn hai.)",
+    "options": [
+      "ngựa thành Troy",
+      "trục quay",
+      "rootkit",
+      "trinh sát",
+      "lừa đảo"
+    ],
+    "explanation": "Các phương pháp sau đây được tin tặc sử dụng để tránh bị phát hiện:Mã hóa và tạo đường hầm – ẩn hoặc xáo trộn nội dung phần mềm độc hại Cạn kiệt tài nguyên – khiến thiết bị chủ quá bận để phát hiện cuộc xâm lược Phân mảnh lưu lượng – chia phần mềm độc hại thành nhiều gói Diễn giải sai ở cấp độ giao thức – lén theo tường lửa Pivot – sử dụng thiết bị mạng bị xâm nhập để cố gắng truy cập vào thiết bị khác Rootkit – cho phép tin tặc không bị phát hiện và ẩn phần mềm do tin tặc cài đặt"
+  },
+  "final_q89": {
+    "question": "Khi một cuộc tấn công bảo mật xảy ra, các chuyên gia bảo mật nên thực hiện hai phương pháp tiếp cận nào để giảm thiểu hệ thống bị xâm nhập trong bước Hành động theo mục tiêu như được xác định trong mô hình Chuỗi tiêu diệt mạng? (Chọn hai.)",
+    "options": [
+      "Thực hiện phân tích pháp y về các điểm cuối để phân loại nhanh chóng.",
+      "Đào tạo các nhà phát triển web về cách bảo mật mã.",
+      "Xây dựng khả năng phát hiện hành vi của phần mềm độc hại đã biết.",
+      "Thu thập các tệp phần mềm độc hại và siêu dữ liệu để phân tích trong tương lai.",
+      "Phát hiện việc đánh cắp dữ liệu, di chuyển ngang và sử dụng thông tin xác thực trái phép."
+    ],
+    "explanation": "Khi các chuyên gia bảo mật được cảnh báo về các xâm phạm hệ thống, việc phân tích pháp lý về điểm cuối phải được thực hiện ngay lập tức để phân loại nhanh chóng. Ngoài ra, cần tăng cường nỗ lực phát hiện các hoạt động tấn công tiếp theo như đánh cắp dữ liệu, di chuyển ngang và sử dụng thông tin xác thực trái phép để giảm thiểu thiệt hại đến mức tối thiểu."
+  },
+  "final_q90": {
+    "question": "Đặt bảy bước được xác định trong Chuỗi tiêu diệt mạng theo đúng thứ tự.",
+    "options": [],
+    "explanation": ""
+  },
+  "final_q91": {
+    "question": "Trường nào trong tiêu đề TCP cho biết trạng thái của quá trình bắt tay ba bước?",
+    "options": [
+      "bit điều khiển",
+      "cửa sổ",
+      "kín đáo",
+      "tổng kiểm tra"
+    ],
+    "explanation": "Giá trị trong trường bit điều khiển của tiêu đề TCP cho biết tiến trình và trạng thái của kết nối."
+  },
+  "final_q92": {
+    "question": "Người dùng mở ba trình duyệt trên cùng một PC để truy cập www.cisco.com nhằm tìm kiếm thông tin khóa học cấp chứng chỉ. Máy chủ web của Cisco gửi một gói dữ liệu dưới dạng phản hồi cho yêu cầu từ một trong các trình duyệt web. Thông tin nào được ngăn xếp giao thức TCP/IP trong PC sử dụng để xác định trình duyệt nào trong ba trình duyệt web sẽ nhận được phản hồi?",
+    "options": [
+      "địa chỉ IP nguồn",
+      "số cổng đích",
+      "địa chỉ IP đích",
+      "số cổng nguồn"
+    ],
+    "explanation": "Mỗi ứng dụng khách trình duyệt web sẽ mở một số cổng được tạo ngẫu nhiên trong phạm vi cổng đã đăng ký và sử dụng số này làm số cổng nguồn trong datagram mà nó gửi đến máy chủ. Sau đó, máy chủ sử dụng số cổng này làm số cổng đích trong gói dữ liệu trả lời mà nó gửi tới trình duyệt web. PC đang chạy ứng dụng trình duyệt web nhận datagram và sử dụng số cổng đích có trong datagram này để xác định ứng dụng khách."
+  },
+  "final_q93": {
+    "question": "Hai tình huống mà phân tích bảo mật xác suất phù hợp nhất là gì? (Chọn hai.)",
+    "options": [
+      "khi các ứng dụng phù hợp với tiêu chuẩn ứng dụng/mạng được phân tích",
+      "khi các biến ngẫu nhiên tạo ra khó khăn trong việc biết chắc chắn kết quả của bất kỳ sự kiện nào",
+      "khi mỗi sự kiện là kết quả tất yếu của những nguyên nhân có trước",
+      "khi phân tích các ứng dụng được thiết kế để vượt qua tường lửa",
+      "khi phân tích các sự kiện với giả định rằng chúng tuân theo các bước được xác định trước"
+    ],
+    "explanation": "Phân tích xác suất dựa trên các kỹ thuật thống kê được thiết kế để ước tính xác suất xảy ra một sự kiện dựa trên khả năng xảy ra các sự kiện trước đó."
+  },
+  "final_q94": {
+    "question": "Công cụ nào là ứng dụng web cung cấp cho nhà phân tích an ninh mạng một phương tiện dễ đọc để xem toàn bộ phiên Lớp 4?",
+    "options": [
+      "Khịt mũi",
+      "Zeek",
+      "CapME",
+      "OSSEC"
+    ],
+    "explanation": ""
+  },
+  "final_q95": {
+    "question": "Hãy ghép loại tấn công với mô tả. (Không phải tất cả các tùy chọn đều được sử dụng.)",
+    "options": [],
+    "explanation": "MiTM Nó xảy ra khi các tác nhân đe dọa tự định vị giữa nguồn và đích và có thể chủ động giám sát, nắm bắt và kiểm soát hoạt động liên lạc một cách minh bạch. tấn công sniffer Nó sử dụng một ứng dụng hoặc thiết bị có thể đọc, giám sát và nắm bắt các trao đổi dữ liệu mạng cũng như đọc các gói mạng. DoS Nó có thể làm hỏng các ứng dụng hoặc dịch vụ mạng. Nó cũng có thể làm tràn lưu lượng truy cập vào máy tính hoặc toàn bộ mạng cho đến khi tắt máy do quá tải."
+  },
+  "final_q96": {
+    "question": "Hai đặc điểm của phương pháp SLAAC cho cấu hình địa chỉ IPv6 là gì? (Chọn hai.)",
+    "options": [
+      "Cổng mặc định của máy khách IPv6 trên mạng LAN sẽ là địa chỉ liên kết cục bộ của giao diện bộ định tuyến được gắn vào mạng LAN.",
+      "Phương pháp lấy địa chỉ IPv6 có trạng thái này yêu cầu ít nhất một máy chủ DHCPv6.",
+      "Khách hàng gửi tin nhắn quảng cáo bộ định tuyến đến bộ định tuyến để yêu cầu địa chỉ IPv6.",
+      "Địa chỉ IPv6 được gán động cho máy khách thông qua việc sử dụng ICMPv6.",
+      "Tin nhắn chào mời bộ định tuyến được bộ định tuyến gửi để cung cấp địa chỉ IPv6 cho khách hàng."
+    ],
+    "explanation": "Với SLAAC, cổng mặc định cho máy khách IPv6 sẽ là địa chỉ liên kết cục bộ của giao diện bộ định tuyến được gắn vào mạng LAN của máy khách. Địa chỉ IPv6 được gán động thông qua giao thức ICMPv6. SLAAC là một phương pháp không trạng thái để lấy địa chỉ IPv6, một phương pháp không yêu cầu máy chủ. Khi một máy khách được cấu hình để tự động lấy thông tin địa chỉ của nó thông qua SLAAC, máy khách sẽ gửi một thông báo yêu cầu bộ định tuyến đến địa chỉ multicast của tất cả các bộ định tuyến IPv6 FF02::2. Các tin nhắn quảng cáo bộ định tuyến được gửi bởi bộ định tuyến để cung cấp thông tin địa chỉ cho khách hàng."
+  },
+  "final_q97": {
+    "question": "Một kỹ thuật viên nhận thấy một ứng dụng không phản hồi các lệnh và máy tính dường như phản hồi chậm khi mở ứng dụng. Công cụ quản trị tốt nhất để buộc giải phóng tài nguyên hệ thống khỏi ứng dụng không phản hồi là gì?",
+    "options": [
+      "Trình xem sự kiện",
+      "Khôi phục hệ thống",
+      "Thêm hoặc xóa chương trình",
+      "Trình quản lý tác vụ"
+    ],
+    "explanation": "Sử dụng tab Hiệu suất của Trình quản lý Tác vụ để xem biểu diễn trực quan về việc sử dụng CPU và RAM. Điều này rất hữu ích trong việc xác định xem có cần thêm bộ nhớ hay không. Sử dụng tab Ứng dụng để tạm dừng một ứng dụng không phản hồi."
+  },
+  "final_q98": {
+    "question": "Dữ liệu thống kê có thể được sử dụng như thế nào để mô tả hoặc dự đoán hành vi mạng?",
+    "options": [
+      "bằng cách so sánh hành vi mạng bình thường với hành vi mạng hiện tại",
+      "bằng cách ghi lại các cuộc hội thoại giữa các điểm cuối mạng",
+      "bằng cách liệt kê kết quả hoạt động lướt web của người dùng",
+      "bằng cách hiển thị các thông báo cảnh báo được tạo bởi Snort"
+    ],
+    "explanation": "Dữ liệu thống kê được tạo ra thông qua việc phân tích các dạng dữ liệu mạng khác. Các đặc điểm thống kê của hành vi mạng bình thường có thể được so sánh với lưu lượng mạng hiện tại nhằm nỗ lực phát hiện những điểm bất thường. Kết luận thu được từ phân tích có thể được sử dụng để mô tả hoặc dự đoán hành vi của mạng."
+  },
+  "final_q99": {
+    "question": "Số liệu nào trong Nhóm số liệu cơ sở CVSS được sử dụng với vectơ tấn công?",
+    "options": [
+      "mức độ gần gũi của tác nhân đe dọa với lỗ hổng",
+      "sự hiện diện hay vắng mặt của yêu cầu tương tác người dùng để khai thác thành công",
+      "việc xác định xem quyền ban đầu có thay đổi thành quyền thứ hai trong quá trình khai thác hay không",
+      "số lượng thành phần, phần mềm, phần cứng hoặc mạng nằm ngoài tầm kiểm soát của kẻ tấn công và phải có để khai thác thành công lỗ hổng"
+    ],
+    "explanation": "Đây là số liệu phản ánh mức độ gần gũi của tác nhân đe dọa với thành phần dễ bị tấn công. Tác nhân đe dọa càng ở xa thành phần thì mức độ nghiêm trọng càng cao. Các tác nhân đe dọa ở gần mạng hoặc bên trong mạng của bạn sẽ dễ dàng phát hiện và giảm thiểu hơn."
+  },
+  "final_q100": {
+    "question": "Chức năng cốt lõi nào của Khung an ninh mạng NIST liên quan đến việc phát triển và triển khai các biện pháp bảo vệ nhằm đảm bảo cung cấp các dịch vụ cơ sở hạ tầng quan trọng?",
+    "options": [
+      "trả lời",
+      "phát hiện",
+      "nhận dạng",
+      "hồi phục",
+      "bảo vệ"
+    ],
+    "explanation": ""
+  },
+  "final_q101": {
+    "question": "Hai kỹ thuật nào được sử dụng trong một cuộc tấn công smurf? (Chọn hai.)",
+    "options": [
+      "chiếm quyền điều khiển phiên",
+      "cạn kiệt tài nguyên",
+      "botnet",
+      "khuếch đại",
+      "sự phản xạ"
+    ],
+    "explanation": "Một cuộc tấn công smurf sử dụng các kỹ thuật khuếch đại và phản xạ để áp đảo máy chủ mục tiêu. Tác nhân đe dọa chuyển tiếp các tin nhắn yêu cầu tiếng vang ICMP có chứa địa chỉ IP nguồn của nạn nhân tới một số lượng lớn máy chủ. Tất cả các máy chủ này đều trả lời địa chỉ IP giả mạo của nạn nhân với mục đích áp đảo nó."
+  },
+  "final_q102": {
+    "question": "Mục tiêu chính của nền tảng thông tin về mối đe dọa (TIP) là gì?",
+    "options": [
+      "để tổng hợp dữ liệu ở một nơi và trình bày nó ở định dạng dễ hiểu và sử dụng được",
+      "để cung cấp thông số kỹ thuật cho giao thức lớp ứng dụng cho phép giao tiếp CTI qua HTTPS",
+      "để cung cấp một lược đồ tiêu chuẩn hóa để xác định, nắm bắt, mô tả đặc tính và truyền đạt các sự kiện và thuộc tính của hoạt động mạng",
+      "để cung cấp nền tảng hoạt động bảo mật tích hợp và tăng cường các công cụ bảo mật đa dạng và thông tin về mối đe dọa"
+    ],
+    "explanation": "Nền tảng thông tin về mối đe dọa (TIP) tập trung vào việc thu thập dữ liệu về mối đe dọa từ nhiều nguồn và định dạng dữ liệu. TIP được thiết kế để tổng hợp dữ liệu ở một nơi và trình bày nó ở định dạng dễ hiểu và sử dụng được. Điều này đặc biệt quan trọng vì khối lượng dữ liệu thông tin về mối đe dọa có thể rất lớn."
+  },
+  "final_q103": {
+    "question": "Tham số không dây nào được điểm truy cập sử dụng để phát các khung có SSID?",
+    "options": [
+      "chế độ bảo mật",
+      "chế độ hoạt động",
+      "chế độ thụ động",
+      "cài đặt kênh"
+    ],
+    "explanation": "Hai chế độ quét hoặc thăm dò mà điểm truy cập có thể được đặt là thụ động hoặc chủ động. Ở chế độ thụ động, AP quảng cáo SSID, các tiêu chuẩn được hỗ trợ và cài đặt bảo mật trong các khung báo hiệu phát sóng. Ở chế độ hoạt động, máy khách không dây phải được cấu hình thủ công cho các thông số không dây giống như AP đã cấu hình."
+  },
+  "final_q104": {
+    "question": "Ghép trường trong bảng Sự kiện của Sguil với mô tả. Nối trường trong bảng Sự kiện của Sguil với mô tả",
+    "options": [],
+    "explanation": ""
+  },
+  "final_q105": {
+    "question": "Một nhân viên kết nối không dây với mạng công ty bằng điện thoại di động. Sau đó, nhân viên sẽ định cấu hình điện thoại di động hoạt động như một điểm truy cập không dây cho phép nhân viên mới kết nối với mạng công ty. Loại mối đe dọa bảo mật nào mô tả đúng nhất tình huống này?",
+    "options": [
+      "điểm truy cập lừa đảo",
+      "vết nứt",
+      "từ chối dịch vụ",
+      "giả mạo"
+    ],
+    "explanation": "Định cấu hình điện thoại di động hoạt động như một điểm truy cập không dây có nghĩa là điện thoại di động hiện là điểm truy cập giả mạo. Nhân viên đã vô tình vi phạm tính bảo mật của mạng công ty khi cho phép người dùng truy cập mạng mà không cần kết nối thông qua điểm truy cập của công ty. Bẻ khóa là quá trình lấy mật khẩu từ dữ liệu được lưu trữ hoặc truyền trên mạng. Các cuộc tấn công từ chối dịch vụ đề cập đến việc gửi một lượng lớn dữ liệu đến một thiết bị nối mạng, chẳng hạn như máy chủ, để ngăn chặn quyền truy cập hợp pháp vào máy chủ. Giả mạo đề cập đến quyền truy cập vào mạng hoặc dữ liệu bởi kẻ tấn công dường như là một thiết bị hoặc người dùng mạng hợp pháp."
+  },
+  "final_q106": {
+    "question": "Thông tin nào là bắt buộc cho truy vấn WHOIS?",
+    "options": [
+      "địa chỉ toàn cầu bên ngoài của khách hàng",
+      "Địa chỉ máy chủ tra cứu ICANN",
+      "địa chỉ liên kết cục bộ của chủ sở hữu tên miền",
+      "FQDN của tên miền"
+    ],
+    "explanation": ""
+  },
+  "final_q107": {
+    "question": "Hai câu nào mô tả đặc điểm của thuật toán đối xứng? (Chọn hai.)",
+    "options": [
+      "Chúng được gọi là khóa chia sẻ trước hoặc khóa bí mật.",
+      "Họ sử dụng một cặp khóa chung và khóa riêng.",
+      "Chúng thường được sử dụng với lưu lượng VPN.",
+      "Họ cung cấp tính bảo mật, tính toàn vẹn và tính sẵn sàng."
+    ],
+    "explanation": "Các thuật toán mã hóa đối xứng sử dụng cùng một khóa (còn gọi là bí mật chung) để mã hóa và giải mã dữ liệu. Ngược lại, thuật toán mã hóa bất đối xứng sử dụng một cặp khóa, một khóa để mã hóa và một khóa khác để giải mã."
+  },
+  "final_q108": {
+    "question": "Hai hạn chế khi sử dụng HIPS là gì? (Chọn hai.)",
+    "options": [
+      "Với HIPS, sự thành công hay thất bại của một cuộc tấn công không thể được xác định dễ dàng.",
+      "Với HIPS, quản trị viên mạng phải xác minh khả năng hỗ trợ cho tất cả các hệ điều hành khác nhau được sử dụng trong mạng.",
+      "HIPS gặp khó khăn trong việc xây dựng bức tranh mạng chính xác hoặc điều phối các sự kiện xảy ra trên toàn bộ mạng.",
+      "Nếu luồng lưu lượng truy cập mạng được mã hóa, HIPS không thể truy cập các dạng lưu lượng không được mã hóa.",
+      "Cài đặt HIPS dễ bị tấn công phân mảnh hoặc tấn công TTL biến đổi"
+    ],
+    "explanation": "Hai nhược điểm của việc triển khai HIPS là (1) nó không thể tạo ra một cái nhìn hoàn chỉnh về mạng hoặc có kiến ​​thức về các sự kiện có thể xảy ra bên ngoài một máy chủ riêng lẻ và (2) mọi hệ điều hành máy chủ trong tổ chức đều phải được hỗ trợ. Tuy nhiên, một ưu điểm của việc sử dụng HIPS là nó có thể giám sát và bảo vệ hệ điều hành cũng như các tiến trình hệ thống quan trọng trên mỗi máy chủ mạng."
+  },
+  "final_q109": {
+    "question": "Ba chức năng được cung cấp bởi dịch vụ nhật ký hệ thống là gì? (Chọn ba.)",
+    "options": [
+      "để chọn loại thông tin ghi nhật ký được ghi lại",
+      "để thăm dò định kỳ các đại lý để lấy dữ liệu",
+      "để cung cấp số liệu thống kê về các gói đang truyền qua thiết bị Cisco",
+      "để cung cấp phân tích lưu lượng truy cập",
+      "để thu thập thông tin ghi nhật ký để theo dõi và khắc phục sự cố",
+      "để chỉ định đích đến của các tin nhắn đã chụp"
+    ],
+    "explanation": "Có ba chức năng chính được cung cấp bởi dịch vụ nhật ký hệ thống: thu thập thông tin ghi nhật ký lựa chọn loại thông tin sẽ được ghi lại lựa chọn đích của thông tin được ghi nhật ký"
+  },
+  "final_q110": {
+    "question": "Cân nhắc nào là quan trọng khi triển khai nhật ký hệ thống trong mạng?",
+    "options": [
+      "Kích hoạt mức nhật ký hệ thống cao nhất hiện có để đảm bảo ghi nhật ký tất cả các thông báo sự kiện có thể xảy ra.",
+      "Đồng bộ hóa đồng hồ trên tất cả các thiết bị mạng bằng giao thức như Network Time Protocol.",
+      "Ghi tất cả tin nhắn vào bộ đệm hệ thống để có thể hiển thị khi truy cập bộ định tuyến.",
+      "Sử dụng SSH để truy cập thông tin nhật ký hệ thống"
+    ],
+    "explanation": ""
+  },
+  "final_q111": {
+    "question": "Hai cách mà các tác nhân đe dọa sử dụng NTP là gì? (Chọn hai.)",
+    "options": [
+      "Họ đặt tệp đính kèm bên trong thư email.",
+      "Chúng tấn công cơ sở hạ tầng NTP nhằm làm hỏng thông tin được sử dụng để ghi lại cuộc tấn công.",
+      "Họ đặt iFrames trên trang web công ty được sử dụng thường xuyên.",
+      "Chúng mã hóa dữ liệu bị đánh cắp dưới dạng phần tên miền phụ nơi máy chủ tên nằm dưới sự kiểm soát của kẻ tấn công.",
+      "Các tác nhân đe dọa sử dụng hệ thống NTP để chỉ đạo các cuộc tấn công DDoS."
+    ],
+    "explanation": "Các tác nhân đe dọa có thể cố gắng tấn công cơ sở hạ tầng NTP nhằm làm hỏng thông tin thời gian được sử dụng để tương quan với các sự kiện mạng được ghi lại. Điều này có thể dùng để làm xáo trộn dấu vết của các hoạt động khai thác đang diễn ra. Ngoài ra, các tác nhân đe dọa đã được biết là sử dụng hệ thống NTP để chỉ đạo các cuộc tấn công DDoS thông qua các lỗ hổng trong phần mềm máy khách hoặc máy chủ. Mặc dù các cuộc tấn công này không nhất thiết dẫn đến dữ liệu giám sát bảo mật bị hỏng nhưng chúng có thể làm gián đoạn tính khả dụng của mạng."
+  },
+  "final_q112": {
+    "question": "Hai tính năng nào được bao gồm trong cả giao thức TACACS+ và RADIUS? (Chọn hai.)",
+    "options": [
+      "mã hóa mật khẩu",
+      "quy trình xác thực và ủy quyền riêng biệt",
+      "Hỗ trợ SIP",
+      "sử dụng các giao thức lớp vận chuyển",
+      "Hỗ trợ 802.1X"
+    ],
+    "explanation": "Cả TACACS+ và RADIUS đều hỗ trợ mã hóa mật khẩu (TACACS+ mã hóa tất cả giao tiếp) và sử dụng giao thức Lớp 4 (TACACS+ sử dụng TCP và RADIUS sử dụng UDP). TACACS+ hỗ trợ tách các quy trình xác thực và ủy quyền, trong khi RADIUS kết hợp xác thực và ủy quyền thành một quy trình. RADIUS hỗ trợ công nghệ truy cập từ xa như 802.1x và SIP; TACACS+ thì không."
+  },
+  "final_q113": {
+    "question": "Nối chức năng SIEM với mô tả.",
+    "options": [],
+    "explanation": ""
+  },
+  "final_q114": {
+    "question": "Hai loại tấn công được sử dụng trên trình phân giải mở DNS là gì? (Chọn hai.)",
+    "options": [
+      "khuếch đại và phản xạ",
+      "dòng chảy nhanh",
+      "Ngộ độc ARP",
+      "sử dụng tài nguyên",
+      "đệm"
+    ],
+    "explanation": "Ba loại tấn công được sử dụng trên trình phân giải mở DNS như sau: Ngộ độc bộ đệm DNS – kẻ tấn công gửi thông tin giả mạo để chuyển hướng người dùng từ các trang hợp pháp đến các trang độc hại Tấn công khuếch đại và phản chiếu DNS – kẻ tấn công gửi số lượng tấn công tăng lên để che giấu nguồn thực sự của cuộc tấn công Tấn công sử dụng tài nguyên DNS – tấn công từ chối dịch vụ (DoS) tiêu tốn tài nguyên máy chủ"
+  },
+  "final_q115": {
+    "question": "Ba mục tiêu của cuộc tấn công quét cổng là gì? (Chọn ba.)",
+    "options": [
+      "để xác định cấu hình ngoại vi",
+      "để xác định các lỗ hổng tiềm ẩn",
+      "để vô hiệu hóa các cổng và dịch vụ đã sử dụng",
+      "để xác định hệ điều hành",
+      "để xác định các dịch vụ đang hoạt động",
+      "để khám phá mật khẩu hệ thống"
+    ],
+    "explanation": ""
+  },
+  "final_q116": {
+    "question": "Giao thức hoặc dịch vụ nào sử dụng UDP để liên lạc giữa máy khách với máy chủ và TCP để liên lạc giữa máy chủ với máy chủ?",
+    "options": [
+      "HTTP",
+      "FTP",
+      "DNS",
+      "SMTP"
+    ],
+    "explanation": "Một số ứng dụng có thể sử dụng cả TCP và UDP. DNS sử dụng UDP khi máy khách gửi yêu cầu đến máy chủ DNS và TCP khi hai máy chủ DNS giao tiếp trực tiếp."
+  },
+  "final_q117": {
+    "question": "Điểm khác biệt giữa mô hình mạng máy khách-máy chủ và mạng ngang hàng là gì?",
+    "options": [
+      "Chỉ trong mô hình máy khách-máy chủ mới có thể thực hiện chuyển tập tin.",
+      "Việc truyền dữ liệu sử dụng thiết bị đóng vai trò máy khách yêu cầu phải có máy chủ chuyên dụng.",
+      "Mạng ngang hàng truyền dữ liệu nhanh hơn truyền dữ liệu bằng mạng máy khách-máy chủ.",
+      "Mọi thiết bị trong mạng ngang hàng đều có thể hoạt động như máy khách hoặc máy chủ."
+    ],
+    "explanation": "Tốc độ truyền dữ liệu phụ thuộc vào một số yếu tố bao gồm lưu lượng truy cập, chất lượng dịch vụ được áp dụng và phương tiện mạng. Tốc độ truyền không phụ thuộc vào loại mô hình mạng. Truyền tệp có thể xảy ra bằng mô hình máy khách-máy chủ hoặc mô hình ngang hàng. Việc truyền dữ liệu giữa một thiết bị đóng vai trò máy khách và một thiết bị đóng vai trò máy chủ có thể xảy ra trong cả mạng ngang hàng và mạng máy chủ-máy khách."
+  },
+  "final_q118": {
+    "question": "Câu nào đúng về giao thức mạng?",
+    "options": [
+      "Chúng xác định cách trao đổi thông điệp giữa nguồn và đích.",
+      "Tất cả đều hoạt động trong lớp truy cập mạng của TCP/IP.",
+      "Chúng chỉ được yêu cầu để trao đổi tin nhắn giữa các thiết bị trên mạng từ xa.",
+      "Các giao thức mạng xác định loại phần cứng được sử dụng và cách nó được gắn vào giá đỡ."
+    ],
+    "explanation": "Các giao thức mạng được triển khai bằng phần cứng hoặc phần mềm hoặc cả hai. Chúng tương tác với nhau trong các lớp khác nhau của ngăn xếp giao thức. Các giao thức không liên quan gì đến việc cài đặt thiết bị mạng. Các giao thức mạng được yêu cầu để trao đổi thông tin giữa các thiết bị nguồn và đích trong cả mạng cục bộ và mạng từ xa."
+  },
+  "final_q119": {
+    "question": "Cách tiếp cận nào có thể giúp chặn các phương thức phân phối phần mềm độc hại tiềm ẩn, như được mô tả trong mô hình Cyber ​​Kill Chain, trên máy chủ web có kết nối Internet?",
+    "options": [
+      "Xây dựng khả năng phát hiện hành vi của phần mềm độc hại đã biết.",
+      "Thu thập các tệp phần mềm độc hại và siêu dữ liệu để phân tích trong tương lai.",
+      "Kiểm tra máy chủ web để xác định chính xác nguồn gốc của hành vi khai thác.",
+      "Phân tích đường dẫn lưu trữ cơ sở hạ tầng được sử dụng cho các tệp."
+    ],
+    "explanation": "Kẻ đe dọa có thể gửi vũ khí qua giao diện web đến máy chủ mục tiêu, dưới dạng tải tệp lên hoặc yêu cầu web được mã hóa. Bằng cách phân tích đường dẫn lưu trữ cơ sở hạ tầng được sử dụng cho các tệp, các biện pháp bảo mật có thể được triển khai để giám sát và phát hiện việc phân phối phần mềm độc hại thông qua các phương pháp này."
+  },
+  "final_q120": {
+    "question": "Yếu tố siêu tính năng nào trong Mô hình Kim cương phân loại loại sự kiện xâm nhập chung?",
+    "options": [
+      "giai đoạn",
+      "kết quả",
+      "phương pháp luận",
+      "phương hướng"
+    ],
+    "explanation": "Phương pháp luận - Điều này được sử dụng để phân loại loại sự kiện chung, chẳng hạn như quét cổng, lừa đảo, tấn công phân phối nội dung, lũ đồng bộ, v.v."
+  },
+  "final_q121": {
+    "question": "Lệnh Linux nào được sử dụng để quản lý các tiến trình?",
+    "options": [
+      "chrootkit",
+      "ls",
+      "grep",
+      "giết"
+    ],
+    "explanation": "Lệnh kill được sử dụng để dừng, khởi động lại hoặc tạm dừng một quá trình. Lệnh chrootkit được sử dụng để kiểm tra máy tính để tìm rootkit, một bộ công cụ phần mềm có thể tăng mức đặc quyền của người dùng hoặc cấp quyền truy cập vào các phần của phần mềm thường không được phép. Lệnh grep được sử dụng để tìm kiếm tệp hoặc văn bản trong tệp. Lệnh ls dùng để liệt kê các file, thư mục và thông tin file."
+  },
+  "final_q122": {
+    "question": "Công cụ nào có thể được sử dụng trong hệ thống Cisco AVC để phân tích và trình bày dữ liệu phân tích ứng dụng vào báo cáo bảng điều khiển?",
+    "options": [
+      "NetFlow",
+      "NBAR2",
+      "Xuất sắc",
+      "IPFIX"
+    ],
+    "explanation": "Hệ thống quản lý và báo cáo, chẳng hạn như Cisco Prime, có thể được sử dụng để phân tích và trình bày dữ liệu phân tích ứng dụng thành báo cáo trên trang tổng quan để nhân viên giám sát mạng sử dụng."
+  },
+  "final_q123": {
+    "question": "Nhật ký Windows Event Viewer nào bao gồm các sự kiện liên quan đến hoạt động của trình điều khiển, quy trình và phần cứng?",
+    "options": [
+      "nhật ký hệ thống",
+      "nhật ký ứng dụng",
+      "nhật ký bảo mật",
+      "nhật ký thiết lập"
+    ],
+    "explanation": "Theo mặc định, Windows giữ bốn loại nhật ký máy chủ: Nhật ký ứng dụng – sự kiện được ghi bởi các ứng dụng khác nhau Nhật ký hệ thống – sự kiện về hoạt động của trình điều khiển, quy trình và phần cứng Nhật ký thiết lập – thông tin về cài đặt phần mềm, bao gồm các bản cập nhật Windows Nhật ký bảo mật – các sự kiện liên quan đến bảo mật, chẳng hạn như các lần đăng nhập và các hoạt động liên quan đến quản lý và truy cập tệp hoặc đối tượng"
+  },
+  "final_q124": {
+    "question": "Phương pháp nào được sử dụng để làm cho dữ liệu không thể đọc được đối với người dùng trái phép?",
+    "options": [
+      "Mã hóa dữ liệu.",
+      "Phân mảnh dữ liệu.",
+      "Thêm tổng kiểm tra vào cuối dữ liệu.",
+      "Gán cho nó một tên người dùng và mật khẩu."
+    ],
+    "explanation": "Dữ liệu mạng có thể được mã hóa bằng nhiều ứng dụng mã hóa khác nhau để người dùng trái phép không thể đọc được dữ liệu. Người dùng được ủy quyền có ứng dụng mật mã để dữ liệu có thể không được mã hóa."
+  },
+  "final_q125": {
+    "question": "Ghép các tab của Trình quản lý tác vụ Windows 10 với chức năng của chúng. (Không phải tất cả các tùy chọn đều được sử dụng.)",
+    "options": [],
+    "explanation": "Chi tiết Cho phép một quy trình được thiết lập mối quan hệ của nó. Hiệu suất Hiển thị thông tin sử dụng tài nguyên cho CPU, bộ nhớ, mạng, đĩa và các thông tin khác. Khởi động Cho phép tắt các chương trình đang chạy khi khởi động hệ thống. Dịch vụ Cho phép bắt đầu, dừng hoặc khởi động lại một dịch vụ cụ thể."
+  },
+  "final_q126": {
+    "question": "Đối với hệ thống mạng, hệ thống quản lý nào giải quyết việc kiểm kê và kiểm soát cấu hình phần cứng và phần mềm?",
+    "options": [
+      "quản lý tài sản",
+      "quản lý lỗ hổng",
+      "quản lý rủi ro",
+      "quản lý cấu hình"
+    ],
+    "explanation": "Quản lý cấu hình giải quyết việc kiểm kê và kiểm soát cấu hình phần cứng và phần mềm của hệ thống mạng."
+  },
+  "final_q127": {
+    "question": "Hãy ghép công nghệ hoặc giao thức mạng phổ biến với mô tả. (Không phải tất cả các tùy chọn đều được sử dụng.)",
+    "options": [],
+    "explanation": ""
+  },
+  "final_q128": {
+    "question": "Ba chức năng cốt lõi được cung cấp bởi Security Onion là gì? (Chọn ba.)",
+    "options": [
+      "lập kế hoạch kinh doanh liên tục",
+      "chụp gói tin đầy đủ",
+      "phân tích cảnh báo",
+      "phát hiện xâm nhập",
+      "quản lý thiết bị an ninh",
+      "ngăn chặn mối đe dọa"
+    ],
+    "explanation": "Security Onion là bộ công cụ Giám sát An ninh Mạng (NSM) mã nguồn mở để đánh giá các cảnh báo an ninh mạng. Đối với các nhà phân tích an ninh mạng, Security Onion cung cấp khả năng thu thập gói tin đầy đủ, hệ thống phát hiện xâm nhập dựa trên mạng và dựa trên máy chủ cũng như các công cụ phân tích cảnh báo."
+  },
+  "final_q129": {
+    "question": "Trong thuật ngữ NAT, loại địa chỉ nào đề cập đến địa chỉ IPv4 có thể định tuyến toàn cầu của máy chủ đích trên Internet?",
+    "options": [
+      "bên ngoài toàn cầu",
+      "bên trong toàn cầu",
+      "bên ngoài địa phương",
+      "bên trong địa phương"
+    ],
+    "explanation": "Từ góc nhìn của thiết bị NAT, các địa chỉ toàn cầu bên trong được người dùng bên ngoài sử dụng để tiếp cận các máy chủ nội bộ. Địa chỉ nội bộ bên trong là địa chỉ được gán cho các máy chủ nội bộ. Địa chỉ toàn cầu bên ngoài là địa chỉ của các điểm đến trên mạng bên ngoài. Địa chỉ cục bộ bên ngoài là địa chỉ riêng thực tế của máy chủ đích phía sau các thiết bị NAT khác."
+  },
+  "final_q130": {
+    "question": "Ethernet kiểm tra hai trường hoặc tính năng nào để xác định xem khung nhận được có được chuyển đến lớp liên kết dữ liệu hay bị NIC loại bỏ không? (Chọn hai.)",
+    "options": [
+      "CEF",
+      "địa chỉ MAC nguồn",
+      "kích thước khung tối thiểu",
+      "tự động MDIX",
+      "Trình tự kiểm tra khung"
+    ],
+    "explanation": "Khung Ethernet không được xử lý và bị loại bỏ nếu nó nhỏ hơn mức tối thiểu (64 byte) hoặc nếu giá trị trình tự kiểm tra khung được tính toán (FCS) không khớp với giá trị FCS nhận được. Auto-MDIX (chéo giao diện phụ thuộc trung bình tự động) là công nghệ Lớp 1 phát hiện các loại cáp nối thẳng hoặc chéo. Địa chỉ MAC nguồn không được sử dụng để xác định cách nhận khung. CEF (Cisco Express Forwarding) là một công nghệ được sử dụng để đẩy nhanh quá trình chuyển đổi Lớp 3."
+  },
+  "final_q131": {
+    "question": "Loại dữ liệu nào sẽ được coi là một ví dụ về dữ liệu không ổn định?",
+    "options": [
+      "bộ nhớ đệm của trình duyệt web",
+      "thanh ghi bộ nhớ",
+      "tập tin nhật ký",
+      "tập tin tạm thời"
+    ],
+    "explanation": "Dữ liệu dễ bay hơi là dữ liệu được lưu trữ trong bộ nhớ như thanh ghi, bộ đệm và RAM hoặc đó là dữ liệu tồn tại trong quá trình truyền. Bộ nhớ dễ bay hơi bị mất khi máy tính mất điện."
+  },
+  "final_q132": {
+    "question": "Mục đích chính của việc khai thác của kẻ đe dọa thông qua vũ khí được giao cho mục tiêu trong giai đoạn khai thác Chuỗi tiêu diệt mạng là gì?",
+    "options": [
+      "Khởi động một cuộc tấn công DoS.",
+      "Gửi tin nhắn trở lại CnC do tác nhân đe dọa kiểm soát.",
+      "Phá vỡ lỗ hổng và giành quyền kiểm soát mục tiêu.",
+      "Thiết lập một cửa sau vào hệ thống."
+    ],
+    "explanation": "Sau khi vũ khí được giao, kẻ đe dọa sẽ sử dụng nó để phá vỡ lỗ hổng và giành quyền kiểm soát mục tiêu. Tác nhân đe dọa sẽ sử dụng một cách khai thác để đạt được hiệu quả mong muốn, thực hiện một cách lặng lẽ và tránh bị phát hiện. Thiết lập cửa sau trong hệ thống mục tiêu là giai đoạn cài đặt."
+  },
+  "final_q133": {
+    "question": "Tham khảo triển lãm. Quản trị viên đang cố gắng khắc phục sự cố kết nối giữa PC1 và PC2 và sử dụng lệnh tracert từ PC1 để thực hiện việc đó. Dựa trên kết quả được hiển thị, quản trị viên nên bắt đầu khắc phục sự cố ở đâu? Kỳ thi cuối kỳ CyberOps Associate 1.0",
+    "options": [
+      "R1",
+      "PC2",
+      "SW2",
+      "R2",
+      "SW1"
+    ],
+    "explanation": "Tracert được sử dụng để theo dõi đường đi của gói tin. Phản hồi thành công duy nhất là từ thiết bị đầu tiên dọc theo đường dẫn trên cùng mạng LAN với máy chủ gửi. Thiết bị đầu tiên là cổng mặc định trên bộ định tuyến R1. Do đó, quản trị viên nên bắt đầu khắc phục sự cố ở R1."
+  },
+  "final_q134": {
+    "question": "Cisco Talos duy trì bộ quy tắc phát hiện sự cố bảo mật cho ba công cụ bảo mật nào? (Chọn ba.)",
+    "options": [
+      "Khịt mũi",
+      "NetStumbler",
+      "Socat",
+      "SpamCop",
+      "NgaoAV"
+    ],
+    "explanation": "Talos duy trì các bộ quy tắc phát hiện sự cố bảo mật cho các công cụ bảo mật mạng Snort.org, ClamAV và SpamCop."
+  },
+  "final_q135": {
+    "question": "Tường lửa dựa trên máy chủ nào sử dụng phương pháp tiếp cận ba cấu hình để định cấu hình chức năng tường lửa?",
+    "options": [
+      "Tường lửa Windows",
+      "iptables",
+      "Trình bao bọc TCP",
+      "nftables"
+    ],
+    "explanation": "Tường lửa Windows sử dụng cách tiếp cận dựa trên hồ sơ để định cấu hình chức năng tường lửa. Nó sử dụng ba cấu hình, Công khai, Riêng tư và Miền để xác định các chức năng tường lửa."
+  },
+  "final_q136": {
+    "question": "Khi người dùng truy cập trang web cửa hàng trực tuyến sử dụng HTTPS, trình duyệt của người dùng sẽ truy vấn CA để tìm CRL. Mục đích của truy vấn này là gì?",
+    "options": [
+      "để xác minh tính hợp lệ của chứng chỉ số",
+      "để yêu cầu chứng chỉ số tự ký của CA",
+      "để kiểm tra độ dài của khóa được sử dụng cho chứng chỉ số",
+      "để thương lượng cách mã hóa tốt nhất để sử dụng"
+    ],
+    "explanation": "Chứng chỉ số phải bị thu hồi nếu nó không hợp lệ. CA duy trì danh sách thu hồi chứng chỉ (CRL), danh sách các số sê-ri chứng chỉ bị thu hồi đã bị vô hiệu. Trình duyệt người dùng sẽ truy vấn CRL để xác minh tính hợp lệ của chứng chỉ."
+  },
+  "final_q137": {
+    "question": "Bước nào trong Vòng đời quản lý lỗ hổng bảo mật xác định hồ sơ rủi ro cơ bản để loại bỏ rủi ro dựa trên mức độ nghiêm trọng của tài sản, mối đe dọa về lỗ hổng bảo mật và phân loại tài sản?",
+    "options": [
+      "phát hiện",
+      "đánh giá",
+      "ưu tiên tài sản",
+      "xác minh"
+    ],
+    "explanation": "Các bước trong Vòng đời quản lý lỗ hổng bảo mật bao gồm: Khám phá – kiểm kê tất cả tài sản trên mạng và xác định chi tiết máy chủ, bao gồm hệ điều hành và dịch vụ mở, để xác định lỗ hổng Ưu tiên tài sản – phân loại tài sản thành các nhóm hoặc đơn vị kinh doanh và chỉ định giá trị kinh doanh cho các nhóm tài sản dựa trên mức độ quan trọng của chúng đối với hoạt động kinh doanh Đánh giá – xác định hồ sơ rủi ro cơ bản để loại bỏ rủi ro dựa trên mức độ nghiêm trọng của tài sản, các mối đe dọa về lỗ hổng bảo mật và phân loại tài sản Báo cáo – đo lường mức độ rủi ro kinh doanh liên quan đến tài sản theo chính sách bảo mật. Ghi lại kế hoạch bảo mật, giám sát hoạt động đáng ngờ và mô tả các lỗ hổng đã biết. Khắc phục – ưu tiên theo rủi ro kinh doanh và khắc phục các lỗ hổng theo thứ tự rủi ro Xác minh – xác minh rằng các mối đe dọa đã được loại bỏ thông qua kiểm tra tiếp theo"
+  },
+  "final_q138": {
+    "question": "Hệ thống quản lý nào triển khai các hệ thống theo dõi vị trí và cấu hình của các thiết bị và phần mềm được nối mạng trong toàn doanh nghiệp?",
+    "options": [
+      "quản lý tài sản",
+      "quản lý lỗ hổng",
+      "quản lý rủi ro",
+      "quản lý cấu hình"
+    ],
+    "explanation": "Quản lý tài sản liên quan đến việc triển khai các hệ thống theo dõi vị trí và cấu hình của các thiết bị và phần mềm được nối mạng trên toàn doanh nghiệp."
+  },
+  "final_q139": {
+    "question": "Quản trị viên mạng đang xem xét các cảnh báo của máy chủ vì có báo cáo về tình trạng mạng chậm. Quản trị viên xác nhận rằng cảnh báo là một sự cố bảo mật thực sự. Phân loại cảnh báo bảo mật của loại tình huống này là gì?",
+    "options": [
+      "âm tính giả",
+      "tích cực thực sự",
+      "tiêu cực thực sự",
+      "dương tính giả"
+    ],
+    "explanation": "Tích cực thực sự: Cảnh báo đã được xác minh là một sự cố bảo mật thực sự. Dương tính giả: Cảnh báo không cho biết sự cố bảo mật thực tế. Hoạt động lành tính dẫn đến kết quả dương tính giả đôi khi được gọi là tác nhân lành tính. Đúng Tiêu cực: Không có sự cố bảo mật nào xảy ra. Hoạt động này là lành tính. Âm tính giả: Một sự cố không được phát hiện đã xảy ra."
+  },
+  "final_q140": {
+    "question": "Giao thức lớp ứng dụng nào được sử dụng để cung cấp dịch vụ in và chia sẻ tệp cho các ứng dụng của Microsoft?",
+    "options": [
+      "SMTP",
+      "HTTP",
+      "SMB",
+      "DHCP"
+    ],
+    "explanation": "SMB được sử dụng trong mạng Microsoft cho các dịch vụ in và chia sẻ tệp. Hệ điều hành Linux cung cấp phương pháp chia sẻ tài nguyên với mạng Microsoft bằng cách sử dụng phiên bản SMB có tên SAMBA."
+  },
+  "final_q141": {
+    "question": "Thiết bị nào trong phương pháp tiếp cận phòng thủ chuyên sâu theo lớp từ chối các kết nối được khởi tạo từ mạng không đáng tin cậy đến mạng nội bộ nhưng cho phép người dùng nội bộ trong tổ chức kết nối với mạng không đáng tin cậy?",
+    "options": [
+      "chuyển đổi lớp truy cập",
+      "tường lửa",
+      "bộ định tuyến nội bộ",
+      "IPS"
+    ],
+    "explanation": "Tường lửa thường là tuyến phòng thủ thứ hai trong cách tiếp cận phòng thủ chuyên sâu theo từng lớp đối với an ninh mạng. Tường lửa thường kết nối với bộ định tuyến biên kết nối với nhà cung cấp dịch vụ. Tường lửa theo dõi các kết nối được khởi tạo trong công ty đi ra ngoài công ty và từ chối việc khởi tạo các kết nối từ các mạng không đáng tin cậy bên ngoài đến các mạng đáng tin cậy nội bộ."
+  },
+  "final_q142": {
+    "question": "Hai vấn đề mạng tiềm ẩn có thể xảy ra do hoạt động ARP là gì? (Chọn hai.)",
+    "options": [
+      "Số lượng lớn các chương trình phát sóng yêu cầu ARP có thể khiến bảng địa chỉ MAC của máy chủ bị tràn và ngăn máy chủ liên lạc trên mạng.",
+      "Trên các mạng lớn có băng thông thấp, nhiều chương trình phát ARP có thể gây ra sự chậm trễ khi truyền dữ liệu.",
+      "Những kẻ tấn công mạng có thể thao túng ánh xạ địa chỉ MAC và địa chỉ IP trong các tin nhắn ARP với mục đích chặn lưu lượng mạng.",
+      "Nhiều phản hồi ARP dẫn đến bảng địa chỉ MAC của switch chứa các mục khớp với địa chỉ MAC của máy chủ được kết nối với cổng switch có liên quan.",
+      "Việc định cấu hình thủ công các liên kết ARP tĩnh có thể tạo điều kiện cho việc đầu độc ARP hoặc giả mạo địa chỉ MAC."
+    ],
+    "explanation": "Số lượng lớn tin nhắn quảng bá ARP có thể gây ra sự chậm trễ trong truyền dữ liệu tạm thời. Những kẻ tấn công mạng có thể thao túng ánh xạ địa chỉ MAC và địa chỉ IP trong các tin nhắn ARP với mục đích chặn lưu lượng mạng. Các yêu cầu và phản hồi ARP khiến các mục được đưa vào bảng ARP chứ không phải bảng địa chỉ MAC. Việc tràn bảng ARP rất khó xảy ra. Định cấu hình thủ công các liên kết ARP tĩnh là một cách để ngăn chặn chứ không tạo điều kiện thuận lợi cho việc ngộ độc ARP và giả mạo địa chỉ MAC. Cần có nhiều phản hồi ARP dẫn đến bảng địa chỉ MAC của switch chứa các mục khớp với địa chỉ MAC của các nút được kết nối và được liên kết với cổng switch có liên quan là cần thiết cho các hoạt động chuyển tiếp khung switch thông thường. Đây không phải là sự cố mạng do ARP gây ra."
+  },
+  "final_q143": {
+    "question": "Ba quy trình nào trong Sguil được cung cấp cho các nhà phân tích bảo mật để giải quyết các cảnh báo? (Chọn ba.)",
+    "options": [
+      "Nâng cao cảnh báo không chắc chắn.",
+      "Tương quan các cảnh báo tương tự thành một dòng duy nhất.",
+      "Phân loại những mặt tích cực thực sự.",
+      "Chuyển sang các nguồn thông tin và công cụ khác.",
+      "Xây dựng truy vấn bằng Trình tạo truy vấn.",
+      "Hết hạn dương tính giả."
+    ],
+    "explanation": "Sguil là một công cụ để giải quyết các cảnh báo. Ba nhiệm vụ có thể được hoàn thành trong Sguil để quản lý cảnh báo: Cảnh báo được phát hiện là dương tính giả có thể đã hết hạn. Cảnh báo có thể được chuyển lên cấp cao hơn nếu nhà phân tích an ninh mạng không chắc chắn về cách xử lý. Các sự kiện đã được xác định là tích cực thực sự có thể được phân loại."
+  },
+  "final_q144": {
+    "question": "Ghép số liệu SOC với mô tả. (Không phải tất cả các tùy chọn đều áp dụng.)",
+    "options": [],
+    "explanation": ""
+  },
+  "final_q145": {
+    "question": "Hai dịch vụ nào được cung cấp bởi công cụ NetFlow? (Chọn hai.)",
+    "options": [
+      "Cấu hình QoS",
+      "thanh toán mạng dựa trên việc sử dụng",
+      "phân tích nhật ký",
+      "giám sát danh sách truy cập",
+      "giám sát mạng"
+    ],
+    "explanation": "NetFlow cung cấp một cách hiệu quả một bộ dịch vụ quan trọng cho các ứng dụng IP bao gồm tính toán lưu lượng mạng, thanh toán mạng dựa trên mức sử dụng, quy hoạch mạng, bảo mật, khả năng giám sát từ chối dịch vụ và giám sát mạng."
+  },
+  "final_q146": {
+    "question": "Quản trị viên phát hiện ra rằng người dùng đang truy cập một trang web mới thành lập có thể gây bất lợi cho bảo mật của công ty. Quản trị viên nên thực hiện hành động nào đầu tiên về chính sách bảo mật?",
+    "options": [
+      "Yêu cầu người dùng dừng ngay lập tức và thông báo cho người dùng rằng điều này là cơ sở để sa thải.",
+      "Tạo quy tắc tường lửa chặn trang web tương ứng.",
+      "Sửa đổi AUP ngay lập tức và yêu cầu tất cả người dùng ký vào AUP đã cập nhật.",
+      "Đình chỉ ngay lập tức các đặc quyền mạng của người dùng."
+    ],
+    "explanation": "Một trong những thành phần chính sách bảo mật phổ biến nhất là AUP. Đây cũng có thể được coi là một chính sách sử dụng phù hợp. Thành phần này xác định những gì người dùng được phép và không được phép làm trên các thành phần hệ thống khác nhau. Điều này bao gồm loại lưu lượng được phép trên mạng. AUP phải càng rõ ràng càng tốt để tránh hiểu lầm."
+  },
+  "final_q147": {
+    "question": "Hai nhiệm vụ nào có thể được thực hiện bởi máy chủ DNS cục bộ? (Chọn hai.)",
+    "options": [
+      "cho phép truyền dữ liệu giữa hai thiết bị mạng",
+      "lấy lại tin nhắn email",
+      "cung cấp địa chỉ IP cho máy chủ cục bộ",
+      "chuyển tiếp yêu cầu phân giải tên giữa các máy chủ",
+      "ánh xạ địa chỉ tên thành IP cho máy chủ nội bộ"
+    ],
+    "explanation": "Hai chức năng quan trọng của DNS là (1) cung cấp địa chỉ IP cho các tên miền như http://www.cisco.com và (2) chuyển tiếp các yêu cầu không thể giải quyết được đến các máy chủ khác để cung cấp tên miền sang dịch địa chỉ IP. DHCP cung cấp thông tin địa chỉ IP cho các thiết bị cục bộ. Giao thức truyền tệp như FTP, SFTP hoặc TFTP cung cấp dịch vụ chia sẻ tệp. IMAP hoặc POP có thể được sử dụng để truy xuất thư email từ máy chủ."
+  },
+  "final_q148": {
+    "question": "Loại sự kiện nào được ghi vào thiết bị IPS thế hệ tiếp theo (NGIPS) của Cisco bằng Dịch vụ FirePOWER khi phát hiện thấy các thay đổi trong mạng được giám sát?",
+    "options": [
+      "sự xâm nhập",
+      "sự liên quan",
+      "máy chủ hoặc điểm cuối",
+      "khám phá mạng"
+    ],
+    "explanation": "Các sự kiện khám phá mạng trong Cisco NGIPS thể hiện những thay đổi đã được phát hiện trong mạng được giám sát."
+  },
+  "final_q149": {
+    "question": "Hai hành động nào nên được thực hiện trong giai đoạn chuẩn bị của vòng đời ứng phó sự cố do NIST xác định? (Chọn hai.)",
+    "options": [
+      "Có được và triển khai các công cụ cần thiết để điều tra sự cố.",
+      "Phát hiện tất cả các sự cố đã xảy ra.",
+      "Gặp gỡ tất cả các bên liên quan để thảo luận về vụ việc đã xảy ra.",
+      "Tạo và đào tạo CSIRT.",
+      "Phân tích đầy đủ sự việc."
+    ],
+    "explanation": "Theo hướng dẫn được xác định trong Vòng đời ứng phó sự cố của NIST, cần thực hiện một số hành động trong giai đoạn chuẩn bị bao gồm (1) tạo và đào tạo CSIRT và (2) thu thập và triển khai các công cụ cần thiết cho nhóm điều tra sự cố."
+  },
+  "final_q150": {
+    "question": "Mặt nạ mạng con nào được biểu thị bằng ký hiệu gạch chéo /20?",
+    "options": [
+      "255.255.255.0",
+      "255.255.255.248",
+      "255.255.255.192",
+      "255.255.240.0",
+      "255.255.224.0"
+    ],
+    "explanation": "Ký hiệu gạch chéo /20 đại diện cho mặt nạ mạng con có 20 số 1. Điều này sẽ chuyển thành: 11111111.11111111.11110000.0000, sau đó sẽ chuyển đổi thành 255.255.240.0."
+  },
+  "final_q151": {
+    "question": "Lợi ích của việc chuyển đổi dữ liệu tệp nhật ký thành một lược đồ chung là gì?",
+    "options": [
+      "tạo mô hình dữ liệu dựa trên các trường dữ liệu từ một nguồn",
+      "tạo một tập hợp các trích xuất trường dựa trên biểu thức chính quy",
+      "cho phép thực hiện chuẩn hóa một phần và kiểm tra",
+      "cho phép dễ dàng xử lý và phân tích dữ liệu"
+    ],
+    "explanation": "Khi dữ liệu được chuyển đổi sang định dạng chung, nó có thể được cấu trúc một cách hiệu quả để thực hiện các truy vấn nhanh và phân tích sự kiện."
+  },
+  "final_q152": {
+    "question": "Chứng chỉ nào do Cisco tài trợ được thiết kế nhằm cung cấp bước đầu tiên trong việc tiếp thu kiến ​​thức và kỹ năng để làm việc với nhóm SOC?",
+    "options": [
+      "Cộng tác viên CCNA CyberOps",
+      "Đám mây CCNA",
+      "Bảo mật CCNA",
+      "Trung tâm dữ liệu CCNA"
+    ],
+    "explanation": "Chứng chỉ Cisco Certified CyberOps Associate cung cấp bước đầu tiên có giá trị trong việc tiếp thu kiến ​​thức và kỹ năng cần thiết để làm việc với nhóm SOC. Nó có thể là một phần có giá trị trong sự nghiệp trong lĩnh vực hoạt động an ninh mạng thú vị và đang phát triển."
+  },
+  "final_q153": {
+    "question": "Ba địa chỉ IP nào được coi là địa chỉ riêng tư? (Chọn ba.)",
+    "options": [
+      "198.168.6.18",
+      "192.168.5.29",
+      "172.68.83.35",
+      "128.37.255.6",
+      "172.17.254.4",
+      "10.234.2.1"
+    ],
+    "explanation": "Các địa chỉ IP riêng được chỉ định nằm trong ba dải địa chỉ IP: 10.0.0.0 – 10.255.255.255 172.16.0.0 – 172.31.255.255 192.168.0.0 – 192.168.255.255"
+  },
+  "final_q154": {
+    "question": "Khi thiết lập hồ sơ mạng cho một tổ chức, yếu tố nào mô tả thời gian từ khi thiết lập luồng dữ liệu đến khi kết thúc luồng dữ liệu đó?",
+    "options": [
+      "băng thông kết nối Internet",
+      "hội tụ giao thức định tuyến",
+      "thời lượng phiên",
+      "tổng thông lượng"
+    ],
+    "explanation": "Cấu hình mạng phải bao gồm một số thành phần quan trọng, chẳng hạn như: Tổng thông lượng – lượng dữ liệu truyền từ một nguồn nhất định đến một đích nhất định trong một khoảng thời gian nhất định Thời lượng phiên – thời gian từ khi thiết lập luồng dữ liệu đến khi kết thúc nó Các cổng được sử dụng – danh sách các quy trình TCP hoặc UDP có sẵn để chấp nhận dữ liệu Không gian địa chỉ tài sản quan trọng – địa chỉ IP hoặc vị trí logic của các hệ thống hoặc dữ liệu thiết yếu"
+  },
+  "final_q155": {
+    "question": "Các giai đoạn mà thiết bị không dây hoàn thành trước khi có thể giao tiếp qua mạng LAN không dây là gì?",
+    "options": [
+      "khám phá một AP không dây, xác thực với AP, liên kết với AP",
+      "khám phá một AP không dây, liên kết với AP, ủy quyền với AP",
+      "khám phá một AP không dây, liên kết với AP, xác thực với AP",
+      "khám phá một AP không dây, ủy quyền với AP, liên kết với AP"
+    ],
+    "explanation": ""
+  },
+  "final_q156": {
+    "question": "Ghép đúng trình tự các bước mà kẻ đe dọa thường thực hiện khi thực hiện cuộc tấn công che giấu miền.",
+    "options": [
+      "Bước 1 -> Trang web bị xâm phạm",
+      "Bước 2 -> Đệm HTTP 302 được sử dụng",
+      "Bước 3 -> Bóng miền được sử dụng",
+      "Bước 4 -> Trang đích của bộ công cụ khai thác được tạo",
+      "Bước 5 -> Phần mềm độc hại lây lan thông qua tải trọng của nó"
+    ],
+    "explanation": "Bước 1: Trang web bị xâm phạm Bước 2: Sử dụng đệm HTTP 302 Bước 3: Sử dụng tính năng theo dõi tên miền Bước 4: Trang đích của bộ công cụ khai thác được tạo Bước 5: Phần mềm độc hại được phát tán thông qua tải trọng của nó"
+  },
+  "final_q157": {
+    "question": "Hai thuộc tính của hàm băm mật mã là gì? (Chọn hai.)",
+    "options": [
+      "Đầu vào phức tạp sẽ tạo ra các giá trị băm phức tạp.",
+      "Đầu ra có độ dài cố định.",
+      "Hàm băm là một chiều và không thể đảo ngược.",
+      "Hàm băm có thể được nhân đôi cho mục đích xác thực.",
+      "Đầu vào cho một thuật toán băm cụ thể phải có kích thước cố định."
+    ],
+    "explanation": "Hàm băm mật mã phải có các thuộc tính sau: Đầu vào có thể có độ dài bất kỳ. Đầu ra có độ dài cố định. Giá trị băm tương đối dễ tính toán cho bất kỳ đầu vào nhất định nào. Băm là một chiều và không thể đảo ngược. Hàm băm không có xung đột, nghĩa là hai giá trị đầu vào khác nhau sẽ dẫn đến các giá trị băm khác nhau"
+  },
+  "final_q158": {
+    "question": "Tham khảo triển lãm. Các công tắc có cấu hình mặc định. Máy chủ A cần liên lạc với máy chủ D, nhưng máy chủ A không có địa chỉ MAC cho cổng mặc định. Thiết bị mạng nào sẽ nhận được yêu cầu ARP do máy chủ A gửi? i360201v3n1_275353.png",
+    "options": [
+      "chỉ có máy chủ D",
+      "chỉ có máy chủ A, B, C và D",
+      "chỉ có máy chủ B và C",
+      "chỉ lưu trữ B, C và bộ định tuyến R1",
+      "chỉ có máy chủ A, B và C",
+      "chỉ bộ định tuyến R1"
+    ],
+    "explanation": "Vì máy A không có địa chỉ MAC của cổng mặc định trong bảng ARP nên máy A sẽ gửi một bản tin ARP. Chương trình phát ARP sẽ được gửi đến mọi thiết bị trên mạng cục bộ. Máy chủ B, C và bộ định tuyến R1 sẽ nhận được chương trình phát sóng. Bộ định tuyến R1 sẽ không chuyển tiếp tin nhắn."
+  },
+  "final_q159": {
+    "question": "Loại bằng chứng nào không thể tự mình chứng minh sự thật về bảo mật CNTT?",
+    "options": [
+      "tin đồn",
+      "chứng thực",
+      "tốt nhất",
+      "gián tiếp"
+    ],
+    "explanation": "Bằng chứng gián tiếp không thể tự mình chứng minh một sự thật, nhưng bằng chứng trực tiếp thì có thể. Bằng chứng chứng thực là thông tin hỗ trợ. Bằng chứng tốt nhất là đáng tin cậy nhất vì nó là thứ gì đó cụ thể, chẳng hạn như hợp đồng đã ký kết."
+  },
+  "final_q160": {
+    "question": "Đặc điểm của phân tích xác suất trong đánh giá cảnh báo là gì?",
+    "options": [
+      "mỗi sự kiện là một kết quả tất yếu của những nguyên nhân xảy ra trước đó",
+      "các phương pháp chính xác mang lại kết quả giống nhau mọi lúc bằng cách dựa vào các điều kiện được xác định trước",
+      "các biến ngẫu nhiên gây khó khăn trong việc biết chắc chắn kết quả của bất kỳ sự kiện nào",
+      "phân tích các ứng dụng phù hợp với tiêu chuẩn ứng dụng/mạng"
+    ],
+    "explanation": "Các kỹ thuật thống kê có thể được sử dụng để đánh giá rủi ro khai thác thành công trong một mạng nhất định. Kiểu phân tích này có thể giúp những người ra quyết định đánh giá tốt hơn chi phí giảm thiểu mối đe dọa và thiệt hại mà việc khai thác có thể gây ra. Hai cách tiếp cận chung được sử dụng để thực hiện việc này như sau: Phân tích xác định: Để việc khai thác thành công, tất cả các bước khai thác trước đó cũng phải thành công. Nhà phân tích an ninh mạng biết các bước để khai thác thành công. Phân tích xác suất: Các kỹ thuật thống kê được sử dụng để xác định xác suất khai thác thành công sẽ xảy ra dựa trên khả năng mỗi bước khai thác sẽ thành công."
+  },
+  "final_q161": {
+    "question": "Tại sao quản trị viên mạng lại chọn Linux làm hệ điều hành trong Trung tâm điều hành bảo mật (SOC)?",
+    "options": [
+      "Nó dễ sử dụng hơn các hệ điều hành máy chủ khác.",
+      "Nó có thể được mua miễn phí.",
+      "Nhiều ứng dụng mạng được tạo ra cho môi trường này.",
+      "Quản trị viên có quyền kiểm soát các chức năng bảo mật cụ thể, nhưng không có quyền kiểm soát các ứng dụng tiêu chuẩn."
+    ],
+    "explanation": "Linux là nguồn mở - Bất kỳ ai cũng có thể tải xuống Linux miễn phí và sửa đổi nó để phù hợp với các nhu cầu cụ thể. Tính linh hoạt này cho phép các nhà phân tích và quản trị viên xây dựng một hệ điều hành dành riêng cho phân tích bảo mật."
+  },
+  "final_q162": {
+    "question": "Kỹ thuật viên cần xác minh quyền truy cập tệp trên một tệp Linux cụ thể. Kỹ thuật viên sẽ sử dụng lệnh nào?",
+    "options": [
+      "đĩa CD",
+      "sudo",
+      "ls -l",
+      "vi"
+    ],
+    "explanation": ""
+  },
+  "final_q163": {
+    "question": "Thiết bị có thể sử dụng hai giao thức nào trong quy trình ứng dụng gửi email? (Chọn hai.)",
+    "options": [
+      "HTTP",
+      "NHẠC POP",
+      "POP3",
+      "DNS",
+      "IMAP",
+      "SMTP"
+    ],
+    "explanation": "POP, POP3 và IMAP là các giao thức được sử dụng để truy xuất email từ máy chủ. SMTP là giao thức mặc định được sử dụng để gửi email. DNS có thể được máy chủ email của người gửi sử dụng để tìm địa chỉ của máy chủ email đích. HTTP là một giao thức để gửi và nhận các trang web."
+  },
+  "final_q164": {
+    "question": "Loại hệ thống tập tin nào được tạo riêng cho phương tiện đĩa quang?",
+    "options": [
+      "ext3",
+      "HFS+",
+      "CDFS",
+      "ext2"
+    ],
+    "explanation": ""
+  },
+  "final_q165": {
+    "question": "Một phần mềm độc hại đã giành được quyền truy cập vào máy trạm và đưa ra truy vấn tra cứu DNS tới máy chủ CnC. Mục đích của cuộc tấn công này là gì?",
+    "options": [
+      "để kiểm tra tên miền của máy trạm",
+      "để gửi dữ liệu nhạy cảm bị đánh cắp bằng mã hóa",
+      "giả mạo địa chỉ IP của máy trạm",
+      "để yêu cầu thay đổi địa chỉ IP"
+    ],
+    "explanation": "Một phần mềm độc hại, sau khi truy cập vào máy chủ, có thể khai thác dịch vụ DNS bằng cách liên lạc với các máy chủ ra lệnh và kiểm soát (CnC), sau đó lọc dữ liệu trong lưu lượng truy cập được ngụy trang dưới dạng truy vấn tra cứu DNS thông thường. Nhiều loại mã hóa khác nhau, chẳng hạn như base64, nhị phân 8 bit và hex có thể được sử dụng để ngụy trang dữ liệu và trốn tránh các biện pháp ngăn ngừa mất dữ liệu cơ bản (DLP)."
+  },
+  "final_q166": {
+    "question": "Tham khảo triển lãm. Trường nào trong cửa sổ sự kiện Sguil cho biết số lần một sự kiện được phát hiện cho cùng một địa chỉ IP nguồn và đích?",
+    "options": [
+      "CNT",
+      "Pr",
+      "ST",
+      "ID cảnh báo"
+    ],
+    "explanation": "Trường CNT cho biết số lần một sự kiện được phát hiện từ cùng một địa chỉ IP nguồn và đích. Việc có số lượng sự kiện cao có thể cho thấy có vấn đề với chữ ký sự kiện."
+  },
+  "final_q167": {
+    "question": "Tham khảo triển lãm. Địa chỉ IP của giao diện thiết bị nào sẽ được sử dụng làm cài đặt cổng mặc định của máy chủ H1?",
+    "options": [
+      "R1: G0/0",
+      "R2: S0/0/0",
+      "R2: S0/0/1",
+      "R1: S0/0/0"
+    ],
+    "explanation": "Cổng mặc định cho máy chủ H1 là giao diện bộ định tuyến được gắn vào mạng LAN mà H1 là thành viên. Trong trường hợp này, đó là giao diện G0/0 của R1. H1 phải được cấu hình với địa chỉ IP của giao diện đó trong cài đặt địa chỉ của nó. R1 sẽ cung cấp dịch vụ định tuyến cho các gói tin từ H1 cần chuyển tiếp đến các mạng từ xa."
+  },
+  "final_q168": {
+    "question": "Theo thông tin được Cyber ​​Kill Chain nêu ra, hai cách tiếp cận nào có thể giúp xác định các mối đe dọa do thám? (Chọn hai.)",
+    "options": [
+      "Phân tích cảnh báo nhật ký web và dữ liệu tìm kiếm lịch sử.",
+      "Kiểm tra các điểm cuối để xác định chính xác nguồn gốc khai thác.",
+      "Xây dựng sổ tay để phát hiện hành vi của trình duyệt.",
+      "Tiến hành phân tích phần mềm độc hại đầy đủ.",
+      "Hiểu rõ các máy chủ, con người và dữ liệu có sẵn để tấn công."
+    ],
+    "explanation": "Các tác nhân đe dọa có thể sử dụng tính năng quét cổng tới máy chủ web của một tổ chức và xác định các lỗ hổng trên máy chủ. Họ có thể truy cập máy chủ web để thu thập thông tin về tổ chức. Tính năng ghi nhật ký máy chủ web phải được bật và dữ liệu ghi nhật ký phải được phân tích để xác định các mối đe dọa trinh sát có thể xảy ra. Việc xây dựng sổ tay bằng cách lọc và kết hợp các hoạt động web có liên quan của khách truy cập đôi khi có thể tiết lộ ý định của các tác nhân đe dọa."
+  },
+  "final_q169": {
+    "question": "Hai thông báo ICMPv6 nào được sử dụng trong quá trình phân giải địa chỉ MAC Ethernet? (Chọn hai.)",
+    "options": [
+      "chào mời bộ định tuyến",
+      "quảng cáo bộ định tuyến",
+      "gạ gẫm hàng xóm",
+      "quảng cáo hàng xóm",
+      "yêu cầu tiếng vang"
+    ],
+    "explanation": "IPv6 sử dụng các tin nhắn ICMPv6 mời hàng xóm (NS) và quảng cáo hàng xóm (NA) để phân giải địa chỉ MAC."
+  },
+  "final_q170": {
+    "question": "Điều gì mô tả đúng nhất địa chỉ IPv4 đích được sử dụng bởi tính năng phát đa hướng?",
+    "options": [
+      "một địa chỉ multicast IP duy nhất được sử dụng bởi tất cả các điểm đến trong một nhóm",
+      "địa chỉ IP duy nhất cho mỗi điểm đến trong nhóm",
+      "địa chỉ nhóm chia sẻ 23 bit cuối cùng với địa chỉ IPv4 nguồn",
+      "địa chỉ 48 bit được xác định bởi số lượng thành viên trong nhóm multicast"
+    ],
+    "explanation": "Địa chỉ IPv4 multicast đích là một địa chỉ nhóm, là một địa chỉ IP multicast duy nhất trong phạm vi Lớp D."
+  },
+  "final_q171": {
+    "question": "Kết quả của việc sử dụng các thiết bị bảo mật bao gồm dịch vụ kiểm tra và giải mã HTTPS là gì?",
+    "options": [
+      "Các thiết bị yêu cầu giám sát liên tục và tinh chỉnh.",
+      "Các thiết bị gây ra sự chậm trễ trong quá trình xử lý và các vấn đề về quyền riêng tư.",
+      "Các thiết bị phải có tên người dùng và mật khẩu được cấu hình sẵn cho tất cả người dùng.",
+      "Hợp đồng dịch vụ hàng tháng với các trang web lọc web uy tín có thể tốn kém."
+    ],
+    "explanation": "HTTPS bổ sung thêm chi phí cho gói được tạo thành HTTP. HTTPS mã hóa bằng Lớp cổng bảo mật (SSL). Mặc dù một số thiết bị có thể thực hiện kiểm tra và giải mã SSL, nhưng điều này có thể gây ra các vấn đề về xử lý và quyền riêng tư."
+  },
+  "final_q172": {
+    "question": "Nhược điểm của DDNS là gì?",
+    "options": [
+      "DDNS được coi là ác tính và phải được giám sát bằng phần mềm bảo mật.",
+      "DDNS không thể cùng tồn tại trên tên miền phụ mạng cũng sử dụng DNS.",
+      "Bằng cách sử dụng các dịch vụ DDNS miễn phí, kẻ tấn công có thể tạo tên miền phụ và thay đổi bản ghi DNS một cách nhanh chóng và dễ dàng.",
+      "Khi sử dụng DDNS, một thay đổi trong ánh xạ địa chỉ IP hiện có có thể mất hơn 24 giờ và có thể dẫn đến gián đoạn kết nối."
+    ],
+    "explanation": "DNS động có thể bị các tác nhân đe dọa lạm dụng theo nhiều cách khác nhau. Các dịch vụ DDNS miễn phí đặc biệt hữu ích đối với những kẻ đe dọa. DDNS có thể được sử dụng để hỗ trợ việc thay đổi nhanh chóng địa chỉ IP cho các máy chủ ra lệnh và kiểm soát phần mềm độc hại sau khi địa chỉ IP hiện tại bị chặn trên diện rộng."
+  },
+  "final_q173": {
+    "question": "Hãy kết hợp giải pháp chống phần mềm độc hại dựa trên mạng với chức năng. (Không phải tất cả các tùy chọn đều được sử dụng.)",
+    "options": [],
+    "explanation": ""
+  },
+  "final_q174": {
+    "question": "Một tác nhân đe dọa đã xác định được lỗ hổng tiềm ẩn trên máy chủ web của một tổ chức và đang xây dựng một cuộc tấn công. Tác nhân đe dọa có thể làm gì để chế tạo vũ khí tấn công?",
+    "options": [
+      "Có được một công cụ tự động để phân phối tải trọng phần mềm độc hại thông qua lỗ hổng.",
+      "Cài đặt webshell trên máy chủ web để truy cập liên tục.",
+      "Tạo điểm kiên trì bằng cách thêm dịch vụ.",
+      "Thu thập thông tin xác thực của nhà phát triển và quản trị viên máy chủ web."
+    ],
+    "explanation": "Một chiến thuật vũ khí hóa được kẻ đe dọa sử dụng sau khi xác định được lỗ hổng bảo mật là lấy một công cụ tự động để phân phối tải trọng phần mềm độc hại thông qua lỗ hổng bảo mật."
+  },
+  "final_q175": {
+    "question": "Công cụ nào có trong Security Onion là một loạt plugin phần mềm gửi các loại dữ liệu khác nhau đến kho dữ liệu Elaticsearch?",
+    "options": [
+      "OSSEC",
+      "Người phụ trách",
+      "nhịp đập",
+      "Cảnh báo đàn hồi"
+    ],
+    "explanation": "Beats – Đây là một loạt plugin phần mềm gửi các loại dữ liệu khác nhau đến kho dữ liệu Elaticsearch."
+  },
+  "final_q176": {
+    "question": "Thuật ngữ nào được sử dụng để mô tả quá trình xác định dữ liệu liên quan đến NSM sẽ được thu thập?",
+    "options": [
+      "lưu trữ dữ liệu",
+      "chuẩn hóa dữ liệu",
+      "giảm dữ liệu",
+      "lưu giữ dữ liệu"
+    ],
+    "explanation": ""
+  },
+  "final_q177": {
+    "question": "Ghép phân loại cảnh báo với mô tả.",
+    "options": [],
+    "explanation": ""
+  },
+  "final_q178": {
+    "question": "Theo NIST, bước nào trong quy trình điều tra kỹ thuật số liên quan đến việc chuẩn bị và trình bày thông tin thu được từ quá trình xem xét kỹ lưỡng dữ liệu?",
+    "options": [
+      "bài kiểm tra",
+      "bộ sưu tập",
+      "báo cáo",
+      "Phân tích"
+    ],
+    "explanation": "NIST mô tả quy trình điều tra kỹ thuật số bao gồm bốn bước sau: Thu thập – xác định các nguồn dữ liệu điều tra tiềm năng và thu thập, xử lý và lưu trữ dữ liệu đó Kiểm tra – đánh giá và trích xuất thông tin liên quan từ dữ liệu được thu thập. Điều này có thể liên quan đến việc giải nén hoặc giải mã dữ liệu. Phân tích – rút ra kết luận từ dữ liệu. Các đặc điểm nổi bật, chẳng hạn như con người, địa điểm, thời gian, sự kiện, v.v. phải được ghi lại. Báo cáo – chuẩn bị và trình bày thông tin thu được từ quá trình phân tích. Báo cáo phải khách quan và nên đưa ra những giải thích thay thế nếu thích hợp"
+  },
+  "final_q179": {
+    "question": "Tham khảo triển lãm. Một nhà phân tích an ninh mạng đang sử dụng Sguil để xác minh các cảnh báo bảo mật. Chế độ xem hiện tại được sắp xếp như thế nào?",
+    "options": [
+      "theo số cảm biến",
+      "theo IP nguồn",
+      "theo ngày/giờ",
+      "theo tần số"
+    ],
+    "explanation": "Cột CNT giữa cột ST và cột Cảm biến hiển thị tần suất cảnh báo. Bằng cách sắp xếp tần suất, nhà phân tích sẽ hiểu rõ hơn về những gì đã xảy ra trên mạng."
+  },
+  "final_q180": {
+    "question": "Hai tùy chọn nào là trình quản lý cửa sổ cho Linux? (Chọn hai.)",
+    "options": [
+      "Trình khám phá tệp",
+      "Kali",
+      "thần lùn",
+      "Kiểm tra bút",
+      "KDE"
+    ],
+    "explanation": "Hệ thống X Window cung cấp khung cơ bản cho GUI, nhưng bản thân GUI rất khác nhau giữa các bản phân phối khác nhau. Hai trình quản lý cửa sổ là Gnome và KDE."
+  },
+  "final_q181": {
+    "question": "Hai phương pháp mà NIC không dây có thể sử dụng để khám phá AP là gì? (Chọn hai.)",
+    "options": [
+      "truyền yêu cầu thăm dò",
+      "gửi một chương trình phát sóng yêu cầu ARP",
+      "bắt đầu một cái bắt tay ba chiều",
+      "nhận được khung đèn hiệu quảng bá",
+      "gửi một khung multicast"
+    ],
+    "explanation": "Thiết bị không dây có thể sử dụng hai phương pháp để khám phá và đăng ký với điểm truy cập: chế độ thụ động và chế độ hoạt động. Ở chế độ thụ động, AP gửi khung đèn hiệu phát sóng có chứa SSID và các cài đặt không dây khác. Ở chế độ hoạt động, thiết bị không dây phải được cấu hình thủ công cho SSID, sau đó thiết bị sẽ phát đi yêu cầu thăm dò."
+  },
+  "final_q182": {
+    "question": "Một thiết bị khách đã bắt đầu yêu cầu HTTP an toàn tới trình duyệt web. Số địa chỉ cổng nổi tiếng nào được liên kết với địa chỉ đích?",
+    "options": [
+      "110",
+      "80",
+      "443",
+      "404"
+    ],
+    "explanation": "Số cổng được sử dụng trong giao tiếp TCP và UDP để phân biệt giữa các dịch vụ khác nhau đang chạy trên thiết bị. Số cổng nổi tiếng được HTTP sử dụng là cổng 443."
+  },
+  "final_q183": {
+    "question": "Thuật ngữ nào mô tả bằng chứng ở trạng thái ban đầu?",
+    "options": [
+      "Bằng chứng chứng thực",
+      "Bằng chứng tốt nhất",
+      "Bằng chứng gián tiếp",
+      "Bằng chứng trực tiếp"
+    ],
+    "explanation": "Bằng chứng có thể được phân loại như sau: Bằng chứng tốt nhất: Đây là bằng chứng ở trạng thái ban đầu. Đó có thể là thiết bị lưu trữ được sử dụng bởi bị cáo hoặc kho lưu trữ các tập tin có thể được chứng minh là không bị thay đổi. Bằng chứng chứng thực: Đây là bằng chứng ủng hộ một mệnh đề đã được hỗ trợ bởi bằng chứng ban đầu, do đó xác nhận mệnh đề ban đầu. Bằng chứng gián tiếp: Bằng chứng này hoạt động kết hợp với các sự kiện khác để thiết lập một giả thuyết."
+  },
+  "final_q184": {
+    "question": "Ba câu lệnh nào mô tả thông báo DHCP Discover? (Chọn ba.)",
+    "options": [
+      "Địa chỉ MAC nguồn là 48 địa chỉ (FF-FF-FF-FF-FF-FF).",
+      "Địa chỉ IP đích là 255.255.255.255.",
+      "Tin nhắn đến từ một máy chủ cung cấp địa chỉ IP.",
+      "Tin nhắn đến từ một khách hàng đang tìm kiếm địa chỉ IP.",
+      "Tất cả các máy chủ đều nhận được tin nhắn, nhưng chỉ có máy chủ DHCP trả lời.",
+      "Chỉ có máy chủ DHCP mới nhận được tin nhắn."
+    ],
+    "explanation": "Khi máy chủ được cấu hình để sử dụng DHCP bật nguồn trên mạng, nó sẽ gửi thông báo DHCPDISCOVER. FF-FF-FF-FF-FF-FF là địa chỉ quảng bá L2. Máy chủ DHCP trả lời bằng thông báo DHCPOFFER unicast gửi lại máy chủ."
+  },
+  "final_q185": {
+    "question": "Tham khảo triển lãm. PC đang gửi gói đến Máy chủ trên mạng từ xa. Bộ định tuyến R1 đang thực hiện quá tải NAT. Từ góc độ của PC, hãy khớp loại địa chỉ NAT với địa chỉ IP chính xác. (Không phải tất cả các tùy chọn đều được sử dụng.)",
+    "options": [
+      "Bên ngoài toàn cầu -> 203.0.113.5",
+      "Bên trong toàn cầu -> 192.0.2.1",
+      "Bên trong địa phương -> 10.130.5.76"
+    ],
+    "explanation": "Đặt các tùy chọn theo thứ tự sau: Giải thích: Chủ đề 24.2.2 Địa chỉ cục bộ bên trong là địa chỉ IP riêng của nguồn hoặc PC trong trường hợp này. Địa chỉ toàn cầu bên trong là địa chỉ được dịch của nguồn hoặc địa chỉ mà thiết bị bên ngoài nhìn thấy. Vì PC đang sử dụng địa chỉ bên ngoài của bộ định tuyến R1 nên địa chỉ toàn cầu bên trong là 192.0.2.1. Địa chỉ bên ngoài chỉ đơn giản là địa chỉ của máy chủ hoặc 203.0.113.5."
+  },
+  "final_q186": {
+    "question": "Bước nào trong Vòng đời quản lý lỗ hổng sẽ phân loại tài sản thành các nhóm hoặc đơn vị kinh doanh và chỉ định giá trị kinh doanh cho các nhóm tài sản dựa trên mức độ quan trọng của chúng đối với hoạt động kinh doanh?",
+    "options": [
+      "bước 1 -> khách hàng gửi FIN",
+      "bước 2 -> máy chủ gửi ACK",
+      "bước 3 -> máy chủ gửi FIN",
+      "bước 4 -> khách hàng gửi ACK"
+    ],
+    "explanation": "Các bước trong Vòng đời quản lý lỗ hổng bảo mật bao gồm: Khám phá – kiểm kê tất cả tài sản trên mạng và xác định chi tiết máy chủ, bao gồm hệ điều hành và dịch vụ mở để xác định lỗ hổng Ưu tiên tài sản – phân loại tài sản thành các nhóm hoặc đơn vị kinh doanh và chỉ định giá trị kinh doanh cho các nhóm tài sản dựa trên mức độ quan trọng của chúng đối với hoạt động kinh doanh Đánh giá – xác định hồ sơ rủi ro cơ bản để loại bỏ rủi ro dựa trên mức độ nghiêm trọng của tài sản, các mối đe dọa về lỗ hổng bảo mật và phân loại tài sản Báo cáo – đo lường mức độ rủi ro kinh doanh liên quan đến tài sản của bạn theo chính sách bảo mật của bạn. Ghi lại kế hoạch bảo mật, giám sát hoạt động đáng ngờ và mô tả các lỗ hổng đã biết Khắc phục – ưu tiên theo rủi ro kinh doanh và sửa các lỗ hổng theo thứ tự rủi ro Xác minh – xác minh rằng các mối đe dọa đã được loại bỏ thông qua kiểm tra tiếp theo 187. Ứng dụng khách cần chấm dứt phiên giao tiếp TCP với máy chủ. Đặt các bước của quy trình chấm dứt theo thứ tự chúng sẽ xảy ra. (Không phải tất cả các tùy chọn đều được sử dụng.) Đặt các tùy chọn theo thứ tự sau: Giải thích: Chủ đề 9.2.3 Để kết thúc phiên TCP, máy khách gửi đến máy chủ một phân đoạn có đặt cờ FIN. Máy chủ xác nhận máy khách bằng cách gửi một phân đoạn có đặt cờ ACK. Máy chủ gửi FIN tới máy khách để kết thúc phiên máy chủ với máy khách. Máy khách xác nhận việc chấm dứt bằng cách gửi một phân đoạn có đặt cờ ACK."
+  },
+  "final_q188": {
+    "question": "Ghép vectơ tấn công với mô tả.",
+    "options": [],
+    "explanation": ""
+  },
+  "final_q189": {
+    "question": "Hãy ghép chức năng quản lý bảo mật với mô tả.",
+    "options": [
+      "quản lý rủi ro -> phân tích toàn diện về tác động của các cuộc tấn công vào tài sản và hoạt động cốt lõi của công ty",
+      "quản lý cấu hình -> kiểm kê và kiểm soát cấu hình phần cứng và phần mềm của hệ thống",
+      "quản lý tài sản -> việc triển khai các hệ thống theo dõi vị trí và cấu hình của các thiết bị và phần mềm được nối mạng trên toàn doanh nghiệp",
+      "quản lý lỗ hổng -> biện pháp bảo mật được thiết kế để chủ động ngăn chặn việc khai thác các lỗ hổng CNTT tồn tại trong một tổ chức"
+    ],
+    "explanation": "Đặt các tùy chọn theo thứ tự sau: quản lý rủi ro phân tích toàn diện về tác động của các cuộc tấn công vào tài sản cốt lõi của công ty và quản lý cấu hình chức năng kiểm kê và kiểm soát cấu hình phần cứng và phần mềm của hệ thống quản lý tài sản triển khai hệ thống theo dõi vị trí và cấu hình của các thiết bị và phần mềm nối mạng trên toàn doanh nghiệp quản lý lỗ hổng bảo mật biện pháp bảo mật được thiết kế để chủ động ngăn chặn việc khai thác các lỗ hổng CNTT tồn tại trong tổ chức"
+  },
+  "final_q190": {
+    "question": "Hai chức năng được cung cấp bởi lớp mạng là gì? (Chọn hai.)",
+    "options": [
+      "hướng các gói dữ liệu đến máy chủ đích trên các mạng khác",
+      "đặt dữ liệu trên phương tiện mạng",
+      "mang dữ liệu giữa các tiến trình đang chạy trên máy chủ nguồn và đích",
+      "cung cấp các kết nối end-to-end chuyên dụng",
+      "cung cấp cho thiết bị cuối một mã định danh mạng duy nhất"
+    ],
+    "explanation": "Lớp mạng chủ yếu liên quan đến việc truyền dữ liệu từ nguồn tới đích trên mạng khác. Địa chỉ IP cung cấp số nhận dạng duy nhất cho nguồn và đích. Lớp mạng cung cấp khả năng phân phối không cần kết nối, hiệu quả nhất. Các thiết bị dựa vào các lớp cao hơn để cung cấp dịch vụ cho các quy trình."
+  },
+  "final_q191": {
+    "question": "Hãy ghép giai đoạn trong vòng đời ứng phó sự cố của NIST với hành động.",
+    "options": [
+      "Tài liệu xử lý sự cố. -> hoạt động sau sự cố",
+      "Tiến hành đào tạo ứng phó với CSIRT. -> sự chuẩn bị",
+      "Xác định, phân tích và xác nhận một sự cố. -> phát hiện và phân tích",
+      "Thực hiện các thủ tục để ngăn chặn mối đe dọa. -> ngăn chặn, diệt trừ và phục hồi"
+    ],
+    "explanation": "Tài liệu xử lý sự cố. --> các hoạt động sau sự cố Tiến hành đào tạo ứng phó CSIRT. --> chuẩn bị Xác định, phân tích và xác nhận một sự cố. --> phát hiện và phân tích Thực hiện các thủ tục để ngăn chặn mối đe dọa. --> ngăn chặn, diệt trừ và phục hồi"
+  },
+  "final_q192": {
+    "question": "Nối các lệnh CLI của Linux với chức năng của chúng. (Không phải tất cả các tùy chọn đều được sử dụng.)",
+    "options": [],
+    "explanation": ""
+  },
+  "cert_practice_q1": {
+    "question": "Nối định nghĩa với thuật ngữ Microsoft Windows. (Không phải tất cả các tùy chọn đều được sử dụng.) Trường hợp 2 Hãy nối định nghĩa với thuật ngữ Microsoft Windows. (Không phải tất cả các tùy chọn đều được sử dụng.)",
+    "options": [],
+    "explanation": ""
+  },
+  "cert_practice_q2": {
+    "question": "Hai yếu tố thúc đẩy các tác nhân đe dọa do quốc gia tài trợ là gì? (Chọn hai.)",
+    "options": [
+      "gián điệp công nghiệp",
+      "thể hiện kỹ năng hack của họ",
+      "sự gián đoạn thương mại hoặc cơ sở hạ tầng",
+      "nguyên nhân xã hội hoặc cá nhân",
+      "lợi ích tài chính"
+    ],
+    "explanation": "Các tác nhân đe dọa quốc gia-nhà nước thường không quan tâm hoặc bị thúc đẩy bởi lợi ích tài chính. Họ chủ yếu tham gia vào hoạt động gián điệp của công ty hoặc phá hoại thương mại quốc tế hoặc cơ sở hạ tầng quan trọng."
+  },
+  "cert_practice_q3": {
+    "question": "Nối mô tả với thuật ngữ Linux. (Không phải tất cả các tùy chọn đều được sử dụng.)",
+    "options": [],
+    "explanation": ""
+  },
+  "cert_practice_q4": {
+    "question": "Ghép cách tiếp cận chống phần mềm độc hại (antimalware) với mô tả tương ứng.",
+    "options": [
+      "Nhận diện mã độc thông qua phân tích hành vi đáng ngờ của tiến trình -> behavior-based (Dựa trên hành vi)",
+      "Nhận diện dựa trên các đặc trưng / mã hash của tệp mã độc đã biết -> signature-based (Dựa trên chữ ký mẫu)",
+      "Nhận diện các đặc điểm chung phổ biến giữa các chủng loại mã độc -> heuristics-based (Dựa trên phỏng đoán / heuristics)"
+    ],
+    "explanation": "Đặt các tùy chọn theo thứ tự sau: nhận dạng phần mềm độc hại thông qua phân tích các hành động đáng ngờ dựa trên hành vi nhận dạng các đặc điểm của tệp phần mềm độc hại đã biết dựa trên chữ ký nhận dạng các tính năng chung được chia sẻ bởi các loại phần mềm độc hại dựa trên chẩn đoán"
+  },
+  "cert_practice_q5": {
+    "question": "Loại dữ liệu nào được Cisco Cognitive Intelligence sử dụng để tìm hoạt động độc hại đã vượt qua các biện pháp kiểm soát bảo mật hoặc xâm nhập qua các kênh không được giám sát và đang hoạt động bên trong mạng doanh nghiệp?",
+    "options": [
+      "thống kê",
+      "phiên họp",
+      "báo động",
+      "giao dịch"
+    ],
+    "explanation": "Cisco Cognitive Intelligence sử dụng dữ liệu thống kê để phân tích thống kê nhằm tìm ra hoạt động độc hại đã vượt qua các biện pháp kiểm soát bảo mật hoặc xâm nhập qua các kênh không được giám sát (bao gồm cả phương tiện di động) và đang hoạt động bên trong mạng của một tổ chức."
+  },
+  "cert_practice_q6": {
+    "question": "Loại kỹ thuật lẩn tránh nào chia các tải trọng độc hại thành các gói nhỏ hơn để vượt qua các cảm biến bảo mật không tập hợp lại các tải trọng trước khi quét chúng?",
+    "options": [
+      "xoay vòng",
+      "phân mảnh giao thông",
+      "giải thích sai ở cấp độ giao thức",
+      "chèn lưu lượng truy cập"
+    ],
+    "explanation": "Để giữ cho tải trọng độc hại không bị các cảm biến bảo mật, chẳng hạn như IPS hoặc IDS, nhận ra, thủ phạm sẽ phân chia dữ liệu thành các gói nhỏ hơn. Những đoạn này có thể được truyền qua bởi các cảm biến không tập hợp lại dữ liệu trước khi quét."
+  },
+  "cert_practice_q7": {
+    "question": "Loại tấn công mạng nào là một dạng MiTM trong đó thủ phạm sao chép các gói IP ra khỏi mạng mà không sửa đổi chúng?",
+    "options": [
+      "khóa bị xâm phạm",
+      "nghe lén",
+      "từ chối dịch vụ",
+      "giả mạo IP"
+    ],
+    "explanation": "Tấn công nghe lén là một dạng tấn công trung gian, trong đó thủ phạm chỉ đọc hoặc sao chép các gói IP ra khỏi mạng nhưng không thay đổi chúng."
+  },
+  "cert_practice_q8": {
+    "question": "Đó là một ví dụ về kỹ thuật xã hội?",
+    "options": [
+      "một lập trình viên ẩn danh chỉ đạo một cuộc tấn công DDoS vào trung tâm dữ liệu",
+      "một người không rõ danh tính tự xưng là kỹ thuật viên đang thu thập thông tin người dùng từ nhân viên",
+      "một máy tính hiển thị cửa sổ bật lên và phần mềm quảng cáo trái phép",
+      "sự lây nhiễm của máy tính bởi một loại virus mang theo Trojan"
+    ],
+    "explanation": "Kẻ lừa đảo xã hội cố gắng lấy lòng tin của nhân viên và thuyết phục người đó tiết lộ thông tin bí mật và nhạy cảm, chẳng hạn như tên người dùng và mật khẩu. Các cuộc tấn công DDoS, cửa sổ bật lên và vi-rút đều là ví dụ về các mối đe dọa bảo mật dựa trên phần mềm, không phải kỹ thuật lừa đảo xã hội."
+  },
+  "cert_practice_q9": {
+    "question": "Thành phần nào là trụ cột của phương pháp bảo mật không tin cậy, tập trung vào khả năng truy cập an toàn của các thiết bị, chẳng hạn như máy chủ, máy in và các thiết bị đầu cuối khác, bao gồm cả các thiết bị được gắn vào IoT?",
+    "options": [
+      "quy trình công việc",
+      "khối lượng công việc",
+      "nơi làm việc",
+      "lực lượng lao động"
+    ],
+    "explanation": "Trụ cột nơi làm việc tập trung vào quyền truy cập an toàn cho mọi thiết bị, bao gồm các thiết bị trên Internet vạn vật (IoT), kết nối với mạng doanh nghiệp, chẳng hạn như điểm cuối của người dùng, máy chủ vật lý và ảo, máy in, máy ảnh, hệ thống HVAC, ki-ốt, máy bơm truyền dịch, hệ thống điều khiển công nghiệp, v.v."
+  },
+  "cert_practice_q10": {
+    "question": "Một nhà phân tích bảo mật đang xem xét thông tin có trong bản chụp Wireshark được tạo trong một nỗ lực xâm nhập. Nhà phân tích muốn đối chiếu thông tin của Wireshark với các tệp nhật ký từ hai máy chủ có thể đã bị xâm phạm. Loại thông tin nào có thể được sử dụng để liên hệ với các sự kiện được tìm thấy trong nhiều bộ dữ liệu này?",
+    "options": [
+      "Dữ liệu định vị địa lý của ISP",
+      "Năm bộ IP",
+      "tài khoản người dùng đã đăng nhập",
+      "siêu dữ liệu quyền sở hữu"
+    ],
+    "explanation": "Địa chỉ IP nguồn và đích, cổng và giao thức (năm bộ IP) có thể được sử dụng để tương quan với các bộ dữ liệu khác nhau khi phân tích một hành vi xâm nhập."
+  },
+  "cert_practice_q11": {
+    "question": "Một nhà phân tích bảo mật đang điều tra một cuộc tấn công mạng bắt đầu bằng cách xâm phạm một hệ thống tệp thông qua lỗ hổng trong ứng dụng phần mềm tùy chỉnh. Cuộc tấn công hiện dường như đang ảnh hưởng đến các hệ thống tệp bổ sung dưới sự kiểm soát của cơ quan bảo mật khác. Điểm số liệu về khả năng khai thác cơ sở CVSS v3.0 nào được tăng lên nhờ đặc điểm tấn công này?",
+    "options": [
+      "đặc quyền cần thiết",
+      "phạm vi",
+      "sự phức tạp của cuộc tấn công",
+      "tương tác người dùng"
+    ],
+    "explanation": "Chỉ số phạm vi bị ảnh hưởng bởi lỗ hổng bị khai thác có thể ảnh hưởng đến các tài nguyên vượt quá các đặc quyền được ủy quyền của thành phần dễ bị tấn công hoặc được quản lý bởi cơ quan bảo mật khác."
+  },
+  "cert_practice_q12": {
+    "question": "Biểu thức chính quy nào sẽ khớp với bất kỳ chuỗi nào chứa 4 số 0 liên tiếp?",
+    "options": [
+      "{0-4}",
+      "[0-4]",
+      "0{4}",
+      "^0000"
+    ],
+    "explanation": "Biểu thức chính quy 0{4} khớp với bất kỳ chuỗi nào chứa 4 lần lặp lại số 0 hoặc 4 số 0 liên tiếp."
+  },
+  "cert_practice_q13": {
+    "question": "Tham khảo triển lãm. Công nghệ nào tạo ra nhật ký sự kiện?",
+    "options": [
+      "Wireshark",
+      "Luồng mạng",
+      "proxy web",
+      "nhật ký hệ thống"
+    ],
+    "explanation": "Nguồn đầu ra là Netflow."
+  },
+  "cert_practice_q14": {
+    "question": "Tham khảo triển lãm. Một chuyên gia bảo mật đang sử dụng Wireshark để xem lại tệp PCAP được tạo bởi tcpdump. Khi máy khách bắt đầu yêu cầu tải xuống tệp, cặp ổ cắm nguồn nào đã được sử dụng?",
+    "options": [
+      "209.165.202.133:48598",
+      "209.165.202.133:6666",
+      "209.165.200.235:6666",
+      "209.165.200.235:48598"
+    ],
+    "explanation": "Sự kết hợp giữa địa chỉ IP nguồn và số cổng nguồn hoặc địa chỉ IP đích và số cổng đích được gọi là ổ cắm. Ổ cắm được hiển thị dưới dạng địa chỉ IP và số cổng liên kết với dấu hai chấm ở giữa hai địa chỉ (IP_address:port_number)."
+  },
+  "cert_practice_q15": {
+    "question": "Hãy ghép dịch vụ bảo mật với mô tả.",
+    "options": [],
+    "explanation": "Cho phép quản trị viên quản lý các thiết bị mạng SNMP Cung cấp số liệu thống kê về các gói truyền qua bộ định tuyến hoặc bộ chuyển mạch đa lớp của Cisco NetFlow Cho phép bộ chuyển mạch tạo các bản sao lưu lượng truy cập trùng lặp được gửi đến bộ phân tích lưu lượng Phản chiếu cổng Một loạt lệnh kiểm soát xem thiết bị chuyển tiếp hay loại bỏ gói ACL"
+  },
+  "cert_practice_q16": {
+    "question": "Sử dụng Tcpdump và Wireshark, nhà phân tích bảo mật sẽ trích xuất tệp đã tải xuống từ tệp pcap. Nhà phân tích nghi ngờ rằng tệp này là vi-rút và muốn biết loại tệp để kiểm tra thêm. Lệnh Linux nào có thể được sử dụng để xác định loại tệp?",
+    "options": [
+      "tài liệu",
+      "đuôi",
+      "nano",
+      "ls -l"
+    ],
+    "explanation": "Lệnh tệp Linux có thể được sử dụng để xác định loại tệp, chẳng hạn như liệu nó có thể thực thi được, văn bản ASCII hay zip hay không."
+  },
+  "cert_practice_q17": {
+    "question": "Ghép loại cảnh báo IPS với mô tả tương ứng.",
+    "options": [
+      "tiêu cực thực sự -> lưu lượng truy cập bình thường không được xác định chính xác là mối đe dọa",
+      "tích cực thực sự -> lưu lượng truy cập độc hại được xác định chính xác là mối đe dọa",
+      "âm tính giả -> lưu lượng truy cập độc hại không được xác định chính xác là mối đe dọa",
+      "dương tính giả -> lưu lượng truy cập bình thường được xác định không chính xác là một mối đe dọa"
+    ],
+    "explanation": "Đặt các tùy chọn theo thứ tự sau: đúng âm thông thường lưu lượng truy cập không được xác định chính xác là mối đe dọa lưu lượng truy cập độc hại tích cực thực sự được xác định chính xác là mối đe dọa âm tính giả lưu lượng truy cập độc hại không được xác định chính xác là mối đe dọa dương tính giả lưu lượng truy cập thông thường được xác định không chính xác là mối đe dọa"
+  },
+  "cert_practice_q18": {
+    "question": "Tính năng của IPS là gì?",
+    "options": [
+      "Nó có thể ngăn chặn các gói độc hại.",
+      "Nó được triển khai ở chế độ ngoại tuyến.",
+      "Nó không có tác động đến độ trễ.",
+      "Nó chủ yếu tập trung vào việc xác định các sự cố có thể xảy ra."
+    ],
+    "explanation": "Ưu điểm của hệ thống ngăn chặn xâm nhập (IPS) là nó có thể xác định và ngăn chặn các gói độc hại. Tuy nhiên, do IPS được triển khai nội tuyến nên nó có thể tăng thêm độ trễ cho mạng."
+  },
+  "cert_practice_q19": {
+    "question": "Ba trường nào được tìm thấy trong cả tiêu đề TCP và UDP? (Chọn ba.)",
+    "options": [
+      "cửa sổ",
+      "tổng kiểm tra",
+      "tùy chọn",
+      "số thứ tự",
+      "cảng đích",
+      "cổng nguồn"
+    ],
+    "explanation": "Tiêu đề UPD có bốn trường. Ba trong số các trường này giống với tiêu đề TCP. Ba trường này là cổng nguồn, cổng đích và tổng kiểm tra."
+  },
+  "cert_practice_q20": {
+    "question": "Điều gì sẽ khớp với biểu thức chính quy ^83?",
+    "options": [
+      "bất kỳ chuỗi nào bao gồm 83",
+      "bất kỳ chuỗi nào bắt đầu bằng 83",
+      "bất kỳ chuỗi nào có giá trị lớn hơn 83",
+      "bất kỳ chuỗi nào kết thúc bằng 83"
+    ],
+    "explanation": "Biểu thức ^83 cho biết bất kỳ chuỗi nào bắt đầu bằng 83 sẽ được khớp."
+  },
+  "cert_practice_q21": {
+    "question": "Sự khác biệt chính giữa dữ liệu được NetFlow thu thập và dữ liệu được Wireshark thu thập là gì?",
+    "options": [
+      "NetFlow cung cấp dữ liệu giao dịch trong khi Wireshark cung cấp dữ liệu phiên.",
+      "Dữ liệu NetFlow được phân tích bằng tcpdump trong khi dữ liệu Wireshark được phân tích bằng nfdump.",
+      "NetFlow thu thập siêu dữ liệu từ luồng mạng trong khi Wireshark thu thập các gói dữ liệu đầy đủ.",
+      "Dữ liệu NetFlow hiển thị nội dung luồng mạng trong khi dữ liệu Wireshark hiển thị số liệu thống kê luồng mạng."
+    ],
+    "explanation": "Wireshark nắm bắt toàn bộ nội dung của gói. NetFlow thì không. Thay vào đó, NetFlow thu thập siêu dữ liệu hoặc dữ liệu về luồng."
+  },
+  "cert_practice_q22": {
+    "question": "Ba trường tiêu đề IPv4 nào không có tiêu đề tương đương trong tiêu đề IPv6? (Chọn ba.)",
+    "options": [
+      "lá cờ",
+      "nhận dạng",
+      "TTL",
+      "phần bù mảnh",
+      "phiên bản",
+      "giao thức"
+    ],
+    "explanation": "Không giống như IPv4, bộ định tuyến IPv6 không thực hiện phân mảnh. Do đó, cả ba trường hỗ trợ phân mảnh trong tiêu đề IPv4 đều bị loại bỏ và không có trường tương đương trong tiêu đề IPv6. Ba trường này là offset đoạn, cờ và nhận dạng. IPv6 hỗ trợ phân mảnh gói máy chủ thông qua việc sử dụng các tiêu đề mở rộng, không phải là một phần của tiêu đề IPv6."
+  },
+  "cert_practice_q23": {
+    "question": "Phân loại nào được sử dụng cho cảnh báo xác định chính xác rằng hành vi khai thác đã xảy ra?",
+    "options": [
+      "âm tính giả",
+      "dương tính giả",
+      "tích cực thực sự",
+      "tiêu cực thực sự"
+    ],
+    "explanation": "Kết quả dương tính thực sự xảy ra khi chữ ký IDS và IPS được kích hoạt chính xác và cảnh báo được tạo ra khi phát hiện lưu lượng truy cập vi phạm."
+  },
+  "cert_practice_q24": {
+    "question": "Hãy ghép giai đoạn trong vòng đời ứng phó sự cố của NIST với mô tả.",
+    "options": [
+      "phát hiện và phân tích -> Xác định, phân tích và xác nhận sự cố.",
+      "sự chuẩn bị -> Tiến hành huấn luyện về ứng phó sự cố.",
+      "hoạt động sau sự cố -> Ghi lại cách xử lý sự cố.",
+      "ngăn chặn, diệt trừ và phục hồi -> Thực hiện các thủ tục để loại bỏ tác động đến tài sản của tổ chức."
+    ],
+    "explanation": "Đặt các tùy chọn theo thứ tự sau: phát hiện và phân tích Xác định, phân tích và xác thực các sự cố. chuẩn bị Tiến hành đào tạo về ứng phó sự cố. các hoạt động sau sự cố Ghi lại cách xử lý sự cố. ngăn chặn, loại bỏ và phục hồi Thực hiện các thủ tục để loại bỏ tác động đối với tài sản của tổ chức."
+  },
+  "cert_practice_q25": {
+    "question": "Đặt bảy bước được xác định trong Chuỗi tiêu diệt mạng theo đúng thứ tự.",
+    "options": [],
+    "explanation": ""
+  },
+  "cert_practice_q26": {
+    "question": "Trong giai đoạn phát hiện và phân tích của vòng đời quy trình ứng phó sự cố của NIST, loại dấu hiệu nào được sử dụng để mô tả rằng một sự cố có thể xảy ra trong tương lai?",
+    "options": [
+      "sự hao mòn",
+      "mạo danh",
+      "tiền thân",
+      "chỉ báo"
+    ],
+    "explanation": "Có hai loại dấu hiệu của một sự cố: Tiền thân – dấu hiệu cho thấy một sự cố có thể xảy ra trong tương lai Chỉ báo – dấu hiệu cho thấy một sự cố có thể đã xảy ra hoặc hiện đang xảy ra"
+  },
+  "cert_practice_q27": {
+    "question": "Theo mô hình Cyber ​​Kill Chain, sau khi vũ khí được chuyển đến hệ thống mục tiêu, bước tiếp theo mà kẻ đe dọa sẽ thực hiện là gì?",
+    "options": [
+      "hành động theo mục tiêu",
+      "bóc lột",
+      "vũ khí hóa",
+      "cài đặt"
+    ],
+    "explanation": "Chuỗi tiêu diệt mạng chỉ định bảy bước (hoặc giai đoạn) và trình tự mà tác nhân đe dọa phải hoàn thành để thực hiện một cuộc tấn công: Trinh sát – Tác nhân đe dọa thực hiện nghiên cứu, thu thập thông tin tình báo và chọn mục tiêu. Vũ khí hóa – Tác nhân đe dọa sử dụng thông tin từ giai đoạn trinh sát để phát triển vũ khí chống lại các hệ thống mục tiêu cụ thể. Giao hàng – Vũ khí được truyền đến mục tiêu bằng cách sử dụng vectơ phân phối. Khai thác – Kẻ đe dọa sử dụng vũ khí được cung cấp để phá vỡ lỗ hổng và giành quyền kiểm soát mục tiêu. Cài đặt – Tác nhân đe dọa thiết lập một cửa sau vào hệ thống để cho phép tiếp tục truy cập vào mục tiêu. Lệnh và Kiểm soát (CnC) – Tác nhân đe dọa thiết lập lệnh và kiểm soát (CnC) với hệ thống mục tiêu. Hành động theo mục tiêu – Tác nhân đe dọa có thể thực hiện hành động trên hệ thống mục tiêu, do đó đạt được mục tiêu ban đầu."
+  }
+};

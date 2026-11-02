@@ -1,0 +1,20 @@
+# OS & Editor Files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Archives & Temporary files
+*.7z
+*.zip
+*.rar
+*.tar.gz
+
+# Python cache & temporary scripts
+__pycache__/
+*.pyc
+*.pyo
+scratch/
+test_*.js
+*.log
