@@ -574,7 +574,7 @@
       this.groupCounts = new Map();
       this.matchQuestions = [];
       this.mod1To16Questions = [];
-      this.translations = window.QUESTION_TRANSLATIONS || window.TRANSLATIONS_DATA || window.QUESTIONS_TRANSLATIONS || {};
+      this.translations = window.QUESTION_TRANSLATIONS || window.TRANSLATIONS_DATA || window.QUESTIONS_TRANSLATIONS || window.TRANSLATIONS || {};
       this.starredIds = StorageService.getStarred();
       this.mistakesIds = StorageService.getMistakes();
       this.moduleStats = StorageService.getModuleStats();

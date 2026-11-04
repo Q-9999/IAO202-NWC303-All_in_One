@@ -21,17 +21,17 @@
     "explanation": "Hành động đầu tiên diễn ra khi bật công tắc là POST hoặc tự kiểm tra khi bật nguồn. POST thực hiện các kiểm tra trên CPU, bộ nhớ và flash để chuẩn bị tải bộ tải khởi động."
   },
   "m1-4_q3": {
-    "question": "Quản trị viên phải có những gì để đặt lại mật khẩu bị mất trên bộ định tuyến?",
+    "question": "Quản trị viên phải có những gì để đặt lại mật khẩu bị mất trên router?",
     "options": [
       "một máy chủ TFTP",
       "cáp chéo",
-      "truy cập vào bộ định tuyến khác",
-      "truy cập vật lý vào bộ định tuyến"
+      "truy cập vào router khác",
+      "truy cập vật lý vào router"
     ],
     "explanation": "Cần có quyền truy cập bảng điều khiển vào thiết bị thông qua thiết bị đầu cuối hoặc phần mềm mô phỏng thiết bị đầu cuối trên PC để khôi phục mật khẩu."
   },
   "m1-4_q4": {
-    "question": "Khi định cấu hình một bộ chuyển mạch để truy cập SSH, lệnh nào khác liên quan đến lệnh đăng nhập cục bộ được yêu cầu phải nhập trên bộ chuyển mạch?",
+    "question": "Khi định cấu hình một switch để truy cập SSH, lệnh nào khác liên quan đến lệnh đăng nhập cục bộ được yêu cầu phải nhập trên switch?",
     "options": [
       "kích hoạt mật khẩu bí mật",
       "mật khẩu mật khẩu",
@@ -93,14 +93,14 @@
     "explanation": "SSH cho phép kỹ thuật viên kết nối an toàn với thiết bị mạng từ xa để theo dõi và khắc phục sự cố. HTTP thiết lập các yêu cầu trang web. FTP quản lý việc truyền tập tin. NetBEUI không được định tuyến trên Internet. POP tải thư email từ máy chủ email."
   },
   "m1-4_q10": {
-    "question": "Đặc điểm của giao diện loopback IPv4 trên bộ định tuyến Cisco IOS là gì?​",
+    "question": "Đặc điểm của giao diện loopback IPv4 trên router Cisco IOS là gì?​",
     "options": [
       "Cần có lệnh không tắt máy để đặt giao diện này ở trạng thái LÊN.​",
-      "Nó là một giao diện logic bên trong bộ định tuyến.",
-      "Chỉ có thể bật một giao diện loopback trên bộ định tuyến.​",
+      "Nó là một giao diện logic bên trong router.",
+      "Chỉ có thể bật một giao diện loopback trên router.​",
       "Nó được gán cho một cổng vật lý và có thể được kết nối với các thiết bị khác."
     ],
-    "explanation": "Giao diện loopback là giao diện logic bên trong bộ định tuyến và được tự động đặt ở trạng thái UP, miễn là bộ định tuyến vẫn hoạt động. Nó không được gán cho một cổng vật lý và do đó không bao giờ có thể kết nối được với bất kỳ thiết bị nào khác. Nhiều giao diện loopback có thể được kích hoạt trên bộ định tuyến."
+    "explanation": "Giao diện loopback là giao diện logic bên trong router và được tự động đặt ở trạng thái UP, miễn là router vẫn hoạt động. Nó không được gán cho một cổng vật lý và do đó không bao giờ có thể kết nối được với bất kỳ thiết bị nào khác. Nhiều giao diện loopback có thể được kích hoạt trên router."
   },
   "m1-4_q11": {
     "question": "Kích thước khung Ethernet tối thiểu sẽ không bị bộ thu loại bỏ dưới dạng khung runt là bao nhiêu?",
@@ -126,11 +126,11 @@
     "question": "Việc thêm switch Lớp 2 có tác động gì đến mạng?",
     "options": [
       "sự gia tăng số lượng khung hình bị rơi",
-      "sự gia tăng kích thước của miền quảng bá",
+      "sự gia tăng kích thước của miền broadcast",
       "sự gia tăng số lượng va chạm mạng",
       "sự gia tăng kích thước của miền va chạm"
     ],
-    "explanation": "Việc thêm bộ chuyển mạch Lớp 2 vào mạng sẽ làm tăng số lượng miền xung đột và tăng kích thước của miền quảng bá. Bộ chuyển mạch lớp 2 không làm giảm lượng lưu lượng phát sóng, không làm tăng lượng xung đột mạng và không làm tăng số lượng khung hình bị rớt."
+    "explanation": "Việc thêm switch Lớp 2 vào mạng sẽ làm tăng số lượng miền xung đột và tăng kích thước của miền broadcast. Switch lớp 2 không làm giảm lượng lưu lượng phát sóng, không làm tăng lượng xung đột mạng và không làm tăng số lượng khung hình bị rớt."
   },
   "m1-4_q14": {
     "question": "Đặc điểm nào mô tả chuyển mạch cắt ngang?",
@@ -143,24 +143,24 @@
     "explanation": "Chuyển mạch cắt ngang giúp giảm độ trễ bằng cách chuyển tiếp các khung ngay khi địa chỉ MAC đích và cổng chuyển mạch tương ứng được đọc từ bảng địa chỉ MAC. Phương thức chuyển đổi này không thực hiện bất kỳ việc kiểm tra lỗi nào và không sử dụng bộ đệm để hỗ trợ các tốc độ Ethernet khác nhau. Kiểm tra lỗi và bộ đệm là đặc điểm của chuyển mạch lưu trữ và chuyển tiếp."
   },
   "m1-4_q15": {
-    "question": "Sự khác biệt đáng kể giữa hub và bộ chuyển mạch LAN lớp 2 là gì?",
+    "question": "Sự khác biệt đáng kể giữa hub và switch LAN lớp 2 là gì?",
     "options": [
       "Hub mở rộng miền xung đột và switch chia miền xung đột.",
-      "Hub chia các miền xung đột và switch chia các miền quảng bá.",
-      "Mỗi cổng của hub là một miền xung đột và mỗi cổng của switch là một miền quảng bá.",
+      "Hub chia các miền xung đột và switch chia các miền broadcast.",
+      "Mỗi cổng của hub là một miền xung đột và mỗi cổng của switch là một miền broadcast.",
       "Hub chuyển tiếp các khung và switch chỉ chuyển tiếp các gói."
     ],
-    "explanation": "Các hub chỉ hoạt động ở lớp vật lý, chuyển tiếp các bit dưới dạng tín hiệu dây ra tất cả các cổng và mở rộng miền xung đột của mạng. Chuyển tiếp các khung ở lớp liên kết dữ liệu và mỗi cổng chuyển mạch là một miền xung đột riêng biệt, tạo ra nhiều miền xung đột hơn nhưng nhỏ hơn. Switch không quản lý miền quảng bá vì các khung quảng bá luôn được chuyển tiếp ra tất cả các cổng đang hoạt động."
+    "explanation": "Các hub chỉ hoạt động ở lớp vật lý, chuyển tiếp các bit dưới dạng tín hiệu dây ra tất cả các cổng và mở rộng miền xung đột của mạng. Chuyển tiếp các khung ở lớp liên kết dữ liệu và mỗi cổng chuyển mạch là một miền xung đột riêng biệt, tạo ra nhiều miền xung đột hơn nhưng nhỏ hơn. Switch không quản lý miền broadcast vì các khung broadcast luôn được chuyển tiếp ra tất cả các cổng đang hoạt động."
   },
   "m1-4_q16": {
     "question": "Câu nào đúng về quyết định chuyển tiếp khung chuyển mạch Ethernet?",
     "options": [
       "Quyết định chuyển tiếp khung dựa trên địa chỉ MAC và ánh xạ cổng trong bảng CAM.",
       "Chuyển tiếp khung cắt ngang đảm bảo rằng các khung không hợp lệ luôn bị loại bỏ.",
-      "Chỉ các khung có địa chỉ đích quảng bá mới được chuyển tiếp ra tất cả các cổng chuyển mạch đang hoạt động.",
+      "Chỉ các khung có địa chỉ đích broadcast mới được chuyển tiếp ra tất cả các cổng chuyển mạch đang hoạt động.",
       "Các khung unicast luôn được chuyển tiếp bất kể địa chỉ MAC đích."
     ],
-    "explanation": "Chuyển tiếp khung cắt ngang chỉ đọc tối đa 22 byte đầu tiên của khung, loại trừ trình tự kiểm tra khung và do đó các khung không hợp lệ có thể được chuyển tiếp. Ngoài các khung phát sóng, các khung có địa chỉ MAC đích không có trong CAM cũng bị tràn ra khỏi tất cả các cổng đang hoạt động. Các khung unicast không phải lúc nào cũng được chuyển tiếp. Các khung đã nhận có địa chỉ MAC đích được liên kết với cổng chuyển mạch mà nó được nhận sẽ không được chuyển tiếp vì đích tồn tại trên phân đoạn mạng được kết nối với cổng đó."
+    "explanation": "Chuyển tiếp khung cắt ngang chỉ đọc tối đa 22 byte đầu tiên của khung, loại trừ trình tự kiểm tra khung và do đó các khung không hợp lệ có thể được chuyển tiếp. Ngoài các frame broadcast, các khung có địa chỉ MAC đích không có trong CAM cũng bị tràn ra khỏi tất cả các cổng đang hoạt động. Các khung unicast không phải lúc nào cũng được chuyển tiếp. Các khung đã nhận có địa chỉ MAC đích được liên kết với cổng chuyển mạch mà nó được nhận sẽ không được chuyển tiếp vì đích tồn tại trên phân đoạn mạng được kết nối với cổng đó."
   },
   "m1-4_q17": {
     "question": "Bộ đệm chuyển đổi ảnh hưởng đến hiệu suất mạng như thế nào?",
@@ -180,17 +180,17 @@
       "bộ đệm khung lớn",
       "chuyển mạch nội bộ nhanh"
     ],
-    "explanation": "Các bộ chuyển mạch có nhiều cổng (mật độ cổng cao) sẽ giảm số lượng bộ chuyển mạch cần thiết và giữ một số lưu lượng cục bộ trên bộ chuyển mạch, do đó loại bỏ nhu cầu gửi nó giữa các bộ chuyển mạch."
+    "explanation": "Các switch có nhiều cổng (mật độ cổng cao) sẽ giảm số lượng switch cần thiết và giữ một số lưu lượng cục bộ trên switch, do đó loại bỏ nhu cầu gửi nó giữa các switch."
   },
   "m1-4_q19": {
-    "question": "Thành phần chuyển mạch nào làm giảm lượng thời gian xử lý gói bên trong bộ chuyển mạch?",
+    "question": "Thành phần chuyển mạch nào làm giảm lượng thời gian xử lý gói bên trong switch?",
     "options": [
       "ASIC",
       "bộ xử lý kép",
       "kích thước bộ đệm lớn",
       "RAM lưu trữ và chuyển tiếp"
     ],
-    "explanation": "Các mạch tích hợp dành riêng cho ứng dụng (ASIC) được sử dụng trong các bộ chuyển mạch của Cisco để tăng tốc hoạt động của bộ chuyển mạch để bộ chuyển mạch có thể tăng số lượng cổng mà không làm giảm hiệu suất của bộ chuyển mạch."
+    "explanation": "Các mạch tích hợp dành riêng cho ứng dụng (ASIC) được sử dụng trong các switch của Cisco để tăng tốc hoạt động của switch để switch có thể tăng số lượng cổng mà không làm giảm hiệu suất của switch."
   },
   "m1-4_q20": {
     "question": "Tham khảo sơ đồ kết nối (exhibit). Switch nhận được khung Lớp 2 chứa địa chỉ MAC nguồn là 000b.a023.c501 và địa chỉ MAC đích là 0050.0fae.75aa. Đặt các bước chuyển đổi theo thứ tự chúng xảy ra. (Không phải tất cả các tùy chọn đều được sử dụng.)",
@@ -215,10 +215,10 @@
       "mảnh miễn phí",
       "lưu trữ và chuyển tiếp"
     ],
-    "explanation": "Hai phương pháp được các bộ chuyển mạch sử dụng để truyền khung là chuyển mạch lưu trữ và chuyển tiếp và chuyển mạch cắt ngang. Phương thức lưu trữ và chuyển tiếp thực hiện kiểm tra lỗi trên khung bằng cách sử dụng giá trị chuỗi kiểm tra khung (FCS) trước khi gửi khung. Ngược lại, chuyển mạch cắt ngang sẽ gửi khung ngay khi phần địa chỉ MAC đích của tiêu đề được đọc và xử lý."
+    "explanation": "Hai phương pháp được các switch sử dụng để truyền khung là chuyển mạch lưu trữ và chuyển tiếp và chuyển mạch cắt ngang. Phương thức lưu trữ và chuyển tiếp thực hiện kiểm tra lỗi trên khung bằng cách sử dụng giá trị chuỗi kiểm tra khung (FCS) trước khi gửi khung. Ngược lại, chuyển mạch cắt ngang sẽ gửi khung ngay khi phần địa chỉ MAC đích của tiêu đề được đọc và xử lý."
   },
   "m1-4_q23": {
-    "question": "Tham khảo sơ đồ kết nối (exhibit). Có bao nhiêu miền quảng bá được hiển thị?",
+    "question": "Tham khảo sơ đồ kết nối (exhibit). Có bao nhiêu miền broadcast được hiển thị?",
     "options": [
       "1",
       "4",
@@ -226,18 +226,18 @@
       "16",
       "55"
     ],
-    "explanation": "Bộ định tuyến xác định ranh giới quảng bá, vì vậy mọi liên kết giữa hai bộ định tuyến đều là miền quảng bá. Trong triển lãm, 4 liên kết giữa các bộ định tuyến tạo thành 4 miền quảng bá. Ngoài ra, mỗi mạng LAN được kết nối với bộ định tuyến là một miền quảng bá. 4 mạng LAN trong triển lãm tạo ra thêm 4 miền phát sóng, do đó có tất cả 8 miền phát sóng."
+    "explanation": "Router xác định ranh giới broadcast, vì vậy mọi liên kết giữa hai router đều là miền broadcast. Trong triển lãm, 4 liên kết giữa các router tạo thành 4 miền broadcast. Ngoài ra, mỗi mạng LAN được kết nối với router là một miền broadcast. 4 mạng LAN trong triển lãm tạo ra thêm 4 miền phát sóng, do đó có tất cả 8 miền phát sóng."
   },
   "m1-4_q24": {
     "question": "Trong hai trường hợp nào quản trị viên nên tắt DTP khi quản lý mạng cục bộ? (Chọn hai.)",
     "options": [
-      "khi kết nối bộ chuyển mạch Cisco với bộ chuyển mạch không phải của Cisco",
+      "khi kết nối switch Cisco với switch không phải của Cisco",
       "khi một công tắc hàng xóm sử dụng chế độ DTP của tự động động",
       "khi một switch lân cận sử dụng chế độ động DTP mong muốn",
       "trên các liên kết không nên có trong đường trục",
       "trên các liên kết nên tự động cố gắng kết nối"
     ],
-    "explanation": "Cách tốt nhất của Cisco khuyên bạn nên tắt DTP trên các liên kết không có mục đích kết nối trung kế và khi bộ chuyển mạch Cisco được kết nối với bộ chuyển mạch không phải của Cisco. DTP là cần thiết cho việc đàm phán đường trục động."
+    "explanation": "Cách tốt nhất của Cisco khuyên bạn nên tắt DTP trên các liên kết không có mục đích kết nối trung kế và khi switch Cisco được kết nối với switch không phải của Cisco. DTP là cần thiết cho việc đàm phán đường trục động."
   },
   "m1-4_q25": {
     "question": "Hai đặc điểm nào mô tả VLAN gốc? (Chọn hai.)",
@@ -271,14 +271,14 @@
     "explanation": "Các giao diện được định cấu hình là đường trục không thuộc Vlan và do đó sẽ không hiển thị trong đầu ra của lệnh show vlan summary."
   },
   "m1-4_q28": {
-    "question": "Một mạng chứa nhiều Vlan trải rộng trên nhiều thiết bị chuyển mạch. Điều gì xảy ra khi một thiết bị trong VLAN 20 gửi khung Ethernet quảng bá?",
+    "question": "Một mạng chứa nhiều Vlan trải rộng trên nhiều thiết bị chuyển mạch. Điều gì xảy ra khi một thiết bị trong VLAN 20 gửi khung Ethernet broadcast?",
     "options": [
       "Tất cả các thiết bị trong tất cả các Vlan đều nhìn thấy khung.",
       "Các thiết bị trong VLAN 20 và VLAN quản lý sẽ nhìn thấy khung.",
       "Chỉ các thiết bị trong VLAN 20 mới nhìn thấy khung.",
-      "Chỉ những thiết bị được kết nối với bộ chuyển mạch cục bộ mới nhìn thấy khung."
+      "Chỉ những thiết bị được kết nối với switch cục bộ mới nhìn thấy khung."
     ],
-    "explanation": "Vlan tạo các miền quảng bá hợp lý có thể trải rộng trên nhiều phân đoạn Vlan. Các khung Ethernet được gửi bởi một thiết bị trên một Vlan cụ thể chỉ có thể được nhìn thấy bởi các thiết bị khác trong cùng một Vlan."
+    "explanation": "Vlan tạo các miền broadcast hợp lý có thể trải rộng trên nhiều phân đoạn Vlan. Các khung Ethernet được gửi bởi một thiết bị trên một Vlan cụ thể chỉ có thể được nhìn thấy bởi các thiết bị khác trong cùng một Vlan."
   },
   "m1-4_q29": {
     "question": "Tham khảo sơ đồ kết nối (exhibit). Tất cả các máy trạm được cấu hình đúng trong VLAN 20. Các máy trạm được kết nối với switch SW1 không thể gửi lưu lượng đến các máy trạm trên SW2. Có thể làm gì để khắc phục vấn đề?",
@@ -288,7 +288,7 @@
       "Cấu hình tất cả các máy trạm trên SW1 là một phần của VLAN mặc định.",
       "Cấu hình tất cả các máy trạm trên SW2 là một phần của VLAN gốc."
     ],
-    "explanation": "Việc kích hoạt DTP trên cả hai thiết bị chuyển mạch chỉ đơn giản là cho phép đàm phán về đường trục. Dòng \"Thương lượng về đường trục\" trong đồ họa cho thấy DTP đã được bật. Đồ họa cũng cho thấy Vlan gốc là 1 như thế nào và Vlan mặc định cho bất kỳ bộ chuyển mạch Cisco nào là 1. Đồ họa cho thấy các PC phải ở trong Vlan 20."
+    "explanation": "Việc kích hoạt DTP trên cả hai thiết bị chuyển mạch chỉ đơn giản là cho phép đàm phán về đường trục. Dòng \"Thương lượng về đường trục\" trong đồ họa cho thấy DTP đã được bật. Đồ họa cũng cho thấy Vlan gốc là 1 như thế nào và Vlan mặc định cho bất kỳ switch Cisco nào là 1. Đồ họa cho thấy các PC phải ở trong Vlan 20."
   },
   "m1-4_q30": {
     "question": "Điều gì xảy ra với việc chuyển đổi cổng sau khi VLAN mà chúng được gán bị xóa?",
@@ -308,7 +308,7 @@
       "tự nhiên",
       "tự động"
     ],
-    "explanation": "Tiêu đề tiêu chuẩn IEEE 802.1Q bao gồm thẻ Vlan 4 byte:\n\nLoại - Giá trị 2 byte được gọi là giá trị ID giao thức thẻ (TPID).\nMức độ ưu tiên của người dùng - Giá trị 3 bit hỗ trợ triển khai cấp độ hoặc dịch vụ.\nCanonical Format Identifier (CFI) - Mã định danh 1 bit cho phép truyền các khung Token Ring qua các liên kết Ethernet.\nID Vlan (VID) - Số nhận dạng Vlan 12 bit hỗ trợ tối đa 4096 ID Vlan.\n\n\n32. Tham khảo triển lãm. Cổng G0/1 nên được chỉ định ở chế độ chuyển mạch nào nếu các biện pháp thực hành tốt nhất của Cisco đang được sử dụng?\n\nGiải thích: Chủ đề 3.4.1\nBộ định tuyến được sử dụng để định tuyến giữa hai Vlan, do đó cổng chuyển đổi G0/1 cần được cấu hình ở chế độ trung kế."
+    "explanation": "Tiêu đề tiêu chuẩn IEEE 802.1Q bao gồm thẻ Vlan 4 byte:\n\nLoại - Giá trị 2 byte được gọi là giá trị ID giao thức thẻ (TPID).\nMức độ ưu tiên của người dùng - Giá trị 3 bit hỗ trợ triển khai cấp độ hoặc dịch vụ.\nCanonical Format Identifier (CFI) - Mã định danh 1 bit cho phép truyền các khung Token Ring qua các liên kết Ethernet.\nID Vlan (VID) - Số nhận dạng Vlan 12 bit hỗ trợ tối đa 4096 ID Vlan.\n\n\n32. Tham khảo triển lãm. Cổng G0/1 nên được chỉ định ở chế độ chuyển mạch nào nếu các biện pháp thực hành tốt nhất của Cisco đang được sử dụng?\n\nGiải thích: Chủ đề 3.4.1\nRouter được sử dụng để định tuyến giữa hai Vlan, do đó cổng chuyển đổi G0/1 cần được cấu hình ở chế độ trung kế."
   },
   "m1-4_q33": {
     "question": "Ghép chế độ DTP với chức năng của nó. (Không phải tất cả các tùy chọn đều được sử dụng.)",
@@ -350,7 +350,7 @@
     "options": [
       "Định cấu hình giao diện như một đường trục IEEE 802.1Q.",
       "Gán VLAN thoại cho cổng chuyển đổi.",
-      "Kích hoạt PortFast cây bao trùm trên giao diện.",
+      "Kích hoạt PortFast Spanning Tree (STP) trên giao diện.",
       "Đảm bảo rằng lưu lượng thoại được tin cậy và được gắn thẻ với giá trị ưu tiên CoS.",
       "Thêm một VLAN bằng giọng nói.",
       "Định cấu hình giao diện cổng chuyển đổi với các giao diện phụ.",
@@ -370,7 +370,7 @@
     "explanation": "Trong đầu ra đường trục hiển thị giao diện, giao diện G0/2 của DLS1 không được liệt kê. Điều này cho thấy giao diện có thể chưa được cấu hình làm liên kết trung kế. Trong đầu ra của đường trục hiển thị giao diện, giao diện G0/2 của DLS1 không được liệt kê. Điều này cho thấy giao diện có thể chưa được cấu hình làm liên kết trung kế."
   },
   "m1-4_q39": {
-    "question": "Tham khảo sơ đồ kết nối (exhibit). Nguyên nhân gây ra lỗi hiển thị trong cấu hình định tuyến giữa các VLAN trên bộ định tuyến CiscoVille là gì?",
+    "question": "Tham khảo sơ đồ kết nối (exhibit). Nguyên nhân gây ra lỗi hiển thị trong cấu hình định tuyến giữa các VLAN trên router CiscoVille là gì?",
     "options": [
       "Giao diện gig0/0 không hỗ trợ định tuyến giữa các Vlan.",
       "Lệnh không tắt máy chưa được cấu hình.",
@@ -380,35 +380,35 @@
     "explanation": ""
   },
   "m1-4_q40": {
-    "question": "Tham khảo sơ đồ kết nối (exhibit). Quản trị viên mạng đã cấu hình bộ định tuyến CiscoVille bằng các lệnh trên để cung cấp định tuyến giữa các Vlan. Lệnh nào sẽ được yêu cầu trên một bộ chuyển mạch được kết nối với giao diện Gi0/0 trên bộ định tuyến CiscoVille để cho phép định tuyến giữa các Vlan?​",
+    "question": "Tham khảo sơ đồ kết nối (exhibit). Quản trị viên mạng đã cấu hình router CiscoVille bằng các lệnh trên để cung cấp định tuyến giữa các Vlan. Lệnh nào sẽ được yêu cầu trên một switch được kết nối với giao diện Gi0/0 trên router CiscoVille để cho phép định tuyến giữa các Vlan?​",
     "options": [
       "truy cập chế độ tổng đài",
       "không có tổng đài",
       "trung kế chế độ tổng đài",
       "chế độ switchport năng động mong muốn"
     ],
-    "explanation": "Khi chúng được cấu hình để định tuyến giữa các Vlan, các bộ định tuyến không hỗ trợ giao thức trung kế động được các bộ chuyển mạch sử dụng. Để cấu hình bộ định tuyến trên thiết bị hoạt động, bộ chuyển mạch được kết nối phải sử dụng lệnh chế độ cổng chuyển mạch."
+    "explanation": "Khi chúng được cấu hình để định tuyến giữa các Vlan, các router không hỗ trợ giao thức trung kế động được các switch sử dụng. Để cấu hình router trên thiết bị hoạt động, switch được kết nối phải sử dụng lệnh chế độ cổng chuyển mạch."
   },
   "m1-4_q41": {
-    "question": "Một trường trung học sử dụng VLAN15 cho mạng phòng thí nghiệm và VLAN30 cho mạng giảng viên. Cần phải làm gì để cho phép liên lạc giữa hai Vlan này trong khi sử dụng phương pháp tiếp cận bộ định tuyến trên một thiết bị?",
+    "question": "Một trường trung học sử dụng VLAN15 cho mạng phòng thí nghiệm và VLAN30 cho mạng giảng viên. Cần phải làm gì để cho phép liên lạc giữa hai Vlan này trong khi sử dụng phương pháp tiếp cận router trên một thiết bị?",
     "options": [
       "Cần có một công tắc đa lớp.",
-      "Cần có bộ định tuyến có ít nhất hai giao diện LAN.",
+      "Cần có router có ít nhất hai giao diện LAN.",
       "Cần có hai nhóm switch, mỗi nhóm có các cổng được cấu hình cho một VLAN.",
-      "Cần có một bộ chuyển mạch có cổng được cấu hình làm đường trục khi kết nối với bộ định tuyến."
+      "Cần có một switch có cổng được cấu hình làm đường trục khi kết nối với router."
     ],
-    "explanation": "Với bộ định tuyến trên một thanh, việc định tuyến giữa các Vlan được thực hiện bởi bộ định tuyến có giao diện bộ định tuyến duy nhất được kết nối với cổng chuyển mạch được định cấu hình ở chế độ trung kế. Nhiều giao diện con, mỗi giao diện được cấu hình cho một VLAN, có thể được cấu hình trong một giao diện bộ định tuyến vật lý duy nhất. Các bộ chuyển mạch có thể có các cổng được gán cho các Vlan khác nhau, nhưng việc giao tiếp giữa các Vlan đó yêu cầu chức năng định tuyến từ bộ định tuyến. Bộ chuyển mạch nhiều lớp không được sử dụng theo cách tiếp cận bộ định tuyến trên một thanh để định tuyến giữa các Vlan."
+    "explanation": "Với router trên một thanh, việc định tuyến giữa các Vlan được thực hiện bởi router có giao diện router duy nhất được kết nối với cổng chuyển mạch được định cấu hình ở chế độ trung kế. Nhiều giao diện con, mỗi giao diện được cấu hình cho một VLAN, có thể được cấu hình trong một giao diện router vật lý duy nhất. Các switch có thể có các cổng được gán cho các Vlan khác nhau, nhưng việc giao tiếp giữa các Vlan đó yêu cầu chức năng định tuyến từ router. Switch nhiều lớp không được sử dụng theo cách tiếp cận router trên một thanh để định tuyến giữa các Vlan."
   },
   "m1-4_q42": {
-    "question": "Khi định tuyến một số lượng lớn Vlan, hai nhược điểm của việc sử dụng phương pháp định tuyến giữa các Vlan của bộ định tuyến thay vì phương pháp định tuyến giữa các Vlan chuyển đổi nhiều lớp là gì? (Chọn hai.)",
+    "question": "Khi định tuyến một số lượng lớn Vlan, hai nhược điểm của việc sử dụng phương pháp định tuyến giữa các Vlan của router thay vì phương pháp định tuyến giữa các Vlan chuyển đổi nhiều lớp là gì? (Chọn hai.)",
     "options": [
       "Cần có nhiều SVI.",
-      "Cần có một bộ định tuyến chuyên dụng.",
+      "Cần có một router chuyên dụng.",
       "Router-on-a-stick yêu cầu các giao diện phụ phải được cấu hình trên cùng các mạng con.",
-      "Bộ định tuyến trên một thiết bị yêu cầu nhiều giao diện vật lý trên bộ định tuyến.",
+      "Router trên một thiết bị yêu cầu nhiều giao diện vật lý trên router.",
       "Nhiều giao diện phụ có thể ảnh hưởng đến tốc độ luồng lưu lượng."
     ],
-    "explanation": "Với phương pháp định tuyến liên Vlan trên bộ định tuyến, cần có một bộ định tuyến chuyên dụng. Nó chỉ cần một giao diện vật lý trên bộ định tuyến để định tuyến lưu lượng giữa nhiều Vlan, bằng cách sử dụng các giao diện phụ trên một giao diện vật lý. Mặt khác, do lưu lượng của tất cả các Vlan sẽ phải đi qua cùng một giao diện vật lý nên thông lượng sẽ bị ảnh hưởng. Ngoài ra, một switch đa lớp có thể sử dụng nhiều SVI để thực hiện định tuyến giữa các Vlan."
+    "explanation": "Với phương pháp định tuyến liên Vlan trên router, cần có một router chuyên dụng. Nó chỉ cần một giao diện vật lý trên router để định tuyến lưu lượng giữa nhiều Vlan, bằng cách sử dụng các giao diện phụ trên một giao diện vật lý. Mặt khác, do lưu lượng của tất cả các Vlan sẽ phải đi qua cùng một giao diện vật lý nên thông lượng sẽ bị ảnh hưởng. Ngoài ra, một switch đa lớp có thể sử dụng nhiều SVI để thực hiện định tuyến giữa các Vlan."
   },
   "m1-4_q43": {
     "question": "Tham khảo sơ đồ kết nối (exhibit). Quản trị viên mạng đang xác minh cấu hình định tuyến giữa các Vlan. Người dùng phàn nàn rằng các PC trên các Vlan khác nhau không thể giao tiếp. Dựa vào kết quả đầu ra, hai lỗi cấu hình trên giao diện switch Gi1/1 là gì? (Chọn hai.)",
@@ -419,7 +419,7 @@
       "Quá trình đàm phán trung kế được bật trên Gi1/1.",
       "Giao thức đóng gói đường trục được cấu hình sai."
     ],
-    "explanation": "Với các phương thức định tuyến giữa các Vlan cũ, các cổng chuyển mạch kết nối với bộ định tuyến phải được cấu hình làm chế độ truy cập và được chỉ định các Vlan thích hợp. Trong trường hợp này, giao diện Gi1/1 phải ở chế độ truy cập với VLAN 10 được chỉ định. Các tùy chọn khác là cài đặt mặc định trên switch và không ảnh hưởng đến định tuyến giữa các Vlan cũ."
+    "explanation": "Với các phương thức định tuyến giữa các Vlan cũ, các cổng chuyển mạch kết nối với router phải được cấu hình làm chế độ truy cập và được chỉ định các Vlan thích hợp. Trong trường hợp này, giao diện Gi1/1 phải ở chế độ truy cập với VLAN 10 được chỉ định. Các tùy chọn khác là cài đặt mặc định trên switch và không ảnh hưởng đến định tuyến giữa các Vlan cũ."
   },
   "m1-4_q44": {
     "question": "Tham khảo sơ đồ kết nối (exhibit). Quản trị viên mạng đang xác minh cấu hình định tuyến giữa các Vlan. Người dùng phàn nàn rằng PC2 không thể giao tiếp với PC1. Dựa trên kết quả đầu ra, nguyên nhân có thể của vấn đề là gì?",
@@ -430,30 +430,30 @@
       "Lệnh không tắt máy không được nhập vào các giao diện phụ.",
       "Lệnh đóng gói dot1Q 5 chứa VLAN sai."
     ],
-    "explanation": "Trong bộ định tuyến trên thanh, cấu hình giao diện phụ phải khớp với số Vlan trong lệnh đóng gói, trong trường hợp này, nên sử dụng lệnh đóng gói dot1Q 10 cho Vlan 10. Vì giao diện phụ được sử dụng nên không cần định cấu hình IP trên giao diện vật lý Gi0/0. Chế độ trung kế được cấu hình trên cổng switch kết nối với bộ định tuyến. Các giao diện phụ được bật khi chúng được thêm vào."
+    "explanation": "Trong router trên thanh, cấu hình giao diện phụ phải khớp với số Vlan trong lệnh đóng gói, trong trường hợp này, nên sử dụng lệnh đóng gói dot1Q 10 cho Vlan 10. Vì giao diện phụ được sử dụng nên không cần định cấu hình IP trên giao diện vật lý Gi0/0. Chế độ trung kế được cấu hình trên cổng switch kết nối với router. Các giao diện phụ được bật khi chúng được thêm vào."
   },
   "m1-4_q45": {
-    "question": "Tham khảo sơ đồ kết nối (exhibit). Quản trị viên mạng đã cấu hình bộ định tuyến CiscoVille bằng các lệnh trên để cung cấp định tuyến giữa các Vlan. Loại cổng nào sẽ được yêu cầu trên bộ chuyển mạch được kết nối với Gi0/0 trên bộ định tuyến CiscoVille để cho phép định tuyến giữa các Vlan?",
+    "question": "Tham khảo sơ đồ kết nối (exhibit). Quản trị viên mạng đã cấu hình router CiscoVille bằng các lệnh trên để cung cấp định tuyến giữa các Vlan. Loại cổng nào sẽ được yêu cầu trên switch được kết nối với Gi0/0 trên router CiscoVille để cho phép định tuyến giữa các Vlan?",
     "options": [
       "cổng định tuyến",
       "cổng truy cập",
       "cổng trung kế",
       "SVI"
     ],
-    "explanation": "Để cho phép cấu hình bộ định tuyến trên thiết bị hoạt động, một bộ chuyển mạch phải được kết nối với bộ định tuyến thông qua cổng trung kế để mang các Vlan được định tuyến. SVI sẽ được sử dụng trên bộ chuyển mạch nhiều lớp trong đó bộ chuyển mạch đang thực hiện định tuyến giữa các Vlan."
+    "explanation": "Để cho phép cấu hình router trên thiết bị hoạt động, một switch phải được kết nối với router thông qua cổng trung kế để mang các Vlan được định tuyến. SVI sẽ được sử dụng trên switch nhiều lớp trong đó switch đang thực hiện định tuyến giữa các Vlan."
   },
   "m1-4_q46": {
-    "question": "Tham khảo sơ đồ kết nối (exhibit). Quản trị viên mạng đang định cấu hình RT1 để định tuyến giữa các Vlan. Công tắc được cấu hình chính xác và hoạt động. Host1, Host2 và Host3 không thể giao tiếp với nhau. Dựa trên cấu hình bộ định tuyến, điều gì gây ra sự cố?",
+    "question": "Tham khảo sơ đồ kết nối (exhibit). Quản trị viên mạng đang định cấu hình RT1 để định tuyến giữa các Vlan. Công tắc được cấu hình chính xác và hoạt động. Host1, Host2 và Host3 không thể giao tiếp với nhau. Dựa trên cấu hình router, điều gì gây ra sự cố?",
     "options": [
       "Giao diện Fa0/0 thiếu thông tin cấu hình địa chỉ IP.",
       "Địa chỉ IP trên các giao diện con không khớp đúng với VLAN.",
       "Mỗi giao diện con của Fa0/0 cần có lệnh tắt máy riêng biệt.",
-      "Bộ định tuyến không hỗ trợ đóng gói 802.1Q trên các giao diện phụ."
+      "Router không hỗ trợ đóng gói 802.1Q trên các giao diện phụ."
     ],
     "explanation": "Vì Máy chủ 1 (trong VLAN 20) có IP 172.18.1.10/27 nên giao diện con Fa0/0.1 phải được cấu hình với địa chỉ IP trong mạng 172.168.1.0/27. Tương tự, Fa0/0.2 phải có địa chỉ IP trong mạng 172.168.1.64/27 và Fa0/0.3 phải có địa chỉ IP trong mạng 172.168.1.96/27."
   },
   "m1-4_q47": {
-    "question": "Tham khảo sơ đồ kết nối (exhibit). Cấu hình bộ định tuyến trên một thanh đã được triển khai cho các Vlan 15, 30 và 45, theo đầu ra lệnh show Running-config. Các PC trên VLAN 45 đang sử dụng mạng 172.16.45.0 /24 đang gặp sự cố khi kết nối với các PC trên VLAN 30 trong mạng 172.16.30.0 /24. Lỗi nào có nhiều khả năng gây ra sự cố này?​",
+    "question": "Tham khảo sơ đồ kết nối (exhibit). Cấu hình router trên một thanh đã được triển khai cho các Vlan 15, 30 và 45, theo đầu ra lệnh show Running-config. Các PC trên VLAN 45 đang sử dụng mạng 172.16.45.0 /24 đang gặp sự cố khi kết nối với các PC trên VLAN 30 trong mạng 172.16.30.0 /24. Lỗi nào có nhiều khả năng gây ra sự cố này?​",
     "options": [
       "VLAN sai đã được cấu hình trên GigabitEthernet 0/0.45.",
       "Lệnh không tắt máy bị thiếu trên GigabitEthernet 0/0.30.",
@@ -470,10 +470,10 @@
       "Nó thường được sử dụng như một liên kết WAN.",
       "Nó không thể có một địa chỉ IP được gán cho nó."
     ],
-    "explanation": "Cổng định tuyến trên bộ chuyển mạch Lớp 3 thường được sử dụng để kết nối giữa bộ chuyển mạch lớp phân phối và lớp lõi hoặc giữa bộ chuyển mạch Lớp 3 và bộ định tuyến. Cổng này không nhận được các lệnh VLAN hoặc trunking được gán cho nó. Thay vào đó, cổng được lập trình bằng địa chỉ IP. Điều này thường được sử dụng khi định tuyến tĩnh được cấu hình trên bộ chuyển mạch hoặc khi giao thức định tuyến đang được chạy giữa bộ chuyển mạch Lớp 3 và bộ định tuyến hoặc bộ chuyển mạch Lớp 3 khác."
+    "explanation": "Cổng định tuyến trên switch Lớp 3 thường được sử dụng để kết nối giữa switch lớp phân phối và lớp lõi hoặc giữa switch Lớp 3 và router. Cổng này không nhận được các lệnh VLAN hoặc trunking được gán cho nó. Thay vào đó, cổng được lập trình bằng địa chỉ IP. Điều này thường được sử dụng khi định tuyến tĩnh được cấu hình trên switch hoặc khi giao thức định tuyến đang được chạy giữa switch Lớp 3 và router hoặc switch Lớp 3 khác."
   },
   "m1-4_q49": {
-    "question": "Tham khảo sơ đồ kết nối (exhibit). Quản trị viên mạng cần định cấu hình bộ định tuyến trên thiết bị cho các mạng được hiển thị. Sẽ phải tạo bao nhiêu giao diện con trên bộ định tuyến nếu mỗi Vlan được hiển thị sẽ được định tuyến và mỗi Vlan có giao diện con riêng?",
+    "question": "Tham khảo sơ đồ kết nối (exhibit). Quản trị viên mạng cần định cấu hình router trên thiết bị cho các mạng được hiển thị. Sẽ phải tạo bao nhiêu giao diện con trên router nếu mỗi Vlan được hiển thị sẽ được định tuyến và mỗi Vlan có giao diện con riêng?",
     "options": [
       "1",
       "2",
@@ -481,10 +481,10 @@
       "4",
       "5"
     ],
-    "explanation": "Dựa trên các địa chỉ IP và mặt nạ được cung cấp, PC, máy in, điện thoại IP và Vlan quản lý chuyển mạch đều nằm trên các Vlan khác nhau. Tình huống này sẽ yêu cầu bốn giao diện phụ trên bộ định tuyến."
+    "explanation": "Dựa trên các địa chỉ IP và mặt nạ được cung cấp, PC, máy in, điện thoại IP và Vlan quản lý chuyển mạch đều nằm trên các Vlan khác nhau. Tình huống này sẽ yêu cầu bốn giao diện phụ trên router."
   },
   "m1-4_q50": {
-    "question": "Một kỹ thuật viên đang cấu hình bộ chuyển mạch Cisco 2960 mới. Tác dụng của việc ban hành lệnh BranchSw(config-if)# mdix auto là gì?",
+    "question": "Một kỹ thuật viên đang cấu hình switch Cisco 2960 mới. Tác dụng của việc ban hành lệnh BranchSw(config-if)# mdix auto là gì?",
     "options": [
       "Nó tự động điều chỉnh cổng để cho phép kết nối thiết bị sử dụng cáp thẳng hoặc cáp chéo.",
       "Nó áp dụng địa chỉ IPv4 cho giao diện ảo.",
@@ -492,10 +492,10 @@
       "Nó cho phép cấu hình địa chỉ IPv6 trên giao diện vật lý của switch.",
       "Nó cập nhật bảng địa chỉ MAC cho cổng liên quan."
     ],
-    "explanation": "Lệnh mdix auto (Media Dependent Interface Crossover) kích hoạt tính năng phát hiện cáp tự động trên giao diện switch. Khi được bật, bộ chuyển mạch sẽ tự động phát hiện loại cáp cần thiết (xuyên thẳng hoặc chéo) để kết nối và định cấu hình bên trong các chân đồng giao diện để thiết lập liên kết. Điều này giúp loại bỏ sự cần thiết phải trao đổi cáp vật lý. Để tính năng này hoạt động bình thường, cả tốc độ và song công của giao diện phải được đặt thành tự động (tốc độ tự động và tự động song công)."
+    "explanation": "Lệnh mdix auto (Media Dependent Interface Crossover) kích hoạt tính năng phát hiện cáp tự động trên giao diện switch. Khi được bật, switch sẽ tự động phát hiện loại cáp cần thiết (xuyên thẳng hoặc chéo) để kết nối và định cấu hình bên trong các chân đồng giao diện để thiết lập liên kết. Điều này giúp loại bỏ sự cần thiết phải trao đổi cáp vật lý. Để tính năng này hoạt động bình thường, cả tốc độ và song công của giao diện phải được đặt thành tự động (tốc độ tự động và tự động song công)."
   },
   "m1-4_q51": {
-    "question": "Một kỹ thuật viên đang cấu hình bộ chuyển mạch Cisco 2960 mới. Tác dụng của việc ban hành lệnh BranchSw(config-if)# địa chỉ IP 172.18.33.88 255.255.255.0 là gì?",
+    "question": "Một kỹ thuật viên đang cấu hình switch Cisco 2960 mới. Tác dụng của việc ban hành lệnh BranchSw(config-if)# địa chỉ IP 172.18.33.88 255.255.255.0 là gì?",
     "options": [
       "Nó áp dụng địa chỉ IPv4 cho giao diện ảo.",
       "Nó áp dụng địa chỉ IPv6 cho giao diện ảo.",
@@ -503,10 +503,10 @@
       "Nó cho phép cấu hình địa chỉ IPv6 trên giao diện vật lý của switch.",
       "Nó cập nhật bảng địa chỉ MAC cho cổng liên quan."
     ],
-    "explanation": "Trên bộ chuyển mạch Lớp 2 như Cisco 2960, các cổng vật lý không hỗ trợ trực tiếp địa chỉ IP của lớp mạng. Để kích hoạt quản lý từ xa (chẳng hạn như SSH hoặc Telnet) và cho phép switch giao tiếp qua mạng, địa chỉ IP phải được gán cho Switch Virtual Interface (SVI), đây là giao diện logic (thường là giao diện vlan 1 theo mặc định).\nDo đó, khi kỹ thuật viên đưa ra lệnh này trong chế độ cấu hình giao diện ảo thích hợp, tác động trực tiếp là nó sẽ áp dụng địa chỉ IPv4 cho giao diện ảo."
+    "explanation": "Trên switch Lớp 2 như Cisco 2960, các cổng vật lý không hỗ trợ trực tiếp địa chỉ IP của lớp mạng. Để kích hoạt quản lý từ xa (chẳng hạn như SSH hoặc Telnet) và cho phép switch giao tiếp qua mạng, địa chỉ IP phải được gán cho Switch Virtual Interface (SVI), đây là giao diện logic (thường là giao diện vlan 1 theo mặc định).\nDo đó, khi kỹ thuật viên đưa ra lệnh này trong chế độ cấu hình giao diện ảo thích hợp, tác động trực tiếp là nó sẽ áp dụng địa chỉ IPv4 cho giao diện ảo."
   },
   "m1-4_q52": {
-    "question": "Một kỹ thuật viên đang cấu hình bộ chuyển mạch Cisco 2960 mới. Tác dụng của việc ban hành lệnh đầu cuối cấu hình BranchSw# là gì?",
+    "question": "Một kỹ thuật viên đang cấu hình switch Cisco 2960 mới. Tác dụng của việc ban hành lệnh đầu cuối cấu hình BranchSw# là gì?",
     "options": [
       "Nó vào chế độ cấu hình toàn cầu.",
       "Nó vào chế độ cấu hình cho giao diện ảo chuyển đổi.",
@@ -517,7 +517,7 @@
     "explanation": "Lệnh cấu hình đầu cuối được thực thi từ chế độ EXEC đặc quyền (được biểu thị bằng ký hiệu # trong dấu nhắc BranchSW#) và được sử dụng để chuyển thiết bị sang chế độ cấu hình chung. Khi ở chế độ này, lời nhắc chuyển đổi sẽ thay đổi thành BranchSW(config)#, cho phép quản trị viên thực hiện các thay đổi cấu hình ảnh hưởng đến toàn bộ thiết bị. Các tùy chọn khác, chẳng hạn như lưu cấu hình (sao chép Running-config startup-config) hoặc tắt giao diện (tắt máy), yêu cầu các lệnh hoàn toàn khác."
   },
   "m1-4_q53": {
-    "question": "Một kỹ thuật viên đang cấu hình bộ chuyển mạch Cisco 2960 mới. Tác dụng của việc ban hành lệnh đầu cuối cấu hình BranchSw# là gì?",
+    "question": "Một kỹ thuật viên đang cấu hình switch Cisco 2960 mới. Tác dụng của việc ban hành lệnh đầu cuối cấu hình BranchSw# là gì?",
     "options": [
       "Nó vào chế độ cấu hình toàn cầu.",
       "Nó lưu cấu hình đang chạy vào NVRAM.",
@@ -528,7 +528,7 @@
     "explanation": "Lệnh cấu hình đầu cuối được thực thi từ chế độ EXEC đặc quyền (được biểu thị bằng ký hiệu # trong dấu nhắc BranchSW#) và được sử dụng để chuyển thiết bị sang chế độ cấu hình chung. Khi ở chế độ này, lời nhắc chuyển đổi sẽ thay đổi thành BranchSW(config)#, cho phép quản trị viên thực hiện các thay đổi cấu hình ảnh hưởng đến toàn bộ thiết bị. Các tùy chọn khác, chẳng hạn như lưu cấu hình (sao chép Running-config startup-config) hoặc tắt giao diện (tắt máy), yêu cầu các lệnh hoàn toàn khác."
   },
   "m1-4_q54": {
-    "question": "Một kỹ thuật viên đang cấu hình bộ chuyển mạch Cisco 2960 mới. Tác dụng của việc ban hành lệnh tắt máy BranchSw(config-if)# là gì?",
+    "question": "Một kỹ thuật viên đang cấu hình switch Cisco 2960 mới. Tác dụng của việc ban hành lệnh tắt máy BranchSw(config-if)# là gì?",
     "options": [
       "Nó vô hiệu hóa giao diện chuyển đổi ảo hoặc vật lý.",
       "Nó lưu cấu hình đang chạy vào NVRAM.",
@@ -539,7 +539,7 @@
     "explanation": "Lệnh tắt máy được sử dụng trong Cisco IOS để vô hiệu hóa hoặc tắt một giao diện cụ thể về mặt quản trị. Điều này áp dụng cho cả giao diện vật lý (chẳng hạn như giao diện FastEthernet 0/1) và giao diện ảo/logic (chẳng hạn như giao diện SVI giống như giao diện VLAN 10).\nKhi được thực thi trong chế độ cấu hình giao diện (config-if), giao diện sẽ ngay lập tức chuyển sang trạng thái “Không hoạt động quản trị”, tạm dừng hoàn toàn tất cả lưu lượng dữ liệu qua đó. Để đảo ngược hiệu ứng này và kích hoạt lại giao diện, thay vào đó phải sử dụng lệnh nghịch đảo không tắt máy."
   },
   "m1-4_q55": {
-    "question": "Một kỹ thuật viên đang cấu hình bộ chuyển mạch Cisco 2960 mới. Tác dụng của việc ban hành lệnh tắt máy BranchSw(config-if)# là gì?",
+    "question": "Một kỹ thuật viên đang cấu hình switch Cisco 2960 mới. Tác dụng của việc ban hành lệnh tắt máy BranchSw(config-if)# là gì?",
     "options": [
       "Nó vô hiệu hóa giao diện chuyển đổi ảo hoặc vật lý.",
       "Nó áp dụng địa chỉ IPv6 cho giao diện ảo.",
@@ -550,7 +550,7 @@
     "explanation": "Lệnh tắt máy được sử dụng trong Cisco IOS để vô hiệu hóa hoặc tắt một giao diện cụ thể về mặt quản trị. Điều này áp dụng cho cả giao diện vật lý (chẳng hạn như giao diện FastEthernet 0/1) và giao diện ảo/logic (chẳng hạn như giao diện SVI giống như giao diện VLAN 10).\nKhi được thực thi trong chế độ cấu hình giao diện (config-if), giao diện sẽ ngay lập tức chuyển sang trạng thái “Không hoạt động quản trị”, tạm dừng hoàn toàn tất cả lưu lượng dữ liệu qua đó. Để đảo ngược hiệu ứng này và kích hoạt lại giao diện, thay vào đó phải sử dụng lệnh nghịch đảo không tắt máy."
   },
   "m1-4_q56": {
-    "question": "Một kỹ thuật viên đang cấu hình bộ chuyển mạch Cisco 2960 mới. Tác dụng của việc ban hành lệnh BranchSw(config-if)# ipv6 address 2001:db8:a2b4:88::1/64 là gì?",
+    "question": "Một kỹ thuật viên đang cấu hình switch Cisco 2960 mới. Tác dụng của việc ban hành lệnh BranchSw(config-if)# ipv6 address 2001:db8:a2b4:88::1/64 là gì?",
     "options": [
       "Nó áp dụng địa chỉ IPv6 cho giao diện ảo.",
       "Nó kích hoạt giao diện chuyển đổi ảo hoặc vật lý.",
@@ -558,10 +558,10 @@
       "Nó cho phép cấu hình địa chỉ IPv6 trên giao diện vật lý của switch.",
       "Nó cập nhật bảng địa chỉ MAC cho cổng liên quan."
     ],
-    "explanation": "Trên bộ chuyển mạch Lớp 2 như Cisco Catalyst 2960, các cổng vật lý (như FastEthernet hoặc GigabitEthernet) hoạt động nghiêm ngặt ở Lớp liên kết dữ liệu (Lớp 2). Do đó, bạn không thể gán trực tiếp địa chỉ IP lớp 3 (IPv4 hoặc IPv6) cho giao diện vật lý.\nĐể bộ chuyển đổi Lớp 2 có kết nối IP - cần thiết để quản lý từ xa thông qua SSH, Telnet hoặc Web UI, cũng như liên lạc với các thiết bị mạng khác - địa chỉ IP phải được gán cho Giao diện ảo chuyển đổi (SVI), chẳng hạn như giao diện vlan 1.\nDo đó, khi kỹ thuật viên thực thi lệnh này trong chế độ cấu hình giao diện (config-if), họ đang định cấu hình giao diện logic/ảo, áp dụng thành công địa chỉ IPv6 unicast toàn cầu cho SVI cụ thể đó."
+    "explanation": "Trên switch Lớp 2 như Cisco Catalyst 2960, các cổng vật lý (như FastEthernet hoặc GigabitEthernet) hoạt động nghiêm ngặt ở Lớp liên kết dữ liệu (Lớp 2). Do đó, bạn không thể gán trực tiếp địa chỉ IP lớp 3 (IPv4 hoặc IPv6) cho giao diện vật lý.\nĐể bộ chuyển đổi Lớp 2 có kết nối IP - cần thiết để quản lý từ xa thông qua SSH, Telnet hoặc Web UI, cũng như liên lạc với các thiết bị mạng khác - địa chỉ IP phải được gán cho Giao diện ảo chuyển đổi (SVI), chẳng hạn như giao diện vlan 1.\nDo đó, khi kỹ thuật viên thực thi lệnh này trong chế độ cấu hình giao diện (config-if), họ đang định cấu hình giao diện logic/ảo, áp dụng thành công địa chỉ IPv6 unicast toàn cầu cho SVI cụ thể đó."
   },
   "m1-4_q57": {
-    "question": "Một kỹ thuật viên đang cấu hình bộ chuyển mạch Cisco 2960 mới. Tác dụng của việc ban hành lệnh thoát BranchSw(config-if)# là gì?",
+    "question": "Một kỹ thuật viên đang cấu hình switch Cisco 2960 mới. Tác dụng của việc ban hành lệnh thoát BranchSw(config-if)# là gì?",
     "options": [
       "Nó trở về chế độ cấu hình toàn cầu.",
       "Nó trở về chế độ đặc quyền.",
@@ -572,7 +572,7 @@
     "explanation": "Giao diện dòng lệnh Cisco IOS (CLI) sử dụng cấu trúc phân cấp nghiêm ngặt. Khi lời nhắc hiển thị (config-if)#, nó cho biết kỹ thuật viên hiện đang ở trong chế độ phụ cấu hình giao diện.\nViệc đưa ra lệnh thoát sẽ đưa người dùng quay lại chính xác một cấp trong hệ thống phân cấp lệnh. Kết quả là switch rời khỏi chế độ phụ giao diện và quay trở lại chế độ cấu hình chung, thay đổi lời nhắc CLI trở lại nhánhSW(config)#."
   },
   "m1-4_q58": {
-    "question": "Một kỹ thuật viên đang cấu hình bộ chuyển mạch Cisco 2960 mới. Tác dụng của lệnh kích hoạt BranchSw> là gì?",
+    "question": "Một kỹ thuật viên đang cấu hình switch Cisco 2960 mới. Tác dụng của lệnh kích hoạt BranchSw> là gì?",
     "options": [
       "Nó vào chế độ đặc quyền.",
       "Nó vào chế độ cấu hình toàn cầu.",
@@ -583,7 +583,7 @@
     "explanation": "Lệnh kích hoạt được thực thi từ chế độ EXEC của người dùng (được xác định bằng ký hiệu > trong dấu nhắc nhánhSW>) và được sử dụng để chuyển thiết bị sang chế độ EXEC đặc quyền. Khi lệnh này được nhập, dấu nhắc chuyển đổi sẽ thay đổi thành nhánhSW#, cấp cho quản trị viên quyền truy cập vào các lệnh xác minh và giám sát cấp cao hơn cũng như khả năng điều hướng vào chế độ cấu hình chung."
   },
   "m1-4_q59": {
-    "question": "Một kỹ thuật viên đang cấu hình bộ chuyển mạch Cisco 2960 mới. Tác dụng của việc ban hành lệnh song công BranchSw(config-if)# là gì?",
+    "question": "Một kỹ thuật viên đang cấu hình switch Cisco 2960 mới. Tác dụng của việc ban hành lệnh song công BranchSw(config-if)# là gì?",
     "options": [
       "Nó cho phép dữ liệu truyền theo cả hai hướng cùng lúc trên giao diện.",
       "Nó cho phép dữ liệu chỉ truyền theo một hướng tại một thời điểm trên giao diện",
@@ -621,7 +621,7 @@
       "dữ liệu Vlan",
       "quản lý VLAN"
     ],
-    "explanation": "Trong cấu hình xuất xưởng của bộ chuyển mạch Cisco, Vlan mặc định (Vlan 1) đóng vai trò cơ bản: đó là Vlan dữ liệu mặc định, Vlan gốc mặc định và cũng là Vlan quản lý ban đầu. Điều này có nghĩa là trước khi áp dụng bất kỳ cấu hình tùy chỉnh nào, giao diện ảo của switch (giao diện vlan 1) là giao diện logic hoạt động được sử dụng để gán địa chỉ IP cho việc quản lý từ xa. Tuy nhiên, do các biện pháp bảo mật tốt nhất, chúng tôi khuyên bạn nên thay đổi Vlan quản lý thành một Vlan chuyên dụng, duy nhất tách biệt với Vlan 1."
+    "explanation": "Trong cấu hình xuất xưởng của switch Cisco, Vlan mặc định (Vlan 1) đóng vai trò cơ bản: đó là Vlan dữ liệu mặc định, Vlan gốc mặc định và cũng là Vlan quản lý ban đầu. Điều này có nghĩa là trước khi áp dụng bất kỳ cấu hình tùy chỉnh nào, giao diện ảo của switch (giao diện vlan 1) là giao diện logic hoạt động được sử dụng để gán địa chỉ IP cho việc quản lý từ xa. Tuy nhiên, do các biện pháp bảo mật tốt nhất, chúng tôi khuyên bạn nên thay đổi Vlan quản lý thành một Vlan chuyên dụng, duy nhất tách biệt với Vlan 1."
   },
   "m1-4_q64": {
     "question": "Loại Vlan nào được thiết kế để có độ trễ dưới 150 ms trên mạng?",
@@ -651,7 +651,7 @@
       "VLAN trung kế",
       "giọng nói Vlan"
     ],
-    "explanation": "Vlan quản lý là bất kỳ Vlan nào được cấu hình để cung cấp quyền truy cập quản lý từ xa vào một bộ chuyển mạch. Lưu lượng quản lý mạng như SSH, Telnet, HTTPS, HTTP và SNMP được chỉ định cụ thể cho Vlan này để đảm bảo rằng nhân viên CNTT có thể định cấu hình, giám sát và khắc phục sự cố các thiết bị mạng một cách an toàn. Điều này tách biệt lưu lượng quản lý cơ sở hạ tầng quan trọng khỏi lưu lượng dữ liệu người dùng thông thường. Theo mặc định, các thiết bị chuyển mạch của Cisco sử dụng Vlan 1 làm Vlan quản lý ban đầu, mặc dù các biện pháp bảo mật tốt nhất yêu cầu thay đổi điều này thành một Vlan chuyên dụng, duy nhất."
+    "explanation": "Vlan quản lý là bất kỳ Vlan nào được cấu hình để cung cấp quyền truy cập quản lý từ xa vào một switch. Lưu lượng quản lý mạng như SSH, Telnet, HTTPS, HTTP và SNMP được chỉ định cụ thể cho Vlan này để đảm bảo rằng nhân viên CNTT có thể định cấu hình, giám sát và khắc phục sự cố các thiết bị mạng một cách an toàn. Điều này tách biệt lưu lượng quản lý cơ sở hạ tầng quan trọng khỏi lưu lượng dữ liệu người dùng thông thường. Theo mặc định, các thiết bị chuyển mạch của Cisco sử dụng Vlan 1 làm Vlan quản lý ban đầu, mặc dù các biện pháp bảo mật tốt nhất yêu cầu thay đổi điều này thành một Vlan chuyên dụng, duy nhất."
   },
   "m1-4_q68": {
     "question": "Loại VLAN nào hỗ trợ lưu lượng không được gắn thẻ?",
@@ -681,7 +681,7 @@
       "kết thúc",
       "không tắt máy"
     ],
-    "explanation": "Theo mặc định, tất cả các giao diện bộ định tuyến đều bị tắt. Để hiển thị các giao diện, quản trị viên phải đưa ra lệnh không tắt trong chế độ giao diện."
+    "explanation": "Theo mặc định, tất cả các giao diện router đều bị tắt. Để hiển thị các giao diện, quản trị viên phải đưa ra lệnh không tắt trong chế độ giao diện."
   },
   "m1-4_q71": {
     "question": "Tham khảo sơ đồ kết nối (exhibit). Quản trị viên mạng muốn cấu hình Switch1 để cho phép kết nối SSH và cấm kết nối Telnet. Quản trị mạng nên thay đổi cấu hình hiển thị như thế nào để đáp ứng yêu cầu?",
@@ -698,21 +698,21 @@
     "options": [
       "tường lửa kết nối với hai nhà cung cấp Internet",
       "switch mật độ cổng cao",
-      "một bộ định tuyến có hai cổng Ethernet",
-      "một bộ định tuyến có ba cổng Ethernet"
+      "một router có hai cổng Ethernet",
+      "một router có ba cổng Ethernet"
     ],
-    "explanation": "Bộ chuyển mạch cung cấp khả năng phân đoạn vi mô để một thiết bị không cạnh tranh cùng băng thông mạng Ethernet với một thiết bị mạng khác, do đó thực tế loại bỏ xung đột. Switch mật độ cổng cao cung cấp khả năng kết nối rất nhanh cho nhiều thiết bị."
+    "explanation": "Switch cung cấp khả năng phân đoạn vi mô để một thiết bị không cạnh tranh cùng băng thông mạng Ethernet với một thiết bị mạng khác, do đó thực tế loại bỏ xung đột. Switch mật độ cổng cao cung cấp khả năng kết nối rất nhanh cho nhiều thiết bị."
   },
   "m1-4_q73": {
     "question": "Hai câu nào đúng về định tuyến giữa các VLAN của SVI? (Chọn hai.)",
     "options": [
       "Chuyển đổi gói nhanh hơn với SVI.",
-      "Không cần kết nối với bộ định tuyến.",
+      "Không cần kết nối với router.",
       "Giao diện ảo hỗ trợ giao diện phụ.",
       "SVI có thể được gói vào EtherChannels.",
       "SVI loại bỏ sự cần thiết của cổng mặc định trong máy chủ."
     ],
-    "explanation": "Phương pháp định tuyến liên Vlan SVI nhanh hơn các phương pháp khác. Bộ chuyển mạch có thể định tuyến các Vlan hiện có mà không cần bộ định tuyến."
+    "explanation": "Phương pháp định tuyến liên Vlan SVI nhanh hơn các phương pháp khác. Switch có thể định tuyến các Vlan hiện có mà không cần router."
   },
   "m1-4_q74": {
     "question": "Tham khảo sơ đồ kết nối (exhibit). Quản trị viên mạng đang định cấu hình định tuyến giữa các Vlan trên mạng. Hiện tại, chỉ có một Vlan đang được sử dụng, nhưng nhiều Vlan khác sẽ sớm được bổ sung. Tham số còn thiếu được hiển thị dưới dạng dấu chấm hỏi được đánh dấu trong đồ họa là gì?",
@@ -781,7 +781,7 @@
     "explanation": ""
   },
   "m5-6_q2": {
-    "question": "Trong quá trình triển khai Giao thức Spanning Tree, tất cả các thiết bị chuyển mạch đều được quản trị viên mạng khởi động lại. Bước đầu tiên của quá trình bầu chọn cây bao trùm là gì?",
+    "question": "Trong quá trình triển khai Giao thức Spanning Tree, tất cả các thiết bị chuyển mạch đều được quản trị viên mạng khởi động lại. Bước đầu tiên của quá trình bầu chọn Spanning Tree (STP) là gì?",
     "options": [
       "Mỗi switch có ID gốc thấp hơn hàng xóm của nó sẽ không gửi BPDU.",
       "Tất cả các switch gửi BPDU tự quảng cáo là root bridge.",
@@ -801,7 +801,7 @@
     "explanation": "Cổng gốc là cổng có chi phí thấp nhất để đến được cầu gốc."
   },
   "m5-6_q4": {
-    "question": "Hai khái niệm nào liên quan đến một cổng chuyển mạch được thiết kế chỉ để gắn các thiết bị đầu cuối và không bao giờ được sử dụng để kết nối với một bộ chuyển mạch khác? (Chọn hai.)",
+    "question": "Hai khái niệm nào liên quan đến một cổng chuyển mạch được thiết kế chỉ để gắn các thiết bị đầu cuối và không bao giờ được sử dụng để kết nối với một switch khác? (Chọn hai.)",
     "options": [
       "ID cầu",
       "cổng cạnh",
@@ -850,12 +850,12 @@
     "explanation": "Chỉ có một switch có thể là root bridge cho một VLAN. Root bridge là switch có BID thấp nhất. BID được xác định theo mức độ ưu tiên và địa chỉ MAC. Nếu không có mức ưu tiên nào được cấu hình thì tất cả các switch sẽ sử dụng mức ưu tiên mặc định và việc lựa chọn root bridge sẽ dựa trên địa chỉ MAC thấp nhất."
   },
   "m5-6_q9": {
-    "question": "Ghép tính năng cây bao trùm với loại giao thức. (Không phải tất cả các tùy chọn đều được sử dụng.)",
+    "question": "Ghép tính năng Spanning Tree (STP) với loại giao thức. (Không phải tất cả các tùy chọn đều được sử dụng.)",
     "options": [],
     "explanation": ""
   },
   "m5-6_q10": {
-    "question": "Khi lệnh hiển thị cây bao trùm vlan 33 được đưa ra trên một switch, ba cổng sẽ được hiển thị ở trạng thái chuyển tiếp. Các giao diện này có thể hoạt động ở hai vai trò cổng nào khi ở trạng thái chuyển tiếp? (Chọn hai.)",
+    "question": "Khi lệnh hiển thị Spanning Tree (STP) vlan 33 được đưa ra trên một switch, ba cổng sẽ được hiển thị ở trạng thái chuyển tiếp. Các giao diện này có thể hoạt động ở hai vai trò cổng nào khi ở trạng thái chuyển tiếp? (Chọn hai.)",
     "options": [
       "luân phiên",
       "được chỉ định",
@@ -876,30 +876,30 @@
     "explanation": "STP là một thành phần quan trọng trong mạng có thể mở rộng vì nó cho phép thực hiện các kết nối vật lý dự phòng giữa các thiết bị Lớp 2 mà không tạo ra các vòng lặp Lớp 2. STP ngăn chặn các vòng lặp Lớp 2 hình thành bằng cách vô hiệu hóa các giao diện trên các thiết bị Lớp 2 khi chúng tạo vòng lặp."
   },
   "m5-6_q12": {
-    "question": "Đặc điểm của cây bao trùm là gì?",
+    "question": "Đặc điểm của Spanning Tree (STP) là gì?",
     "options": [
       "Nó được bật theo mặc định trên các thiết bị chuyển mạch của Cisco.",
       "Nó được sử dụng để khám phá thông tin về thiết bị Cisco liền kề.",
       "Nó có cơ chế TTL hoạt động ở Lớp 2.",
-      "Nó ngăn chặn việc truyền bá các khung phát sóng Lớp 2."
+      "Nó ngăn chặn việc truyền bá các frame broadcast Lớp 2."
     ],
-    "explanation": "Cây kéo dài hoạt động ở Lớp 2 trên các mạng dựa trên Ethernet và được bật theo mặc định, nhưng nó không có cơ chế TTL. Cây bao trùm tồn tại do các khung Lớp 2 không có cơ chế TTL. Các khung của Lớp 2 vẫn được phát khi bật cây bao trùm, nhưng các khung này chỉ có thể được truyền qua một đường dẫn duy nhất qua mạng Lớp 2 được tạo bởi cây bao trùm. Cisco Discovery Protocol (CDP) được sử dụng để khám phá thông tin về thiết bị Cisco lân cận."
+    "explanation": "Cây kéo dài hoạt động ở Lớp 2 trên các mạng dựa trên Ethernet và được bật theo mặc định, nhưng nó không có cơ chế TTL. Spanning Tree (STP) tồn tại do các khung Lớp 2 không có cơ chế TTL. Các khung của Lớp 2 vẫn được phát khi bật Spanning Tree (STP), nhưng các khung này chỉ có thể được truyền qua một đường dẫn duy nhất qua mạng Lớp 2 được tạo bởi Spanning Tree (STP). Cisco Discovery Protocol (CDP) được sử dụng để khám phá thông tin về thiết bị Cisco lân cận."
   },
   "m5-6_q13": {
-    "question": "Tiêu chuẩn cây bao trùm nào chỉ hỗ trợ một cầu gốc để lưu lượng truy cập từ tất cả các Vlan chảy trên cùng một đường dẫn?",
+    "question": "Tiêu chuẩn Spanning Tree (STP) nào chỉ hỗ trợ một cầu gốc để lưu lượng truy cập từ tất cả các Vlan chảy trên cùng một đường dẫn?",
     "options": [
       "PVST+",
       "802.1D",
       "MST",
       "PVST nhanh"
     ],
-    "explanation": "MST là triển khai MSTP của Cisco, một giao thức chuẩn IEEE cung cấp tới 16 phiên bản RSTP. PVST+ cung cấp một phiên bản cây bao trùm 802.1D riêng biệt cho mỗi Vlan được cấu hình trong mạng. 802.1D là tiêu chuẩn STP ban đầu được xác định bởi IEEE và chỉ cho phép một cầu nối gốc cho tất cả các Vlan. 802.1w hoặc RSTP cung cấp khả năng hội tụ nhanh hơn nhưng vẫn chỉ sử dụng một phiên bản STP cho tất cả các Vlan."
+    "explanation": "MST là triển khai MSTP của Cisco, một giao thức chuẩn IEEE cung cấp tới 16 phiên bản RSTP. PVST+ cung cấp một phiên bản Spanning Tree (STP) 802.1D riêng biệt cho mỗi Vlan được cấu hình trong mạng. 802.1D là tiêu chuẩn STP ban đầu được xác định bởi IEEE và chỉ cho phép một cầu nối gốc cho tất cả các Vlan. 802.1w hoặc RSTP cung cấp khả năng hội tụ nhanh hơn nhưng vẫn chỉ sử dụng một phiên bản STP cho tất cả các Vlan."
   },
   "m5-6_q14": {
     "question": "Mục đích của Giao thức cây kéo dài (STP) là gì?",
     "options": [
       "tạo ra các miền va chạm nhỏ hơn",
-      "ngăn chặn các vòng lặp định tuyến trên bộ định tuyến",
+      "ngăn chặn các vòng lặp định tuyến trên router",
       "ngăn chặn các vòng lặp Lớp 2",
       "cho phép các thiết bị Cisco trao đổi thông tin cập nhật bảng định tuyến",
       "tạo các miền phát sóng nhỏ hơn"
@@ -927,15 +927,15 @@
     "explanation": "Cầu gốc được xác định bởi ID cầu thấp nhất, bao gồm giá trị ưu tiên và địa chỉ MAC. Vì giá trị ưu tiên của tất cả các switch đều giống nhau nên địa chỉ MAC được sử dụng để xác định root bridge. Vì S2 có địa chỉ MAC thấp nhất nên S2 trở thành cầu nối gốc."
   },
   "m5-6_q17": {
-    "question": "Hai hạn chế của việc tắt cây bao trùm và có nhiều đường dẫn qua mạng chuyển mạch Lớp 2 là gì? (Chọn hai.)",
+    "question": "Hai hạn chế của việc tắt Spanning Tree (STP) và có nhiều đường dẫn qua mạng chuyển mạch Lớp 2 là gì? (Chọn hai.)",
     "options": [
       "Bảng địa chỉ MAC trở nên không ổn định.",
       "Switch hoạt động giống như một hub.",
       "An ninh cổng trở nên không ổn định.",
-      "Các khung phát sóng được truyền đi vô thời hạn.",
+      "Các frame broadcast được truyền đi vô thời hạn.",
       "Bảo mật cổng sẽ tắt tất cả các cổng có thiết bị đính kèm."
     ],
-    "explanation": "Cây bao trùm không bao giờ nên bị vô hiệu hóa. Nếu không có nó, bảng địa chỉ MAC sẽ trở nên không ổn định, các cơn bão quảng bá có thể khiến các máy khách mạng và bộ chuyển mạch không thể sử dụng được, đồng thời nhiều bản sao của khung đơn hướng có thể được gửi đến các thiết bị cuối."
+    "explanation": "Spanning Tree (STP) không bao giờ nên bị vô hiệu hóa. Nếu không có nó, bảng địa chỉ MAC sẽ trở nên không ổn định, các broadcast storm (bão broadcast) có thể khiến các máy khách mạng và switch không thể sử dụng được, đồng thời nhiều bản sao của khung unicast có thể được gửi đến các thiết bị cuối."
   },
   "m5-6_q18": {
     "question": "Một mạng công ty nhỏ có sáu thiết bị chuyển mạch Lớp 2 được kết nối với nhau. Hiện tại tất cả các switch đều đang sử dụng giá trị ưu tiên bridge mặc định. Giá trị nào có thể được sử dụng để định cấu hình mức độ ưu tiên cầu nối của một trong các thiết bị chuyển mạch nhằm đảm bảo rằng nó trở thành cầu nối gốc trong thiết kế này?",
@@ -953,21 +953,21 @@
     "options": [
       "Lưu lượng không thể được gửi đến hai thiết bị chuyển mạch khác nhau thông qua cùng một liên kết EtherChannel.",
       "Lưu lượng truy cập không thể được gửi đến hai thiết bị chuyển mạch khác nhau mà chỉ được gửi đến hai thiết bị khác nhau như máy chủ hỗ trợ EtherChannel và một thiết bị chuyển mạch.​",
-      "Lưu lượng chỉ có thể được gửi đến hai bộ chuyển mạch khác nhau nếu EtherChannel được triển khai trên giao diện Gigabit Ethernet.​",
+      "Lưu lượng chỉ có thể được gửi đến hai switch khác nhau nếu EtherChannel được triển khai trên giao diện Gigabit Ethernet.​",
       "Lưu lượng chỉ có thể được gửi đến hai thiết bị chuyển mạch khác nhau nếu EtherChannel được triển khai trên các thiết bị chuyển mạch Lớp 3.​"
     ],
-    "explanation": "Liên kết EtherChannel chỉ có thể được tạo giữa hai bộ chuyển mạch hoặc giữa máy chủ hỗ trợ EtherChannel và bộ chuyển mạch. Lưu lượng không thể được gửi đến hai thiết bị chuyển mạch khác nhau thông qua cùng một liên kết EtherChannel."
+    "explanation": "Liên kết EtherChannel chỉ có thể được tạo giữa hai switch hoặc giữa máy chủ hỗ trợ EtherChannel và switch. Lưu lượng không thể được gửi đến hai thiết bị chuyển mạch khác nhau thông qua cùng một liên kết EtherChannel."
   },
   "m5-6_q20": {
     "question": "Câu nào đúng về việc sử dụng PAgP để tạo EtherChannels?",
     "options": [
       "Nó đòi hỏi song công hoàn toàn.",
-      "Nó làm tăng số lượng cổng tham gia vào cây bao trùm.",
+      "Nó làm tăng số lượng cổng tham gia vào Spanning Tree (STP).",
       "Nó đòi hỏi nhiều liên kết vật lý hơn LACP.",
       "Nó yêu cầu sử dụng số lượng cổng chẵn (2, 4, 6, v.v.) để tổng hợp.",
       "Nó là độc quyền của Cisco."
     ],
-    "explanation": "PAgP được sử dụng để tự động tổng hợp nhiều cổng thành gói EtherChannel, nhưng nó chỉ hoạt động giữa các thiết bị Cisco. LACP có thể được sử dụng cho cùng mục đích giữa các thiết bị Cisco và không phải của Cisco. PAgP phải có cùng chế độ song công ở cả hai đầu và có thể sử dụng hai cổng trở lên. Số lượng cổng phụ thuộc vào nền tảng hoặc mô-đun chuyển mạch. Một liên kết tổng hợp EtherChannel được coi là một cổng theo thuật toán cây bao trùm."
+    "explanation": "PAgP được sử dụng để tự động tổng hợp nhiều cổng thành gói EtherChannel, nhưng nó chỉ hoạt động giữa các thiết bị Cisco. LACP có thể được sử dụng cho cùng mục đích giữa các thiết bị Cisco và không phải của Cisco. PAgP phải có cùng chế độ song công ở cả hai đầu và có thể sử dụng hai cổng trở lên. Số lượng cổng phụ thuộc vào nền tảng hoặc mô-đun chuyển mạch. Một liên kết tổng hợp EtherChannel được coi là một cổng theo thuật toán Spanning Tree (STP)."
   },
   "m5-6_q21": {
     "question": "Hai yêu cầu để có thể định cấu hình EtherChannel giữa hai thiết bị chuyển mạch là gì? (Chọn hai.)",
@@ -1092,7 +1092,7 @@
       "Giao thức Spanning Tree đảm bảo tính dự phòng bằng cách chuyển các giao diện bị lỗi trong EtherChannel sang trạng thái chuyển tiếp.",
       "EtherChannel sử dụng các liên kết vật lý được nâng cấp để tăng băng thông."
     ],
-    "explanation": "Cấu hình EtherChannel của một giao diện logic đảm bảo tính nhất quán về cấu hình trên các liên kết vật lý trong EtherChannel. EtherChannel cung cấp băng thông tăng lên bằng cách sử dụng các cổng chuyển đổi hiện có mà không yêu cầu bất kỳ nâng cấp nào đối với giao diện vật lý. Các phương pháp cân bằng tải được triển khai giữa các liên kết là một phần của cùng một kênh Etherchannel. Vì EtherChannel xem các liên kết vật lý được nhóm dưới dạng một kết nối logic nên không cần tính toán lại cây bao trùm nếu một trong các liên kết vật lý được nhóm không thành công. Nếu giao diện vật lý bị lỗi, STP không thể chuyển giao diện bị lỗi sang trạng thái chuyển tiếp."
+    "explanation": "Cấu hình EtherChannel của một giao diện logic đảm bảo tính nhất quán về cấu hình trên các liên kết vật lý trong EtherChannel. EtherChannel cung cấp băng thông tăng lên bằng cách sử dụng các cổng chuyển đổi hiện có mà không yêu cầu bất kỳ nâng cấp nào đối với giao diện vật lý. Các phương pháp cân bằng tải được triển khai giữa các liên kết là một phần của cùng một kênh Etherchannel. Vì EtherChannel xem các liên kết vật lý được nhóm dưới dạng một kết nối logic nên không cần tính toán lại Spanning Tree (STP) nếu một trong các liên kết vật lý được nhóm không thành công. Nếu giao diện vật lý bị lỗi, STP không thể chuyển giao diện bị lỗi sang trạng thái chuyển tiếp."
   },
   "m5-6_q33": {
     "question": "Tham khảo sơ đồ kết nối (exhibit). Các vai trò cổng có thể có của các cổng A, B, C và D trong mạng hỗ trợ RSTP này là gì?",
@@ -1105,14 +1105,14 @@
     "explanation": "Vì S1 là cầu gốc nên B là cổng được chỉ định và cổng gốc C và D. RSTP hỗ trợ loại cổng mới, cổng thay thế ở trạng thái loại bỏ, có thể là cổng A trong trường hợp này."
   },
   "m5-6_q34": {
-    "question": "Tham khảo sơ đồ kết nối (exhibit). Công nghệ chuyển mạch nào sẽ cho phép tổng hợp từng liên kết chuyển mạch lớp truy cập để cung cấp nhiều băng thông hơn giữa mỗi bộ chuyển mạch Lớp 2 và bộ chuyển mạch Lớp 3?",
+    "question": "Tham khảo sơ đồ kết nối (exhibit). Công nghệ chuyển mạch nào sẽ cho phép tổng hợp từng liên kết chuyển mạch lớp truy cập để cung cấp nhiều băng thông hơn giữa mỗi switch Lớp 2 và switch Lớp 3?",
     "options": [
       "đường trục",
       "HSRP",
       "Cổng nhanh",
       "Kênh Ether"
     ],
-    "explanation": "PortFast được sử dụng để giảm lượng thời gian mà một cổng dành để thực hiện thuật toán cây bao trùm, để các thiết bị có thể bắt đầu gửi dữ liệu sớm hơn. Trunking có thể được triển khai cùng với EtherChannel, nhưng chỉ riêng trunking không tổng hợp được các liên kết chuyển mạch. HSRP được sử dụng để cân bằng tải lưu lượng trên hai kết nối khác nhau tới các thiết bị Lớp 3 để dự phòng cổng mặc định. HSRP không tổng hợp các liên kết ở Lớp 2 hoặc Lớp 3 như EtherChannel."
+    "explanation": "PortFast được sử dụng để giảm lượng thời gian mà một cổng dành để thực hiện thuật toán Spanning Tree (STP), để các thiết bị có thể bắt đầu gửi dữ liệu sớm hơn. Trunking có thể được triển khai cùng với EtherChannel, nhưng chỉ riêng trunking không tổng hợp được các liên kết chuyển mạch. HSRP được sử dụng để cân bằng tải lưu lượng trên hai kết nối khác nhau tới các thiết bị Lớp 3 để dự phòng cổng mặc định. HSRP không tổng hợp các liên kết ở Lớp 2 hoặc Lớp 3 như EtherChannel."
   },
   "m5-6_q35": {
     "question": "Tham khảo sơ đồ kết nối (exhibit). Quản trị viên muốn tạo EtherChannel giữa hai thiết bị chuyển mạch bằng cách sử dụng Giao thức tổng hợp cổng. Nếu công tắc S1 được cấu hình ở chế độ tự động, thì chế độ nào sẽ được cấu hình trên S2 để tạo thành EtherChannel?",
@@ -1296,17 +1296,17 @@
       "PVST+",
       "MST"
     ],
-    "explanation": "MST là triển khai MSTP của Cisco, một giao thức chuẩn IEEE cung cấp tới 16 phiên bản RSTP và kết hợp nhiều Vlan có cùng cấu trúc liên kết vật lý và logic thành một phiên bản RSTP chung. Mỗi phiên bản đều hỗ trợ PortFast, bộ bảo vệ BPDU, bộ lọc BPDU, bộ bảo vệ gốc và bộ bảo vệ vòng lặp. STP và RSTP chỉ giả định một phiên bản cây bao trùm cho toàn bộ mạng cầu nối, bất kể số lượng Vlan. PVST+ cung cấp một phiên bản cây bao trùm 802.1D riêng biệt cho mỗi Vlan được cấu hình trong mạng."
+    "explanation": "MST là triển khai MSTP của Cisco, một giao thức chuẩn IEEE cung cấp tới 16 phiên bản RSTP và kết hợp nhiều Vlan có cùng cấu trúc liên kết vật lý và logic thành một phiên bản RSTP chung. Mỗi phiên bản đều hỗ trợ PortFast, bộ bảo vệ BPDU, bộ lọc BPDU, bộ bảo vệ gốc và bộ bảo vệ vòng lặp. STP và RSTP chỉ giả định một phiên bản Spanning Tree (STP) cho toàn bộ mạng cầu nối, bất kể số lượng Vlan. PVST+ cung cấp một phiên bản Spanning Tree (STP) 802.1D riêng biệt cho mỗi Vlan được cấu hình trong mạng."
   },
   "m5-6_q54": {
     "question": "Kết quả của cơn bão phát sóng lớp 2 là gì?",
     "options": [
-      "Bộ định tuyến sẽ đảm nhận việc chuyển tiếp các khung khi các thiết bị chuyển mạch bị tắc nghẽn.",
+      "Router sẽ đảm nhận việc chuyển tiếp các khung khi các thiết bị chuyển mạch bị tắc nghẽn.",
       "Lưu lượng mới sẽ bị switch loại bỏ vì không thể xử lý được.",
       "CSMA/CD sẽ khiến mỗi máy chủ tiếp tục truyền khung hình.",
       "Yêu cầu phát sóng ARP được trả về máy chủ truyền."
     ],
-    "explanation": "Khi mạng đã bão hòa với lưu lượng phát sóng lặp lại giữa các bộ chuyển mạch, mỗi bộ chuyển mạch sẽ loại bỏ lưu lượng truy cập mới vì không thể xử lý được."
+    "explanation": "Khi mạng đã bão hòa với lưu lượng phát sóng lặp lại giữa các switch, mỗi switch sẽ loại bỏ lưu lượng truy cập mới vì không thể xử lý được."
   },
   "m5-6_q55": {
     "question": "Hai tính năng thiết kế mạng nào yêu cầu Giao thức Spanning Tree (STP) để đảm bảo mạng hoạt động chính xác? (Chọn hai.)",
@@ -1317,7 +1317,7 @@
       "Định tuyến động trạng thái liên kết cung cấp các tuyến dự phòng",
       "loại bỏ các điểm lỗi đơn lẻ bằng nhiều thiết bị chuyển mạch Lớp 2"
     ],
-    "explanation": "Cần có Giao thức Cây Spanning (STP) để đảm bảo hoạt động mạng chính xác khi thiết kế mạng có nhiều bộ chuyển mạch Lớp 2 được kết nối với nhau hoặc sử dụng các liên kết dự phòng để loại bỏ các điểm lỗi duy nhất giữa các bộ chuyển mạch Lớp 2. Định tuyến là chức năng Lớp 3 và không liên quan đến STP. Vlan làm giảm số lượng miền quảng bá nhưng liên quan đến mạng con Lớp 3 chứ không phải STP."
+    "explanation": "Cần có Giao thức Cây Spanning (STP) để đảm bảo hoạt động mạng chính xác khi thiết kế mạng có nhiều switch Lớp 2 được kết nối với nhau hoặc sử dụng các liên kết dự phòng để loại bỏ các điểm lỗi duy nhất giữa các switch Lớp 2. Định tuyến là chức năng Lớp 3 và không liên quan đến STP. Vlan làm giảm số lượng miền broadcast nhưng liên quan đến mạng con Lớp 3 chứ không phải STP."
   },
   "m5-6_q56": {
     "question": "Quản trị viên mạng đã định cấu hình EtherChannel giữa hai thiết bị chuyển mạch được kết nối thông qua bốn liên kết trung kế. Nếu giao diện vật lý của một trong các liên kết trung kế chuyển sang trạng thái ngừng hoạt động thì điều gì sẽ xảy ra với EtherChannel?",
@@ -1330,7 +1330,7 @@
     "explanation": "EtherChannel cung cấp khả năng dự phòng bằng cách gộp nhiều liên kết trung kế vào một kết nối logic. Lỗi của một liên kết vật lý trong EtherChannel sẽ không tạo ra thay đổi về cấu trúc liên kết và do đó việc tính toán lại bằng Spanning Tree là không cần thiết. Chỉ một liên kết vật lý phải duy trì hoạt động để EtherChannel tiếp tục hoạt động."
   },
   "m7-9_q1": {
-    "question": "Một PC khách hỗ trợ DHCP vừa khởi động. Trong hai bước nào, PC khách sẽ sử dụng các tin nhắn quảng bá khi liên lạc với máy chủ DHCP? (Chọn hai.)",
+    "question": "Một PC khách hỗ trợ DHCP vừa khởi động. Trong hai bước nào, PC khách sẽ sử dụng các tin nhắn broadcast khi liên lạc với máy chủ DHCP? (Chọn hai.)",
     "options": [
       "DHCP KHÁM PHÁ",
       "DHCPACK",
@@ -1338,27 +1338,27 @@
       "YÊU CẦU DHCP",
       "DHCPNAK"
     ],
-    "explanation": "Tất cả các thông báo DHCP giữa máy khách hỗ trợ DHCP và máy chủ DHCP đều đang sử dụng các thông báo quảng bá cho đến sau thông báo DHCPACK. Thông báo DHCPDISCOVER và DHCPREQUEST là những thông báo duy nhất được gửi bởi máy khách hỗ trợ DHCP. Tất cả các tin nhắn DHCP giữa máy khách hỗ trợ DHCP và máy chủ DHCP đều sử dụng tin nhắn quảng bá khi máy khách nhận được hợp đồng thuê lần đầu tiên."
+    "explanation": "Tất cả các thông báo DHCP giữa máy khách hỗ trợ DHCP và máy chủ DHCP đều đang sử dụng các thông báo broadcast cho đến sau thông báo DHCPACK. Thông báo DHCPDISCOVER và DHCPREQUEST là những thông báo duy nhất được gửi bởi máy khách hỗ trợ DHCP. Tất cả các tin nhắn DHCP giữa máy khách hỗ trợ DHCP và máy chủ DHCP đều sử dụng tin nhắn broadcast khi máy khách nhận được hợp đồng thuê lần đầu tiên."
   },
   "m7-9_q2": {
     "question": "Người quản trị đưa ra các lệnh:\nRouter(config)# interface g0/1\nRouter(config-if)# ip address dhcp\nQuản trị viên đang cố gắng đạt được điều gì?",
     "options": [
-      "định cấu hình bộ định tuyến hoạt động như một máy chủ DHCPv4",
-      "định cấu hình bộ định tuyến để lấy các tham số IP từ máy chủ DHCPv4",
-      "cấu hình bộ định tuyến hoạt động như một tác nhân chuyển tiếp",
-      "định cấu hình bộ định tuyến để giải quyết xung đột địa chỉ IP"
+      "định cấu hình router hoạt động như một máy chủ DHCPv4",
+      "định cấu hình router để lấy các tham số IP từ máy chủ DHCPv4",
+      "cấu hình router hoạt động như một tác nhân chuyển tiếp",
+      "định cấu hình router để giải quyết xung đột địa chỉ IP"
     ],
     "explanation": ""
   },
   "m7-9_q3": {
-    "question": "Khi khách hàng yêu cầu thuê địa chỉ ban đầu từ máy chủ DHCP, tại sao thông báo DHCPREQUEST lại được gửi dưới dạng quảng bá?",
+    "question": "Khi khách hàng yêu cầu thuê địa chỉ ban đầu từ máy chủ DHCP, tại sao thông báo DHCPREQUEST lại được gửi dưới dạng broadcast?",
     "options": [
       "Máy khách chưa biết địa chỉ IP của máy chủ DHCP đã gửi ưu đãi.",
       "Máy chủ DHCP có thể nằm trên một mạng con khác nên yêu cầu phải được gửi dưới dạng phát sóng.",
       "Máy khách chưa được gán địa chỉ MAC nên không thể gửi tin nhắn unicast ở Lớp 2.",
       "Khách hàng có thể đã nhận được các ưu đãi từ nhiều máy chủ và chương trình phát sóng có tác dụng ngầm từ chối các ưu đãi khác đó."
     ],
-    "explanation": "Trong quá trình trao đổi DHCP ban đầu giữa máy khách và máy chủ, máy khách sẽ phát đi thông báo DHCPDISCOVER đang tìm kiếm máy chủ DHCP. Nhiều máy chủ có thể được cấu hình để đáp ứng yêu cầu này bằng các thông báo DHCPOFFER. Máy khách sẽ chọn hợp đồng thuê từ một trong các máy chủ bằng cách gửi tin nhắn DHCPREQUEST. Nó gửi tin nhắn này dưới dạng quảng bá để các máy chủ DHCP khác đã gửi phiếu mua hàng sẽ biết rằng phiếu mua hàng của họ đã bị từ chối và địa chỉ tương ứng có thể quay trở lại nhóm."
+    "explanation": "Trong quá trình trao đổi DHCP ban đầu giữa máy khách và máy chủ, máy khách sẽ phát đi thông báo DHCPDISCOVER đang tìm kiếm máy chủ DHCP. Nhiều máy chủ có thể được cấu hình để đáp ứng yêu cầu này bằng các thông báo DHCPOFFER. Máy khách sẽ chọn hợp đồng thuê từ một trong các máy chủ bằng cách gửi tin nhắn DHCPREQUEST. Nó gửi tin nhắn này dưới dạng broadcast để các máy chủ DHCP khác đã gửi phiếu mua hàng sẽ biết rằng phiếu mua hàng của họ đã bị từ chối và địa chỉ tương ứng có thể quay trở lại nhóm."
   },
   "m7-9_q4": {
     "question": "Thông báo DHCP IPv4 nào chứa thông tin sau?\nĐịa chỉ đích: 255.255.255.255\nĐịa chỉ IPv4 của máy khách: 0.0.0.0\nĐịa chỉ cổng mặc định: 0.0.0.0\nMặt nạ mạng con: 0.0.0.0",
@@ -1400,7 +1400,7 @@
       "255.255.255.255",
       "192.168.1.8"
     ],
-    "explanation": "Khi máy chủ khởi động và được định cấu hình cho địa chỉ IP động, thiết bị sẽ cố gắng lấy địa chỉ IP hợp lệ. Nó gửi tin nhắn DHCPDISCOVER. Đây là một tin nhắn quảng bá vì địa chỉ máy chủ DHCP không xác định (theo thiết kế). Địa chỉ IP đích trong tiêu đề IP là 255.255.255.255 và địa chỉ MAC đích là FF:FF:FF:FF:FF:FF."
+    "explanation": "Khi máy chủ khởi động và được định cấu hình cho địa chỉ IP động, thiết bị sẽ cố gắng lấy địa chỉ IP hợp lệ. Nó gửi tin nhắn DHCPDISCOVER. Đây là một tin nhắn broadcast vì địa chỉ máy chủ DHCP không xác định (theo thiết kế). Địa chỉ IP đích trong tiêu đề IP là 255.255.255.255 và địa chỉ MAC đích là FF:FF:FF:FF:FF:FF."
   },
   "m7-9_q8": {
     "question": "Máy chủ IPv4 sử dụng tin nhắn nào để trả lời khi nhận được tin nhắn DHCPOFFER từ máy chủ DHCP?",
@@ -1410,25 +1410,25 @@
       "YÊU CẦU DHCP",
       "DHCPACK"
     ],
-    "explanation": "Khi máy khách nhận được DHCPOFFER từ máy chủ, nó sẽ gửi lại tin nhắn quảng bá DHCPREQUEST. Khi nhận được tin nhắn DHCPREQUEST, máy chủ sẽ trả lời bằng tin nhắn DHCPACK đơn hướng."
+    "explanation": "Khi máy khách nhận được DHCPOFFER từ máy chủ, nó sẽ gửi lại tin nhắn broadcast DHCPREQUEST. Khi nhận được tin nhắn DHCPREQUEST, máy chủ sẽ trả lời bằng tin nhắn DHCPACK unicast."
   },
   "m7-9_q9": {
-    "question": "Lệnh nào, khi được đưa ra trong chế độ cấu hình giao diện của bộ định tuyến, cho phép giao diện tự động lấy địa chỉ IPv4 từ ISP khi liên kết đó đến ISP được bật?",
+    "question": "Lệnh nào, khi được đưa ra trong chế độ cấu hình giao diện của router, cho phép giao diện tự động lấy địa chỉ IPv4 từ ISP khi liên kết đó đến ISP được bật?",
     "options": [
       "dịch vụ dhcp",
       "địa chỉ ip dhcp",
       "địa chỉ trợ giúp ip",
       "hồ bơi ip dhcp"
     ],
-    "explanation": "Lệnh cấu hình giao diện dhcp địa chỉ IP định cấu hình giao diện Ethernet làm máy khách DHCP. Lệnh cấu hình toàn cầu dịch vụ dhcp cho phép xử lý máy chủ DHCPv4 trên bộ định tuyến. Lệnh địa chỉ trợ giúp ip được ban hành để kích hoạt chuyển tiếp DHCP trên bộ định tuyến. Lệnh ip dhcp pool tạo tên của nhóm địa chỉ mà máy chủ có thể gán cho máy chủ."
+    "explanation": "Lệnh cấu hình giao diện dhcp địa chỉ IP định cấu hình giao diện Ethernet làm máy khách DHCP. Lệnh cấu hình toàn cầu dịch vụ dhcp cho phép xử lý máy chủ DHCPv4 trên router. Lệnh địa chỉ trợ giúp ip được ban hành để kích hoạt chuyển tiếp DHCP trên router. Lệnh ip dhcp pool tạo tên của nhóm địa chỉ mà máy chủ có thể gán cho máy chủ."
   },
   "m7-9_q10": {
     "question": "Loại tin nhắn nào được máy khách DHCP gửi khi hợp đồng thuê địa chỉ IP của nó đã hết hạn?​",
     "options": [
-      "một tin nhắn đơn hướng DHCPDISCOVER",
-      "một tin nhắn quảng bá DHCPREQUEST",
-      "một tin nhắn đơn hướng DHCPREQUEST",
-      "một tin nhắn quảng bá DHCPDISCOVER"
+      "một tin nhắn unicast DHCPDISCOVER",
+      "một tin nhắn broadcast DHCPREQUEST",
+      "một tin nhắn unicast DHCPREQUEST",
+      "một tin nhắn broadcast DHCPDISCOVER"
     ],
     "explanation": "Khi thời gian thuê địa chỉ IP của máy khách DHCP hết hạn, nó sẽ gửi một tin nhắn unicast DHCPREQUEST trực tiếp đến máy chủ DHCPv4 ban đầu cung cấp địa chỉ IPv4."
   },
@@ -1441,7 +1441,7 @@
       "DHCPACK",
       "DHCPNACK"
     ],
-    "explanation": "Khi máy chủ sử dụng DHCP để tự động định cấu hình địa chỉ IP, máy chủ thường gửi hai thông báo: thông báo DHCPDISCOVER và thông báo DHCPREQUEST. Hai tin nhắn này thường được gửi dưới dạng quảng bá để đảm bảo rằng tất cả các máy chủ DHCP đều nhận được chúng. Máy chủ phản hồi các tin nhắn này bằng tin nhắn DHCPOFFER, DHCPACK và DHCPNACK, tùy thuộc vào trường hợp."
+    "explanation": "Khi máy chủ sử dụng DHCP để tự động định cấu hình địa chỉ IP, máy chủ thường gửi hai thông báo: thông báo DHCPDISCOVER và thông báo DHCPREQUEST. Hai tin nhắn này thường được gửi dưới dạng broadcast để đảm bảo rằng tất cả các máy chủ DHCP đều nhận được chúng. Máy chủ phản hồi các tin nhắn này bằng tin nhắn DHCPOFFER, DHCPACK và DHCPNACK, tùy thuộc vào trường hợp."
   },
   "m7-9_q12": {
     "question": "Dấu hiệu nào cho thấy máy tính Windows không nhận được địa chỉ IPv4 từ máy chủ DHCP?",
@@ -1458,20 +1458,20 @@
     "options": [
       "phát DHCPACK",
       "phát sóng DHCPREQUEST",
-      "DHCPACK đơn hướng",
-      "DHCPREQUEST đơn hướng"
+      "DHCPACK unicast",
+      "DHCPREQUEST unicast"
     ],
-    "explanation": "Khi máy khách DHCP nhận được tin nhắn DHCPOFFER, nó sẽ gửi tin nhắn DHCPREQUEST quảng bá cho hai mục đích. Đầu tiên, nó báo cho máy chủ DHCP cung cấp rằng nó muốn chấp nhận ưu đãi và liên kết địa chỉ IP. Thứ hai, nó thông báo cho bất kỳ máy chủ DHCP phản hồi nào khác rằng các đề nghị của họ bị từ chối."
+    "explanation": "Khi máy khách DHCP nhận được tin nhắn DHCPOFFER, nó sẽ gửi tin nhắn DHCPREQUEST broadcast cho hai mục đích. Đầu tiên, nó báo cho máy chủ DHCP cung cấp rằng nó muốn chấp nhận ưu đãi và liên kết địa chỉ IP. Thứ hai, nó thông báo cho bất kỳ máy chủ DHCP phản hồi nào khác rằng các đề nghị của họ bị từ chối."
   },
   "m7-9_q14": {
-    "question": "Một quán cà phê nhỏ đang cung cấp Wi-Fi miễn phí cho khách hàng. Mạng bao gồm bộ định tuyến không dây và modem DSL được kết nối với công ty điện thoại địa phương. Phương pháp nào thường được sử dụng để định cấu hình kết nối với công ty điện thoại?",
+    "question": "Một quán cà phê nhỏ đang cung cấp Wi-Fi miễn phí cho khách hàng. Mạng bao gồm router không dây và modem DSL được kết nối với công ty điện thoại địa phương. Phương pháp nào thường được sử dụng để định cấu hình kết nối với công ty điện thoại?",
     "options": [
-      "Đặt kết nối WAN trong bộ định tuyến không dây làm máy khách DHCP.",
-      "Đặt kết nối giữa bộ định tuyến không dây và modem DSL làm mạng IP riêng.",
-      "Đặt modem DSL làm máy khách DHCP để nhận địa chỉ IP công cộng từ bộ định tuyến không dây.",
+      "Đặt kết nối WAN trong router không dây làm máy khách DHCP.",
+      "Đặt kết nối giữa router không dây và modem DSL làm mạng IP riêng.",
+      "Đặt modem DSL làm máy khách DHCP để nhận địa chỉ IP công cộng từ router không dây.",
       "Đặt modem DSL làm máy khách DHCP cho công ty điện thoại và máy chủ DHCP cho kết nối nội bộ."
     ],
-    "explanation": "Trong môi trường SOHO, bộ định tuyến không dây kết nối với ISP thông qua modem DSL hoặc cáp. Địa chỉ IP giữa bộ định tuyến không dây và trang ISP thường được ISP chỉ định thông qua DHCP. Modem DSL không quản lý việc phân bổ địa chỉ IP."
+    "explanation": "Trong môi trường SOHO, router không dây kết nối với ISP thông qua modem DSL hoặc cáp. Địa chỉ IP giữa router không dây và trang ISP thường được ISP chỉ định thông qua DHCP. Modem DSL không quản lý việc phân bổ địa chỉ IP."
   },
   "m7-9_q15": {
     "question": "Một công ty sử dụng DHCP để quản lý việc triển khai địa chỉ IP cho các máy trạm của nhân viên. Bộ phận CNTT triển khai nhiều máy chủ DHCP trong trung tâm dữ liệu và sử dụng các tác nhân chuyển tiếp DHCP để hỗ trợ các yêu cầu DHCP từ máy trạm. Hai cổng UDP nào được sử dụng để chuyển tiếp lưu lượng DHCP? (Chọn hai.)",
@@ -1492,14 +1492,14 @@
       "Gửi tin nhắn DHCPDISCOVER đến địa chỉ vật lý FF-FF-FF-FF-FF-FF.",
       "Gửi gói DHCPREQUEST tới địa chỉ IP 255.255.255.255."
     ],
-    "explanation": "Giống như địa chỉ IP, cũng có một địa chỉ MAC đặc biệt dành cho mục đích quảng bá: FF-FF-FF-FF-FF-FF. Khi máy khách DHCP cần gửi thông báo DHCP Discover để tìm kiếm máy chủ DHCP, máy khách sẽ sử dụng địa chỉ MAC này làm địa chỉ MAC đích trong khung Ethernet. Nó thực hiện điều này vì nó không biết địa chỉ IP và MAC của máy chủ DHCP."
+    "explanation": "Giống như địa chỉ IP, cũng có một địa chỉ MAC đặc biệt dành cho mục đích broadcast: FF-FF-FF-FF-FF-FF. Khi máy khách DHCP cần gửi thông báo DHCP Discover để tìm kiếm máy chủ DHCP, máy khách sẽ sử dụng địa chỉ MAC này làm địa chỉ MAC đích trong khung Ethernet. Nó thực hiện điều này vì nó không biết địa chỉ IP và MAC của máy chủ DHCP."
   },
   "m7-9_q17": {
-    "question": "Lợi ích của việc định cấu hình bộ định tuyến Cisco làm tác nhân chuyển tiếp là gì?",
+    "question": "Lợi ích của việc định cấu hình router Cisco làm tác nhân chuyển tiếp là gì?",
     "options": [
       "Nó có thể cung cấp dịch vụ chuyển tiếp cho nhiều dịch vụ UDP.",
       "Nó làm giảm thời gian phản hồi từ máy chủ DHCP.",
-      "Nó có thể chuyển tiếp cả tin nhắn quảng bá và tin nhắn đa hướng thay mặt cho khách hàng.",
+      "Nó có thể chuyển tiếp cả tin nhắn broadcast và tin nhắn multicast thay mặt cho khách hàng.",
       "Nó sẽ cho phép các tin nhắn DHCPDISCOVER được truyền đi mà không bị thay đổi."
     ],
     "explanation": "Theo mặc định, lệnh địa chỉ trợ giúp ip chuyển tiếp tám dịch vụ UDP sau:\nCổng 37: Thời gian\nCổng 49: TACACS\nCổng 53: DNS\nCổng 67: Máy khách DHCP/BOOTP\nCổng 68: Máy chủ DHCP/BOOTP\nCổng 69: TFTP\nCổng 137: Dịch vụ tên NetBIOS\nCổng 138: Dịch vụ gói dữ liệu NetBIOS"
@@ -1509,13 +1509,13 @@
     "options": [
       "Khi một thiết bị được định cấu hình để sử dụng DHCP khởi động, máy khách sẽ phát thông báo DHCPDISCOVER để xác định mọi máy chủ DHCP có sẵn trên mạng.​",
       "Máy khách phải đợi hết hạn thuê trước khi gửi một tin nhắn DHCPREQUEST khác.​",
-      "Nếu máy khách nhận được một số tin nhắn DHCPOFFER từ các máy chủ khác nhau, nó sẽ gửi một tin nhắn DHCPREQUEST đơn hướng đến máy chủ mà nó chọn lấy thông tin IP.",
+      "Nếu máy khách nhận được một số tin nhắn DHCPOFFER từ các máy chủ khác nhau, nó sẽ gửi một tin nhắn DHCPREQUEST unicast đến máy chủ mà nó chọn lấy thông tin IP.",
       "Thông báo DHCPDISCOVER chứa địa chỉ IP và mặt nạ mạng con sẽ được chỉ định, địa chỉ IP của máy chủ DNS và địa chỉ IP của cổng mặc định.​"
     ],
     "explanation": "Máy khách phát thông báo DHCPDISCOVER để xác định bất kỳ máy chủ DHCP nào có sẵn trên mạng. Máy chủ DHCP trả lời bằng tin nhắn DHCPOFFER. Thông báo này cung cấp cho khách hàng một hợp đồng thuê có chứa các thông tin như địa chỉ IP và mặt nạ mạng con sẽ được chỉ định, địa chỉ IP của máy chủ DNS và địa chỉ IP của cổng mặc định. Sau khi khách hàng nhận được hợp đồng thuê, thông tin nhận được phải được gia hạn thông qua một tin nhắn DHCPREQUEST khác trước khi hết hạn thuê.\n\n19. Sắp xếp các loại thông báo DHCP giống như chúng xuất hiện giữa máy khách DHCP và máy chủ DHCP.\n\nGiải thích: Chủ đề 7.1.3\nThông báo DHCPDISCOVER được sử dụng để xác định bất kỳ máy chủ DHCP nào trên mạng.\nThông báo DHCPOFFER được máy chủ sử dụng để cung cấp hợp đồng thuê cho khách hàng. Thông báo DHCPREQUEST được sử dụng để xác định cả máy chủ DHCP cụ thể và hợp đồng thuê mà máy khách đang chấp nhận.\nThông báo DHCPACK được máy chủ sử dụng để hoàn tất hợp đồng thuê thành công với máy khách.\nThông báo DHCPNAK được sử dụng khi hợp đồng thuê được cung cấp không còn hiệu lực."
   },
   "m7-9_q20": {
-    "question": "Quản trị viên mạng định cấu hình bộ định tuyến để gửi tin nhắn RA có cờ M là 0 và cờ O là 1. Câu lệnh nào mô tả tác động của cấu hình này khi PC cố gắng định cấu hình địa chỉ IPv6 của nó?",
+    "question": "Quản trị viên mạng định cấu hình router để gửi tin nhắn RA có cờ M là 0 và cờ O là 1. Câu lệnh nào mô tả tác động của cấu hình này khi PC cố gắng định cấu hình địa chỉ IPv6 của nó?",
     "options": [
       "Nó phải liên hệ với máy chủ DHCPv6 để biết tiền tố, thông tin về độ dài tiền tố và ID giao diện vừa ngẫu nhiên vừa duy nhất.",
       "Nó nên sử dụng thông tin có trong thông báo RA và liên hệ với máy chủ DHCPv6 để biết thêm thông tin.",
@@ -1532,17 +1532,17 @@
       "Định cấu hình lệnh ipv6 nd Managed-config-flag trên giao diện Fa0/1.",
       "Thêm địa chỉ IPv6 2001:DB8:1234:5678::10/64 vào cấu hình giao diện của máy chủ DHCPv6."
     ],
-    "explanation": "Các tin nhắn DHCPv6 của máy khách được gửi đến một địa chỉ multicast có phạm vi liên kết cục bộ, có nghĩa là các tin nhắn sẽ không được bộ định tuyến chuyển tiếp. Vì máy khách và máy chủ nằm trên các mạng con khác nhau trên các giao diện khác nhau nên tin nhắn sẽ không đến được máy chủ. Bộ định tuyến có thể được cấu hình để chuyển tiếp các tin nhắn DHCPv6 từ máy khách đến máy chủ bằng cách định cấu hình lệnh chuyển tiếp ipv6 dhcp trên giao diện được kết nối với máy khách."
+    "explanation": "Các tin nhắn DHCPv6 của máy khách được gửi đến một địa chỉ multicast có phạm vi liên kết cục bộ, có nghĩa là các tin nhắn sẽ không được router chuyển tiếp. Vì máy khách và máy chủ nằm trên các mạng con khác nhau trên các giao diện khác nhau nên tin nhắn sẽ không đến được máy chủ. Router có thể được cấu hình để chuyển tiếp các tin nhắn DHCPv6 từ máy khách đến máy chủ bằng cách định cấu hình lệnh chuyển tiếp ipv6 dhcp trên giao diện được kết nối với máy khách."
   },
   "m7-9_q22": {
     "question": "Tham khảo sơ đồ kết nối (exhibit). Quản trị viên mạng đang triển khai hoạt động DHCPv6 không trạng thái cho công ty. Khách hàng đang định cấu hình địa chỉ IPv6 như mong đợi. Tuy nhiên, khách hàng không nhận được địa chỉ máy chủ DNS và thông tin tên miền được cấu hình trong nhóm DHCP. Điều gì có thể là nguyên nhân của vấn đề?",
     "options": [
       "Địa chỉ máy chủ DNS không nằm trên cùng mạng với máy khách.",
-      "Bộ định tuyến được cấu hình để hoạt động SLAAC.",
+      "Router được cấu hình để hoạt động SLAAC.",
       "Giao diện GigabitEthernet không được kích hoạt.",
       "Các máy khách không thể giao tiếp với máy chủ DHCPv6, bằng chứng là số lượng máy khách đang hoạt động là 0."
     ],
-    "explanation": "Bộ định tuyến được cấu hình cho hoạt động SLAAC vì không có lệnh cấu hình nào để thay đổi giá trị cờ RA M và O. Theo mặc định, cả hai cờ M và O đều được đặt thành 0. Để cho phép hoạt động DHCPv6 không trạng thái, nên đưa ra lệnh giao diện ipv6 và other-config-flag. Giao diện GigabitEthernet đang ở trạng thái hoạt động vì máy khách có thể nhận thông báo RA và định cấu hình địa chỉ IPv6 của họ như mong đợi. Ngoài ra, thực tế R1 là máy chủ DHCPv6 và các máy khách đang nhận được thông báo RA cho thấy rằng các máy khách có thể giao tiếp với máy chủ DHCP. Số lượng máy khách đang hoạt động là 0 vì máy chủ DHCPv6 không duy trì trạng thái của các địa chỉ IPv6 của máy khách (nó không được cấu hình cho hoạt động DHCPv6 ở trạng thái). Vấn đề về địa chỉ máy chủ DNS không liên quan đến vấn đề này."
+    "explanation": "Router được cấu hình cho hoạt động SLAAC vì không có lệnh cấu hình nào để thay đổi giá trị cờ RA M và O. Theo mặc định, cả hai cờ M và O đều được đặt thành 0. Để cho phép hoạt động DHCPv6 không trạng thái, nên đưa ra lệnh giao diện ipv6 và other-config-flag. Giao diện GigabitEthernet đang ở trạng thái hoạt động vì máy khách có thể nhận thông báo RA và định cấu hình địa chỉ IPv6 của họ như mong đợi. Ngoài ra, thực tế R1 là máy chủ DHCPv6 và các máy khách đang nhận được thông báo RA cho thấy rằng các máy khách có thể giao tiếp với máy chủ DHCP. Số lượng máy khách đang hoạt động là 0 vì máy chủ DHCPv6 không duy trì trạng thái của các địa chỉ IPv6 của máy khách (nó không được cấu hình cho hoạt động DHCPv6 ở trạng thái). Vấn đề về địa chỉ máy chủ DNS không liên quan đến vấn đề này."
   },
   "m7-9_q23": {
     "question": "Trong quy trình DHCPv6 phi trạng thái (Stateless DHCPv6), máy khách gửi thông điệp nào ở bước 3?",
@@ -1557,42 +1557,42 @@
   "m7-9_q24": {
     "question": "Một công ty sử dụng phương pháp SLAAC để định cấu hình địa chỉ IPv6 cho máy trạm của nhân viên. Địa chỉ nào khách hàng sẽ sử dụng làm cổng mặc định?​",
     "options": [
-      "địa chỉ unicast toàn cầu của giao diện bộ định tuyến được gắn vào mạng",
-      "địa chỉ cục bộ duy nhất của giao diện bộ định tuyến được gắn vào mạng",
-      "địa chỉ multicast của tất cả các bộ định tuyến",
-      "địa chỉ liên kết cục bộ của giao diện bộ định tuyến được gắn vào mạng"
+      "địa chỉ unicast toàn cầu của giao diện router được gắn vào mạng",
+      "địa chỉ cục bộ duy nhất của giao diện router được gắn vào mạng",
+      "địa chỉ multicast của tất cả các router",
+      "địa chỉ liên kết cục bộ của giao diện router được gắn vào mạng"
     ],
-    "explanation": "Khi PC được cấu hình để sử dụng phương pháp SLAAC để định cấu hình địa chỉ IPv6, nó sẽ sử dụng thông tin tiền tố và độ dài tiền tố có trong thông báo RA, kết hợp với ID giao diện 64 bit (có được bằng cách sử dụng quy trình EUI-64 hoặc bằng cách sử dụng số ngẫu nhiên do hệ điều hành máy khách tạo ra), để tạo thành địa chỉ IPv6. Nó sử dụng địa chỉ liên kết cục bộ của giao diện bộ định tuyến được gắn vào phân đoạn LAN làm địa chỉ cổng mặc định IPv6."
+    "explanation": "Khi PC được cấu hình để sử dụng phương pháp SLAAC để định cấu hình địa chỉ IPv6, nó sẽ sử dụng thông tin tiền tố và độ dài tiền tố có trong thông báo RA, kết hợp với ID giao diện 64 bit (có được bằng cách sử dụng quy trình EUI-64 hoặc bằng cách sử dụng số ngẫu nhiên do hệ điều hành máy khách tạo ra), để tạo thành địa chỉ IPv6. Nó sử dụng địa chỉ liên kết cục bộ của giao diện router được gắn vào phân đoạn LAN làm địa chỉ cổng mặc định IPv6."
   },
   "m7-9_q25": {
-    "question": "Tham khảo sơ đồ kết nối (exhibit). Quản trị viên mạng đang định cấu hình bộ định tuyến cho hoạt động DHCPv6. Kết luận nào có thể được rút ra dựa trên các lệnh?",
+    "question": "Tham khảo sơ đồ kết nối (exhibit). Quản trị viên mạng đang định cấu hình router cho hoạt động DHCPv6. Kết luận nào có thể được rút ra dựa trên các lệnh?",
     "options": [
-      "Bộ định tuyến được cấu hình để hoạt động DHCPv6 ở trạng thái nhưng cấu hình nhóm DHCP chưa hoàn chỉnh.",
+      "Router được cấu hình để hoạt động DHCPv6 ở trạng thái nhưng cấu hình nhóm DHCP chưa hoàn chỉnh.",
       "Tên máy chủ DHCPv6 là ACAD_CLASS.",
       "Khách hàng sẽ định cấu hình ID giao diện trên 0010.",
-      "Bộ định tuyến được cấu hình để hoạt động DHCPv6 không trạng thái."
+      "Router được cấu hình để hoạt động DHCPv6 không trạng thái."
     ],
     "explanation": "DHCPv6 dành cho hoạt động DHCPv6 không trạng thái được biểu thị bằng cách thay đổi cờ O thành 1 và để cờ M làm mặc định là 0. Do đó, nó không được định cấu hình cho hoạt động DHCPv6 có trạng thái. Mặc dù máy chủ DNS có ID giao diện 0010, nhưng các máy khách trong hoạt động DHCPv6 không trạng thái sẽ định cấu hình ID giao diện của chúng theo EUI-64 hoặc một số ngẫu nhiên. ACAD_CLASS là tên của nhóm DHCP, không phải tên máy chủ DHCP."
   },
   "m7-9_q26": {
-    "question": "Quản trị viên mạng đang phân tích các tính năng được hỗ trợ bởi các giao thức dự phòng bộ định tuyến bước nhảy đầu tiên khác nhau. Câu lệnh nào mô tả một tính năng có liên quan đến HSRP?",
+    "question": "Quản trị viên mạng đang phân tích các tính năng được hỗ trợ bởi các giao thức dự phòng router bước nhảy đầu tiên khác nhau. Câu lệnh nào mô tả một tính năng có liên quan đến HSRP?",
     "options": [
-      "HSRP sử dụng các bộ định tuyến hoạt động và dự phòng.",
+      "HSRP sử dụng các router hoạt động và dự phòng.",
       "HSRP là không độc quyền.",
-      "Nó cho phép cân bằng tải giữa một nhóm các bộ định tuyến dự phòng.",
+      "Nó cho phép cân bằng tải giữa một nhóm các router dự phòng.",
       "Nó sử dụng tin nhắn ICMP để gán cổng mặc định cho máy chủ."
     ],
-    "explanation": "Giao thức dự phòng bộ định tuyến bước nhảy đầu tiên HSRP là độc quyền của Cisco và hỗ trợ các thiết bị dự phòng và hoạt động. VRRPv2 và VRRPv3 không độc quyền. GLBP là độc quyền của Cisco và hỗ trợ cân bằng tải giữa một nhóm bộ định tuyến dự phòng."
+    "explanation": "Giao thức dự phòng router bước nhảy đầu tiên HSRP là độc quyền của Cisco và hỗ trợ các thiết bị dự phòng và hoạt động. VRRPv2 và VRRPv3 không độc quyền. GLBP là độc quyền của Cisco và hỗ trợ cân bằng tải giữa một nhóm router dự phòng."
   },
   "m7-9_q27": {
-    "question": "Tham khảo sơ đồ kết nối (exhibit). Giao thức nào có thể được cấu hình trên các bộ định tuyến cổng R1 và R2 sẽ cho phép lưu lượng truy cập từ mạng LAN nội bộ được cân bằng tải trên hai cổng vào Internet?",
+    "question": "Tham khảo sơ đồ kết nối (exhibit). Giao thức nào có thể được cấu hình trên các router cổng R1 và R2 sẽ cho phép lưu lượng truy cập từ mạng LAN nội bộ được cân bằng tải trên hai cổng vào Internet?",
     "options": [
       "GLBP",
       "PVST+",
       "PVST",
       "STP"
     ],
-    "explanation": "GLBP, hay Giao thức cân bằng tải nhóm, cho phép nhiều bộ định tuyến hoạt động như một cổng mặc định duy nhất cho máy chủ. Tải GLBP cân bằng lưu lượng trên các bộ định tuyến riêng lẻ trên cơ sở từng máy chủ."
+    "explanation": "GLBP, hay Giao thức cân bằng tải nhóm, cho phép nhiều router hoạt động như một cổng mặc định duy nhất cho máy chủ. Tải GLBP cân bằng lưu lượng trên các router riêng lẻ trên cơ sở từng máy chủ."
   },
   "m7-9_q28": {
     "question": "Tham khảo sơ đồ kết nối (exhibit). Một kỹ sư mạng đang khắc phục sự cố kết nối máy chủ trên mạng LAN sử dụng giao thức dự phòng bước nhảy đầu tiên. Địa chỉ cổng IPv4 nào sẽ được cấu hình trên máy chủ?",
@@ -1607,12 +1607,12 @@
   "m7-9_q29": {
     "question": "Tham khảo sơ đồ kết nối (exhibit). Địa chỉ MAC đích nào được sử dụng khi các khung được gửi từ máy trạm đến cổng mặc định?",
     "options": [
-      "Địa chỉ MAC của bộ định tuyến ảo",
-      "Địa chỉ MAC của bộ định tuyến dự phòng",
-      "Địa chỉ MAC của cả bộ định tuyến chuyển tiếp và dự phòng",
-      "Địa chỉ MAC của bộ định tuyến chuyển tiếp"
+      "Địa chỉ MAC của router ảo",
+      "Địa chỉ MAC của router dự phòng",
+      "Địa chỉ MAC của cả router chuyển tiếp và dự phòng",
+      "Địa chỉ MAC của router chuyển tiếp"
     ],
-    "explanation": "Địa chỉ IP của bộ định tuyến ảo đóng vai trò là cổng mặc định cho tất cả các máy trạm. Do đó, địa chỉ MAC được Giao thức phân giải địa chỉ trả về cho máy trạm sẽ là địa chỉ MAC của bộ định tuyến ảo."
+    "explanation": "Địa chỉ IP của router ảo đóng vai trò là cổng mặc định cho tất cả các máy trạm. Do đó, địa chỉ MAC được Giao thức phân giải địa chỉ trả về cho máy trạm sẽ là địa chỉ MAC của router ảo."
   },
   "m7-9_q30": {
     "question": "Giao thức độc quyền nào của Cisco được thiết kế để cho phép chuyển đổi dự phòng trong suốt cho thiết bị IPv4 chặng đầu tiên (first-hop device)?",
@@ -1646,14 +1646,14 @@
     "explanation": "Tính toán số lượng máy chủ tối đa có sẵn cho giá trị dấu gạch chéo và trừ đi các địa chỉ IP tĩnh cần thiết cho thiết bị.\n/24 = 254 máy chủ\n/25 = 126 máy chủ\n/26 = 62 máy chủ\n/27 = 30 máy chủ\n/28 = 14 máy chủ"
   },
   "m7-9_q33": {
-    "question": "Máy khách IPv4 phát quảng bá (broadcast) thông điệp nào để tìm kiếm các máy chủ DHCPv4 khả dụng trên mạng?",
+    "question": "Máy khách IPv4 phát broadcast (broadcast) thông điệp nào để tìm kiếm các máy chủ DHCPv4 khả dụng trên mạng?",
     "options": [
       "DHCPDISCOVER",
       "DHCPOFFER",
       "DHCPREQUEST",
       "DHCPACK"
     ],
-    "explanation": "Khi vừa kết nối vào mạng và chưa có địa chỉ IP, máy khách IPv4 phát quảng bá thông điệp DHCPDISCOVER (địa chỉ đích 255.255.255.255, cổng UDP 67) để tìm máy chủ DHCPv4. Máy chủ phản hồi bằng DHCPOFFER, sau đó máy khách gửi DHCPREQUEST và máy chủ xác nhận bằng DHCPACK."
+    "explanation": "Khi vừa kết nối vào mạng và chưa có địa chỉ IP, máy khách IPv4 phát broadcast thông điệp DHCPDISCOVER (địa chỉ đích 255.255.255.255, cổng UDP 67) để tìm máy chủ DHCPv4. Máy chủ phản hồi bằng DHCPOFFER, sau đó máy khách gửi DHCPREQUEST và máy chủ xác nhận bằng DHCPACK."
   },
   "m7-9_q34": {
     "question": "Sau khi máy chủ đã tạo địa chỉ IPv6 bằng cách sử dụng quy trình DHCPv6 hoặc SLAAC, máy chủ sẽ xác minh rằng địa chỉ đó là duy nhất và do đó có thể sử dụng được bằng cách nào?",
@@ -1668,24 +1668,24 @@
   "m7-9_q35": {
     "question": "Câu nào mô tả HSRP?​",
     "options": [
-      "Nó được sử dụng trong một nhóm bộ định tuyến để chọn thiết bị hoạt động và thiết bị dự phòng để cung cấp dịch vụ cổng vào mạng LAN.",
-      "Nó sử dụng ICMP để cho phép các máy chủ IPv4 định vị các bộ định tuyến cung cấp kết nối IPv4 với mạng IP từ xa.​",
-      "Nếu bộ định tuyến ảo chính bị lỗi, một bộ định tuyến sẽ được chọn làm bộ định tuyến chính ảo và các bộ định tuyến khác đóng vai trò dự phòng.",
+      "Nó được sử dụng trong một nhóm router để chọn thiết bị hoạt động và thiết bị dự phòng để cung cấp dịch vụ cổng vào mạng LAN.",
+      "Nó sử dụng ICMP để cho phép các máy chủ IPv4 định vị các router cung cấp kết nối IPv4 với mạng IP từ xa.​",
+      "Nếu router ảo chính bị lỗi, một router sẽ được chọn làm router chính ảo và các router khác đóng vai trò dự phòng.",
       "Nó là một giao thức tiêu chuẩn mở."
     ],
-    "explanation": "VRRP sẽ chọn một bộ định tuyến làm bộ định tuyến ảo chính, còn các bộ định tuyến khác đóng vai trò dự phòng trong trường hợp bộ định tuyến ảo chính bị lỗi. HSRP là một giao thức độc quyền của Cisco. IRDP sử dụng tin nhắn ICMP để cho phép các máy chủ IPv4 định vị các bộ định tuyến cung cấp kết nối IPv4 với các mạng IP (không cục bộ) khác. HSRP chọn các bộ định tuyến hoạt động và dự phòng để cung cấp dịch vụ cổng cho các máy chủ trên mạng LAN."
+    "explanation": "VRRP sẽ chọn một router làm router ảo chính, còn các router khác đóng vai trò dự phòng trong trường hợp router ảo chính bị lỗi. HSRP là một giao thức độc quyền của Cisco. IRDP sử dụng tin nhắn ICMP để cho phép các máy chủ IPv4 định vị các router cung cấp kết nối IPv4 với các mạng IP (không cục bộ) khác. HSRP chọn các router hoạt động và dự phòng để cung cấp dịch vụ cổng cho các máy chủ trên mạng LAN."
   },
   "m7-9_q36": {
     "question": "Mở Hoạt động PT. Thực hiện các nhiệm vụ trong hướng dẫn hoạt động và sau đó trả lời câu hỏi. Từ khóa được hiển thị trên www.netacad.com là gì?",
     "options": [
       "DHCP",
       "công tắc",
-      "Bộ định tuyến",
+      "Router",
       "mạng",
       "Cisco",
       "IPv6"
     ],
-    "explanation": "Để máy chủ nhận được địa chỉ của máy chủ DNS, máy chủ phải sử dụng DHCPv6 không trạng thái. Bộ định tuyến được định cấu hình với nhóm DHCPv6 chính xác, nhưng thiếu lệnh ipv6 nd other-config-flag báo hiệu cho máy chủ rằng nó nên sử dụng DHCPv6 để nhận thông tin địa chỉ bổ sung. Lệnh này nên được thêm vào cấu hình giao diện Gigabit0/0 trên bộ định tuyến.\n\n37. Ghép từng loại thông báo DHCP với mô tả của nó. (Không phải tất cả các tùy chọn đều được sử dụng.)\n\nGiải thích: Chủ đề 7.1.3\nĐặt các tùy chọn theo thứ tự sau:\n\nmột máy khách khởi tạo một thông báo để tìm máy chủ DHCP - DHCPDISCOVER\nmáy chủ DHCP đáp ứng yêu cầu ban đầu của khách hàng - DHCPOFFER\nmáy khách chấp nhận địa chỉ IP do máy chủ DHCP cung cấp - DHCPREQUEST\nmáy chủ DHCP xác nhận rằng hợp đồng thuê đã được chấp nhận - DHCPACK"
+    "explanation": "Để máy chủ nhận được địa chỉ của máy chủ DNS, máy chủ phải sử dụng DHCPv6 không trạng thái. Router được định cấu hình với nhóm DHCPv6 chính xác, nhưng thiếu lệnh ipv6 nd other-config-flag báo hiệu cho máy chủ rằng nó nên sử dụng DHCPv6 để nhận thông tin địa chỉ bổ sung. Lệnh này nên được thêm vào cấu hình giao diện Gigabit0/0 trên router.\n\n37. Ghép từng loại thông báo DHCP với mô tả của nó. (Không phải tất cả các tùy chọn đều được sử dụng.)\n\nGiải thích: Chủ đề 7.1.3\nĐặt các tùy chọn theo thứ tự sau:\n\nmột máy khách khởi tạo một thông báo để tìm máy chủ DHCP - DHCPDISCOVER\nmáy chủ DHCP đáp ứng yêu cầu ban đầu của khách hàng - DHCPOFFER\nmáy khách chấp nhận địa chỉ IP do máy chủ DHCP cung cấp - DHCPREQUEST\nmáy chủ DHCP xác nhận rằng hợp đồng thuê đã được chấp nhận - DHCPACK"
   },
   "m7-9_q38": {
     "question": "Hãy kết hợp mục đích với loại thông báo DHCP của nó. (Không phải tất cả các tùy chọn đều được sử dụng.)",
@@ -1700,7 +1700,7 @@
   "m7-9_q40": {
     "question": "Khớp số bước với trình tự các giai đoạn xảy ra trong quá trình chuyển đổi dự phòng HSRP. (Không phải tất cả các tùy chọn đều được sử dụng.)",
     "options": [],
-    "explanation": "Giao thức bộ định tuyến dự phòng nóng (HSRP) là giao thức độc quyền của Cisco được thiết kế để cho phép chuyển đổi dự phòng trong suốt của thiết bị IPv4 bước nhảy đầu tiên."
+    "explanation": "Giao thức router dự phòng nóng (HSRP) là giao thức độc quyền của Cisco được thiết kế để cho phép chuyển đổi dự phòng trong suốt của thiết bị IPv4 bước nhảy đầu tiên."
   },
   "m7-9_q41": {
     "question": "Ghép các giao thức FHRP với mô tả thích hợp. (Không phải tất cả các tùy chọn đều được sử dụng.)",
@@ -1710,7 +1710,7 @@
   "m7-9_q42": {
     "question": "Khớp các loại thông báo DHCP với thứ tự của quy trình DHCPv4. (Không phải tất cả các tùy chọn đều được sử dụng.)",
     "options": [],
-    "explanation": "Thông báo DHCPDISCOVER được phát rộng sẽ tìm thấy các máy chủ DHCPv4 trên mạng. Khi máy chủ DHCPv4 nhận được thông báo DHCPDISCOVER, nó sẽ dành một địa chỉ IPv4 có sẵn để cho khách hàng thuê và gửi thông báo DHCPOFFER unicast đến khách hàng yêu cầu. Khi máy khách nhận được DHCPOFFER từ máy chủ, nó sẽ gửi lại DHCPREQUEST. Khi nhận được tin nhắn DHCPREQUEST, máy chủ sẽ trả lời bằng tin nhắn DHCPACK đơn hướng. DHCPREPLY và DHCPINFORMATION-REQUEST là các tin nhắn DHCPv6."
+    "explanation": "Thông báo DHCPDISCOVER được phát rộng sẽ tìm thấy các máy chủ DHCPv4 trên mạng. Khi máy chủ DHCPv4 nhận được thông báo DHCPDISCOVER, nó sẽ dành một địa chỉ IPv4 có sẵn để cho khách hàng thuê và gửi thông báo DHCPOFFER unicast đến khách hàng yêu cầu. Khi máy khách nhận được DHCPOFFER từ máy chủ, nó sẽ gửi lại DHCPREQUEST. Khi nhận được tin nhắn DHCPREQUEST, máy chủ sẽ trả lời bằng tin nhắn DHCPACK unicast. DHCPREPLY và DHCPINFORMATION-REQUEST là các tin nhắn DHCPv6."
   },
   "m7-9_q43": {
     "question": "Nhóm địa chỉ của máy chủ DHCP được cấu hình bằng 192.168.234.0/27. Quản trị mạng dành 22 địa chỉ IP cho điện thoại IP. Có bao nhiêu địa chỉ IP còn lại trong nhóm để gán cho các máy chủ khác?",
@@ -1731,27 +1731,27 @@
       "FF-FF-FF-FF-FF-FF và 255.255.255.255",
       "Địa chỉ MAC của máy chủ DHCP và 255.255.255.255"
     ],
-    "explanation": "Khi thời gian thuê địa chỉ IPv4 được gán động đã hết hạn, máy trạm sẽ gửi thông báo DHCPDISCOVER để bắt đầu quá trình lấy địa chỉ IP hợp lệ. Vì máy trạm không biết địa chỉ của máy chủ DHCP nên nó sẽ gửi tin nhắn qua quảng bá, với địa chỉ đích là FF-FF-FF-FF-FF-FF và 255.255.255.255."
+    "explanation": "Khi thời gian thuê địa chỉ IPv4 được gán động đã hết hạn, máy trạm sẽ gửi thông báo DHCPDISCOVER để bắt đầu quá trình lấy địa chỉ IP hợp lệ. Vì máy trạm không biết địa chỉ của máy chủ DHCP nên nó sẽ gửi tin nhắn qua broadcast, với địa chỉ đích là FF-FF-FF-FF-FF-FF và 255.255.255.255."
   },
   "m7-9_q45": {
     "question": "Lệnh nào sẽ cho phép quản trị viên mạng kiểm tra địa chỉ IP được gán cho một địa chỉ MAC cụ thể?",
     "options": [
-      "Bộ định tuyến# hiển thị Running-config I part_dhcp",
-      "Bộ định tuyến # hiển thị số liệu thống kê máy chủ ip dhcp",
-      "Bộ định tuyến # hiển thị liên kết ip dhcp",
-      "Bộ định tuyến # hiển thị nhóm ip dhcp"
+      "Router# hiển thị Running-config I part_dhcp",
+      "Router # hiển thị số liệu thống kê máy chủ ip dhcp",
+      "Router # hiển thị liên kết ip dhcp",
+      "Router # hiển thị nhóm ip dhcp"
     ],
     "explanation": "Lệnh liên kết show ip dhcp sẽ hiển thị các hợp đồng thuê, bao gồm địa chỉ IP, địa chỉ MAC, thời hạn thuê, loại hợp đồng thuê, ID khách hàng và tên người dùng."
   },
   "m7-9_q46": {
-    "question": "Lý do mà ISP thường gán địa chỉ DHCP cho bộ định tuyến không dây trong môi trường SOHO là gì?",
+    "question": "Lý do mà ISP thường gán địa chỉ DHCP cho router không dây trong môi trường SOHO là gì?",
     "options": [
       "hiệu suất mạng tốt hơn",
       "kết nối tốt hơn",
       "quản lý địa chỉ IP dễ dàng",
       "cấu hình dễ dàng trên tường lửa ISP"
     ],
-    "explanation": "Trong môi trường SOHO, bộ định tuyến không dây kết nối với ISP thông qua modem DSL hoặc cáp. Địa chỉ IP giữa bộ định tuyến không dây và trang ISP thường được ISP chỉ định thông qua DHCP. Phương pháp này tạo điều kiện thuận lợi cho việc quản lý địa chỉ IP ở chỗ địa chỉ IP cho máy khách được gán động để nếu máy khách bị loại bỏ, địa chỉ IP được chỉ định có thể dễ dàng được gán lại cho máy khách khác."
+    "explanation": "Trong môi trường SOHO, router không dây kết nối với ISP thông qua modem DSL hoặc cáp. Địa chỉ IP giữa router không dây và trang ISP thường được ISP chỉ định thông qua DHCP. Phương pháp này tạo điều kiện thuận lợi cho việc quản lý địa chỉ IP ở chỗ địa chỉ IP cho máy khách được gán động để nếu máy khách bị loại bỏ, địa chỉ IP được chỉ định có thể dễ dàng được gán lại cho máy khách khác."
   },
   "m7-9_q47": {
     "question": "Thông tin nào có thể được xác minh thông qua lệnh liên kết show ip dhcp?",
@@ -1764,12 +1764,12 @@
     "explanation": "Lệnh liên kết show ip dhcp hiển thị danh sách các địa chỉ IPv4 và địa chỉ MAC của máy chủ mà chúng được gán. Sử dụng thông tin này, quản trị viên có thể xác định giao diện máy chủ nào đã được chỉ định cho các máy chủ cụ thể."
   },
   "m7-9_q48": {
-    "question": "Kết quả của việc kỹ thuật viên mạng đưa ra lệnh ip dhcp loại trừ địa chỉ 10.0.15.1 10.0.15.15 trên bộ định tuyến Cisco là gì?",
+    "question": "Kết quả của việc kỹ thuật viên mạng đưa ra lệnh ip dhcp loại trừ địa chỉ 10.0.15.1 10.0.15.15 trên router Cisco là gì?",
     "options": [
-      "Bộ định tuyến của Cisco sẽ chỉ loại trừ các địa chỉ IP 10.0.15.1 và 10.0.15.15 khỏi việc cho máy khách DHCP thuê.",
-      "Bộ định tuyến của Cisco sẽ loại trừ 15 địa chỉ IP được cho máy khách DHCP thuê.",
-      "Bộ định tuyến của Cisco sẽ tự động tạo nhóm DHCP bằng mặt nạ /28.",
-      "Bộ định tuyến của Cisco sẽ chỉ cho phép khách hàng thuê các địa chỉ IP được chỉ định."
+      "Router của Cisco sẽ chỉ loại trừ các địa chỉ IP 10.0.15.1 và 10.0.15.15 khỏi việc cho máy khách DHCP thuê.",
+      "Router của Cisco sẽ loại trừ 15 địa chỉ IP được cho máy khách DHCP thuê.",
+      "Router của Cisco sẽ tự động tạo nhóm DHCP bằng mặt nạ /28.",
+      "Router của Cisco sẽ chỉ cho phép khách hàng thuê các địa chỉ IP được chỉ định."
     ],
     "explanation": "Lệnh ip dhcp loại trừ địa chỉ được theo sau bởi địa chỉ đầu tiên và cuối cùng được loại trừ khỏi việc cho máy khách DHCP thuê."
   },
@@ -1786,7 +1786,7 @@
       "liên kết cục bộ tĩnh",
       "DHCPv6 có trạng thái"
     ],
-    "explanation": "Nhóm DHCPv6 trạng thái được định cấu hình với tiền tố địa chỉ cho máy chủ thông qua lệnh địa chỉ, trong khi nhóm DHCPv6 không trạng thái thường chỉ chứa thông tin như địa chỉ máy chủ DNS và tên miền. Các tin nhắn RA được gửi từ các bộ định tuyến được cấu hình là máy chủ DHCPv6 có trạng thái có cờ M được đặt thành 1 bằng lệnh ipv6 nd Managed-config-flag, trong khi các máy chủ DHCPv6 không trạng thái được biểu thị bằng cách đặt cờ O thành 1 bằng lệnh ipv6 nd other-config-flag."
+    "explanation": "Nhóm DHCPv6 trạng thái được định cấu hình với tiền tố địa chỉ cho máy chủ thông qua lệnh địa chỉ, trong khi nhóm DHCPv6 không trạng thái thường chỉ chứa thông tin như địa chỉ máy chủ DNS và tên miền. Các tin nhắn RA được gửi từ các router được cấu hình là máy chủ DHCPv6 có trạng thái có cờ M được đặt thành 1 bằng lệnh ipv6 nd Managed-config-flag, trong khi các máy chủ DHCPv6 không trạng thái được biểu thị bằng cách đặt cờ O thành 1 bằng lệnh ipv6 nd other-config-flag."
   },
   "m7-9_q51": {
     "question": "Triển khai FHRP nào là giao thức độc quyền của Cisco hỗ trợ cân bằng tải IPv6?",
@@ -1849,17 +1849,17 @@
     "explanation": "Lệnh chuyển tiếp ipv6 dhcp phải được áp dụng cho giao diện nơi đặt máy khách. Lệnh chuyển tiếp ipv6 dhcp có thể sử dụng địa chỉ unicast liên kết cục bộ hoặc toàn cầu của máy chủ DHCPv6 hoặc thậm chí là địa chỉ multicast. Cờ ipv6 nd Managed-config-config cho khách hàng biết rằng họ nên sử dụng DHCPv6 có trạng thái và cũng được áp dụng cho giao diện nơi đặt khách hàng."
   },
   "m7-9_q57": {
-    "question": "Tham khảo sơ đồ kết nối (exhibit). Quản trị viên mạng đang định cấu hình bộ định tuyến làm máy chủ DHCPv6. Quản trị viên đưa ra lệnh show ipv6 dhcp pool để xác minh cấu hình. Câu nào giải thích nguyên nhân số lượng khách hàng đang hoạt động là 0?",
+    "question": "Tham khảo sơ đồ kết nối (exhibit). Quản trị viên mạng đang định cấu hình router làm máy chủ DHCPv6. Quản trị viên đưa ra lệnh show ipv6 dhcp pool để xác minh cấu hình. Câu nào giải thích nguyên nhân số lượng khách hàng đang hoạt động là 0?",
     "options": [
       "Địa chỉ cổng mặc định không được cung cấp trong nhóm.",
       "Chưa có khách hàng nào liên lạc với máy chủ DHCPv6.",
       "Cấu hình nhóm IPv6 DHCP không có dải địa chỉ IPv6 được chỉ định.",
       "Trạng thái không được duy trì bởi máy chủ DHCPv6 trong hoạt động DHCPv6 không trạng thái."
     ],
-    "explanation": "Trong cấu hình DHCPv6 không trạng thái, được biểu thị bằng lệnh ipv6 nd other-config-flag, máy chủ DHCPv6 không duy trì thông tin trạng thái, vì địa chỉ IPv6 của máy khách không được máy chủ DHCP quản lý. Vì máy khách sẽ định cấu hình địa chỉ IPv6 của họ bằng cách kết hợp tiền tố/độ dài tiền tố và ID giao diện tự tạo nên cấu hình nhóm ipv6 dhcp không cần chỉ định phạm vi địa chỉ IPv6 hợp lệ. Và vì máy khách sẽ sử dụng địa chỉ link-local của giao diện bộ định tuyến làm địa chỉ cổng mặc định nên địa chỉ cổng mặc định là không cần thiết."
+    "explanation": "Trong cấu hình DHCPv6 không trạng thái, được biểu thị bằng lệnh ipv6 nd other-config-flag, máy chủ DHCPv6 không duy trì thông tin trạng thái, vì địa chỉ IPv6 của máy khách không được máy chủ DHCP quản lý. Vì máy khách sẽ định cấu hình địa chỉ IPv6 của họ bằng cách kết hợp tiền tố/độ dài tiền tố và ID giao diện tự tạo nên cấu hình nhóm ipv6 dhcp không cần chỉ định phạm vi địa chỉ IPv6 hợp lệ. Và vì máy khách sẽ sử dụng địa chỉ link-local của giao diện router làm địa chỉ cổng mặc định nên địa chỉ cổng mặc định là không cần thiết."
   },
   "m7-9_q58": {
-    "question": "Việc triển khai FHRP nào là độc quyền của Cisco và chỉ cho phép một bộ định tuyến trong nhóm chuyển tiếp các gói IPv6?",
+    "question": "Việc triển khai FHRP nào là độc quyền của Cisco và chỉ cho phép một router trong nhóm chuyển tiếp các gói IPv6?",
     "options": [
       "VRRPv3",
       "HSRP",
@@ -1869,7 +1869,7 @@
     "explanation": ""
   },
   "m7-9_q59": {
-    "question": "Việc triển khai FHRP nào là giao thức bầu cử chỉ có IPv4 không độc quyền có một bộ định tuyến chính cho mỗi nhóm?",
+    "question": "Việc triển khai FHRP nào là giao thức bầu cử chỉ có IPv4 không độc quyền có một router chính cho mỗi nhóm?",
     "options": [
       "HSRP cho IPv6",
       "GLBP",
@@ -1979,10 +1979,10 @@
   "m7-9_q69": {
     "question": "Loại tin nhắn nào được máy khách DHCP gửi khi hợp đồng thuê địa chỉ IP của nó sắp hết hạn?​",
     "options": [
-      "một tin nhắn quảng bá DHCPREQUEST",
-      "một tin nhắn đơn hướng DHCPDISCOVER",
-      "một tin nhắn quảng bá DHCPDISCOVER",
-      "một tin nhắn đơn hướng DHCPREQUEST"
+      "một tin nhắn broadcast DHCPREQUEST",
+      "một tin nhắn unicast DHCPDISCOVER",
+      "một tin nhắn broadcast DHCPDISCOVER",
+      "một tin nhắn unicast DHCPREQUEST"
     ],
     "explanation": ""
   },
@@ -2027,7 +2027,7 @@
     "explanation": ""
   },
   "m10-13_q5": {
-    "question": "Phương thức xác thực nào lưu trữ tên người dùng và mật khẩu trong bộ định tuyến và lý tưởng cho các mạng nhỏ?",
+    "question": "Phương thức xác thực nào lưu trữ tên người dùng và mật khẩu trong router và lý tưởng cho các mạng nhỏ?",
     "options": [
       "AAA dựa trên máy chủ qua TACACS+",
       "AAA cục bộ trên RADIUS",
@@ -2043,7 +2043,7 @@
     "options": [
       "Bật CDP trên các thiết bị biên và bật LLDP trên các thiết bị nội thất.",
       "Sử dụng LLDP tiêu chuẩn mở thay vì CDP.",
-      "Sử dụng cài đặt bộ định tuyến mặc định cho CDP và LLDP.",
+      "Sử dụng cài đặt router mặc định cho CDP và LLDP.",
       "Vô hiệu hóa cả hai giao thức trên tất cả các giao diện không cần thiết."
     ],
     "explanation": "Cả hai giao thức khám phá đều có thể cung cấp cho tin tặc thông tin mạng nhạy cảm. Chúng không nên được kích hoạt trên các thiết bị biên và nên bị vô hiệu hóa trên toàn cầu hoặc trên cơ sở từng giao diện nếu không cần thiết. CDP được bật theo mặc định.​"
@@ -2071,7 +2071,7 @@
   "m10-13_q9": {
     "question": "Thiết bị nào được coi là thiết bị thay thế trong quá trình xác thực 802.1X?",
     "options": [
-      "bộ định tuyến đang đóng vai trò là cổng mặc định",
+      "router đang đóng vai trò là cổng mặc định",
       "máy chủ xác thực đang thực hiện xác thực ứng dụng khách",
       "khách hàng đang yêu cầu xác thực",
       "công tắc đang kiểm soát truy cập mạng"
@@ -2079,14 +2079,14 @@
     "explanation": "Các thiết bị liên quan đến quá trình xác thực 802.1X như sau:\n\nNgười yêu cầu, là khách hàng đang yêu cầu truy cập mạng\nTrình xác thực, là công tắc mà máy khách đang kết nối và thực sự đang kiểm soát quyền truy cập mạng vật lý\nMáy chủ xác thực, thực hiện xác thực thực tế"
   },
   "m14-16_q1": {
-    "question": "Tính năng nào trên bộ định tuyến của Cisco cho phép chuyển tiếp lưu lượng truy cập không có tuyến đường cụ thể?",
+    "question": "Tính năng nào trên router của Cisco cho phép chuyển tiếp lưu lượng truy cập không có tuyến đường cụ thể?",
     "options": [
       "bước nhảy tiếp theo",
       "cửa ngõ cuối cùng",
       "nguồn tuyến đường",
       "giao diện đi"
     ],
-    "explanation": "Tuyến tĩnh mặc định được sử dụng làm cổng cuối cùng để chuyển tiếp lưu lượng truy cập đích không xác định sang giao diện hop/exit tiếp theo. Giao diện bước nhảy tiếp theo hoặc lối ra là đích để gửi lưu lượng truy cập đến trên mạng sau khi lưu lượng truy cập được khớp trong bộ định tuyến. Nguồn tuyến là vị trí mà tuyến đường được học từ đó."
+    "explanation": "Tuyến tĩnh mặc định được sử dụng làm cổng cuối cùng để chuyển tiếp lưu lượng truy cập đích không xác định sang giao diện hop/exit tiếp theo. Giao diện bước nhảy tiếp theo hoặc lối ra là đích để gửi lưu lượng truy cập đến trên mạng sau khi lưu lượng truy cập được khớp trong router. Nguồn tuyến là vị trí mà tuyến đường được học từ đó."
   },
   "m14-16_q2": {
     "question": "Ba ưu điểm nào được cung cấp bởi định tuyến tĩnh? (Chọn ba.)",
@@ -2104,7 +2104,7 @@
     "question": "Hai chức năng của giao thức định tuyến động là gì? (Chọn hai.)",
     "options": [
       "để duy trì bảng định tuyến",
-      "để đảm bảo chi phí bộ định tuyến thấp",
+      "để đảm bảo chi phí router thấp",
       "để tránh lộ thông tin mạng",
       "để khám phá mạng",
       "để chọn đường dẫn được chỉ định bởi quản trị viên"
@@ -2116,7 +2116,7 @@
     "options": [
       "dễ thực hiện hơn",
       "an toàn hơn trong việc kiểm soát cập nhật định tuyến",
-      "yêu cầu chi phí tài nguyên bộ định tuyến ít hơn",
+      "yêu cầu chi phí tài nguyên router ít hơn",
       "khả năng chủ động tìm kiếm các tuyến đường mới nếu đường dẫn hiện tại không khả dụng​"
     ],
     "explanation": "Định tuyến động có khả năng tìm kiếm và tìm ra đường dẫn mới tốt nhất nếu đường dẫn hiện tại không còn nữa. Các tùy chọn khác thực sự là những ưu điểm của định tuyến tĩnh."
@@ -2125,31 +2125,31 @@
     "question": "Điều gì xảy ra với một mục tuyến tĩnh trong bảng định tuyến khi giao diện gửi đi được liên kết với tuyến đó chuyển sang trạng thái ngừng hoạt động?",
     "options": [
       "Tuyến tĩnh được xóa khỏi bảng định tuyến.",
-      "Bộ định tuyến thăm dò hàng xóm để tìm tuyến đường thay thế.",
-      "Bộ định tuyến tự động chuyển hướng tuyến tĩnh để sử dụng giao diện khác.",
+      "Router thăm dò hàng xóm để tìm tuyến đường thay thế.",
+      "Router tự động chuyển hướng tuyến tĩnh để sử dụng giao diện khác.",
       "Tuyến tĩnh vẫn còn trong bảng vì nó được xác định là tĩnh."
     ],
-    "explanation": "Khi giao diện liên kết với một tuyến tĩnh bị hỏng, bộ định tuyến sẽ loại bỏ tuyến đó vì nó không còn hợp lệ."
+    "explanation": "Khi giao diện liên kết với một tuyến tĩnh bị hỏng, router sẽ loại bỏ tuyến đó vì nó không còn hợp lệ."
   },
   "m14-16_q6": {
     "question": "Đặc điểm của tuyến tĩnh phù hợp với tất cả các gói là gì?",
     "options": [
       "Nó sử dụng một địa chỉ mạng duy nhất để gửi nhiều tuyến tĩnh đến một địa chỉ đích.",
-      "Nó xác định địa chỉ IP cổng mà bộ định tuyến gửi tất cả các gói IP mà nó không có tuyến đã học hoặc tuyến tĩnh.",
+      "Nó xác định địa chỉ IP cổng mà router gửi tất cả các gói IP mà nó không có tuyến đã học hoặc tuyến tĩnh.",
       "Nó sao lưu tuyến đường đã được phát hiện bởi giao thức định tuyến động.",
       "Nó được cấu hình với khoảng cách quản trị cao hơn so với giao thức định tuyến động ban đầu."
     ],
-    "explanation": "Tuyến tĩnh mặc định là tuyến phù hợp với tất cả các gói. Nó xác định địa chỉ IP cổng mà bộ định tuyến gửi tất cả các gói IP mà nó không có tuyến đã học hoặc tuyến tĩnh. Tuyến tĩnh mặc định chỉ đơn giản là tuyến tĩnh có 0.0.0.0/0 làm địa chỉ IPv4 đích. Việc định cấu hình tuyến tĩnh mặc định sẽ tạo ra một cổng cuối cùng."
+    "explanation": "Tuyến tĩnh mặc định là tuyến phù hợp với tất cả các gói. Nó xác định địa chỉ IP cổng mà router gửi tất cả các gói IP mà nó không có tuyến đã học hoặc tuyến tĩnh. Tuyến tĩnh mặc định chỉ đơn giản là tuyến tĩnh có 0.0.0.0/0 làm địa chỉ IPv4 đích. Việc định cấu hình tuyến tĩnh mặc định sẽ tạo ra một cổng cuối cùng."
   },
   "m14-16_q7": {
     "question": "Khi nào sử dụng giao thức định tuyến động thay vì định tuyến tĩnh sẽ có lợi hơn?",
     "options": [
-      "trong một tổ chức nơi các bộ định tuyến gặp vấn đề về hiệu suất",
+      "trong một tổ chức nơi các router gặp vấn đề về hiệu suất",
       "trên mạng sơ khai có một điểm thoát duy nhất",
       "trong một tổ chức có mạng lưới nhỏ hơn dự kiến ​​sẽ không tăng quy mô",
       "trên một mạng có nhiều thay đổi về cấu trúc liên kết"
     ],
-    "explanation": "Các giao thức định tuyến động tiêu tốn nhiều tài nguyên bộ định tuyến hơn, phù hợp với các mạng lớn hơn và hữu ích hơn trên các mạng đang phát triển và thay đổi."
+    "explanation": "Các giao thức định tuyến động tiêu tốn nhiều tài nguyên router hơn, phù hợp với các mạng lớn hơn và hữu ích hơn trên các mạng đang phát triển và thay đổi."
   },
   "m14-16_q8": {
     "question": "Tuyến đường nào sẽ được sử dụng để chuyển tiếp gói có địa chỉ IP nguồn là 192.168.10.1 và địa chỉ IP đích là 10.1.1.1?",
@@ -2162,7 +2162,7 @@
     "explanation": "Mặc dù OSPF có giá trị khoảng cách quản trị cao hơn (kém tin cậy hơn), kết quả phù hợp nhất là tuyến đường trong bảng định tuyến có số lượng bit khớp xa nhất bên trái."
   },
   "m14-16_q9": {
-    "question": "Tham khảo sơ đồ kết nối (exhibit). Giá trị khoảng cách quản trị của tuyến đường để bộ định tuyến R1 đến địa chỉ IPv6 đích của 2001:DB8:CAFE:4::A là bao nhiêu?",
+    "question": "Tham khảo sơ đồ kết nối (exhibit). Giá trị khoảng cách quản trị của tuyến đường để router R1 đến địa chỉ IPv6 đích của 2001:DB8:CAFE:4::A là bao nhiêu?",
     "options": [
       "120",
       "110",
@@ -2182,7 +2182,7 @@
     "explanation": "Administrative distance (AD) đại diện cho mức độ tin cậy của một tuyến đường cụ thể. Giá trị AD càng nhỏ thì tuyến đường học được càng có độ tin cậy cao. Khi router nhận được nhiều tuyến đường từ các nguồn khác nhau để đến cùng một mạng đích, router sẽ so sánh giá trị administrative distance để quyết định chọn tuyến đường có AD thấp nhất đưa vào bảng định tuyến. Metric là giá trị được một giao thức định tuyến sử dụng để so sánh chi phí giữa các tuyến đường do chính giao thức đó phát hiện. Giao diện đầu ra (outgoing interface) là cổng mạng mà router dùng để chuyển tiếp gói tin về hướng mạng đích. Giao thức định tuyến được sử dụng để trao đổi các bản cập nhật định tuyến giữa các router lân cận."
   },
   "m14-16_q12": {
-    "question": "Tham khảo đồ họa. Lệnh nào sẽ được sử dụng trên bộ định tuyến A để định cấu hình tuyến tĩnh để điều hướng lưu lượng truy cập từ LAN A đến LAN C?",
+    "question": "Tham khảo đồ họa. Lệnh nào sẽ được sử dụng trên router A để định cấu hình tuyến tĩnh để điều hướng lưu lượng truy cập từ LAN A đến LAN C?",
     "options": [
       "A(config)# ip tuyến 192.168.3.0 255.255.255.0 192.168.3.1",
       "A(config)# ip tuyến 192.168.3.2 255.255.255.0 192.168.4.0",
@@ -2190,21 +2190,21 @@
       "A(config)# ip tuyến 192.168.5.0 255.255.255.0 192.168.3.2",
       "A(config)# ip tuyến 192.168.4.0 255.255.255.0 192.168.3.2"
     ],
-    "explanation": "Mạng đích trên LAN C là 192.168.4.0 và địa chỉ bước nhảy tiếp theo theo quan điểm của bộ định tuyến A là 192.168.3.2."
+    "explanation": "Mạng đích trên LAN C là 192.168.4.0 và địa chỉ bước nhảy tiếp theo theo quan điểm của router A là 192.168.3.2."
   },
   "m14-16_q13": {
-    "question": "Tuyến tĩnh mặc định sẽ được cấu hình trên hai bộ định tuyến nào? (Chọn hai.)",
+    "question": "Tuyến tĩnh mặc định sẽ được cấu hình trên hai router nào? (Chọn hai.)",
     "options": [
-      "bất kỳ bộ định tuyến nào cần có tuyến dự phòng đến định tuyến động để đảm bảo độ tin cậy",
-      "bộ định tuyến đóng vai trò là cổng cuối cùng",
-      "bất kỳ bộ định tuyến nào chạy iOS trước 12.0",
-      "kết nối bộ định tuyến còn sơ khai với phần còn lại của mạng công ty hoặc trường học",
-      "kết nối bộ định tuyến biên với ISP"
+      "bất kỳ router nào cần có tuyến dự phòng đến định tuyến động để đảm bảo độ tin cậy",
+      "router đóng vai trò là cổng cuối cùng",
+      "bất kỳ router nào chạy iOS trước 12.0",
+      "kết nối router còn sơ khai với phần còn lại của mạng công ty hoặc trường học",
+      "kết nối router biên với ISP"
     ],
-    "explanation": "Bộ định tuyến sơ khai hoặc bộ định tuyến biên được kết nối với ISP chỉ có một bộ định tuyến khác làm kết nối. Tuyến tĩnh mặc định hoạt động trong những trường hợp đó vì tất cả lưu lượng truy cập sẽ được gửi đến một đích. Bộ định tuyến đích là cổng cuối cùng. Tuyến mặc định không được định cấu hình trên cổng mà trên bộ định tuyến gửi lưu lượng đến cổng. Bộ định tuyến iOS không thành vấn đề."
+    "explanation": "Router sơ khai hoặc router biên được kết nối với ISP chỉ có một router khác làm kết nối. Tuyến tĩnh mặc định hoạt động trong những trường hợp đó vì tất cả lưu lượng truy cập sẽ được gửi đến một đích. Router đích là cổng cuối cùng. Tuyến mặc định không được định cấu hình trên cổng mà trên router gửi lưu lượng đến cổng. Router iOS không thành vấn đề."
   },
   "m14-16_q14": {
-    "question": "Tham khảo sơ đồ kết nối (exhibit). Mạng này có hai kết nối với ISP, một qua bộ định tuyến C và một qua bộ định tuyến B. Liên kết nối tiếp giữa bộ định tuyến A và bộ định tuyến C hỗ trợ EIGRP và là liên kết chính với Internet. Nếu liên kết chính không thành công, quản trị viên cần một tuyến tĩnh nổi để tránh việc tra cứu tuyến đệ quy và mọi sự cố tiềm ẩn ở bước nhảy tiếp theo do tính chất đa truy cập của phân đoạn Ethernet với bộ định tuyến B gây ra. Quản trị viên nên định cấu hình gì?",
+    "question": "Tham khảo sơ đồ kết nối (exhibit). Mạng này có hai kết nối với ISP, một qua router C và một qua router B. Liên kết nối tiếp giữa router A và router C hỗ trợ EIGRP và là liên kết chính với Internet. Nếu liên kết chính không thành công, quản trị viên cần một tuyến tĩnh nổi để tránh việc tra cứu tuyến đệ quy và mọi sự cố tiềm ẩn ở bước nhảy tiếp theo do tính chất đa truy cập của phân đoạn Ethernet với router B gây ra. Quản trị viên nên định cấu hình gì?",
     "options": [
       "Tạo một tuyến tĩnh trỏ đến 10.1.1.1 với AD là 95.",
       "Tạo một tuyến tĩnh được chỉ định đầy đủ trỏ đến Fa0/0 với AD là 1.",
@@ -2212,7 +2212,7 @@
       "Tạo một tuyến tĩnh trỏ đến 10.1.1.1 với AD là 1.",
       "Tạo một tuyến tĩnh trỏ đến Fa0/0 với AD là 1."
     ],
-    "explanation": "Tuyến tĩnh nổi là tuyến tĩnh có khoảng cách quản trị cao hơn tuyến đường khác đã có trong bảng định tuyến. Nếu tuyến đường trong bảng biến mất, tuyến tĩnh nổi sẽ được đưa vào bảng định tuyến ở vị trí của nó. EIGRP nội bộ có AD là 90, do đó, tuyến tĩnh nổi trong kịch bản này sẽ cần có AD cao hơn 90. Ngoài ra, khi tạo tuyến tĩnh đến giao diện đa truy cập như phân đoạn FastEthernet, nên sử dụng tuyến được chỉ định đầy đủ, với cả địa chỉ IP bước nhảy tiếp theo và giao diện thoát. Điều này ngăn bộ định tuyến thực hiện tra cứu đệ quy nhưng vẫn đảm bảo thiết bị bước nhảy tiếp theo chính xác trên phân đoạn đa truy cập chuyển tiếp gói."
+    "explanation": "Tuyến tĩnh nổi là tuyến tĩnh có khoảng cách quản trị cao hơn tuyến đường khác đã có trong bảng định tuyến. Nếu tuyến đường trong bảng biến mất, tuyến tĩnh nổi sẽ được đưa vào bảng định tuyến ở vị trí của nó. EIGRP nội bộ có AD là 90, do đó, tuyến tĩnh nổi trong kịch bản này sẽ cần có AD cao hơn 90. Ngoài ra, khi tạo tuyến tĩnh đến giao diện đa truy cập như phân đoạn FastEthernet, nên sử dụng tuyến được chỉ định đầy đủ, với cả địa chỉ IP bước nhảy tiếp theo và giao diện thoát. Điều này ngăn router thực hiện tra cứu đệ quy nhưng vẫn đảm bảo thiết bị bước nhảy tiếp theo chính xác trên phân đoạn đa truy cập chuyển tiếp gói."
   },
   "m14-16_q15": {
     "question": "Đặc điểm của tuyến đường tĩnh nổi là gì?",
@@ -2250,14 +2250,14 @@
     "explanation": ""
   },
   "m14-16_q19": {
-    "question": "Quản trị viên đưa ra lệnh ipv6 Route 2001:db8:acad:1::/32 gigabitethernet0/0 2001:db8:acad:6::1 100 trên bộ định tuyến. Khoảng cách hành chính nào được ấn định cho tuyến đường này?",
+    "question": "Quản trị viên đưa ra lệnh ipv6 Route 2001:db8:acad:1::/32 gigabitethernet0/0 2001:db8:acad:6::1 100 trên router. Khoảng cách hành chính nào được ấn định cho tuyến đường này?",
     "options": [
       "0",
       "1",
       "32",
       "100"
     ],
-    "explanation": "Lệnh ipv6 Route 2001:db8:acad:1::/32 gigabitethernet0/0 2001:db8:acad:6::1 100 sẽ định cấu hình tuyến tĩnh nổi trên bộ định tuyến. Số 100 ở cuối lệnh chỉ định khoảng cách quản trị là 100 được áp dụng cho tuyến đường."
+    "explanation": "Lệnh ipv6 Route 2001:db8:acad:1::/32 gigabitethernet0/0 2001:db8:acad:6::1 100 sẽ định cấu hình tuyến tĩnh nổi trên router. Số 100 ở cuối lệnh chỉ định khoảng cách quản trị là 100 được áp dụng cho tuyến đường."
   },
   "m14-16_q20": {
     "question": "Tham khảo sơ đồ kết nối (exhibit). Lệnh định tuyến tĩnh mặc định nào sẽ cho phép R1 có khả năng tiếp cận tất cả các mạng không xác định trên Internet?",
@@ -2267,7 +2267,7 @@
       "R1(config)# tuyến ipv6 2001:db8:32::/64 G0/1 fe80::2",
       "R1(config)# tuyến ipv6 ::/0 G0/1 fe80::2"
     ],
-    "explanation": "Để định tuyến các gói đến các mạng IPv6 không xác định, bộ định tuyến sẽ cần một tuyến mặc định IPv6. Tuyến tĩnh ipv6 Route ::/0 G0/1 fe80::2 sẽ khớp với tất cả các mạng và gửi các gói ra khỏi giao diện thoát được chỉ định G0/1 tới R2."
+    "explanation": "Để định tuyến các gói đến các mạng IPv6 không xác định, router sẽ cần một tuyến mặc định IPv6. Tuyến tĩnh ipv6 Route ::/0 G0/1 fe80::2 sẽ khớp với tất cả các mạng và gửi các gói ra khỏi giao diện thoát được chỉ định G0/1 tới R2."
   },
   "m14-16_q21": {
     "question": "Tham khảo sơ đồ kết nối (exhibit). Kỹ sư mạng của công ty được hiển thị muốn sử dụng kết nối ISP chính cho tất cả kết nối bên ngoài. Kết nối ISP dự phòng chỉ được sử dụng nếu kết nối ISP chính không thành công. Tập lệnh nào sẽ hoàn thành mục tiêu này?",
@@ -2280,14 +2280,14 @@
     "explanation": "Tuyến tĩnh không có khoảng cách quản trị được thêm vào như một phần của lệnh có khoảng cách quản trị mặc định là 1. Liên kết dự phòng phải có số cao hơn 1. Câu trả lời đúng có khoảng cách quản trị là 10. Tuyến đường quad 0 còn lại sẽ tải các gói cân bằng trên cả hai liên kết và cả hai liên kết sẽ xuất hiện trong bảng định tuyến. Các câu trả lời còn lại chỉ đơn giản là các tuyến tĩnh (tuyến mặc định hoặc tuyến mặc định tĩnh nổi)."
   },
   "m14-16_q22": {
-    "question": "Tham khảo sơ đồ kết nối (exhibit). Bộ lệnh nào sẽ cấu hình các tuyến tĩnh cho phép bộ định tuyến Park và Alta a) chuyển tiếp các gói đến từng mạng LAN và b) chuyển hướng tất cả lưu lượng truy cập khác đến Internet?",
+    "question": "Tham khảo sơ đồ kết nối (exhibit). Bộ lệnh nào sẽ cấu hình các tuyến tĩnh cho phép router Park và Alta a) chuyển tiếp các gói đến từng mạng LAN và b) chuyển hướng tất cả lưu lượng truy cập khác đến Internet?",
     "options": [
       "Park(config)# ip tuyến 0.0.0.0 0.0.0.0 192.168.14.1\nAlta(config)# ip tuyến 10.0.234.0 255.255.255.0 192.168.14.2\nAlta(config)# ip tuyến 0.0.0.0 0.0.0.0 s0/0/0",
       "Park(config)# ip tuyến 0.0.0.0 0.0.0.0 192.168.14.1\nAlta(config)# ip tuyến 10.0.234.0 255.255.255.0 192.168.14.2\nAlta(config)# ip tuyến 198.18.222.0 255.255.255.255 s0/0/0",
       "Park(config)# ip tuyến 172.16.67.0 255.255.255.0 192.168.14.1\nPark(config)# ip tuyến 0.0.0.0 0.0.0.0 192.168.14.1\nAlta(config)# ip tuyến 10.0.234.0 255.255.255.0 192.168.14.2",
       "Park(config)# ip tuyến 172.16.67.0 255.255.255.0 192.168.14.1\nAlta(config)# ip tuyến 10.0.234.0 255.255.255.0 192.168.14.2\nAlta(config)# ip tuyến 0.0.0.0 0.0.0.0 s0/0/1"
     ],
-    "explanation": "Mạng LAN được kết nối với bộ định tuyến Park là mạng stud, do đó, nên sử dụng tuyến mặc định để chuyển tiếp lưu lượng truy cập mạng đến các mạng không phải cục bộ. Bộ định tuyến Alta kết nối với cả Internet và bộ định tuyến Park, nó sẽ yêu cầu cấu hình hai tuyến tĩnh, một hướng tới internet và một hướng tới mạng LAN được kết nối với bộ định tuyến Park."
+    "explanation": "Mạng LAN được kết nối với router Park là mạng stud, do đó, nên sử dụng tuyến mặc định để chuyển tiếp lưu lượng truy cập mạng đến các mạng không phải cục bộ. Router Alta kết nối với cả Internet và router Park, nó sẽ yêu cầu cấu hình hai tuyến tĩnh, một hướng tới internet và một hướng tới mạng LAN được kết nối với router Park."
   },
   "m14-16_q23": {
     "question": "Tham khảo sơ đồ kết nối (exhibit). Công ty nhỏ được hiển thị sử dụng định tuyến tĩnh. Người dùng trên mạng LAN R2 đã báo cáo sự cố với kết nối. Vấn đề là gì?",
@@ -2301,7 +2301,7 @@
     "explanation": "R1 có đường dẫn mặc định tới Internet. R2 có tuyến mặc định tới R1. R1 thiếu tuyến tĩnh cho mạng 10.0.60.0. Bất kỳ lưu lượng truy cập nào đạt tới R1 và được dành cho 10.0.60.0/24 sẽ được chuyển đến ISP."
   },
   "m14-16_q24": {
-    "question": "Tham khảo sơ đồ kết nối (exhibit). Quản trị viên đang cố gắng cài đặt tuyến tĩnh IPv6 trên bộ định tuyến R1 để truy cập mạng được gắn với bộ định tuyến R2. Sau khi nhập lệnh tuyến tĩnh, kết nối với mạng vẫn không thành công. Đã xảy ra lỗi gì trong cấu hình tuyến tĩnh?",
+    "question": "Tham khảo sơ đồ kết nối (exhibit). Quản trị viên đang cố gắng cài đặt tuyến tĩnh IPv6 trên router R1 để truy cập mạng được gắn với router R2. Sau khi nhập lệnh tuyến tĩnh, kết nối với mạng vẫn không thành công. Đã xảy ra lỗi gì trong cấu hình tuyến tĩnh?",
     "options": [
       "Địa chỉ bước nhảy tiếp theo không chính xác.",
       "Giao diện không chính xác.",
@@ -2313,12 +2313,12 @@
   "m14-16_q25": {
     "question": "Tham khảo sơ đồ kết nối (exhibit). Tuyến máy chủ 2001:DB8:CAFE:4::1/128 được cài đặt trong bảng định tuyến như thế nào?",
     "options": [
-      "Tuyến đường được tạo động bởi bộ định tuyến R1.",
-      "Tuyến đường được học động từ một bộ định tuyến khác.",
+      "Tuyến đường được tạo động bởi router R1.",
+      "Tuyến đường được học động từ một router khác.",
       "Tuyến đường đã được quản trị viên nhập thủ công.",
       "Tuyến đường được cài đặt tự động khi địa chỉ IP được định cấu hình trên giao diện hoạt động."
     ],
-    "explanation": "Tuyến máy chủ là tuyến IPv6 có mặt nạ 128 bit. Một tuyến máy chủ có thể được cài đặt tự động trong bảng định tuyến khi địa chỉ IP được định cấu hình trên giao diện bộ định tuyến hoặc theo cách thủ công nếu tuyến tĩnh được tạo."
+    "explanation": "Tuyến máy chủ là tuyến IPv6 có mặt nạ 128 bit. Một tuyến máy chủ có thể được cài đặt tự động trong bảng định tuyến khi địa chỉ IP được định cấu hình trên giao diện router hoặc theo cách thủ công nếu tuyến tĩnh được tạo."
   },
   "m14-16_q26": {
     "question": "Tham khảo sơ đồ kết nối (exhibit). HostA đang cố gắng liên hệ với ServerB. Hai câu nào mô tả chính xác địa chỉ mà HostA sẽ tạo ra trong quá trình này? (Chọn hai.)",
@@ -2338,12 +2338,12 @@
       "Không có cửa ngõ cuối cùng tại R1.",
       "Tuyến tĩnh cho 192.168.2.0 được cấu hình không chính xác.",
       "Tuyến đường mặc định không được cấu hình trên R1.",
-      "Giao diện nối tiếp giữa hai bộ định tuyến bị hỏng."
+      "Giao diện nối tiếp giữa hai router bị hỏng."
     ],
     "explanation": ""
   },
   "m14-16_q28": {
-    "question": "Tham khảo sơ đồ kết nối (exhibit). Quản trị viên đang cố gắng cài đặt tuyến tĩnh mặc định trên bộ định tuyến R1 để truy cập mạng Site B trên bộ định tuyến R2. Sau khi nhập lệnh định tuyến tĩnh, tuyến đường đó vẫn không hiển thị trong bảng định tuyến của bộ định tuyến R1. Điều gì đang ngăn cản việc cài đặt tuyến đường trong bảng định tuyến?",
+    "question": "Tham khảo sơ đồ kết nối (exhibit). Quản trị viên đang cố gắng cài đặt tuyến tĩnh mặc định trên router R1 để truy cập mạng Site B trên router R2. Sau khi nhập lệnh định tuyến tĩnh, tuyến đường đó vẫn không hiển thị trong bảng định tuyến của router R1. Điều gì đang ngăn cản việc cài đặt tuyến đường trong bảng định tuyến?",
     "options": [
       "Mặt nạ mạng không chính xác.",
       "Giao diện thoát bị thiếu.",
@@ -2353,7 +2353,7 @@
     "explanation": "Địa chỉ bước nhảy tiếp theo không chính xác. Từ R1, địa chỉ hop tiếp theo phải là địa chỉ của giao diện nối tiếp của R2, 209.165.202.130."
   },
   "m14-16_q29": {
-    "question": "Tham khảo sơ đồ kết nối (exhibit). Bộ định tuyến nhánh có mối quan hệ lân cận OSPF với bộ định tuyến HQ qua mạng 198.51.0.4/30. Liên kết mạng 198.51.0.8/30 sẽ đóng vai trò dự phòng khi liên kết OSPF bị hỏng. Lệnh tuyến tĩnh nổi ip tuyến 0.0.0.0 0.0.0.0 S0/1/1 100 đã được ban hành trên Chi nhánh và hiện tại lưu lượng truy cập đang sử dụng liên kết dự phòng ngay cả khi liên kết OSPF hoạt động và hoạt động. Thay đổi nào nên được thực hiện đối với lệnh định tuyến tĩnh để lưu lượng truy cập sẽ chỉ sử dụng liên kết OSPF khi nó hoạt động?",
+    "question": "Tham khảo sơ đồ kết nối (exhibit). Router nhánh có mối quan hệ lân cận OSPF với router HQ qua mạng 198.51.0.4/30. Liên kết mạng 198.51.0.8/30 sẽ đóng vai trò dự phòng khi liên kết OSPF bị hỏng. Lệnh tuyến tĩnh nổi ip tuyến 0.0.0.0 0.0.0.0 S0/1/1 100 đã được ban hành trên Chi nhánh và hiện tại lưu lượng truy cập đang sử dụng liên kết dự phòng ngay cả khi liên kết OSPF hoạt động và hoạt động. Thay đổi nào nên được thực hiện đối với lệnh định tuyến tĩnh để lưu lượng truy cập sẽ chỉ sử dụng liên kết OSPF khi nó hoạt động?",
     "options": [
       "Thêm địa chỉ hàng xóm của hop tiếp theo là 198.51.0.8.",
       "Thay đổi khoảng cách hành chính thành 1.",
@@ -2367,7 +2367,7 @@
     "options": [
       "tuyến máy chủ đích có tiền tố /128.",
       "lệnh \"hiển thị tuyến đường ipv6 tĩnh\".",
-      "một địa chỉ liên kết cục bộ IPv6 trên bộ định tuyến lân cận.",
+      "một địa chỉ liên kết cục bộ IPv6 trên router lân cận.",
       "loại giao diện và số giao diện."
     ],
     "explanation": ""
@@ -2388,7 +2388,7 @@
     "explanation": ""
   },
   "m14-16_q32": {
-    "question": "Tham khảo sơ đồ kết nối (exhibit). Giải pháp định tuyến nào sẽ cho phép cả PC A và PC B truy cập Internet với mức sử dụng CPU bộ định tuyến và băng thông mạng tối thiểu?",
+    "question": "Tham khảo sơ đồ kết nối (exhibit). Giải pháp định tuyến nào sẽ cho phép cả PC A và PC B truy cập Internet với mức sử dụng CPU router và băng thông mạng tối thiểu?",
     "options": [
       "Định cấu hình giao thức định tuyến động giữa R1 và Edge và quảng cáo tất cả các tuyến.",
       "Định cấu hình tuyến tĩnh từ R1 đến Edge và tuyến động từ Edge đến R1.",
@@ -2416,10 +2416,10 @@
       "địa chỉ IP của hàng xóm bước nhảy tiếp theo",
       "khoảng cách quản trị cho mạng đích"
     ],
-    "explanation": "Một tuyến tĩnh được chỉ định đầy đủ có thể được sử dụng để tránh việc tra cứu bảng định tuyến đệ quy của bộ định tuyến. Một tuyến tĩnh được chỉ định đầy đủ chứa cả địa chỉ IP của bộ định tuyến bước nhảy tiếp theo và ID của giao diện thoát."
+    "explanation": "Một tuyến tĩnh được chỉ định đầy đủ có thể được sử dụng để tránh việc tra cứu bảng định tuyến đệ quy của router. Một tuyến tĩnh được chỉ định đầy đủ chứa cả địa chỉ IP của router bước nhảy tiếp theo và ID của giao diện thoát."
   },
   "m14-16_q35": {
-    "question": "Tham khảo sơ đồ kết nối (exhibit). Lệnh nào sẽ cấu hình đúng tuyến đường tĩnh IPv6 trên R2, cho phép lưu lượng truy cập từ PC2 đến PC1 mà không cần tra cứu đệ quy bởi bộ định tuyến R2?",
+    "question": "Tham khảo sơ đồ kết nối (exhibit). Lệnh nào sẽ cấu hình đúng tuyến đường tĩnh IPv6 trên R2, cho phép lưu lượng truy cập từ PC2 đến PC1 mà không cần tra cứu đệ quy bởi router R2?",
     "options": [
       "R2(config)# tuyến ipv6 ::/0 2001:db8:32::1",
       "R2(config)# tuyến ipv6 2001:db8:10:12::/64 S0/0/0",
@@ -2446,7 +2446,7 @@
       "Địa chỉ máy chủ DNS trên PC0 được cấu hình không chính xác.",
       "Định tuyến giữa HQ và Chi nhánh được cấu hình không chính xác."
     ],
-    "explanation": "Để cho phép liên lạc với các mạng từ xa, việc định tuyến thích hợp, tĩnh hoặc động, là cần thiết. Cả hai bộ định tuyến phải được cấu hình bằng một phương thức định tuyến."
+    "explanation": "Để cho phép liên lạc với các mạng từ xa, việc định tuyến thích hợp, tĩnh hoặc động, là cần thiết. Cả hai router phải được cấu hình bằng một phương thức định tuyến."
   },
   "m14-16_q38": {
     "question": "Khớp mục nhập bảng định tuyến với chức năng tương ứng. (Không phải tất cả các tùy chọn đều được sử dụng.)",
@@ -2481,7 +2481,7 @@
       "một tuyến đường tĩnh",
       "một tuyến đường nhận được thông qua giao thức định tuyến EIGRP"
     ],
-    "explanation": "Tuyến đường đáng tin cậy nhất hoặc tuyến đường có khoảng cách quản trị thấp nhất là tuyến đường được kết nối trực tiếp với bộ định tuyến."
+    "explanation": "Tuyến đường đáng tin cậy nhất hoặc tuyến đường có khoảng cách quản trị thấp nhất là tuyến đường được kết nối trực tiếp với router."
   },
   "m14-16_q42": {
     "question": "Đặc điểm nào hoàn thành phát biểu sau đây?\nKhi tuyến tĩnh IPv6 được định cấu hình, làm tuyến dự phòng cho tuyến tĩnh trong bảng định tuyến, lệnh \"khoảng cách\" được sử dụng với ......",
@@ -2494,7 +2494,7 @@
     "explanation": ""
   },
   "m14-16_q43": {
-    "question": "Bộ định tuyến đã sử dụng giao thức OSPF để tìm hiểu tuyến đường đến mạng 172.16.32.0/19. Lệnh nào sẽ triển khai tuyến tĩnh nổi dự phòng tới mạng này?",
+    "question": "Router đã sử dụng giao thức OSPF để tìm hiểu tuyến đường đến mạng 172.16.32.0/19. Lệnh nào sẽ triển khai tuyến tĩnh nổi dự phòng tới mạng này?",
     "options": [
       "tuyến đường ip 172.16.0.0 255.255.224.0 S0/0/0 100",
       "tuyến đường ip 172.16.0.0 255.255.240.0 S0/0/0 200",
@@ -2506,8 +2506,8 @@
   "m14-16_q44": {
     "question": "Hãy xem xét lệnh sau:\nip route 192.168.10.0 255.255.255.0 10.10.10.2 5\nQuản trị viên sẽ kiểm tra cấu hình này như thế nào?",
     "options": [
-      "Xóa tuyến cổng mặc định trên bộ định tuyến.",
-      "Tắt thủ công giao diện bộ định tuyến được sử dụng làm tuyến chính.",
+      "Xóa tuyến cổng mặc định trên router.",
+      "Tắt thủ công giao diện router được sử dụng làm tuyến chính.",
       "Ping từ mạng 192.168.10.0 đến địa chỉ 10.10.10.2.",
       "Ping bất kỳ địa chỉ hợp lệ nào trên mạng 192.168.10.0/24."
     ],
@@ -2526,9 +2526,9 @@
   "m14-16_q46": {
     "question": "Đặc điểm nào hoàn thành phát biểu sau đây?\nKhi định cấu hình tuyến tĩnh IPv6, trước tiên cần phải định cấu hình ......",
     "options": [
-      "địa chỉ chặng tiếp theo của hai bộ định tuyến lân cận khác nhau.",
+      "địa chỉ chặng tiếp theo của hai router lân cận khác nhau.",
       "lệnh \"định tuyến unicast ipv6\".",
-      "một địa chỉ liên kết cục bộ IPv6 trên bộ định tuyến lân cận.",
+      "một địa chỉ liên kết cục bộ IPv6 trên router lân cận.",
       "khoảng cách hành chính là 2."
     ],
     "explanation": ""
@@ -2544,14 +2544,14 @@
     "explanation": ""
   },
   "m14-16_q48": {
-    "question": "Tham khảo sơ đồ kết nối (exhibit). Bộ định tuyến sẽ làm gì với gói có địa chỉ IP đích là 192.168.12.227?",
+    "question": "Tham khảo sơ đồ kết nối (exhibit). Router sẽ làm gì với gói có địa chỉ IP đích là 192.168.12.227?",
     "options": [
       "Thả gói.",
       "Gửi gói ra giao diện GigabitEthernet0/0.",
       "Gửi gói ra giao diện Serial0/0/0.",
       "Gửi gói ra giao diện GigabitEthernet0/1."
     ],
-    "explanation": "Sau khi bộ định tuyến xác định mạng đích bằng cách ANDing địa chỉ IP đích bằng mặt nạ mạng con, bộ định tuyến sẽ kiểm tra bảng định tuyến để tìm số mạng đích thu được. Khi tìm thấy kết quả trùng khớp, gói sẽ được gửi đến giao diện được liên kết với số mạng. Khi không tìm thấy mục nhập bảng định tuyến nào cho mạng cụ thể, cổng mặc định hoặc cổng cuối cùng (nếu được định cấu hình hoặc đã biết) sẽ được sử dụng. Nếu không có cổng cuối cùng thì gói tin sẽ bị loại bỏ. Trong trường hợp này, mạng 192.168.12.224 không được tìm thấy trong bảng định tuyến và bộ định tuyến sử dụng cổng cuối cùng. Cổng cuối cùng là địa chỉ IP 209.165.200.226. Bộ định tuyến biết đây là địa chỉ IP được liên kết với mạng 209.165.200.224. Sau đó, bộ định tuyến tiến hành truyền gói tin ra giao diện Serial0/0/0 hoặc giao diện được liên kết với 209.165.200.224."
+    "explanation": "Sau khi router xác định mạng đích bằng cách ANDing địa chỉ IP đích bằng mặt nạ mạng con, router sẽ kiểm tra bảng định tuyến để tìm số mạng đích thu được. Khi tìm thấy kết quả trùng khớp, gói sẽ được gửi đến giao diện được liên kết với số mạng. Khi không tìm thấy mục nhập bảng định tuyến nào cho mạng cụ thể, cổng mặc định hoặc cổng cuối cùng (nếu được định cấu hình hoặc đã biết) sẽ được sử dụng. Nếu không có cổng cuối cùng thì gói tin sẽ bị loại bỏ. Trong trường hợp này, mạng 192.168.12.224 không được tìm thấy trong bảng định tuyến và router sử dụng cổng cuối cùng. Cổng cuối cùng là địa chỉ IP 209.165.200.226. Router biết đây là địa chỉ IP được liên kết với mạng 209.165.200.224. Sau đó, router tiến hành truyền gói tin ra giao diện Serial0/0/0 hoặc giao diện được liên kết với 209.165.200.224."
   },
   "m14-16_q49": {
     "question": "Hãy xem xét lệnh sau:\nip route 192.168.10.0 255.255.255.0 10.10.10.2 5\nTuyến đường nào sẽ phải đi xuống để tuyến tĩnh này xuất hiện trong bảng định tuyến?",
@@ -2569,23 +2569,23 @@
       "Định tuyến tĩnh an toàn hơn vì nó không quảng cáo qua mạng.",
       "Định tuyến tĩnh có quy mô tốt với việc mở rộng mạng.",
       "Định tuyến tĩnh đòi hỏi rất ít kiến ​​thức về mạng để thực hiện đúng.",
-      "Định tuyến tĩnh sử dụng ít tài nguyên bộ định tuyến hơn định tuyến động.",
+      "Định tuyến tĩnh sử dụng ít tài nguyên router hơn định tuyến động.",
       "Định tuyến tĩnh tương đối dễ cấu hình cho các mạng lớn."
     ],
-    "explanation": "Định tuyến tĩnh đòi hỏi sự hiểu biết thấu đáo về toàn bộ mạng để triển khai đúng cách. Nó có thể dễ xảy ra lỗi và không có khả năng mở rộng tốt cho các mạng lớn. Định tuyến tĩnh sử dụng ít tài nguyên bộ định tuyến hơn vì không cần tính toán để cập nhật tuyến. Định tuyến tĩnh cũng có thể an toàn hơn vì nó không quảng cáo qua mạng."
+    "explanation": "Định tuyến tĩnh đòi hỏi sự hiểu biết thấu đáo về toàn bộ mạng để triển khai đúng cách. Nó có thể dễ xảy ra lỗi và không có khả năng mở rộng tốt cho các mạng lớn. Định tuyến tĩnh sử dụng ít tài nguyên router hơn vì không cần tính toán để cập nhật tuyến. Định tuyến tĩnh cũng có thể an toàn hơn vì nó không quảng cáo qua mạng."
   },
   "m14-16_q51": {
     "question": "Đặc điểm nào hoàn thành phát biểu sau đây?\nKhi định cấu hình tuyến tĩnh IPv6, có thể cùng một địa chỉ liên kết cục bộ IPv6 được sử dụng cho ...",
     "options": [
       "tuyến máy chủ đích có tiền tố /128.",
       "lệnh “định tuyến unicast ipv6”.",
-      "địa chỉ chặng tiếp theo của hai bộ định tuyến lân cận khác nhau.",
+      "địa chỉ chặng tiếp theo của hai router lân cận khác nhau.",
       "khoảng cách hành chính là 2."
     ],
     "explanation": ""
   },
   "m14-16_q52": {
-    "question": "Quản trị viên mạng định cấu hình giao diện fa0/0 trên bộ định tuyến R1 bằng lệnh địa chỉ IP 172.16.1.254 255.255.255.0. Tuy nhiên, khi quản trị viên đưa ra lệnh show ip Route, bảng định tuyến không hiển thị mạng được kết nối trực tiếp. Nguyên nhân có thể của vấn đề là gì?",
+    "question": "Quản trị viên mạng định cấu hình giao diện fa0/0 trên router R1 bằng lệnh địa chỉ IP 172.16.1.254 255.255.255.0. Tuy nhiên, khi quản trị viên đưa ra lệnh show ip Route, bảng định tuyến không hiển thị mạng được kết nối trực tiếp. Nguyên nhân có thể của vấn đề là gì?",
     "options": [
       "Mặt nạ mạng con không đúng với địa chỉ IPv4.",
       "Cấu hình cần phải được lưu trước tiên.",
@@ -2602,7 +2602,7 @@
       "tuyến đường ipv6 ::/0 serial0/0/0",
       "tuyến đường ipv6 2001:db8:1:4::/64 2001:db8:1:3::2"
     ],
-    "explanation": "Để định cấu hình tuyến tĩnh IPv6, hãy sử dụng lệnh tuyến ipv6 theo sau là mạng đích. Sau đó, thêm địa chỉ IP của bộ định tuyến lân cận hoặc giao diện R1 sẽ sử dụng để truyền gói đến mạng 2001:db8:1:4::/64."
+    "explanation": "Để định cấu hình tuyến tĩnh IPv6, hãy sử dụng lệnh tuyến ipv6 theo sau là mạng đích. Sau đó, thêm địa chỉ IP của router lân cận hoặc giao diện R1 sẽ sử dụng để truyền gói đến mạng 2001:db8:1:4::/64."
   },
   "m14-16_q54": {
     "question": "Tham khảo sơ đồ kết nối (exhibit). Hai lệnh nào sẽ thay đổi địa chỉ bước nhảy tiếp theo cho mạng 10.0.0.0/8 từ 172.16.40.2 thành 192.168.1.2? (Chọn hai.)",
@@ -2630,7 +2630,7 @@
     "options": [
       "::/0.",
       "lệnh \"định tuyến unicast ipv6\".",
-      "địa chỉ chặng tiếp theo của hai bộ định tuyến lân cận khác nhau.",
+      "địa chỉ chặng tiếp theo của hai router lân cận khác nhau.",
       "mạng đa truy nhập được kết nối trực tiếp."
     ],
     "explanation": ""
@@ -2666,7 +2666,7 @@
     "explanation": ""
   },
   "m14-16_q60": {
-    "question": "Quản trị viên mạng định cấu hình giao diện fa0/0 trên bộ định tuyến R1 bằng lệnh địa chỉ IP 172.16.1.254 255.255.255.0. Tuy nhiên, khi quản trị viên đưa ra lệnh show ip Route, bảng định tuyến không hiển thị mạng được kết nối trực tiếp. Nguyên nhân có thể của vấn đề là gì?",
+    "question": "Quản trị viên mạng định cấu hình giao diện fa0/0 trên router R1 bằng lệnh địa chỉ IP 172.16.1.254 255.255.255.0. Tuy nhiên, khi quản trị viên đưa ra lệnh show ip Route, bảng định tuyến không hiển thị mạng được kết nối trực tiếp. Nguyên nhân có thể của vấn đề là gì?",
     "options": [
       "Mặt nạ mạng con không đúng với địa chỉ IPv4.",
       "Không có gói nào có mạng đích 172.16.1.0 được gửi đến R1.",
@@ -2688,7 +2688,7 @@
   "m14-16_q62": {
     "question": "Ghép đặc điểm với loại định tuyến tương ứng. (Không phải tất cả các tùy chọn đều được sử dụng.)",
     "options": [],
-    "explanation": "Cả định tuyến tĩnh và động đều có thể được sử dụng khi có nhiều bộ định tuyến tham gia. Định tuyến động là khi giao thức định tuyến được sử dụng. Định tuyến tĩnh là khi mọi tuyến đường từ xa được quản trị viên nhập thủ công vào mọi bộ định tuyến trong cấu trúc liên kết mạng."
+    "explanation": "Cả định tuyến tĩnh và động đều có thể được sử dụng khi có nhiều router tham gia. Định tuyến động là khi giao thức định tuyến được sử dụng. Định tuyến tĩnh là khi mọi tuyến đường từ xa được quản trị viên nhập thủ công vào mọi router trong cấu trúc liên kết mạng."
   },
   "m14-16_q63": {
     "question": "Tham khảo sơ đồ bảng định tuyến. Cổng nào sẽ là cổng ra (exit interface) để chuyển tiếp gói dữ liệu có địa chỉ IP đích 172.25.128.244?",
@@ -2708,17 +2708,17 @@
       "Tĩnh gắn trực tiếp",
       "Tĩnh được chỉ định đầy đủ"
     ],
-    "explanation": "Bộ định tuyến phải tra cứu bảng định tuyến hai lần để tìm giao diện thoát. Mục đầu tiên được hiển thị trong Câu hỏi, bây giờ bộ định tuyến phải tra cứu giao diện ex.s0/0/0 mà địa chỉ 3000::1 được liên kết với. bảng lộ trình cũ. 2001:0DB8:3000::1 được kết nối trực tiếp, Serial0/0/0. Đây là lần tra cứu thứ 2 trong bảng để phát hiện ra rằng gói cần thoát khỏi giao diện s0/0/0, biến tuyến đầu tiên thành tuyến đệ quy và tuyến thứ 2 là tuyến trực tiếp."
+    "explanation": "Router phải tra cứu bảng định tuyến hai lần để tìm giao diện thoát. Mục đầu tiên được hiển thị trong Câu hỏi, bây giờ router phải tra cứu giao diện ex.s0/0/0 mà địa chỉ 3000::1 được liên kết với. bảng lộ trình cũ. 2001:0DB8:3000::1 được kết nối trực tiếp, Serial0/0/0. Đây là lần tra cứu thứ 2 trong bảng để phát hiện ra rằng gói cần thoát khỏi giao diện s0/0/0, biến tuyến đầu tiên thành tuyến đệ quy và tuyến thứ 2 là tuyến trực tiếp."
   },
   "m14-16_q10_dup": {
-    "question": "0.0.0/30 được chia mạng con, 2 mạng con\nC 10.0.0.0 được kết nối trực tiếp, Serial0/0/0\nC 10.0.0.4 được kết nối trực tiếp, Serial0/0/1\n192.168.10.0/26 được chia mạng con, 3 mạng con\nS 192.168.10.0 được kết nối trực tiếp, Serial0/0/0\nC 192.168.10.64 được kết nối trực tiếp, FastEthernet0/0\nS 192.168.10.128 [1/0] qua 10.0.0.6\nBộ định tuyến R2 sẽ làm gì với gói có đích đến 192.168.10.129?",
+    "question": "0.0.0/30 được chia mạng con, 2 mạng con\nC 10.0.0.0 được kết nối trực tiếp, Serial0/0/0\nC 10.0.0.4 được kết nối trực tiếp, Serial0/0/1\n192.168.10.0/26 được chia mạng con, 3 mạng con\nS 192.168.10.0 được kết nối trực tiếp, Serial0/0/0\nC 192.168.10.64 được kết nối trực tiếp, FastEthernet0/0\nS 192.168.10.128 [1/0] qua 10.0.0.6\nRouter R2 sẽ làm gì với gói có đích đến 192.168.10.129?",
     "options": [
       "gửi gói tin ra giao diện FastEthernet0/0",
       "gửi gói ra giao diện Serial0/0/1",
       "thả gói",
       "gửi gói ra giao diện Serial0/0/0"
     ],
-    "explanation": "Khi một tuyến tĩnh được cấu hình với địa chỉ bước nhảy tiếp theo (như trong trường hợp mạng 192.168.10.128), đầu ra của lệnh show ip Route sẽ liệt kê tuyến đó là \"thông qua\" một địa chỉ IP cụ thể. Bộ định tuyến phải tra cứu địa chỉ IP đó để xác định giao diện nào sẽ gửi gói đi. Vì địa chỉ IP 10.0.0.6 là một phần của mạng 10.0.0.4 nên bộ định tuyến sẽ gửi gói tin ra giao diện Serial0/0/1."
+    "explanation": "Khi một tuyến tĩnh được cấu hình với địa chỉ bước nhảy tiếp theo (như trong trường hợp mạng 192.168.10.128), đầu ra của lệnh show ip Route sẽ liệt kê tuyến đó là \"thông qua\" một địa chỉ IP cụ thể. Router phải tra cứu địa chỉ IP đó để xác định giao diện nào sẽ gửi gói đi. Vì địa chỉ IP 10.0.0.6 là một phần của mạng 10.0.0.4 nên router sẽ gửi gói tin ra giao diện Serial0/0/1."
   },
   "final_q1": {
     "question": "Một người quản trị mạng đang sử dụng phương pháp router-on-a-stick để định tuyến giữa các VLAN. Cổng switch kết nối với router nên được cấu hình ở chế độ nào?",
@@ -2754,7 +2754,7 @@
     "question": "Một nhân viên kết nối không dây vào mạng công ty bằng máy tính xách tay cá nhân và truy cập vào máy chủ tệp nội bộ. Loại lưu lượng nào sau đây cần được bảo vệ nhất?",
     "options": [
       "Dữ liệu xác thực người dùng (Credentials)",
-      "Các gói tin quảng bá ARP",
+      "Các gói tin broadcast ARP",
       "Lưu lượng thông báo DHCP Discover",
       "Lưu lượng duyệt web qua giao thức HTTP công cộng"
     ],
@@ -2839,7 +2839,7 @@
   "final_q13": {
     "question": "Kết quả của việc kết nối hai hoặc nhiều switch lại với nhau trên cùng một phân đoạn mạng mà không có cơ chế chống vòng lặp là gì?",
     "options": [
-      "Kích thước của broadcast domain tăng lên và có nguy cơ xuất hiện Broadcast Storm (bão quảng bá)",
+      "Kích thước của broadcast domain tăng lên và có nguy cơ xuất hiện Broadcast Storm (broadcast storm)",
       "Collision domain sẽ tự động bị chia nhỏ thành nhiều phần",
       "Mỗi switch sẽ tự động tạo một VLAN riêng biệt",
       "Băng thông giữa các switch tự động tăng gấp đôi"
@@ -2905,21 +2905,21 @@
     "explanation": "Tính năng Port Security Sticky (switchport port-security mac-address sticky) tự động thêm các địa chỉ MAC học được vào Running-config. Tuy nhiên, nếu mất điện hoặc khởi động lại, các địa chỉ này sẽ bị mất nếu người quản trị không thực hiện lệnh lưu cấu hình thủ công: copy running-config startup-config."
   },
   "final_q20": {
-    "question": "Một quán cà phê nhỏ đang cung cấp Wi-Fi miễn phí cho khách hàng. Mạng bao gồm bộ định tuyến không dây và modem DSL được kết nối với công ty điện thoại địa phương. Phương pháp nào thường được sử dụng để định cấu hình kết nối với công ty điện thoại?",
+    "question": "Một quán cà phê nhỏ đang cung cấp Wi-Fi miễn phí cho khách hàng. Mạng bao gồm router không dây và modem DSL được kết nối với công ty điện thoại địa phương. Phương pháp nào thường được sử dụng để định cấu hình kết nối với công ty điện thoại?",
     "options": [
-      "Đặt kết nối WAN trong bộ định tuyến không dây làm máy khách DHCP.",
-      "Đặt kết nối giữa bộ định tuyến không dây và modem DSL làm mạng IP riêng.",
-      "Đặt modem DSL làm máy khách DHCP để nhận địa chỉ IP công cộng từ bộ định tuyến không dây.",
+      "Đặt kết nối WAN trong router không dây làm máy khách DHCP.",
+      "Đặt kết nối giữa router không dây và modem DSL làm mạng IP riêng.",
+      "Đặt modem DSL làm máy khách DHCP để nhận địa chỉ IP công cộng từ router không dây.",
       "Đặt modem DSL làm máy khách DHCP cho công ty điện thoại và máy chủ DHCP cho kết nối nội bộ."
     ],
-    "explanation": "Trong môi trường SOHO, bộ định tuyến không dây kết nối với ISP thông qua modem DSL hoặc cáp. Địa chỉ IP giữa bộ định tuyến không dây và trang ISP thường được ISP chỉ định thông qua DHCP. Modem DSL không quản lý việc phân bổ địa chỉ IP."
+    "explanation": "Trong môi trường SOHO, router không dây kết nối với ISP thông qua modem DSL hoặc cáp. Địa chỉ IP giữa router không dây và trang ISP thường được ISP chỉ định thông qua DHCP. Modem DSL không quản lý việc phân bổ địa chỉ IP."
   },
   "final_q21": {
     "question": "Ghép mục đích sử dụng với loại thông điệp DHCP tương ứng. (Không phải tất cả các lựa chọn đều được sử dụng.)",
     "options": [
       "Thực hiện ghép nối theo cơ chế kéo thả / click tương tác trực quan bên dưới."
     ],
-    "explanation": "Quy trình cấp phát DHCPv4 4 bước (DORA):\n1. DHCPDISCOVER: Client phát quảng bá tìm DHCP server khả dụng.\n2. DHCPOFFER: Server gửi đề xuất địa chỉ IP và thời gian thuê (lease) cho client.\n3. DHCPREQUEST: Client gửi thông báo chấp nhận lời đề nghị thuê địa chỉ IP từ server được chọn.\n4. DHCPACK: Server gửi xác nhận hoàn tất giao dịch cho thuê IP."
+    "explanation": "Quy trình cấp phát DHCPv4 4 bước (DORA):\n1. DHCPDISCOVER: Client phát broadcast tìm DHCP server khả dụng.\n2. DHCPOFFER: Server gửi đề xuất địa chỉ IP và thời gian thuê (lease) cho client.\n3. DHCPREQUEST: Client gửi thông báo chấp nhận lời đề nghị thuê địa chỉ IP từ server được chọn.\n4. DHCPACK: Server gửi xác nhận hoàn tất giao dịch cho thuê IP."
   },
   "final_q22": {
     "question": "Ghép tính năng Spanning-Tree với loại giao thức STP tương ứng. (Không phải tất cả các lựa chọn đều được sử dụng.)",

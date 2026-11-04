@@ -179,7 +179,7 @@
       "Chuyển hướng ICMP",
       "Trả lời mặt nạ ICMP"
     ],
-    "explanation": "Các thông báo ICMP phổ biến mà các tác nhân đe dọa quan tâm bao gồm: Yêu cầu tiếng vang ICMP và trả lời tiếng vang: được sử dụng để thực hiện xác minh máy chủ và tấn công DoS ICMP không thể truy cập được: được sử dụng để thực hiện các cuộc tấn công trinh sát và quét mạng Trả lời mặt nạ ICMP: được sử dụng để ánh xạ mạng IP nội bộ Chuyển hướng ICMP: được sử dụng để dụ máy chủ mục tiêu gửi tất cả lưu lượng truy cập thông qua một thiết bị bị xâm nhập và tạo ra một cuộc tấn công trung gian Phát hiện bộ định tuyến ICMP: được sử dụng để đưa các mục tuyến không có thật vào bảng định tuyến của máy chủ mục tiêu"
+    "explanation": "Các thông báo ICMP phổ biến mà các tác nhân đe dọa quan tâm bao gồm: Yêu cầu tiếng vang ICMP và trả lời tiếng vang: được sử dụng để thực hiện xác minh máy chủ và tấn công DoS ICMP không thể truy cập được: được sử dụng để thực hiện các cuộc tấn công trinh sát và quét mạng Trả lời mặt nạ ICMP: được sử dụng để ánh xạ mạng IP nội bộ Chuyển hướng ICMP: được sử dụng để dụ máy chủ mục tiêu gửi tất cả lưu lượng truy cập thông qua một thiết bị bị xâm nhập và tạo ra một cuộc tấn công trung gian Phát hiện router ICMP: được sử dụng để đưa các mục tuyến không có thật vào bảng định tuyến của máy chủ mục tiêu"
   },
   "m13-17_q19": {
     "question": "Hai mục đích của việc phát động một cuộc tấn công trinh sát trên mạng là gì? (Chọn hai.)",
@@ -193,7 +193,7 @@
     "explanation": "Thu thập thông tin về mạng và quét truy cập là một cuộc tấn công trinh sát. Ngăn chặn người dùng khác truy cập vào hệ thống là một cuộc tấn công từ chối dịch vụ. Cố gắng truy xuất và sửa đổi dữ liệu cũng như cố gắng nâng cao đặc quyền truy cập là các loại tấn công truy cập."
   },
   "m13-17_q20": {
-    "question": "Loại tấn công mạng nào liên quan đến việc mở ngẫu nhiên nhiều yêu cầu Telnet tới bộ định tuyến và khiến quản trị viên mạng hợp lệ không thể truy cập thiết bị?",
+    "question": "Loại tấn công mạng nào liên quan đến việc mở ngẫu nhiên nhiều yêu cầu Telnet tới router và khiến quản trị viên mạng hợp lệ không thể truy cập thiết bị?",
     "options": [
       "ngộ độc DNS",
       "người đàn ông ở giữa",
@@ -248,7 +248,7 @@
     "question": "Ba chức năng được cung cấp bởi SOAR là gì? (Chọn ba.)",
     "options": [
       "Nó tự động hóa các quy trình điều tra và ứng phó sự cố phức tạp.",
-      "Nó cung cấp số liệu thống kê 24x7 về các gói truyền qua bộ định tuyến hoặc bộ chuyển mạch đa lớp của Cisco.",
+      "Nó cung cấp số liệu thống kê 24x7 về các gói truyền qua router hoặc switch đa lớp của Cisco.",
       "Nó sử dụng trí tuệ nhân tạo để phát hiện sự cố và hỗ trợ phân tích và ứng phó sự cố.",
       "Nó trình bày dữ liệu sự kiện tương quan và tổng hợp trong giám sát thời gian thực và tóm tắt dài hạn.",
       "Nó cung cấp một bản kiểm tra đầy đủ các thông tin cơ bản về mọi luồng IP được chuyển tiếp trên thiết bị.",
@@ -378,21 +378,21 @@
     "options": [
       "Nó sử dụng trí tuệ nhân tạo để phát hiện sự cố và hỗ trợ phân tích và ứng phó sự cố.",
       "Nó cung cấp một bản kiểm tra đầy đủ các thông tin cơ bản về mọi luồng IP được chuyển tiếp trên thiết bị.",
-      "Nó cung cấp số liệu thống kê 24x7 về các gói truyền qua bộ định tuyến hoặc bộ chuyển mạch đa lớp của Cisco.",
+      "Nó cung cấp số liệu thống kê 24x7 về các gói truyền qua router hoặc switch đa lớp của Cisco.",
       "Nó cho phép quản trị viên nắm bắt lưu lượng mạng theo thời gian thực và phân tích toàn bộ nội dung của gói.",
       "Nó trình bày dữ liệu sự kiện tương quan và tổng hợp trong quá trình theo dõi thời gian thực và tóm tắt dài hạn."
     ],
     "explanation": "NetFlow là công nghệ Cisco IOS cung cấp số liệu thống kê và các bản kiểm tra hoàn chỉnh về các luồng TCP/IP trên mạng. Một số khả năng của NetFlow bao gồm: giám sát an ninh và mạng 24x7, lập kế hoạch mạng, phân tích lưu lượng, xác định các tắc nghẽn mạng và tính toán IP cho mục đích thanh toán."
   },
   "m13-17_q39": {
-    "question": "Câu lệnh nào mô tả chức năng của công cụ SPAN được sử dụng trong bộ chuyển mạch Cisco?",
+    "question": "Câu lệnh nào mô tả chức năng của công cụ SPAN được sử dụng trong switch Cisco?",
     "options": [
       "Đây là một kênh an toàn để switch gửi nhật ký đến máy chủ nhật ký hệ thống.",
       "Nó cung cấp kết nối giữa các Vlan qua nhiều thiết bị chuyển mạch.",
       "Nó hỗ trợ hoạt động bẫy SNMP trên switch.",
       "Nó sao chép lưu lượng truy cập từ một cổng chuyển mạch và gửi nó đến một cổng chuyển mạch khác được kết nối với thiết bị giám sát."
     ],
-    "explanation": "Để phân tích lưu lượng mạng đi qua một bộ chuyển mạch, có thể sử dụng bộ phân tích cổng chuyển mạch (SPAN). SPAN có thể gửi bản sao lưu lượng truy cập từ cổng này sang cổng khác trên cùng một bộ chuyển mạch nơi kết nối máy phân tích mạng hoặc thiết bị giám sát. SPAN không cần thiết cho syslog hoặc SNMP. SPAN được sử dụng để phản ánh lưu lượng truy cập, trong khi syslog và SNMP được định cấu hình để gửi dữ liệu trực tiếp đến máy chủ thích hợp."
+    "explanation": "Để phân tích lưu lượng mạng đi qua một switch, có thể sử dụng bộ phân tích cổng chuyển mạch (SPAN). SPAN có thể gửi bản sao lưu lượng truy cập từ cổng này sang cổng khác trên cùng một switch nơi kết nối máy phân tích mạng hoặc thiết bị giám sát. SPAN không cần thiết cho syslog hoặc SNMP. SPAN được sử dụng để phản ánh lưu lượng truy cập, trong khi syslog và SNMP được định cấu hình để gửi dữ liệu trực tiếp đến máy chủ thích hợp."
   },
   "m13-17_q40": {
     "question": "Hai phương pháp trốn tránh được tin tặc sử dụng là gì? (Chọn hai.)",
@@ -493,7 +493,7 @@
       "để kẻ tấn công có thể nắm bắt lưu lượng truy cập từ nhiều Vlan thay vì chỉ từ Vlan được gán cho cổng mà thiết bị kẻ tấn công được gắn vào",
       "để một switch trên mạng LAN sẽ bắt đầu chuyển tiếp khung hình cho kẻ tấn công thay vì tới máy chủ hợp pháp",
       "để một công tắc trên mạng LAN sẽ bắt đầu chuyển tiếp tất cả các khung tới thiết bị nằm dưới sự kiểm soát của kẻ tấn công (sau đó có thể nắm bắt được lưu lượng mạng LAN)",
-      "để kẻ tấn công có thể khởi động một kiểu tấn công khác nhằm giành quyền truy cập vào bộ chuyển mạch"
+      "để kẻ tấn công có thể khởi động một kiểu tấn công khác nhằm giành quyền truy cập vào switch"
     ],
     "explanation": "Giả mạo địa chỉ MAC được sử dụng để vượt qua các biện pháp bảo mật bằng cách cho phép kẻ tấn công mạo danh một thiết bị máy chủ hợp pháp, thường nhằm mục đích thu thập lưu lượng truy cập mạng."
   },
@@ -548,17 +548,17 @@
       "vi phạm an ninh trong quá khứ",
       "mối đe dọa đối với tài sản"
     ],
-    "explanation": "Để chuẩn bị cho một cuộc tấn công bảo mật, nhân viên bảo mật CNTT phải xác định các tài sản cần được bảo vệ như máy chủ, bộ định tuyến, điểm truy cập và thiết bị đầu cuối. Họ cũng phải xác định các mối đe dọa tiềm ẩn đối với tài sản và lỗ hổng trong hệ thống hoặc thiết kế."
+    "explanation": "Để chuẩn bị cho một cuộc tấn công bảo mật, nhân viên bảo mật CNTT phải xác định các tài sản cần được bảo vệ như máy chủ, router, điểm truy cập và thiết bị đầu cuối. Họ cũng phải xác định các mối đe dọa tiềm ẩn đối với tài sản và lỗ hổng trong hệ thống hoặc thiết kế."
   },
   "m18-20_q3": {
     "question": "Tuyến phòng thủ đầu tiên khi một tổ chức đang sử dụng phương pháp tiếp cận phòng thủ chuyên sâu đối với an ninh mạng là gì?",
     "options": [
-      "bộ định tuyến biên",
+      "router biên",
       "tường lửa",
       "máy chủ proxy",
       "IPS"
     ],
-    "explanation": "Phương pháp phòng thủ chuyên sâu sử dụng các lớp biện pháp bảo mật bắt đầu từ biên mạng, hoạt động xuyên suốt mạng và cuối cùng kết thúc ở các điểm cuối mạng. Bộ định tuyến ở biên mạng là tuyến phòng thủ đầu tiên và chuyển tiếp lưu lượng truy cập dành cho mạng nội bộ tới tường lửa."
+    "explanation": "Phương pháp phòng thủ chuyên sâu sử dụng các lớp biện pháp bảo mật bắt đầu từ biên mạng, hoạt động xuyên suốt mạng và cuối cùng kết thúc ở các điểm cuối mạng. Router ở biên mạng là tuyến phòng thủ đầu tiên và chuyển tiếp lưu lượng truy cập dành cho mạng nội bộ tới tường lửa."
   },
   "m18-20_q4": {
     "question": "Chính sách bảo mật BYOD hoàn thành ba mục tiêu nào? (Chọn ba.)",
@@ -796,7 +796,7 @@
     "question": "Đặc điểm của phương pháp bảo mật theo chiều sâu phòng thủ theo lớp là gì?",
     "options": [
       "Ba hoặc nhiều thiết bị được sử dụng.",
-      "Bộ định tuyến được thay thế bằng tường lửa.",
+      "Router được thay thế bằng tường lửa.",
       "Sự thất bại của một biện pháp bảo vệ không ảnh hưởng đến hiệu quả của các biện pháp bảo vệ khác.",
       "Khi một thiết bị bị lỗi, một thiết bị khác sẽ thay thế."
     ],
@@ -1335,7 +1335,7 @@
     "question": "Tor là gì?",
     "options": [
       "một quy tắc được tạo để khớp với chữ ký của một khai thác đã biết",
-      "một nền tảng phần mềm và mạng lưới các máy chủ P2P hoạt động như bộ định tuyến Internet",
+      "một nền tảng phần mềm và mạng lưới các máy chủ P2P hoạt động như router Internet",
       "một cách để chia sẻ bộ xử lý giữa các thiết bị mạng trên Internet",
       "một loại phần mềm Nhắn tin tức thời (IM) được sử dụng trên darknet"
     ],
@@ -2592,7 +2592,7 @@
       "192.168.1.191/26",
       "10.0.0.159/27"
     ],
-    "explanation": "Để xác định xem địa chỉ IPv4 nhất định là địa chỉ mạng, máy chủ hay địa chỉ quảng bá, trước tiên hãy xác định không gian địa chỉ dựa trên mặt nạ mạng con. Chuyển đổi địa chỉ và mặt nạ thành giá trị nhị phân, sau đó thực hiện hàm ANDing để xác định địa chỉ mạng. Để tính toán không gian địa chỉ, hãy sử dụng số bit máy chủ trong mặt nạ mạng con làm số mũ của 2. Số địa chỉ máy chủ hợp lệ trong không gian là số đó trừ 2. Địa chỉ mạng sẽ có tất cả các số 0 trong phần máy chủ và địa chỉ quảng bá sẽ có tất cả các số 1. Ví dụ: 10.0.50.10/30 mang lại địa chỉ IP mạng là 10.0.50.8 khi mặt nạ được AND với địa chỉ đã cho. Vì chỉ có 2 bit máy chủ trong mặt nạ nên chỉ có 2 địa chỉ máy chủ hợp lệ (4-2). 10.0.50.10 là một trong hai địa chỉ IP máy chủ hợp lệ."
+    "explanation": "Để xác định xem địa chỉ IPv4 nhất định là địa chỉ mạng, máy chủ hay địa chỉ broadcast, trước tiên hãy xác định không gian địa chỉ dựa trên mặt nạ mạng con. Chuyển đổi địa chỉ và mặt nạ thành giá trị nhị phân, sau đó thực hiện hàm ANDing để xác định địa chỉ mạng. Để tính toán không gian địa chỉ, hãy sử dụng số bit máy chủ trong mặt nạ mạng con làm số mũ của 2. Số địa chỉ máy chủ hợp lệ trong không gian là số đó trừ 2. Địa chỉ mạng sẽ có tất cả các số 0 trong phần máy chủ và địa chỉ broadcast sẽ có tất cả các số 1. Ví dụ: 10.0.50.10/30 mang lại địa chỉ IP mạng là 10.0.50.8 khi mặt nạ được AND với địa chỉ đã cho. Vì chỉ có 2 bit máy chủ trong mặt nạ nên chỉ có 2 địa chỉ máy chủ hợp lệ (4-2). 10.0.50.10 là một trong hai địa chỉ IP máy chủ hợp lệ."
   },
   "m5-10_q4": {
     "question": "Dạng giải nén đầy đủ của địa chỉ IPv6 2001:420:59:0:1::a/64 là gì?",
@@ -2624,7 +2624,7 @@
       "địa chỉ IP của cổng mặc định",
       "địa chỉ MAC của cổng mặc định"
     ],
-    "explanation": "Một khung được đóng gói với địa chỉ MAC nguồn và đích. Thiết bị nguồn sẽ không biết địa chỉ MAC của máy chủ từ xa. Một yêu cầu ARP sẽ được gửi bởi nguồn và sẽ được bộ định tuyến phản hồi. Bộ định tuyến sẽ phản hồi bằng địa chỉ MAC của giao diện của nó, địa chỉ được kết nối với cùng mạng với nguồn."
+    "explanation": "Một khung được đóng gói với địa chỉ MAC nguồn và đích. Thiết bị nguồn sẽ không biết địa chỉ MAC của máy chủ từ xa. Một yêu cầu ARP sẽ được gửi bởi nguồn và sẽ được router phản hồi. Router sẽ phản hồi bằng địa chỉ MAC của giao diện của nó, địa chỉ được kết nối với cùng mạng với nguồn."
   },
   "m5-10_q7": {
     "question": "Những địa chỉ nào được ARP ánh xạ?",
@@ -2705,7 +2705,7 @@
       "in lộ trình",
       "dấu vết"
     ],
-    "explanation": "Trên máy chủ Windows, lệnh in tuyến đường hoặc lệnh netstat -r có thể được sử dụng để hiển thị bảng định tuyến máy chủ. Cả hai lệnh đều tạo ra cùng một đầu ra. Trên bộ định tuyến, lệnh show ip Route được sử dụng để hiển thị bảng định tuyến. Lệnh netstat -s được sử dụng để hiển thị số liệu thống kê trên mỗi giao thức. Lệnh tracert được sử dụng để hiển thị đường dẫn mà gói tin di chuyển đến đích."
+    "explanation": "Trên máy chủ Windows, lệnh in tuyến đường hoặc lệnh netstat -r có thể được sử dụng để hiển thị bảng định tuyến máy chủ. Cả hai lệnh đều tạo ra cùng một đầu ra. Trên router, lệnh show ip Route được sử dụng để hiển thị bảng định tuyến. Lệnh netstat -s được sử dụng để hiển thị số liệu thống kê trên mỗi giao thức. Lệnh tracert được sử dụng để hiển thị đường dẫn mà gói tin di chuyển đến đích."
   },
   "m5-10_q15": {
     "question": "Người dùng đưa ra lệnh ping 2001:db8:FACE:39::10 và nhận được phản hồi bao gồm mã 2 . Mã này đại diện cho cái gì?",
@@ -2720,17 +2720,17 @@
   "m5-10_q16": {
     "question": "Thông báo nào thông báo cho các giao diện hỗ trợ IPv6 sử dụng DHCPv6 có trạng thái để lấy địa chỉ IPv6?",
     "options": [
-      "Lời mời bộ định tuyến ICMPv6",
+      "Lời mời router ICMPv6",
       "tin nhắn quảng cáo DHCPv6",
       "bản tin trả lời DHCPv6",
-      "Quảng cáo bộ định tuyến ICMPv6"
+      "Quảng cáo router ICMPv6"
     ],
-    "explanation": "Trước khi giao diện hỗ trợ IPv6 sử dụng DHCPv6 có trạng thái để lấy địa chỉ IPv6, giao diện đó phải nhận được Quảng cáo bộ định tuyến ICMPv6 với cờ cấu hình được quản lý (cờ M) được đặt thành 1."
+    "explanation": "Trước khi giao diện hỗ trợ IPv6 sử dụng DHCPv6 có trạng thái để lấy địa chỉ IPv6, giao diện đó phải nhận được Quảng cáo router ICMPv6 với cờ cấu hình được quản lý (cờ M) được đặt thành 1."
   },
   "m5-10_q17": {
     "question": "Mục đích của tin nhắn ICMP là gì?",
     "options": [
-      "để thông báo cho các bộ định tuyến về những thay đổi cấu trúc liên kết mạng",
+      "để thông báo cho các router về những thay đổi cấu trúc liên kết mạng",
       "để đảm bảo việc phân phối gói IP",
       "để cung cấp phản hồi về việc truyền gói IP",
       "để theo dõi quá trình phân giải tên miền thành địa chỉ IP"
@@ -2769,7 +2769,7 @@
     "explanation": "Nếu có nhiều máy chủ DHCP trong mạng, máy khách có thể nhận được nhiều hơn một DHCPOFFER. Trong trường hợp này, máy khách sẽ chỉ gửi một DHCPREQUEST, bao gồm máy chủ mà máy khách đang chấp nhận ưu đãi."
   },
   "m5-10_q21": {
-    "question": "Tham khảo triển lãm. Từ quan điểm của người dùng đằng sau bộ định tuyến NAT, loại địa chỉ NAT nào là 209.165.201.1?",
+    "question": "Tham khảo triển lãm. Từ quan điểm của người dùng đằng sau router NAT, loại địa chỉ NAT nào là 209.165.201.1?",
     "options": [
       "bên trong toàn cầu",
       "bên trong địa phương",
@@ -2825,8 +2825,8 @@
     "options": [
       "bất kỳ truyền hình nào",
       "phát tin",
-      "phát đơn hướng",
-      "phát đa hướng"
+      "phát unicast",
+      "phát multicast"
     ],
     "explanation": "Anycast được sử dụng với truyền IPv6. Một unicast là một đường truyền đến một đích máy chủ duy nhất. Broadcast là một đường truyền được gửi đến tất cả các máy chủ trên mạng đích."
   },
@@ -2839,7 +2839,7 @@
       "địa chỉ MAC của File_server1",
       "địa chỉ MAC của giao diện G0/0 trên R1"
     ],
-    "explanation": "PC1 phải có địa chỉ MAC để sử dụng làm địa chỉ Lớp 2 đích. PC1 sẽ gửi yêu cầu ARP dưới dạng quảng bá và R1 sẽ gửi lại phản hồi ARP với địa chỉ MAC giao diện G0/0 của nó. PC1 sau đó có thể chuyển tiếp gói đến địa chỉ MAC của cổng mặc định, R1."
+    "explanation": "PC1 phải có địa chỉ MAC để sử dụng làm địa chỉ Lớp 2 đích. PC1 sẽ gửi yêu cầu ARP dưới dạng broadcast và R1 sẽ gửi lại phản hồi ARP với địa chỉ MAC giao diện G0/0 của nó. PC1 sau đó có thể chuyển tiếp gói đến địa chỉ MAC của cổng mặc định, R1."
   },
   "m5-10_q28": {
     "question": "Kết quả của một cuộc tấn công ngộ độc ARP là gì?",
@@ -2874,12 +2874,12 @@
   "m5-10_q31": {
     "question": "DHCPDISCOVER được truyền trên mạng tới máy chủ DHCP như thế nào?",
     "options": [
-      "Thông báo DHCPDISCOVER được gửi với địa chỉ IP quảng bá là địa chỉ đích.",
+      "Thông báo DHCPDISCOVER được gửi với địa chỉ IP broadcast là địa chỉ đích.",
       "Thông báo DHCPDISCOVER được gửi cùng với địa chỉ IP multicast mà tất cả máy chủ DHCP coi là địa chỉ đích.",
       "Thông báo DHCPDISCOVER được gửi cùng với địa chỉ IP của cổng mặc định làm địa chỉ đích.",
       "Thông báo DHCPDISCOVER được gửi cùng với địa chỉ IP của máy chủ DHCP làm địa chỉ đích."
     ],
-    "explanation": "Thông báo DHCPDISCOVER được gửi bởi máy khách DHCPv4 và nhắm mục tiêu IP quảng bá cùng với cổng đích 67. Máy chủ DHCPv4 hoặc các máy chủ phản hồi máy khách DHCPv4 bằng cách nhắm mục tiêu cổng 68."
+    "explanation": "Thông báo DHCPDISCOVER được gửi bởi máy khách DHCPv4 và nhắm mục tiêu IP broadcast cùng với cổng đích 67. Máy chủ DHCPv4 hoặc các máy chủ phản hồi máy khách DHCPv4 bằng cách nhắm mục tiêu cổng 68."
   },
   "m5-10_q32": {
     "question": "Mô tả về chuyển vùng DNS là gì?",
@@ -2966,12 +2966,12 @@
   "m5-10_q40": {
     "question": "Máy chủ hỗ trợ IPv6 sử dụng SLAAC sẽ sử dụng phương pháp nào để tìm hiểu địa chỉ của cổng mặc định?",
     "options": [
-      "tin nhắn quảng cáo bộ định tuyến nhận được từ liên kết bộ định tuyến",
-      "tin nhắn chào mời bộ định tuyến nhận được từ liên kết bộ định tuyến",
+      "tin nhắn quảng cáo router nhận được từ liên kết router",
+      "tin nhắn chào mời router nhận được từ liên kết router",
       "tin nhắn quảng cáo hàng xóm nhận được từ liên kết hàng xóm",
       "tin nhắn mời hàng xóm được gửi để liên kết hàng xóm"
     ],
-    "explanation": "Khi sử dụng SLAAC, máy chủ sẽ tìm hiểu từ quảng cáo bộ định tuyến được gửi bởi bộ định tuyến liên kết địa chỉ sẽ sử dụng làm cổng mặc định."
+    "explanation": "Khi sử dụng SLAAC, máy chủ sẽ tìm hiểu từ quảng cáo router được gửi bởi router liên kết địa chỉ sẽ sử dụng làm cổng mặc định."
   },
   "m5-10_q41": {
     "question": "Tham khảo triển lãm. PC này không thể giao tiếp với máy chủ tại 172.16.0.100. Thông tin nào có thể được thu thập từ đầu ra được hiển thị?",
@@ -2981,7 +2981,7 @@
       "172.16.0.100 chỉ cách một bước duy nhất.",
       "PC này có cấu hình mạng con sai trên NIC của nó"
     ],
-    "explanation": "Lệnh tracert hiển thị đường dẫn gói tin đi qua mạng tới đích. Trong ví dụ này, chỉ nhận được phản hồi từ bộ định tuyến đầu tiên trong đường dẫn và tất cả các phản hồi khác sẽ hết thời gian chờ. Bộ định tuyến đầu tiên là cổng mặc định cho máy chủ này và do nhận được phản hồi từ bộ định tuyến nên có thể giả định rằng máy chủ này nằm trên cùng mạng con với bộ định tuyến."
+    "explanation": "Lệnh tracert hiển thị đường dẫn gói tin đi qua mạng tới đích. Trong ví dụ này, chỉ nhận được phản hồi từ router đầu tiên trong đường dẫn và tất cả các phản hồi khác sẽ hết thời gian chờ. Router đầu tiên là cổng mặc định cho máy chủ này và do nhận được phản hồi từ router nên có thể giả định rằng máy chủ này nằm trên cùng mạng con với router."
   },
   "m5-10_q42": {
     "question": "Người dùng đưa ra lệnh ping 192.168.250.103 và nhận được phản hồi bao gồm mã 1. Mã này thể hiện điều gì?",
@@ -3037,25 +3037,25 @@
     "explanation": "Đánh số và theo dõi các phân đoạn dữ liệu, xác nhận dữ liệu đã nhận và truyền lại bất kỳ dữ liệu nào chưa được xác nhận là các hoạt động đáng tin cậy để đảm bảo rằng tất cả dữ liệu đều đến đích. UDP không cung cấp độ tin cậy. Cả TCP và UDP đều xác định các ứng dụng và theo dõi các cuộc hội thoại riêng lẻ. UDP không đánh số các phân đoạn dữ liệu và xây dựng lại dữ liệu theo thứ tự nhận được."
   },
   "m5-10_q47": {
-    "question": "Người dùng đang thực hiện tracert tới một thiết bị từ xa. Tại thời điểm nào bộ định tuyến nằm trên đường dẫn đến thiết bị đích sẽ ngừng chuyển tiếp gói?",
+    "question": "Người dùng đang thực hiện tracert tới một thiết bị từ xa. Tại thời điểm nào router nằm trên đường dẫn đến thiết bị đích sẽ ngừng chuyển tiếp gói?",
     "options": [
-      "khi bộ định tuyến nhận được thông báo ICMP Time Exceeded",
+      "khi router nhận được thông báo ICMP Time Exceeded",
       "khi giá trị RTT đạt đến 0",
       "khi giá trị của cả hai bản tin Echo Yêu cầu và Echo Reply đều bằng 0",
       "khi máy chủ phản hồi bằng tin nhắn ICMP Echo Reply",
       "khi giá trị trong trường TTL đạt tới 0"
     ],
-    "explanation": "Khi bộ định tuyến nhận được gói traceroute, giá trị trong trường TTL sẽ giảm đi 1. Khi giá trị trong trường bằng 0, bộ định tuyến nhận sẽ không chuyển tiếp gói và sẽ gửi tin nhắn ICMP Time Exceeded trở lại nguồn."
+    "explanation": "Khi router nhận được gói traceroute, giá trị trong trường TTL sẽ giảm đi 1. Khi giá trị trong trường bằng 0, router nhận sẽ không chuyển tiếp gói và sẽ gửi tin nhắn ICMP Time Exceeded trở lại nguồn."
   },
   "m5-10_q48": {
-    "question": "Quản trị viên mạng đang kiểm tra kết nối mạng bằng cách đưa ra lệnh ping trên bộ định tuyến. Biểu tượng nào sẽ được hiển thị để cho biết thời gian đã hết trong quá trình chờ tin nhắn trả lời tiếng vang ICMP?",
+    "question": "Quản trị viên mạng đang kiểm tra kết nối mạng bằng cách đưa ra lệnh ping trên router. Biểu tượng nào sẽ được hiển thị để cho biết thời gian đã hết trong quá trình chờ tin nhắn trả lời tiếng vang ICMP?",
     "options": [
       "bạn",
       ".",
       "!",
       "$"
     ],
-    "explanation": "Khi lệnh ping được phát trên bộ định tuyến, các chỉ báo phổ biến nhất như sau: ! - cho biết đã nhận được tin nhắn trả lời tiếng vang ICMP. - cho biết đã hết thời gian trong khi chờ tin nhắn trả lời tiếng vang ICMP U - đã nhận được tin nhắn ICMP về khả năng không thể truy cập"
+    "explanation": "Khi lệnh ping được phát trên router, các chỉ báo phổ biến nhất như sau: ! - cho biết đã nhận được tin nhắn trả lời tiếng vang ICMP. - cho biết đã hết thời gian trong khi chờ tin nhắn trả lời tiếng vang ICMP U - đã nhận được tin nhắn ICMP về khả năng không thể truy cập"
   },
   "m5-10_q49": {
     "question": "Một kỹ thuật viên đang định cấu hình email trên thiết bị di động. Người dùng muốn có thể giữ email gốc trên máy chủ, sắp xếp nó thành các thư mục và đồng bộ hóa các thư mục giữa thiết bị di động và máy chủ. Kỹ thuật viên nên sử dụng giao thức email nào?",
@@ -3078,14 +3078,14 @@
     "explanation": ""
   },
   "m5-10_q51": {
-    "question": "Giá trị nào chứa trong trường tiêu đề IPv4 sẽ bị giảm đi theo mỗi bộ định tuyến nhận gói?",
+    "question": "Giá trị nào chứa trong trường tiêu đề IPv4 sẽ bị giảm đi theo mỗi router nhận gói?",
     "options": [
       "Thời gian để sống",
       "Phần bù mảnh",
       "Độ dài tiêu đề",
       "Dịch vụ khác biệt"
     ],
-    "explanation": "Khi bộ định tuyến nhận được một gói, bộ định tuyến sẽ giảm trường Thời gian tồn tại (TTL) đi một. Khi trường đạt đến 0, bộ định tuyến nhận sẽ loại bỏ gói và sẽ gửi tin nhắn Đã vượt quá thời gian ICMP cho người gửi."
+    "explanation": "Khi router nhận được một gói, router sẽ giảm trường Thời gian tồn tại (TTL) đi một. Khi trường đạt đến 0, router nhận sẽ loại bỏ gói và sẽ gửi tin nhắn Đã vượt quá thời gian ICMP cho người gửi."
   },
   "m5-10_q52": {
     "question": "Ba trách nhiệm của lớp vận chuyển là gì? (Chọn ba.)",
@@ -3104,21 +3104,21 @@
     "options": [
       "chuyển hướng tuyến đường",
       "gạ gẫm hàng xóm",
-      "chào mời bộ định tuyến",
-      "quảng cáo bộ định tuyến",
+      "chào mời router",
+      "quảng cáo router",
       "giao thức không thể truy cập được"
     ],
-    "explanation": "Các thông báo ICMP chung cho cả ICMPv4 và ICMPv6 bao gồm: xác nhận máy chủ, đích (mạng, máy chủ, giao thức, cổng) hoặc dịch vụ không thể truy cập được, vượt quá thời gian và chuyển hướng tuyến đường. Chào mời bộ định tuyến, chào mời hàng xóm và quảng cáo bộ định tuyến là các giao thức mới được triển khai trong ICMPv6."
+    "explanation": "Các thông báo ICMP chung cho cả ICMPv4 và ICMPv6 bao gồm: xác nhận máy chủ, đích (mạng, máy chủ, giao thức, cổng) hoặc dịch vụ không thể truy cập được, vượt quá thời gian và chuyển hướng tuyến đường. Chào mời router, chào mời hàng xóm và quảng cáo router là các giao thức mới được triển khai trong ICMPv6."
   },
   "m5-10_q54": {
-    "question": "Bộ định tuyến sử dụng cơ chế nào để ngăn gói IPv4 nhận được di chuyển vô tận trên mạng?",
+    "question": "Router sử dụng cơ chế nào để ngăn gói IPv4 nhận được di chuyển vô tận trên mạng?",
     "options": [
       "Nó kiểm tra giá trị của trường TTL và nếu là 100, nó sẽ loại bỏ gói và gửi thông báo Destination Unreachable đến máy chủ nguồn.",
       "Nó giảm giá trị của trường TTL đi 1 và nếu kết quả là 0, nó sẽ loại bỏ gói và gửi tin nhắn Đã vượt quá thời gian đến máy chủ nguồn.",
       "Nó kiểm tra giá trị của trường TTL và nếu bằng 0, nó sẽ loại bỏ gói và gửi thông báo Destination Unreachable đến máy chủ nguồn.",
       "Nó tăng giá trị của trường TTL lên 1 và nếu kết quả là 100, nó sẽ loại bỏ gói và gửi thông báo Sự cố tham số đến máy chủ nguồn."
     ],
-    "explanation": "Để ngăn gói IPv4 di chuyển liên tục trong mạng, giao thức TCP/IP sử dụng giao thức ICMPv4 để cung cấp phản hồi về các sự cố. Khi bộ định tuyến nhận được một gói và giảm trường TTL trong gói IPv4 đi 1 và nếu kết quả bằng 0, nó sẽ loại bỏ gói đó và gửi thông báo Đã vượt quá thời gian đến máy chủ nguồn."
+    "explanation": "Để ngăn gói IPv4 di chuyển liên tục trong mạng, giao thức TCP/IP sử dụng giao thức ICMPv4 để cung cấp phản hồi về các sự cố. Khi router nhận được một gói và giảm trường TTL trong gói IPv4 đi 1 và nếu kết quả bằng 0, nó sẽ loại bỏ gói đó và gửi thông báo Đã vượt quá thời gian đến máy chủ nguồn."
   },
   "m5-10_q55": {
     "question": "Một thiết bị đã được gán địa chỉ IPv6 là 2001:0db8:cafe:4500:1000:00d8:0058:00ab/64. Mã định danh máy chủ của thiết bị là gì?",
@@ -3192,7 +3192,7 @@
       "62",
       "64"
     ],
-    "explanation": "Tiền tố /26 cung cấp 6 bit máy chủ, cung cấp tổng cộng 64 địa chỉ, vì 2^6 = 64. Trừ đi địa chỉ mạng và địa chỉ quảng bá, còn lại 62 địa chỉ máy chủ có thể sử dụng được."
+    "explanation": "Tiền tố /26 cung cấp 6 bit máy chủ, cung cấp tổng cộng 64 địa chỉ, vì 2^6 = 64. Trừ đi địa chỉ mạng và địa chỉ broadcast, còn lại 62 địa chỉ máy chủ có thể sử dụng được."
   },
   "m5-10_q62": {
     "question": "Ba dải địa chỉ IP được dành riêng cho mục đích sử dụng riêng tư nội bộ là gì? (Chọn ba.)",
@@ -3207,15 +3207,15 @@
     "explanation": "Các khối địa chỉ IP riêng được sử dụng bên trong các công ty như sau: 10.0.0.0 /8 (bất kỳ địa chỉ nào bắt đầu bằng 10 trong octet đầu tiên) 172.16.0.0 /12 (bất kỳ địa chỉ nào bắt đầu bằng 172.16 trong hai octet đầu tiên đến 172.31.255.255) 192.168.0.0 /16 (bất kỳ địa chỉ nào bắt đầu bằng 192.168 trong hai octet đầu tiên)"
   },
   "m5-10_q63": {
-    "question": "Tham khảo triển lãm. Một nhà phân tích an ninh mạng đang xem các gói đã ghi được chuyển tiếp trên bộ chuyển mạch S1. Thiết bị nào có địa chỉ MAC 50:6a:03:96:71:22?",
+    "question": "Tham khảo triển lãm. Một nhà phân tích an ninh mạng đang xem các gói đã ghi được chuyển tiếp trên switch S1. Thiết bị nào có địa chỉ MAC 50:6a:03:96:71:22?",
     "options": [
       "PC-A",
-      "bộ định tuyến DG",
+      "router DG",
       "máy chủ DSN",
-      "ISP bộ định tuyến",
+      "ISP router",
       "máy chủ web"
     ],
-    "explanation": "Việc chụp Wireshark là truy vấn DNS từ PC-A đến máy chủ DNS. Vì máy chủ DNS nằm trên một mạng từ xa nên PC sẽ gửi truy vấn đến bộ định tuyến cổng mặc định, bộ định tuyến DG, sử dụng địa chỉ MAC của giao diện G0/0 của bộ định tuyến trên bộ định tuyến."
+    "explanation": "Việc chụp Wireshark là truy vấn DNS từ PC-A đến máy chủ DNS. Vì máy chủ DNS nằm trên một mạng từ xa nên PC sẽ gửi truy vấn đến router cổng mặc định, router DG, sử dụng địa chỉ MAC của giao diện G0/0 của router trên router."
   },
   "m5-10_q64": {
     "question": "Một PC chủ đang cố gắng thuê một địa chỉ thông qua DHCP. Thông báo nào được máy chủ gửi để cho khách hàng biết nó có thể sử dụng thông tin IP được cung cấp?",
@@ -3226,7 +3226,7 @@
       "DHCPACK",
       "DHCPNACK"
     ],
-    "explanation": "Khi máy chủ sử dụng DHCP để tự động định cấu hình địa chỉ IP, máy chủ thường gửi hai thông báo: thông báo DHCPDISCOVER và thông báo DHCPREQUEST. Hai tin nhắn này thường được gửi dưới dạng quảng bá để đảm bảo rằng tất cả các máy chủ DHCP đều nhận được chúng. Máy chủ phản hồi các tin nhắn này bằng tin nhắn DHCPOFFER, DHCPACK và DHCPNACK, tùy thuộc vào trường hợp."
+    "explanation": "Khi máy chủ sử dụng DHCP để tự động định cấu hình địa chỉ IP, máy chủ thường gửi hai thông báo: thông báo DHCPDISCOVER và thông báo DHCPREQUEST. Hai tin nhắn này thường được gửi dưới dạng broadcast để đảm bảo rằng tất cả các máy chủ DHCP đều nhận được chúng. Máy chủ phản hồi các tin nhắn này bằng tin nhắn DHCPOFFER, DHCPACK và DHCPNACK, tùy thuộc vào trường hợp."
   },
   "m5-10_q65": {
     "question": "Một nhân viên phàn nàn rằng PC Windows không thể kết nối Internet. Kỹ thuật viên mạng đưa ra lệnh ipconfig trên PC và được hiển thị địa chỉ IP là 169.254.10.3. Có thể rút ra hai kết luận nào? (Chọn hai.)",
@@ -3244,10 +3244,10 @@
     "options": [
       "Lệnh tracert được sử dụng để kiểm tra kết nối giữa hai thiết bị.",
       "Lệnh tracert đến đích nhanh hơn.",
-      "Lệnh tracert hiển thị thông tin của các bộ định tuyến trong đường dẫn.",
+      "Lệnh tracert hiển thị thông tin của các router trong đường dẫn.",
       "Lệnh tracert gửi một thông báo ICMP tới mỗi bước nhảy trên đường dẫn."
     ],
-    "explanation": "Lệnh tracert gửi ba ping đến mỗi hop (bộ định tuyến) trên đường dẫn tới đích và hiển thị tên miền và địa chỉ IP của các hop từ phản hồi của chúng. Vì tracert sử dụng lệnh ping nên thời gian di chuyển giống như lệnh ping độc lập. Chức năng chính của lệnh ping độc lập là kiểm tra khả năng kết nối giữa hai máy chủ."
+    "explanation": "Lệnh tracert gửi ba ping đến mỗi hop (router) trên đường dẫn tới đích và hiển thị tên miền và địa chỉ IP của các hop từ phản hồi của chúng. Vì tracert sử dụng lệnh ping nên thời gian di chuyển giống như lệnh ping độc lập. Chức năng chính của lệnh ping độc lập là kiểm tra khả năng kết nối giữa hai máy chủ."
   },
   "m5-10_q67": {
     "question": "Hai chức năng hoặc hoạt động nào được thực hiện bởi lớp con MAC? (Chọn hai.)",
@@ -3320,7 +3320,7 @@
       "IDS phân tích các gói được chuyển tiếp thực tế.",
       "IDS yêu cầu các thiết bị khác phản ứng với các cuộc tấn công."
     ],
-    "explanation": "Nhược điểm của việc vận hành với lưu lượng được nhân đôi là IDS không thể ngăn chặn các cuộc tấn công gói đơn độc hại tiếp cận mục tiêu trước khi phản ứng lại cuộc tấn công. Ngoài ra, IDS thường yêu cầu sự hỗ trợ từ các thiết bị mạng khác, chẳng hạn như bộ định tuyến và tường lửa, để ứng phó với một cuộc tấn công. Ưu điểm của IDS là bằng cách hoạt động ngoại tuyến bằng cách sử dụng lưu lượng được nhân đôi, nó không ảnh hưởng đến luồng lưu lượng."
+    "explanation": "Nhược điểm của việc vận hành với lưu lượng được nhân đôi là IDS không thể ngăn chặn các cuộc tấn công gói đơn độc hại tiếp cận mục tiêu trước khi phản ứng lại cuộc tấn công. Ngoài ra, IDS thường yêu cầu sự hỗ trợ từ các thiết bị mạng khác, chẳng hạn như router và tường lửa, để ứng phó với một cuộc tấn công. Ưu điểm của IDS là bằng cách hoạt động ngoại tuyến bằng cách sử dụng lưu lượng được nhân đôi, nó không ảnh hưởng đến luồng lưu lượng."
   },
   "m11-12_q4": {
     "question": "Câu lệnh nào mô tả một trong các quy tắc chi phối hành vi giao diện trong bối cảnh triển khai cấu hình tường lửa chính sách dựa trên vùng?",
@@ -3402,7 +3402,7 @@
       "tường lửa",
       "điểm truy cập"
     ],
-    "explanation": "Trong khi một số thiết kế thực hiện định tuyến ở lớp truy cập, hai thiết bị phải luôn được đặt ở lớp truy cập của mô hình thiết kế phân cấp là điểm truy cập và bộ chuyển mạch Lớp 2. Một công tắc mô-đun thường được sử dụng ở lớp lõi. Định tuyến bằng thiết bị Lớp 3 thường được sử dụng trong lớp phân phối. Tường lửa là một thiết bị trong thiết kế mạng biên Internet."
+    "explanation": "Trong khi một số thiết kế thực hiện định tuyến ở lớp truy cập, hai thiết bị phải luôn được đặt ở lớp truy cập của mô hình thiết kế phân cấp là điểm truy cập và switch Lớp 2. Một công tắc mô-đun thường được sử dụng ở lớp lõi. Định tuyến bằng thiết bị Lớp 3 thường được sử dụng trong lớp phân phối. Tường lửa là một thiết bị trong thiết kế mạng biên Internet."
   },
   "m11-12_q12": {
     "question": "Hai câu nào đúng về máy chủ NTP trong mạng doanh nghiệp? (Chọn hai.)",
@@ -3478,24 +3478,24 @@
     "explanation": "Ở chế độ thụ động, máy khách không dây tìm hiểu những mạng và AP nào có sẵn. Máy khách tìm hiểu thông tin này từ các khung báo hiệu do AP gửi có chứa SSID WLAN, các tiêu chuẩn được hỗ trợ và cài đặt bảo mật."
   },
   "m11-12_q19": {
-    "question": "Đặc điểm của cổng định tuyến được cấu hình trên bộ chuyển mạch Cisco là gì?",
+    "question": "Đặc điểm của cổng định tuyến được cấu hình trên switch Cisco là gì?",
     "options": [
       "Nó hỗ trợ các giao diện phụ.",
       "Nó được liên kết với một VLAN duy nhất.",
       "Nó chạy STP để ngăn chặn vòng lặp.",
       "Nó được gán một địa chỉ IP."
     ],
-    "explanation": "Các cổng được định tuyến trên bộ chuyển mạch của Cisco hoạt động tương tự như các cổng trên bộ định tuyến. Chúng được cấu hình bằng một địa chỉ IP và chuyển tiếp các gói Lớp 3. Không giống như các giao diện chuyển mạch Lớp 2, các cổng được định tuyến không hỗ trợ STP và cũng không hỗ trợ các giao diện phụ như các bộ định tuyến."
+    "explanation": "Các cổng được định tuyến trên switch của Cisco hoạt động tương tự như các cổng trên router. Chúng được cấu hình bằng một địa chỉ IP và chuyển tiếp các gói Lớp 3. Không giống như các giao diện chuyển mạch Lớp 2, các cổng được định tuyến không hỗ trợ STP và cũng không hỗ trợ các giao diện phụ như các router."
   },
   "m11-12_q20": {
-    "question": "Bộ chuyển mạch Ethernet thực hiện hành động gì khi nhận được khung có địa chỉ nguồn Lớp 2 không xác định?",
+    "question": "Switch Ethernet thực hiện hành động gì khi nhận được khung có địa chỉ nguồn Lớp 2 không xác định?",
     "options": [
       "Nó chuyển tiếp khung ra tất cả các giao diện ngoại trừ giao diện mà nó được nhận.",
       "Nó chuyển tiếp khung đến cổng mặc định.",
       "Nó ghi lại địa chỉ nguồn trong bảng địa chỉ của switch.",
       "Nó làm rơi khung hình."
     ],
-    "explanation": "Khi bộ chuyển mạch Ethernet nhận được một khung có địa chỉ Lớp 2 không xác định, bộ chuyển mạch sẽ ghi địa chỉ đó vào bảng địa chỉ."
+    "explanation": "Khi switch Ethernet nhận được một khung có địa chỉ Lớp 2 không xác định, switch sẽ ghi địa chỉ đó vào bảng địa chỉ."
   },
   "m11-12_q21": {
     "question": ". Ghép từng thiết bị với một danh mục.",
@@ -3551,7 +3551,7 @@
       "đồng bộ hóa thời gian trên tất cả các thiết bị trên mạng",
       "bắt các gói vào và ra khỏi card giao diện mạng",
       "cung cấp định dạng tin nhắn để liên lạc giữa người quản lý thiết bị mạng và đại lý",
-      "cung cấp phân tích thống kê về các gói truyền qua bộ định tuyến hoặc bộ chuyển mạch đa lớp của Cisco"
+      "cung cấp phân tích thống kê về các gói truyền qua router hoặc switch đa lớp của Cisco"
     ],
     "explanation": "SNMP là giao thức lớp ứng dụng cho phép quản trị viên quản lý các thiết bị trên mạng bằng cách cung cấp định dạng nhắn tin để liên lạc giữa người quản lý thiết bị mạng và đại lý."
   },
@@ -3566,19 +3566,19 @@
     "explanation": "Kiểm tra gói trạng thái trên tường lửa sẽ kiểm tra xem các gói đến có thực sự là phản hồi hợp pháp đối với các yêu cầu bắt nguồn từ các máy chủ bên trong mạng hay không. Lọc gói có thể được sử dụng để cho phép hoặc từ chối quyền truy cập vào tài nguyên dựa trên địa chỉ IP hoặc MAC. Lọc ứng dụng có thể cho phép hoặc từ chối quyền truy cập dựa trên số cổng. Lọc URL được sử dụng để cho phép hoặc từ chối quyền truy cập dựa trên URL hoặc từ khóa."
   },
   "m11-12_q28": {
-    "question": "Bảng định tuyến của bộ định tuyến được duy trì ở vị trí bộ nhớ nào?",
+    "question": "Bảng định tuyến của router được duy trì ở vị trí bộ nhớ nào?",
     "options": [
       "rom",
       "đèn flash",
       "NVRAM",
       "ĐẬP"
     ],
-    "explanation": "Bảng định tuyến của bộ định tuyến được duy trì trong RAM, đây là bộ nhớ khả biến. Nếu bộ định tuyến mất nguồn hoặc được khởi động lại, nội dung của RAM sẽ bị mất và bảng định tuyến phải được xây dựng lại."
+    "explanation": "Bảng định tuyến của router được duy trì trong RAM, đây là bộ nhớ khả biến. Nếu router mất nguồn hoặc được khởi động lại, nội dung của RAM sẽ bị mất và bảng định tuyến phải được xây dựng lại."
   },
   "m11-12_q29": {
     "question": "Điểm truy cập hạng nhẹ chuyển tiếp dữ liệu giữa hai thiết bị nào trên mạng? (Chọn hai.)",
     "options": [
-      "bộ định tuyến không dây",
+      "router không dây",
       "cổng mặc định",
       "bộ điều khiển mạng LAN không dây",
       "điểm truy cập tự trị",
@@ -3587,7 +3587,7 @@
     "explanation": "Trong quá trình triển khai không dây sử dụng các điểm truy cập hạng nhẹ (LWAP), LWAP sẽ chuyển tiếp dữ liệu giữa máy khách không dây và bộ điều khiển mạng LAN không dây (WLC)."
   },
   "m11-12_q30": {
-    "question": "Bộ định tuyến của Cisco đang chạy iOS 15. Hai loại mục nhập bảng định tuyến sẽ được thêm vào khi quản trị viên mạng đưa giao diện lên và gán địa chỉ IP cho giao diện là gì? (Chọn hai.)",
+    "question": "Router của Cisco đang chạy iOS 15. Hai loại mục nhập bảng định tuyến sẽ được thêm vào khi quản trị viên mạng đưa giao diện lên và gán địa chỉ IP cho giao diện là gì? (Chọn hai.)",
     "options": [
       "tuyến đường được quản trị viên mạng nhập thủ công",
       "giao diện tuyến đường địa phương",
@@ -3595,12 +3595,12 @@
       "giao diện kết nối trực tiếp",
       "tuyến đường được học thông qua EIGRP"
     ],
-    "explanation": "Một mục trong bảng định tuyến giao diện tuyến đường cục bộ được tìm thấy khi bộ định tuyến chạy iOS 15 trở lên hoặc nếu định tuyến IPv6 được bật. Bất cứ khi nào một giao diện được đánh địa chỉ và kích hoạt (được kích hoạt), giao diện được kết nối trực tiếp sẽ tự động được hiển thị trong bảng định tuyến."
+    "explanation": "Một mục trong bảng định tuyến giao diện tuyến đường cục bộ được tìm thấy khi router chạy iOS 15 trở lên hoặc nếu định tuyến IPv6 được bật. Bất cứ khi nào một giao diện được đánh địa chỉ và kích hoạt (được kích hoạt), giao diện được kết nối trực tiếp sẽ tự động được hiển thị trong bảng định tuyến."
   },
   "m11-12_q31": {
     "question": "Hãy ghép dịch vụ bí mật với mô tả.",
     "options": [],
-    "explanation": "Cho phép quản trị viên quản lý các thiết bị mạng SNMP Cung cấp số liệu thống kê về các gói truyền qua bộ định tuyến hoặc bộ chuyển mạch đa lớp của Cisco NetFlow Cho phép bộ chuyển mạch tạo các bản sao lưu lượng truy cập trùng lặp được gửi đến bộ phân tích lưu lượng Phản chiếu cổng Một loạt lệnh kiểm soát xem thiết bị chuyển tiếp hay loại bỏ gói ACL"
+    "explanation": "Cho phép quản trị viên quản lý các thiết bị mạng SNMP Cung cấp số liệu thống kê về các gói truyền qua router hoặc switch đa lớp của Cisco NetFlow Cho phép switch tạo các bản sao lưu lượng truy cập trùng lặp được gửi đến bộ phân tích lưu lượng Phản chiếu cổng Một loạt lệnh kiểm soát xem thiết bị chuyển tiếp hay loại bỏ gói ACL"
   },
   "m11-12_q32": {
     "question": "Khớp loại thiết bị an ninh mạng với mô tả.",
@@ -3618,14 +3618,14 @@
     "explanation": "Mạng WLAN là mạng bán song công, có nghĩa là chỉ một khách hàng có thể truyền hoặc nhận tại bất kỳ thời điểm nào. Các mạng WLAN sử dụng đa truy cập cảm nhận sóng mang có tính năng tránh xung đột (CSMA/CA) để xác định thời điểm gửi dữ liệu trên mạng nhằm tránh xung đột gói."
   },
   "m11-12_q34": {
-    "question": "Bộ định tuyến sử dụng thông tin gì trong gói dữ liệu để đưa ra quyết định chuyển tiếp?",
+    "question": "Router sử dụng thông tin gì trong gói dữ liệu để đưa ra quyết định chuyển tiếp?",
     "options": [
       "địa chỉ MAC đích",
       "tên máy chủ đích",
       "dịch vụ đích được yêu cầu",
       "địa chỉ IP đích"
     ],
-    "explanation": "Thiết bị Lớp 3 như bộ định tuyến sử dụng địa chỉ IP đích Lớp 3 để đưa ra quyết định chuyển tiếp."
+    "explanation": "Thiết bị Lớp 3 như router sử dụng địa chỉ IP đích Lớp 3 để đưa ra quyết định chuyển tiếp."
   },
   "m11-12_q35": {
     "question": "Đặc điểm của hub là gì?",
@@ -3679,7 +3679,7 @@
       "Họ có thể tách lưu lượng người dùng.",
       "Chúng ngăn chặn các vòng lặp Lớp 2.",
       "Họ loại bỏ xung đột mạng.",
-      "Chúng cho phép các thiết bị chuyển mạch chuyển tiếp các gói Lớp 3 mà không cần bộ định tuyến."
+      "Chúng cho phép các thiết bị chuyển mạch chuyển tiếp các gói Lớp 3 mà không cần router."
     ],
     "explanation": "Vlan được sử dụng trên mạng để phân tách lưu lượng người dùng dựa trên các yếu tố như chức năng, nhóm dự án hoặc ứng dụng mà không quan tâm đến vị trí thực tế của người dùng hoặc thiết bị."
   },
@@ -3691,7 +3691,7 @@
       "IP Src: 192.168.1.212 MAC Src: 00-60-0F-B1-33-33 IP Dst: 192.168.2.101 MAC Dst: 08-CB-8A-5C-BB-BB",
       "IP Src: 192.168.1.212 MAC Src: 00-60-0F-B1-33-33 IP Dst: 192.168.2.101 MAC Dst: 00-D0-D3-BE-00-00"
     ],
-    "explanation": "Khi một tin nhắn được gửi từ PCA đến PCB đến bộ định tuyến R2, một số trường tiêu đề khung sẽ được R2 ghi lại trước khi chuyển tiếp sang S2. Các khung sẽ chứa địa chỉ MAC nguồn của bộ định tuyến R2 và địa chỉ MAC đích của PCB. Các khung sẽ giữ lại địa chỉ IPv4 ban đầu được PCA áp dụng, tức là địa chỉ IPv4 của PCA làm địa chỉ nguồn và địa chỉ IPv4 của PCB làm đích."
+    "explanation": "Khi một tin nhắn được gửi từ PCA đến PCB đến router R2, một số trường tiêu đề khung sẽ được R2 ghi lại trước khi chuyển tiếp sang S2. Các khung sẽ chứa địa chỉ MAC nguồn của router R2 và địa chỉ MAC đích của PCB. Các khung sẽ giữ lại địa chỉ IPv4 ban đầu được PCA áp dụng, tức là địa chỉ IPv4 của PCA làm địa chỉ nguồn và địa chỉ IPv4 của PCB làm đích."
   },
   "final_q6": {
     "question": "Một nhà phân tích an ninh mạng cần thu thập dữ liệu cảnh báo. Ba công cụ phát hiện nào để thực hiện tác vụ này trong kiến ​​trúc Security Onion? (Chọn ba.)",
@@ -3749,7 +3749,7 @@
     "question": "Vòi mạng là gì?",
     "options": [
       "một công nghệ được sử dụng để cung cấp báo cáo thời gian thực và phân tích dài hạn về các sự kiện bảo mật",
-      "công nghệ của Cisco cung cấp số liệu thống kê về các gói truyền qua bộ định tuyến hoặc bộ chuyển mạch nhiều lớp",
+      "công nghệ của Cisco cung cấp số liệu thống kê về các gói truyền qua router hoặc switch nhiều lớp",
       "một tính năng được hỗ trợ trên các thiết bị chuyển mạch của Cisco cho phép thiết bị chuyển mạch sao chép các khung và chuyển tiếp chúng đến thiết bị phân tích",
       "một thiết bị thụ động chuyển tiếp tất cả các lỗi lưu lượng và lớp vật lý tới thiết bị phân tích"
     ],
@@ -3834,7 +3834,7 @@
       "tặng các chu kỳ bộ xử lý cho các tác vụ tính toán phân tán trong mạng P2P chia sẻ bộ xử lý",
       "để kiểm tra lưu lượng truy cập đến và tìm kiếm bất kỳ vi phạm quy tắc nào hoặc khớp với dấu hiệu của một hành vi khai thác đã biết"
     ],
-    "explanation": "Tor là một nền tảng phần mềm và mạng lưới các máy chủ ngang hàng (P2P) hoạt động như bộ định tuyến. Người dùng truy cập mạng Tor bằng cách sử dụng một trình duyệt đặc biệt cho phép họ duyệt ẩn danh."
+    "explanation": "Tor là một nền tảng phần mềm và mạng lưới các máy chủ ngang hàng (P2P) hoạt động như router. Người dùng truy cập mạng Tor bằng cách sử dụng một trình duyệt đặc biệt cho phép họ duyệt ẩn danh."
   },
   "final_q21": {
     "question": "Hai giao thức mạng nào mà kẻ tấn công có thể sử dụng để lấy cắp dữ liệu trong lưu lượng truy cập được ngụy trang dưới dạng lưu lượng mạng thông thường? (Chọn hai.)",
@@ -4016,12 +4016,12 @@
   "final_q39": {
     "question": "Loại thông báo ICMPv6 nào cung cấp thông tin địa chỉ mạng cho máy chủ sử dụng SLAAC?",
     "options": [
-      "chào mời bộ định tuyến",
+      "chào mời router",
       "quảng cáo hàng xóm",
       "gạ gẫm hàng xóm",
-      "quảng cáo bộ định tuyến"
+      "quảng cáo router"
     ],
-    "explanation": "Giao diện bộ định tuyến hỗ trợ IPv6 gửi tin nhắn quảng cáo bộ định tuyến định kỳ cung cấp thông tin địa chỉ cho các máy chủ thực hiện SLAAC."
+    "explanation": "Giao diện router hỗ trợ IPv6 gửi tin nhắn quảng cáo router định kỳ cung cấp thông tin địa chỉ cho các máy chủ thực hiện SLAAC."
   },
   "final_q40": {
     "question": "Công cụ nào có trong Security Onion là một loạt plugin phần mềm gửi các loại dữ liệu khác nhau đến kho dữ liệu Elaticsearch?",
@@ -4110,7 +4110,7 @@
       "nhận dạng",
       "phiên bản"
     ],
-    "explanation": "Không giống như IPv4, bộ định tuyến IPv6 không thực hiện phân mảnh. Do đó, cả ba trường hỗ trợ phân mảnh trong tiêu đề IPv4 đều bị loại bỏ và không có trường tương đương trong tiêu đề IPv6. Ba trường này là offset đoạn, cờ và nhận dạng. IPv6 hỗ trợ phân mảnh gói máy chủ thông qua việc sử dụng các tiêu đề mở rộng, không phải là một phần của tiêu đề IPv6."
+    "explanation": "Không giống như IPv4, router IPv6 không thực hiện phân mảnh. Do đó, cả ba trường hỗ trợ phân mảnh trong tiêu đề IPv4 đều bị loại bỏ và không có trường tương đương trong tiêu đề IPv6. Ba trường này là offset đoạn, cờ và nhận dạng. IPv6 hỗ trợ phân mảnh gói máy chủ thông qua việc sử dụng các tiêu đề mở rộng, không phải là một phần của tiêu đề IPv6."
   },
   "final_q50": {
     "question": "Hai lệnh mạng nào liên quan đến việc chia sẻ tài nguyên mạng? (Chọn hai.)",
@@ -4139,15 +4139,15 @@
     "explanation": "Khi được nhận ở lớp vật lý của máy chủ, các bit được định dạng thành khung ở lớp liên kết dữ liệu. Một gói là PDU ở lớp mạng. Một phân đoạn là PDU ở lớp vận chuyển. Tệp là cấu trúc dữ liệu có thể được sử dụng ở lớp ứng dụng."
   },
   "final_q53": {
-    "question": "Người dùng đang thực hiện tracert tới một thiết bị từ xa. Tại thời điểm nào bộ định tuyến nằm trên đường dẫn đến thiết bị đích sẽ ngừng chuyển tiếp gói?",
+    "question": "Người dùng đang thực hiện tracert tới một thiết bị từ xa. Tại thời điểm nào router nằm trên đường dẫn đến thiết bị đích sẽ ngừng chuyển tiếp gói?",
     "options": [
-      "khi bộ định tuyến nhận được thông báo ICMP Time Exceeded",
+      "khi router nhận được thông báo ICMP Time Exceeded",
       "khi giá trị của cả hai bản tin Echo Yêu cầu và Echo Reply đều bằng 0",
       "khi giá trị RTT đạt đến 0",
       "khi giá trị trong trường TTL đạt tới 0",
       "khi máy chủ phản hồi bằng tin nhắn ICMP Echo Reply"
     ],
-    "explanation": "Khi bộ định tuyến nhận được gói traceroute, giá trị trong trường TTL sẽ giảm đi 1. Khi giá trị trong trường bằng 0, bộ định tuyến nhận sẽ không chuyển tiếp gói và sẽ gửi tin nhắn ICMP Time Exceeded trở lại nguồn."
+    "explanation": "Khi router nhận được gói traceroute, giá trị trong trường TTL sẽ giảm đi 1. Khi giá trị trong trường bằng 0, router nhận sẽ không chuyển tiếp gói và sẽ gửi tin nhắn ICMP Time Exceeded trở lại nguồn."
   },
   "final_q54": {
     "question": "Tham khảo triển lãm. Giải pháp nào có thể cung cấp VPN giữa trang A và trang B để hỗ trợ đóng gói bất kỳ giao thức Lớp 3 nào giữa các mạng nội bộ tại mỗi trang?",
@@ -4345,7 +4345,7 @@
   "final_q76": {
     "question": "Thiết bị nào hỗ trợ sử dụng SPAN để cho phép giám sát hoạt động độc hại?",
     "options": [
-      "Bộ chuyển mạch Cisco Catalyst",
+      "Switch Cisco Catalyst",
       "Cisco IronPort",
       "Cisco NAC",
       "Đại lý bảo mật của Cisco"
@@ -4444,8 +4444,8 @@
       "ACL cung cấp mức độ bảo mật cơ bản cho việc truy cập mạng.",
       "ACL có thể kiểm soát những khu vực mà máy chủ có thể truy cập trên mạng.",
       "ACL tiêu chuẩn có thể hạn chế quyền truy cập vào các ứng dụng và cổng cụ thể.",
-      "ACL hỗ trợ bộ định tuyến xác định đường dẫn tốt nhất đến đích.",
-      "ACL có thể cho phép hoặc từ chối lưu lượng truy cập dựa trên địa chỉ MAC bắt nguồn từ bộ định tuyến."
+      "ACL hỗ trợ router xác định đường dẫn tốt nhất đến đích.",
+      "ACL có thể cho phép hoặc từ chối lưu lượng truy cập dựa trên địa chỉ MAC bắt nguồn từ router."
     ],
     "explanation": "ACL có thể được sử dụng cho những mục đích sau:Giới hạn lưu lượng truy cập mạng để cung cấp hiệu suất mạng phù hợp Hạn chế gửi các bản cập nhật định tuyến Cung cấp mức bảo mật cơ bản Lọc lưu lượng truy cập dựa trên loại lưu lượng được gửi Lọc lưu lượng truy cập dựa trên địa chỉ IP"
   },
@@ -4455,12 +4455,12 @@
       "Nó phải gửi một thông báo ICMPv6 Router Solicitation để xác định nên sử dụng cổng mặc định nào.",
       "Nó phải gửi một thông báo ICMPv6 Router Solicitation để yêu cầu địa chỉ của máy chủ DNS.",
       "Nó phải gửi một thông báo Neighbor Solicitation ICMPv6 để đảm bảo rằng địa chỉ đó chưa được sử dụng trên mạng.",
-      "Nó phải đợi một thông báo Quảng cáo Bộ định tuyến ICMPv6 cho phép sử dụng địa chỉ này."
+      "Nó phải đợi một thông báo Quảng cáo Router ICMPv6 cho phép sử dụng địa chỉ này."
     ],
-    "explanation": "DHCPv6 không trạng thái hoặc DHCPv6 có trạng thái sử dụng máy chủ DHCP, nhưng Tự động cấu hình địa chỉ không trạng thái (SLAAC) thì không. Máy khách SLAAC có thể tự động tạo địa chỉ dựa trên thông tin từ bộ định tuyến cục bộ thông qua tin nhắn Quảng cáo bộ định tuyến (RA). Khi một địa chỉ đã được gán cho một giao diện thông qua SLAAC, khách hàng phải đảm bảo thông qua Phát hiện địa chỉ trùng lặp (DAD) rằng địa chỉ đó chưa được sử dụng. Nó thực hiện điều này bằng cách gửi đi một tin nhắn ICMPv6 Neighbor Solicitation và lắng nghe phản hồi. Nếu nhận được phản hồi thì có nghĩa là một thiết bị khác đã sử dụng địa chỉ này."
+    "explanation": "DHCPv6 không trạng thái hoặc DHCPv6 có trạng thái sử dụng máy chủ DHCP, nhưng Tự động cấu hình địa chỉ không trạng thái (SLAAC) thì không. Máy khách SLAAC có thể tự động tạo địa chỉ dựa trên thông tin từ router cục bộ thông qua tin nhắn Quảng cáo router (RA). Khi một địa chỉ đã được gán cho một giao diện thông qua SLAAC, khách hàng phải đảm bảo thông qua Phát hiện địa chỉ trùng lặp (DAD) rằng địa chỉ đó chưa được sử dụng. Nó thực hiện điều này bằng cách gửi đi một tin nhắn ICMPv6 Neighbor Solicitation và lắng nghe phản hồi. Nếu nhận được phản hồi thì có nghĩa là một thiết bị khác đã sử dụng địa chỉ này."
   },
   "final_q87": {
-    "question": "Một kỹ thuật viên đang khắc phục sự cố kết nối mạng. Ping tới bộ định tuyến không dây cục bộ thành công nhưng ping tới máy chủ trên Internet không thành công. Lệnh CLI nào có thể hỗ trợ kỹ thuật viên tìm ra vị trí của sự cố mạng?",
+    "question": "Một kỹ thuật viên đang khắc phục sự cố kết nối mạng. Ping tới router không dây cục bộ thành công nhưng ping tới máy chủ trên Internet không thành công. Lệnh CLI nào có thể hỗ trợ kỹ thuật viên tìm ra vị trí của sự cố mạng?",
     "options": [
       "dấu vết",
       "ipconfig",
@@ -4545,13 +4545,13 @@
   "final_q96": {
     "question": "Hai đặc điểm của phương pháp SLAAC cho cấu hình địa chỉ IPv6 là gì? (Chọn hai.)",
     "options": [
-      "Cổng mặc định của máy khách IPv6 trên mạng LAN sẽ là địa chỉ liên kết cục bộ của giao diện bộ định tuyến được gắn vào mạng LAN.",
+      "Cổng mặc định của máy khách IPv6 trên mạng LAN sẽ là địa chỉ liên kết cục bộ của giao diện router được gắn vào mạng LAN.",
       "Phương pháp lấy địa chỉ IPv6 có trạng thái này yêu cầu ít nhất một máy chủ DHCPv6.",
-      "Khách hàng gửi tin nhắn quảng cáo bộ định tuyến đến bộ định tuyến để yêu cầu địa chỉ IPv6.",
+      "Khách hàng gửi tin nhắn quảng cáo router đến router để yêu cầu địa chỉ IPv6.",
       "Địa chỉ IPv6 được gán động cho máy khách thông qua việc sử dụng ICMPv6.",
-      "Tin nhắn chào mời bộ định tuyến được bộ định tuyến gửi để cung cấp địa chỉ IPv6 cho khách hàng."
+      "Tin nhắn chào mời router được router gửi để cung cấp địa chỉ IPv6 cho khách hàng."
     ],
-    "explanation": "Với SLAAC, cổng mặc định cho máy khách IPv6 sẽ là địa chỉ liên kết cục bộ của giao diện bộ định tuyến được gắn vào mạng LAN của máy khách. Địa chỉ IPv6 được gán động thông qua giao thức ICMPv6. SLAAC là một phương pháp không trạng thái để lấy địa chỉ IPv6, một phương pháp không yêu cầu máy chủ. Khi một máy khách được cấu hình để tự động lấy thông tin địa chỉ của nó thông qua SLAAC, máy khách sẽ gửi một thông báo yêu cầu bộ định tuyến đến địa chỉ multicast của tất cả các bộ định tuyến IPv6 FF02::2. Các tin nhắn quảng cáo bộ định tuyến được gửi bởi bộ định tuyến để cung cấp thông tin địa chỉ cho khách hàng."
+    "explanation": "Với SLAAC, cổng mặc định cho máy khách IPv6 sẽ là địa chỉ liên kết cục bộ của giao diện router được gắn vào mạng LAN của máy khách. Địa chỉ IPv6 được gán động thông qua giao thức ICMPv6. SLAAC là một phương pháp không trạng thái để lấy địa chỉ IPv6, một phương pháp không yêu cầu máy chủ. Khi một máy khách được cấu hình để tự động lấy thông tin địa chỉ của nó thông qua SLAAC, máy khách sẽ gửi một thông báo yêu cầu router đến địa chỉ multicast của tất cả các router IPv6 FF02::2. Các tin nhắn quảng cáo router được gửi bởi router để cung cấp thông tin địa chỉ cho khách hàng."
   },
   "final_q97": {
     "question": "Một kỹ thuật viên nhận thấy một ứng dụng không phản hồi các lệnh và máy tính dường như phản hồi chậm khi mở ứng dụng. Công cụ quản trị tốt nhất để buộc giải phóng tài nguyên hệ thống khỏi ứng dụng không phản hồi là gì?",
@@ -4688,7 +4688,7 @@
     "options": [
       "Kích hoạt mức nhật ký hệ thống cao nhất hiện có để đảm bảo ghi nhật ký tất cả các thông báo sự kiện có thể xảy ra.",
       "Đồng bộ hóa đồng hồ trên tất cả các thiết bị mạng bằng giao thức như Network Time Protocol.",
-      "Ghi tất cả tin nhắn vào bộ đệm hệ thống để có thể hiển thị khi truy cập bộ định tuyến.",
+      "Ghi tất cả tin nhắn vào bộ đệm hệ thống để có thể hiển thị khi truy cập router.",
       "Sử dụng SSH để truy cập thông tin nhật ký hệ thống"
     ],
     "explanation": ""
@@ -4915,7 +4915,7 @@
       "R2",
       "SW1"
     ],
-    "explanation": "Tracert được sử dụng để theo dõi đường đi của gói tin. Phản hồi thành công duy nhất là từ thiết bị đầu tiên dọc theo đường dẫn trên cùng mạng LAN với máy chủ gửi. Thiết bị đầu tiên là cổng mặc định trên bộ định tuyến R1. Do đó, quản trị viên nên bắt đầu khắc phục sự cố ở R1."
+    "explanation": "Tracert được sử dụng để theo dõi đường đi của gói tin. Phản hồi thành công duy nhất là từ thiết bị đầu tiên dọc theo đường dẫn trên cùng mạng LAN với máy chủ gửi. Thiết bị đầu tiên là cổng mặc định trên router R1. Do đó, quản trị viên nên bắt đầu khắc phục sự cố ở R1."
   },
   "final_q134": {
     "question": "Cisco Talos duy trì bộ quy tắc phát hiện sự cố bảo mật cho ba công cụ bảo mật nào? (Chọn ba.)",
@@ -4993,10 +4993,10 @@
     "options": [
       "chuyển đổi lớp truy cập",
       "tường lửa",
-      "bộ định tuyến nội bộ",
+      "router nội bộ",
       "IPS"
     ],
-    "explanation": "Tường lửa thường là tuyến phòng thủ thứ hai trong cách tiếp cận phòng thủ chuyên sâu theo từng lớp đối với an ninh mạng. Tường lửa thường kết nối với bộ định tuyến biên kết nối với nhà cung cấp dịch vụ. Tường lửa theo dõi các kết nối được khởi tạo trong công ty đi ra ngoài công ty và từ chối việc khởi tạo các kết nối từ các mạng không đáng tin cậy bên ngoài đến các mạng đáng tin cậy nội bộ."
+    "explanation": "Tường lửa thường là tuyến phòng thủ thứ hai trong cách tiếp cận phòng thủ chuyên sâu theo từng lớp đối với an ninh mạng. Tường lửa thường kết nối với router biên kết nối với nhà cung cấp dịch vụ. Tường lửa theo dõi các kết nối được khởi tạo trong công ty đi ra ngoài công ty và từ chối việc khởi tạo các kết nối từ các mạng không đáng tin cậy bên ngoài đến các mạng đáng tin cậy nội bộ."
   },
   "final_q142": {
     "question": "Hai vấn đề mạng tiềm ẩn có thể xảy ra do hoạt động ARP là gì? (Chọn hai.)",
@@ -5007,7 +5007,7 @@
       "Nhiều phản hồi ARP dẫn đến bảng địa chỉ MAC của switch chứa các mục khớp với địa chỉ MAC của máy chủ được kết nối với cổng switch có liên quan.",
       "Việc định cấu hình thủ công các liên kết ARP tĩnh có thể tạo điều kiện cho việc đầu độc ARP hoặc giả mạo địa chỉ MAC."
     ],
-    "explanation": "Số lượng lớn tin nhắn quảng bá ARP có thể gây ra sự chậm trễ trong truyền dữ liệu tạm thời. Những kẻ tấn công mạng có thể thao túng ánh xạ địa chỉ MAC và địa chỉ IP trong các tin nhắn ARP với mục đích chặn lưu lượng mạng. Các yêu cầu và phản hồi ARP khiến các mục được đưa vào bảng ARP chứ không phải bảng địa chỉ MAC. Việc tràn bảng ARP rất khó xảy ra. Định cấu hình thủ công các liên kết ARP tĩnh là một cách để ngăn chặn chứ không tạo điều kiện thuận lợi cho việc ngộ độc ARP và giả mạo địa chỉ MAC. Cần có nhiều phản hồi ARP dẫn đến bảng địa chỉ MAC của switch chứa các mục khớp với địa chỉ MAC của các nút được kết nối và được liên kết với cổng switch có liên quan là cần thiết cho các hoạt động chuyển tiếp khung switch thông thường. Đây không phải là sự cố mạng do ARP gây ra."
+    "explanation": "Số lượng lớn tin nhắn broadcast ARP có thể gây ra sự chậm trễ trong truyền dữ liệu tạm thời. Những kẻ tấn công mạng có thể thao túng ánh xạ địa chỉ MAC và địa chỉ IP trong các tin nhắn ARP với mục đích chặn lưu lượng mạng. Các yêu cầu và phản hồi ARP khiến các mục được đưa vào bảng ARP chứ không phải bảng địa chỉ MAC. Việc tràn bảng ARP rất khó xảy ra. Định cấu hình thủ công các liên kết ARP tĩnh là một cách để ngăn chặn chứ không tạo điều kiện thuận lợi cho việc ngộ độc ARP và giả mạo địa chỉ MAC. Cần có nhiều phản hồi ARP dẫn đến bảng địa chỉ MAC của switch chứa các mục khớp với địa chỉ MAC của các nút được kết nối và được liên kết với cổng switch có liên quan là cần thiết cho các hoạt động chuyển tiếp khung switch thông thường. Đây không phải là sự cố mạng do ARP gây ra."
   },
   "final_q143": {
     "question": "Ba quy trình nào trong Sguil được cung cấp cho các nhà phân tích bảo mật để giải quyết các cảnh báo? (Chọn ba.)",
@@ -5170,11 +5170,11 @@
       "chỉ có máy chủ D",
       "chỉ có máy chủ A, B, C và D",
       "chỉ có máy chủ B và C",
-      "chỉ lưu trữ B, C và bộ định tuyến R1",
+      "chỉ lưu trữ B, C và router R1",
       "chỉ có máy chủ A, B và C",
-      "chỉ bộ định tuyến R1"
+      "chỉ router R1"
     ],
-    "explanation": "Vì máy A không có địa chỉ MAC của cổng mặc định trong bảng ARP nên máy A sẽ gửi một bản tin ARP. Chương trình phát ARP sẽ được gửi đến mọi thiết bị trên mạng cục bộ. Máy chủ B, C và bộ định tuyến R1 sẽ nhận được chương trình phát sóng. Bộ định tuyến R1 sẽ không chuyển tiếp tin nhắn."
+    "explanation": "Vì máy A không có địa chỉ MAC của cổng mặc định trong bảng ARP nên máy A sẽ gửi một bản tin ARP. Chương trình phát ARP sẽ được gửi đến mọi thiết bị trên mạng cục bộ. Máy chủ B, C và router R1 sẽ nhận được chương trình phát sóng. Router R1 sẽ không chuyển tiếp tin nhắn."
   },
   "final_q159": {
     "question": "Loại bằng chứng nào không thể tự mình chứng minh sự thật về bảo mật CNTT?",
@@ -5266,7 +5266,7 @@
       "R2: S0/0/1",
       "R1: S0/0/0"
     ],
-    "explanation": "Cổng mặc định cho máy chủ H1 là giao diện bộ định tuyến được gắn vào mạng LAN mà H1 là thành viên. Trong trường hợp này, đó là giao diện G0/0 của R1. H1 phải được cấu hình với địa chỉ IP của giao diện đó trong cài đặt địa chỉ của nó. R1 sẽ cung cấp dịch vụ định tuyến cho các gói tin từ H1 cần chuyển tiếp đến các mạng từ xa."
+    "explanation": "Cổng mặc định cho máy chủ H1 là giao diện router được gắn vào mạng LAN mà H1 là thành viên. Trong trường hợp này, đó là giao diện G0/0 của R1. H1 phải được cấu hình với địa chỉ IP của giao diện đó trong cài đặt địa chỉ của nó. R1 sẽ cung cấp dịch vụ định tuyến cho các gói tin từ H1 cần chuyển tiếp đến các mạng từ xa."
   },
   "final_q168": {
     "question": "Theo thông tin được Cyber ​​Kill Chain nêu ra, hai cách tiếp cận nào có thể giúp xác định các mối đe dọa do thám? (Chọn hai.)",
@@ -5282,8 +5282,8 @@
   "final_q169": {
     "question": "Hai thông báo ICMPv6 nào được sử dụng trong quá trình phân giải địa chỉ MAC Ethernet? (Chọn hai.)",
     "options": [
-      "chào mời bộ định tuyến",
-      "quảng cáo bộ định tuyến",
+      "chào mời router",
+      "quảng cáo router",
       "gạ gẫm hàng xóm",
       "quảng cáo hàng xóm",
       "yêu cầu tiếng vang"
@@ -5291,7 +5291,7 @@
     "explanation": "IPv6 sử dụng các tin nhắn ICMPv6 mời hàng xóm (NS) và quảng cáo hàng xóm (NA) để phân giải địa chỉ MAC."
   },
   "final_q170": {
-    "question": "Điều gì mô tả đúng nhất địa chỉ IPv4 đích được sử dụng bởi tính năng phát đa hướng?",
+    "question": "Điều gì mô tả đúng nhất địa chỉ IPv4 đích được sử dụng bởi tính năng phát multicast?",
     "options": [
       "một địa chỉ multicast IP duy nhất được sử dụng bởi tất cả các điểm đến trong một nhóm",
       "địa chỉ IP duy nhất cho mỗi điểm đến trong nhóm",
@@ -5397,7 +5397,7 @@
       "truyền yêu cầu thăm dò",
       "gửi một chương trình phát sóng yêu cầu ARP",
       "bắt đầu một cái bắt tay ba chiều",
-      "nhận được khung đèn hiệu quảng bá",
+      "nhận được khung đèn hiệu broadcast",
       "gửi một khung multicast"
     ],
     "explanation": "Thiết bị không dây có thể sử dụng hai phương pháp để khám phá và đăng ký với điểm truy cập: chế độ thụ động và chế độ hoạt động. Ở chế độ thụ động, AP gửi khung đèn hiệu phát sóng có chứa SSID và các cài đặt không dây khác. Ở chế độ hoạt động, thiết bị không dây phải được cấu hình thủ công cho SSID, sau đó thiết bị sẽ phát đi yêu cầu thăm dò."
@@ -5432,16 +5432,16 @@
       "Tất cả các máy chủ đều nhận được tin nhắn, nhưng chỉ có máy chủ DHCP trả lời.",
       "Chỉ có máy chủ DHCP mới nhận được tin nhắn."
     ],
-    "explanation": "Khi máy chủ được cấu hình để sử dụng DHCP bật nguồn trên mạng, nó sẽ gửi thông báo DHCPDISCOVER. FF-FF-FF-FF-FF-FF là địa chỉ quảng bá L2. Máy chủ DHCP trả lời bằng thông báo DHCPOFFER unicast gửi lại máy chủ."
+    "explanation": "Khi máy chủ được cấu hình để sử dụng DHCP bật nguồn trên mạng, nó sẽ gửi thông báo DHCPDISCOVER. FF-FF-FF-FF-FF-FF là địa chỉ broadcast L2. Máy chủ DHCP trả lời bằng thông báo DHCPOFFER unicast gửi lại máy chủ."
   },
   "final_q185": {
-    "question": "Tham khảo triển lãm. PC đang gửi gói đến Máy chủ trên mạng từ xa. Bộ định tuyến R1 đang thực hiện quá tải NAT. Từ góc độ của PC, hãy khớp loại địa chỉ NAT với địa chỉ IP chính xác. (Không phải tất cả các tùy chọn đều được sử dụng.)",
+    "question": "Tham khảo triển lãm. PC đang gửi gói đến Máy chủ trên mạng từ xa. Router R1 đang thực hiện quá tải NAT. Từ góc độ của PC, hãy khớp loại địa chỉ NAT với địa chỉ IP chính xác. (Không phải tất cả các tùy chọn đều được sử dụng.)",
     "options": [
       "Bên ngoài toàn cầu -> 203.0.113.5",
       "Bên trong toàn cầu -> 192.0.2.1",
       "Bên trong địa phương -> 10.130.5.76"
     ],
-    "explanation": "Đặt các tùy chọn theo thứ tự sau: Giải thích: Chủ đề 24.2.2 Địa chỉ cục bộ bên trong là địa chỉ IP riêng của nguồn hoặc PC trong trường hợp này. Địa chỉ toàn cầu bên trong là địa chỉ được dịch của nguồn hoặc địa chỉ mà thiết bị bên ngoài nhìn thấy. Vì PC đang sử dụng địa chỉ bên ngoài của bộ định tuyến R1 nên địa chỉ toàn cầu bên trong là 192.0.2.1. Địa chỉ bên ngoài chỉ đơn giản là địa chỉ của máy chủ hoặc 203.0.113.5."
+    "explanation": "Đặt các tùy chọn theo thứ tự sau: Giải thích: Chủ đề 24.2.2 Địa chỉ cục bộ bên trong là địa chỉ IP riêng của nguồn hoặc PC trong trường hợp này. Địa chỉ toàn cầu bên trong là địa chỉ được dịch của nguồn hoặc địa chỉ mà thiết bị bên ngoài nhìn thấy. Vì PC đang sử dụng địa chỉ bên ngoài của router R1 nên địa chỉ toàn cầu bên trong là 192.0.2.1. Địa chỉ bên ngoài chỉ đơn giản là địa chỉ của máy chủ hoặc 203.0.113.5."
   },
   "final_q186": {
     "question": "Bước nào trong Vòng đời quản lý lỗ hổng sẽ phân loại tài sản thành các nhóm hoặc đơn vị kinh doanh và chỉ định giá trị kinh doanh cho các nhóm tài sản dựa trên mức độ quan trọng của chúng đối với hoạt động kinh doanh?",
@@ -5627,7 +5627,7 @@
   "cert_practice_q15": {
     "question": "Hãy ghép dịch vụ bảo mật với mô tả.",
     "options": [],
-    "explanation": "Cho phép quản trị viên quản lý các thiết bị mạng SNMP Cung cấp số liệu thống kê về các gói truyền qua bộ định tuyến hoặc bộ chuyển mạch đa lớp của Cisco NetFlow Cho phép bộ chuyển mạch tạo các bản sao lưu lượng truy cập trùng lặp được gửi đến bộ phân tích lưu lượng Phản chiếu cổng Một loạt lệnh kiểm soát xem thiết bị chuyển tiếp hay loại bỏ gói ACL"
+    "explanation": "Cho phép quản trị viên quản lý các thiết bị mạng SNMP Cung cấp số liệu thống kê về các gói truyền qua router hoặc switch đa lớp của Cisco NetFlow Cho phép switch tạo các bản sao lưu lượng truy cập trùng lặp được gửi đến bộ phân tích lưu lượng Phản chiếu cổng Một loạt lệnh kiểm soát xem thiết bị chuyển tiếp hay loại bỏ gói ACL"
   },
   "cert_practice_q16": {
     "question": "Sử dụng Tcpdump và Wireshark, nhà phân tích bảo mật sẽ trích xuất tệp đã tải xuống từ tệp pcap. Nhà phân tích nghi ngờ rằng tệp này là vi-rút và muốn biết loại tệp để kiểm tra thêm. Lệnh Linux nào có thể được sử dụng để xác định loại tệp?",
@@ -5701,7 +5701,7 @@
       "phiên bản",
       "giao thức"
     ],
-    "explanation": "Không giống như IPv4, bộ định tuyến IPv6 không thực hiện phân mảnh. Do đó, cả ba trường hỗ trợ phân mảnh trong tiêu đề IPv4 đều bị loại bỏ và không có trường tương đương trong tiêu đề IPv6. Ba trường này là offset đoạn, cờ và nhận dạng. IPv6 hỗ trợ phân mảnh gói máy chủ thông qua việc sử dụng các tiêu đề mở rộng, không phải là một phần của tiêu đề IPv6."
+    "explanation": "Không giống như IPv4, router IPv6 không thực hiện phân mảnh. Do đó, cả ba trường hỗ trợ phân mảnh trong tiêu đề IPv4 đều bị loại bỏ và không có trường tương đương trong tiêu đề IPv6. Ba trường này là offset đoạn, cờ và nhận dạng. IPv6 hỗ trợ phân mảnh gói máy chủ thông qua việc sử dụng các tiêu đề mở rộng, không phải là một phần của tiêu đề IPv6."
   },
   "cert_practice_q23": {
     "question": "Phân loại nào được sử dụng cho cảnh báo xác định chính xác rằng hành vi khai thác đã xảy ra?",
