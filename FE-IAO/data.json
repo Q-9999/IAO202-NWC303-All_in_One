@@ -8023,7 +8023,7 @@
     "original_num": 9,
     "source_group": "m3-4",
     "source_title": "Modules 3 - 4: Operating System Overview Group Exam",
-    "question": "Match typical Linux log files to the function.\nOperating Systems Basics Final Exam Q13",
+    "question": "Match typical Linux log files to the function.",
     "images": [
       "images/m3-4_1_2024-09-26_151528.jpg"
     ],
@@ -8466,7 +8466,7 @@
     "original_num": 22,
     "source_group": "m3-4",
     "source_title": "Modules 3 - 4: Operating System Overview Group Exam",
-    "question": "Match the Windows command to the description.\nModules 3 - 4: Operating System Overview Group Exam",
+    "question": "Match the Windows command to the description.",
     "images": [
       "images/m3-4_5_2024-09-27_151941.jpg"
     ],
@@ -8871,7 +8871,7 @@
     "original_num": 34,
     "source_group": "m3-4",
     "source_title": "Modules 3 - 4: Operating System Overview Group Exam",
-    "question": "Match the Windows system tool with the description. (Not all options are used.)\nModules 3 - 4: Operating System Overview Group Exam 34",
+    "question": "Match the Windows system tool with the description. (Not all options are used.)",
     "images": [
       "images/m3-4_8_2024-09-27_154126.jpg"
     ],
@@ -11264,7 +11264,7 @@
     "original_num": 69,
     "source_group": "m5-10",
     "source_title": "Modules 5 - 10: Network Fundamentals Group Exam",
-    "question": "Match each statement about FTP communications to the connection it describes. (Not all options are used.)\nCyberOps Associate (Version 1.0) - Modules 5 - 10: Network Fundamentals Group Exam\nFirst connection established (Control connection)",
+    "question": "Match each statement about FTP communications to the connection it describes. (Not all options are used.)\nFirst connection established (Control connection)",
     "images": [
       "images/m5-10_12_2021-12-07_065314.jpg"
     ],
@@ -14032,7 +14032,7 @@
     "original_num": 56,
     "source_group": "final",
     "source_title": "CyberOps Associate Version 1.0 Final Exam",
-    "question": "Match the network service with the description.\nEndpoint Security (ESec) Final Exam Answers 19",
+    "question": "Match the network service with the description.",
     "images": [
       "images/final_13_2024-09-26_104808.jpg"
     ],
@@ -16277,7 +16277,7 @@
     "original_num": 133,
     "source_group": "final",
     "source_title": "CyberOps Associate Version 1.0 Final Exam",
-    "question": "Refer to the exhibit. An administrator is trying to troubleshoot connectivity between PC1 and PC2 and uses the tracert command from PC1 to do it. Based on the displayed output, where should the administrator begin troubleshooting?\nCyberOps Associate 1.0 Final exam",
+    "question": "Refer to the exhibit. An administrator is trying to troubleshoot connectivity between PC1 and PC2 and uses the tracert command from PC1 to do it. Based on the displayed output, where should the administrator begin troubleshooting?",
     "images": [
       "images/final_25_CyberOps-Associate-1_0-Final-exam.jpg"
     ],

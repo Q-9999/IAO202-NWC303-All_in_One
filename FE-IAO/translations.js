@@ -2272,7 +2272,7 @@ window.QUESTION_TRANSLATIONS = window.TRANSLATIONS_DATA = window.QUESTIONS_TRANS
     "explanation": ""
   },
   "m3-4_q9": {
-    "question": "Khớp các tệp nhật ký Linux điển hình với chức năng. Bài thi cuối kỳ Cơ bản về Hệ điều hành Q13",
+    "question": "Khớp các tệp nhật ký Linux điển hình với chức năng.",
     "options": [
       "được sử dụng bởi máy tính RedHat và CentOS và theo dõi các sự kiện liên quan đến xác thực -> /var/log/an toàn",
       "chứa nhật ký hoạt động máy tính chung và được sử dụng để lưu trữ các thông báo hệ thống thông tin và không quan trọng -> /var/log/tin nhắn",
@@ -2398,7 +2398,7 @@ window.QUESTION_TRANSLATIONS = window.TRANSLATIONS_DATA = window.QUESTIONS_TRANS
     "explanation": "Các loại lệnh mà PowerShell có thể thực thi bao gồm: lệnh ghép ngắn - thực hiện một hành động và trả về đầu ra hoặc đối tượng cho lệnh tiếp theo sẽ được thực thi tập lệnh PowerShell - các tệp có phần mở rộng .ps1 chứa các lệnh PowerShell được thực thi các hàm PowerShell - các đoạn mã có thể được tham chiếu trong tập lệnh"
   },
   "m3-4_q22": {
-    "question": "Ghép lệnh Windows với mô tả. Mô-đun 3 - 4: Bài kiểm tra nhóm Tổng quan về Hệ điều hành",
+    "question": "Ghép lệnh Windows với mô tả.",
     "options": [
       "đổi tên một tập tin -> ren",
       "tạo một thư mục mới -> mkdir",
@@ -2514,7 +2514,7 @@ window.QUESTION_TRANSLATIONS = window.TRANSLATIONS_DATA = window.QUESTIONS_TRANS
     "explanation": "Các loại lệnh mà PowerShell có thể thực thi bao gồm: lệnh ghép ngắn – thực hiện một hành động và trả về đầu ra hoặc đối tượng cho lệnh tiếp theo sẽ được thực thi tập lệnh PowerShell – các tệp có phần mở rộng .ps1 chứa các lệnh PowerShell được thực thi các hàm PowerShell - các đoạn mã có thể được tham chiếu trong tập lệnh 33. Người dùng tạo một tệp có phần mở rộng .ps1 trong Windows. Đó là loại tập tin gì? Giải thích: Chủ đề 3.3.3 Các loại lệnh mà PowerShell có thể thực thi bao gồm: lệnh ghép ngắn - thực hiện một hành động và trả về đầu ra hoặc đối tượng cho lệnh tiếp theo sẽ được thực thi tập lệnh PowerShell - các tệp có phần mở rộng .ps1 chứa các lệnh PowerShell được thực thi Chức năng PowerShell - các đoạn mã có thể được tham chiếu trong tập lệnh"
   },
   "m3-4_q34": {
-    "question": "Ghép công cụ hệ thống Windows với mô tả. (Không phải tất cả các tùy chọn đều được sử dụng.) Mô-đun 3 - 4: Tổng quan về hệ điều hành Bài kiểm tra nhóm 34",
+    "question": "Ghép công cụ hệ thống Windows với mô tả. (Không phải tất cả các tùy chọn đều được sử dụng.)",
     "options": [
       "Đăng ký -> cơ sở dữ liệu phân cấp của tất cả thông tin hệ thống và người dùng",
       "Tường lửa Windows -> từ chối có chọn lọc lưu lượng truy cập trên các giao diện được chỉ định",
@@ -3271,7 +3271,7 @@ window.QUESTION_TRANSLATIONS = window.TRANSLATIONS_DATA = window.QUESTIONS_TRANS
     "explanation": "Giá trị trong trường Địa chỉ đích trong tiêu đề IPv4 sẽ giữ nguyên trong quá trình truyền. Các tùy chọn khác có thể thay đổi trong quá trình truyền."
   },
   "m5-10_q69": {
-    "question": "Nối mỗi câu về truyền thông FTP với kết nối mà nó mô tả. (Không phải tất cả các tùy chọn đều được sử dụng.) CyberOps Associate (Phiên bản 1.0) - Mô-đun 5 - 10: Bài kiểm tra nhóm Cơ bản về Mạng Kết nối đầu tiên được thiết lập (Kết nối điều khiển)",
+    "question": "Nối mỗi câu về truyền thông FTP với kết nối mà nó mô tả. (Không phải tất cả các tùy chọn đều được sử dụng.)\nKết nối đầu tiên được thiết lập (Kết nối điều khiển)",
     "options": [
       "từ máy khách đến máy chủ qua cổng TCP 21",
       "được sử dụng cho các lệnh và trả lời",
@@ -4170,7 +4170,7 @@ window.QUESTION_TRANSLATIONS = window.TRANSLATIONS_DATA = window.QUESTIONS_TRANS
     "explanation": "Nmap cho phép quản trị viên thực hiện quét cổng để thăm dò máy tính và mạng để tìm các cổng đang mở. Điều này giúp quản trị viên xác minh rằng các chính sách bảo mật mạng đã được áp dụng."
   },
   "final_q56": {
-    "question": "Hãy ghép dịch vụ mạng với mô tả. Đáp án bài thi cuối kỳ Bảo mật điểm cuối (ESec) 19",
+    "question": "Hãy ghép dịch vụ mạng với mô tả.",
     "options": [],
     "explanation": "cung cấp số liệu thống kê về các gói IP truyền qua các thiết bị mạng NetFlow thông báo cho quản trị viên các thông báo hệ thống chi tiết nhật ký hệ thống cho phép quản trị viên quản lý các nút mạng SNMP đồng bộ hóa thời gian trên tất cả các thiết bị trên mạng NTP"
   },
@@ -4907,7 +4907,7 @@ window.QUESTION_TRANSLATIONS = window.TRANSLATIONS_DATA = window.QUESTIONS_TRANS
     "explanation": "Sau khi vũ khí được giao, kẻ đe dọa sẽ sử dụng nó để phá vỡ lỗ hổng và giành quyền kiểm soát mục tiêu. Tác nhân đe dọa sẽ sử dụng một cách khai thác để đạt được hiệu quả mong muốn, thực hiện một cách lặng lẽ và tránh bị phát hiện. Thiết lập cửa sau trong hệ thống mục tiêu là giai đoạn cài đặt."
   },
   "final_q133": {
-    "question": "Tham khảo triển lãm. Quản trị viên đang cố gắng khắc phục sự cố kết nối giữa PC1 và PC2 và sử dụng lệnh tracert từ PC1 để thực hiện việc đó. Dựa trên kết quả được hiển thị, quản trị viên nên bắt đầu khắc phục sự cố ở đâu? Kỳ thi cuối kỳ CyberOps Associate 1.0",
+    "question": "Tham khảo triển lãm. Quản trị viên đang cố gắng khắc phục sự cố kết nối giữa PC1 và PC2 và sử dụng lệnh tracert từ PC1 để thực hiện việc đó. Dựa trên kết quả được hiển thị, quản trị viên nên bắt đầu khắc phục sự cố ở đâu?",
     "options": [
       "R1",
       "PC2",

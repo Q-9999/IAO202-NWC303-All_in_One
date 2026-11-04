@@ -2399,7 +2399,7 @@ const QUESTIONS_DATA = [
     "original_num": 77,
     "source_group": "m1-4",
     "source_title": "Modules 1 - 4: Switching Concepts, VLANs, and InterVLAN Routing",
-    "question": "Open the PT Activity. Perform the tasks in the activity instructions and then answer the question.\nModules 1 - 4 Switching Concepts, VLANs, and InterVLAN Routing\n 1 file(s)  287.41 KB\n\n\nDownload\n\n\n\n\n\nWhich message is displayed when 10.10.10.1 is entered into the PC1 Web Browser address bar?",
+    "question": "Open the PT Activity. Perform the tasks in the activity instructions and then answer the question. Which message is displayed when 10.10.10.1 is entered into the PC1 Web Browser address bar?",
     "images": [
       "images/m1-4_q77_0.jpg",
       "images/m1-4_q77_1.png"
@@ -3214,7 +3214,7 @@ const QUESTIONS_DATA = [
     "original_num": 22,
     "source_group": "m5-6",
     "source_title": "Modules 5 - 6: Redundant Networks",
-    "question": "Refer to the exhibit. On the basis of the output that is shown, what can be determined about the EtherChannel bundle?\nCCNA-2-v7-Modules 5 - 6 Redundant Networks Exam 22",
+    "question": "Refer to the exhibit. On the basis of the output that is shown, what can be determined about the EtherChannel bundle?",
     "images": [
       "images/m5-6_q22_0.png"
     ],
@@ -3280,7 +3280,7 @@ const QUESTIONS_DATA = [
     "original_num": 24,
     "source_group": "m5-6",
     "source_title": "Modules 5 - 6: Redundant Networks",
-    "question": "Refer to the exhibit. A network administrator is configuring an EtherChannel link between two switches, SW1 and SW2. Which statement describes the effect after the commands are issued on SW1 and SW2?\nCCNA-2-v7-Modules 5 - 6 Redundant Networks Exam 24",
+    "question": "Refer to the exhibit. A network administrator is configuring an EtherChannel link between two switches, SW1 and SW2. Which statement describes the effect after the commands are issued on SW1 and SW2?",
     "images": [
       "images/m5-6_q24_0.png"
     ],
@@ -3312,7 +3312,7 @@ const QUESTIONS_DATA = [
     "original_num": 25,
     "source_group": "m5-6",
     "source_title": "Modules 5 - 6: Redundant Networks",
-    "question": "Refer to the exhibit. A network administrator is configuring an EtherChannel link between two switches, SW1 and SW2. However, the EtherChannel link fails to establish. What change in configuration would correct the problem?\nCCNA-2-v7-Modules 5 - 6 Redundant Networks Exam 25",
+    "question": "Refer to the exhibit. A network administrator is configuring an EtherChannel link between two switches, SW1 and SW2. However, the EtherChannel link fails to establish. What change in configuration would correct the problem?",
     "images": [
       "images/m5-6_q25_0.png"
     ],
@@ -3566,7 +3566,7 @@ const QUESTIONS_DATA = [
     "original_num": 33,
     "source_group": "m5-6",
     "source_title": "Modules 5 - 6: Redundant Networks",
-    "question": "Refer to the exhibit. What are the possible port roles for ports A, B, C, and D in this RSTP-enabled network?\nModules 5 - 6: Redundant Networks Exam 33",
+    "question": "Refer to the exhibit. What are the possible port roles for ports A, B, C, and D in this RSTP-enabled network?",
     "images": [
       "images/m5-6_q33_0.png"
     ],
@@ -3598,7 +3598,7 @@ const QUESTIONS_DATA = [
     "original_num": 34,
     "source_group": "m5-6",
     "source_title": "Modules 5 - 6: Redundant Networks",
-    "question": "Refer to the exhibit. Which switching technology would allow each access layer switch link to be aggregated to provide more bandwidth between each Layer 2 switch and the Layer 3 switch?\nCCNA-2-v7-Modules 5 - 6 Redundant Networks Exam 02",
+    "question": "Refer to the exhibit. Which switching technology would allow each access layer switch link to be aggregated to provide more bandwidth between each Layer 2 switch and the Layer 3 switch?",
     "images": [
       "images/m5-6_q34_0.png"
     ],
@@ -3630,7 +3630,7 @@ const QUESTIONS_DATA = [
     "original_num": 35,
     "source_group": "m5-6",
     "source_title": "Modules 5 - 6: Redundant Networks",
-    "question": "Refer to the exhibit. An administrator wants to form an EtherChannel between the two switches by using the Port Aggregation Protocol. If switch S1 is configured to be in auto mode, which mode should be configured on S2 to form the EtherChannel?\nCCNA-2-v7-Modules 5 - 6 Redundant Networks Exam 06",
+    "question": "Refer to the exhibit. An administrator wants to form an EtherChannel between the two switches by using the Port Aggregation Protocol. If switch S1 is configured to be in auto mode, which mode should be configured on S2 to form the EtherChannel?",
     "images": [
       "images/m5-6_q35_0.png"
     ],
@@ -3662,7 +3662,7 @@ const QUESTIONS_DATA = [
     "original_num": 36,
     "source_group": "m5-6",
     "source_title": "Modules 5 - 6: Redundant Networks",
-    "question": "Open the PT Activity. Perform the tasks in the activity instructions and then answer the question.\nWhich set of configuration commands issued on SW1 will successfully complete the EtherChannel link between SW1 and SW2?\nModules 5 – 6 Redundant Networks\n 1 file(s)  283.11 KB\n\n\nDownload\nCCNA-2-v7-Modules 5 - 6 Redundant Networks Exam 36",
+    "question": "Open the PT Activity. Perform the tasks in the activity instructions and then answer the question. Which set of configuration commands issued on SW1 will successfully complete the EtherChannel link between SW1 and SW2?",
     "images": [
       "images/m5-6_q36_0.png",
       "images/m5-6_q36_1.png"
@@ -4323,7 +4323,7 @@ const QUESTIONS_DATA = [
     "original_num": 2,
     "source_group": "m7-9",
     "source_title": "Modules 7 - 9: Available and Reliable Networks",
-    "question": "An administrator issues the commands:\nCopyRouter(config)# interface g0/1\r\nRouter(config-if)# ip address dhcp\nWhat is the administrator trying to achieve?",
+    "question": "An administrator issues the commands:\nRouter(config)# interface g0/1\nRouter(config-if)# ip address dhcp\nWhat is the administrator trying to achieve?",
     "images": [],
     "options": [
       {
@@ -5349,7 +5349,7 @@ const QUESTIONS_DATA = [
     "original_num": 36,
     "source_group": "m7-9",
     "source_title": "Modules 7 - 9: Available and Reliable Networks",
-    "question": "Open the PT Activity. Perform the tasks in the activity instructions and then answer the question.\nModules 7 - 9 Available and Reliable Networks\n 1 file(s)  159.43 KB\n\n\nDownload\nWhat is the keyword that is displayed on www.netacad.com?",
+    "question": "Open the PT Activity. Perform the tasks in the activity instructions and then answer the question. What is the keyword that is displayed on www.netacad.com?",
     "images": [
       "images/m7-9_q36_0.jpg",
       "images/m7-9_q36_1.png",
@@ -7895,7 +7895,7 @@ const QUESTIONS_DATA = [
     "original_num": 37,
     "source_group": "m14-16",
     "source_title": "Modules 14 - 16: Routing Concepts and Configuration",
-    "question": "Open the PT Activity. Perform the tasks in the activity instructions and then answer the question.\nModules 14 – 16: Routing Concepts and Configuration Exam\nA user reports that PC0 cannot visit the web server www.server.com. Troubleshoot the network configuration to identify the problem.\nModules 14 - 16: Routing Concepts and Configuration\n 1 file(s)  488.03 KB\n\n\nDownload\nWhat is the cause of the problem?",
+    "question": "Open the PT Activity. Perform the tasks in the activity instructions and then answer the question. A user reports that PC0 cannot visit the web server www.server.com. Troubleshoot the network configuration to identify the problem. What is the cause of the problem?",
     "images": [
       "images/m14-16_q37_0.jpg",
       "images/m14-16_q37_1.png"
@@ -8133,7 +8133,7 @@ const QUESTIONS_DATA = [
     "original_num": 44,
     "source_group": "m14-16",
     "source_title": "Modules 14 - 16: Routing Concepts and Configuration",
-    "question": "Consider the following command:\nCopyip route 192.168.10.0 255.255.255.0 10.10.10.2 5\nHow would an administrator test this configuration?",
+    "question": "Consider the following command:\nip route 192.168.10.0 255.255.255.0 10.10.10.2 5\nHow would an administrator test this configuration?",
     "images": [],
     "options": [
       {
@@ -8289,7 +8289,7 @@ const QUESTIONS_DATA = [
     "original_num": 49,
     "source_group": "m14-16",
     "source_title": "Modules 14 - 16: Routing Concepts and Configuration",
-    "question": "Consider the following command:\nCopyip route 192.168.10.0 255.255.255.0 10.10.10.2 5\nWhich route would have to go down in order for this static route to appear in the routing table?",
+    "question": "Consider the following command:\nip route 192.168.10.0 255.255.255.0 10.10.10.2 5\nWhich route would have to go down in order for this static route to appear in the routing table?",
     "images": [],
     "options": [
       {

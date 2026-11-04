@@ -746,7 +746,7 @@
     "explanation": "Lệnh show vlan summary sẽ cung cấp thông tin hiển thị việc chỉ định và tư cách thành viên của VLAN cho tất cả các cổng trên switch trên switch."
   },
   "m1-4_q77": {
-    "question": "Mở Hoạt động PT. Thực hiện các nhiệm vụ trong hướng dẫn hoạt động và sau đó trả lời câu hỏi.\nMô-đun 1 - 4",
+    "question": "Mở Hoạt động PT. Thực hiện các nhiệm vụ trong hướng dẫn hoạt động và sau đó trả lời câu hỏi. Thông báo nào được hiển thị khi nhập 10.10.10.1 vào thanh địa chỉ Trình duyệt web của PC1?",
     "options": [
       "Máy chủ cục bộ",
       "Máy chủ thử nghiệm",
@@ -981,7 +981,7 @@
     "explanation": "Tất cả các giao diện trong gói EtherChannel phải được gán cho cùng một VLAN hoặc được cấu hình làm đường trục. Nếu phạm vi Vlan được phép không giống nhau, các giao diện sẽ không tạo thành EtherChannel ngay cả khi được đặt ở chế độ tự động hoặc mong muốn."
   },
   "m5-6_q22": {
-    "question": "Tham khảo sơ đồ kết nối (exhibit). Trên cơ sở kết quả đầu ra được hiển thị, có thể xác định được điều gì về gói EtherChannel?\nCCNA-2-v7-Modules 5 - 6 Mạng dự phòng Bài thi 22",
+    "question": "Tham khảo sơ đồ kết nối (exhibit). Trên cơ sở kết quả đầu ra được hiển thị, có thể xác định được điều gì về gói EtherChannel?",
     "options": [
       "Gói EtherChannel không hoạt động.",
       "Hai cổng Gigabit Ethernet được sử dụng để tạo thành EtherChannel.",
@@ -1002,7 +1002,7 @@
     "explanation": "Để tạo EtherChannel, các cổng liên quan trên hai thiết bị chuyển mạch phải khớp nhau về tốc độ, song công và thông tin Vlan. Chế độ PAgP phải tương thích nhưng không nhất thiết phải bằng nhau. ID cổng và địa chỉ MAC không nhất thiết phải khớp."
   },
   "m5-6_q24": {
-    "question": "Tham khảo sơ đồ kết nối (exhibit). Quản trị viên mạng đang định cấu hình liên kết EtherChannel giữa hai thiết bị chuyển mạch SW1 và SW2. Câu lệnh nào mô tả tác dụng sau khi phát lệnh trên SW1 và SW2?\nCCNA-2-v7-Modules 5 - 6 Mạng dự phòng Bài kiểm tra 24",
+    "question": "Tham khảo sơ đồ kết nối (exhibit). Quản trị viên mạng đang định cấu hình liên kết EtherChannel giữa hai thiết bị chuyển mạch SW1 và SW2. Câu lệnh nào mô tả tác dụng sau khi phát lệnh trên SW1 và SW2?",
     "options": [
       "EtherChannel được thiết lập sau khi SW2 khởi tạo yêu cầu liên kết.",
       "EtherChannel được thiết lập sau khi SW1 khởi tạo yêu cầu liên kết.",
@@ -1012,7 +1012,7 @@
     "explanation": "Các giao diện GigabitEthernet 0/1 và GigabitEthernet 0/2 được cấu hình \"bật\" cho liên kết EtherChannel. Chế độ này buộc giao diện chuyển sang kênh không có PAgP hoặc LACP. EtherChannel sẽ chỉ được thiết lập nếu phía bên kia cũng được đặt thành \"bật\". Tuy nhiên, chế độ ở phía SW2 được đặt thành PAgP mong muốn. Do đó liên kết EtherChannel sẽ không được thiết lập."
   },
   "m5-6_q25": {
-    "question": "Tham khảo sơ đồ kết nối (exhibit). Quản trị viên mạng đang định cấu hình liên kết EtherChannel giữa hai thiết bị chuyển mạch SW1 và SW2. Tuy nhiên, liên kết EtherChannel không được thiết lập. Thay đổi nào trong cấu hình sẽ khắc phục được sự cố?\nCCNA-2-v7-Modules 5 - 6 Mạng dự phòng Bài kiểm tra 25",
+    "question": "Tham khảo sơ đồ kết nối (exhibit). Quản trị viên mạng đang định cấu hình liên kết EtherChannel giữa hai thiết bị chuyển mạch SW1 và SW2. Tuy nhiên, liên kết EtherChannel không được thiết lập. Thay đổi nào trong cấu hình sẽ khắc phục được sự cố?",
     "options": [
       "Định cấu hình chế độ SW2 EtherChannel theo ý muốn.",
       "Định cấu hình chế độ SW2 EtherChannel thành bật.",
@@ -1095,7 +1095,7 @@
     "explanation": "Cấu hình EtherChannel của một giao diện logic đảm bảo tính nhất quán về cấu hình trên các liên kết vật lý trong EtherChannel. EtherChannel cung cấp băng thông tăng lên bằng cách sử dụng các cổng chuyển đổi hiện có mà không yêu cầu bất kỳ nâng cấp nào đối với giao diện vật lý. Các phương pháp cân bằng tải được triển khai giữa các liên kết là một phần của cùng một kênh Etherchannel. Vì EtherChannel xem các liên kết vật lý được nhóm dưới dạng một kết nối logic nên không cần tính toán lại cây bao trùm nếu một trong các liên kết vật lý được nhóm không thành công. Nếu giao diện vật lý bị lỗi, STP không thể chuyển giao diện bị lỗi sang trạng thái chuyển tiếp."
   },
   "m5-6_q33": {
-    "question": "Tham khảo sơ đồ kết nối (exhibit). Các vai trò cổng có thể có của các cổng A, B, C và D trong mạng hỗ trợ RSTP này là gì?\nMô-đun 5 - 6: Mạng dự phòng Bài kiểm tra 33",
+    "question": "Tham khảo sơ đồ kết nối (exhibit). Các vai trò cổng có thể có của các cổng A, B, C và D trong mạng hỗ trợ RSTP này là gì?",
     "options": [
       "thay thế, được chỉ định, gốc, gốc",
       "được chỉ định, thay thế, gốc, gốc",
@@ -1105,7 +1105,7 @@
     "explanation": "Vì S1 là cầu gốc nên B là cổng được chỉ định và cổng gốc C và D. RSTP hỗ trợ loại cổng mới, cổng thay thế ở trạng thái loại bỏ, có thể là cổng A trong trường hợp này."
   },
   "m5-6_q34": {
-    "question": "Tham khảo sơ đồ kết nối (exhibit). Công nghệ chuyển mạch nào sẽ cho phép tổng hợp từng liên kết chuyển mạch lớp truy cập để cung cấp nhiều băng thông hơn giữa mỗi bộ chuyển mạch Lớp 2 và bộ chuyển mạch Lớp 3?\nCCNA-2-v7-Modules 5 - 6 Mạng dự phòng Bài thi 02",
+    "question": "Tham khảo sơ đồ kết nối (exhibit). Công nghệ chuyển mạch nào sẽ cho phép tổng hợp từng liên kết chuyển mạch lớp truy cập để cung cấp nhiều băng thông hơn giữa mỗi bộ chuyển mạch Lớp 2 và bộ chuyển mạch Lớp 3?",
     "options": [
       "đường trục",
       "HSRP",
@@ -1115,7 +1115,7 @@
     "explanation": "PortFast được sử dụng để giảm lượng thời gian mà một cổng dành để thực hiện thuật toán cây bao trùm, để các thiết bị có thể bắt đầu gửi dữ liệu sớm hơn. Trunking có thể được triển khai cùng với EtherChannel, nhưng chỉ riêng trunking không tổng hợp được các liên kết chuyển mạch. HSRP được sử dụng để cân bằng tải lưu lượng trên hai kết nối khác nhau tới các thiết bị Lớp 3 để dự phòng cổng mặc định. HSRP không tổng hợp các liên kết ở Lớp 2 hoặc Lớp 3 như EtherChannel."
   },
   "m5-6_q35": {
-    "question": "Tham khảo sơ đồ kết nối (exhibit). Quản trị viên muốn tạo EtherChannel giữa hai thiết bị chuyển mạch bằng cách sử dụng Giao thức tổng hợp cổng. Nếu công tắc S1 được cấu hình ở chế độ tự động, thì chế độ nào sẽ được cấu hình trên S2 để tạo thành EtherChannel?\nCCNA-2-v7-Modules 5 - 6 Mạng dự phòng Bài thi 06",
+    "question": "Tham khảo sơ đồ kết nối (exhibit). Quản trị viên muốn tạo EtherChannel giữa hai thiết bị chuyển mạch bằng cách sử dụng Giao thức tổng hợp cổng. Nếu công tắc S1 được cấu hình ở chế độ tự động, thì chế độ nào sẽ được cấu hình trên S2 để tạo thành EtherChannel?",
     "options": [
       "tự động",
       "TRÊN",
@@ -1125,7 +1125,7 @@
     "explanation": "EtherChannel sẽ được hình thành thông qua PAgP khi cả hai công tắc đều ở chế độ bật hoặc khi một trong số chúng ở chế độ tự động hoặc chế độ mong muốn và công tắc còn lại ở chế độ mong muốn."
   },
   "m5-6_q36": {
-    "question": "Mở Hoạt động PT. Thực hiện các nhiệm vụ trong hướng dẫn hoạt động và sau đó trả lời câu hỏi.\nBộ lệnh cấu hình nào được đưa ra trên SW1 sẽ hoàn thành thành công liên kết EtherChannel giữa SW1 và SW2?\nMô-đun 5 – 6 Mạng dự phòng\n 1 tập tin 283,11 KB\n\n\nTải xuống\nCCNA-2-v7-Modules 5 - 6 Mạng dự phòng Bài kiểm tra 36",
+    "question": "Mở Hoạt động PT. Thực hiện các nhiệm vụ trong hướng dẫn hoạt động và sau đó trả lời câu hỏi. Bộ lệnh cấu hình nào được đưa ra trên SW1 sẽ hoàn thành thành công liên kết EtherChannel giữa SW1 và SW2?",
     "options": [
       "giao diện GigabitEthernet0/1\nkhông tắt máy",
       "giao diện Cổng-kênh 1\nkhông tắt máy",
@@ -1335,7 +1335,7 @@
     "explanation": "Tất cả các thông báo DHCP giữa máy khách hỗ trợ DHCP và máy chủ DHCP đều đang sử dụng các thông báo quảng bá cho đến sau thông báo DHCPACK. Thông báo DHCPDISCOVER và DHCPREQUEST là những thông báo duy nhất được gửi bởi máy khách hỗ trợ DHCP. Tất cả các tin nhắn DHCP giữa máy khách hỗ trợ DHCP và máy chủ DHCP đều sử dụng tin nhắn quảng bá khi máy khách nhận được hợp đồng thuê lần đầu tiên."
   },
   "m7-9_q2": {
-    "question": "Người quản trị đưa ra các lệnh:\nCopyRouter(config)# giao diện g0/1\r\nBộ định tuyến (config-if) # địa chỉ IP dhcp\nQuản trị viên đang cố gắng đạt được điều gì?",
+    "question": "Người quản trị đưa ra các lệnh:\nRouter(config)# interface g0/1\nRouter(config-if)# ip address dhcp\nQuản trị viên đang cố gắng đạt được điều gì?",
     "options": [
       "định cấu hình bộ định tuyến hoạt động như một máy chủ DHCPv4",
       "định cấu hình bộ định tuyến để lấy các tham số IP từ máy chủ DHCPv4",
@@ -1655,7 +1655,7 @@
     "explanation": "VRRP sẽ chọn một bộ định tuyến làm bộ định tuyến ảo chính, còn các bộ định tuyến khác đóng vai trò dự phòng trong trường hợp bộ định tuyến ảo chính bị lỗi. HSRP là một giao thức độc quyền của Cisco. IRDP sử dụng tin nhắn ICMP để cho phép các máy chủ IPv4 định vị các bộ định tuyến cung cấp kết nối IPv4 với các mạng IP (không cục bộ) khác. HSRP chọn các bộ định tuyến hoạt động và dự phòng để cung cấp dịch vụ cổng cho các máy chủ trên mạng LAN."
   },
   "m7-9_q36": {
-    "question": "Mở Hoạt động PT. Thực hiện các nhiệm vụ trong hướng dẫn hoạt động và sau đó trả lời câu hỏi.\nMô-đun 7 - 9 Mạng khả dụng và đáng tin cậy\n 1 tập tin 159,43 KB\n\n\nTải xuống\nTừ khóa được hiển thị trên www.netacad.com là gì?",
+    "question": "Mở Hoạt động PT. Thực hiện các nhiệm vụ trong hướng dẫn hoạt động và sau đó trả lời câu hỏi. Từ khóa được hiển thị trên www.netacad.com là gì?",
     "options": [
       "DHCP",
       "công tắc",
@@ -2408,7 +2408,7 @@
     "explanation": "Tuyến tĩnh dự phòng được gọi là tuyến tĩnh nổi. Tuyến tĩnh nổi có khoảng cách quản trị lớn hơn khoảng cách quản trị của tuyến tĩnh hoặc tuyến động khác."
   },
   "m14-16_q37": {
-    "question": "Mở Hoạt động PT. Thực hiện các nhiệm vụ trong hướng dẫn hoạt động và sau đó trả lời câu hỏi.\nMô-đun 14 – 16: Bài kiểm tra cấu hình và khái niệm định tuyến\nMột người dùng báo cáo rằng PC0 không thể truy cập máy chủ web www.server.com. Khắc phục sự cố cấu hình mạng để xác định sự cố.\nMô-đun 14 - 16: Khái niệm và cấu hình định tuyến\n 1 tập tin 488,03 KB\n\n\nTải xuống\nNguyên nhân của vấn đề là gì?",
+    "question": "Mở Hoạt động PT. Thực hiện các nhiệm vụ trong hướng dẫn hoạt động và sau đó trả lời câu hỏi. Một người dùng báo cáo rằng PC0 không thể truy cập máy chủ web www.server.com. Khắc phục sự cố cấu hình mạng để xác định sự cố. Nguyên nhân của vấn đề là gì?",
     "options": [
       "Tốc độ xung nhịp trên một trong các liên kết nối tiếp được cấu hình không chính xác.",
       "Giao diện nối tiếp trên Branch được cấu hình không chính xác.",
@@ -2473,7 +2473,7 @@
     "explanation": "OSPF có khoảng cách quản trị là 110, do đó, tuyến tĩnh động phải có khoảng cách quản trị cao hơn 110. Vì mạng mục tiêu là 172.16.32.0/19 nên tuyến tĩnh đó phải sử dụng mạng 172.16.32.0 và netmask là 255.255.224.0."
   },
   "m14-16_q44": {
-    "question": "Hãy xem xét lệnh sau:\nTuyến đường sao chép 192.168.10.0 255.255.255.0 10.10.10.2 5\nQuản trị viên sẽ kiểm tra cấu hình này như thế nào?",
+    "question": "Hãy xem xét lệnh sau:\nip route 192.168.10.0 255.255.255.0 10.10.10.2 5\nQuản trị viên sẽ kiểm tra cấu hình này như thế nào?",
     "options": [
       "Xóa tuyến cổng mặc định trên bộ định tuyến.",
       "Tắt thủ công giao diện bộ định tuyến được sử dụng làm tuyến chính.",
@@ -2523,7 +2523,7 @@
     "explanation": "Sau khi bộ định tuyến xác định mạng đích bằng cách ANDing địa chỉ IP đích bằng mặt nạ mạng con, bộ định tuyến sẽ kiểm tra bảng định tuyến để tìm số mạng đích thu được. Khi tìm thấy kết quả trùng khớp, gói sẽ được gửi đến giao diện được liên kết với số mạng. Khi không tìm thấy mục nhập bảng định tuyến nào cho mạng cụ thể, cổng mặc định hoặc cổng cuối cùng (nếu được định cấu hình hoặc đã biết) sẽ được sử dụng. Nếu không có cổng cuối cùng thì gói tin sẽ bị loại bỏ. Trong trường hợp này, mạng 192.168.12.224 không được tìm thấy trong bảng định tuyến và bộ định tuyến sử dụng cổng cuối cùng. Cổng cuối cùng là địa chỉ IP 209.165.200.226. Bộ định tuyến biết đây là địa chỉ IP được liên kết với mạng 209.165.200.224. Sau đó, bộ định tuyến tiến hành truyền gói tin ra giao diện Serial0/0/0 hoặc giao diện được liên kết với 209.165.200.224."
   },
   "m14-16_q49": {
-    "question": "Hãy xem xét lệnh sau:\nTuyến đường sao chép 192.168.10.0 255.255.255.0 10.10.10.2 5\nTuyến đường nào sẽ phải đi xuống để tuyến tĩnh này xuất hiện trong bảng định tuyến?",
+    "question": "Hãy xem xét lệnh sau:\nip route 192.168.10.0 255.255.255.0 10.10.10.2 5\nTuyến đường nào sẽ phải đi xuống để tuyến tĩnh này xuất hiện trong bảng định tuyến?",
     "options": [
       "một tuyến đường mặc định",
       "một tuyến tĩnh đến mạng 192.168.10.0/24",
