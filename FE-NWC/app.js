@@ -180,7 +180,7 @@
   }
 
   // =========================================================================
-  // 4. VISUALIZATION BRIDGE SERVICE
+  // 4. VISUALIZATION BRIDGE SERVICE (Live Motion Simulation)
   // =========================================================================
 
   class VisualizationBridge {
@@ -203,8 +203,11 @@
         innerHtml = visualData.render(`vis_canvas_${questionId}`);
       } else {
         const steps = Array.isArray(visualData.steps) ? visualData.steps : [];
-        const nodes = Array.isArray(visualData.nodes) ? visualData.nodes : [];
+        const topo = visualData.topology || {};
+        const nodes = Array.isArray(topo.nodes) ? topo.nodes : (Array.isArray(visualData.nodes) ? visualData.nodes : []);
+        const links = Array.isArray(topo.links) ? topo.links : [];
         const rawSpec = visualData.specTable;
+        const step0 = steps[0] || {};
 
         // 1. Stepper Navigation Header
         let stepperNavHtml = '';
@@ -224,51 +227,80 @@
           `;
         }
 
-        // 2. Step Detail Cards (one per step, active shown)
+        // 2. Live Motion Simulation Canvas (SVG)
+        let liveMotionHtml = '';
+        if (nodes.length > 0) {
+          const firstFromNode = nodes.find(n => n.id === step0.fromNode) || nodes[0];
+          liveMotionHtml = `
+            <div class="live-motion-wrap">
+              <div class="live-motion-header">
+                <span class="live-motion-title">Mô phỏng luồng chuyển động gói tin (Live Motion Topology):</span>
+              </div>
+              <svg viewBox="0 0 620 160" class="live-motion-canvas" id="motion_canvas_${questionId}">
+                <!-- Network Links -->
+                ${links.map(l => {
+                  const n1 = nodes.find(n => n.id === l.from);
+                  const n2 = nodes.find(n => n.id === l.to);
+                  if (!n1 || !n2) return '';
+                  const midX = (n1.x + n2.x) / 2;
+                  const midY = (n1.y + n2.y) / 2 - 8;
+                  return `
+                    <line x1="${n1.x}" y1="${n1.y}" x2="${n2.x}" y2="${n2.y}" class="motion-link-line" id="link_${questionId}_${l.from}_${l.to}" />
+                    ${l.label ? `<text x="${midX}" y="${midY}" class="motion-link-label" text-anchor="middle">${Utils.escapeHtml(l.label)}</text>` : ''}
+                  `;
+                }).join('')}
+
+                <!-- Network Device Nodes -->
+                ${nodes.map((n, idx) => `
+                  <g class="motion-node-group ${idx === 0 ? 'active-node' : ''}" id="node_${questionId}_${n.id}" transform="translate(${n.x},${n.y})">
+                    <rect x="-44" y="-22" width="88" height="44" rx="6" class="motion-node-rect" />
+                    <text x="0" y="-3" class="motion-node-title" text-anchor="middle">${Utils.escapeHtml(n.label || n.name || '')}</text>
+                    <text x="0" y="13" class="motion-node-sub" text-anchor="middle">${Utils.escapeHtml(n.sub || n.role || '')}</text>
+                  </g>
+                `).join('')}
+
+                <!-- Animated Packet PDU Envelope -->
+                <g class="motion-packet ${step0.status === 'drop' ? 'packet-drop' : ''}" id="packet_${questionId}" transform="translate(${firstFromNode.x},${firstFromNode.y})">
+                  <rect x="-38" y="-12" width="76" height="24" rx="5" class="motion-packet-box"/>
+                  <text x="0" y="4" class="motion-packet-text" text-anchor="middle">✉ ${Utils.escapeHtml(step0.packetLabel || 'Packet')}</text>
+                </g>
+              </svg>
+
+              <!-- Live Simulation Status Console & Action Controls -->
+              <div class="motion-console" id="motion_console_${questionId}">
+                <div class="motion-console-text" id="console_text_${questionId}">
+                  [Bước 1/${steps.length}] ${Utils.escapeHtml(step0.actionText || step0.name || '')}
+                </div>
+                <div class="motion-controls-row">
+                  <button class="btn btn-outline btn-xs btn-autoplay" data-qid="${questionId}">▶ Phát tự động</button>
+                  <button class="btn btn-outline btn-xs btn-reset-motion" data-qid="${questionId}" title="Đặt lại vị trí đầu">↺ Đặt lại</button>
+                </div>
+              </div>
+            </div>
+          `;
+        }
+
+        // 3. Step Detail Cards (one per step, active shown)
         let stepCardsHtml = '';
         if (steps.length > 0) {
           stepCardsHtml = `
             <div class="visual-step-cards-wrap" id="step_cards_wrap_${questionId}">
               ${steps.map((s, idx) => `
-                <div class="visual-step-detail-card" id="step_card_${questionId}_${idx}" style="display: ${idx === 0 ? 'block' : 'none'};" data-node-target="${s.activeNode || ''}">
+                <div class="visual-step-detail-card" id="step_card_${questionId}_${idx}" style="display: ${idx === 0 ? 'block' : 'none'};">
                   <div class="visual-step-headline">
                     <div class="visual-step-name">Bước ${s.num || (idx + 1)}: ${Utils.escapeHtml(s.name || '')}</div>
-                    ${s.packetLabel ? `<span class="visual-packet-badge">${Utils.escapeHtml(s.packetLabel)}</span>` : ''}
+                    ${s.packetLabel ? `<span class="visual-packet-badge">✉ ${Utils.escapeHtml(s.packetLabel)}</span>` : ''}
                   </div>
                   <div class="visual-step-desc">${Utils.escapeHtml(s.desc || '')}</div>
                   <div class="visual-stepper-footer">
                     <div style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap;">
                       <button class="btn btn-outline btn-xs btn-step-nav" data-qid="${questionId}" data-dir="prev" ${idx === 0 ? 'disabled' : ''}>← Bước trước</button>
-                      <button class="btn btn-outline btn-xs btn-autoplay" data-qid="${questionId}" title="Tự động mô phỏng bước">▶ Tự động phát</button>
                       <button class="btn btn-primary btn-xs btn-step-nav" data-qid="${questionId}" data-dir="next" ${idx === steps.length - 1 ? 'disabled' : ''}>Bước tiếp theo →</button>
                     </div>
                     <span style="font-size: 11.5px; color: var(--text-muted);">Bước ${idx + 1} / ${steps.length}</span>
                   </div>
                 </div>
               `).join('')}
-            </div>
-          `;
-        }
-
-        // 3. Topology Flow Diagram
-        let topologyHtml = '';
-        if (nodes.length > 0) {
-          const firstStepNode = steps.length > 0 ? (steps[0].activeNode || '') : '';
-          topologyHtml = `
-            <div>
-              <div style="font-size: 12.5px; font-weight: 700; color: var(--text-muted); margin-bottom: 8px; text-transform: uppercase;">
-                Mô hình sơ đồ truyền dữ liệu (Data Path Topology):
-              </div>
-              <div class="visual-topology-board" id="topo_board_${questionId}">
-                ${nodes.map(n => `
-                  <div class="visual-node-card ${n.id === firstStepNode ? 'active-node' : ''}" id="node_${questionId}_${n.id}">
-                    <div class="visual-node-icon">${n.icon || '🖥️'}</div>
-                    <div class="visual-node-label">${Utils.escapeHtml(n.label || n.name || '')}</div>
-                    <div class="visual-node-role">${Utils.escapeHtml(n.role || n.sub || '')}</div>
-                    ${(n.detail || n.sub) ? `<div class="visual-node-detail">${Utils.escapeHtml(n.detail || n.sub)}</div>` : ''}
-                  </div>
-                `).join('')}
-              </div>
             </div>
           `;
         }
@@ -304,15 +336,14 @@
           }
         }
 
-        // 5. Key Takeaway Note
+        // 5. Key Concept Note
         let takeawayHtml = '';
         const takeawayText = visualData.takeaway || visualData.note || '';
         if (takeawayText) {
           takeawayHtml = `
             <div class="visual-takeaway-box">
               <div class="visual-takeaway-label">
-                <span>📌</span>
-                <span>Quy tắc cốt lõi cần nhớ (Key Concept):</span>
+                <span>Quy tắc cốt lõi:</span>
               </div>
               <div>${Utils.escapeHtml(takeawayText)}</div>
             </div>
@@ -321,8 +352,8 @@
 
         innerHtml = `
           ${stepperNavHtml}
+          ${liveMotionHtml}
           ${stepCardsHtml}
-          ${topologyHtml}
           ${specHtml}
           ${takeawayHtml}
         `;
@@ -403,6 +434,16 @@
           VisualizationBridge.toggleAutoPlay(container, qid, btn);
         };
       });
+
+      // 5. Reset Motion button
+      container.querySelectorAll('.btn-reset-motion').forEach(btn => {
+        btn.onclick = (e) => {
+          e.stopPropagation();
+          const qid = btn.getAttribute('data-qid');
+          VisualizationBridge.stopAutoPlay(container, qid);
+          VisualizationBridge.switchToStep(container, qid, 0);
+        };
+      });
     }
 
     static toggleAutoPlay(container, qid, btn) {
@@ -434,7 +475,7 @@
         clearInterval(this.intervals[qid]);
         delete this.intervals[qid];
         container.querySelectorAll(`.btn-autoplay[data-qid="${qid}"]`).forEach(b => {
-          b.innerHTML = '▶ Tự động phát';
+          b.innerHTML = '▶ Phát tự động';
           b.style.borderColor = '';
           b.style.color = '';
         });
@@ -442,45 +483,84 @@
     }
 
     static switchToStep(container, qid, stepIdx) {
+      const visualKey = window.QUESTION_VISUAL_MAP[qid];
+      const visualData = window.MECHANISM_VISUALIZATIONS[visualKey];
+      if (!visualData) return;
+
+      const steps = visualData.steps || [];
+      if (stepIdx < 0 || stepIdx >= steps.length) return;
+      const currentStep = steps[stepIdx];
+
+      // Update Stepper Nav Buttons
       const navBar = container.querySelector(`.visual-stepper-nav[data-qid="${qid}"]`);
-      const cardsWrap = container.querySelector(`#step_cards_wrap_${qid}`);
-      const topoBoard = container.querySelector(`#topo_board_${qid}`);
-      if (!navBar || !cardsWrap) return;
-
-      const stepBtns = navBar.querySelectorAll('.visual-step-btn');
-      if (stepIdx < 0 || stepIdx >= stepBtns.length) return;
-
-      // Update active step button
-      stepBtns.forEach((b, idx) => {
-        b.classList.toggle('active', idx === stepIdx);
-      });
-
-      // Update active detail card
-      const stepCards = cardsWrap.querySelectorAll('.visual-step-detail-card');
-      let targetNodeId = '';
-      stepCards.forEach((c, idx) => {
-        const isTarget = idx === stepIdx;
-        c.style.display = isTarget ? 'block' : 'none';
-        if (isTarget) {
-          targetNodeId = c.getAttribute('data-node-target') || '';
-        }
-      });
-
-      // Highlight active node on topology board
-      if (topoBoard && targetNodeId) {
-        topoBoard.querySelectorAll('.visual-node-card').forEach(nodeEl => {
-          const isNodeActive = nodeEl.id === `node_${qid}_${targetNodeId}`;
-          nodeEl.classList.toggle('active-node', isNodeActive);
+      if (navBar) {
+        navBar.querySelectorAll('.visual-step-btn').forEach((b, idx) => {
+          b.classList.toggle('active', idx === stepIdx);
         });
+      }
+
+      // Update Detail Cards
+      const cardsWrap = container.querySelector(`#step_cards_wrap_${qid}`);
+      if (cardsWrap) {
+        cardsWrap.querySelectorAll('.visual-step-detail-card').forEach((c, idx) => {
+          c.style.display = idx === stepIdx ? 'block' : 'none';
+        });
+      }
+
+      // Update Console Text
+      const consoleText = container.querySelector(`#console_text_${qid}`);
+      if (consoleText) {
+        consoleText.innerText = `[Bước ${stepIdx + 1}/${steps.length}] ${currentStep.actionText || currentStep.name || ''}`;
+      }
+
+      // Animate SVG Packet PDU and Highlight Nodes
+      const topo = visualData.topology || {};
+      const nodes = Array.isArray(topo.nodes) ? topo.nodes : (Array.isArray(visualData.nodes) ? visualData.nodes : []);
+      const links = Array.isArray(topo.links) ? topo.links : [];
+
+      if (nodes.length > 0) {
+        const fromNode = nodes.find(n => n.id === currentStep.fromNode);
+        const toNode = nodes.find(n => n.id === currentStep.toNode) || fromNode || nodes[0];
+        const packetEl = container.querySelector(`#packet_${qid}`);
+
+        // Highlight active nodes
+        nodes.forEach(n => {
+          const nodeEl = container.querySelector(`#node_${qid}_${n.id}`);
+          if (nodeEl) {
+            const isActive = n.id === currentStep.toNode || n.id === currentStep.fromNode;
+            nodeEl.classList.toggle('active-node', isActive);
+          }
+        });
+
+        // Highlight active link lines
+        links.forEach(l => {
+          const linkEl1 = container.querySelector(`#link_${qid}_${l.from}_${l.to}`);
+          const linkEl2 = container.querySelector(`#link_${qid}_${l.to}_${l.from}`);
+          const isCurrent = (l.from === currentStep.fromNode && l.to === currentStep.toNode) ||
+                            (l.to === currentStep.fromNode && l.from === currentStep.toNode);
+          if (linkEl1) linkEl1.classList.toggle('active-link', isCurrent);
+          if (linkEl2) linkEl2.classList.toggle('active-link', isCurrent);
+        });
+
+        // Smoothly glide packet to toNode
+        if (packetEl && toNode) {
+          packetEl.classList.toggle('packet-drop', currentStep.status === 'drop');
+          const textEl = packetEl.querySelector('.motion-packet-text');
+          if (textEl) {
+            textEl.textContent = `✉ ${currentStep.packetLabel || 'Packet'}`;
+          }
+          packetEl.style.transform = `translate(${toNode.x}px, ${toNode.y}px)`;
+        }
       }
     }
   }
 
-  // Also expose to window for compatibility with any existing external scripts
+  // Expose to window
   window.CISCO_VISUALIZATIONS = {
     hasVisualization: (q) => VisualizationBridge.hasVisualization(q.id || q),
     renderDiagram: (q) => VisualizationBridge.renderBlock(q.id || q)
   };
+
 
   // =========================================================================
   // 5. EXAM DATA STORE (O(1) Indexed Lookups with Maps & Sets)

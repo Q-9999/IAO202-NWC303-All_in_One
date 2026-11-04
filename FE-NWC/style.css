@@ -3006,3 +3006,170 @@ body {
   gap: 10px;
   margin-top: 8px;
 }
+
+
+/* ==========================================================================
+   LIVE MOTION SIMULATION (Mo phong luong chuyen dong goi tin SVG theo buoc)
+   ========================================================================== */
+.live-motion-wrap {
+  margin: 14px 0 16px 0;
+  border: 1px solid var(--border-color, #e2e8f0);
+  border-radius: 8px;
+  background: #f8fafc;
+  padding: 14px;
+  overflow: hidden;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.03);
+}
+[data-theme="dark"] .live-motion-wrap {
+  background: #0b1329;
+  border-color: #1e293b;
+}
+
+.live-motion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 0 4px;
+}
+.live-motion-title {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--text-muted, #64748b);
+}
+
+.live-motion-canvas {
+  width: 100%;
+  height: auto;
+  max-height: 190px;
+  display: block;
+  user-select: none;
+}
+
+.motion-link-line {
+  stroke: #cbd5e1;
+  stroke-width: 2.5;
+  stroke-dasharray: 4 2;
+  transition: all 0.3s ease;
+}
+[data-theme="dark"] .motion-link-line {
+  stroke: #334155;
+}
+.motion-link-line.active-link {
+  stroke: #2563eb;
+  stroke-width: 3.5;
+  stroke-dasharray: none;
+}
+[data-theme="dark"] .motion-link-line.active-link {
+  stroke: #60a5fa;
+}
+
+.motion-link-label {
+  font-size: 10px;
+  font-family: var(--font-mono, monospace);
+  fill: #64748b;
+  font-weight: 600;
+}
+[data-theme="dark"] .motion-link-label {
+  fill: #94a3b8;
+}
+
+.motion-node-rect {
+  fill: var(--bg-card, #ffffff);
+  stroke: #cbd5e1;
+  stroke-width: 1.5;
+  transition: all 0.3s ease;
+}
+[data-theme="dark"] .motion-node-rect {
+  fill: #1e293b;
+  stroke: #334155;
+}
+.motion-node-group.active-node .motion-node-rect {
+  stroke: #2563eb;
+  stroke-width: 2.5;
+  fill: #eff6ff;
+  filter: drop-shadow(0 0 8px rgba(37,99,235,0.25));
+}
+[data-theme="dark"] .motion-node-group.active-node .motion-node-rect {
+  stroke: #60a5fa;
+  fill: #1e3a5f;
+  filter: drop-shadow(0 0 8px rgba(96,165,250,0.3));
+}
+
+.motion-node-title {
+  font-size: 11.5px;
+  font-weight: 700;
+  fill: var(--text-main, #0f172a);
+}
+[data-theme="dark"] .motion-node-title {
+  fill: #f8fafc;
+}
+.motion-node-sub {
+  font-size: 9.5px;
+  font-family: var(--font-mono, monospace);
+  fill: var(--text-muted, #64748b);
+}
+[data-theme="dark"] .motion-node-sub {
+  fill: #94a3b8;
+}
+
+/* Moving Packet Envelope PDU */
+.motion-packet {
+  transition: transform 1.1s cubic-bezier(0.25, 1, 0.5, 1);
+  will-change: transform;
+  pointer-events: none;
+}
+.motion-packet-box {
+  fill: #1d4ed8;
+  stroke: #ffffff;
+  stroke-width: 1.5;
+  filter: drop-shadow(0 2px 5px rgba(29,78,216,0.35));
+}
+.motion-packet.packet-drop .motion-packet-box {
+  fill: #dc2626;
+  filter: drop-shadow(0 2px 5px rgba(220,38,38,0.35));
+}
+.motion-packet-text {
+  font-size: 9.5px;
+  font-weight: 700;
+  fill: #ffffff;
+  font-family: var(--font-mono, monospace);
+}
+
+/* Live Simulation Console & Controls */
+.motion-console {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: var(--bg-card, #ffffff);
+  border: 1px solid var(--border-color, #e2e8f0);
+  border-radius: 6px;
+  font-size: 12px;
+}
+[data-theme="dark"] .motion-console {
+  background: #1e293b;
+  border-color: #334155;
+}
+.motion-console-text {
+  font-family: var(--font-mono, monospace);
+  color: var(--text-main, #0f172a);
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+[data-theme="dark"] .motion-console-text {
+  color: #f1f5f9;
+}
+.motion-controls-row {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  flex-shrink: 0;
+}
+
