@@ -279,22 +279,4 @@
     'm21-23_q15': 'crypto_asym_sym'
   };
 
-  if (window.EXAM_DATA && Array.isArray(window.EXAM_DATA)) {
-    window.EXAM_DATA.forEach(q => {
-      if (window.QUESTION_VISUAL_MAP[q.id]) return;
-      const text = ((q.question || '') + ' ' + (q.explanation || '')).toLowerCase();
-      if (text.includes('span') || text.includes('port mirror') || text.includes('monitor session')) {
-        window.QUESTION_VISUAL_MAP[q.id] = 'span_mirror';
-      } else if (text.includes('netflow') || text.includes('ipfix') || text.includes('flow record')) {
-        window.QUESTION_VISUAL_MAP[q.id] = 'netflow_meta';
-      } else if (text.includes('dns tunnel') || text.includes('exfiltration') || text.includes('txt record')) {
-        window.QUESTION_VISUAL_MAP[q.id] = 'dns_tunneling';
-      } else if (text.includes('stateful') || text.includes('state table') || text.includes('stateless')) {
-        window.QUESTION_VISUAL_MAP[q.id] = 'stateful_firewall';
-      } else if (text.includes('symmetric') || text.includes('asymmetric') || text.includes('public key') || text.includes('private key') || text.includes('rsa') || text.includes('aes')) {
-        window.QUESTION_VISUAL_MAP[q.id] = 'crypto_asym_sym';
-      }
-    });
-  }
-
 })();

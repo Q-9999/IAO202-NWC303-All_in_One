@@ -184,6 +184,8 @@
   // =========================================================================
 
   class VisualizationBridge {
+    static intervals = {};
+
     static hasVisualization(questionId) {
       if (!window.QUESTION_VISUAL_MAP) return false;
       const visualKey = window.QUESTION_VISUAL_MAP[questionId];
@@ -202,7 +204,7 @@
       } else {
         const steps = Array.isArray(visualData.steps) ? visualData.steps : [];
         const nodes = Array.isArray(visualData.nodes) ? visualData.nodes : [];
-        const specTable = Array.isArray(visualData.specTable) ? visualData.specTable : [];
+        const rawSpec = visualData.specTable;
 
         // 1. Stepper Navigation Header
         let stepperNavHtml = '';
@@ -235,9 +237,12 @@
                   </div>
                   <div class="visual-step-desc">${Utils.escapeHtml(s.desc || '')}</div>
                   <div class="visual-stepper-footer">
-                    <button class="btn btn-outline btn-xs btn-step-nav" data-qid="${questionId}" data-dir="prev" ${idx === 0 ? 'disabled' : ''}>← Bước trước</button>
+                    <div style="display: flex; gap: 8px; align-items: center; flex-wrap: wrap;">
+                      <button class="btn btn-outline btn-xs btn-step-nav" data-qid="${questionId}" data-dir="prev" ${idx === 0 ? 'disabled' : ''}>← Bước trước</button>
+                      <button class="btn btn-outline btn-xs btn-autoplay" data-qid="${questionId}" title="Tự động mô phỏng bước">▶ Tự động phát</button>
+                      <button class="btn btn-primary btn-xs btn-step-nav" data-qid="${questionId}" data-dir="next" ${idx === steps.length - 1 ? 'disabled' : ''}>Bước tiếp theo →</button>
+                    </div>
                     <span style="font-size: 11.5px; color: var(--text-muted);">Bước ${idx + 1} / ${steps.length}</span>
-                    <button class="btn btn-primary btn-xs btn-step-nav" data-qid="${questionId}" data-dir="next" ${idx === steps.length - 1 ? 'disabled' : ''}>Bước tiếp theo →</button>
                   </div>
                 </div>
               `).join('')}
@@ -258,9 +263,9 @@
                 ${nodes.map(n => `
                   <div class="visual-node-card ${n.id === firstStepNode ? 'active-node' : ''}" id="node_${questionId}_${n.id}">
                     <div class="visual-node-icon">${n.icon || '🖥️'}</div>
-                    <div class="visual-node-label">${Utils.escapeHtml(n.label || '')}</div>
-                    <div class="visual-node-role">${Utils.escapeHtml(n.role || '')}</div>
-                    ${n.detail ? `<div class="visual-node-detail">${Utils.escapeHtml(n.detail)}</div>` : ''}
+                    <div class="visual-node-label">${Utils.escapeHtml(n.label || n.name || '')}</div>
+                    <div class="visual-node-role">${Utils.escapeHtml(n.role || n.sub || '')}</div>
+                    ${(n.detail || n.sub) ? `<div class="visual-node-detail">${Utils.escapeHtml(n.detail || n.sub)}</div>` : ''}
                   </div>
                 `).join('')}
               </div>
@@ -270,34 +275,46 @@
 
         // 4. Technical Specification Table
         let specHtml = '';
-        if (specTable.length > 0) {
-          specHtml = `
-            <div class="visual-spec-card">
-              <div class="visual-spec-header">Thông số kỹ thuật chuẩn (Technical Specifications)</div>
-              <table class="visual-spec-table">
-                <tbody>
-                  ${specTable.map(item => `
-                    <tr>
-                      <td>${Utils.escapeHtml(item.key)}</td>
-                      <td>${Utils.escapeHtml(item.value)}</td>
-                    </tr>
-                  `).join('')}
-                </tbody>
-              </table>
-            </div>
-          `;
+        if (rawSpec) {
+          let rowsHtml = '';
+          if (Array.isArray(rawSpec)) {
+            rowsHtml = rawSpec.map(item => {
+              if (Array.isArray(item)) {
+                return `<tr>${item.map(c => `<td>${Utils.escapeHtml(String(c))}</td>`).join('')}</tr>`;
+              }
+              return `<tr><td>${Utils.escapeHtml(String(item.key || ''))}</td><td>${Utils.escapeHtml(String(item.value || ''))}</td></tr>`;
+            }).join('');
+          } else if (typeof rawSpec === 'object' && Array.isArray(rawSpec.rows)) {
+            let theadHtml = '';
+            if (Array.isArray(rawSpec.headers)) {
+              theadHtml = `<thead><tr>${rawSpec.headers.map(h => `<th>${Utils.escapeHtml(String(h))}</th>`).join('')}</tr></thead>`;
+            }
+            rowsHtml = theadHtml + `<tbody>${rawSpec.rows.map(r => `<tr>${r.map(c => `<td>${Utils.escapeHtml(String(c))}</td>`).join('')}</tr>`).join('')}</tbody>`;
+          }
+
+          if (rowsHtml) {
+            specHtml = `
+              <div class="visual-spec-card">
+                <div class="visual-spec-header">Thông số kỹ thuật chuẩn (Technical Specifications)</div>
+                <table class="visual-spec-table">
+                  ${rowsHtml.includes('<tbody>') ? rowsHtml : `<tbody>${rowsHtml}</tbody>`}
+                </table>
+              </div>
+            `;
+          }
         }
 
         // 5. Key Takeaway Note
         let takeawayHtml = '';
-        if (visualData.takeaway) {
+        const takeawayText = visualData.takeaway || visualData.note || '';
+        if (takeawayText) {
           takeawayHtml = `
             <div class="visual-takeaway-box">
               <div class="visual-takeaway-label">
                 <span>📌</span>
                 <span>Quy tắc cốt lõi cần nhớ (Key Concept):</span>
               </div>
-              <div>${Utils.escapeHtml(visualData.takeaway)}</div>
+              <div>${Utils.escapeHtml(takeawayText)}</div>
             </div>
           `;
         }
@@ -356,6 +373,7 @@
           e.stopPropagation();
           const qid = btn.getAttribute('data-qid');
           const stepIdx = parseInt(btn.getAttribute('data-step-idx'), 10);
+          VisualizationBridge.stopAutoPlay(container, qid);
           VisualizationBridge.switchToStep(container, qid, stepIdx);
         };
       });
@@ -372,9 +390,55 @@
           if (!activeBtn) return;
           const currentIdx = parseInt(activeBtn.getAttribute('data-step-idx'), 10);
           const nextIdx = dir === 'next' ? currentIdx + 1 : currentIdx - 1;
+          VisualizationBridge.stopAutoPlay(container, qid);
           VisualizationBridge.switchToStep(container, qid, nextIdx);
         };
       });
+
+      // 4. Auto-Play animation toggle
+      container.querySelectorAll('.btn-autoplay').forEach(btn => {
+        btn.onclick = (e) => {
+          e.stopPropagation();
+          const qid = btn.getAttribute('data-qid');
+          VisualizationBridge.toggleAutoPlay(container, qid, btn);
+        };
+      });
+    }
+
+    static toggleAutoPlay(container, qid, btn) {
+      if (this.intervals[qid]) {
+        this.stopAutoPlay(container, qid);
+      } else {
+        const navBar = container.querySelector(`.visual-stepper-nav[data-qid="${qid}"]`);
+        if (!navBar) return;
+        const stepBtns = navBar.querySelectorAll('.visual-step-btn');
+        if (stepBtns.length <= 1) return;
+
+        container.querySelectorAll(`.btn-autoplay[data-qid="${qid}"]`).forEach(b => {
+          b.innerHTML = '⏸ Tạm dừng';
+          b.style.borderColor = '#16a34a';
+          b.style.color = '#16a34a';
+        });
+
+        this.intervals[qid] = setInterval(() => {
+          const activeBtn = navBar.querySelector('.visual-step-btn.active');
+          const currentIdx = activeBtn ? parseInt(activeBtn.getAttribute('data-step-idx'), 10) : 0;
+          const nextIdx = (currentIdx + 1) % stepBtns.length;
+          VisualizationBridge.switchToStep(container, qid, nextIdx);
+        }, 2500);
+      }
+    }
+
+    static stopAutoPlay(container, qid) {
+      if (this.intervals[qid]) {
+        clearInterval(this.intervals[qid]);
+        delete this.intervals[qid];
+        container.querySelectorAll(`.btn-autoplay[data-qid="${qid}"]`).forEach(b => {
+          b.innerHTML = '▶ Tự động phát';
+          b.style.borderColor = '';
+          b.style.color = '';
+        });
+      }
     }
 
     static switchToStep(container, qid, stepIdx) {
