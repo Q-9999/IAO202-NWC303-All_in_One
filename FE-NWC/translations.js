@@ -1,4 +1,4 @@
-window.QUESTION_TRANSLATIONS = window.TRANSLATIONS_DATA = window.QUESTIONS_TRANSLATIONS = {
+window.TRANSLATIONS = {
   "m1-4_q1": {
     "question": "Những tác vụ nào có thể được thực hiện bằng cách sử dụng tính năng lịch sử lệnh? (Chọn hai.)",
     "options": [
@@ -1247,9 +1247,15 @@ window.QUESTION_TRANSLATIONS = window.TRANSLATIONS_DATA = window.QUESTIONS_TRANS
     "explanation": "Có ba chế độ khả dụng khi định cấu hình giao diện cho PAgP: bật, mong muốn và tự động. Chỉ mong muốn và tự động đặt giao diện ở trạng thái đàm phán. Trạng thái chủ động và thụ động được sử dụng để định cấu hình LACP chứ không phải PAgP."
   },
   "m5-6_q49": {
-    "question": "Cài đặt cấu hình chế độ nào sẽ cho phép hình thành liên kết EtherChannel giữa các switch SW1 và SW2 mà không gửi lưu lượng đàm phán?\nSW1: bật\nSW2: bật\nSW1: mong muốn\nSW2: mong muốn\nSW1: tự động\nSW2: tự động\nđã bật trunking trên cả hai switch\nSW1: tự động\nSW2: tự động\nPortFast được bật trên cả hai thiết bị chuyển mạch\nSW1: thụ động\nSW2: đang hoạt động",
-    "options": [],
-    "explanation": "Từ khóa nhóm kênh tự động chỉ kích hoạt PAgP nếu thiết bị PAgP được phát hiện ở phía đối diện của liên kết. Nếu từ khóa tự động được sử dụng, cách duy nhất để tạo liên kết EtherChannel là thiết bị được kết nối đối diện được định cấu hình với từ khóa mong muốn. Công nghệ PortFast và trunking không liên quan đến việc hình thành liên kết EtherChannel. Mặc dù EtherChannel có thể được hình thành nếu cả hai bên được cấu hình ở chế độ mong muốn, PAgP vẫn hoạt động và các tin nhắn PAgP được gửi liên tục qua liên kết, làm giảm lượng băng thông có sẵn cho lưu lượng người dùng."
+    "question": "Tùy chọn cấu hình chế độ nào cho phép thiết lập liên kết EtherChannel giữa hai switch SW1 và SW2 mà không gửi lưu lượng đàm phán?",
+    "options": [
+      "SW1: on và SW2: on",
+      "SW1: desirable và SW2: desirable",
+      "SW1: auto và SW2: auto (bật trunking trên cả hai switch)",
+      "SW1: auto và SW2: auto (bật PortFast trên cả hai switch)",
+      "SW1: passive và SW2: active"
+    ],
+    "explanation": "Chế độ on ép buộc gộp cổng vật lý vào liên kết EtherChannel mà không sử dụng bất kỳ giao thức đàm phán nào (không dùng LACP hay PAgP). Cả hai đầu switch đều phải được cấu hình ở chế độ on thì liên kết mới hoạt động."
   },
   "m5-6_q50": {
     "question": "Tham khảo sơ đồ kết nối (exhibit). EtherChannel đã được cấu hình giữa các switch S1 và S2, nhưng các giao diện không tạo thành EtherChannel. Vấn đề là gì?",
@@ -1539,9 +1545,14 @@ window.QUESTION_TRANSLATIONS = window.TRANSLATIONS_DATA = window.QUESTIONS_TRANS
     "explanation": "Bộ định tuyến được cấu hình cho hoạt động SLAAC vì không có lệnh cấu hình nào để thay đổi giá trị cờ RA M và O. Theo mặc định, cả hai cờ M và O đều được đặt thành 0. Để cho phép hoạt động DHCPv6 không trạng thái, nên đưa ra lệnh giao diện ipv6 và other-config-flag. Giao diện GigabitEthernet đang ở trạng thái hoạt động vì máy khách có thể nhận thông báo RA và định cấu hình địa chỉ IPv6 của họ như mong đợi. Ngoài ra, thực tế R1 là máy chủ DHCPv6 và các máy khách đang nhận được thông báo RA cho thấy rằng các máy khách có thể giao tiếp với máy chủ DHCP. Số lượng máy khách đang hoạt động là 0 vì máy chủ DHCPv6 không duy trì trạng thái của các địa chỉ IPv6 của máy khách (nó không được cấu hình cho hoạt động DHCPv6 ở trạng thái). Vấn đề về địa chỉ máy chủ DNS không liên quan đến vấn đề này."
   },
   "m7-9_q23": {
-    "question": "Câu hỏi như đã trình bày:\nMáy khách DHCPv6 không trạng thái sẽ gửi thông báo THÔNG TIN-YÊU CẦU DHCPv6 như bước 3 trong quy trình.",
-    "options": [],
-    "explanation": ""
+    "question": "Trong quy trình DHCPv6 phi trạng thái (Stateless DHCPv6), máy khách gửi thông điệp nào ở bước 3?",
+    "options": [
+      "DHCPv6 INFORMATION-REQUEST",
+      "DHCPv6 SOLICIT",
+      "DHCPv6 ADVERTISE",
+      "DHCPv6 REPLY"
+    ],
+    "explanation": "Trong Stateless DHCPv6, máy khách tự tạo địa chỉ IPv6 thông qua cơ chế SLAAC (sử dụng gói RA từ Router). Sau đó ở bước 3, máy khách gửi thông điệp DHCPv6 INFORMATION-REQUEST đến máy chủ DHCPv6 để xin các thông số cấu hình bổ sung (như địa chỉ DNS Server và Domain Name) mà không cần xin cấp địa chỉ IPv6."
   },
   "m7-9_q24": {
     "question": "Một công ty sử dụng phương pháp SLAAC để định cấu hình địa chỉ IPv6 cho máy trạm của nhân viên. Địa chỉ nào khách hàng sẽ sử dụng làm cổng mặc định?​",
@@ -1604,9 +1615,14 @@ window.QUESTION_TRANSLATIONS = window.TRANSLATIONS_DATA = window.QUESTIONS_TRANS
     "explanation": "Địa chỉ IP của bộ định tuyến ảo đóng vai trò là cổng mặc định cho tất cả các máy trạm. Do đó, địa chỉ MAC được Giao thức phân giải địa chỉ trả về cho máy trạm sẽ là địa chỉ MAC của bộ định tuyến ảo."
   },
   "m7-9_q30": {
-    "question": "Câu hỏi như đã trình bày:\nGiao thức bộ định tuyến dự phòng nóng (HSRP) là giao thức độc quyền của Cisco được thiết kế để cho phép chuyển đổi dự phòng trong suốt của thiết bị IPv4 bước nhảy đầu tiên.",
-    "options": [],
-    "explanation": ""
+    "question": "Giao thức độc quyền nào của Cisco được thiết kế để cho phép chuyển đổi dự phòng trong suốt cho thiết bị IPv4 chặng đầu tiên (first-hop device)?",
+    "options": [
+      "Hot Standby Router Protocol (HSRP)",
+      "Virtual Router Redundancy Protocol (VRRP)",
+      "Gateway Load Balancing Protocol (GLBP)",
+      "First-Hop Redundancy Protocol (FHRP)"
+    ],
+    "explanation": "HSRP (Hot Standby Router Protocol) là giao thức độc quyền của Cisco, cung cấp khả năng dự phòng cổng ngõ mặc định (Default Gateway) cho các thiết bị IPv4. VRRP là giao thức chuẩn mở (IETF). GLBP cũng là giao thức của Cisco nhưng tập trung vào việc cân bằng tải cổng ngõ."
   },
   "m7-9_q31": {
     "question": "Triển khai FHRP nào là giao thức độc quyền của Cisco hỗ trợ chia sẻ tải IPv4?",
@@ -1630,9 +1646,14 @@ window.QUESTION_TRANSLATIONS = window.TRANSLATIONS_DATA = window.QUESTIONS_TRANS
     "explanation": "Tính toán số lượng máy chủ tối đa có sẵn cho giá trị dấu gạch chéo và trừ đi các địa chỉ IP tĩnh cần thiết cho thiết bị.\n/24 = 254 máy chủ\n/25 = 126 máy chủ\n/26 = 62 máy chủ\n/27 = 30 máy chủ\n/28 = 14 máy chủ"
   },
   "m7-9_q33": {
-    "question": "Câu hỏi như đã trình bày:\nThông báo DHCPDISCOVER được phát rộng sẽ tìm thấy các máy chủ DHCPv4 trên mạng. Khi máy chủ DHCPv4 nhận được thông báo DHCPDISCOVER, nó sẽ dành một địa chỉ IPv4 có sẵn để cho khách hàng thuê và gửi thông báo DHCPOFFER unicast đến khách hàng yêu cầu. Khi máy khách nhận được DHCPOFFER từ máy chủ, nó sẽ gửi lại DHCPREQUEST. Khi nhận được tin nhắn DHCPREQUEST, máy chủ sẽ trả lời bằng tin nhắn DHCPACK đơn hướng. DHCPREPLY và DHCPINFORMATION-REQUEST là các tin nhắn DHCPv6.",
-    "options": [],
-    "explanation": ""
+    "question": "Máy khách IPv4 phát quảng bá (broadcast) thông điệp nào để tìm kiếm các máy chủ DHCPv4 khả dụng trên mạng?",
+    "options": [
+      "DHCPDISCOVER",
+      "DHCPOFFER",
+      "DHCPREQUEST",
+      "DHCPACK"
+    ],
+    "explanation": "Khi vừa kết nối vào mạng và chưa có địa chỉ IP, máy khách IPv4 phát quảng bá thông điệp DHCPDISCOVER (địa chỉ đích 255.255.255.255, cổng UDP 67) để tìm máy chủ DHCPv4. Máy chủ phản hồi bằng DHCPOFFER, sau đó máy khách gửi DHCPREQUEST và máy chủ xác nhận bằng DHCPACK."
   },
   "m7-9_q34": {
     "question": "Sau khi máy chủ đã tạo địa chỉ IPv6 bằng cách sử dụng quy trình DHCPv6 hoặc SLAAC, máy chủ sẽ xác minh rằng địa chỉ đó là duy nhất và do đó có thể sử dụng được bằng cách nào?",
@@ -1778,9 +1799,14 @@ window.QUESTION_TRANSLATIONS = window.TRANSLATIONS_DATA = window.QUESTIONS_TRANS
     "explanation": ""
   },
   "m7-9_q52": {
-    "question": "Bộ lệnh nào sẽ định cấu hình bộ định tuyến làm máy chủ DHCP sẽ gán địa chỉ IPv4 cho mạng LAN 192.168.100.0/23 trong khi bảo lưu 10 địa chỉ đầu tiên và địa chỉ cuối cùng để gán tĩnh?\nđịa chỉ loại trừ ip dhcp 192.168.100.1 192.168.100.9\nđịa chỉ bị loại trừ ip dhcp 192.168.101.254\nhồ bơi ip dhcp LAN-POOL-100\nmạng ip 192.168.100.0 255.255.254.0\ncổng mặc định ip 192.168.100.1\nhồ bơi dhcp LAN-POOL-100\nđịa chỉ loại trừ ip dhcp 192.168.100.1 192.168.100.9\nđịa chỉ bị loại trừ ip dhcp 192.168.100.254\nmạng 192.168.100.0 255.255.254.0\nbộ định tuyến mặc định 192.168.101.1\nđịa chỉ bị loại trừ ip dhcp 192.168.100.1 192.168.100.10\nđịa chỉ bị loại trừ ip dhcp 192.168.100.254\nhồ bơi ip dhcp LAN-POOL-100\nmạng 192.168.100.0 255.255.255.0\ncổng mặc định ip 192.168.100.1\nđịa chỉ bị loại trừ ip dhcp 192.168.100.1 192.168.100.10\nđịa chỉ bị loại trừ ip dhcp 192.168.101.254\nhồ bơi ip dhcp LAN-POOL-100\nmạng 192.168.100.0 255.255.254.0\nbộ định tuyến mặc định 192.168.100.1",
-    "options": [],
-    "explanation": "Tiền tố /23 tương đương với mặt nạ mạng 255.255.254.0. Phạm vi địa chỉ IPv4 có thể sử dụng trên mạng là từ 192.168.100.1 đến 192.168.101.254. Các lệnh dhcp pool, ip default-gateway và ip network không phải là các lệnh cấu hình DHCP hợp lệ."
+    "question": "Bộ lệnh nào sẽ cấu hình router làm máy chủ DHCP để cấp địa chỉ IPv4 cho mạng LAN 192.168.100.0/23, đồng thời dự lưu 10 địa chỉ IP đầu tiên và địa chỉ IP khả dụng cuối cùng để gán tĩnh?",
+    "options": [
+      "ip dhcp excluded-address 192.168.100.1 192.168.100.10\nip dhcp excluded-address 192.168.101.254\nip dhcp pool LAN-POOL-100\nnetwork 192.168.100.0 255.255.254.0\ndefault-router 192.168.100.1",
+      "ip dhcp excluded-address 192.168.100.1 192.168.100.9\nip dhcp excluded-address 192.168.101.254\nip dhcp pool LAN-POOL-100\nip network 192.168.100.0 255.255.254.0\nip default-gateway 192.168.100.1",
+      "dhcp pool LAN-POOL-100\nip dhcp excluded-address 192.168.100.1 192.168.100.9\nip dhcp excluded-address 192.168.100.254\nnetwork 192.168.100.0 255.255.254.0\ndefault-router 192.168.101.1",
+      "ip dhcp excluded-address 192.168.100.1 192.168.100.10\nip dhcp excluded-address 192.168.100.254\nip dhcp pool LAN-POOL-100\nnetwork 192.168.100.0 255.255.255.0\nip default-gateway 192.168.100.1"
+    ],
+    "explanation": "Mạng 192.168.100.0/23 có subnet mask là 255.255.254.0, dải IP khả dụng từ 192.168.100.1 đến 192.168.101.254. Để loại trừ 10 địa chỉ đầu tiên (192.168.100.1 đến 192.168.100.10) và địa chỉ cuối cùng (192.168.101.254), ta dùng lệnh: ip dhcp excluded-address 192.168.100.1 192.168.100.10 và ip dhcp excluded-address 192.168.101.254. Lệnh khai báo default gateway trong DHCP pool là default-router (không phải ip default-gateway)."
   },
   "m7-9_q53": {
     "question": "Kết quả là gì khi máy chủ DHCP không hoạt động trong mạng?",
@@ -1793,9 +1819,14 @@ window.QUESTION_TRANSLATIONS = window.TRANSLATIONS_DATA = window.QUESTIONS_TRANS
     "explanation": "Khi máy trạm được cấu hình tự động lấy địa chỉ IP nhưng máy chủ DHCP không sẵn sàng đáp ứng yêu cầu, máy trạm có thể tự gán địa chỉ IP từ mạng 169.254.0.0/16."
   },
   "m7-9_q54": {
-    "question": "Một công ty sử dụng phương pháp SLAAC để định cấu hình địa chỉ IPv6 cho máy trạm của nhân viên. Quản trị viên mạng đã định cấu hình địa chỉ IPv6 trên giao diện LAN của bộ định tuyến. Trạng thái giao diện là LÊN. Tuy nhiên, các máy trạm trên phân đoạn mạng LAN không nhận được tiền tố và độ dài tiền tố chính xác. Cần cấu hình những gì khác trên bộ định tuyến được gắn vào phân đoạn mạng LAN cho máy trạm để lấy thông tin?​\nR1(config)# ipv6 dhcp pool\nR1(config-if)# kích hoạt ipv6\nR1(config)# ipv6 định tuyến unicast\nR1(config-if)# ipv6 và other-config-flag",
-    "options": [],
-    "explanation": "PC được cấu hình để sử dụng phương pháp SLAAC sẽ lấy tiền tố IPv6 và độ dài tiền tố từ bộ định tuyến. Khi PC khởi động, nó sẽ gửi tin nhắn RS để thông báo cho các bộ định tuyến rằng nó cần thông tin. Bộ định tuyến gửi tin nhắn RA bao gồm thông tin được yêu cầu. Để một bộ định tuyến có thể gửi tin nhắn RA, nó phải được kích hoạt dưới dạng bộ định tuyến IPv6 bằng lệnh unicast ipv6-routing trong chế độ cấu hình toàn cầu. Các tùy chọn khác không được sử dụng để kích hoạt định tuyến IPv6 trên bộ định tuyến."
+    "question": "Một công ty sử dụng phương pháp SLAAC để cấu hình địa chỉ IPv6 cho các máy trạm của nhân viên. Quản trị viên mạng đã cấu hình địa chỉ IPv6 trên cổng LAN của router và cổng đang ở trạng thái UP. Tuy nhiên, các máy trạm trong phân đoạn mạng LAN không nhận được tiền tố mạng (prefix) và độ dài tiền tố. Cần cấu hình thêm lệnh nào trên router để các máy trạm nhận được thông tin cấu hình IPv6 qua SLAAC?",
+    "options": [
+      "R1(config)# ipv6 unicast-routing",
+      "R1(config)# ipv6 dhcp pool",
+      "R1(config-if)# ipv6 enable",
+      "R1(config-if)# ipv6 nd other-config-flag"
+    ],
+    "explanation": "Mặc định router Cisco không tự động gửi các thông điệp ICMPv6 Router Advertisement (RA) cho đến khi tính năng định tuyến IPv6 được kích hoạt bằng lệnh ipv6 unicast-routing ở chế độ toàn cục (global configuration mode). Khi lệnh này được bật, router sẽ định kỳ gửi các gói tin RA để các máy trạm nhận diện prefix mạng và tự sinh địa chỉ IPv6 qua cơ chế SLAAC."
   },
   "m7-9_q55": {
     "question": "Việc triển khai FHRP nào là giao thức không độc quyền dựa trên ICMP để cung cấp khả năng dự phòng IPv4?",
@@ -2141,14 +2172,14 @@ window.QUESTION_TRANSLATIONS = window.TRANSLATIONS_DATA = window.QUESTIONS_TRANS
     "explanation": "Tuyến RIP với mã nguồn R được sử dụng để chuyển tiếp dữ liệu đến địa chỉ IPv6 đích của 2001:DB8:CAFE:4::A. Tuyến đường này có giá trị AD là 120."
   },
   "m14-16_q10": {
-    "question": "0.0.0/30 được chia mạng con, 2 mạng con\nC 10.0.0.0 được kết nối trực tiếp, Serial0/0/0\nC 10.0.0.4 được kết nối trực tiếp, Serial0/0/1\n192.168.10.0/26 được chia mạng con, 3 mạng con\nS 192.168.10.0 được kết nối trực tiếp, Serial0/0/0\nC 192.168.10.64 được kết nối trực tiếp, FastEthernet0/0\nS 192.168.10.128 [1/0] qua 10.0.0.6\nBộ định tuyến R2 sẽ làm gì với gói có đích đến 192.168.10.129?",
+    "question": "Giá trị nào trong bảng định tuyến đại diện cho độ tin cậy và được router sử dụng để xác định tuyến đường nào sẽ được đưa vào bảng định tuyến khi có nhiều tuyến đường khác nhau đến cùng một đích?",
     "options": [
-      "gửi gói tin ra giao diện FastEthernet0/0",
-      "gửi gói ra giao diện Serial0/0/1",
-      "thả gói",
-      "gửi gói ra giao diện Serial0/0/0"
+      "Administrative distance (Khoảng cách quản trị)",
+      "Metric (Độ đo chi phí tuyến đường)",
+      "Giao diện đầu ra (Outgoing interface)",
+      "Giao thức định tuyến (Routing protocol)"
     ],
-    "explanation": "Khi một tuyến tĩnh được cấu hình với địa chỉ bước nhảy tiếp theo (như trong trường hợp mạng 192.168.10.128), đầu ra của lệnh show ip Route sẽ liệt kê tuyến đó là \"thông qua\" một địa chỉ IP cụ thể. Bộ định tuyến phải tra cứu địa chỉ IP đó để xác định giao diện nào sẽ gửi gói đi. Vì địa chỉ IP 10.0.0.6 là một phần của mạng 10.0.0.4 nên bộ định tuyến sẽ gửi gói tin ra giao diện Serial0/0/1."
+    "explanation": "Administrative distance (AD) đại diện cho mức độ tin cậy của một tuyến đường cụ thể. Giá trị AD càng nhỏ thì tuyến đường học được càng có độ tin cậy cao. Khi router nhận được nhiều tuyến đường từ các nguồn khác nhau để đến cùng một mạng đích, router sẽ so sánh giá trị administrative distance để quyết định chọn tuyến đường có AD thấp nhất đưa vào bảng định tuyến. Metric là giá trị được một giao thức định tuyến sử dụng để so sánh chi phí giữa các tuyến đường do chính giao thức đó phát hiện. Giao diện đầu ra (outgoing interface) là cổng mạng mà router dùng để chuyển tiếp gói tin về hướng mạng đích. Giao thức định tuyến được sử dụng để trao đổi các bản cập nhật định tuyến giữa các router lân cận."
   },
   "m14-16_q12": {
     "question": "Tham khảo đồ họa. Lệnh nào sẽ được sử dụng trên bộ định tuyến A để định cấu hình tuyến tĩnh để điều hướng lưu lượng truy cập từ LAN A đến LAN C?",
@@ -2700,14 +2731,14 @@ window.QUESTION_TRANSLATIONS = window.TRANSLATIONS_DATA = window.QUESTIONS_TRANS
     "explanation": "Trong cấu hình router-on-a-stick, router sử dụng một cổng vật lý duy nhất với các subinterface để định tuyến giữa nhiều VLAN. Do đó, cổng switch nối trực tiếp với router bắt buộc phải được cấu hình làm đường trung kế (Trunk port) sử dụng giao thức gắn thẻ 802.1Q để cho phép các khung dữ liệu của mọi VLAN đi qua."
   },
   "final_q2": {
-    "question": "Xem sơ đồ kết nối. Cấu hình hiển thị các lệnh được người quản trị mạng nhập trên router R1. Mục đích của lệnh 'encapsulation dot1Q 10' là gì?",
+    "question": "Tham khảo sơ đồ kết nối. Cấu hình hiển thị các lệnh do quản trị viên mạng nhập để định tuyến giữa các VLAN (inter-VLAN routing). Tuy nhiên, host H1 không thể giao tiếp được với host H2. Thành phần nào trong cấu hình gây ra lỗi kết nối này?",
     "options": [
-      "Gán địa chỉ IP cho VLAN 10",
-      "Chỉ định rằng subinterface này sẽ xử lý lưu lượng có gắn thẻ VLAN 10",
-      "Bật giao thức định tuyến trên router",
-      "Kích hoạt cổng vật lý của router"
+      "Cấu hình đường trung kế (Trunking)",
+      "Chế độ cổng trên hai cổng FastEthernet của switch",
+      "Cấu hình VLAN",
+      "Cấu hình cổng trên router"
     ],
-    "explanation": "Lệnh encapsulation dot1Q <vlan-id> trên subinterface cấu hình router sử dụng chuẩn đóng gói 802.1Q và chỉ định rằng subinterface cụ thể này sẽ chịu trách nhiệm gắn và bóc thẻ cho lưu lượng thuộc VLAN tương ứng (ở đây là VLAN 10)."
+    "explanation": "Mặc định tất cả các cổng trên switch Cisco đều thuộc VLAN 1. Để triển khai inter-VLAN routing, các cổng Fa0/1 và Fa0/2 trên switch SW1 phải được gán vào đúng VLAN tương ứng (VLAN 10 và VLAN 20) ở chế độ access (switchport mode access). Do chưa gán cổng vào VLAN tương ứng nên lưu lượng từ H1 và H2 không thể đi tới các subinterface trên router."
   },
   "final_q3": {
     "question": "Xem sơ đồ kết nối. Giao tiếp giữa VLAN 10 và VLAN 20 bị lỗi. Dựa vào cấu hình được cung cấp, nguyên nhân gây ra sự cố này là gì?",
@@ -2730,14 +2761,15 @@ window.QUESTION_TRANSLATIONS = window.TRANSLATIONS_DATA = window.QUESTIONS_TRANS
     "explanation": "Thông tin định danh và thông tin xác thực tài khoản (User credentials / Passwords) là dữ liệu nhạy cảm nhất cần được mã hóa bảo mật toàn diện trên môi trường mạng không dây (WLAN) nhằm chống lại các cuộc tấn công bắt gói tin (Sniffing/Eavesdropping)."
   },
   "final_q5": {
-    "question": "Sự kết hợp giữa cơ chế xác thực và mã hóa WLAN nào được coi là mạnh nhất hiện nay?",
+    "question": "Sự kết hợp giữa phương thức xác thực và mã hóa WLAN nào được khuyến nghị là thực hành tốt nhất cho người dùng gia đình?",
     "options": [
-      "WPA2 kết hợp với mã hóa AES",
-      "WEP kết hợp với mã hóa RC4",
-      "WPA kết hợp với mã hóa TKIP",
-      "Xác thực Open kết hợp với WEP"
+      "WPA2 và AES",
+      "WEP và RC4",
+      "WPA và PSK",
+      "EAP và AES",
+      "WEP và TKIP"
     ],
-    "explanation": "WPA2 (hoặc WPA3) sử dụng thuật toán mã hóa AES (Advanced Encryption Standard) kết hợp cơ chế kiểm tra tính toàn vẹn CCMP cung cấp mức độ bảo mật cao nhất hiện nay, thay thế hoàn toàn cho chuẩn mã hóa WEP và TKIP đã lỗi thời và dễ bị tấn công."
+    "explanation": "WPA2 kết hợp với chuẩn mã hóa AES (Advanced Encryption Standard) cung cấp mức độ bảo mật mạnh mẽ và là tiêu chuẩn được khuyến nghị cho mạng Wi-Fi gia đình."
   },
   "final_q6": {
     "question": "Hai phương thức nào mà card mạng không dây (Wireless NIC) có thể sử dụng để phát hiện một AP (Access Point)? (Chọn hai.)",
@@ -2846,15 +2878,14 @@ window.QUESTION_TRANSLATIONS = window.TRANSLATIONS_DATA = window.QUESTIONS_TRANS
     "explanation": "Tắc nghẽn mạng trên switch thường được giảm thiểu thông qua bộ đệm lớn (Large frame buffers - lưu trữ tạm thời các gói tin khi cổng ra bị bận mà không làm rơi gói) và tốc độ cổng cao (Fast port speeds như Gigabit/10G Ethernet để giải phóng lưu lượng nhanh chóng)."
   },
   "final_q17": {
-    "question": "Một kỹ sư mạng đang cấu hình mạng LAN với giao thức dự phòng gateway FHRP. Hai giao thức FHRP nào là giao thức độc quyền của Cisco? (Chọn hai.)",
+    "question": "Một kỹ sư mạng đang cấu hình mạng LAN với bước nhảy đầu tiên dự phòng (redundant first hop) nhằm tận dụng tốt hơn các tài nguyên mạng sẵn có. Kỹ sư nên triển khai giao thức nào?",
     "options": [
-      "HSRP (Hot Standby Router Protocol)",
-      "GLBP (Gateway Load Balancing Protocol)",
-      "VRRPv2 (Virtual Router Redundancy Protocol)",
-      "VRRPv3",
-      "IRDP (ICMP Router Discovery Protocol)"
+      "FHRP",
+      "GLBP",
+      "HSRP",
+      "VRRP"
     ],
-    "explanation": "HSRP (Hot Standby Router Protocol) và GLBP (Gateway Load Balancing Protocol) là hai giao thức dự phòng Default Gateway độc quyền do Cisco phát triển. VRRP là chuẩn mở quốc tế (RFC) của IETF."
+    "explanation": "GLBP (Gateway Load Balancing Protocol) cho phép cân bằng tải lưu lượng giữa các router dự phòng, giúp tận dụng tối đa tài nguyên mạng sẵn có thay vì chỉ có một router hoạt động ở chế độ active như HSRP hay VRRP thông thường."
   },
   "final_q18": {
     "question": "Ghép các giao thức FHRP với mô tả thích hợp. (Không phải tất cả các lựa chọn đều được sử dụng.)",
@@ -2918,14 +2949,15 @@ window.QUESTION_TRANSLATIONS = window.TRANSLATIONS_DATA = window.QUESTIONS_TRANS
     "explanation": "Trạng thái 'Interface up, line protocol down' biểu thị: Tầng vật lý (Layer 1) hoạt động tốt (đã phát hiện tín hiệu điện/sóng mang), nhưng có sự cố ở tầng liên kết dữ liệu (Layer 2) như lỗi đóng gói (encapsulation mismatch), lỗi cấu hình keepalive hoặc thiếu clocking."
   },
   "final_q26": {
-    "question": "Một kỹ thuật viên đang cấu hình một switch Cisco 2960 mới. Lệnh nào sau đây được sử dụng để cấu hình địa chỉ IP quản trị trên Switch Virtual Interface (SVI)?",
+    "question": "Một kỹ thuật viên đang cấu hình switch Cisco 2960 mới. Lệnh BranchSw(config)#interface VLAN88 có tác dụng gì?",
     "options": [
-      "interface vlan 1 kèm ip address",
-      "interface fa0/1 kèm ip address",
-      "ip default-gateway kèm địa chỉ IP",
-      "line vty 0 4 kèm ip address"
+      "Cập nhật bảng địa chỉ MAC cho cổng liên kết.",
+      "Gán một địa chỉ IPv4 cho giao diện ảo.",
+      "Cho phép cấu hình địa chỉ IPv6 trên một giao diện vật lý của switch.",
+      "Gán một địa chỉ IPv6 cho giao diện ảo.",
+      "Chuyển vào chế độ cấu hình giao diện ảo của switch (SVI - Switch Virtual Interface)."
     ],
-    "explanation": "Trên switch Layer 2, để có thể quản trị switch từ xa (qua SSH hoặc Telnet), người quản trị phải cấu hình địa chỉ IP trên một Switch Virtual Interface (mặc định là Interface VLAN 1) bằng cú pháp: interface vlan 1 -> ip address <ip> <subnet-mask> -> no shutdown."
+    "explanation": "Lệnh interface vlan <số_hiệu> đưa switch vào chế độ cấu hình giao diện ảo của switch (Switch Virtual Interface - SVI). Lệnh này được sử dụng để tạo SVI phục vụ quản trị switch từ xa hoặc định tuyến Lớp 3, chưa trực tiếp gán địa chỉ IP cho đến khi thực hiện lệnh ip address."
   },
   "final_q27": {
     "question": "Trong tình huống nào sau đây một switch Layer 2 cần được cấu hình địa chỉ IP?",
@@ -2978,14 +3010,15 @@ window.QUESTION_TRANSLATIONS = window.TRANSLATIONS_DATA = window.QUESTIONS_TRANS
     "explanation": "Floating static route được tạo ra bằng cách gán thêm một giá trị Administrative Distance (AD) lớn hơn giá trị AD của tuyến đường chính (định tuyến động hoặc tuyến tĩnh thông thường), đảm bảo nó luôn ở trạng thái dự phòng."
   },
   "final_q32": {
-    "question": "Xem sơ đồ kết nối. Khi một gói tin đến giao diện Serial của router R1, router sẽ thực hiện các thao tác đóng gói/mở gói nào trước khi chuyển tiếp ra cổng Ethernet?",
+    "question": "Xem sơ đồ kết nối. Khi một gói tin đến giao diện Serial0/0/0 trên R1 với địa chỉ IP đích là PC1, hai sự kiện nào sẽ xảy ra? (Chọn hai)",
     "options": [
-      "Router R1 sẽ bóc tách tiêu đề Layer 2 của đường truyền Serial (HDLC/PPP), kiểm tra địa chỉ IP đích, sau đó đóng gói lại với tiêu đề Layer 2 Ethernet mới trước khi gửi đi",
-      "Router R1 giữ nguyên toàn bộ tiêu đề Layer 2 và chỉ đổi địa chỉ IP nguồn",
-      "Router R1 mã hóa lại toàn bộ gói tin sang giao thức MPLS",
-      "Router R1 chuyển đổi địa chỉ MAC đích mà không thay đổi frame"
+      "Router R1 sẽ mở đóng gói (de-encapsulate) gói tin và đóng gói vào khung PPP.",
+      "Router R1 sẽ chuyển tiếp gói tin ra giao diện Gig0/1.",
+      "Router R1 sẽ chuyển tiếp gói tin ra giao diện Gig0/0.",
+      "Router R1 sẽ mở đóng gói (de-encapsulate) gói tin và đóng gói vào khung Ethernet.",
+      "Router R1 sẽ chuyển tiếp gói tin ra giao diện S0/0/0."
     ],
-    "explanation": "Tại mỗi bước nhảy (hop) của Router: Router bóc bỏ tiêu đề và trailer Layer 2 của môi trường mạng vào (de-encapsulation), đọc địa chỉ IP Layer 3 để tìm cổng ra, sau đó tạo một tiêu đề Layer 2 mới phù hợp với môi trường của cổng ra đó (encapsulation) với Source MAC là MAC của router và Destination MAC là MAC của hop tiếp theo hoặc máy đích."
+    "explanation": "Khi nhận gói tin từ cổng Serial, R1 bóc bỏ tiêu đề Layer 2 của đường truyền Serial. Dựa vào bảng định tuyến để đi tới PC1, R1 xác định cổng đầu ra là Gig0/1 (mạng Ethernet). Do đó, R1 sẽ đóng gói gói tin IP vào khung Ethernet mới và chuyển tiếp ra cổng Gig0/1."
   },
   "final_q33": {
     "question": "Xem sơ đồ kết nối. Tuyến đường host route 2001:db8:acad:1::1/128 được tạo ra trong bảng định tuyến bằng cách nào?",
@@ -3018,14 +3051,14 @@ window.QUESTION_TRANSLATIONS = window.TRANSLATIONS_DATA = window.QUESTIONS_TRANS
     "explanation": "Trong kết quả lệnh show etherchannel summary, các cờ (flags) quan trọng gồm: 'SU' (Layer 2, in Use), 'RU' (Layer 3, in Use) và cờ 'P' (Port bundled in port-channel) biểu thị rằng các cổng vật lý đã thương lượng thành công và đang chuyển tiếp lưu lượng song song trong bundle."
   },
   "final_q36": {
-    "question": "Xem sơ đồ kết nối. Switch DLS1 kết nối với một switch khác. Lệnh nào sau đây sẽ tắt hoàn toàn việc gửi các khung Dynamic Trunking Protocol (DTP) trên đường trunk?",
+    "question": "Tham khảo sơ đồ kết nối. Switch DLS1 kết nối với switch DLS2 qua đường trung kế (trunk). Một host kết nối vào DLS1 không thể giao tiếp với host kết nối vào DLS2 mặc dù cả hai đều thuộc VLAN 99. Cần thêm lệnh nào vào cổng Fa0/1 trên DLS1 để khắc phục sự cố?",
     "options": [
       "switchport nonegotiate",
       "switchport mode dynamic auto",
-      "switchport mode dynamic desirable",
-      "switchport trunk encapsulation dot1q"
+      "switchport trunk native vlan 66",
+      "switchport trunk allowed vlan add 99"
     ],
-    "explanation": "Lệnh 'switchport nonegotiate' tắt hoàn toàn việc phát và xử lý các khung đàm phán DTP trên cổng switch, giúp tăng tính bảo mật và ngăn ngừa các cuộc tấn công DTP spoofing."
+    "explanation": "Khi cấu hình đường trung kế 802.1Q, Native VLAN phải đồng nhất ở cả hai đầu liên kết. Nếu bị lệch Native VLAN (Native VLAN mismatch), lưu lượng sẽ bị chặn hoặc chuyển tiếp sai. Vì cổng trunk trên DLS2 được cấu hình Native VLAN 66, nên trên cổng Fa0/1 của DLS1 cũng phải cấu hình lệnh switchport trunk native vlan 66 để khắc phục sự cố."
   },
   "final_q37": {
     "question": "Loại lưu lượng nào được thiết kế để truyền tải trên Native VLAN mà không bị gắn thẻ (untagged)?",
