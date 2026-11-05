@@ -1,565 +1,644 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cisco CyberOps Associate (200-201 CBROPS) - Ôn Thi Trắc Nghiệm & Match</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%231d72b8'><path d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/></svg>">
-</head>
-<body>
-
-  <!-- ========================================================
-       TOP HEADER (BRAND + FUNCTIONAL TABS + CONTROLS)
-       ======================================================== -->
-  <header class="app-topbar">
-    <div class="topbar-inner">
-      
-      <!-- Brand Logo / Identity (Image Paint Replica: IAO) -->
-      <div class="topbar-brand" id="logoBtn" title="Về trang chủ ôn tập">
-        <div class="brand-badge">IAO</div>
-        <div class="brand-info">
-          <div class="brand-title">CyberOps Associate</div>
-          <div class="brand-sub">200-201 CBROPS</div>
-        </div>
-      </div>
-
-      <!-- Functional Navigation Modes pushed to TOP -->
-      <nav class="topbar-modes-nav">
-        <button class="topbar-tab-btn tab-btn active" id="tabStudy" data-mode="study"><span class="tab-text">Study</span></button>
-        <button class="topbar-tab-btn tab-btn" id="tabExam" data-mode="exam"><span class="tab-text">Thi thử</span></button>
-        <button class="topbar-tab-btn tab-btn" id="tabMatchMode" data-mode="match"><span class="tab-text">Match definition</span>
-          <span class="tab-pill-badge" id="matchTabCount">36</span></button>
-        <button class="topbar-tab-btn tab-btn" id="tabFeTest" data-mode="fetest"><span class="tab-text">FE - Test</span></button>
-        <button class="topbar-tab-btn tab-btn" id="tabMistakes" data-mode="mistakes"><span class="tab-text">Câu sai</span>
-          <span class="tab-pill-badge badge-danger" id="mistakesTabCount">0</span></button>
-        <button class="topbar-tab-btn tab-btn" id="tabStats" data-mode="stats"><span class="tab-text">Thống kê Mod</span></button>
-        
-      </nav>
-
-      <!-- Quick Action Tools (Search, Starred, Dark Mode) -->
-      <div class="topbar-actions">
-        <div class="search-box-wrapper">
-          <svg class="search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-          <input type="text" id="searchInput" class="search-input" placeholder="Tìm kiếm (Ctrl + K)...">
-        </div>
-
-        <button class="btn btn-outline btn-sm topbar-tool-btn" id="starredBtn" title="Xem danh sách câu đã lưu">Đã lưu (<span id="starredCount">0</span>)</button>
-
-        <button class="btn btn-outline btn-sm" id="themeToggleBtn" title="Chuyển chế độ Sáng / Tối">Sáng/Tối</button>
-
-        <!-- Mobile sidebar hamburger toggle -->
-        <button class="btn-icon mobile-menu-btn" id="mobileSidebarToggle" title="Mở danh mục Module">
-          Danh mục
-        </button>
-      </div>
-
-    </div>
-  </header>
-
-  <!-- ========================================================
-       MAIN APP WORKSPACE (SIDEBAR NAVIGATION + CONTENT PANE)
-       ======================================================== -->
-  <div class="app-workspace">
-
-    <!-- LEFT SIDEBAR: MODULES DIRECTORY (nguyenpht.vercel.app aesthetic) -->
-    <aside class="app-sidebar" id="appSidebar">
-      <div class="sidebar-header">
-        <div class="sidebar-title-group">
-          <div class="sidebar-section-title">DANH MỤC MODULES</div>
-          <div class="sidebar-section-sub">CyberOps v1.0 • 574 câu</div>
-        </div>
-      </div>
-
-      <nav class="sidebar-modules-list" id="modulesBar">
-        <button class="sidebar-mod-item module-pill active" data-mod="all">
-          <div class="mod-details">
-            <span class="mod-title">Toàn bộ Modules</span>
-            <span class="mod-desc">Tất cả câu hỏi trắc nghiệm</span>
-          </div>
-          <span class="module-badge-count" id="count-all">574</span>
-        </button>
-
-        <button class="sidebar-mod-item module-pill" data-mod="m1-2">
-          <div class="mod-details">
-            <span class="mod-title">Module 1 - 2</span>
-            <span class="mod-desc">Danger & Defenders</span>
-          </div>
-          <span class="module-badge-count" id="count-m1-2">27</span>
-        </button>
-
-        <button class="sidebar-mod-item module-pill" data-mod="m3-4">
-          <div class="mod-details">
-            <span class="mod-title">Module 3 - 4</span>
-            <span class="mod-desc">Operating Systems (Linux/Win)</span>
-          </div>
-          <span class="module-badge-count" id="count-m3-4">36</span>
-        </button>
-
-        <button class="sidebar-mod-item module-pill" data-mod="m5-10">
-          <div class="mod-details">
-            <span class="mod-title">Module 5 - 10</span>
-            <span class="mod-desc">Network Fundamentals</span>
-          </div>
-          <span class="module-badge-count" id="count-m5-10">70</span>
-        </button>
-
-        <button class="sidebar-mod-item module-pill" data-mod="m11-12">
-          <div class="mod-details">
-            <span class="mod-title">Module 11 - 12</span>
-            <span class="mod-desc">Network Infra Security</span>
-          </div>
-          <span class="module-badge-count" id="count-m11-12">36</span>
-        </button>
-
-        <button class="sidebar-mod-item module-pill" data-mod="m13-17">
-          <div class="mod-details">
-            <span class="mod-title">Module 13 - 17</span>
-            <span class="mod-desc">Threats & Attacks</span>
-          </div>
-          <span class="module-badge-count" id="count-m13-17">51</span>
-        </button>
-
-        <button class="sidebar-mod-item module-pill" data-mod="m18-20">
-          <div class="mod-details">
-            <span class="mod-title">Module 18 - 20</span>
-            <span class="mod-desc">Network Defense (Firewall/IDS)</span>
-          </div>
-          <span class="module-badge-count" id="count-m18-20">33</span>
-        </button>
-
-        <button class="sidebar-mod-item module-pill" data-mod="m21-23">
-          <div class="mod-details">
-            <span class="mod-title">Module 21 - 23</span>
-            <span class="mod-desc">Crypto & Endpoints</span>
-          </div>
-          <span class="module-badge-count" id="count-m21-23">37</span>
-        </button>
-
-        <button class="sidebar-mod-item module-pill" data-mod="m24-25">
-          <div class="mod-details">
-            <span class="mod-title">Module 24 - 25</span>
-            <span class="mod-desc">Protocols & Log Files</span>
-          </div>
-          <span class="module-badge-count" id="count-m24-25">30</span>
-        </button>
-
-        <button class="sidebar-mod-item module-pill" data-mod="m26-28">
-          <div class="mod-details">
-            <span class="mod-title">Module 26 - 28</span>
-            <span class="mod-desc">Analyzing Security Data</span>
-          </div>
-          <span class="module-badge-count" id="count-m26-28">37</span>
-        </button>
-
-        <button class="sidebar-mod-item module-pill" data-mod="final">
-          <div class="mod-details">
-            <span class="mod-title">Final Exam</span>
-            <span class="mod-desc">CyberOps Associate v1.0</span>
-          </div>
-          <span class="module-badge-count" id="count-final">190</span>
-        </button>
-
-        <button class="sidebar-mod-item module-pill" data-mod="cert_practice">
-          <div class="mod-details">
-            <span class="mod-title">Cert Practice Exam</span>
-            <span class="mod-desc">200-201 Certification Prep</span>
-          </div>
-          <span class="module-badge-count" id="count-cert_practice">27</span>
-        </button>
-      </nav>
-    </aside>
-
-    <!-- Sidebar Backdrop for Mobile overlay -->
-    <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
-
-    <!-- RIGHT MAIN CONTENT CONTAINER -->
-    <main class="app-main" id="appMain">
-
-      <!-- 1. STUDY VIEW -->
-      <section id="studyView" class="view-panel">
-        <div class="study-banner">
-          <div class="banner-info">
-            <h2 id="studyModuleTitle">Cisco CyberOps Associate: Toàn bộ Modules 1 - 28</h2>
-            <p id="studyModuleDesc">574 câu hỏi trắc nghiệm và bài tập nối từ theo ITExamAnswers.</p>
-          </div>
-          <div class="study-controls">
-            <button class="btn btn-outline btn-sm" id="toggleAnswersBtn">
-              <span id="toggleAnswersText">Ẩn đáp án</span>
-            </button>
-            <button class="btn btn-outline btn-sm" id="toggleAllTranslateBtn">
-              Dịch toàn bộ câu hỏi
-            </button>
-            <button class="btn btn-outline btn-sm" id="filterStarredOnlyBtn">
-              Hiện câu đã lưu
-            </button>
-            <button class="btn btn-primary btn-sm" id="startExamFromStudyBtn">
-              Thi thử
-            </button>
-          </div>
-        </div>
-
-        <div class="study-list" id="studyQuestionsList">
-          <!-- Questions dynamically injected here -->
-        </div>
-      </section>
-
-      <!-- 2. EXAM VIEW -->
-      <section id="examView" class="view-panel" style="display: none;">
-        <div class="exam-layout">
-          
-          <!-- Exam Header Meta Card -->
-          <div class="exam-header-meta">
-            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 10px;">
-              <div>
-                <h2 class="exam-title-big" id="examCurrentTitle">Modules 24 - 25: Protocols and Log Files Group Exam - Test online</h2>
-                <div class="exam-meta-row">
-                  <span>ITExamAnswers</span>
-                  <span>Thời gian: 45 phút</span>
-                  <span>CyberOps Associate</span>
-                  <span id="examQuestionsCountBadge">30 Câu</span>
-                </div>
-              </div>
-              <div style="display: flex; align-items: center; gap: 10px;">
-                <div class="timer-badge normal" id="examTimerBadge">Thời gian: <span id="timerDisplay">45:00</span>
-                </div>
-                <button class="btn btn-outline btn-sm" id="timerPauseBtn" title="Tạm dừng / Tiếp tục">Tạm dừng</button>
-                <button class="btn btn-outline btn-sm" id="examSettingsBtn" title="Cài đặt đề thi">Cài đặt</button>
-              </div>
-            </div>
-
-            <div class="exam-info-banner">
-              <div>
-                <strong>Hướng dẫn:</strong> Chọn đáp án cho từng câu hỏi. Sử dụng bảng số bên dưới để nhảy nhanh đến câu cần làm. Bấm <strong>Nộp Bài (Submit)</strong> để chấm điểm.
-              </div>
-              <div>
-                <button class="btn btn-success btn-sm" id="submitExamTopBtn">Nộp bài</button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Question Grid -->
-          <div class="grid-container">
-            <div class="question-numbers-grid" id="examGrid">
-              <!-- Grid buttons injected by JS -->
-            </div>
-            <div class="grid-legend">
-              <div class="legend-item"><div class="legend-box legend-answered"></div> <span>Answered (<span id="countAnswered">0</span>)</span></div>
-              <div class="legend-item"><div class="legend-box legend-review"></div> <span>Review (<span id="countReview">0</span>)</span></div>
-              <div class="legend-item"><div class="legend-box legend-unanswered"></div> <span>Chưa làm (<span id="countUnanswered">0</span>)</span></div>
-              <div class="legend-item"><div class="legend-box legend-active"></div> <span>Đang xem</span></div>
-            </div>
-          </div>
-
-          <!-- Current Exam Question Card -->
-          <div class="exam-question-card" id="examQuestionCard">
-            <div class="exam-q-header">
-              <div class="exam-q-title" id="examQTitle">1. Question</div>
-              <div class="exam-q-points">1 points</div>
-            </div>
-
-            <div class="exam-q-body" id="examQText">
-              <!-- Question text -->
-            </div>
-
-            <div style="margin: 8px 0 16px;">
-              <button class="translate-btn" id="btnTranslateExamQ">Dịch câu hỏi sang Tiếng Việt</button>
-              <div class="translated-question-box" id="examQTranslationBox" style="display: none;">
-                <div class="translation-tag">Bản dịch Tiếng Việt:</div>
-                <div id="examQTranslationText"></div>
-              </div>
-            </div>
-
-            <div id="examQImageContainer" class="study-image" style="display: none;">
-              <!-- Exhibit image if any -->
-            </div>
-
-            <!-- Multiple choice options container -->
-            <div class="exam-options-container" id="examOptionsList">
-              <!-- Options injected by JS -->
-            </div>
-
-            <!-- Matching drag & drop exhibit notice if applicable -->
-            <div id="examMatchContainer" style="display: none;">
-              <!-- Match display -->
-            </div>
-
-            <!-- Exam Action Buttons -->
-            <div class="exam-actions-bar">
-              <div style="display: flex; gap: 8px;">
-                <button class="btn btn-outline btn-sm" id="btnMarkReview">Đánh dấu xem lại</button>
-                <button class="btn btn-outline btn-sm" id="btnClearAnswer">Xóa lựa chọn</button>
-              </div>
-              <div class="exam-nav-group">
-                <button class="btn btn-outline" id="btnPrevQuestion">Câu trước</button>
-                <button class="btn btn-primary" id="btnNextQuestion">Câu tiếp theo</button>
-                <button class="btn btn-success" id="btnSubmitExam">Nộp bài</button>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-      </section>
-
-      <!-- 3. EXAM RESULTS VIEW -->
-      <section id="resultsView" class="view-panel" style="display: none;">
-        <div class="result-container">
-          <div class="score-circle" id="scoreCircle">
-            <span id="scorePercent">85%</span>
-            <span style="font-size: 13px; font-weight: 500;" id="scoreBadge">ĐẠT (PASS)</span>
-          </div>
-          <h2 style="font-size: 24px; font-weight: 700; margin-bottom: 8px;" id="resultTitle">Kết quả bài thi</h2>
-          <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto;" id="resultFeedback">Hoàn thành bài thi trắc nghiệm.</p>
-
-          <div class="result-stats-row">
-            <div class="stat-box">
-              <div class="stat-val" style="color: var(--answered-green);" id="resCorrect">25</div>
-              <div class="stat-lbl">Số câu đúng</div>
-            </div>
-            <div class="stat-box">
-              <div class="stat-val" style="color: var(--correct-red);" id="resWrong">4</div>
-              <div class="stat-lbl">Số câu sai</div>
-            </div>
-            <div class="stat-box">
-              <div class="stat-val" style="color: var(--text-muted);" id="resSkipped">1</div>
-              <div class="stat-lbl">Chưa làm</div>
-            </div>
-            <div class="stat-box">
-              <div class="stat-val" style="color: var(--primary);" id="resTime">18:42</div>
-              <div class="stat-lbl">Thời gian làm</div>
-            </div>
-          </div>
-
-          <div style="display: flex; justify-content: center; gap: 12px; margin-top: 24px; flex-wrap: wrap;">
-            <button class="btn btn-primary" id="btnRetakeExam">Làm lại đề này</button>
-            <button class="btn btn-warning" id="btnRetryWrongOnly">Làm lại các câu sai</button>
-            <button class="btn btn-outline" id="btnReviewAllAnswers">Xem chi tiết đáp án</button>
-          </div>
-        </div>
-
-        <!-- Detailed Review List -->
-        <div class="study-list" id="examReviewList">
-          <!-- Review cards injected here -->
-        </div>
-      </section>
-
-      
-
-      <!-- 5. MISTAKES VIEW (CÁC CÂU SAI) -->
-      <section id="mistakesView" class="view-panel" style="display: none;">
-        <div class="study-banner">
-          <div class="banner-info">
-            <h2>Câu làm sai</h2>
-            <p id="mistakesSummaryText">Danh sách các câu đã trả lời chưa đúng trong các bài thi thử.</p>
-          </div>
-          <div class="study-controls">
-            <button class="btn btn-outline btn-sm" id="toggleAnswersBtn">
-              <span id="toggleAnswersText">Ẩn đáp án</span>
-            </button>
-            <button class="btn btn-outline btn-sm" id="toggleAllTranslateBtn">
-              Dịch toàn bộ câu hỏi
-            </button>
-            <button class="btn btn-outline btn-sm" id="filterStarredOnlyBtn">
-              Hiện câu đã lưu
-            </button>
-            <button class="btn btn-primary btn-sm" id="startExamFromStudyBtn">
-              Thi thử
-            </button>
-          </div>
-        </div>
-
-        <div class="study-list" id="mistakesQuestionsList">
-          <!-- Rendered by JS -->
-        </div>
-      </section>
-
-      <!-- 6. STATS VIEW (THỐNG KÊ THEO MODULE) -->
-      <section id="statsView" class="view-panel" style="display: none;">
-        <div class="study-banner">
-          <div class="banner-info">
-            <h2>Thống kê module</h2>
-            <p>Tỉ lệ làm đúng và lịch sử làm bài theo từng module.</p>
-          </div>
-          <div class="study-controls">
-            <button class="btn btn-outline btn-sm" id="btnResetAllStats">
-              Đặt lại thống kê
-            </button>
-          </div>
-        </div>
-
-        <div class="stats-cards-grid" id="moduleStatsGrid">
-          <!-- Rendered by JS -->
-        </div>
-      </section>
-
-      <!-- 7. MATCH THE DEFINITION VIEW (REDESIGNED NODE-TO-NODE UX/UI) -->
-      <section id="matchView" class="view-panel" style="display: none;">
-        <div class="study-banner">
-          <div class="banner-info">
-            <h2>Match definition</h2>
-            <p>Bài tập nối thuật ngữ và định nghĩa tương ứng.</p>
-          </div>
-          <div class="study-controls">
-            <button class="btn btn-outline btn-sm" id="btnTranslateAllMatch">
-              Dịch Tiếng Việt
-            </button>
-            <button class="btn btn-outline btn-sm" id="btnResetAllMatches">
-              Đặt lại
-            </button>
-            <button class="btn btn-primary btn-sm" id="btnCheckAllMatches">
-              Chấm điểm
-            </button>
-          </div>
-        </div>
-
-        <!-- Quick filter pills for match questions -->
-        <div class="match-filter-bar" id="matchFilterBar" style="margin: 14px 0 18px; display: flex; gap: 8px; flex-wrap: wrap; align-items: center;">
-          <span style="font-size: 13px; font-weight: 600; color: var(--text-muted);">Lọc theo phần:</span>
-          <button class="module-pill active" data-match-mod="all">Tất cả bài nối (<span id="matchCountFilterAll">36</span>)</button>
-          <button class="module-pill" data-match-mod="m3-4">Mod 3-4 (8)</button>
-          <button class="module-pill" data-match-mod="m5-10">Mod 5-10 (3)</button>
-          <button class="module-pill" data-match-mod="m13-17">Mod 13-17 (5)</button>
-          <button class="module-pill" data-match-mod="m18-20">Mod 18-20 (4)</button>
-          <button class="module-pill" data-match-mod="m21-23">Mod 21-23 (2)</button>
-          <button class="module-pill" data-match-mod="m24-25">Mod 24-25 (2)</button>
-          <button class="module-pill" data-match-mod="m26-28">Mod 26-28 (2)</button>
-          <button class="module-pill" data-match-mod="final">Final Exam (7)</button>
-          <button class="module-pill" data-match-mod="cert_practice">Cert Practice (3)</button>
-        </div>
-
-        <div class="study-list" id="matchQuestionsList">
-          <!-- Matching boards injected here -->
-        </div>
-      </section>
-
-      <!-- 8. FE - TEST VIEW (RANDOM 50 CÂU TỪ MOD 1-28) -->
-      <section id="fetestView" class="view-panel" style="display: none;">
-        <div class="study-banner">
-          <div class="banner-info">
-            <h2>FE - Test: Đề thi ngẫu nhiên 50 câu</h2>
-            <p>Hệ thống chọn ngẫu nhiên 50 câu hỏi từ các module và tạo đề thi mới.</p>
-          </div>
-          <div class="study-controls">
-            <button class="btn btn-primary btn-sm" id="btnCreateFeTest">
-              Tạo đề mới
-            </button>
-            <button class="btn btn-outline btn-sm" id="btnClearFeTests">
-              Xóa lịch sử đề
-            </button>
-          </div>
-        </div>
-
-        <!-- Summary Stats of FE Tests -->
-        <div class="fe-test-stats-row" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin: 16px 0;">
-          <div class="stat-card" style="background: var(--bg-card); padding: 14px 18px; border-radius: var(--radius); border: 1px solid var(--border-color);">
-            <div style="font-size: 13px; color: var(--text-muted); font-weight: 500;">Tổng số đề đã tạo</div>
-            <div style="font-size: 26px; font-weight: 800; color: var(--primary); margin-top: 4px;" id="feTestTotalCreated">0</div>
-          </div>
-          <div class="stat-card" style="background: var(--bg-card); padding: 14px 18px; border-radius: var(--radius); border: 1px solid var(--border-color);">
-            <div style="font-size: 13px; color: var(--text-muted); font-weight: 500;">Số đề đã hoàn thành</div>
-            <div style="font-size: 26px; font-weight: 800; color: #10b981; margin-top: 4px;" id="feTestCompletedCount">0</div>
-          </div>
-          <div class="stat-card" style="background: var(--bg-card); padding: 14px 18px; border-radius: var(--radius); border: 1px solid var(--border-color);">
-            <div style="font-size: 13px; color: var(--text-muted); font-weight: 500;">Điểm số cao nhất</div>
-            <div style="font-size: 26px; font-weight: 800; color: #f59e0b; margin-top: 4px;" id="feTestHighestScore">--</div>
-          </div>
-        </div>
-
-        <!-- Tests Grid / List -->
-        <div class="fe-test-grid" id="feTestListContainer" style="display: flex; flex-direction: column; gap: 14px;">
-          <!-- Rendered by JS -->
-        </div>
-      </section>
-
-    </main>
-  </div>
-
-  <!-- Submit Exam Confirmation Modal -->
-  <div class="modal-overlay" id="submitModal">
-    <div class="modal-dialog">
-      <div class="modal-title">Xác Nhận Nộp Bài</div>
-      <p id="submitModalSummary">Bạn có chắc chắn muốn nộp bài thi không?</p>
-      <div class="modal-footer">
-        <button class="btn btn-outline" id="btnCancelSubmit">Tiếp tục làm bài</button>
-        <button class="btn btn-success" id="btnConfirmSubmit">Đồng ý Nộp</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- Exam Settings Modal -->
-  <div class="modal-overlay" id="settingsModal">
-    <div class="modal-dialog">
-      <div class="modal-title">Cài Đặt Đề Thi</div>
-      <div style="display: flex; flex-direction: column; gap: 14px; margin-top: 12px;">
-        <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
-          <input type="checkbox" id="cfgShuffleQ" checked style="width: 18px; height: 18px;">
-          <span>Trộn thứ tự câu hỏi (Shuffle Questions)</span>
-        </label>
-        <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
-          <input type="checkbox" id="cfgShuffleO" checked style="width: 18px; height: 18px;">
-          <span>Trộn thứ tự các đáp án A, B, C, D</span>
-        </label>
-        <div>
-          <label style="font-weight: 600; display: block; margin-bottom: 6px;">Thời gian làm bài:</label>
-          <select id="cfgTimer" style="width: 100%; padding: 8px; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-card); color: var(--text-main);">
-            <option value="30">30 phút</option>
-            <option value="45" selected>45 phút (Chuẩn Cisco)</option>
-            <option value="60">60 phút</option>
-            <option value="0">Không giới hạn thời gian (Tự do)</option>
-          </select>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button class="btn btn-outline" id="btnCloseSettings">Đóng</button>
-        <button class="btn btn-primary" id="btnSaveSettings">Lưu & Tạo Đề Mới</button>
-      </div>
-    </div>
-  </div>
-
-  
-  <!-- Test Mistakes Review Modal -->
-  <div class="modal-overlay" id="testMistakesModal">
-    <div class="modal-dialog modal-dialog-lg" style="max-width: 920px; width: 95%; max-height: 90vh; display: flex; flex-direction: column; padding: 22px;">
-      <div style="display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 1px solid var(--border-color); padding-bottom: 12px; margin-bottom: 14px;">
-        <div>
-          <div class="modal-title" style="margin-bottom: 4px; font-size: 19px; display: flex; align-items: center; gap: 8px;" id="testMistakesModalTitle">
-            <span>Xem Chi Tiết Câu Sai</span>
-          </div>
-          <div style="font-size: 13px; color: var(--text-muted);" id="testMistakesModalSubtitle">
-            Danh sách các câu làm sai trong lần thi này
-          </div>
-        </div>
-        <button class="btn btn-outline btn-sm" id="btnCloseTestMistakesModal" style="border: none; font-size: 20px; line-height: 1; padding: 4px 10px; cursor: pointer;" title="Đóng">X</button>
-      </div>
-
-      <div style="flex: 1; overflow-y: auto; padding-right: 6px;" id="testMistakesModalBody">
-        <!-- Injected wrong questions list -->
-      </div>
-
-      <div class="modal-footer" style="margin-top: 14px; border-top: 1px solid var(--border-color); padding-top: 12px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
-        <button class="btn btn-warning" id="btnRetrySpecificTestMistakes">
-          Làm lại các câu sai này
-        </button>
-        <button class="btn btn-primary" id="btnCloseTestMistakesFooter">
-          Đóng
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <!-- Embed Question Data -->
-  <script src="data.js"></script>
-  <!-- Vietnamese Translations -->
-  <script src="translations.js"></script>
-  <!-- Interactive Mechanism Visualizations -->
-  <script src="visualizations.js"></script>
-  <!-- Interactive Matching Helper -->
-  <script src="matching.js"></script>
-  <!-- Main App Script -->
-  <script src="app.js"></script>
-</body>
-</html>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cisco CyberOps Associate (200-201 CBROPS) - Ôn Thi Trắc Nghiệm & Match</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%231d72b8'><path d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/></svg>">
+</head>
+<body>
+
+  <!-- ========================================================
+       TOP HEADER (BRAND + FUNCTIONAL TABS + CONTROLS)
+       ======================================================== -->
+  <header class="app-topbar">
+    <div class="topbar-inner">
+      
+      <!-- Brand Logo / Identity (Image Paint Replica: IAO) -->
+      <button class="btn-sidebar-toggle" id="sidebarToggleBtn" title="Thu gọn / Mở rộng Sidebar (Ctrl + B)">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect width="18" height="18" x="3" y="3" rx="2"/>
+            <path d="M9 3v18"/>
+            <path d="m14 9 3 3-3 3"/>
+          </svg>
+        </button>
+        <div class="topbar-brand" id="logoBtn"  title="Về trang chủ ôn tập">
+        <div class="brand-badge">IAO</div>
+        <div class="brand-info">
+          <div class="brand-title">CyberOps Associate</div>
+          <div class="brand-sub">200-201 CBROPS</div>
+        </div>
+      </div>
+
+      <!-- Functional Navigation Modes pushed to TOP -->
+      <nav class="topbar-modes-nav">
+        <div class="tab-slider-pill" id="tabSliderPill"></div>
+        <button class="topbar-tab-btn tab-btn active" id="tabStudy" data-mode="study"><span class="tab-text">Study</span></button>
+        <button class="topbar-tab-btn tab-btn" id="tabExam" data-mode="exam"><span class="tab-text">Thi thử</span></button>
+        <button class="topbar-tab-btn tab-btn" id="tabMatchMode" data-mode="match"><span class="tab-text">Match definition</span>
+          <span class="tab-pill-badge" id="matchTabCount">36</span></button>
+        <button class="topbar-tab-btn tab-btn" id="tabFeTest" data-mode="fetest"><span class="tab-text">FE - Test</span></button>
+        <button class="topbar-tab-btn tab-btn" id="tabMistakes" data-mode="mistakes"><span class="tab-text">Câu sai</span>
+          <span class="tab-pill-badge badge-danger" id="mistakesTabCount">0</span></button>
+        <button class="topbar-tab-btn tab-btn" id="tabStats" data-mode="stats"><span class="tab-text">Thống kê Mod</span></button>
+        
+      </nav>
+
+      <!-- Quick Action Tools (Search, Starred, Dark Mode) -->
+      <div class="topbar-actions">
+        <div class="search-box-wrapper">
+          <svg class="search-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+          <input type="text" id="searchInput" class="search-input" placeholder="Tìm kiếm (Ctrl + K)...">
+        </div>
+
+        <button class="btn btn-outline btn-sm topbar-tool-btn" id="starredBtn" title="Xem danh sách câu đã lưu">Đã lưu (<span id="starredCount">0</span>)</button>
+
+        <button class="btn btn-outline btn-sm" id="themeToggleBtn" title="Chuyển chế độ Sáng / Tối">Sáng/Tối</button>
+
+        <!-- Mobile sidebar hamburger toggle -->
+        <button class="btn-icon mobile-menu-btn" id="mobileSidebarToggle" title="Mở danh mục Module">
+          Danh mục
+        </button>
+      </div>
+
+    </div>
+      <!-- Global Learning & Exam Progress Bar (Safe Exam Browser / Sticky Telemetry) -->
+    <div class="global-progress-bar-wrap" id="globalProgressWrap">
+      <div class="global-progress-bar-fill" id="globalProgressBar" style="width: 0%;"></div>
+    </div>
+  </header>
+
+  <!-- ========================================================
+       MAIN APP WORKSPACE (SIDEBAR NAVIGATION + CONTENT PANE)
+       ======================================================== -->
+  <div class="app-workspace">
+
+    <!-- LEFT SIDEBAR: MODULES DIRECTORY (nguyenpht.vercel.app aesthetic) -->
+    <aside class="app-sidebar" id="appSidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-title-group">
+          <div class="sidebar-section-title">DANH MỤC MODULES</div>
+          <div class="sidebar-section-sub">CyberOps v1.0 • 574 câu</div>
+        </div>
+        <button class="sidebar-close-btn" id="sidebarCloseBtn" title="Đóng thanh danh mục">✕</button>
+      </div>
+
+      <nav class="sidebar-modules-list" id="modulesBar">
+        <button class="sidebar-mod-item module-pill active" data-mod="all">
+          <div class="mod-details">
+            <span class="mod-title">Toàn bộ Modules</span>
+            <span class="mod-desc">Tất cả câu hỏi trắc nghiệm</span>
+          </div>
+          <span class="module-badge-count" id="count-all">574</span>
+        </button>
+
+        <button class="sidebar-mod-item module-pill" data-mod="m1-2">
+          <div class="mod-details">
+            <span class="mod-title">Module 1 - 2</span>
+            <span class="mod-desc">Danger & Defenders</span>
+          </div>
+          <span class="module-badge-count" id="count-m1-2">27</span>
+        </button>
+
+        <button class="sidebar-mod-item module-pill" data-mod="m3-4">
+          <div class="mod-details">
+            <span class="mod-title">Module 3 - 4</span>
+            <span class="mod-desc">Operating Systems (Linux/Win)</span>
+          </div>
+          <span class="module-badge-count" id="count-m3-4">36</span>
+        </button>
+
+        <button class="sidebar-mod-item module-pill" data-mod="m5-10">
+          <div class="mod-details">
+            <span class="mod-title">Module 5 - 10</span>
+            <span class="mod-desc">Network Fundamentals</span>
+          </div>
+          <span class="module-badge-count" id="count-m5-10">70</span>
+        </button>
+
+        <button class="sidebar-mod-item module-pill" data-mod="m11-12">
+          <div class="mod-details">
+            <span class="mod-title">Module 11 - 12</span>
+            <span class="mod-desc">Network Infra Security</span>
+          </div>
+          <span class="module-badge-count" id="count-m11-12">36</span>
+        </button>
+
+        <button class="sidebar-mod-item module-pill" data-mod="m13-17">
+          <div class="mod-details">
+            <span class="mod-title">Module 13 - 17</span>
+            <span class="mod-desc">Threats & Attacks</span>
+          </div>
+          <span class="module-badge-count" id="count-m13-17">51</span>
+        </button>
+
+        <button class="sidebar-mod-item module-pill" data-mod="m18-20">
+          <div class="mod-details">
+            <span class="mod-title">Module 18 - 20</span>
+            <span class="mod-desc">Network Defense (Firewall/IDS)</span>
+          </div>
+          <span class="module-badge-count" id="count-m18-20">33</span>
+        </button>
+
+        <button class="sidebar-mod-item module-pill" data-mod="m21-23">
+          <div class="mod-details">
+            <span class="mod-title">Module 21 - 23</span>
+            <span class="mod-desc">Crypto & Endpoints</span>
+          </div>
+          <span class="module-badge-count" id="count-m21-23">37</span>
+        </button>
+
+        <button class="sidebar-mod-item module-pill" data-mod="m24-25">
+          <div class="mod-details">
+            <span class="mod-title">Module 24 - 25</span>
+            <span class="mod-desc">Protocols & Log Files</span>
+          </div>
+          <span class="module-badge-count" id="count-m24-25">30</span>
+        </button>
+
+        <button class="sidebar-mod-item module-pill" data-mod="m26-28">
+          <div class="mod-details">
+            <span class="mod-title">Module 26 - 28</span>
+            <span class="mod-desc">Analyzing Security Data</span>
+          </div>
+          <span class="module-badge-count" id="count-m26-28">37</span>
+        </button>
+
+        <button class="sidebar-mod-item module-pill" data-mod="final">
+          <div class="mod-details">
+            <span class="mod-title">Final Exam</span>
+            <span class="mod-desc">CyberOps Associate v1.0</span>
+          </div>
+          <span class="module-badge-count" id="count-final">190</span>
+        </button>
+
+        <button class="sidebar-mod-item module-pill" data-mod="cert_practice">
+          <div class="mod-details">
+            <span class="mod-title">Cert Practice Exam</span>
+            <span class="mod-desc">200-201 Certification Prep</span>
+          </div>
+          <span class="module-badge-count" id="count-cert_practice">27</span>
+        </button>
+      </nav>
+    </aside>
+
+    <!-- Sidebar Backdrop for Mobile overlay -->
+    <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+
+    <!-- RIGHT MAIN CONTENT CONTAINER -->
+    <main class="app-main" id="appMain">
+
+      <!-- Safe Exam Browser (SEB) Sticky Status Bar for Exam & FE-Test -->
+      <div class="seb-sticky-bar" id="sebStickyBar" style="display: none;">
+        <div class="seb-bar-inner">
+          <div class="seb-badge-group">
+            <span class="seb-badge-pill">SEB Environment</span>
+            <span class="seb-exam-name" id="sebExamName">Thi Thử Trực Tuyến</span>
+          </div>
+          <div class="seb-progress-group">
+            <span class="seb-progress-text" id="sebProgressText">Câu 1 / 50 (0%)</span>
+            <div class="seb-progress-track">
+              <div class="seb-progress-fill" id="sebProgressFill" style="width: 0%;"></div>
+            </div>
+          </div>
+          <div class="seb-actions-group">
+            <div class="seb-timer-badge" id="sebTimerBadge">
+              <span class="timer-icon">⏱</span>
+              <span id="sebTimerDisplay">45:00</span>
+            </div>
+            <button class="btn btn-outline btn-xs" id="sebPauseBtn">Tạm dừng</button>
+            <button class="btn btn-success btn-xs" id="sebSubmitBtn">Nộp bài</button>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 1. STUDY VIEW -->
+      <section id="studyView" class="view-panel">
+        <div class="study-banner">
+          <div class="banner-info">
+            <h2 id="studyModuleTitle">Cisco CyberOps Associate: Toàn bộ Modules 1 - 28</h2>
+            <p id="studyModuleDesc">574 câu hỏi trắc nghiệm và bài tập nối từ theo ITExamAnswers.</p>
+          </div>
+          <div class="study-controls">
+            <button class="btn btn-outline btn-sm" id="toggleAnswersBtn">
+              <span id="toggleAnswersText">Ẩn đáp án</span>
+            </button>
+            <button class="btn btn-outline btn-sm" id="toggleAllTranslateBtn">
+              Dịch toàn bộ câu hỏi
+            </button>
+            <button class="btn btn-outline btn-sm" id="filterStarredOnlyBtn">
+              Hiện câu đã lưu
+            </button>
+            <button class="btn btn-primary btn-sm" id="startExamFromStudyBtn">
+              Thi thử
+            </button>
+          </div>
+        </div>
+
+                <!-- Floating Question Navigation Rail (Bảng điều hướng câu hỏi) -->
+        <div class="study-nav-rail" id="studyNavRail">
+          <button class="study-nav-rail-toggle" id="studyNavRailToggle" title="Đóng / Mở bảng điều hướng câu hỏi">
+            <span class="nav-rail-icon">☰</span>
+            <span class="nav-rail-label">Số câu</span>
+            <span class="nav-rail-badge" id="studyNavRailCount">0</span>
+          </button>
+          <div class="study-nav-rail-panel" id="studyNavRailPanel">
+            <div class="study-nav-rail-header">
+              <span class="rail-header-title">ĐIỀU HƯỚNG CÂU HỎI</span>
+              <button class="rail-close-btn" id="studyNavRailCloseBtn" title="Đóng">✕</button>
+            </div>
+            <div class="study-nav-rail-legend">
+              <span class="rail-legend-item"><span class="legend-dot dot-active"></span> Đang xem</span>
+              <span class="rail-legend-item"><span class="legend-dot dot-starred">★</span> Đã lưu</span>
+            </div>
+            <div class="study-nav-rail-grid" id="studyNavRailGrid">
+              <!-- Number pills injected dynamically -->
+            </div>
+          </div>
+        </div>
+
+        <div class="study-list" id="studyQuestionsList">
+          <!-- Questions dynamically injected here -->
+        </div>
+      </section>
+
+      <!-- 2. EXAM VIEW -->
+      <section id="examView" class="view-panel" style="display: none;">
+        <div class="exam-layout">
+          
+          <!-- Exam Header Meta Card -->
+          <div class="exam-header-meta">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 10px;">
+              <div>
+                <h2 class="exam-title-big" id="examCurrentTitle">Modules 24 - 25: Protocols and Log Files Group Exam - Test online</h2>
+                <div class="exam-meta-row">
+                  <span>ITExamAnswers</span>
+                  <span>Thời gian: 45 phút</span>
+                  <span>CyberOps Associate</span>
+                  <span id="examQuestionsCountBadge">30 Câu</span>
+                </div>
+              </div>
+              <div style="display: flex; align-items: center; gap: 10px;">
+                <div class="timer-badge normal" id="examTimerBadge">Thời gian: <span id="timerDisplay">45:00</span>
+                </div>
+                <button class="btn btn-outline btn-sm" id="timerPauseBtn" title="Tạm dừng / Tiếp tục">Tạm dừng</button>
+                <button class="btn btn-outline btn-sm" id="examSettingsBtn" title="Cài đặt đề thi">Cài đặt</button>
+              </div>
+            </div>
+
+            <div class="exam-info-banner">
+              <div>
+                <strong>Hướng dẫn:</strong> Chọn đáp án cho từng câu hỏi. Sử dụng bảng số bên trái để chuyển nhanh giữa các câu hỏi. Bấm <strong>Nộp Bài (Submit)</strong> để chấm điểm.
+              </div>
+              <div>
+                <button class="btn btn-success btn-sm" id="submitExamTopBtn">Nộp bài</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2-Column Split Workspace: Left Questions Palette, Right Active Question Card -->
+          <div class="exam-workspace-split">
+            <!-- Left: Question Grid Navigation Palette -->
+            <aside class="exam-sidebar-palette">
+              <div class="grid-container">
+                <div class="exam-palette-header">
+                  <span class="exam-palette-title">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="3" y="3" width="7" height="7"></rect>
+                      <rect x="14" y="3" width="7" height="7"></rect>
+                      <rect x="14" y="14" width="7" height="7"></rect>
+                      <rect x="3" y="14" width="7" height="7"></rect>
+                    </svg>
+                    Bảng câu hỏi
+                  </span>
+                  <span class="exam-palette-sub" id="examPaletteSummary">Câu 1/50</span>
+                </div>
+                <div class="question-numbers-grid" id="examGrid">
+                  <!-- Grid buttons injected by JS -->
+                </div>
+                <div class="grid-legend">
+                  <div class="legend-item"><div class="legend-box legend-answered"></div> <span>Answered (<span id="countAnswered">0</span>)</span></div>
+                  <div class="legend-item"><div class="legend-box legend-review"></div> <span>Review (<span id="countReview">0</span>)</span></div>
+                  <div class="legend-item"><div class="legend-box legend-unanswered"></div> <span>Chưa làm (<span id="countUnanswered">0</span>)</span></div>
+                  <div class="legend-item"><div class="legend-box legend-active"></div> <span>Đang xem</span></div>
+                </div>
+              </div>
+            </aside>
+
+            <!-- Right: Current Active Question Card -->
+            <main class="exam-active-panel">
+              <div class="exam-question-card" id="examQuestionCard">
+            <div class="exam-q-header">
+              <div class="exam-q-title" id="examQTitle">1. Question</div>
+              <div class="exam-q-points">1 points</div>
+            </div>
+
+            <div class="exam-q-body" id="examQText">
+              <!-- Question text -->
+            </div>
+
+            <div style="margin: 8px 0 16px;">
+              <button class="translate-btn" id="btnTranslateExamQ">Dịch câu hỏi sang Tiếng Việt</button>
+              <div class="translated-question-box" id="examQTranslationBox" style="display: none;">
+                <div class="translation-tag">Bản dịch Tiếng Việt:</div>
+                <div id="examQTranslationText"></div>
+              </div>
+            </div>
+
+            <div id="examQImageContainer" class="study-image" style="display: none;">
+              <!-- Exhibit image if any -->
+            </div>
+
+            <!-- Multiple choice options container -->
+            <div class="exam-options-container" id="examOptionsList">
+              <!-- Options injected by JS -->
+            </div>
+
+            <!-- Matching drag & drop exhibit notice if applicable -->
+            <div id="examMatchContainer" style="display: none;">
+              <!-- Match display -->
+            </div>
+
+            <!-- Exam Action Buttons -->
+            <div class="exam-actions-bar">
+              <div style="display: flex; gap: 8px;">
+                <button class="btn btn-outline btn-sm" id="btnMarkReview">Đánh dấu xem lại</button>
+                <button class="btn btn-outline btn-sm" id="btnClearAnswer">Xóa lựa chọn</button>
+              </div>
+              <div class="exam-nav-group">
+                <button class="btn btn-outline" id="btnPrevQuestion">Câu trước</button>
+                <button class="btn btn-primary" id="btnNextQuestion">Câu tiếp theo</button>
+                <button class="btn btn-success" id="btnSubmitExam">Nộp bài</button>
+              </div>
+            </div>
+
+          </div>
+        </main>
+      </div>
+
+    </div>
+  </section>
+
+      <!-- 3. EXAM RESULTS VIEW -->
+      <section id="resultsView" class="view-panel" style="display: none;">
+        <div class="result-container">
+          <div class="score-circle" id="scoreCircle">
+            <span id="scorePercent">85%</span>
+            <span style="font-size: 13px; font-weight: 500;" id="scoreBadge">ĐẠT (PASS)</span>
+          </div>
+          <h2 style="font-size: 24px; font-weight: 700; margin-bottom: 8px;" id="resultTitle">Kết quả bài thi</h2>
+          <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto;" id="resultFeedback">Hoàn thành bài thi trắc nghiệm.</p>
+
+          <div class="result-stats-row">
+            <div class="stat-box">
+              <div class="stat-val" style="color: var(--answered-green);" id="resCorrect">25</div>
+              <div class="stat-lbl">Số câu đúng</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-val" style="color: var(--correct-red);" id="resWrong">4</div>
+              <div class="stat-lbl">Số câu sai</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-val" style="color: var(--text-muted);" id="resSkipped">1</div>
+              <div class="stat-lbl">Chưa làm</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-val" style="color: var(--primary);" id="resTime">18:42</div>
+              <div class="stat-lbl">Thời gian làm</div>
+            </div>
+          </div>
+
+          <div style="display: flex; justify-content: center; gap: 12px; margin-top: 24px; flex-wrap: wrap;">
+            <button class="btn btn-primary" id="btnRetakeExam">Làm lại đề này</button>
+            <button class="btn btn-warning" id="btnRetryWrongOnly">Làm lại các câu sai</button>
+            <button class="btn btn-outline" id="btnReviewAllAnswers">Xem chi tiết đáp án</button>
+          </div>
+        </div>
+
+        <!-- Detailed Review List -->
+        <div class="study-list" id="examReviewList">
+          <!-- Review cards injected here -->
+        </div>
+      </section>
+
+      
+
+      <!-- 5. MISTAKES VIEW (CÁC CÂU SAI) -->
+      <section id="mistakesView" class="view-panel" style="display: none;">
+        <div class="study-banner">
+          <div class="banner-info">
+            <h2>Câu làm sai</h2>
+            <p id="mistakesSummaryText">Danh sách các câu đã trả lời chưa đúng trong các bài thi thử.</p>
+          </div>
+          <div class="study-controls">
+            <button class="btn btn-outline btn-sm" id="toggleAnswersBtn">
+              <span id="toggleAnswersText">Ẩn đáp án</span>
+            </button>
+            <button class="btn btn-outline btn-sm" id="toggleAllTranslateBtn">
+              Dịch toàn bộ câu hỏi
+            </button>
+            <button class="btn btn-outline btn-sm" id="filterStarredOnlyBtn">
+              Hiện câu đã lưu
+            </button>
+            <button class="btn btn-primary btn-sm" id="startExamFromStudyBtn">
+              Thi thử
+            </button>
+          </div>
+        </div>
+
+        <div class="study-list" id="mistakesQuestionsList">
+          <!-- Rendered by JS -->
+        </div>
+      </section>
+
+      <!-- 6. STATS VIEW (THỐNG KÊ THEO MODULE) -->
+      <section id="statsView" class="view-panel" style="display: none;">
+        <div class="study-banner">
+          <div class="banner-info">
+            <h2>Thống kê module</h2>
+            <p>Tỉ lệ làm đúng và lịch sử làm bài theo từng module.</p>
+          </div>
+          <div class="study-controls">
+            <button class="btn btn-outline btn-sm" id="btnResetAllStats">
+              Đặt lại thống kê
+            </button>
+          </div>
+        </div>
+
+        <div class="stats-cards-grid" id="moduleStatsGrid">
+          <!-- Rendered by JS -->
+        </div>
+      </section>
+
+      <!-- 7. MATCH THE DEFINITION VIEW (REDESIGNED NODE-TO-NODE UX/UI) -->
+      <section id="matchView" class="view-panel" style="display: none;">
+        <div class="study-banner">
+          <div class="banner-info">
+            <h2>Match definition</h2>
+            <p>Bài tập nối thuật ngữ và định nghĩa tương ứng.</p>
+          </div>
+          <div class="study-controls">
+            <button class="btn btn-outline btn-sm" id="btnTranslateAllMatch">
+              Dịch Tiếng Việt
+            </button>
+            <button class="btn btn-outline btn-sm" id="btnResetAllMatches">
+              Đặt lại
+            </button>
+            <button class="btn btn-primary btn-sm" id="btnCheckAllMatches">
+              Chấm điểm
+            </button>
+          </div>
+        </div>
+
+        <!-- Quick filter pills for match questions -->
+        <div class="match-filter-bar" id="matchFilterBar" style="margin: 14px 0 18px; display: flex; gap: 8px; flex-wrap: wrap; align-items: center;">
+          <span style="font-size: 13px; font-weight: 600; color: var(--text-muted);">Lọc theo phần:</span>
+          <button class="module-pill active" data-match-mod="all">Tất cả bài nối (<span id="matchCountFilterAll">36</span>)</button>
+          <button class="module-pill" data-match-mod="m3-4">Mod 3-4 (8)</button>
+          <button class="module-pill" data-match-mod="m5-10">Mod 5-10 (3)</button>
+          <button class="module-pill" data-match-mod="m13-17">Mod 13-17 (5)</button>
+          <button class="module-pill" data-match-mod="m18-20">Mod 18-20 (4)</button>
+          <button class="module-pill" data-match-mod="m21-23">Mod 21-23 (2)</button>
+          <button class="module-pill" data-match-mod="m24-25">Mod 24-25 (2)</button>
+          <button class="module-pill" data-match-mod="m26-28">Mod 26-28 (2)</button>
+          <button class="module-pill" data-match-mod="final">Final Exam (7)</button>
+          <button class="module-pill" data-match-mod="cert_practice">Cert Practice (3)</button>
+        </div>
+
+        <div class="study-list" id="matchQuestionsList">
+          <!-- Matching boards injected here -->
+        </div>
+      </section>
+
+      <!-- 8. FE - TEST VIEW (RANDOM 50 CÂU TỪ MOD 1-28) -->
+      <section id="fetestView" class="view-panel" style="display: none;">
+        <div class="study-banner">
+          <div class="banner-info">
+            <h2>FE - Test: Đề thi ngẫu nhiên 50 câu</h2>
+            <p>Hệ thống chọn ngẫu nhiên 50 câu hỏi từ các module và tạo đề thi mới.</p>
+          </div>
+          <div class="study-controls">
+            <button class="btn btn-primary btn-sm" id="btnCreateFeTest">
+              Tạo đề mới
+            </button>
+            <button class="btn btn-outline btn-sm" id="btnClearFeTests">
+              Xóa lịch sử đề
+            </button>
+          </div>
+        </div>
+
+        <!-- Summary Stats of FE Tests -->
+        <div class="fe-test-stats-row" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 14px; margin: 16px 0;">
+          <div class="stat-card" style="background: var(--bg-card); padding: 14px 18px; border-radius: var(--radius); border: 1px solid var(--border-color);">
+            <div style="font-size: 13px; color: var(--text-muted); font-weight: 500;">Tổng số đề đã tạo</div>
+            <div style="font-size: 26px; font-weight: 800; color: var(--primary); margin-top: 4px;" id="feTestTotalCreated">0</div>
+          </div>
+          <div class="stat-card" style="background: var(--bg-card); padding: 14px 18px; border-radius: var(--radius); border: 1px solid var(--border-color);">
+            <div style="font-size: 13px; color: var(--text-muted); font-weight: 500;">Số đề đã hoàn thành</div>
+            <div style="font-size: 26px; font-weight: 800; color: #10b981; margin-top: 4px;" id="feTestCompletedCount">0</div>
+          </div>
+          <div class="stat-card" style="background: var(--bg-card); padding: 14px 18px; border-radius: var(--radius); border: 1px solid var(--border-color);">
+            <div style="font-size: 13px; color: var(--text-muted); font-weight: 500;">Điểm số cao nhất</div>
+            <div style="font-size: 26px; font-weight: 800; color: #f59e0b; margin-top: 4px;" id="feTestHighestScore">--</div>
+          </div>
+        </div>
+
+        <!-- Tests Grid / List -->
+        <div class="fe-test-grid" id="feTestListContainer" style="display: flex; flex-direction: column; gap: 14px;">
+          <!-- Rendered by JS -->
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- Submit Exam Confirmation Modal -->
+  <div class="modal-overlay" id="submitModal">
+    <div class="modal-dialog">
+      <div class="modal-title">Xác Nhận Nộp Bài</div>
+      <p id="submitModalSummary">Bạn có chắc chắn muốn nộp bài thi không?</p>
+      <div class="modal-footer">
+        <button class="btn btn-outline" id="btnCancelSubmit">Tiếp tục làm bài</button>
+        <button class="btn btn-success" id="btnConfirmSubmit">Đồng ý Nộp</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Exam Settings Modal -->
+  <div class="modal-overlay" id="settingsModal">
+    <div class="modal-dialog">
+      <div class="modal-title">Cài Đặt Đề Thi</div>
+      <div style="display: flex; flex-direction: column; gap: 14px; margin-top: 12px;">
+        <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+          <input type="checkbox" id="cfgShuffleQ" checked style="width: 18px; height: 18px;">
+          <span>Trộn thứ tự câu hỏi (Shuffle Questions)</span>
+        </label>
+        <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
+          <input type="checkbox" id="cfgShuffleO" checked style="width: 18px; height: 18px;">
+          <span>Trộn thứ tự các đáp án A, B, C, D</span>
+        </label>
+        <div>
+          <label style="font-weight: 600; display: block; margin-bottom: 6px;">Thời gian làm bài:</label>
+          <select id="cfgTimer" style="width: 100%; padding: 8px; border-radius: 6px; border: 1px solid var(--border-color); background: var(--bg-card); color: var(--text-main);">
+            <option value="30">30 phút</option>
+            <option value="45" selected>45 phút (Chuẩn Cisco)</option>
+            <option value="60">60 phút</option>
+            <option value="0">Không giới hạn thời gian (Tự do)</option>
+          </select>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-outline" id="btnCloseSettings">Đóng</button>
+        <button class="btn btn-primary" id="btnSaveSettings">Lưu & Tạo Đề Mới</button>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- Test Mistakes Review Modal -->
+  <div class="modal-overlay" id="testMistakesModal">
+    <div class="modal-dialog modal-dialog-lg" style="max-width: 920px; width: 95%; max-height: 90vh; display: flex; flex-direction: column; padding: 22px;">
+      <div style="display: flex; justify-content: space-between; align-items: flex-start; border-bottom: 1px solid var(--border-color); padding-bottom: 12px; margin-bottom: 14px;">
+        <div>
+          <div class="modal-title" style="margin-bottom: 4px; font-size: 19px; display: flex; align-items: center; gap: 8px;" id="testMistakesModalTitle">
+            <span>Xem Chi Tiết Câu Sai</span>
+          </div>
+          <div style="font-size: 13px; color: var(--text-muted);" id="testMistakesModalSubtitle">
+            Danh sách các câu làm sai trong lần thi này
+          </div>
+        </div>
+        <button class="btn btn-outline btn-sm" id="btnCloseTestMistakesModal" style="border: none; font-size: 20px; line-height: 1; padding: 4px 10px; cursor: pointer;" title="Đóng">X</button>
+      </div>
+
+      <div style="flex: 1; overflow-y: auto; padding-right: 6px;" id="testMistakesModalBody">
+        <!-- Injected wrong questions list -->
+      </div>
+
+      <div class="modal-footer" style="margin-top: 14px; border-top: 1px solid var(--border-color); padding-top: 12px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+        <button class="btn btn-warning" id="btnRetrySpecificTestMistakes">
+          Làm lại các câu sai này
+        </button>
+        <button class="btn btn-primary" id="btnCloseTestMistakesFooter">
+          Đóng
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Embed Question Data -->
+  <script src="data.js"></script>
+  <!-- Vietnamese Translations -->
+  <script src="translations.js"></script>
+  <!-- Interactive Mechanism Visualizations -->
+  <script src="visualizations.js"></script>
+  <!-- Interactive Matching Helper -->
+  <script src="matching.js"></script>
+  <!-- Main App Script -->
+  <script src="app.js"></script>
+</body>
+</html>
